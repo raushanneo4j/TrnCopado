@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 작업 관리 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>참이면 할당 또는 할당 마일스톤을 만들 때 오류가 무시되고 프로젝트 작업 할당 레코드가 만들어집니다. Automatically Create Task Assignments가 참이 아니면이 옵션은 무시됩니다.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>리소스를 프로젝트에 할당하거나 새 할당 마일스톤 레코드를 만들 때 할당과 동일한 마일스톤에 속한 할당되지 않은 프로젝트 작업을 자동으로 할당할지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>참이면 할당 또는 할당 마일스톤을 삭제할 때 오류가 무시되어 프로젝트 작업 할당 레코드가 삭제됩니다. Automatically Remove Task Assignments가 참이 아니면이 옵션은 무시됩니다.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>자원 또는 마일스톤이 제거되었거나 마일스톤이 더 이상 해당 할당과 연관되어 있지 않을 때 프로젝트 작업 할당을 자동으로 제거할지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>초기로드 및 새로 고침 후에 작업 관리 인터페이스에서 작업의 기본 순서를 제어합니다. SOQL ORDER BY 절 다음에 유효해야합니다.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>레코드가 잠기지 않은 경우 편집이 제한되는 필드 목록을 포함하는 Project Task Assignment 개체의 필드 집합 이름입니다.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>레코드가 잠기지 않은 경우 편집을 위해 제한되는 필드 목록을 포함하는 프로젝트 작업 종속성 개체의 필드 집합 이름입니다.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>레코드가 잠기지 않은 경우 편집이 제한되는 필드 목록을 포함하는 프로젝트 작업 개체의 필드 집합 이름입니다.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>작업 관리 UI에서 선택하기 위해로드 할 최대 프로젝트 수</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 종료일이 마일스톤 목표 날짜보다 큰 경우 변경 내용 저장을 제한합니다.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 프로젝트 시작 날짜와 종료 날짜의 범위를 벗어난 경우 작업 끝 날짜의 변경 내용을 저장하지 못하도록 제한합니다.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Project Task Assignment 날짜 범위를 벗어나는 경우 작업 끝 날짜 변경 내용 저장을 제한합니다.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Project Task Assignment 시간 범위를 벗어나는 경우 작업 끝 날짜의 변경 사항 저장을 제한합니다.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 시작 날짜가 마일스톤 목표 날짜보다 클 때 변경 사항 저장을 제한합니다.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 프로젝트 시작 날짜와 종료 날짜의 범위를 벗어난 경우 작업 시작 날짜의 변경 내용을 저장하지 못하도록 제한합니다.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+</CustomObjectTranslation>

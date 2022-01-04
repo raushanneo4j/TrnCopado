@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>프로젝트 차이 배치</value>
+    </caseValues>
+    <fields>
+        <help>현재 배치 Apex 작업의 고유 식별자입니다.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>배치 프로세스 레코드를 조회합니다. 배치 프로세스 레코드는 프로세스가 성공적으로 완료되면 자동으로 삭제됩니다.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>프로세스가 완료되었을 때 전송 된 통지 유형 : 성공, 실패 또는 혼합.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>배치 작업의 현재 상태 : &quot;처리 중&quot;, &quot;완료&quot;또는 &quot;오류&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>완전한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>오류</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>가공</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>로그 유형이 중단되는 로그 수입니다.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>로그 유형이 오류 인 로그 수입니다.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>로그 유형이 외부 인 로그 수입니다.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>총 로그 수입니다.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>프로젝트 차이 배치 ID</nameFieldLabel>
+</CustomObjectTranslation>

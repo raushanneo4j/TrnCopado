@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>요약 템플릿 필드 프로세스</value>
+    </caseValues>
+    <fields>
+        <label><!-- FieldName --></label>
+        <name>ffr__FieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summarization Method --></label>
+        <name>ffr__Process__c</name>
+        <picklistValues>
+            <masterLabel>Group By</masterLabel>
+            <translation>그룹 분류 기준</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation>합집합</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summarization Template --></label>
+        <name>ffr__SummarizationTemplate__c</name>
+        <relationshipLabel><!-- SummarizationTemplateFieldProcesses --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>요약 템플릿 필드 프로세스 이름</nameFieldLabel>
+</CustomObjectTranslation>

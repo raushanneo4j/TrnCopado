@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.Plugins_Tools__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.Account_Customer_Segment__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.CPP_Status__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Project_Profile__c.Plugins_Tools__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>includes</operator>
+            <value>Neo4j Streams / Kafka</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Projects with Streams</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Project_Profile__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Customer_Project_Profile__c.Plugins_Tools__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

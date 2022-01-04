@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Calcolo di utilizzo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Calcoli di utilizzo</value>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Id Unheld Calc --></label>
+        <name>pse__Batch_Id_Unheld_Calc__c</name>
+    </fields>
+    <fields>
+        <help>Un campo interno utilizzato da PSE - non destinato alla visualizzazione per gli utenti.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Indica se calcolare l&apos;utilizzo storico dai record dei cartellini.</help>
+        <label><!-- Calculate Historical Utilization --></label>
+        <name>pse__Calculate_Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>Indica se calcolare l&apos;utilizzo del forward-looking dagli incarichi programmati.</help>
+        <label><!-- Calculate Scheduled Utilization --></label>
+        <name>pse__Calculate_Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Prior Calculation --></label>
+        <name>pse__Delete_Prior_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Date --></label>
+        <name>pse__Deleted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <help>Selezionare i ruoli che non richiedono la creazione di record di riepilogo dell&apos;utilizzo.</help>
+        <label><!-- Excluded Roles --></label>
+        <name>pse__Excluded_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Architetto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation>Analista di affari</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Manager</masterLabel>
+            <translation>Responsabile clienti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Consulente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation>Contraente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>Esecutivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Responsabile del progetto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Consultant</masterLabel>
+            <translation>Consulente senior</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>allenatore</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleziona il valore che descrive quando i calcoli dell&apos;utilizzo storico dovrebbero cessare. Questo è in genere l&apos;ultimo giorno della settimana in cui sono stati immessi tutti i cartellini.</help>
+        <label><!-- Historical Utilization Cut-Off Date --></label>
+        <name>pse__Historical_Utilization_Cut_Off_Date__c</name>
+        <picklistValues>
+            <masterLabel>End of Last Week</masterLabel>
+            <translation>Fine della scorsa settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of This Week</masterLabel>
+            <translation>Fine di questa settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>Oggi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization End Date --></label>
+        <name>pse__Historical_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Start Date --></label>
+        <name>pse__Historical_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indica se calcolare l&apos;utilizzo per tutti i sottolivelli della regione selezionata, della pratica o del gruppo. Questo campo viene ignorato se l&apos;utilizzo viene calcolato solo per una risorsa.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Sublevels in Subtotals --></label>
+        <name>pse__Include_Sublevels_in_Subtotals__c</name>
+    </fields>
+    <fields>
+        <help>Se questo calcolo è il calcolo principale per la combinazione di Regione / Pratica / Gruppo / Risorsa e Periodo.</help>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization End Date --></label>
+        <name>pse__Scheduled_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Start Date --></label>
+        <name>pse__Scheduled_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>In corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>Non iniziato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Group --></label>
+        <name>pse__Subtotal_by_Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Practice --></label>
+        <name>pse__Subtotal_by_Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal By Practice) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Region --></label>
+        <name>pse__Subtotal_by_Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Region) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>I tipi di periodi di tempo per calcolare l&apos;utilizzo per.</help>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Anno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Selezionare un periodo di tempo per il calcolo dell&apos;utilizzo per. Le date verranno regolate automaticamente dopo la selezione.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Seleziona un tipo che descrive questo calcolo.</help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Month and Last Month</masterLabel>
+            <translation>Mese corrente e ultimo mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Month and Next Month</masterLabel>
+            <translation>Mese corrente e mese successivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Last Quarter</masterLabel>
+            <translation>Trimestre corrente e ultimo trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Next Quarter</masterLabel>
+            <translation>Trimestre corrente e quarto successivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Last Week</masterLabel>
+            <translation>Settimana corrente e ultima settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Next Week</masterLabel>
+            <translation>Settimana corrente e prossima settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Last Year</masterLabel>
+            <translation>Anno corrente e ultimo anno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Next Year</masterLabel>
+            <translation>Anno corrente e anno prossimo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Month</masterLabel>
+            <translation>Lo scorso mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Quarter</masterLabel>
+            <translation>Ultimo quarto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>La settimana scorsa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Year</masterLabel>
+            <translation>L&apos;anno scorso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Month</masterLabel>
+            <translation>Ultimo, attuale e prossimo mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Quarter</masterLabel>
+            <translation>Ultimo, attuale e il prossimo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Week</masterLabel>
+            <translation>Ultimo, attuale e prossima settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Year</masterLabel>
+            <translation>Ultimo, attuale e prossimo anno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month Forecast</masterLabel>
+            <translation>Previsione del mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month to Date</masterLabel>
+            <translation>Dall&apos;inizio del mese a oggi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Month</masterLabel>
+            <translation>Il prossimo mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Quarter</masterLabel>
+            <translation>Prossimo trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Week</masterLabel>
+            <translation>La prossima settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Year</masterLabel>
+            <translation>L&apos;anno prossimo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter Forecast</masterLabel>
+            <translation>Quarter Forecast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter to Date</masterLabel>
+            <translation>Da trimestre ad oggi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week Forecast</masterLabel>
+            <translation>Previsione della settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week to Date</masterLabel>
+            <translation>Settimana a data</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year Forecast</masterLabel>
+            <translation>Previsione dell&apos;anno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year to Date</masterLabel>
+            <translation>Da inizio anno</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Utilization Calculation Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Date</label>
+            <section>Dates</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome del calcolo di utilizzo</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Batch ID is required --></errorMessage>
+        <name>pse__batch_id_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_historical_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_scheduled_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization start date must immediately follow the historical utilization end date. --></errorMessage>
+        <name>pse__continuous_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical utilization calculation for future dates is not allowed --></errorMessage>
+        <name>pse__disallow_historical_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization calculation for past dates is not allowed --></errorMessage>
+        <name>pse__disallow_scheduled_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical Start and End Date are required --></errorMessage>
+        <name>pse__historical_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Resource may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one value may be specified: Subtotal by Region, Practice or Group. --></errorMessage>
+        <name>pse__only_one_subtotal_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Start and End Date are required --></errorMessage>
+        <name>pse__scheduled_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Resource is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+</CustomObjectTranslation>

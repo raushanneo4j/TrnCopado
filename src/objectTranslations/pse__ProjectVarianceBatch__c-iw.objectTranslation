@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>אצווה שונות של פרויקטים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>קבוצות שונות של פרוייקטים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>מזהה ייחודי עבור משימת האפקס הנוכחית.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>חיפוש לרשומת תהליך האצווה. רשומת תהליך האצווה נמחקת אוטומטית אם התהליך מסתיים בהצלחה.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>סוג ההודעה שנשלחה בסיום התהליך: מוצלח, כישלון או מעורב.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>הסטטוס הנוכחי של עבודת האצווה: &quot;עיבוד&quot;, &quot;השלם&quot; או &quot;שגיאה&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>שלם</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>שגיאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>מעבד</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>מספר היומנים שבהם סוג יומן מבוטל.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>מספר היומנים שבהם סוג היומן הוא שגיאה.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>מספר היומנים שבהם סוג היומן חיצוני.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>המספר הכולל של יומני.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מזהה אצווה של שונות של הפרויקט</nameFieldLabel>
+</CustomObjectTranslation>

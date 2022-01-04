@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The time at which the schedule slot ends. --></help>
+        <label><!-- End Time --></label>
+        <name>pse__End_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of hours required per resource in the schedule slot. --></help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of resources required for the schedule slot. --></help>
+        <label><!-- Resources Required --></label>
+        <name>pse__Resources_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- The time at which the schedule slot begins. --></help>
+        <label><!-- Start Time --></label>
+        <name>pse__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Schedule Slot Type --></label>
+        <name>pse__Team_Schedule_Slot_Type__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The team schedule template associated with this schedule slot. --></help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Schedule Template Slot Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Hours should be non-negative values in increments of 0.25. --></errorMessage>
+        <name>pse__Hours_Must_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Number of Resources should be between 1 to 99. --></errorMessage>
+        <name>pse__Resource_Should_Be_In_Range</name>
+    </validationRules>
+</CustomObjectTranslation>

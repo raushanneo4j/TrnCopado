@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Deprecated : 예측 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>실제 날짜와 예정된 항목의 마감일로 사용할 현재 날짜 이전 일 수를 입력하십시오. 오늘은 0을 사용하십시오. 자동으로 &quot;지난 주말&quot;을 사용하려면 비워 둡니다.</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>단일 배치에서 처리 할 레코드 수입니다. 값은 기본적으로 200입니다.</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>범주 1의 가중 예측 금액에 할당 된 레이블.</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>카테고리 2의 가중 예측 금액에 할당 된 라벨입니다.</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>카테고리 3의 가중 예측 금액에 할당 된 라벨입니다.</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>카테고리 4의 가중 예측 금액에 지정된 라벨입니다.</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>범주 5의 가중 예측 금액에 할당 된 레이블.</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>범주 6에 대한 가중 예측 금액에 할당 된 레이블.</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>카테고리 7의 가중 예측 금액에 할당 된 라벨입니다.</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>기회에 설정된 곡선이 없을 때 적용되는 예측 곡선입니다. 기회에 곡선이 설정되어 있지 않고 기본 기회 곡선이 정의되지 않은 경우 오류 메시지가 표시됩니다.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트에 곡선이 설정되지 않은 경우 적용되는 예측 곡선입니다. 프로젝트에 커브가 설정되어 있지 않고 기본 프로젝트 커브가 정의되어 있지 않으면 오류 메시지가 표시됩니다.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 예측 일괄 처리 프로세스의 알림이 Chatter를 통해 알림 수신자 설정에 나열된 수신자에게 전송됩니다. 이것은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 전자 메일을 통해 예측 일괄 처리 프로세스의 알림이 알림 수신자 설정에 나열된 수신자에게 전송됩니다. 이것은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Chatter 또는 전자 메일을 통해 전송되는 예측 일괄 처리 알림의 알림 수신자를 지정합니다. 값은 세미콜론 (;)으로 구분 된 전자 메일 주소 목록입니다. 이 설정은 기본적으로 null입니다.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 일괄 처리 프로세스의 알림이 작업을 통해 전송됩니다. 이것은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측 카테고리 1을 계산하는 데 사용 된 승수입니다.</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측 카테고리 2를 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측을 위해 카테고리 3을 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측에 대해 카테고리 4를 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측 카테고리 5를 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측을 위해 카테고리 6을 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>기회 예측을 위해 카테고리 7을 계산하는 데 사용 된 승수입니다. 모범 사례의 경우 각 배율은 이전 범주 값보다 높아야합니다.</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 1을 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 2를 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 3을 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 4를 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 5를 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 6을 계산하는 데 사용 된 승수입니다. 그러면 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, 예정된 마일스톤 및 예정되지 않은 백 로그에 대한 메트릭이 차례로 곱해집니다.</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 예측을 위해 카테고리 7을 계산하는 데 사용 된 승수입니다. 이것은 Billings, Bill Through, Scheduled Time, 보류 된 리소스 요청, Unhold Resource Requests, Scheduled, Milestone 및 Unscheduled Backlog에 대한 메트릭을 차례로 곱합니다.</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>카테고리 1이 예측 계산에 포함되는지 여부를 결정하려면 선택하십시오.</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>범주 2가 예측 계산에 포함되는지 여부를 판별하려면 선택하십시오.</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>범주 3이 예측 계산에 포함되는지 여부를 결정하려면 선택하십시오.</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>범주 4가 예측 계산에 포함되는지 여부를 판별하려면 선택하십시오.</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>범주 5가 예측 계산에 포함되는지 여부를 판별하려면 선택하십시오.</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>범주 6이 예측 계산에 포함되는지 여부를 판별하려면 선택하십시오.</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>범주 7이 예측 계산에 포함되는지 여부를 판별하려면 선택하십시오.</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+</CustomObjectTranslation>

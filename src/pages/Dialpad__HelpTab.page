@@ -1,0 +1,121 @@
+<apex:page sidebar="false" showHeader="true" standardStylesheets="true" docType="html-5.0"  tabStyle="Dialpad__tab">
+<html lang="en">
+  <head>
+    <title>Help</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <apex:stylesheet value="{!URLFOR($Resource.Dialpad__Bootstrap,'bootstrap-3.2.0-dist/css/bootstrap.min.css')}"/>
+    
+    <style>
+        .divblocks {
+            height:220px;
+            color: #048FC2;
+        }
+        .detailP{
+            height: 120px;
+            color: #999;
+            padding-top: 10px;
+        }
+         a {
+        text-decoration: none !important;
+    }
+    .bs .col-lg-4 {
+      width: 46.333333%;
+      height: 120px;
+    }
+    .detailP {
+       height: 34px; 
+      color: #999;
+      padding-top: 10px;
+    }
+    
+
+     button:focus {outline:0 !important;}
+         .bs h1, .bs .h1, .bs h2, .bs .h2, .bs h3, .bs .h3 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        .bs h1, .bs h2, .bs h3, .bs h4, .bs h5, .bs h6, .bs .h1, .bs .h2, .bs .h3, .bs .h4, .bs .h5, .bs .h6 {
+          font-family: inherit;
+          font-weight: 600;
+          line-height: 1.1;
+          color: inherit;
+        }
+    </style>
+      
+  </head>
+
+  <body>
+  <div style="width:20%">
+  <c:BootstrapComponent xFactor="ResourcesTab" />
+  </div>
+  <div class="bs">
+    
+    <div class="container-fluid" style="margin-top:17px;">
+    
+      <div class="row row-offcanvas row-offcanvas-right">
+        
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron" style="-webkit-border-radius:5px; padding:22px;">
+            <h2>Setup and Resources</h2>
+            <div style="float:right; padding:8px;">  
+                         <div style="float:right;padding-left:5px;">                         
+                           
+                            </div>    
+                        </div>  
+          </div>
+          <div class="row">                       
+            <div class="col-6 col-sm-6 col-lg-4 divblocks">
+              <a href="https://help.dialpad.com/hc/en-us/articles/115000033366" target="_blank"><h4>Dialpad Salesforce App</h4></a>
+              <p class="detailP">Visit our help center portal for a step-by-step guide on everything you need to know about using the Dialpad Salesforce app. </p>
+              <p style="text-align:right"><a target="_blank" href="https://help.dialpad.com/hc/en-us/articles/115000033366" role="button">View details &raquo;</a></p>
+            </div><!--/span-->            
+            <!--<div class="col-6 col-sm-6 col-lg-4 divblocks">
+              <a href="http://help.uberconference.com" target="_blank"><h4>Admin Guide</h4></a>
+              <p class="detailP">Get in touch with our support team or browse support articles.</p>
+              <p style="text-align:right"><a target="_blank" href="http://help.uberconference.com" role="button">View details &raquo;</a></p>
+            </div>--><!--/span-->            
+             <div class="col-6 col-sm-6 col-lg-4 divblocks">
+              <a target="_blank" href="https://help.dialpad.com"><h4>Dialpad Help</h4></a>
+              <p class="detailP">Everything you need to know about getting started with Dialpad.</p>
+               <p style="text-align:right"><a target="_blank" href="https://help.dialpad.com" role="button">View details &raquo;</a></p>
+            </div><!--/span--> 
+            <div class="col-6 col-sm-6 col-lg-4 divblocks">
+              <a target="_blank" href="https://dialpad.com/company"><h4>About Dialpad</h4></a>
+              <p class="detailP">At Dialpad, we think of work as a thing you do, not a place you go. We bring simplicity to the professional phone experience with features that make us most productive, when and where we work best. Learn more about Dialpad.</p>
+              <br/><br/><p style="text-align:right"><a target="_blank" href="https://dialpad.com/company" role="button">View details &raquo;</a></p>
+            </div><!--/span-->    
+            <!--<div class="col-6 col-sm-6 col-lg-4 divblocks">
+              <a href="http://www.dialpad.com/settings" target="_blank"><h4>Manage Settings</h4></a>
+               <p class="detailP">You can end  Salesforce's access to your UberConference account  by clicking the Revoke link.</p>
+             <apex:form >
+              <p style="text-align:right"><a target="_blank" href="http://www.dialpad.com/settings" role="button">View details &raquo;</a></p>
+              </apex:form>
+            </div>--><!--/span-->       
+          </div><!--/row-->
+        </div><!--/span-->
+
+        
+      </div><!--/row-->
+
+      
+    </div><!--/.container-->
+
+    </div>
+    <!-- Bootstrap core JavaScript <div class="container-fluid"></div>
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <apex:includeScript value="{!URLFOR($Resource.Dialpad__Bootstrap,'bootstrap-3.2.0-dist/js/bootstrap.min.js')}"/>
+    <style>
+    .bs .col-lg-4 {
+  width: 46.333333%;
+}
+    </style>
+  </body>
+</html>
+
+</apex:page>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>预算标题</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Budget Headers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Consumed --></label>
+        <name>pse__Amount_Consumed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Overrun Allowed --></label>
+        <name>pse__Amount_Overrun_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Overrun Percentage --></label>
+        <name>pse__Amount_Overrun_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Remaining --></label>
+        <name>pse__Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount Consumed --></label>
+        <name>pse__Expense_Amount_Consumed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount Overrun Allowed --></label>
+        <name>pse__Expense_Amount_Overrun_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount Overrun Percentage --></label>
+        <name>pse__Expense_Amount_Overrun_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount Remaining --></label>
+        <name>pse__Expense_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount --></label>
+        <name>pse__Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Consumable Total Amount --></label>
+        <name>pse__Maximum_Consumable_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Total Amount Remaining --></label>
+        <name>pse__Percent_Total_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Budget Headers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Amount Consumed --></label>
+        <name>pse__Total_Amount_Consumed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount Overrun Allowed --></label>
+        <name>pse__Total_Amount_Overrun_Allowed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount Overrun Percentage --></label>
+        <name>pse__Total_Amount_Overrun_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount Remaining --></label>
+        <name>pse__Total_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>pse__Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order</masterLabel>
+            <translation>客户采购订单</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order Change Request</masterLabel>
+            <translation>客户采购订单变更请求</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>内部预算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget Change Request</masterLabel>
+            <translation>内部预算变更请求</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order</masterLabel>
+            <translation>供应商采购订单</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order Change Request</masterLabel>
+            <translation>供应商采购订单变更请求</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order</masterLabel>
+            <translation>工作指示</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order Change Request</masterLabel>
+            <translation>工单变更请求</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Budget Header Layout</layout>
+        <sections>
+            <label>量</label>
+            <section>Amount</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>费用金额</label>
+            <section>Expense Amount</section>
+        </sections>
+        <sections>
+            <label>总金额</label>
+            <section>Total Amount</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>预算标题名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Account is required and cannot be changed once set --></errorMessage>
+        <name>pse__Account_required_and_constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Budget Amount Consumed is required --></errorMessage>
+        <name>pse__Budget_Amount_Consumed_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Budget Total is required --></errorMessage>
+        <name>pse__Budget_Total_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Currency cannot be changed --></errorMessage>
+        <name>pse__Currency_is_constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update budget amount because the amount consumed is greater than the maximum allowable amount. --></errorMessage>
+        <name>pse__Enforce_Amount_Overrun</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update budget amount because the amount consumed is greater than the maximum allowable expense amount. --></errorMessage>
+        <name>pse__Enforce_Expense_Amount_Overrun</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update budget amount because the amount consumed is greater than the maximum allowable total amount. --></errorMessage>
+        <name>pse__Enforce_Total_Amount_Overrun</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The project&apos;s currency must match the currency of this budget header --></errorMessage>
+        <name>pse__Project_Currency_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Project is required and cannot be changed once set --></errorMessage>
+        <name>pse__Project_required_and_constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Total Amount Overrun Allowed is checked, Amount Overrun Allowed and/or Expense Amount Overrun Allowed must also be checked. --></errorMessage>
+        <name>pse__Total_Overrun_Requires_Other_Overrun</name>
+    </validationRules>
+</CustomObjectTranslation>

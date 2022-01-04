@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>帐单预测计算</value>
+    </caseValues>
+    <fields>
+        <help>查找相关的积压计算。</help>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>帐单预测计算过程的批次ID。</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>此帐单预测计算所使用的批处理。</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>表示已提交帐单预测，并且不能再应用替代项。</help>
+        <label><!-- Committed --></label>
+        <name>pse__Committed__c</name>
+    </fields>
+    <fields>
+        <help>表示此帐单预测计算是该RPG和时间段内最新的。</help>
+        <label><!-- Current --></label>
+        <name>pse__Current__c</name>
+    </fields>
+    <fields>
+        <help>查找此计费预测计算中使用的计费预测设置值。</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此帐单预测计算的组。</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此帐单预测计算的惯例。</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此帐单预测计算的区域。</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>帐单预测计算状态。</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>此帐单预测计算的时间段。</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>由于在计费预测计算过程中发生错误而创建的日志总数。</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Calculation Layout</layout>
+        <sections>
+            <label>批量</label>
+            <section>Batch</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>帐单预测计算名称</nameFieldLabel>
+    <webLinks>
+        <label><!-- View_Forecast --></label>
+        <name>pse__View_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

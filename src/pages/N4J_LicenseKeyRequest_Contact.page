@@ -1,0 +1,26 @@
+<apex:page standardController="Contact" extensions="N4J_LicenseKeyRequest" action="{!defaultKeyRequestDetails}" lightningStylesheets="true">
+    <style>
+        .dateFormat{display:none;} 
+    </style>
+    <apex:form id="form">
+    <apex:pageMessages id="errorMsgs" escape="false"></apex:pageMessages>
+    <apex:pageBlock title="Generate Activation Key" mode="edit" id="pbBlk" rendered="{!renderForm}">
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!initiateKeyRequest}" value="Generate Activation Key"/>
+            <apex:commandButton action="{!redirectBack}" value="Back" immediate="true"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="" columns="2" id="pgBlkSect1"> 
+            <apex:inputField value="{!lkey.Feature__c}" required="true"/>
+            <apex:inputField value="{!lkey.Contact__c}" required="true"/>
+            <apex:inputField value="{!lkey.Feature_Version__c}" required="true"/>
+            <apex:inputField value="{!lkey.Expiration_Date__c}" required="true"/>
+            <apex:inputField value="{!lkey.Publisher__c}" required="true"/>
+            <apex:inputField value="{!lkey.Quantity__c}" required="true"/>
+            <apex:inputField value="{!lkey.Type__c}" required="true"/>
+        </apex:pageBlockSection>
+        <div style="display: none;">
+            <apex:inputField value="{!lkey.Account__c}" style="display: none;"/>
+        </div>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

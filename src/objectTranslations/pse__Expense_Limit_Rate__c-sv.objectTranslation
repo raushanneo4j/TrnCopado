@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Expense Limit / Rate</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Kostnadsgränser / priser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Mängden av gränsen eller takten</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Om den är markerad bestämmer den här kryssrutan om gränsen eller kursen gäller för barnet Projekt / Regioner / Övningar / Grupper av det angivna projektet / Region / Övning / Grupp.</help>
+        <label><!-- Cascading --></label>
+        <name>pse__Cascading__c</name>
+    </fields>
+    <fields>
+        <help>Datumet att använda för växelkursen när valutakonvertering utförs på denna gräns / skattesats.</help>
+        <label><!-- Currency Effective Date --></label>
+        <name>pse__Currency_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Expense Limit / Rate slutdatum</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>pse__Is_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>Kilometer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>Mile</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Resource_Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Arkitekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Konsult</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Klientchef</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Projektledare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Tränare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Affärsanalytiker</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Expense Limit / Rate startdatum.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>Resor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>Auto Mileage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>Affärsmåltider</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>Biluthyrning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>Anställningsrelationer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>Bensin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>Allmänna och administrativa utgifter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>IT-utrustning och tjänster</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>Logi (rum och skatt)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>Diverse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>Kontorsmaterial och tjänster</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>Personliga måltider</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Telefon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>Porto och frakt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>Rekrytering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>Tunnelbana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>Taxi</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Expense Limit / Rate Layout</layout>
+        <sections>
+            <label>Tillämplighet</label>
+            <section>Applicability</section>
+        </sections>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Sammanfattning</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Expense Limit / Rate Name</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Expense Limit / Rate must not reference more than one of the following: Project, Region, Practice, Group. --></errorMessage>
+        <name>pse__Limit_Rate_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A project, region, practice, or group must be set. --></errorMessage>
+        <name>pse__Must_have_project_or_RPG_set</name>
+    </validationRules>
+</CustomObjectTranslation>

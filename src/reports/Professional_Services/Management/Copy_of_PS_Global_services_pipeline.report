@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_1493956</developerName>
+        <masterLabel>Product</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>POC - PS - Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - BootCamp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Data Science Bootcamp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Innovation Lab</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - SMB Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Solution Audit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Staff augmentation/Expert services</sourceValue>
+            </sourceValues>
+            <value>PS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Support - OEM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Managed Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Dedicated</sourceValue>
+            </sourceValues>
+            <value>Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partnership</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Perpetual - OEM (Royalty)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Agile Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Aura Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Bloom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Business Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Discovery Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - GraphDataScience Bundle – “Large”</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - GraphDataScience Bundle – “Standard”</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - GraphDataScience Bundle – “Starter”</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Kerberos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Linkurious</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (License)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Startup</sourceValue>
+            </sourceValues>
+            <value>Subscription</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Professional Services - Training</sourceValue>
+            </sourceValues>
+            <value>PS Training</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Support - Platinum</sourceValue>
+            </sourceValues>
+            <value>Support - Platinum</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Global_Territory__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_1493956</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Overview of all services opportunites in pipe, per stage per rep, in current FQ.</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Debooking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Up-Sell,Cross-Sell</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Global_Territory__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_1493956</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pipeline by region, product and Q</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

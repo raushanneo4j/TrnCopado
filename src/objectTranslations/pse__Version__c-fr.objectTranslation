@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Version</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Versions</value>
+    </caseValues>
+    <fields>
+        <help>Sélectionnez pour définir la version du projet comme référence du projet. Une référence est une version du projet identifiée comme plan convenu pour le projet. Un projet ne peut avoir qu&apos;une seule ligne de base de projet. Vous pouvez définir une nouvelle ligne de base pour supprimer la précédente.</help>
+        <label><!-- Baseline --></label>
+        <name>pse__Baseline__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ID du travail Apex exécutant le traitement par lots de gestion des versions.</help>
+        <label><!-- Batch Apex Job Id --></label>
+        <name>pse__Batch_Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Enregistrement associé pour le traitement par lots de versioning associé.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Notes relatives à la version.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Le projet lié à la version.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Managed Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le statut de la version. Lorsque le statut est Traitement, cela indique que les processus modifient la version. Lorsque le statut est Terminé, les données de version sont fixes et prêtes à être utilisées dans une comparaison.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Deleting</masterLabel>
+            <translation>Suppression</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Erreur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nouveau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>En traitement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation>Prêt</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Version Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la version</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Your selected version is queued for deletion and cannot be set as a baseline. --></errorMessage>
+        <name>pse__Cannot_become_baseline_when_deleting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a name for this project version. --></errorMessage>
+        <name>pse__Version_should_have_a_name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Project_Version --></label>
+        <name>pse__Create_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Project_Version --></label>
+        <name>pse__Delete_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Project_Versions --></label>
+        <name>pse__View_Project_Versions</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Colonna Preferenze</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Colonna Preferenze</value>
+    </caseValues>
+    <fields>
+        <help>Definisce la funzione per applicare le preferenze a. I valori sono: 0 (per Project Planner), 1 (per Resource Planner), 2 (per Project Task Gantt), 3 (per Timecard), 4 (per Timecard Approval) o 5 (per Timecard Task Time).</help>
+        <label><!-- Feature --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>0</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Contiene uno o più nomi API per i campi, inclusi i campi tra oggetti, su cui si basa questa colonna. Questo è un campo generato dal sistema. Non modificare questo campo manualmente.</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ordine, da sinistra a destra, visualizza la colonna nell&apos;interfaccia utente per la funzione indicata.</help>
+        <label><!-- Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;utente a cui vengono assegnate le preferenze.</help>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Column Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il valore salvato del rispettivo campo.</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <fields>
+        <help>Quando è true, la colonna è visibile sull&apos;interfaccia utente per l&apos;utente.</help>
+        <label><!-- Visible --></label>
+        <name>pse__Visible__c</name>
+    </fields>
+    <fields>
+        <help>La larghezza della colonna, in pixel.</help>
+        <label><!-- Width --></label>
+        <name>pse__Width__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome preferenza colonna</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

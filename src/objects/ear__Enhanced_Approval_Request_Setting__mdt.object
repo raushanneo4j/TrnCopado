@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>ear__Hide_Reassign_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, the Reassign action will be hidden on the Enhanced Approval Requests component and Lightning page.</inlineHelpText>
+        <label>Hide Reassign Action</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Query_Limit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The maximum number of approval request items loaded per query.</inlineHelpText>
+        <label>Query Limit</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>50</fullName>
+                    <default>true</default>
+                    <label>50</label>
+                </value>
+                <value>
+                    <fullName>100</fullName>
+                    <default>false</default>
+                    <label>100</label>
+                </value>
+                <value>
+                    <fullName>150</fullName>
+                    <default>false</default>
+                    <label>150</label>
+                </value>
+                <value>
+                    <fullName>200</fullName>
+                    <default>false</default>
+                    <label>200</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ear__Related_To_Links_To_Approval_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, users will navigate to the Approval Request work item when clicking a record name in the &apos;Related To&apos; column. Otherwise, users will navigate to the record detail page.</inlineHelpText>
+        <label>&apos;Related To&apos; Links To Approval Request</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Approval_Process_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Approval Process Name in the list view</inlineHelpText>
+        <label>Show Column Approval Process Name</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Approval_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Approval Status in the list view</inlineHelpText>
+        <label>Show Column Approval Status</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Date_Most_Recent_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Date Most Recent Action in the list view</inlineHelpText>
+        <label>Show Column Date Most Recent Action</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Date_Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Date Submitted in the list view</inlineHelpText>
+        <label>Show Column Date Submitted</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Most_Recent_Actor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Most Recent Actor in the list view</inlineHelpText>
+        <label>Show Column Most Recent Actor</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Submitted_By__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Submitted By in the list view</inlineHelpText>
+        <label>Show Column Submitted By</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ear__Show_Column_Submitter_Comments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Sets the visibility of the column Submitter Comments in the list view</inlineHelpText>
+        <label>Show Column Submitter Comments</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Enhanced Approval Request Setting</label>
+    <pluralLabel>Enhanced Approval Request Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

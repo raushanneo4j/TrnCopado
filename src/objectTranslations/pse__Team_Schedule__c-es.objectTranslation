@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Horario del equipo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Horarios del equipo</value>
+    </caseValues>
+    <fields>
+        <help>La fecha en que comienza el cronograma</help>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Notas para el horario del equipo.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Enviar notificaciones</help>
+        <label><!-- Send Notifications --></label>
+        <name>pse__Send_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>El estado del horario del equipo.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>Asignado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Una búsqueda de la plantilla del horario del equipo.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El equipo asociado con el cronograma.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre del horario del equipo</nameFieldLabel>
+</CustomObjectTranslation>

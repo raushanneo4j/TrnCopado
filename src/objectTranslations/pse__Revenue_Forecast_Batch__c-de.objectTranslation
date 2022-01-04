@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ertragsprognosecharge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ertragsprognosechargen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognosecharge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosechargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognosecharge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosechargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognosecharge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosechargen --></value>
+    </caseValues>
+    <fields>
+        <help>Ein eindeutiger Bezeichner für den Apex-Stapeljob mit Umsatzprognose. Dies ist ein systemgesteuertes Feld.</help>
+        <label><!-- Batch ID --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Eine Suche nach dem Stapelverarbeitungsdatensatz, der für die Umsatzprognose verwendet wird.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der aktuelle Status des Stapeljobs.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Ertragsprognose</nameFieldLabel>
+</CustomObjectTranslation>

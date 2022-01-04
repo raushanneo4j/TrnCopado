@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Integratie Hub-connector: Concur - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Integratie Hub-connector: Concur - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Verwijder PSA-werkopdrachten in Concur.</help>
+        <label><!-- Allow Deletion of Assignments --></label>
+        <name>pse__Allow_Deletion_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Verwijder PSA-projecten in Concur.</help>
+        <label><!-- Allow Deletion of Projects --></label>
+        <name>pse__Allow_Deletion_of_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Status die een onkostenrapport in concur geschikt maakt voor verzending naar PSA.</help>
+        <label><!-- Approval Status --></label>
+        <name>pse__Approval_Status__c</name>
+    </fields>
+    <fields>
+        <help>OAuth-proxy-URL in integratie Hub-connector.</help>
+        <label><!-- DEPRECATED:CallBack Url --></label>
+        <name>pse__CallBack_Url__c</name>
+    </fields>
+    <fields>
+        <help>Vergelijk de filtervelden die worden gebruikt om het Onkostenenrapport te filteren. De mogelijkheden zijn &quot;Geen&quot;, &quot;IsBillable&quot; en / of &quot;IsDeclarabel&quot; gescheiden door een komma.</help>
+        <label><!-- Concur Filter By Billable Expenses Field --></label>
+        <name>pse__Concur_Filter_By_Billable_Expenses_Field__c</name>
+    </fields>
+    <fields>
+        <help>Concur aangepast veld voor onkost declarabel type.</help>
+        <label><!-- Concur field for Expense Billable Type --></label>
+        <name>pse__Concur_field_for_Expense_Billable_Type__c</name>
+    </fields>
+    <fields>
+        <help>Naam van het aangepaste veld in Concur voor het PSA-project. Als u de projectmanager met het project wilt synchroniseren, voert u de naam van het gekoppelde PSA Project - Project Manager-lijst in.</help>
+        <label><!-- Concur field for PSA Project --></label>
+        <name>pse__Concur_field_for_PSA_Project__c</name>
+    </fields>
+    <fields>
+        <help>Het Concur-aangepast veld voor de PSA Resource-Assignment LinkedList.</help>
+        <label><!-- Concur field for PSA Resource-Assignment --></label>
+        <name>pse__Concur_field_for_PSA_Resource_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>De naam van de formule in de Integration Hub Connector die wordt gebruikt om PSA-projecten en toewijzingsrecords in Concur te verwijderen.</help>
+        <label><!-- Delete Workflow Name --></label>
+        <name>pse__Delete_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>E-mailadres voor het ontvangen van foutmeldingen als de integratie met Concur mislukt.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Concur naar PSA Onkostenrapport Declarabel Mapping</help>
+        <label><!-- Expense Report Billable Mapping --></label>
+        <name>pse__Expense_Report_Billable_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>Concur naar PSA Onkostenrapport Status Mapping</help>
+        <label><!-- Expense Report Status Mapping --></label>
+        <name>pse__Expense_Report_Status_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>De naam van de formule in de Integration Hub Connector die wordt gebruikt om onkostenrapporten te synchroniseren met onkosten van Concur naar FinancialForce.</help>
+        <label><!-- Expenses Sync Workflow Name --></label>
+        <name>pse__Expenses_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Maximaal aantal projecten, medewerkers en werkopdrachten die worden gesynchroniseerd in een enkel eerste synchronisatieblok. Elke keer dat deze limiet wordt bereikt, wordt een extra stuk gemaakt. De standaardwaarde is 2000.</help>
+        <label><!-- Initial Sync Chunk Size --></label>
+        <name>pse__Initial_Sync_Chunk_Size__c</name>
+    </fields>
+    <fields>
+        <help>De naam van de formule in de Integration Hub Connector die wordt gebruikt voor de eerste synchronisatie van projecten, resources en toewijzingen van FinancialForce naar Concur.</help>
+        <label><!-- Initial Sync Workflow Name --></label>
+        <name>pse__Initial_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>OAuth Proxy-naam in Integration Hub Connector.</help>
+        <label><!-- DEPRECATED:Oauth Proxy Name --></label>
+        <name>pse__Oauth_Proxy_Name__c</name>
+    </fields>
+    <fields>
+        <help>Het PSA-aangepast veld dat wordt gebruikt om toewijzingen te filteren voor verwijdering.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Assign --></label>
+        <name>pse__PSA_Filter_field_for_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Het PSA-aangepast veld dat wordt gebruikt om projecten te filteren voor verwijdering.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Project --></label>
+        <name>pse__PSA_Filter_field_for_Project__c</name>
+    </fields>
+    <fields>
+        <help>Formule naam in Integration Hub Connector om projecten te synchroniseren van FinancialForce naar Concur.</help>
+        <label><!-- Project Sync Workflow Name --></label>
+        <name>pse__ProjectWorkflowName__c</name>
+    </fields>
+    <fields>
+        <help>De naam van de formule in de Integration Hub Connector die wordt gebruikt voor het synchroniseren van resources en toewijzingen van FinancialForce naar Concur.</help>
+        <label><!-- Resource-Assignment Sync Workflow Name --></label>
+        <name>pse__Resource_Assignment_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Synchroniseer Project Manager bij het synchroniseren van PSA-projecten naar Concur.</help>
+        <label><!-- Sync Project Managers --></label>
+        <name>pse__Sync_Project_Managers__c</name>
+    </fields>
+    <fields>
+        <help>Werkopdrachten zijn gesynchroniseerd naar Concur.</help>
+        <label><!-- Assignments Synced --></label>
+        <name>pse__Synched_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Projecten zijn gesynchroniseerd met Concur.</help>
+        <label><!-- Projects Synced --></label>
+        <name>pse__Synched_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Medewerkers zijn gesynchroniseerd naar Concur.</help>
+        <label><!-- Resources Synced --></label>
+        <name>pse__Synched_Resources__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

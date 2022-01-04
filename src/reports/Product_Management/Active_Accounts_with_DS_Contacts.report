@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Account.Number_of_Closed_Won_Opportunities__c:SUM+Account.Number_of_Closed_Lost_Opportunities__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Number_of_Closed_Won_Opportunities__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Closed Won</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(CDF1:SUM&gt;0,Account.Number_of_Closed_Won_Opportunities__c:SUM,0)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Close Won with DS</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Number_of_Closed_Won_Opportunities__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># Closed Won Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Number_of_Closed_Lost_Opportunities__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># Closed Lost Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(OR(CONTAINS(UPPER(TITLE), &quot;DATA SCIEN&quot;),CONTAINS(UPPER(TITLE),&quot;ANALY&quot;),CONTAINS(UPPER(TITLE),&quot;MACHINE LEARN&quot;),CONTAINS(UPPER(TITLE),&quot;ARTIFICIAL INTELL&quot;)), 1, 0)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Data Scientist Associated with Account?</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Attached_To_Opportunity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>data scien</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>machine learn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>artificial inte</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>analy</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>INDUSTRY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Accounts with DS Contacts</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-01-01</startDate>
+    </timeFrameFilter>
+</Report>

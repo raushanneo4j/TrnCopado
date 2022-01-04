@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>版本项目风险</value>
+    </caseValues>
+    <fields>
+        <help>T与项目版本中引用的风险相关的帐户的ID。</help>
+        <label><!-- Account Id --></label>
+        <name>pse__AccountId__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的帐户名称。</help>
+        <label><!-- Account Name --></label>
+        <name>pse__AccountName__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险已关闭的日期。</help>
+        <label><!-- Closed Date --></label>
+        <name>pse__Closed_Date__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险的已关闭状态。</help>
+        <label><!-- Closed --></label>
+        <name>pse__Closed__c</name>
+    </fields>
+    <fields>
+        <help>有关项目版本中引用的风险的其他注释。</help>
+        <label><!-- Comments --></label>
+        <name>pse__Comments__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用风险的意外事件计划说明。</help>
+        <label><!-- Contingency --></label>
+        <name>pse__Contingency__c</name>
+    </fields>
+    <fields>
+        <help>引发项目版本中引用的风险的日期。</help>
+        <label><!-- Date Raised --></label>
+        <name>pse__Date_Raised__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险的影响。</help>
+        <label><!-- Impact --></label>
+        <name>pse__Impact__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的问题的ID。</help>
+        <label><!-- Issue Id --></label>
+        <name>pse__Issue_Id__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的问题的名称。</help>
+        <label><!-- Issue Name --></label>
+        <name>pse__Issue_Name__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险可能性发生。</help>
+        <label><!-- Likelihood --></label>
+        <name>pse__Likelihood__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的里程碑的ID。</help>
+        <label><!-- Milestone Id --></label>
+        <name>pse__MilestoneId__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的里程碑名称。</help>
+        <label><!-- Milestone Name --></label>
+        <name>pse__MilestoneName__c</name>
+    </fields>
+    <fields>
+        <help>针对项目版本中引用的风险采取缓解计划的说明。</help>
+        <label><!-- Mitigation Plan --></label>
+        <name>pse__Mitigation_Plan__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的机会的ID。</help>
+        <label><!-- Opportunity Id --></label>
+        <name>pse__OpportunityId__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的商机名称。</help>
+        <label><!-- Opportunity Name --></label>
+        <name>pse__OpportunityName__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险的原始Id。</help>
+        <label><!-- Original Id --></label>
+        <name>pse__OriginalId__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的项目任务的ID。</help>
+        <label><!-- Project Task Id --></label>
+        <name>pse__ProjectTaskId__c</name>
+    </fields>
+    <fields>
+        <help>与项目版本中引用的风险相关的项目任务的名称。</help>
+        <label><!-- Project Task Name --></label>
+        <name>pse__ProjectTaskName__c</name>
+    </fields>
+    <fields>
+        <help>资源的Id被指定为项目版本中引用的风险的所有者。</help>
+        <label><!-- Risk Owner Id --></label>
+        <name>pse__RiskOwnerId__c</name>
+    </fields>
+    <fields>
+        <help>指定为项目版本中引用的风险所有者的资源的名称。</help>
+        <label><!-- Risk Owner Name --></label>
+        <name>pse__RiskOwnerName__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险描述。</help>
+        <label><!-- Risk Description --></label>
+        <name>pse__Risk_Description__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险名称。</help>
+        <label><!-- Risk Name --></label>
+        <name>pse__Risk_Name__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险的唯一自动生成参考。</help>
+        <label><!-- Risk Number --></label>
+        <name>pse__Risk_Number__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险严重性最初通过将Impact值乘以Likelihood值计算得出。</help>
+        <label><!-- Severity --></label>
+        <name>pse__Severity__c</name>
+    </fields>
+    <fields>
+        <help>项目版本中引用的风险状态。</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>查找项目版本。</help>
+        <label><!-- Version --></label>
+        <name>pse__Version__c</name>
+        <relationshipLabel><!-- Version Item Risks --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Version Item Risk Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>版本项目风险名称</nameFieldLabel>
+</CustomObjectTranslation>

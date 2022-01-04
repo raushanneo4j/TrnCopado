@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Concept factuur prognose setup categorie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Concept factuur prognose setup categorien</value>
+    </caseValues>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de werkelijke factureerbare hoeveelheid van een project. Dit omvat gefactureerde tijdkaarten, gefactureerde mijlpalen en diverse aanpassingen.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de uitgaven voor een project. Dit is het factureerbare bedrag van de uitgaven.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>De voorspelling waarmee deze prognosecategorie wordt gebruikt, wordt gebruikt. U moet ten minste één prognosecategorie configureren.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het label dat wordt weergegeven voor een gewogen prognosecategorie, bijvoorbeeld Verwacht, Beste case, Slechtste case.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>De multiplicator toegepast op opportunities voor deze gewogen prognosecategorie.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>De volgorde waarin de prognosecategorieën worden toegepast in de prognoseberekening. U kunt waarden van 1 tot 3 invoeren.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Dit veld is verouderd en vervangen door Order__c</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldiger toegepast op de waarde van de toewijzingen voor een project.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de resourceaanvraaguren voor een project, wanneer het veld Resource Held is aangevinkt.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de waarde van de geplande mijlpalen voor een project.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de geplande resourceaanvraaguren voor een project, wanneer het veld Resource Held niet is aangevinkt.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigingsfactor die wordt toegepast op de waarde van de niet-geplande achterstand in een project, waarbij de waarde wordt gebruikt die is gegenereerd door de berekening van de achterstand.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Concept factuur prognose setup categorie</nameFieldLabel>
+</CustomObjectTranslation>

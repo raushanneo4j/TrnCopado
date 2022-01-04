@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Opportunity: Marketing Obligations Alert</name>
+    <style>none</style>
+    <subject>New Marketing Obligations</subject>
+    <textOnly>Hi Marketing,
+
+A new or cross-sell customer deal with potential marketing obligations just closed!
+
+Account Name: {!Account.Name}
+
+Opportunity Name: {!Opportunity.Name}
+
+Potential marketing opportunities are: {!Opportunity.Marketing_Obligations__c}
+
+PLEASE CONFIRM WITH THE OPPORTUNITY&apos;S SALES REP ({!Opportunity.OwnerFullName}) OR ACCOUNT OWNER ({!Account.OwnerFullName}) BEFORE MOVING FORWARD WITH ANY MARKETING OBLIGATIONS FOR THIS ACCOUNT.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Horaire d&apos;équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Horaires de l&apos;équipe</value>
+    </caseValues>
+    <fields>
+        <help>La date à laquelle le programme commence.</help>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Notes pour le calendrier de l&apos;équipe.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Envoyer des notifications</help>
+        <label><!-- Send Notifications --></label>
+        <name>pse__Send_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Le statut du planning de l&apos;équipe.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>Attribué</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>En attendant</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Une recherche sur le modèle de planning d&apos;équipe.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L&apos;équipe associée à l&apos;horaire.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du calendrier de l&apos;équipe</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

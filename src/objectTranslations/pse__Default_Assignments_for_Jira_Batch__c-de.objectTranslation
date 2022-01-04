@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Standardzuweisungen für Jira Batch</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Standardzuweisungen für Jira-Chargen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Standardzuweisungen für Jira Batch --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Standardzuweisungen für Jira-Chargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Standardzuweisungen für Jira Batch --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Standardzuweisungen für Jira-Chargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Standardzuweisungen für Jira Batch --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Standardzuweisungen für Jira-Chargen --></value>
+    </caseValues>
+    <fields>
+        <help>Eindeutiger Bezeichner für den aktuellen Batch-Apex-Job.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_ID__c</name>
+    </fields>
+    <fields>
+        <help>Suchen Sie nach dem Stapelverarbeitungsdatensatz. Der Stapelverarbeitungsdatensatz wird automatisch gelöscht, wenn der Vorgang erfolgreich abgeschlossen wurde.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Chargenprotokoll-ID.</help>
+        <label><!-- Default Assignments for Jira Batch ID --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_ID__c</name>
+    </fields>
+    <fields>
+        <help>Die Art der Benachrichtigung, die nach Abschluss des Prozesses gesendet wurde: Erfolgreich, Fehlgeschlagen oder Gemischt.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>Der aktuelle Status des Stapeljobs: &quot;Verarbeitung&quot;, &quot;Abgeschlossen&quot; oder &quot;Fehler&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>wird bearbeitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Abbruch lautet.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Fehler ist.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Extern ist.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_of_External__c</name>
+    </fields>
+    <fields>
+        <help>Die Gesamtzahl der Protokolle.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_of_Logs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Standardzuweisungen für Jira-Chargenname</nameFieldLabel>
+</CustomObjectTranslation>

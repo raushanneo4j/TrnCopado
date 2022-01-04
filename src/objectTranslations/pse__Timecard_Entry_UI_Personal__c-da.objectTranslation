@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Personal --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Personal --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Hvis du vælger, på siden Tidsmæssig indtastning, når brugere klikker eller taber op af tasktidsceller eller manuelt indtaster nul, opdateres projekt / tildelingsværdien til nul. Standardværdien er falsk. Opgavetidens indtastningstilstand skal indstilles til Beregnet.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, kan projektet eller opgaven ændres, så længe tidskortets status er en af ​​&quot;tidskort-rediger status-værdier / Timecard_edit_status_values__c&quot; værdier.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>De felter der skal bruges som værktøjstip til opgaver. Fuldt kvalificeret (med navneområde, hvis det er relevant), er der behov for case-sensitive feltnavne</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det fakturerbare felt er konfigureret til at blive vist, bestemmer, om det skal vises til venstre eller højre for timer i timecard-overskriftslinjen på Timecard-brugergrænsefladen.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om tidskort med nøjagtig samme kombination af uge, projekt, tildeling, ressource, fakturabel, projekt, metode, placering, rejse kombineres på Timecard Entry-siden.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markeret Yderligere felter kopieres fra tidskort fra forrige uge.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markeret ETC-felt vil blive kopieret fra tidligere uger tidskort</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markerede timefelter som mandag timer, tirsdag timer osv. Vil blive kopieret fra tidligere uger tidskort</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markerede Placeringsinformationsfelter som Placering Mv. Osv. Vil blive kopieret fra tidligere uges tidskort</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markeret Metodologi felt vil blive kopieret fra tidligere uger tidskort</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markerede milepæle kopieres fra forrige uges tidskort</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markerede Notes kopieres fra tidskort fra forrige uge</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markeret fasefelt kopieres fra tidskort fra forrige uge</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis den er indstillet til ægtefelt, fylder funktionen Copy From Schedule i feltet Noter for hver dag på tidskortet, hvis den finder opgaver for daglige optegnelser til opgave på opgaverne for den pågældende dag. (standard false)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Når du er valgt, kopieres opgaverstiden fra den foregående uges tidskort.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Når det er valgt, kopieres opgaveoplysninger fra den foregående uges tidskort.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markerede rejseinformationsfelter som Travel Week, vil Travel Mon etc blive kopieret fra tidligere uger tidskort</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Når ægte og ressourceopslag popup på det nye timecard UI returnerer kun ét resultat, bliver popup-vinduet Ressource automatisk lukket, og ressourcefeltet er indstillet til returneret ressource.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Hvis sandt, fakturerbart drop down-felt på tidskort ui vil blive vist som deaktiveret, dvs. ikke-redigerbart af brugeren.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI cache alle de tildelte opgaver / projekt sammen med milepæle, mens det laster. Dette kan føre til salgsstyrelsens visningsgrænse, hvis brugeren har mange opgaver / projekter. Indstilling af denne konfigurationsværdi til ægte vil minimere denne cache.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Disse mange tomme tidskort linjer vil blive tilføjet, når tilføjes linjer knappen vil blive klikket.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>Dette er det mindste antal linjer, der altid vil være til rådighed for ny timecard-indtastning.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om den fakturerbare kolonne på Timecard Entry-siden er skjult. Når det er sandt, er kolonnen skjult, og den afkrydsningsfaktive boks er som standard valgt. Standardværdien er falsk.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om knappen Kopier fra forrige uge på det nye tidsskærmbrugerikon er skjult. Standardværdien er falsk.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Denne indstilling er et duplikat og kan fjernes i en fremtidig udgivelse. Rediger venligst indstillingen &quot;Skjul kopi fra foregående uge knap&quot; i stedet.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om knappen Kopioversigter på det nye timecard-brugergrænsefladen er skjult. Standardværdien er falsk.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sandt, er linket Udvid opgaver eller Skjul opgaver skjult på siden Tidsmand. Standardværdien er falsk.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sandt, er kolonnen Noter, der normalt vises på siden Timecard Entry, skjult. Standardværdien er falsk.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om knappen Gem på det nye tidskort-brugerinterface er skjult. Standardværdien er falsk.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sandt, er &apos;Alle opgaver&apos; og &apos;Mine opgaver&apos; -knapper gemt i popup-vinduet Tilføj opgaver på siden Tidspunkter. Standardværdien er falsk.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om indlæsningsknappen på den nye tidskort brugergrænseflade er skjult. Standardværdien er falsk.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, og Opgavetid Entry-tilstand er indstillet til Beregnet, vises kun en række opgaver timer. Standardværdien af ​​afkrydsningsfeltet er klart.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Hvis ægte og Opgavetid Entry-tilstand er Aktuel, vises Vis eller Rediger detaljer-linkene, der vises, når du svinger over en tidslinjelinje. Hvis ægte og Opgavetid indtastningstilstand ikke er Aktuel, er fanen Notes gemt på linkene. Standardværdien er falsk</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>Det givne felt / config bruges til at farvekode dato-kolonne-overskriften for en Arbejdskalenderferie for den valgte Ressource på Timecard-brugergrænsefladen.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer pixelbredden af ​​timecard-timeceller på Timecard V15 Entry-siden.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antal timer, en ressource kan indtaste på en enkelt tidskortdag. Hvis det samlede antal timer for en ressource overstiger dette beløb på en enkelt tidsdag, vises en fejlmeddelelse.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antal timer, en ressource kan indtaste i en timecard-uge. Hvis der overskrides, vises en fejlmeddelelse. Indtast en procentværdi og et symbol, f.eks. 90%, for at angive en maksimal procentdel af arbejdskalender timer.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis feltet Metodologi er konfigureret til at blive vist, bestemmer, om det skal vises til venstre eller højre for timer i tidskortets overskriftslinje i Timecard-brugergrænsefladen.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Denne konfigurationsflag bestemmer, om metodefeltet skal vises på noter popup eller på forsiden.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Hvis Milestone-feltet er konfigureret til at blive vist, bestemmer, om det skal vises til venstre eller højre for timer i timecard-overskriftslinjen i Timecard-brugergrænsefladen.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Denne konfigurationsflag bestemmer, om milepæl felt skal vises på notater popup eller på forsiden.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Minimum antal timer, en ressource kan indtaste i en timecard-uge. Hvis ugentlige timer er lavere end dette beløb, vises en fejlmeddelelse. Indtast en procentværdi og et symbol, f.eks. 30%, for at angive en minimumsprocent af arbejdskalender timer.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, kan tildelingen kaldenavn redigeres ellers ikke.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vil lokaliseringsfeltet blive vist i tidsindstillingsnotat popup dialog</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vises den primære placering-rullemenu på TC-brugergrænsefladen.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Hvis fasefeltet er konfigureret til at blive vist, bestemmer, om det skal vises til venstre eller højre for timer i timecard-overskriftslinjen i Timecard-brugergrænsefladen.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Dette konfigureringsflag bestemmer, om fasefelt skal vises på notater popup eller på forsiden.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, er opgaver forudbefolket for den valgte bruger og projekt. Standardværdien af ​​afkrydsningsfeltet er klart.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Hvis feltet Primært sted er konfigureret til at blive vist, bestemmer, om det skal vises til venstre eller højre for timer i timecard-overskriftslinjen i Timecard-brugergrænsefladen.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Når den primære tilladte placering er angivet til sand, afgøres, om feltet Primær placering vises i afsnittet Noter eller tidslinjelinjen.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>timecard projekt / Assignment konto drop down visningsværdi</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>Felter i dette feltsæt definerer de felter, der vises i værktøjstipen til projektopgavelinjen, i Log a Timecard med Opgavetid UI.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Assignment project editable after save&quot; giver brugeradgang til at ændre projektet / opgaven for de gemte tidskort, men dette kræver, at revisionsnotat indstilles til tidskort. Revisionsnotater kan indstilles af denne konfiguration.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Liste over projektfelter, der skal vises som værktøjstip på tidskort indtastning ui.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Når de er udvalgt, er de opgaver, der er forudlagt, baseret på den valgte opgave. Feltet &quot;Begræns til opgaver med matchende opgave&quot; i popup-vinduet Vælg opgaver markeres som standard. Begræns opgave baseret på opgave er deaktiveret som standard.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Når de er udvalgt, er de opgaver, der er forudlagt, baseret på den valgte milepæl. Feltet &quot;Begræns til opgaver med matchende milepæl&quot; i popup-vinduet Vælg opgaver markeres som standard. Begræns opgaver baseret på Milestone er valgt som standard.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, vil tilpasninger til bredde, rækkefølge og synlighed af kolonner i Sencha TImecard blive husket pr. Bruger.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>API-navne på tildelingsfelter, der skal vises, når du svinger over værktøjstipikonet i skemaafsnittet på et tidskort.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>API-navne på projektfelter, der skal vises, når du svinger over værktøjstipikonet i skemaafsnittet på et tidskort.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Givet konfiguration er brugt til at vise varsling, hvis ikke-nulværdi er angivet i tidskortafsnittet for dagen markeret som ferie (med nul timer) i den valgte Ressource-arbejdskalender.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>Givet konfiguration er brugt til at vise varsling, hvis ikke-nulværdi i indtastet i tidsplangennemsnitsektionen for dagen har nul timer i det valgte Resource work kalenderdagsmønster.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vises fakturerbare ikke-fakturerbare timer via hovertekst på hver total i totalsraden for alle de daglige kolonner og summekolon på tidskort i Time Entry.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om popup-popup-popup-vinduet vises på siden Tidsmæssig indtastning, når du dobbeltklikker på en redigerbar time-celle på en tidssekvensrække eller tryk på nedepilen, mens den pågældende celle er valgt.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Indeholder felt, hvis værdi vil blive vist på TC UI milestone drop down liste. Hvis disse mangler / null, fortsætter TC-brugergruppen bare med at vise feltene Milestone-navn i de tilgængelige milepæle i rullemenuen. Ingen opslag __r referencer er supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config bruges til at styre display-tilbagekaldelseslinket på hvert indsendt tidskort. Når du klikker på det, åbnes en tilbagekaldelsesoverlay, hvor vi skal indtaste kommentaren og tilbagekalde godkendelsesanmodningen til tidskort.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Kontrolleret betyder, at tidsplanet vil blive vist udvidet på Timecard-indgangen som standard.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om afkrydsningsfelterne Rejsen på det nye timecard-brugerinterface skal vises. Standardværdien er sand.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vises tidsplanoversigtsafsnittet på tidskort ui ellers ikke</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Hvis den er sat til ægte, viser værktøjstipikonet ved siden af ​​tildelingsnavnet i Schedule-sektionen af ​​TC UI.Default false (eksisterende opførsel, ingen værktøjstip-kolonne)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config for at vise eller skjule etc felt</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vises timecard-metodologi-feltet på timecard-brugergrænsefladen.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config for at vise eller skjule milepælvalgsliste</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vises tidskortfasefelt på timecard-brugergrænsefladen.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Når falsk, vises kolonnen Status / tilbagekaldelse straks til højre for kolonnen Notes. Når det er sandt, vises status / tilbagekaldelse til højre for eventuelle yderligere felter.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt sæt brugt af Timecard objektet. Felter i dette feltsæt definerer de redigerbare felter vist til venstre for timer i tidskortets overskriftslinje i Timecard-brugergrænsefladen.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt sæt brugt af Timecard objektet. Felter i dette felt sæt definerer de redigerbare felter i tidskortets overskriftslinje i Timecard-brugergrænsefladen.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt sæt brugt af Timecard objektet. Felter i dette felt sæt definerer skrivebeskyttede felter i tidskortets overskriftslinje i Timecard-brugergrænsefladen</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV til at angive Timecard Header-felter til kopiering fra tidsplan. Kun disse timefelter er gyldige for denne konfiguration &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt sæt brugt af Timecard objektet. Felter i dette felt sæt definerer redigerbare felter i afsnittet Noter i tidskort linjer i Timecard-brugergrænsefladen.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt sæt brugt af Timecard objektet. Felter i dette felt sæt definerer skrivebeskyttede felter i afsnittet Noter i tidskortlinjer i Timecard-brugergrænsefladen.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Felt bruges til at holde coma (,) adskilte liste over tidskortstatusværdier, der vil gemme sig på TC-brugergrænsefladen.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Angiver opgaver, der skal skjules, når de forudindstilles i Timecards, medmindre de har tilknyttet loggetid. Værdien er en kommasepareret liste over statuser.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Angiver om ressourcen kun kan vælge opgaver, som de har en opgave til, når de indtaster tid mod projektopgaver. Når denne valgmulighed ikke er valgt, kan brugerne aktivere denne funktion på siden Tidsmand.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Definerer filtreringsadfærd på opgave datoer, når du vælger opgaver for at indtaste tid mod. Indstil til Ingen eller Overlappe. Hvis Intet, sker der ingen filtrering. Hvis overlapning er opført, vises opgaver kun, når tidskortet og de valgbare opgaver har en vis overlapning på datoer.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Tidsindgangstilstanden, der skal bruges, når du indtaster opgavetid for en tidslinjerække. Du kan vælge en af ​​disse værdier: Juster op, Aktuel, Beregnet eller Freeform. Standardværdien er Aktuel.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af øverste opgaver, der skal indlæses, vises på Projekt / overdragelse overlay</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Antal uger, for hvilke overordnede opgaver / projekter, der skal indlæses for at blive vist på projekt / overdragelse af overdragelser</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Antal topprojekter, der skal indlæses for at blive vist på Projekt / overdragelse overlay</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Giver dig mulighed for at skifte din foretrukne metode til håndtering af synlige felter på siden Timecard Entry. Hvis False, vil PSA bruge konfigurationsindstillinger eller brugerdefinerede indstillinger til at konfigurere brugergrænsefladen. Hvis det er sandt, vil PSA bruge felt sæt til at konfigurere brugergrænsefladen.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om et opgave-id skal bruges, mens du viser opgaver på kortets side</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Given field / config bruges til at farve kode dato kolonneoverskriften for Planlagte 0-timers dage ifølge Schedule Pattern (ikke helligdage) på den valgte Ressource Work Kalender.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Styrer pixelbredden for Milestone dropdown på Timecard Entry UI. Angiv et helt tal til denne værdi, da dette vil gå direkte i bredden.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Styrer pixelbredden for projekt / opgave dropdown på Timecard Entry UI. Angiv et helt tal til denne værdi, da dette vil gå direkte i bredden. For eksempel vil en værdi 300 indstille dropdownbredden til 300px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

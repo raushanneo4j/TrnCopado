@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>קטגוריית פרטי תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>קטגוריות פרטי תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>הערך בפועל הוא סכום החיובים: הוצאות, חיובים: אבני דרך, חיובים: התאמות שונות, וחיובים: כרטיסי זמן.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>שדה פורמולה המייצג את הערך המוצג בדף תחזית חיוב עבור קטגוריית פירוט תחזית חיוב זו.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <help>החיובים בהוצאות.</help>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <help>החיובים לאבני דרך.</help>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>החיובים בגין התאמות שונות.</help>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help>החיובים עבור כרטיסי הזמן.</help>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Detail --></label>
+        <name>pse__Forecast_Enhanced_Detail__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>חפש לביטול תחזית החיוב הפעילה הנוכחית המיושמת בקטגוריית פירוט תחזית החיוב הזו.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>חיפוש למשתמש שיצר את עקיפת החיזוי הפעילה כרגע חלה על קטגוריית פירוט תחזית חיוב זו.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>התאריך והשעה שנוצרו של עקיפת תחזית החיוב הפעילה כרגע חלה על קטגוריית פירוט תחזית החיוב הזו.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>הערות לגבי תחזית החיוב הפעילה כרגע חלה על קטגוריית פירוט תחזית חיוב זו.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>ערך תחזית החיוב הפעילה כרגע חלה על קטגוריית פירוט תחזית חיוב זו.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>המשימות המתוזמנות.</help>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>ערך הצבר המתוזמן הוא הסכום של מתוזמנים: מטלות, מתוזמנים: רשימות RR מוחזקות, מתוזמנות: רשימות לא ארוכות ללא תשלום, ומתוזמנים: אבני דרך.</help>
+        <label><!-- Scheduled Backlog --></label>
+        <name>pse__Scheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <help>בקשות המשאבים המתוזמנות שנקבעו.</help>
+        <label><!-- Scheduled: Held RRs --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>אבני הדרך המתוזמנות.</help>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>בקשות המשאבים לביטול המשא ומתוכנן.</help>
+        <label><!-- Scheduled: Unheld RRs --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>צבר פוטנציאלי, בהקשר של תקופות זמן תמידיות (כל תקופות הזמן).</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Detail Category Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם קטגוריית פרטי תחזית חיוב</nameFieldLabel>
+</CustomObjectTranslation>

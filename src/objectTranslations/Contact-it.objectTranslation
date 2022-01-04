@@ -1,0 +1,2690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Assign Multiple Resources to Project Filter Options --></label>
+        <name>pse__AssignMultiResourceFilterOptions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Assign Multiple Resources to Project Search Columns --></label>
+        <name>pse__AssignMultiResourceSearchColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Planner Columns --></label>
+        <name>pse__Resource_Planner_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Planner Enabled Filters --></label>
+        <name>pse__Resource_Planner_Enabled_Filters</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Tooltip Fieldset --></label>
+        <name>pse__Resource_Tooltip_Field_Set</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SearchResourcesFilterFields --></label>
+        <name>pse__SearchResourcesFilterFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SearchResourcesResultFields --></label>
+        <name>pse__SearchResourcesResultFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ABM Influenced Contact --></label>
+        <name>ABM_Influenced_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ABM Influenced Date (Contact) --></label>
+        <name>ABM_Influenced_Date_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actively Being Sequenced --></label>
+        <name>Actively_Being_Sequenced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allbound ID --></label>
+        <name>Allbound_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary alliances contact dedicated to Neo4j --></help>
+        <label><!-- Alliance Partner Primary (manual) --></label>
+        <name>Alliance_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anonymous Web Source Detail --></label>
+        <name>Anonymous_Web_Source_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anonymous Web Source --></label>
+        <name>Anonymous_Web_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned User ID --></label>
+        <name>Assigned_User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attached To Opportunity --></label>
+        <name>Attached_To_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be used to identity unique Aura users along with email address and will allow us to prevent merging of Aura customer records with standard Neo4j leads and contacts.  This field does not have uniqueness enforced, and is mapped in standard Lead Conversion to the resulting Contact. This field helps those in Analytics operate their ETL processes around the tracking of MRR at the Campaign Member level. --></help>
+        <label><!-- Aura UserID --></label>
+        <name>Aura_UserID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behavior Score --></label>
+        <name>Behavior_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Opt-out --></label>
+        <name>Call_Opt_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification Neo4j L1 --></label>
+        <name>Certification_Neo4j_L1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Lost Date --></label>
+        <name>Closed_Lost_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Date --></label>
+        <name>Closed_Won_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Company&apos;s main phone line --></help>
+        <label><!-- Company Phone --></label>
+        <name>Company_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Contact_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Revenue --></label>
+        <name>Contact_Account_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Count 1 --></label>
+        <name>Contact_Count_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Engagement Link --></label>
+        <name>Contact_Engagement_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Linkedin Profile --></label>
+        <name>Contact_Linkedin_Profile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Admin time stamp field used for auditing purposes and in certain integrations, including RingLead to help accurately determine the winning record that will survive the merge. --></help>
+        <label><!-- Contact Status Change Date --></label>
+        <name>Contact_Status_Change_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Disqualified&quot; and &quot;Recycle&quot; reason codes mapped to the &quot;Contact Status&quot; field. --></help>
+        <label><!-- Contact Status Detail --></label>
+        <name>Contact_Status_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Authority</masterLabel>
+            <translation><!-- Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Data</masterLabel>
+            <translation><!-- Bad Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community</masterLabel>
+            <translation><!-- Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country (not serviced)</masterLabel>
+            <translation><!-- Country (not serviced) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Applicant/Solicitor</masterLabel>
+            <translation><!-- Job Applicant/Solicitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Company</masterLabel>
+            <translation><!-- Left Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Approved Project</masterLabel>
+            <translation><!-- No Approved Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Reason Provided - Marketo Default Disqualified</masterLabel>
+            <translation><!-- No Reason Provided - Marketo Default Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Reason Provided - Marketo Default Recycle</masterLabel>
+            <translation><!-- No Reason Provided - Marketo Default Recycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No budget</masterLabel>
+            <translation><!-- No budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR/Press</masterLabel>
+            <translation><!-- PR/Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timing</masterLabel>
+            <translation><!-- Timing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>Contact_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualified</masterLabel>
+            <translation><!-- Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry</masterLabel>
+            <translation><!-- Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Stage Opportunity</masterLabel>
+            <translation><!-- Late Stage Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MQL</masterLabel>
+            <translation><!-- MQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raw</masterLabel>
+            <translation><!-- Raw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recycle</masterLabel>
+            <translation><!-- Recycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAL</masterLabel>
+            <translation><!-- SAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAO</masterLabel>
+            <translation><!-- SAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SQL</masterLabel>
+            <translation><!-- SQL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates which type of Product Qualified Lead (PQL) that a contact is. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Current PQL Type --></label>
+        <name>Current_PQL_Type__c</name>
+        <picklistValues>
+            <masterLabel>Observer</masterLabel>
+            <translation><!-- Observer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spender</masterLabel>
+            <translation><!-- Spender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worker</masterLabel>
+            <translation><!-- Worker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Status --></label>
+        <name>Current_Sequence_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Step Number --></label>
+        <name>Current_Sequence_Step_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Step Type --></label>
+        <name>Current_Sequence_Step_Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto-Email</masterLabel>
+            <translation><!-- Auto-Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LinkedIn Interact with Post</masterLabel>
+            <translation><!-- LinkedIn Interact with Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LinkedIn Send Connection Request</masterLabel>
+            <translation><!-- LinkedIn Send Connection Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LinkedIn Send Message</masterLabel>
+            <translation><!-- LinkedIn Send Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LinkedIn View Profile</masterLabel>
+            <translation><!-- LinkedIn View Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Email</masterLabel>
+            <translation><!-- Manual Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Task Due Date --></label>
+        <name>Current_Sequence_Task_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upon a successful match, Optimizer populates this field that links the Lead record to a specific D&amp;B Contact ID for display of the correct custom object with D&amp;B data. --></help>
+        <label><!-- ContactToDnB --></label>
+        <name>DNBoptimizer__DnBContactRecord__c</name>
+        <relationshipLabel><!-- ContactToDnB --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Business Name --></label>
+        <name>D_B_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Contact ID --></label>
+        <name>D_B_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Contact Phone --></label>
+        <name>D_B_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B D-U-N-S Number --></label>
+        <name>D_B_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Email Deliverability Score --></label>
+        <name>D_B_Email_Deliverability_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Email Deliverability --></label>
+        <name>D_B_Email_Deliverability__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Email --></label>
+        <name>D_B_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B First Name --></label>
+        <name>D_B_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Job Title --></label>
+        <name>D_B_Job_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Last Name --></label>
+        <name>D_B_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Middle Name --></label>
+        <name>D_B_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Phone Accuracy Score --></label>
+        <name>D_B_Phone_Accuracy_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Phone Accuracy --></label>
+        <name>D_B_Phone_Accuracy__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Prefix --></label>
+        <name>D_B_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address City --></label>
+        <name>D_B_Primary_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Country Code (ISO 2) --></label>
+        <name>D_B_Primary_Address_Country_Code_ISO_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Postal Code --></label>
+        <name>D_B_Primary_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address State Province Abbre --></label>
+        <name>D_B_Primary_Address_State_Province_Abbre__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address State Province --></label>
+        <name>D_B_Primary_Address_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC4 Code 1 Description --></label>
+        <name>D_B_SIC4_Code_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC4 Code 1 --></label>
+        <name>D_B_SIC4_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Suffix --></label>
+        <name>D_B_Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether an AuraDB user has at least one database that contains the naming convention &apos;Production&apos; in it. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Database Name Contains ‘Production’ --></label>
+        <name>Database_Name_Contains_Production__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score: Annual Revenue Range --></label>
+        <name>Demographic_Score_Annual_Revenue_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score: Employee Range --></label>
+        <name>Demographic_Score_Employee_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score: Industry --></label>
+        <name>Demographic_Score_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score: Job Function --></label>
+        <name>Demographic_Score_Job_Function__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score Stored Value --></label>
+        <name>Demographic_Score_Stored_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Score --></label>
+        <name>Demographic_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- DF Title --></label>
+        <name>Dfox_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application Development or Data Science --></help>
+        <label><!-- Discipline --></label>
+        <name>Discipline__c</name>
+        <picklistValues>
+            <masterLabel>Application Development</masterLabel>
+            <translation><!-- Application Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Science</masterLabel>
+            <translation><!-- Data Science --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disqualified Date --></label>
+        <name>Disqualified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disqualified Reason History --></label>
+        <name>Disqualified_Reason_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Double Opt-In Date --></label>
+        <name>Double_Opt_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Double Opt-In --></label>
+        <name>Double_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt-out --></label>
+        <name>Email_Opt_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email (Secondary) --></label>
+        <name>Email_Secondary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Range --></label>
+        <name>Employee_Range__c</name>
+        <picklistValues>
+            <masterLabel>1 to 9</masterLabel>
+            <translation><!-- 1 to 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1,000 to 2,499</masterLabel>
+            <translation><!-- 1,000 to 2,499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 to 19</masterLabel>
+            <translation><!-- 10 to 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10,000+</masterLabel>
+            <translation><!-- 10,000+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 to 249</masterLabel>
+            <translation><!-- 100 to 249 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2,500 to 4,999</masterLabel>
+            <translation><!-- 2,500 to 4,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 to 49</masterLabel>
+            <translation><!-- 20 to 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250 to 499</masterLabel>
+            <translation><!-- 250 to 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5,000 to 9,999</masterLabel>
+            <translation><!-- 5,000 to 9,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 to 99</masterLabel>
+            <translation><!-- 50 to 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 to 999</masterLabel>
+            <translation><!-- 500 to 999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eventbrite ID --></label>
+        <name>Eventbrite_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired SLA - LSO --></label>
+        <name>Expired_SLA_LSO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired SLA - MQL --></label>
+        <name>Expired_SLA_MQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired SLA - SAL --></label>
+        <name>Expired_SLA_SAL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired SLA - SAO --></label>
+        <name>Expired_SLA_SAO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired SLA - SQL --></label>
+        <name>Expired_SLA_SQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fast Track --></label>
+        <name>Fast_Track__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether an Aura user has had least one live Free AuraDB database running within the past 24 hours. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Free Tier User Status --></label>
+        <name>Free_Tier_User_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what global region the Contact falls into based on the shipping country. --></help>
+        <label><!-- Global Territory --></label>
+        <name>Global_Territory_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- A contact who works in a core country --></help>
+        <label><!-- In Core Country --></label>
+        <name>In_Core_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inquiry Original Date --></label>
+        <name>Inquiry_Original_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intent Trigger Type --></label>
+        <name>Intent_Trigger_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attended Industry Conference</masterLabel>
+            <translation><!-- Attended Industry Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engaged with Competitor</masterLabel>
+            <translation><!-- Engaged with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engaged with Industry News</masterLabel>
+            <translation><!-- Engaged with Industry News --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hiring for Specific Roles</masterLabel>
+            <translation><!-- Hiring for Specific Roles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Follower / Started Following</masterLabel>
+            <translation><!-- New Follower / Started Following --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intent Trigger --></label>
+        <name>Intent_Trigger__c</name>
+        <picklistValues>
+            <masterLabel>AWS Reinvent</masterLabel>
+            <translation><!-- AWS Reinvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Management</masterLabel>
+            <translation><!-- Access Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospike</masterLabel>
+            <translation><!-- Aerospike --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aiops</masterLabel>
+            <translation><!-- Aiops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AllegroGraph</masterLabel>
+            <translation><!-- AllegroGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon Neptune</masterLabel>
+            <translation><!-- Amazon Neptune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aml</masterLabel>
+            <translation><!-- Aml --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anti-Money Laundering</masterLabel>
+            <translation><!-- Anti-Money Laundering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ArangoDB</masterLabel>
+            <translation><!-- ArangoDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Fraud</masterLabel>
+            <translation><!-- Bank Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Betweenness Centrality</masterLabel>
+            <translation><!-- Betweenness Centrality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bigdataworld</masterLabel>
+            <translation><!-- Bigdataworld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blazegraph</masterLabel>
+            <translation><!-- Blazegraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California Consumer Privacy Act</masterLabel>
+            <translation><!-- California Consumer Privacy Act --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ccpa</masterLabel>
+            <translation><!-- Ccpa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click Fraud</masterLabel>
+            <translation><!-- Click Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collibra</masterLabel>
+            <translation><!-- Collibra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confluent</masterLabel>
+            <translation><!-- Confluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contant Recommendations</masterLabel>
+            <translation><!-- Contant Recommendations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Context-Based Search</masterLabel>
+            <translation><!-- Context-Based Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cosmos DB</masterLabel>
+            <translation><!-- Cosmos DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer 360</masterLabel>
+            <translation><!-- Customer 360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cypher</masterLabel>
+            <translation><!-- Cypher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cytoscape</masterLabel>
+            <translation><!-- Cytoscape --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D3.Js</masterLabel>
+            <translation><!-- D3.Js --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Deduplication</masterLabel>
+            <translation><!-- Data Deduplication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Lineage</masterLabel>
+            <translation><!-- Data Lineage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Databreach</masterLabel>
+            <translation><!-- Databreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Databricks</masterLabel>
+            <translation><!-- Databricks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datastax Enterprise</masterLabel>
+            <translation><!-- Datastax Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devops</masterLabel>
+            <translation><!-- Devops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Devoxx</masterLabel>
+            <translation><!-- Devoxx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dgraph</masterLabel>
+            <translation><!-- Dgraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DockerCon</masterLabel>
+            <translation><!-- DockerCon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ehcache</masterLabel>
+            <translation><!-- Ehcache --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elasticsearch</masterLabel>
+            <translation><!-- Elasticsearch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee 360</masterLabel>
+            <translation><!-- Employee 360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Data World</masterLabel>
+            <translation><!-- Enterprise Data World --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIMA Europe</masterLabel>
+            <translation><!-- FIMA Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fintech</masterLabel>
+            <translation><!-- Fintech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fosdem</masterLabel>
+            <translation><!-- Fosdem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Detection</masterLabel>
+            <translation><!-- Fraud Detection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Rings</masterLabel>
+            <translation><!-- Fraud Rings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND stack</masterLabel>
+            <translation><!-- GRAND stack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gdpr</masterLabel>
+            <translation><!-- Gdpr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geffi</masterLabel>
+            <translation><!-- Geffi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giraph</masterLabel>
+            <translation><!-- Giraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google IO</masterLabel>
+            <translation><!-- Google IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Next</masterLabel>
+            <translation><!-- Google Next --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Algorithms</masterLabel>
+            <translation><!-- Graph Algorithms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph DB</masterLabel>
+            <translation><!-- Graph DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Database</masterLabel>
+            <translation><!-- Graph Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Databases</masterLabel>
+            <translation><!-- Graph Databases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Day Texas</masterLabel>
+            <translation><!-- Graph Day Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Visualization</masterLabel>
+            <translation><!-- Graph Visualization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphDB</masterLabel>
+            <translation><!-- GraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphQL</masterLabel>
+            <translation><!-- GraphQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphday Texas</masterLabel>
+            <translation><!-- Graphday Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphite</masterLabel>
+            <translation><!-- Graphite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hadoop</masterLabel>
+            <translation><!-- Hadoop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hana Database</masterLabel>
+            <translation><!-- Hana Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazelcast</masterLabel>
+            <translation><!-- Hazelcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hdfs</masterLabel>
+            <translation><!-- Hdfs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity Disambiguation</masterLabel>
+            <translation><!-- Identity Disambiguation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity Management</masterLabel>
+            <translation><!-- Identity Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity Resolution</masterLabel>
+            <translation><!-- Identity Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impact Analysis</masterLabel>
+            <translation><!-- Impact Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influxdb</masterLabel>
+            <translation><!-- Influxdb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JanusGraph</masterLabel>
+            <translation><!-- JanusGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jupiter</masterLabel>
+            <translation><!-- Jupiter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kafka</masterLabel>
+            <translation><!-- Kafka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kdb+</masterLabel>
+            <translation><!-- Kdb+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knimeanalytics</masterLabel>
+            <translation><!-- Knimeanalytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge Graph</masterLabel>
+            <translation><!-- Knowledge Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kubecon</masterLabel>
+            <translation><!-- Kubecon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linkurious</masterLabel>
+            <translation><!-- Linkurious --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lucene</masterLabel>
+            <translation><!-- Lucene --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDM</masterLabel>
+            <translation><!-- MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mdm (Not Mobile Device Management)</masterLabel>
+            <translation><!-- Mdm (Not Mobile Device Management) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memcached</masterLabel>
+            <translation><!-- Memcached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure Cosmos DB</masterLabel>
+            <translation><!-- Microsoft Azure Cosmos DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Build Conference</masterLabel>
+            <translation><!-- Microsoft Build Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Cosmos DB</masterLabel>
+            <translation><!-- Microsoft Cosmos DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Ignite</masterLabel>
+            <translation><!-- Microsoft Ignite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongodb</masterLabel>
+            <translation><!-- Mongodb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monktoberfest</masterLabel>
+            <translation><!-- Monktoberfest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nearest Neighbor</masterLabel>
+            <translation><!-- Nearest Neighbor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j</masterLabel>
+            <translation><!-- Neo4j --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neptune</masterLabel>
+            <translation><!-- Neptune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Management</masterLabel>
+            <translation><!-- Network Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Security</masterLabel>
+            <translation><!-- Network Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Topology</masterLabel>
+            <translation><!-- Network Topology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Node4J</masterLabel>
+            <translation><!-- Node4J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nosql</masterLabel>
+            <translation><!-- Nosql --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opentsdb</masterLabel>
+            <translation><!-- Opentsdb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OrientDB</masterLabel>
+            <translation><!-- OrientDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oscon</masterLabel>
+            <translation><!-- Oscon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pagerank</masterLabel>
+            <translation><!-- Pagerank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient 360</masterLabel>
+            <translation><!-- Patient 360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Recommendations</masterLabel>
+            <translation><!-- Pricing Recommendations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product 360</masterLabel>
+            <translation><!-- Product 360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Recommendations</masterLabel>
+            <translation><!-- Product Recommendations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prometheus</masterLabel>
+            <translation><!-- Prometheus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Graph</masterLabel>
+            <translation><!-- Property Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pycon</masterLabel>
+            <translation><!-- Pycon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qcon San Francisco</masterLabel>
+            <translation><!-- Qcon San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommendation Engine</masterLabel>
+            <translation><!-- Recommendation Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommender Engine</masterLabel>
+            <translation><!-- Recommender Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redisgraph</masterLabel>
+            <translation><!-- Redisgraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riak Kv</masterLabel>
+            <translation><!-- Riak Kv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rrdtool</masterLabel>
+            <translation><!-- Rrdtool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Recommendations</masterLabel>
+            <translation><!-- Service Recommendations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Ticket Processing</masterLabel>
+            <translation><!-- Service Ticket Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solr</masterLabel>
+            <translation><!-- Solr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spark</masterLabel>
+            <translation><!-- Spark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sparksummit</masterLabel>
+            <translation><!-- Sparksummit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Splunk</masterLabel>
+            <translation><!-- Splunk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stardog</masterLabel>
+            <translation><!-- Stardog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strangeloopneo4J</masterLabel>
+            <translation><!-- Strangeloopneo4J --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strataworld</masterLabel>
+            <translation><!-- Strataworld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Goto Con</masterLabel>
+            <translation><!-- The Goto Con --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TigerGraph</masterLabel>
+            <translation><!-- TigerGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactions Fraud</masterLabel>
+            <translation><!-- Transactions Fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtuoso</masterLabel>
+            <translation><!-- Virtuoso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Websummit Lisbon</masterLabel>
+            <translation><!-- Websummit Lisbon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wwdc</masterLabel>
+            <translation><!-- Wwdc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Processed --></label>
+        <name>Is_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Function --></label>
+        <name>Job_Function__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation><!-- Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Executive</masterLabel>
+            <translation><!-- Business Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Analyst</masterLabel>
+            <translation><!-- Data Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database Administrator (DBA)</masterLabel>
+            <translation><!-- Database Administrator (DBA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Manager</masterLabel>
+            <translation><!-- Delivery Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Manager/Tech Lead/Director</masterLabel>
+            <translation><!-- Development Manager/Tech Lead/Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Executive (CIO, CTO, VP Engineering..)</masterLabel>
+            <translation><!-- IT Executive (CIO, CTO, VP Engineering..) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Assistant</masterLabel>
+            <translation><!-- Personal Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Project Management</masterLabel>
+            <translation><!-- Product/Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing</masterLabel>
+            <translation><!-- Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Developer/Engineer</masterLabel>
+            <translation><!-- Software Developer/Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Level --></label>
+        <name>Job_Level__c</name>
+        <picklistValues>
+            <masterLabel>Admin/Administrator</masterLabel>
+            <translation><!-- Admin/Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst/Strategist</masterLabel>
+            <translation><!-- Analyst/Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief (CXO)</masterLabel>
+            <translation><!-- Chief (CXO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Contact --></label>
+        <name>Key_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Member Token --></label>
+        <name>LID__LinkedIn_Member_Token__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field automatically updated by LinkedIn Sales Navigator Data Validation. “Not at Company” means Contact is not with associated Account based on LinkedIn profile. No value indicates LinkedIn has no feedback to share. --></help>
+        <label><!-- Not at Company Flag --></label>
+        <name>LID__No_longer_at_Company__c</name>
+        <picklistValues>
+            <masterLabel>Ignore</masterLabel>
+            <translation><!-- Ignore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not at Company</masterLabel>
+            <translation><!-- Not at Company --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - Closed Won --></label>
+        <name>Last_Touch_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - Inquiry --></label>
+        <name>Last_Touch_Inquiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - Late Stage --></label>
+        <name>Last_Touch_Late_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - MQL --></label>
+        <name>Last_Touch_MQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - SAL --></label>
+        <name>Last_Touch_SAL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - SAO --></label>
+        <name>Last_Touch_SAO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Touch - SQL --></label>
+        <name>Last_Touch_SQL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Late Stage Opportunity Date --></label>
+        <name>Late_Stage_Opportunity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The grade of a lead to identify leads that are most likely to buy. --></help>
+        <label><!-- Lead Grade --></label>
+        <name>Lead_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead ID --></label>
+        <name>Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Detail --></label>
+        <name>Lead_Source_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Type --></label>
+        <name>Lead_Source_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LD Segment --></label>
+        <name>LeanData__LD_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Buyer Persona --></label>
+        <name>LeanData__Matched_Buyer_Persona__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Modified Score --></label>
+        <name>LeanData__Modified_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Action --></label>
+        <name>LeanData__Routing_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Info --></label>
+        <name>LeanData__Status_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag --></label>
+        <name>LeanData__Tag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the aggregate number of live databases (Free + Pro) across all AuraDB users who share the same company domain. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Live Database Count (Aggregate) --></label>
+        <name>Live_Database_Count_Aggregate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the number of live databases (Free + Pro) that an AuraDB user has had running within the past 24 hours. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Live Database Count --></label>
+        <name>Live_Database_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the aggregate size of live databases (Free + Pro) across all AuraDB users who share the same company domain. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Live GB Size (Aggregate) --></label>
+        <name>Live_GB_Size_Aggregate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the aggregate size of all live databases (Free + Pro) that an AuraDB user has had running within the past 24 hours. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Live GB Size --></label>
+        <name>Live_GB_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- MQL Count --></label>
+        <name>MQL_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- MQL Date --></label>
+        <name>MQL_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MQL Original Date --></label>
+        <name>MQL_Original_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Qualified Date --></label>
+        <name>Marketing_Qualified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this checkbox if this Contact should receive the Marketplace order. --></help>
+        <label><!-- Marketplace Order --></label>
+        <name>Marketplace_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meets Enterprise Criteria --></label>
+        <name>Meets_Enterprise_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- A contact who meets the Mid-Market Criteria --></help>
+        <label><!-- Meets Mid-Market Criteria --></label>
+        <name>Meets_Mid_Market_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Event Questions --></label>
+        <name>Most_Recent_Event_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Active Sequence --></label>
+        <name>Name_of_Active_Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Neo4j Aura --></label>
+        <name>Neo4j_Aura__c</name>
+    </fields>
+    <fields>
+        <label><!-- Neo4j Certified --></label>
+        <name>Neo4j_Certified__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Longer With Company --></label>
+        <name>No_Longer_With_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains the name of the social media platform where the Contact last interacted with Neo4j&apos;s content. For example, if the Contact likes or comments on a Neo4j post on LinkedIn, the value displayed in the field will be ‘LinkedIn’. The field is automatically populated by Oktopost. --></help>
+        <label><!-- Social Last Source --></label>
+        <name>Oktopost_Social_Last_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opt-In Date --></label>
+        <name>Opt_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt-In Notes --></label>
+        <name>Opt_In_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt-In --></label>
+        <name>Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Use Case --></label>
+        <name>Other_Use_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Campaign --></label>
+        <name>Outbound_Campaign__c</name>
+        <picklistValues>
+            <masterLabel>Art Thainuruk</masterLabel>
+            <translation><!-- Art Thainuruk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candace Shin</masterLabel>
+            <translation><!-- Candace Shin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hessan Haiderzada</masterLabel>
+            <translation><!-- Hessan Haiderzada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Julio Bayona</masterLabel>
+            <translation><!-- Julio Bayona --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keoni Gaspar</masterLabel>
+            <translation><!-- Keoni Gaspar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matzen Shirley</masterLabel>
+            <translation><!-- Matzen Shirley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam Magnus</masterLabel>
+            <translation><!-- Sam Magnus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherman Urrutia</masterLabel>
+            <translation><!-- Sherman Urrutia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanessa Moultson</masterLabel>
+            <translation><!-- Vanessa Moultson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outreach Status --></label>
+        <name>Outeach_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether an AuraDB user&apos;s in-product behavior and demographic data qualify it for a sales conversation. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- PQL Status --></label>
+        <name>PQL_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary marketing contact dedicated to Neo4j --></help>
+        <label><!-- Partner Marketing Contact (manual) --></label>
+        <name>Partner_Marketing_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Role --></label>
+        <name>Partner_Role__c</name>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pause Lifecycle --></label>
+        <name>Pause_Lifecycle__c</name>
+    </fields>
+    <fields>
+        <help><!-- C Suite, Central IT, or Practitioner --></help>
+        <label><!-- Persona --></label>
+        <name>Persona__c</name>
+        <picklistValues>
+            <masterLabel>C Suite</masterLabel>
+            <translation><!-- C Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central IT</masterLabel>
+            <translation><!-- Central IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practitioner</masterLabel>
+            <translation><!-- Practitioner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether an Aura user has had at least one live Pro AuraDB database running within the past 24 hours. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Pro Tier User Status --></label>
+        <name>Pro_Tier_User_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCM Stage --></label>
+        <name>RCM_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Raw Original Date --></label>
+        <name>Raw_Original_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycle Date --></label>
+        <name>Recycle_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycle Reason History --></label>
+        <name>Recycle_Reason_History__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what regional territory the Contact falls into based on the shipping country and/or state. Auto-populated. --></help>
+        <label><!-- Regional Territory --></label>
+        <name>RegionalTerritoryContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consider Updates After --></label>
+        <name>RingLeadTrigger__Consider_Updates_After__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>RingLeadTrigger__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App Field --></label>
+        <name>RingLeadTrigger__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>RingLeadTrigger__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Count --></label>
+        <name>RingLeadTrigger__RingLead_Processed_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Created --></label>
+        <name>RingLeadTrigger__Trigger_Type_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Updated --></label>
+        <name>RingLeadTrigger__Trigger_Type_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates when the RingLead DMS webhook has finished processing a new Marketo record and it can be synced to SFDC. --></help>
+        <label><!-- RingLead DMS Status --></label>
+        <name>RingLead_DMS_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the field values from the losing record in a merge. It is auto-populated by RingLead. --></help>
+        <label><!-- RingLead Overwritten Field Values --></label>
+        <name>RingLead_Overwritten_Field_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role In Purchasing --></label>
+        <name>Role_In_Purchasing__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Payable Contact</masterLabel>
+            <translation><!-- Accounts Payable Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champion</masterLabel>
+            <translation><!-- Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Determine Need</masterLabel>
+            <translation><!-- Determine Need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluate Products/Services</masterLabel>
+            <translation><!-- Evaluate Products/Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Decision Maker</masterLabel>
+            <translation><!-- Financial Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implement Products/Services</masterLabel>
+            <translation><!-- Implement Products/Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer With Company</masterLabel>
+            <translation><!-- No Longer With Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Account Contact</masterLabel>
+            <translation><!-- Primary Account Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing Team</masterLabel>
+            <translation><!-- Purchasing Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommend and Specify Products/Services</masterLabel>
+            <translation><!-- Recommend and Specify Products/Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Decision Maker</masterLabel>
+            <translation><!-- Technical Decision Maker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAL Date --></label>
+        <name>SAL_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAL Original Date --></label>
+        <name>SAL_Original_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAO Date --></label>
+        <name>SAO_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Contact ID --></label>
+        <name>SFDC_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SQL Date --></label>
+        <name>SQL_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SQL Original Date --></label>
+        <name>SQL_Original_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Target Account Status --></label>
+        <name>Sales_Target_Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Opt-In Date --></label>
+        <name>Single_Opt_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Opt-In --></label>
+        <name>Single_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Opt-In Date --></label>
+        <name>Soft_Opt_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Opt-In --></label>
+        <name>Soft_Opt_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates subscription to partner communications such as newsletter, webinar --></help>
+        <label><!-- Subscription:Partner Newsletter (manual) --></label>
+        <name>Subscription_Partner_Newsletter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Contact Text --></label>
+        <name>Support_Contact_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Contact --></label>
+        <name>Support_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populated by Outreach. Will display &quot;1&quot; when a record is synced from Outreach to Salesforce. --></help>
+        <label><!-- Synced from Outreach --></label>
+        <name>Synced_from_Outreach__c</name>
+    </fields>
+    <fields>
+        <help><!-- A contact who works in a target industry --></help>
+        <label><!-- Target Industry --></label>
+        <name>Target_Industry__c</name>
+    </fields>
+    <fields>
+        <help><!-- A contact who is the target persona --></help>
+        <label><!-- Target Persona --></label>
+        <name>Target_Persona__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempMailingAddress --></label>
+        <name>TempMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempMailingCity --></label>
+        <name>TempMailingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempMailingCountry --></label>
+        <name>TempMailingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempMailingPostalCode --></label>
+        <name>TempMailingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempMailingState --></label>
+        <name>TempMailingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Opt-out --></label>
+        <name>Text_Opt_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Frame 1 --></label>
+        <name>Time_Frame_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- US Territory (Contact) --></label>
+        <name>US_Territory_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Dupes Ignored --></label>
+        <name>UniqueEntry__Contact_Dupes_Ignored__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>UniqueEntry__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- EnrichedOn --></label>
+        <name>UniqueEntry__EnrichedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Dupes Ignored --></label>
+        <name>UniqueEntry__Lead_Dupes_Ignored__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App Field --></label>
+        <name>UniqueEntry__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>UniqueEntry__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ringlead Id --></label>
+        <name>UniqueEntry__Ringlead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Case Type --></label>
+        <name>Use_Case_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the relative volume of queries an AuraDB user has run over the past 14 days. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- User Query Activity --></label>
+        <name>User_Query_Activity__c</name>
+        <picklistValues>
+            <masterLabel>Above Average</masterLabel>
+            <translation><!-- Above Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below Average</masterLabel>
+            <translation><!-- Below Average --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates the relative volume of queries an AuraDB user has run over the past 14 days. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- User Usage Cadence --></label>
+        <name>User_Usage_Cadence__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates the number of support tickets that an AuraDB user has submitted over the past 30 days. This field is updated daily by Marketo that receives its data from Segment managed by the Aura Self-Serve Growth Team. --></help>
+        <label><!-- Zendesk Tickets Submitted (last 30 days) --></label>
+        <name>Zendesk_Tickets_Submitted_last_30_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Access Date --></label>
+        <name>appirio_core__Last_Access_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Licensed Features --></label>
+        <name>appirio_core__Licensed_Features__c</name>
+        <picklistValues>
+            <masterLabel>Expenses Only</masterLabel>
+            <translation>Solo spese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Enrollment</masterLabel>
+            <translation>Aperte le iscrizioni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation>Gestione di progetto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource</masterLabel>
+            <translation>Risorsa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard Only</masterLabel>
+            <translation>Solo segnapunti</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PIN --></label>
+        <name>appirio_core__PIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad Campaign Name (FT) --></label>
+        <name>bizible2__Ad_Campaign_Name_FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ad Campaign Name (LC) --></label>
+        <name>bizible2__Ad_Campaign_Name_LC__c</name>
+    </fields>
+    <fields>
+        <label><!-- BizibleId --></label>
+        <name>bizible2__BizibleId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landing Page (FT) --></label>
+        <name>bizible2__Landing_Page_FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landing Page (LC) --></label>
+        <name>bizible2__Landing_Page_LC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of marketing activity --></help>
+        <label><!-- Marketing Channel (FT) --></label>
+        <name>bizible2__Marketing_Channel_FT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of marketing activity --></help>
+        <label><!-- Marketing Channel (LC) --></label>
+        <name>bizible2__Marketing_Channel_LC__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the session activity occurred --></help>
+        <label><!-- Touchpoint Date (FT) --></label>
+        <name>bizible2__Touchpoint_Date_FT__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the session activity occurred --></help>
+        <label><!-- Touchpoint Date (LC) --></label>
+        <name>bizible2__Touchpoint_Date_LC__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the referrer --></help>
+        <label><!-- Touchpoint Source (FT) --></label>
+        <name>bizible2__Touchpoint_Source_FT__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the referrer --></help>
+        <label><!-- Touchpoint Source (LC) --></label>
+        <name>bizible2__Touchpoint_Source_LC__c</name>
+    </fields>
+    <fields>
+        <label><!-- DF First Name --></label>
+        <name>dfox_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DF Last Name --></label>
+        <name>dfox_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DF Phone --></label>
+        <name>dfox_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Contact ID --></label>
+        <name>iSell__Avention_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketo Acquisition Date --></help>
+        <label><!-- Acquisition Date --></label>
+        <name>mkto71_Acquisition_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketo Acquisition Program --></help>
+        <label><!-- Acquisition Program --></label>
+        <name>mkto71_Acquisition_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred City --></label>
+        <name>mkto71_Inferred_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Company --></label>
+        <name>mkto71_Inferred_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Country --></label>
+        <name>mkto71_Inferred_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Metropolitan Area --></label>
+        <name>mkto71_Inferred_Metropolitan_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Phone Area Code --></label>
+        <name>mkto71_Inferred_Phone_Area_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Postal Code --></label>
+        <name>mkto71_Inferred_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred State Region --></label>
+        <name>mkto71_Inferred_State_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketo Lead Score --></help>
+        <label><!-- Score --></label>
+        <name>mkto71_Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Referrer --></label>
+        <name>mkto71_Original_Referrer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Seach Engine --></label>
+        <name>mkto71_Original_Search_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Search Phrase --></label>
+        <name>mkto71_Original_Search_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Lead ID --></label>
+        <name>mkto_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add to Marketo Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Date --></label>
+        <name>mkto_si__HideDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Date --></label>
+        <name>mkto_si__Last_Interesting_Moment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Desc --></label>
+        <name>mkto_si__Last_Interesting_Moment_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Source --></label>
+        <name>mkto_si__Last_Interesting_Moment_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment Type --></label>
+        <name>mkto_si__Last_Interesting_Moment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Interesting Moment --></label>
+        <name>mkto_si__Last_Interesting_Moment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mkto Lead Score --></label>
+        <name>mkto_si__Mkto_Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engagement --></label>
+        <name>mkto_si__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Score Value --></label>
+        <name>mkto_si__Relative_Score_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Score --></label>
+        <name>mkto_si__Relative_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Insight --></label>
+        <name>mkto_si__Sales_Insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Urgency Value --></label>
+        <name>mkto_si__Urgency_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Urgency --></label>
+        <name>mkto_si__Urgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- View in Marketo --></label>
+        <name>mkto_si__View_in_Marketo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync to Marketo --></label>
+        <name>mkto_sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization --></label>
+        <name>psa_report__Hist_Sch_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Name --></label>
+        <name>psa_report__Resource_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Resource Correlation ID --></label>
+        <name>pse__API_Resource_Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action: Calculate Utilization --></label>
+        <name>pse__Action_Calculate_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action: Update Current Time Period --></label>
+        <name>pse__Action_Update_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actuals: Last Update Date --></label>
+        <name>pse__Actuals_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actuals: Last Updated By --></label>
+        <name>pse__Actuals_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Contacts (Actuals: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Controlla questo se la risorsa deve essere trattata come risorse &quot;globali&quot;. Le risorse &quot;globali&quot; possono inserire il tempo per qualsiasi progetto, anche se normalmente tale progetto richiede assegnazioni per l&apos;inserimento temporale.</help>
+        <label><!-- Allow Timecards Without Assignment --></label>
+        <name>pse__Allow_Timecards_Without_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours (External) --></label>
+        <name>pse__Billable_External_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours (Internal) --></label>
+        <name>pse__Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credited Hours --></label>
+        <name>pse__Credited_Non_Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Time Period End Date --></label>
+        <name>pse__Current_Time_Period_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Time Period --></label>
+        <name>pse__Current_Time_Period__c</name>
+        <relationshipLabel><!-- Current Time Period For Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Cost Rate is Daily Rate --></label>
+        <name>pse__Daily_Default_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Cost Rate --></label>
+        <name>pse__Default_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Questo registra la chiave di correlazione del lavoratore utilizzata all&apos;interno del sistema erp.</help>
+        <label><!-- Foundations Worker Correlation --></label>
+        <name>pse__ERP_Worker_Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <help>La data in cui lo stato occupazionale della risorsa diventa effettivo.</help>
+        <label><!-- Employment Status Effective Date --></label>
+        <name>pse__Employment_Status_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Lo stato occupazionale della risorsa.</help>
+        <label><!-- Employment Status --></label>
+        <name>pse__Employment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Attivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation>Terminato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exclude From Missing Timecards --></label>
+        <name>pse__Exclude_From_Missing_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Se l&apos;utente debba essere escluso da calcoli di schede di tempo come l&apos;utilizzo</help>
+        <label><!-- Exclude From Time Calculations --></label>
+        <name>pse__Exclude_From_Time_Calculations__c</name>
+    </fields>
+    <fields>
+        <help>Se true, la risorsa è esclusa dai calcoli di Varianza temporale.</help>
+        <label><!-- Exclude From Time Variance Calculations --></label>
+        <name>pse__Exclude_From_Time_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Indica se escludere questa risorsa dal pianificatore delle risorse.</help>
+        <label><!-- Exclude from Resource Planner --></label>
+        <name>pse__Exclude_from_Resource_Planner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excluded Hours --></label>
+        <name>pse__Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Budget --></label>
+        <name>pse__Expense_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Costs --></label>
+        <name>pse__Expense_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Costs --></label>
+        <name>pse__External_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Billable Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Credited Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Excluded Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Held Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Held_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Non Billable Hrs --></label>
+        <name>pse__Hist_Sch_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Billable Hours --></label>
+        <name>pse__Historical_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Calendar Hours --></label>
+        <name>pse__Historical_Utilization_Calendar_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Credited Hours --></label>
+        <name>pse__Historical_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Excluded Hours --></label>
+        <name>pse__Historical_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Non Billable Hrs --></label>
+        <name>pse__Historical_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target Attainment --></label>
+        <name>pse__Historical_Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target Hours --></label>
+        <name>pse__Historical_Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target --></label>
+        <name>pse__Historical_Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization --></label>
+        <name>pse__Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Budget --></label>
+        <name>pse__Internal_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Costs --></label>
+        <name>pse__Internal_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Resource Active --></label>
+        <name>pse__Is_Resource_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Resource --></label>
+        <name>pse__Is_Resource__c</name>
+    </fields>
+    <fields>
+        <help>ID univoco dell’utente correlato in Jira. Utilizzato per la sincronizzazione. Popola automaticamente dopo la creazione dell’utente in Jira.</help>
+        <label><!-- Jira Correlation ID --></label>
+        <name>pse__Jira_Correlation_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>pse__Languages__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ultimo giorno di assunzione di una risorsa.</help>
+        <label><!-- Last Date --></label>
+        <name>pse__Last_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude (PSA) --></label>
+        <name>pse__Latitude_PSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>pse__Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation>Primario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation>Secondario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation>Terziario</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Longitude (PSA) --></label>
+        <name>pse__Longitude_PSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>pse__Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours (External) --></label>
+        <name>pse__Non_Billable_External_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours (Internal) --></label>
+        <name>pse__Non_Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Costs --></label>
+        <name>pse__Other_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pass-Through Billings --></label>
+        <name>pse__Pass_Through_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Billed --></label>
+        <name>pse__Pre_Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Resource_Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Architetto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Consulente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Responsabile clienti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Responsabile del progetto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Allenatore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Analista di affari</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>pse__Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce User --></label>
+        <name>pse__Salesforce_User__c</name>
+        <relationshipLabel><!-- Contacts (Salesforce User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Billable Hours --></label>
+        <name>pse__Scheduled_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Calendar Hours --></label>
+        <name>pse__Scheduled_Utilization_Calendar_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Credited Hours --></label>
+        <name>pse__Scheduled_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Excluded Hours --></label>
+        <name>pse__Scheduled_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Held Hours --></label>
+        <name>pse__Scheduled_Utilization_Held_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Non Billable Hrs --></label>
+        <name>pse__Scheduled_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target Attainment --></label>
+        <name>pse__Scheduled_Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target Hours --></label>
+        <name>pse__Scheduled_Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target --></label>
+        <name>pse__Scheduled_Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization --></label>
+        <name>pse__Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>Controlla se la risorsa viene inviata o meno a un&apos;applicazione di spese di terze parti.</help>
+        <label><!-- Send to Third-Party Expenses Application --></label>
+        <name>pse__Send_to_Third_Party_Expenses_Application__c</name>
+    </fields>
+    <fields>
+        <help>La prima data di assunzione di una risorsa.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Controlla se la risorsa è sincronizzata con Jira.</help>
+        <label><!-- Sync with Jira --></label>
+        <name>pse__Sync_with_Jira__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs --></label>
+        <name>pse__Total_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Period Hours --></label>
+        <name>pse__Total_Time_Period_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization --></label>
+        <name>pse__Total_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization:  Last Calculation Date --></label>
+        <name>pse__Utilization_Calculation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Elapsed Hours --></label>
+        <name>pse__Utilization_Elapsed_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Over Full Time Period --></label>
+        <name>pse__Utilization_Full_Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Last Update Date --></label>
+        <name>pse__Utilization_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Last Updated By --></label>
+        <name>pse__Utilization_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Contacts (Utilization: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target Attainment --></label>
+        <name>pse__Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target Average --></label>
+        <name>pse__Utilization_Target_Average__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target Hours --></label>
+        <name>pse__Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Una percentuale target di utilizzo per questa risorsa. Ad esempio, un obiettivo del 50% per un calendario di lavoro di 8 ore al giorno, genera un obiettivo di 4 ore al giorno per il quale la risorsa deve essere utilizzata.</help>
+        <label><!-- Utilization Target --></label>
+        <name>pse__Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization --></label>
+        <name>pse__Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__Currency_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe --></label>
+        <name>rh2__Describe__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Formula Test --></label>
+        <name>rh2__Formula_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integer Test --></label>
+        <name>rh2__Integer_Test__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Lean Data --></label>
+            <section>Lean Data</section>
+        </sections>
+        <sections>
+            <label><!-- LinkedIn --></label>
+            <section>LinkedIn</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo Sales Insight --></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label><!-- Outreach Engagement Panel --></label>
+            <section>Outreach Engagement Panel</section>
+        </sections>
+        <sections>
+            <label><!-- Product Qualified Lead (PQL) Data --></label>
+            <section>Product Qualified Lead (PQL) Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Resource</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Dati dello sviluppatore</label>
+            <section>Developer Data</section>
+        </sections>
+        <sections>
+            <label>Resource Actuals</label>
+            <section>Resource Actuals</section>
+        </sections>
+        <sections>
+            <label>Informazioni sulle risorse</label>
+            <section>Resource Information</section>
+        </sections>
+        <sections>
+            <label>Tempo reale delle risorse</label>
+            <section>Resource Time Actuals</section>
+        </sections>
+        <sections>
+            <label>Utilizzo delle risorse</label>
+            <section>Resource Utilization</section>
+        </sections>
+        <sections>
+            <label>Periodo di tempo selezionato</label>
+            <section>Selected Time Period</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Dialpad Call --></label>
+        <name>Dialpad__DialpadCall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LinkedIn InMail --></label>
+        <name>LID__LinkedIn_Message</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- View Profile --></label>
+        <name>LID__View_Profile</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Default Contact --></description>
+        <label><!-- Contact Layout --></label>
+        <name>Contact_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Contact Layout with Sales Insight --></description>
+        <label><!-- Neo4j Contact Layout --></label>
+        <name>Neo4j_Contact_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- FF PSA Resource --></description>
+        <label><!-- PSA Resource --></label>
+        <name>PSA_Resource</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Attention: &quot;Contact Status Detail&quot; field must be populated. --></errorMessage>
+        <name>Contact_Status_Detail_Field_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please make sure the following fields are populated: Email, First Name, Mailing Country. --></errorMessage>
+        <name>Required_Fields_on_Contact</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_License_Key --></label>
+        <name>Generate_License_Key</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email --></label>
+        <name>mkto_si__Send_Marketo_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Schedule_Report --></label>
+        <name>pse__Generate_Schedule_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resource_Planner --></label>
+        <name>pse__Resource_Planner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resource_Planner_Detail --></label>
+        <name>pse__Resource_Planner_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resource_Planner_Group --></label>
+        <name>pse__Resource_Planner_Group</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resource_Planner_Practice --></label>
+        <name>pse__Resource_Planner_Practice</name>
+    </webLinks>
+</CustomObjectTranslation>

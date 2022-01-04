@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tarea de lote genérico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tareas genéricas de lotes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- GenericBatchTasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Tratamiento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Identifier --></label>
+        <name>pse__UniqueIdentifier__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Generic Batch Task Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tarea de lote genérico</nameFieldLabel>
+</CustomObjectTranslation>

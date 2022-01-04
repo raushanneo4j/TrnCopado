@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Connettore Hub di integrazione: Concur - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Connettore Hub di integrazione: Concur - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Elimina le assegnazioni PSA in Concur.</help>
+        <label><!-- Allow Deletion of Assignments --></label>
+        <name>pse__Allow_Deletion_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Elimina i progetti PSA in Concur.</help>
+        <label><!-- Allow Deletion of Projects --></label>
+        <name>pse__Allow_Deletion_of_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Stato che rende possibile inviare a PSA un rapporto spese in Concur.</help>
+        <label><!-- Approval Status --></label>
+        <name>pse__Approval_Status__c</name>
+    </fields>
+    <fields>
+        <help>URL proxy Oauth in Hub connettore di integrazione.</help>
+        <label><!-- DEPRECATED:CallBack Url --></label>
+        <name>pse__CallBack_Url__c</name>
+    </fields>
+    <fields>
+        <help>Concorre i campi del filtro utilizzati per filtrare il rapporto spese. Le possibilità sono &quot;None&quot;, &quot;IsBillable&quot; e / o &quot;IsPersonal&quot; separate da una virgola.</help>
+        <label><!-- Concur Filter By Billable Expenses Field --></label>
+        <name>pse__Concur_Filter_By_Billable_Expenses_Field__c</name>
+    </fields>
+    <fields>
+        <help>Concorrenza campo personalizzato per Expense Billable Type.</help>
+        <label><!-- Concur field for Expense Billable Type --></label>
+        <name>pse__Concur_field_for_Expense_Billable_Type__c</name>
+    </fields>
+    <fields>
+        <help>Nome del campo personalizzato in Concur per il progetto PSA. Se si desidera sincronizzare il project manager con il progetto, inserire il nome del progetto PSA - Elenco collegato Project Manager.</help>
+        <label><!-- Concur field for PSA Project --></label>
+        <name>pse__Concur_field_for_PSA_Project__c</name>
+    </fields>
+    <fields>
+        <help>Il campo personalizzato Concur per la LinkedList delle assegnazioni delle risorse di PSA.</help>
+        <label><!-- Concur field for PSA Resource-Assignment --></label>
+        <name>pse__Concur_field_for_PSA_Resource_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Il nome della formula nel connettore hub di integrazione utilizzato per eliminare i record del progetto e dell&apos;assegnazione PSA in Concur.</help>
+        <label><!-- Delete Workflow Name --></label>
+        <name>pse__Delete_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Indirizzo email per ricevere notifiche di errore se l&apos;integrazione con Concur fallisce.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Concordo con il rapporto spese di spesa Mapping fatturabile.</help>
+        <label><!-- Expense Report Billable Mapping --></label>
+        <name>pse__Expense_Report_Billable_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>Consentire la mappatura dello stato del rapporto spese PSA.</help>
+        <label><!-- Expense Report Status Mapping --></label>
+        <name>pse__Expense_Report_Status_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>Il nome della formula nel connettore hub di integrazione utilizzato per sincronizzare i report spese con le spese da Concur a FinancialForce.</help>
+        <label><!-- Expenses Sync Workflow Name --></label>
+        <name>pse__Expenses_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Numero massimo di progetti, risorse e assegnazioni sincronizzati in un singolo blocco di sincronizzazione iniziale. Un blocco aggiuntivo viene creato ogni volta che viene raggiunto questo limite. L&apos;impostazione predefinita è 2000.</help>
+        <label><!-- Initial Sync Chunk Size --></label>
+        <name>pse__Initial_Sync_Chunk_Size__c</name>
+    </fields>
+    <fields>
+        <help>Il nome della formula nel connettore hub di integrazione utilizzato per eseguire la sincronizzazione iniziale di progetti, risorse e assegnazioni da FinancialForce a Concur.</help>
+        <label><!-- Initial Sync Workflow Name --></label>
+        <name>pse__Initial_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nome proxy OAuth in Hub connettore di integrazione.</help>
+        <label><!-- DEPRECATED:Oauth Proxy Name --></label>
+        <name>pse__Oauth_Proxy_Name__c</name>
+    </fields>
+    <fields>
+        <help>Il campo personalizzato PSA utilizzato per filtrare le assegnazioni per la cancellazione.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Assign --></label>
+        <name>pse__PSA_Filter_field_for_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Il campo personalizzato PSA utilizzato per filtrare i progetti per la cancellazione.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Project --></label>
+        <name>pse__PSA_Filter_field_for_Project__c</name>
+    </fields>
+    <fields>
+        <help>Nome della formula in Hub connettore di integrazione per sincronizzare i progetti da FinancialForce a Concur.</help>
+        <label><!-- Project Sync Workflow Name --></label>
+        <name>pse__ProjectWorkflowName__c</name>
+    </fields>
+    <fields>
+        <help>Il nome della formula nel connettore hub di integrazione utilizzato per sincronizzare le risorse e le assegnazioni da FinancialForce a Concur.</help>
+        <label><!-- Resource-Assignment Sync Workflow Name --></label>
+        <name>pse__Resource_Assignment_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Sincronizza Project Manager quando sincronizzi i progetti PSA con Concur.</help>
+        <label><!-- Sync Project Managers --></label>
+        <name>pse__Sync_Project_Managers__c</name>
+    </fields>
+    <fields>
+        <help>Le assegnazioni sono state sincronizzate con Concur.</help>
+        <label><!-- Assignments Synced --></label>
+        <name>pse__Synched_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>I progetti sono stati sincronizzati con Concur.</help>
+        <label><!-- Projects Synced --></label>
+        <name>pse__Synched_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Le risorse sono state sincronizzate con Concur.</help>
+        <label><!-- Resources Synced --></label>
+        <name>pse__Synched_Resources__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

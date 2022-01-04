@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Calcul des prévisions de facturation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Calculs des prévisions de facturation</value>
+    </caseValues>
+    <fields>
+        <help>Une recherche dans le calcul du backlog associé.</help>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID du lot pour le processus de calcul prévisionnel.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Le traitement par lots utilisé par ce calcul de prévision.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique que la prévision de facturation a été validée et que les remplacements ne peuvent plus être appliqués.</help>
+        <label><!-- Committed --></label>
+        <name>pse__Committed__c</name>
+    </fields>
+    <fields>
+        <help>Indique que ce calcul des prévisions de facturation est le plus récent pour ce RPG et cette période.</help>
+        <label><!-- Current --></label>
+        <name>pse__Current__c</name>
+    </fields>
+    <fields>
+        <help>Recherche des valeurs de configuration de prévision utilisées dans ce calcul de prévision.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le groupe pour ce calcul de prévision.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La pratique pour ce calcul de prévision.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La région pour ce calcul de prévision.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le statut de calcul prévisionnel.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>La période de temps pour ce calcul de prévision.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nombre total de journaux créés à la suite d&apos;erreurs survenues au cours du processus de calcul prévisionnel.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Calculation Layout</layout>
+        <sections>
+            <label>Lot</label>
+            <section>Batch</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du calcul des prévisions de facturat</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- View_Forecast --></label>
+        <name>pse__View_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

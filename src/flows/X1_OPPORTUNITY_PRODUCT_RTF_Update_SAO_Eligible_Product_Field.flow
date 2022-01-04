@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <description>Check Whether the previous search returned any OLIs where the &apos;Eligible for SAO Credit&apos; field = TRUE.</description>
+        <name>Eligible_Products_Left_on_Opportunity_Decision</name>
+        <label>Eligible Products Left on Opportunity?</label>
+        <locationX>590</locationX>
+        <locationY>889</locationY>
+        <defaultConnector>
+            <targetReference>Update_Parent_Opportunity_SAO_Credit_FALSE_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_all_SAO_Credit_Eligible_Opportunity_Products_Get</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Opportunity_Use_Case</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the &apos;Type&apos; field is populated with the value of either &apos;New&apos; or &quot;Cross-Sell&quot; or other values.</description>
+        <name>New_or_Cross_Sell</name>
+        <label>New or Cross-Sell?</label>
+        <locationX>448</locationX>
+        <locationY>342</locationY>
+        <defaultConnector>
+            <targetReference>Update_Eligible_for_SAO_Credit_Field_on_OLI_Uodate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>New_or_Cross_Sell_Decision</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Cross-Sell</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sales_Price_Value_Decision</targetReference>
+            </connector>
+            <label>New or Cross-Sell</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checkes whether the value in the Opportunity &apos;Use Case&quot; field is &apos;Partnership&apos;. Partnership Opportunities aren&apos;t eligible for SAO credit, even if the associated OLIs are eligible.</description>
+        <name>Opportunity_Use_Case</name>
+        <label>Opportunity Use Case</label>
+        <locationX>593</locationX>
+        <locationY>1119</locationY>
+        <defaultConnector>
+            <targetReference>Update_Parent_Opportunity_SAO_Credit_TRUE_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NOT Partnership</defaultConnectorLabel>
+        <rules>
+            <name>Partnership</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opportunity.Use_Case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Partnership</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Parent_Opportunity_SAO_Credit_FALSE_Update</targetReference>
+            </connector>
+            <label>Partnership</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether &apos;Sales Price&apos; is greater than 0 or equal to or less than 0.</description>
+        <name>Sales_Price_Value_Decision</name>
+        <label>&apos;Sales Price&apos; Value</label>
+        <locationX>334</locationX>
+        <locationY>509</locationY>
+        <defaultConnector>
+            <targetReference>Update_Eligible_for_SAO_Credit_Field_on_OLI_Uodate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Equals to or less than &apos;0&apos;</defaultConnectorLabel>
+        <rules>
+            <name>Greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.UnitPrice</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Associated_Product_Record_Get</targetReference>
+            </connector>
+            <label>Greater than &apos;0&apos;</label>
+        </rules>
+    </decisions>
+    <description>Updates the &apos;Eligible for SAO Credit&apos; field on the Opportunity Line Item (OLI) when the record is created or updated. If the OLI ‘Type’ is anything other than &apos;New&apos; or &apos;Cross-Sell&apos;’, the ‘Eligible for SAO Credit’ field is always set to ‘False’. Otherwise, the value in this field is set based on the value in the corresponding field - &apos;Eligible for SAO Credit&apos; on the Product associated with the OLI. In other words, the original value is set at the Product level. Also sets the &apos;Eligible for SAO Credit&apos; field on the Opportunity to TRUE when the corresponding field on at least one OLIs = TRUE and to FALSE if the value CHANGES to FALSE on one of the OLIs and none of the remaining ones have it set to TRUE. In order for the above to happen, the OLI &apos;Sales Price&apos; value must be greater than &apos;0&apos; in any currency. JIRA: SFDCSPT-661; SFDCSPT-738; SFDCSPT-766</description>
+    <interviewLabel>OPPORTUNITY PRODUCT: ! 1 Update ‘SAO Eligible Product&apos; Field {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPPORTUNITY PRODUCT: ! 1 Update ‘SAO Eligible Product&apos; Field</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get all OLIs where the &apos;Eligible for SAO Credit&apos; field = TRUE.</description>
+        <name>Get_all_SAO_Credit_Eligible_Opportunity_Products_Get</name>
+        <label>Get all SAO Credit Eligible Opportunity Products</label>
+        <locationX>599</locationX>
+        <locationY>686</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Eligible_Products_Left_on_Opportunity_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EligibleForSAOCredit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OpportunityLineItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Fetches and saves the Product record associated with the OLI being processed.</description>
+        <name>Get_Associated_Product_Record_Get</name>
+        <label>Get Associated Product Record</label>
+        <locationX>342</locationX>
+        <locationY>678</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Eligible_for_SAO_Credit_on_OLI_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Product2Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Product2</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the &apos;Eligible for SAO Credit&apos; field on the OLI to &apos;False&apos;, because values other than &apos;New&apos; and &apos;Cross-Sell&apos; in the OLI &apos;Type&apos; field are not eligible for SAO credit.</description>
+        <name>Update_Eligible_for_SAO_Credit_Field_on_OLI_Uodate</name>
+        <label>Update &apos;Eligible for SAO Credit&apos; Field on OLI</label>
+        <locationX>600</locationX>
+        <locationY>506</locationY>
+        <connector>
+            <targetReference>Get_all_SAO_Credit_Eligible_Opportunity_Products_Get</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EligibleForSAOCredit__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the &apos;Eligible for SAO Credit&apos; field on the OLI based on the value in the corresponding field on the associated Product.</description>
+        <name>Update_Eligible_for_SAO_Credit_on_OLI_Update</name>
+        <label>Update &apos; Eligible for SAO Credit&apos; on OLI</label>
+        <locationX>342</locationX>
+        <locationY>823</locationY>
+        <connector>
+            <targetReference>Get_all_SAO_Credit_Eligible_Opportunity_Products_Get</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EligibleForSAOCredit__c</field>
+            <value>
+                <elementReference>Get_Associated_Product_Record_Get.EligibleForSAOCredit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Uncheck &apos;Eligible for SAO Credit&apos; field on the parent opportunity.</description>
+        <name>Update_Parent_Opportunity_SAO_Credit_FALSE_Update</name>
+        <label>Update Parent Opportunity SAO Credit = FALSE</label>
+        <locationX>843</locationX>
+        <locationY>887</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>EligibleforSAOCredit__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Check &apos;Eligible for SAO Credit&apos; field on the parent opportunity.</description>
+        <name>Update_Parent_Opportunity_SAO_Credit_TRUE_Update</name>
+        <label>Update Parent Opportunity SAO Credit = TRUE</label>
+        <locationX>601</locationX>
+        <locationY>1317</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>EligibleforSAOCredit__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>330</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>New_or_Cross_Sell</targetReference>
+        </connector>
+        <object>OpportunityLineItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

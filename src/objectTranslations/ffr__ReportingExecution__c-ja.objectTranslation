@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>実行の報告</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asynchronous Job IDs --></label>
+        <name>ffr__AsyncJobIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Value --></label>
+        <name>ffr__CancelValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>ffr__FileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Render As --></label>
+        <name>ffr__RenderAs__c</name>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation>HTML</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation>PDF</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XLS</masterLabel>
+            <translation>XLS</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Status --></label>
+        <name>ffr__ReportStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了しました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creating Layout</masterLabel>
+            <translation>レイアウトを作成する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Getting Data</masterLabel>
+            <translation>データを取得する</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Launching Assembling Data and Layout Process</masterLabel>
+            <translation>組立データとレイアウトプロセスの起動</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>始まっていない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Assembling Data Process</masterLabel>
+            <translation>データ処理の組み立て待ち</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Data and Layout Process</masterLabel>
+            <translation>データ待ちとレイアウトプロセス</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Log --></label>
+        <name>ffr__ReportingLog__c</name>
+        <relationshipLabel><!-- Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Save To File --></label>
+        <name>ffr__SaveToFile__c</name>
+    </fields>
+    <nameFieldLabel>レポート実行名</nameFieldLabel>
+</CustomObjectTranslation>

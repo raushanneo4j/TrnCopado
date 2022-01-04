@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Optimizer</label>
+    <navType>Console</navType>
+    <tabs>standard-OrgMetric</tabs>
+    <tabs>Offer_URL__c</tabs>
+    <tabs>bizible2__Bizible_Touchpoint__c</tabs>
+    <tabs>bizible2__Bizible_Attribution_Touchpoint__c</tabs>
+    <tabs>bizible2__Bizible_Person__c</tabs>
+    <tabs>UniqueEntry__Batch_Settings__c</tabs>
+    <uiType>Lightning</uiType>
+    <workspaceConfig>
+        <mappings>
+            <tab>Offer_URL__c</tab>
+        </mappings>
+        <mappings>
+            <tab>UniqueEntry__Batch_Settings__c</tab>
+        </mappings>
+        <mappings>
+            <tab>bizible2__Bizible_Attribution_Touchpoint__c</tab>
+        </mappings>
+        <mappings>
+            <tab>bizible2__Bizible_Person__c</tab>
+        </mappings>
+        <mappings>
+            <tab>bizible2__Bizible_Touchpoint__c</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-OrgMetric</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

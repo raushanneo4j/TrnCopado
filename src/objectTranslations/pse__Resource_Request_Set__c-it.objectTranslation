@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Set di richieste di risorse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Set di richieste di risorse</value>
+    </caseValues>
+    <fields>
+        <help>Cerca l&apos;account. Questo viene copiato dalla richiesta di risorsa di origine.</help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cercare la richiesta di risorse da copiare durante la creazione di un set di richieste di risorse.</help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cerca l&apos;opportunità. Questo viene copiato dalla richiesta di risorsa di origine.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Consulta il progetto. Questo viene copiato dalla richiesta di risorsa di origine.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Data e ora in cui una richiesta di risorsa appartenente allo stesso set di richieste di risorse era presidiata.</help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help>Cerca la richiesta di risorse. Questo viene popolato con la richiesta di risorse del personale finale appartenente a questo set di richieste di risorse.</help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome set richiesta risorsa</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

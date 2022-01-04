@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>収益予測バッチステータス</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Status --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このバッチステータスレコードが関連するレコードのSalesforceレコードID。</help>
+        <label><!-- Record ID --></label>
+        <name>pse__Record_Id__c</name>
+    </fields>
+    <fields>
+        <help>関連レコードが収益予測処理の準備ができてキューに入れられたことを示します。これはシステム制御フィールドです。</help>
+        <label><!-- Revenue Forecast Batch Update Pending --></label>
+        <name>pse__Revenue_Forecast_Batch_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <help>この収益予測が最後に更新された日付と時刻。</help>
+        <label><!-- Revenue Forecast Last Updated --></label>
+        <name>pse__Revenue_Forecast_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>この収益予測の処理ステータス。</help>
+        <label><!-- Revenue Forecast Processing Status --></label>
+        <name>pse__Revenue_Forecast_Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>始まっていない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>保留中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>処理</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Batch Status Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>収益予測バッチステータス名</nameFieldLabel>
+</CustomObjectTranslation>

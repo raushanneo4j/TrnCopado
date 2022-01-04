@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Est לעומת הגדרות בפועל --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Est לעומת הגדרות בפועל --></value>
+    </caseValues>
+    <fields>
+        <help>האם יש לעדכן את השדות Est Ests Actuals הנגזרים מלוח הזמנים (למשל, שעות משוערות) עבור רשומות Est Ests Actuals שיש להן תאריך סיום לפני תחילת השבוע.</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>מחק רשומות של Est לעומת בפועל גם אם נקבעו בפועל עבור רשומות שאינן עוד בטווח התאריכים של לוח הזמנים שהשתנה. הערה: רשומות ללא פעולות יימחקו תמיד.</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>רשימה מופרדת בפסיקים של סוגי תקופות זמן להפקת רשומות EVA</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>האם לייצר רשומות של Est Vs Actuals לפי חודש</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>האם לייצר רשומות של Est Vs בפועל לפי רבעון</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>האם לייצר est לעומת בפועל לפי שבוע</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>צור רשומות של Est Ests בפועל עבור כרטיסי זמן שיש להם שעות מחוץ לתאריך ההתחלה והסיום של המשימה. הרשומות של Est Vs בפועל יהיו עם אפס ערכים לאומדנים על רשומות אלה.</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>הרשימה המופרדת בפסיק של ערכי שדה מצב כרטיס הזמן שבהם יש להשתמש בעת קביעה אם יש להשתמש בכרטיס הזמן בחישוב אומדנים לעומת פעולות</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את גודל האצווה המשמש בעת עדכון שדה מנהל הפרויקטים מ- Project. ברירת המחדל היא 2000. התייעץ עם FinancialForce Support לפני שינוי הגדרה זו.</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>אם היא מסומנת, הגדרה זו גורמת לעדכונים בשדה מנהל הפרויקטים להשתקף בכל הרשומות של Est Vs Actuals עבור אותו פרויקט.</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את מספר הרשומות של Est Vs בפועל לעיבוד סינכרוני בעת עדכון שדה מנהל הפרוייקט מתוך Project. רשומות שעולות מערך זה מעובדות אצווה. ברירת המחדל היא 9000. התייעץ עם התמיכה לפני שינוי הגדרה זו.</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, אומדנים שבועיים לעומת עובדות לא נוצרים אוטומטית אם מוגדרות לך פרקי זמן מותאמים אישית מסוג שבוע החופפים למשימה או לבקשת משאבים מוחזקת. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

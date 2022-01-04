@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>列首选项</value>
+    </caseValues>
+    <fields>
+        <help>定义要应用首选项的功能。值为：0（对于Project Planner），1（对于Resource Planner），2（对于Project Task Gantt），3（对于Timecards），4（对于Timecard Approval）或5（对于Timecard Task Time）。</help>
+        <label><!-- Feature --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>0</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>五</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>包含字段的一个或多个API名称，包括跨列对象字段，此列基于。这是系统生成的字段。不要手动编辑此字段。</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <help>从左到右的顺序列显示在UI中的指示特征。</help>
+        <label><!-- Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>分配了首选项的用户。</help>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Column Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>相应字段的保存值。</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则该列在用户的UI上可见。</help>
+        <label><!-- Visible --></label>
+        <name>pse__Visible__c</name>
+    </fields>
+    <fields>
+        <help>列的宽度（以像素为单位）。</help>
+        <label><!-- Width --></label>
+        <name>pse__Width__c</name>
+    </fields>
+    <nameFieldLabel>列首选项名称</nameFieldLabel>
+</CustomObjectTranslation>

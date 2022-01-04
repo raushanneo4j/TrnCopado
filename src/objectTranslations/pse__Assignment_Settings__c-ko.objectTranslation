@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 할당 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>그것이 사실이라면, &quot;하루 조정&quot;에 의해 만들어진 스케줄은 휴일을 존중하고 그것들에 대한 예외를 생성하고 다른 날에 걸쳐 시간을 확산하여 시간을 조정합니다.</help>
+        <label><!-- Adjust Hours Strategy Respects Holidays --></label>
+        <name>pse__Adjust_Hours_Strategy_Respects_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>사용되지 않음 - 사용되지 않음</help>
+        <label><!-- Adjust Sched Date on Assignment Close --></label>
+        <name>pse__Adjust_Sched_Date_on_Assignment_Close__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 배정의 원가 환율 코드가 자원 통화 코드를 사용하도록 설정됩니다.</help>
+        <label><!-- Allow Resource Currency Code on Assn --></label>
+        <name>pse__Allow_Resource_Currency_on_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes IsResource Active Lookup FIlter --></label>
+        <name>pse__AssigRes_IsResource_Active_Lookup_FIlter__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes Is Resource Lookup Filter --></label>
+        <name>pse__AssigRes_Is_Resource_Lookup_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup Columns --></label>
+        <name>pse__Assign_Resource_Custom_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup --></label>
+        <name>pse__Assign_Resource_Custom_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>Milestone Lookup 팝업에서 열로 표시되는 쉼표로 구분 된 목록 필드 API 이름을 보유 할 필드입니다.</help>
+        <label><!-- Assign Resource Milestone Lookup Columns --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <help>UI에서 사용자 지정 마일스톤 조회 표시를 제어하는 필드</help>
+        <label><!-- Assign Resource Milestone Lookup --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>필요에 따라 사용자 지정 마일스톤을 표시하는 필드입니다. 사실이라면, 그것이 필요하고 그렇지 않으면 필요합니다.</help>
+        <label><!-- Assign Resource Milestone Required --></label>
+        <name>pse__Assign_Resource_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>사용되지 않음 - 사용되지 않음</help>
+        <label><!-- Assignment Closed Statuses --></label>
+        <name>pse__Assignment_Closed_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>자동 생성 할당 이름에서 프로젝트 이름의 최대 길이 구성.</help>
+        <label><!-- Assignment Name Project Name Max Length --></label>
+        <name>pse__Assignment_Name_Project_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>자동 생성 할당 이름에서 자원 이름의 최대 길이 구성.</help>
+        <label><!-- Assignment Name Resource Name Max Length --></label>
+        <name>pse__Assignment_Name_Resource_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>리소스가 생성되거나 리소스가 변경 될 때 리소스의 Salesforce 사용자와 할당 및 일정을 공유할지 여부를 정의합니다. 값을 읽기 또는 편집으로 설정하여 공유 수준을 정의 할 수 있습니다. 값을 설정하지 않으면 아무 작업도 수행되지 않습니다.</help>
+        <label><!-- Auto Share with New Resource --></label>
+        <name>pse__Auto_Share_with_New_Resource__c</name>
+    </fields>
+    <fields>
+        <help>할당의 리소스가 변경되면 리소스의 Salesforce 사용자와 함께 할당 및 일정의 기존 공유가 삭제되는지 여부를 정의합니다.</help>
+        <label><!-- Delete Share from Old Resource --></label>
+        <name>pse__Delete_Share_from_Old_Resource__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 PSA는 청구서 율이 적용되었는지 확인하지 않습니다.</help>
+        <label><!-- Disable Bill Rate Null Check in Trigger --></label>
+        <name>pse__Disable_Bill_Rate_Null_Check_in_Trigger__c</name>
+    </fields>
+    <fields>
+        <help>자원 할당 페이지에서 리전, 실습, 그룹 및 역할 필터에 대한 기본값을 비활성화합니다.</help>
+        <label><!-- Disable RPG and Role Filter Defaults --></label>
+        <name>pse__Disable_RPG_Role_Defaulting__c</name>
+    </fields>
+    <fields>
+        <help>매스 자원 지정 페이지에 계획된 청구 비율 필드를 표시할지 여부.</help>
+        <label><!-- Display Planned Bill Rate --></label>
+        <name>pse__Display_Planned_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>할당 일정 편집 페이지의 기본 일정 지정 전략입니다. 가능한 값은 &quot;level&quot;, &quot;ignore&quot;, &quot;day&quot;및 &quot;PercentAllocation&quot;입니다.</help>
+        <label><!-- Edit Schedule Default Strategy --></label>
+        <name>pse__Edit_Schedule_Default_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트에 리소스 할당, 할당 일정 편집 및 직원 워크 시트 페이지에서 일일 조정 일정 계획 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Adjust Hours Scheduling Strategy --></label>
+        <name>pse__Hide_Adjust_Hours_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 및 직원 워크 시트에 리소스 할당 페이지에서 사용자 지정 일정 계획 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Custom Scheduling Strategy --></label>
+        <name>pse__Hide_Custom_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트에 대한 자원 할당, 할당 일정 편집 및 직원 워크 시트 페이지에서 종료 날짜 계산 종료 예약 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Ignore Avail Scheduling Strategy --></label>
+        <name>pse__Hide_Ignore_Avail_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트에 자원 할당, 할당 일정 편집 및 직원 워크 시트 페이지에서 종료 날짜 수준 일정 계산 예약 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Level Schedule Scheduling Strategy --></label>
+        <name>pse__Hide_Level_Schedule_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Assign Resource, Assignment Schedule 및 Staffer Worksheet 페이지에서 할당 비율 예약 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Percent Alloc Scheduling Strategy --></label>
+        <name>pse__Hide_Percent_Alloc_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 및 직원 워크 시트에 리소스 할당 페이지에서 0 시간 계획 일정 계획 전략을 숨길 지 여부를 나타냅니다.</help>
+        <label><!-- Hide Zero Hour Scheduling Strategy --></label>
+        <name>pse__Hide_Zero_Hour_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>할당을 중요 시점으로 연결 페이지의 툴팁 아이콘 위로 마우스를 가져 가면 나열 될 필드의 API 이름 목록이 쉼표로 구분됩니다.</help>
+        <label><!-- Link Assignment Header Tooltip Fields --></label>
+        <name>pse__Link_Assignment_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Link Methodology to Assignments 페이지의 툴팁 아이콘 위로 마우스를 가져 가면 나열 될 필드의 API 이름 목록이 쉼표로 구분됩니다.</help>
+        <label><!-- Link Methodology Header Tooltip Fields --></label>
+        <name>pse__Link_Methodology_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>링크 마일스톤에서 할당 페이지로 툴팁 아이콘 위로 마우스를 가져 가면 나열 될 필드의 API 이름 목록이 쉼표로 구분됩니다.</help>
+        <label><!-- Link Milestone Header Tooltip Fields --></label>
+        <name>pse__Link_Milestone_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>할당 단계로 링크 페이지의 툴팁 아이콘 위로 마우스를 가져 가면 나열 될 필드의 API 이름 목록이 쉼표로 구분됩니다.</help>
+        <label><!-- Link Phase Header Tooltip Fields --></label>
+        <name>pse__Link_Phase_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 마일스톤 필드가 매스 자원을 프로젝트에 할당 페이지의 빠른 업데이트 섹션과 할당 상세 섹션에 표시됩니다. 이 필드는 질량 매스 프로젝트 자원 페이지에도 표시됩니다.</help>
+        <label><!-- Mass Assign Milestone Editable --></label>
+        <name>pse__Mass_Assign_Milestone_Editable__c</name>
+    </fields>
+    <fields>
+        <help>참일 때 마일스톤 필드는 자원 할당 프로젝트 매스 및 질량 매스 자원을 프로젝트 페이지에 생성 할 때마다 지정해야합니다.</help>
+        <label><!-- Mass Assign Milestone Required --></label>
+        <name>pse__Mass_Assign_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>자원에 프로젝트 지정 페이지에서 검색 할 때 결과에 반환되는 프로젝트 수를 제어합니다. 플랫폼 뷰 상태를 초과 할 위험이 있으므로 2000보다 높은 값은 권장하지 않습니다. 기본값은 1000입니다.</help>
+        <label><!-- Mass Assign Projects Load Limit --></label>
+        <name>pse__Mass_Assign_Projects_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 더 이상 사용되지 않으며 더 이상 사용되지 않습니다.</help>
+        <label><!-- Deprecated: Mass Assign Res. Load Limit --></label>
+        <name>pse__Mass_Assign_Resources_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>질량 할당 무시 공휴일 확인란이 기본적으로 선택되어 있는지 여부를 결정합니다.</help>
+        <label><!-- Mass Assignments Default Ignore Holidays --></label>
+        <name>pse__Mass_Assignments_Default_Ignore_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>사용자가 Assignment 객체에 사용자 정의 필드 세트를 만들고이 사용자 정의 설정에 필드 세트의 API 이름을 쓸 수 있습니다. 이 필드 세트에 추가 된 필드는 다중 지정 할당을 마일스톤 UI에 읽기 전용 필드로 표시됩니다.</help>
+        <label><!-- Multi Assign Assignment Fieldset Name --></label>
+        <name>pse__Multi_Assign_Assignment_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>사용자가 Milestone 개체에 사용자 정의 필드 집합을 만들고이 사용자 지정 설정에 필드 집합의 API 이름을 쓸 수 있습니다. 이 필드 세트에 추가 된 필드는 다중 지정 할당을 마일스톤 UI에 읽기 전용 필드로 표시됩니다.</help>
+        <label><!-- Multi Assign Milestone Fieldset Name --></label>
+        <name>pse__Multi_Assign_Milestone_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>참일 경우 일정 예외는 배정 일정 편집 화면에서 업데이트시 유지됩니다. false이면 예외가 삭제됩니다. 기본값은 false입니다.</help>
+        <label><!-- Retain schedule exceptions on update --></label>
+        <name>pse__Retain_schedule_exceptions_on_update__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 역할 선택 목록 필드가 자원을 프로젝트에 할당 페이지에서 숨겨집니다. false로 설정하면 기존 동작이 계속됩니다. &quot;생성시 역할 필요&quot;확인란이 false로 설정된 경우에만 작동합니다.</help>
+        <label><!-- Role Hidden --></label>
+        <name>pse__Role_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Required On Creation --></label>
+        <name>pse__Role_Required_On_Creation__c</name>
+    </fields>
+    <fields>
+        <help>할당 일정 편집 페이지의 시간표 계산을 수행 할 때 사용할 시간 코드 상태 필드 값의 쉼표로 구분 된 목록입니다.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 모니터 필드를 계산할 때 사용할 배치 크기를 결정합니다.</help>
+        <label><!-- Update Project Monitor Fields Batch Size --></label>
+        <name>pse__Update_Project_Monitor_Fields_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 모니터 필드를 즉시 계산하기위한 임계 값 할당 수를 정의합니다. 배정 수가이 설정의 값을 초과하면 프로젝트 모니터 필드는 일괄 처리를 사용하여 계산됩니다.</help>
+        <label><!-- Update Project Monitor Fields Sync Limit --></label>
+        <name>pse__Update_Project_Monitor_Fields_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>자원을 프로젝트에 할당, 자원을 프로젝트에 대량 할당 및 프로젝트에 자원을 대량 할당 페이지에서 기본 요율 사용 확인란의 기본값을 선택 취소했는지 여부를 나타냅니다.</help>
+        <label><!-- Use Default Cost Rate Clear on Assigning --></label>
+        <name>pse__Use_Default_Cost_Rate_Clear_on_Assigning__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 비용 및 매출 요약에 대한 계산을위한 배정에 대해 Scheduled Days 필드에 기록 된 값을 사용하십시오.</help>
+        <label><!-- Use Scheduled Days for Calculations --></label>
+        <name>pse__Use_Scheduled_Days__c</name>
+    </fields>
+</CustomObjectTranslation>

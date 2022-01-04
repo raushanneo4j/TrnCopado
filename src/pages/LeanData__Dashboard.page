@@ -1,0 +1,908 @@
+<apex:page id="DashboardPage" 
+    sideBar="false" 
+    standardStylesheets="false" 
+    docType="html-5.0" 
+    controller="LeanData.DashboardBaseController" 
+    extensions="LeanData.RemotingRouter,LeanData.TerritoryRouting,LeanData.TaggingFieldController,LeanData.DashboardANOneTimeL2AController,LeanData.CheckOnDemandAllowed,LeanData.DashboardAdminController">
+
+  <!-- Main Dashboard page with Angular template code -->
+  <head>
+    <base href="./Dashboard"></base>
+    <link rel="stylesheet" href="{!angelaResourceUrlDBC + '/styles.css'}"></link> <!-- Prod Only -->
+  </head>
+  <body>
+    <ld-root style="display: flex;"></ld-root>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSF7R8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Default initial values -->
+    <script>
+      // Controller Variables
+      window.ns = '{!nameSpace}';
+      window.userTimeZone = '{!userTimeZone}';
+      window.loggedInUserId = '{!userId}';
+      window.autoNavigateToMembers = {!autoNavigateToMembers};
+      // Page level variables
+      Visualforce.remoting.timeout = 120000;
+      // Magellan Global Object
+      window.Magellan = window.Magellan || {
+        Initializers: {},
+        Models: {},
+        Views: {},
+        Controllers: {},
+        Navigation: {}, 
+        Migration: {},
+        Validation: {}, 
+      };
+      window.Angela = window.Angela || {
+        Navigation: {
+          queryParams: {},
+        },
+      };
+      // resource URLs
+      window.resourceURL = "{!magellanResourceUrlDBC}";
+      window.angelaResourceURL = "{!angelaResourceUrlDBC}";
+      window.pageURL = resourceURL + '/main.html';
+      // #LD_LEGACY
+      window.j$ = $.noConflict();
+      window.leandataDebuggerOn = false;
+      window.fieldMetaData = {};
+      window.actionNodeMetaData = {};
+      window.modalDirtyFlag = null;
+      window.modalDirtyConfirmed = null;
+      window.modalDestination = null;
+      window.modalParameters = null;
+      window.currentDeploymentId = null;
+      window.magellanPage = null;
+      window.taggingResources = null;
+    </script>
+
+    <!-- Analytics / Tracking api scripts -->
+    <script>
+      // Google Tag Manager
+      // Phoenix: commented out for now, causing 404 error
+      // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      //   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      //   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      //   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      // })(window,document,'script','dataLayer','GTM-5TSF7R8');
+
+      // Google Analytics
+      function gaTrack(title, action) {
+        if ('{!isGaDisabled}'!='true') {
+          var len = title.length;
+          ga('set', 'dimension1', '{!JSENCODE(orgName)}' + ' - ' + '{!orgId}');
+          ga('set', 'dimension2', '{!JSENCODE(userName)}' + ' - ' + '{!userId}');
+          ga('set', 'dimension3', title[0]);
+          ga('set', 'dimension4', len>1?title[1]:"");
+          ga('set', 'dimension5', len>2?(len===4?title[2] + ' | ' + title[3]:title[2]):"");
+          ga('set', 'dimension6', (dashboardController.viewObject['isSandbox']?'Yes':'No'));
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Dashboard',
+            eventAction: action      
+          });
+        }
+      }
+      if ('{!isGaDisabled}'!='true') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-50205525-1', 'auto');
+      }
+
+      /* Sidebar Objects 
+          - Every nav and subnav have its own key, which needs to be unique locally
+          - Multi-word keys follow camelCase format 
+          - Abbreviated keys are all uppercase e.g. ATRR
+          - Nested Page/Component key are separated by dashes e.g. router-lead-logs
+          - When adding/editing a page, change the respective key string in DashboardBaseController.cls
+          - For pages that are not in dashboard buttons (only accessible from certain pages), insert them into 
+              DashboardBaseController.cls and respective component pages.
+      */
+
+      var dashboardSidebar = {
+        instance: 'dashboardSidebar', title: 'Main' , navs: {
+          home: {name: 'Home', path:'#'},
+          matching: {name: 'Matching', classes: 'matching-product', subnavs: {
+              CM: {name: 'Tagging Preview', classes: 'workflowConfigurator flowbuilderOn', path:'#matching/tagging_finder'},
+              MTB: {name: 'Tagging Settings', classes: 'workflowConfigurator requiresReadWrite', path:'#matching/tagging_settings'},
+              accountScoring: {name: 'Account Scoring', classes: 'account-scoring', subsubnavs: { 
+                FM: {name: 'Field Selection', classes: 'requiresReadWrite', path:'#matching/account_scoring'},
+                SM: {name: 'Score Modifiers', classes: 'requiresReadWrite', path:'#matching/account_scoring/modifiers'}
+              }},
+              LA: {name: 'List Analyzer', classes: 'requiresReadWrite listAnalyzerPage', subsubnavs:{
+                AL: {name: 'Analyze Leads', classes: 'requiresReadWrite listAnalyzerPage', path:'#matching/list_analyzer/analyze_leads'},
+                MOF: {name: 'Matched Object Fields', classes: 'requiresReadWrite listAnalyzerPage', path:'#matching/list_analyzer/matched_object_fields'},
+              }},
+              BP: {name: 'Buyer Persona', classes: 'buyer-persona requiresReadWrite', href: '/apex/' + ns + 'BuyerPersona'}, 
+              MS: {name: 'Matching Settings', classes: 'match-settings requiresReadWrite', path:'#matching/matching_settings'},
+              AS: {name: 'Advanced Settings', classes: '', subsubnavs: {
+                MAF: {name: 'Mapped Account Fields', classes: 'requiresReadWrite', path:'#matching/tagging_account_fields'},
+                OTM: {name: 'One-Time Tagging', classes: 'requiresReadWrite', path:'#matching/one_time_tagging'}
+              }},
+            }
+          },
+          router: {name: 'Routing', classes: 'routing-product', subnavs: {
+            lead: { name: 'Leads', classes: 'lead-routing', subsubnavs: {
+              FB: {name: 'FlowBuilder', classes: 'workflowConfigurator requiresReadWrite', path:'#routing/flowbuilder/graphs/lead'},
+              logs: {name: 'Audit Logs', classes: '', path:'#routing/lead/audit_logs'},
+              DH: {name: 'Deployment History', classes: 'routing-deployment-history workflowConfigurator requiresReadWrite', path:'#routing/deployment_history/lead'},
+              OTR: {name: 'One-Time Routing', classes: 'workflowConfigurator requiresReadWrite', path: '#routing/lead/one_time_routing'},
+              AS: {name: 'Advanced Settings', classes: '', path: '#routing/lead/merge_duplicates', subsubsubnavs: {
+                MD: {name: 'Merge Duplicates', classes: 'requiresReadWrite', path: '#routing/lead/merge_duplicates'},
+                ATM: {name: 'Account Teams', classes: 'requiresReadWrite', path:'#routing/lead/account_teams'},
+                OM: {name: 'Owner Mappings', classes: 'requiresReadWrite', path: '#routing/lead/owner_mappings'},
+                NAC: {name: 'Account Creation', classes: 'routing-account-creation requiresReadWrite', path:'#routing/lead/account_creation'}
+              }}
+            }},
+            contact: { name: 'Contacts', classes: 'contact-routing', subsubnavs: {
+              FB: {name: 'FlowBuilder', classes: 'workflowConfigurator requiresReadWrite', path:'#routing/flowbuilder/graphs/contact'},
+              logs: {name: 'Audit Logs', classes: '', path:'#routing/contact/audit_logs'},
+              DH: {name: 'Deployment History', classes: 'routing-deployment-history workflowConfigurator requiresReadWrite', path:'#routing/deployment_history/contact'},
+              OTR: {name: 'One-Time Routing', classes: 'workflowConfigurator requiresReadWrite', path: '#routing/contact/one_time_routing'},
+              AS: {name: 'Advanced Settings', classes: '', subsubsubnavs: {
+                MD: {name: 'Merge Duplicates', classes: 'requiresReadWrite', path: '#routing/contact/merge_duplicates'},
+                ATM: {name: 'Account Teams', classes: 'requiresReadWrite', path:'#routing/contact/account_teams'},
+                OM: {name: 'Owner Mappings', classes: 'requiresReadWrite', path: '#routing/contact/owner_mappings'}
+              }}
+            }},
+            account: { name: 'Accounts', classes: 'account-routing isAccountRoutingActive', subsubnavs: {
+              FB: { name: 'FlowBuilder', classes: 'workflowConfigurator requiresReadWrite', path:'#routing/flowbuilder/graphs/account' },
+              logs: { name : 'Audit Logs', classes: '', path:'#routing/account/audit_logs'},
+              DH: { name: 'Deployment History', classes: 'routing-deployment-history workflowConfigurator requiresReadWrite', path:'#routing/deployment_history/account'},
+              OTR: { name: 'One-Time Routing', classes:'requiresReadWrite', path: '#routing/account/one_time_routing'},
+              AS: {name: 'Advanced Settings', classes: '', subsubsubnavs: {
+                ATM: { name: 'Account Teams', classes: 'requiresReadWrite', path:'#routing/account/account_teams'},
+                OM: { name: 'Owner Mapping', classes: 'requiresReadWrite', path: '#routing/account/owner_mappings'}
+              }}
+            }},
+            opportunity: { name: 'Opportunities', classes: 'opportunity-routing isOpportunityRoutingActive', subsubnavs: {
+              FB: { name: 'FlowBuilder', classes: 'workflowConfigurator requiresReadWrite', path:'#routing/flowbuilder/graphs/opportunity' },
+              logs: { name: 'Audit Logs', classes: '', path:'#routing/opportunity/audit_logs' },
+              DH: { name: 'Deployment History', classes: 'routing-deployment-history workflowConfigurator requiresReadWrite', path:'#routing/deployment_history/opportunity' },
+              OTR: { name: 'One-Time Routing', classes: 'requiresReadWrite', path: '#routing/opportunity/one_time_routing'},
+              AS: { name: 'Advanced Settings', classes: '', subsubsubnavs: {
+                ATM: { name: 'Account Teams', classes: 'requiresReadWrite', path:'#routing/opportunity/account_teams'},
+                OM: { name: 'Owner Mapping', classes: 'requiresReadWrite', path: '#routing/opportunity/owner_mappings'}
+              }}
+            }},
+            case: { name: 'Cases', classes: 'case-routing isCaseRoutingActive', subsubnavs: {
+              FB: { name: 'FlowBuilder', classes: 'workflowConfigurator requiresReadWrite', path:'#routing/flowbuilder/graphs/case' },
+              logs: { name: 'Audit Logs', classes: '', path:'#routing/case/audit_logs' },
+              DH: { name: 'Deployment History', classes: 'routing-deployment-history workflowConfigurator requiresReadWrite', path:'#routing/deployment_history/case' },
+              OTR: { name: 'One-Time Routing', classes: 'requiresReadWrite', path: '#routing/case/one_time_routing'}
+            }},
+            territoryBB: { name: 'Territory Management', classes: 'requiresReadWrite territory-routing-BB isTerritoryRoutingBBActive', path:"#territory_segments"},
+            roundRobin: { name: 'Round Robin', classes: 'round-robin', path:'#routing/round_robin', subsubnavs: {
+              RRP: {name: 'Pools', classes: '', path:'#routing/round_robin_pools'},
+              RRR: {name: 'Live Routing', classes: 'requiresReadWrite hasLiveRouting', path:'#routing/round_robin_live_routing'},
+            }}
+          }},
+          people: {name: 'People', classes: 'people-product', subnavs: {
+            users: { name: 'Users', classes: '', path:"#people/users"},
+            settings: { name: 'Settings', classes: 'people-settings', subsubnavs: {
+              schedules: { name: 'Schedules', classes: '', path:"#people/settings/schedules"},
+              capping: { name: 'Capping Rules', classes: 'requiresReadWrite', path:"#people/settings/capping_rules"},
+            }}
+          }},
+          attribution: {name: 'Attribution', classes:'attribution-product', subnavs: {
+            general: {name: 'General Settings', classes: 'requiresReadWrite', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Set_Up_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Set_Up_Icon_selected.png')}', path:'#attribution/general_settings'},
+            wizard: {name: 'Wizard', classes: 'requiresReadWrite', href: '/apex/Reporting_Wizard', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'AN_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'AN_Icon_selected.png')}'},
+            scheduler: {name: 'Scheduler', classes: 'requiresReadWrite', path:'#attribution/scheduler'},
+            RH: {name: 'Attribution Runs', classes: 'hasAttribution requiresReadWrite', path:'#attribution/run_history'},
+            oppAnalyzer: {name: 'Opportunity Analyzer', classes: 'hasOppAnalyzer', path:'#attribution/opportunity_analyzer'},
+            SH: {name: 'Settings Change Logs', classes: 'hasAttribution requiresReadWrite', path:'#attribution/settings_history'},
+            clarity: {name: 'Clarity', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Clarity_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Clarity_Icon_selected.png')}', classes: 'clarityFrontendOn', subsubnavs: {
+              overview: {name: 'Overview', classes: 'clarityFrontendOn requiresReadWrite', path:'#attribution/clarity/overview'},
+              bookings: {name: 'Bookings', classes: 'clarityFrontendOn', subsubsubnavs: {
+                main: {name: 'Main', classes: 'requiresReadWrite clarityFrontendOnnrequiresReadWrite', path:'#attribution/clarity/bookings/main'},
+                segment: {name: 'Segment', classes: 'requiresReadWrite clarityFrontendOn', path:'#attribution/clarity/bookings/segment'}
+              }},
+              pipeline: {name: 'Pipeline', classes: 'requiresReadWrite', path:'#attribution/clarity/pipeline'}
+            }},
+            TA: {name: 'Target Accounts', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Target_Account_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Target_Accounts_Icon_Selected.png')}', classes: 'clarityFrontendOn', subsubnavs: {
+              main: {name: 'Main', classes: 'clarityFrontendOn requiresReadWrite', path:'#attribution/target_accounts/main'},
+              segment: {name: 'Segment', classes: 'clarityFrontendOn requiresReadWrite', path:'#attribution/target_accounts/segment'}
+            }},
+            CIR: {name: 'Campaign Influence Reporting', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Reporting_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Reporting_Icon_selected.png')}', classes: 'hasCampaignInfluenceReporting', subsubnavs: {
+              CIS: {name: 'Campaign Influence Summary', href: '/apex/CampaignInfluenceReport', classes: 'requiresReadWrite hasCampaignInfluenceReporting'},
+              wizard: {name: 'Wizard', href: '/apex/CampaignToOpportunity', classes: 'requiresReadWrite hasCampaignInfluenceReporting'},
+              CTW: {name: 'Campaign Type Weighting', href: '/apex/campaignInfluenceAdvancedSettings?mode=CampaignTypeWeighting', classes: 'requiresReadWrite hasCampaignInfluenceReporting'},
+              RAF: {name: 'Revenue Attribution Field', href: '/apex/campaignInfluenceAdvancedSettings?mode=CustomAttributionValue', classes: 'requiresReadWrite hasCampaignInfluenceReporting'}
+            }},
+            AS: {name: 'Advanced Settings', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Settings_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Settings_Icon_Selected.png')}', classes: '', subsubnavs: { 
+              RN: {name: 'Notifications', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/notifications'},
+              OF: {name: 'Opportunity Freeze', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/opportunity_freeze'},
+              CF: {name: 'Custom Filters', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/custom_filters'},
+              CW: {name: 'Campaign Weighting', classes: '', inactiveSrc: '{!URLFOR($Resource.DashboardImages, 'Reporting_Icon.png')}' , activeSrc: '{!URLFOR($Resource.DashboardImages, 'Reporting_Icon_selected.png')}', subsubsubnavs: {
+                CTW: {name: 'Campaign Types', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/campaign_weighting/campaign_types'},
+                CMSW: {name: 'Campaign Member Statuses', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/campaign_weighting/campaign_member_statuses'}
+              }},
+              CC: {name: 'Campaign Costs', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/campaign_costs'},
+              CAM: {name: 'Custom Attribution Model', classes: '', path:'#attribution/advanced_settings/custom_attribution_model'},
+              OSM: {name: 'Opportunity Stage Mapping', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/opportunity_stage_mappings'},
+              CFM: {name: 'Custom Field Mapping', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/cf_mappings'},
+              MTM: {name: 'Marketing Touch Mapping', classes: 'requiresReadWrite', path:'#attribution/advanced_settings/mt_mappings'},
+            }}
+          }},
+          view: {name: 'View', classes: 'view-product', subnavs: {
+              general: {name: 'General', classes: 'requiresReadWrite', path:'#view/general'}, 
+            layout: {name: 'Layout', classes: '', subsubnavs: {
+              leads: {name: 'Leads', classes: 'requiresReadWrite', path:'#view/leads'}, 
+              contacts: {name: 'Contacts', classes: 'requiresReadWrite', path:'#view/contacts'}, 
+              accounts: {name: 'Accounts', classes: 'requiresReadWrite', path:'#view/accounts'}, 
+              RL: {name: 'Related Leads', classes: 'requiresReadWrite', path:'#view/related_leads'}, 
+              MC: {name: 'Mass Convert', classes: 'requiresReadWrite', path:'#view/mass_convert'} 
+            }}
+          }},
+          api: {name: 'APIs', classes: 'api-product', subnavs: {
+            RRR: {name: 'Round Robin Routing', classes: 'requiresReadWrite', path:'#api/round_robin_routing'}
+          }},
+          admin: {name: 'Admin', subnavs: {
+            myAccount: {name: 'My Account', path:'#admin/my_account'},
+            general: {name: 'Settings', classes: 'requiresReadWrite', path:'#admin/settings'},
+            PA: {name: 'Partner Apps', classes: 'requiresReadWrite partner-apps-menu-item', path:'#admin/partner_apps'},
+            MA: {name: 'CCIO Management', classes: 'hasMatching requiresReadWrite hasCCIOManagement', path:'#admin/ccio_management'},
+            MP: {name: 'Permissions', classes: 'requiresReadWrite', path:'#admin/manage_permissions'},
+            UM: {name: 'Routing Usage', classes: 'requiresReadWrite', path:'#admin/usage_metrics'},
+          }},
+        }
+      };
+
+      window.upsellContainerHtml = '<div class="upsell-container">' +
+        '<img class="upsell-ribbon" src="{!URLFOR($Resource.DashboardImages, 'Upgrade_Sash.png')}"/>' + 
+        '<div class="upsell-content"> <div class="upsell-title"><%=upsell.title%></div> ' +
+        '<div class="upsell-body"><%=upsell.body%></div> ' +
+        '<a href="<%=upsell.location%>" target="_blank" style="text-decoration:none">' +
+        '<span class="upsell-link ld-primary-small-button"><%=upsell.action%></span></a> </div> </div>';
+      window.upsellContainerTemplate = _.template(upsellContainerHtml);
+
+      DashboardController = function () { 
+          /* View object retrieved through interpolation. It contains data used throughout all the components. Data is retrieved as part of the original page request, with no additional AJAX calls be required. */
+          this.viewObject = JSON.parse('{!JSENCODE((viewObject))}');
+      };
+
+      DashboardController.prototype.initializeProductFeatures = function() {
+          // check for any critical errors on load and set feature param
+          Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CheckOnDemandAllowed.setFeatureParamForCriticalErrors}', function(result, event) { }
+          );
+          
+          if (this._alreadyInitializedProductFeatures) return;
+          this._alreadyInitializedProductFeatures = true;
+          
+          // feature keys
+          this.ACCOUNT_CREATION_NODE = 'routing account creation on';
+          this.ACCOUNT_ROUTING_ACTIVE = 'account routing active';
+          this.ACCOUNT_SCORING_ON = 'account scoring on';
+          this.BUYER_PERSONA_ENABLED = 'buyer persona enabled?';
+          this.CONTACT_ROUTING_ACTIVE = 'contact routing active';
+          this.ATTRIBUTION_ON = 'attribution on?';
+          this.CREATE_OPP_NODE = 'create opportunity on?';
+          this.HAS_ROUTING_PRODUCT = 'has routing product';
+          this.HAS_TAGGING_PRODUCT = 'has tagging product';
+          this.L2L_NODE = 'routing lead to lead on';
+          this.L2O_NODE = 'routing lead to opportunity on';
+          this.MATCHING_IN_ROUTING_ON = 'matching in routing on';
+          this.MULTI_TIEBREAKERS_ON = 'matching multi-tiebreakers on';
+          this.OPPORTUNITY_ROUTING_ACTIVE = 'opportunity routing active';
+          this.CASE_ROUTING_ACTIVE = 'case routing active';
+          this.ROUTING_DEPLOYMENT_HISTORY = 'routing deployment history on';
+          this.ROUTING_EMAIL_NOTIFICATIONS = 'routing notifications on';
+          this.TERRITORY_ROUTING = 'territory management on';
+          this.VIEW_ON = 'on demand allowed';
+          this.LEAD_ROUTING_ACTIVE = 'lead routing active';
+          this.INTEGRATIONS_ENABLED = 'integrations enabled';
+          this.MULTI_GRAPH_ACTIVE = 'multi-graph routing active';
+          this.TIME_BASED_ROUTING_ACTIVE = 'time-based routing active';
+          
+          /*******************************
+           * Features Configuration Object
+           *
+           * Essentially middleware mapping for DOM classes,
+           * template content, and onHover content.
+           ******************************/
+          this.FEATURE_CONFIG = {};
+
+          this.FEATURE_CONFIG[this.LEAD_ROUTING_ACTIVE] = {
+            selector: '.lead-routing',
+            featureName: 'Lead Routing',
+            upsell: {
+              'title': 'Looking to Route Leads to the Right Owner?',
+              'body': 'Support and automate any global lead routing ' +
+                  'process to instantly assign engaged leads to the right' +
+                  ' reps. Assign lead ownership by matched account, ' +
+                  'contact, or other existing leads. Contact your LeanData' +
+                  ' team to learn more.',
+              'action': 'Request a Demo',
+              'location': '//www.leandatainc.com/demo-request/'
+            },
+          };
+
+          this.FEATURE_CONFIG[this.HAS_ROUTING_PRODUCT] = {
+              selector: '.routing-product',
+              featureName: 'Routing',
+              upsell: {
+                'title': 'Looking to Route Leads to the Right Owner?',
+                'body': 'Support and automate any global lead routing process to instantly assign engaged leads to the right reps. Assign lead ownership by matched account, contact, or other existing leads. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.CONTACT_ROUTING_ACTIVE] = {
+              selector: '.contact-routing',
+              featureName: 'Contact Routing',
+              upsell: {
+                'title': 'Looking to Route Contacts to the Right Owner?',
+                'body': 'Support and automate any global contact routing process to instantly assign engaged contacts to the right reps. Assign contact ownership when a contact becomes qualified, or simply mirror your existing lead routing process. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ACCOUNT_ROUTING_ACTIVE] = { 
+              selector: '.account-routing',
+              featureName: 'Account Routing',
+              upsell: {
+                'title': 'Looking to Route Accounts to the Right Owner?',
+                'body': 'Support and automate any global account routing process to instantly assign marketing qualified accounts to the right reps. Assign account ownership when a nurtured account becomes engaged or marketing qualified. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.OPPORTUNITY_ROUTING_ACTIVE] = { 
+              selector: '.opportunity-routing',
+              featureName: 'Opportunity Routing',
+              upsell: {
+                'title': 'Looking to Route Opportunities to the Right Owner?',
+                'body': 'Support and automate any global opportunity routing process to instantly assign opportunities that need attention to the right reps. Assign opportunity ownership when an opportunity changes stages. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+
+          this.FEATURE_CONFIG[this.CASE_ROUTING_ACTIVE] = {
+              selector: '.case-routing',
+              featureName: 'Case Routing',
+              upsell: {
+                  'title': 'Looking to Route Cases with LeanData?',
+                  'body': 'Automate your case routing process to instantly assign and escalate cases that need attention to the right reps upon case creation or update. Contact your LeanData team to learn more.',
+                  'action': 'Request a Demo',
+                  'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ACCOUNT_CREATION_NODE] = {
+              selector: '.routing-account-creation',
+              featureName: 'Account Creation',
+              upsell: {
+                'title': 'Looking to Create Accounts in Your Routing Flow?',
+                'body': 'Support your account-based strategy by creating accounts for high priority leads where an account doesn’t exist. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ROUTING_DEPLOYMENT_HISTORY] = {
+              selector: '.routing-deployment-history',
+              featureName: 'Deployment History',
+              upsell: {
+                'title': 'View and Manage Previously Deployed Routing Flows.',
+                'body': 'View Routing Insights and instantly revert to a previously deployed Routing flow version. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.L2L_NODE] = {
+              selector: '.routing-lead-to-lead',
+              featureName: 'Lead-to-Lead Routing',
+              upsell: {
+                'title': 'Perform Account-Based Marketing and Sales.',
+                'body': 'Match leads with other leads from the same company to assign all leads to the same rep. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.L2O_NODE] = {
+              selector: '.routing-lead-to-opportunity',
+              featureName: 'Lead-to-Opportunity Routing',
+              upsell: {
+                'title': 'Route a Lead to an Active Opportunity. Learn about Professional',
+                'body': 'Match leads to existing opportunities so you can assign leads to reps who are actively working opportunities. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+
+          this.FEATURE_CONFIG[this.CREATE_OPP_NODE] = {
+              selector: '.routing-create-opportunity',
+              featureName: 'Create Opportunity',
+              upsell: {'title': 'Looking to Create Opportunities in Your Routing Flow? Learn about Professional', 'body': 'Support your account-based strategy by creating opportunities for high priority accounts where one doesn\'t exist.', 'action': 'Learn about Professional', 'location': '//www.leandatainc.com/packaging'}
+          };
+          
+          // For L2L_NODE, so that we have different body text for L2L Action Node
+          this.FEATURE_CONFIG['assign owner lead'] = {
+              selector: '.routing-lead-to-lead',
+              featureName: 'Lead-to-Lead Routing',
+              upsell: {
+                'title': 'Perform Account-Based Marketing and Sales.',
+                'body': 'Route leads to reps who are already working leads from an existing company even if an account doesn’t exist yet. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          // For L2O_NODE, so that we have different body text for L2O Action Node
+          this.FEATURE_CONFIG['assign owner opportunity'] = {
+              selector: '.routing-lead-to-opportunity',
+              featureName: 'Lead-to-Opportunity Routing',
+              upsell: {
+                'title': 'Route a Lead to an Active Opportunity.',
+                'body': 'Assign leads to reps who are actively working opportunities. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ROUTING_EMAIL_NOTIFICATIONS] = {
+              selector: '.routing-notifications',
+              featureName: 'Email Notifications',
+              upsell: {
+                'title': 'Get Notified About Important Buying Signals.',
+                'body': 'Alert sales reps and account executives when there are important buying signals or a high priority lead becomes engaged. Contact your LeanData team to learn more.',
+                'action': 'Request Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          };
+
+          this.FEATURE_CONFIG[this.TERRITORY_ROUTING] = {
+              selector: '.territory-routing-BB',
+              featureName: 'Route To Territory',
+              upsell: { 'title': 'Looking to Route to Territories? Learn about Professional', 'body': 'Support and automate any global routing process to instantly assign engaged prospects and customers to the right reps. Assign ownership by matching to territories.', 'action': 'Learn about Professional', 'location': '//www.leandatainc.com/packaging'}
+          };
+          
+          this.FEATURE_CONFIG[this.VIEW_ON] = {
+              selector: '.view-product',
+              featureName: 'View',
+              upsell: {'title': 'Equip the Team to See Everyone in a Single View', 'body': 'Allows your sales and marketing teams to immediately see results from account-based marketing programs and account activity. Your account executives and inside sales team can see which leads match into accounts without having to search, saving dozens of hours per month.', 'action': 'Learn More', 'location': '//learn.leandatainc.com/h/i/254497563-leandata-view/258966'}
+          };
+          
+          this.FEATURE_CONFIG[this.HAS_TAGGING_PRODUCT] = {
+              selector: '.matching-product',
+              featureName: 'Tagging',
+              upsell: {
+                'title': 'Uncover Hidden Connections.',
+                'body': 'Connect leads to accounts to build a foundation for account-based sales and marketing. Contact your LeanData team to learn more.',
+                'action': 'Learn about Matching',
+                'location': '//www.leandatainc.com/matching'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ACCOUNT_SCORING_ON] = {
+              selector: '.account-scoring',
+              featureName: 'Account Scoring',
+              upsell: {
+                'title': 'Looking to Prioritize Your Accounts?', 
+                'body': 'Leverage Account Scoring to identify your most important accounts. Contact your LeanData team to learn more.', 
+                'action': 'Request a Demo', 
+                'location': '//www.leandatainc.com/demo-request'}
+          };
+          
+          this.FEATURE_CONFIG[this.BUYER_PERSONA_ENABLED] = {
+              selector: '.buyer-persona',
+              featureName: 'Buyer Persona',
+              upsell: {
+                'title': 'Segment Your Leads and Contacts by Buyer Persona.',
+                'body': 'Precisely segment your database and understand who you are marketing to. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.MULTI_TIEBREAKERS_ON] = {
+              selector: '.matching-multi-tiebreakers',
+              featureName: 'Multiple Tie-breakers',
+              upsell: {
+                'title': 'Looking for Additional Match Segmentation?',
+                'body': 'Further segment your Lead-to-Account matches with the industry’s leading matching solution. Contact your LeanData team to learn more.',
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.ATTRIBUTION_ON] = {
+              selector: '.attribution-product',
+              featureName: 'Attribution',
+              upsell: {
+                'title': 'Looking for Marketing Attribution?',
+                'body': 'Measure and optimize marketing revenue impact. Contact your LeanData team to learn more.',
+                'action': 'Learn about Attribution',
+                'location': '//www.leandatainc.com/attribution-reporting'
+              }
+          };
+          
+          this.FEATURE_CONFIG[this.INTEGRATIONS_ENABLED] = {
+              selector: '.partner-apps-menu-item',
+              featureName: 'Partner Apps ###',
+              upsell: {
+                'title': 'Power your Technology Stack with LeanData',
+                'body': `
+                  Expedite speed to lead, respond, and engage by automating
+                  actions with Partner Apps, backed by the power of LeanData and
+                  simplified with the ease of FlowBuilder. Contact your LeanData
+                  team to learn more.
+                `,
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          };
+
+          this.FEATURE_CONFIG[this.MULTI_GRAPH_ACTIVE] = {
+            selector: '.business-units',
+            featureName: 'Business Units',
+            upsell: {
+                'title': 'Run Leads through Graphs by Business Units',
+                'body': `
+                  Send Leads to appropriate business units.
+                `,
+                'action': 'Request a Demo',
+                'location': '//www.leandatainc.com/demo-request/'
+              }
+          }
+
+          /******************************
+           * Subscription Badge Mapping
+           *****************************/
+          this.SUBSCRIPTION_LOGOS = {
+            '': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-blank-2x.png')}",
+            undefined: "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-blank-2x.png')}",
+            null: "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-blank-2x.png')}",
+            'view-only': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-view_only.png')}",
+            'starter-lead': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-starter_lead.png')}",
+            'basic-routing': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-basic_routing-2x.png')}",
+            'professional-lead': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-professional_lead.png')}",
+            'professional-advanced': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-professional-advanced-2x.png')}",
+            'enterprise-lead': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-enterprise_lead.png')}",
+            'enterprise-advanced': "{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-enterprise_advanced-2x.png')}",
+          };
+
+          // Toggling logo depending on subscription, if invalid, default to
+          // undefined
+          const logoSrc = 
+            this.SUBSCRIPTION_LOGOS.hasOwnProperty(this.viewObject.subscriptionLevel) ?
+            this.SUBSCRIPTION_LOGOS[this.viewObject.subscriptionLevel] :
+            this.SUBSCRIPTION_LOGOS[undefined];
+          $('.logo img').prop('src', logoSrc);
+
+          _.each(this.FEATURE_CONFIG, (featureConfig, settingKey) => {
+              var featureSelector = featureConfig['selector'];
+              var htmlContent = '';
+
+              /**
+               * Check if this feature is provisioned via custom settings.
+               * If not enabled, disable DOM corresponding to menu item.
+               *
+               * Further reference: LeanData.cls
+               * - PROVISIONABLE_FEATURES
+               * - getFeatureProvisioning
+               */
+
+              if (!this.viewObject.featureProvisioning[settingKey] || this.viewObject.featureProvisioning[settingKey] === '0') {
+                  var upgradeButton = j$('<span class="label label-default label-ld-upgrade ld-promo">UPGRADE</span>');
+                  j$(featureSelector).find('.product-badge').html(upgradeButton);
+                  
+                  htmlContent = upsellContainerTemplate(featureConfig);
+              }
+
+              // Add upgrade popovers to the upgrade buttons when clicked.
+              j$(featureSelector).find('.ld-promo').popover({
+                  placement: 'right',
+                  container: '.left-sidebar-popover-container',
+                  content: htmlContent,
+                  html: true,
+                  trigger: 'manual',
+                  template: '<div class="popover" role="tooltip"><div class="arrow"></div>' +
+                  '<h3 class="popover-title">' +
+                  '</h3><div class="popover-content"></div></div>'
+              }).on("click", function (event) {
+                  var _this = this;
+                  j$(this).popover("show");
+                  j$('#' + j$(this).attr('aria-describedby')).on("mouseleave", function () {
+                      j$(_this).popover('hide');
+                  });
+                  event.stopPropagation();
+              }).on("mouseleave", function () {
+                  var _this = this;
+                  setTimeout(function () {
+                      if (!j$(".popover:hover").length) {
+                          j$(_this).popover("hide")
+                      }
+                  }, 300);
+              });
+          });
+      }
+
+      DashboardController.prototype.showPackagingPopup = function(target, popupType) {
+          var $target = j$(target);
+          var featureName = $target.data("feature");
+
+          if(popupType === 'upsell') {
+              var upsellHtml = upsellContainerTemplate({upsell: dashboardController.FEATURE_CONFIG[featureName].upsell});
+          }
+
+          j$('.upsell-container').remove();
+          var upsellToast = j$(upsellHtml).appendTo(target);
+          upsellToast.show();
+      }
+
+      // Instantiate dashboard
+      dashboardController = new DashboardController();
+
+      // Set Authorization Link for All Dashboard Components
+      var globalAuthorizationLink = dashboardController.viewObject['isSandbox'] ? 'https://edge.leandatainc.com/auth/salesforcesandbox?instance_url=' + dashboardController.viewObject['sfInstance'] : 'https://edge.leandatainc.com/auth/salesforce';
+      if (dashboardController.viewObject['isManagedByOverlord']) {
+          globalAuthorizationLink = dashboardController.viewObject['isSandbox'] ? 'https://test.salesforce.com/services/oauth2/authorize?' : 'https://login.salesforce.com/services/oauth2/authorize?';         
+          globalAuthorizationLink += '&state=' + dashboardController.viewObject['overlordState'];
+          globalAuthorizationLink += '&response_type=code&client_id=3MVG9A2kN3Bn17hsx_bwj24IbvT.42LAiTdWbki1MhVMuHgwXiMkFFFfB.86e7EKi4ZsGRFwxpnBnZisdmyfa&redirect_uri=https://leandata.secure.force.com/oauthcallback';
+      }
+
+      // Legacy Global functions
+      window.leavePageAnyway = function(){
+        modalDirtyConfirmed = false;
+        changePage(modalDestination, modalParameters);
+        j$('.modal-backdrop').hide();
+      }
+
+      window.numberWithCommas = function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+
+      window.clearModalDiv = function() {
+        j$('#modalDiv').empty();
+      }
+
+      window.showErrorModal = function(msg) {
+        _LeanData.Notification.showConfirmationDialog({
+          header: 'Error Occurred',
+          message: msg,
+          confirmButtonText: 'Ok',
+          showRejectButton: false,
+        });
+      }
+
+      window.showSettingsSavedModal = function() {
+        _LeanData.Notification.showConfirmationDialog({
+          header: 'Settings Saved',
+          message: 'Your settings have been successfully saved.',
+          confirmButtonText: 'Ok',
+          showRejectButton: false,
+        });
+      }
+            
+      // Global click event listeners
+      j$(document).click(function(event) {
+        if(!$(event.target).closest('.upsell-wide-badge').length) {
+          if(j$('.upsell-container').is(":visible")) {
+            j$('.upsell-container').hide();
+          }
+        }
+
+        if(!j$(event.target).closest('.ld-tooltip-hint').length) {
+          j$('.page-content .ld-tooltip-hint.open .ld-tooltip-close-icon').trigger('click');
+        }
+      });
+
+      j$('#settingsSavedModal').on('hidden.bs.modal', function (e) {
+        window.history.back();
+      });
+    </script>
+
+    <div class="bs">
+      <apex:form >
+        <apex:pageMessages id="pm" />
+
+        <!-- AF to change the active component/page. Triggers Loading status.-->
+        <apex:actionFunction action="{!setActivePage}" name="setActivePageAF" rerender="mainContent" status="loadingComponent" oncomplete="clearModalDiv();initComponent();">
+          <apex:param name="activePage" assignTo="{!activePage}" value=""/>
+          <apex:param name="parameters" assignTo="{!parameters}" value=""/>
+        </apex:actionFunction>
+
+        <!-- AF to set Edge settings. Triggered by the View and Merge duplicates pages. -->
+        <apex:actionFunction action="{!setEdgeSettingsAndReturn}" name="setEdgeSettingsAndReturnAF" rerender="x" status="loadingComponent" oncomplete="showSettingsSavedModal();">
+          <apex:param name="edgeSettings" assignTo="{!edgeSettings}" value=""/>
+        </apex:actionFunction>
+
+        <div class="page-content">
+          <div class="sandbox-warning-banner hidden">
+            <div>
+              <div class="sandbox-refresh-icon"></div>
+              <div id="sandbox-refresh-text">You have opened LeanData in a Salesforce Sandbox org. If you refresh this sandbox org in Salesforce, you will lose key settings and routing graphs created here. Please export your graphs prior to refreshing.&nbsp;<a href="https://leandatahelp.zendesk.com/hc/en-us/articles/360020399894-How-do-I-Import-and-Export-my-Router-Flow-" target="_blank">See here for instructions</a></div>
+            </div>
+            <div id="close-sandbox-warning-banner" class="ld-cross-icon-white-to-grey" ></div>
+          </div>
+          <!-- .header -->
+          <div class="header">
+              <div class="logo package-logo">
+                  <img src="{!URLFOR($Resource.magellan_app, 'images/ld-subscription-logo-blank-2x.png')}" alt="Logo" />
+              </div>
+          </div>
+
+          <apex:outputPanel id="mainContent" layout="block" styleClass="main-content">
+          
+            <!-- Loading action status. -->
+            <apex:actionStatus id="loadingComponent">
+              <apex:facet name="start">
+                <div class="loadingOverlay">
+                  <div class="loadingParent">
+                    <div class="sk-circle">
+                      <div class="sk-circle1 sk-child"></div>
+                      <div class="sk-circle2 sk-child"></div>
+                      <div class="sk-circle3 sk-child"></div>
+                      <div class="sk-circle4 sk-child"></div>
+                      <div class="sk-circle5 sk-child"></div>
+                      <div class="sk-circle6 sk-child"></div>
+                      <div class="sk-circle7 sk-child"></div>
+                      <div class="sk-circle8 sk-child"></div>
+                      <div class="sk-circle9 sk-child"></div>
+                      <div class="sk-circle10 sk-child"></div>
+                      <div class="sk-circle11 sk-child"></div>
+                      <div class="sk-circle12 sk-child"></div>
+                    </div>
+                  </div>
+                </div>
+              </apex:facet>
+            </apex:actionStatus>
+            
+            <!-- Dynamic component. Each tab has its own component. -->
+            <apex:dynamicComponent componentValue="{!pageComponent}"/>
+          </apex:outputPanel>
+          <div id="magellan-modals"></div>
+          <div id="app-waiting-screen"></div>
+          <div id="angela-app-wrapper"></div>
+        </div>
+      </apex:form>
+
+      <div id="defaultModalDiv"></div>
+      <div id="modalDiv"></div>
+    </div>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="{!angelaResourceUrlDBC + '/runtime-es2015.js'}"></script>
+    <script type="text/javascript" src="{!angelaResourceUrlDBC + '/polyfills-es2015.js'}"></script>
+    <script type="text/javascript" src="{!angelaResourceUrlDBC + '/scripts.js'}"></script>
+    <script type="text/javascript" src="{!angelaResourceUrlDBC + '/vendor-es2015.js'}"></script> <!-- Dev Only -->
+    <script type="text/javascript" src="{!angelaResourceUrlDBC + '/main-es2015.js'}"></script>
+    
+    <!-- Detach angular app wrapper to be loaded later in Dashboard.page -->
+    <script>
+      window.angelaApp = window.j$('ld-root').detach();
+    </script>
+
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__Libraries, 'styles/bootstrap-3.3.4.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__Libraries, 'styles/bootstrap-multiselect.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__Libraries, 'styles/jquery-ui-timepicker-addon.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__Libraries, 'styles/jquery.dataTables.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__Libraries, 'styles/loading_spinner.css')}"/>
+    <apex:stylesheet value="{!magellanResourceUrlDBC + '/css/magellan.css'}"/>
+    <apex:stylesheet value="{!magellanResourceUrlDBC + '/css/style.css'}"/>
+    <apex:stylesheet value="{!magellanResourceUrlDBC + '/scss/magellan.css'}"/>
+
+    <!-- Libraries / Javascript Helpers -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-3.5.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-ui-1.12.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'lodash-4.17.15.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'backbone-1.4.0.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'rappid-3.1.1.min.js')}" />
+    
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-ui-timepicker-addon-1.6.3.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jQueryRotate-2.3.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery.noty.packaged.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'dataTables-1.10.16.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'dataTables.editor-1.7.0.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'dataTables.fixedColumns-2.0.0.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'dataTables.keyTable-2.3.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'popper-1.16.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'bootstrap-4.5.3.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'bootstrap-multiselect.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'typeahead-0.11.1.bundle.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'd3-4.10.0.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'moment-2.29.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'moment-timezone-with-data.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'sorting-datetime-moment-1.10.12.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'autonumeric_min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'loadingoverlay-2.1.7.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'autosize-3.0.17.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'highcharts-8.2.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'highcharts-more-8.2.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'human-format.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'keyboard.js')}" />
+    <apex:includeScript value="{!$Resource.LeanData__viewJSResource}" />
+    <apex:includeScript value="{!$Resource.LeanData__htmlSanitizer}" />
+    <apex:includeScript value="{!$Resource.LeanData__UploadCsvJs}" />
+    <c:UtilJS />
+    <c:ModalJS />
+    <c:javascriptPaginator />
+
+    <!-- Initialize key magellan_app files -->
+    <apex:includeScript value="{!magellanResourceUrlDBC + '/main.bundle.js'}" />
+    <apex:includeScript value="{!magellanResourceUrlDBC + '/initializers.js'}" />
+
+    <!-- --------------------- Start Legacy Code Block --------------------- -->
+    <script>
+      if (typeof $ == 'undefined') $ = j$;
+
+      j$(document).ready(function() {
+        // Display loading animation.
+        j$('.loadingOverlay').parent().css('display', 'block');
+
+        dashboardController.initializeProductFeatures();
+
+        // initialize default modals
+        j$('#defaultModalDiv').append(createModal('settingsSaved', 'Settings Saved', '<div class="modal-body"><p>Your settings have been successfully saved.</p><p class="lean">The LeanData Team</p></div>', null, null, null, null, null, 40));
+        j$('#defaultModalDiv').append(createModal('viewSettingsWarning', 'Warning: Unsaved Changes', '<div class="modal-body"><p>You have unsaved changes. If you leave this page before updating the settings for this Profile, these changes will not be saved.</p></div>', null, null, null, null, null, 40));
+        j$('#defaultModalDiv').append(createModal('error', 'Error Occurred', '', null, null, null, null));
+      });
+    </script>
+    <!-- --------------------- END Legacy Code Block ----------------------- -->
+
+    <script>
+      // Put angular app inside Dashboard.page
+      $('#angela-app-wrapper').html(window.angelaApp);
+      // Hiding/Showing happens in router.js based on if it's a backbone router page or angular page route
+      $('.main-content').hide();
+      
+      let overlordState = JSON.parse(dashboardController.viewObject.overlordState);
+      if (overlordState.isManagedPackage && !overlordState.isSandbox) {
+        (function(apiKey){
+          (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+          v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+              o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+              y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+              z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+        })('7e7cd4b3-14da-445e-7723-b673afae6f3c');
+
+          pendo.initialize({
+          visitor: {
+              id:                     '{!JSENCODE(userId)}',                 // Salesforce User Id
+              userClassicOrLightning: '{!JSENCODE(userClassicOrLightning)}', // Salesforce User Classic or Lightning
+              userProfile:            '{!JSENCODE(userProfile)}',            // Salesforce User Profile
+              userRole:               '{!JSENCODE(userRole)}'                // Salesforce User Role
+          },
+          account: {
+              id:                     '{!JSENCODE(orgId)}'                   // Salesforce Org Id
+          }
+        });
+      }
+
+      // Enable console logging and debugging features
+      let sessionTimer = 0;
+      let clearSessionInterval = _.debounce(() => sessionTimer = 0, 500);
+      let incrementSessionTime = () => toggleSessionDisplay(++sessionTimer >= 3);
+      let toggleSessionDisplay = (enable) => {
+        if (enable) {
+          console.log('Debugging Mode Enabled (current tab only, via sessionStorage key ld_debugging).')
+          sessionStorage.setItem('ld_debugging', '1');
+        }
+        clearSessionInterval();
+      }
+      j$('.logo.package-logo').click((e) => incrementSessionTime());
+
+      // Show blue warning/information banner if in a sandbox
+      if (overlordState.isSandbox) {
+        const warningBanner = j$('.sandbox-warning-banner');
+        warningBanner.removeClass('hidden');
+        j$('#close-sandbox-warning-banner').click((e) => warningBanner.addClass('hidden'));
+      }
+    </script>
+  </body>
+</apex:page>

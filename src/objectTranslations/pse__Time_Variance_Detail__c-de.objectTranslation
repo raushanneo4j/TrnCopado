@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zeitabweichung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zeitvarianzen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitabweichung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Zeitvarianzen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitabweichung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Zeitvarianzen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitabweichung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Zeitvarianzen --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der übertragenen Stunden, die abrechenbar sind.</help>
+        <label><!-- Billable Hours --></label>
+        <name>pse__Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der übertragenen Stunden, die gutgeschrieben werden.</help>
+        <label><!-- Credited Hours --></label>
+        <name>pse__Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass abrechenbare Stunden ausgeschlossen wurden, als diese Zeitabweichung berechnet wurde.</help>
+        <label><!-- Exclude Billable Hours --></label>
+        <name>pse__Exclude_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass gutgeschriebene Stunden ausgeschlossen wurden, als diese Zeitabweichung berechnet wurde.</help>
+        <label><!-- Exclude Credited Hours --></label>
+        <name>pse__Exclude_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass ausgeschlossene Stunden ausgeschlossen wurden, als diese Zeitabweichung berechnet wurde.</help>
+        <label><!-- Exclude Excluded Hours --></label>
+        <name>pse__Exclude_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der übermittelten Stunden, die ausgeschlossen sind.</help>
+        <label><!-- Excluded Hours --></label>
+        <name>pse__Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Anzahl der übertragenen Stunden, die nicht abrechenbar sind.</help>
+        <label><!-- Non-billable Hours --></label>
+        <name>pse__Nonbillable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Time Variance Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Variance Calculation --></label>
+        <name>pse__Time_Variance_Calculation__c</name>
+        <relationshipLabel><!-- Time Variance Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Submitted --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Stunden aus dem Arbeitskalender der Ressource.</help>
+        <label><!-- Work Calendar Hours --></label>
+        <name>pse__Work_Calendar_Hours__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Variance Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Zeitvarianzname</nameFieldLabel>
+</CustomObjectTranslation>

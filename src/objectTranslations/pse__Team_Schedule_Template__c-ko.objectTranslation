@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>팀 일정 템플릿</value>
+    </caseValues>
+    <fields>
+        <help>팀 일정 템플릿이 팀 일정에 마지막으로 사용 된 날짜입니다.</help>
+        <label><!-- Date Last Used --></label>
+        <name>pse__Date_Last_Used__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 일정 템플리트가 팀의 기본값입니다.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__Is_Default__c</name>
+    </fields>
+    <fields>
+        <help>템플릿과 관련된 팀.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedule Templates --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Schedule Template Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>팀 일정 템플릿 이름</nameFieldLabel>
+</CustomObjectTranslation>

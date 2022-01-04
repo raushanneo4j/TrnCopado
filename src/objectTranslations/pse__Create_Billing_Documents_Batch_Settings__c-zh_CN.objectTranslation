@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 创建开票凭证批量设置 --></value>
+    </caseValues>
+    <fields>
+        <help>要在单个批处理中处理的记录数。默认值为3。</help>
+        <label><!-- Create Billing Documents Batch Size --></label>
+        <name>pse__Create_Billing_Documents_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则“创建出具发票凭证”批处理过程中的通知将通过Chatter发送给“通知收件人”设置中列出的收件人。默认情况下取消选择此选项。</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则“创建出具发票凭证”批处理过程中的通知将通过电子邮件发送给“通知收件人”设置中列出的收件人。默认情况下会选中此选项。</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>指定通过Chatter或电子邮件发送的创建出具发票凭证批处理通知的通知收件人。该值是以分号（;）分隔的电子邮件地址列表。默认情况下，此设置为null。</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则通过任务发送来自“创建出具发票凭证”批处理的通知。默认情况下取消选择此选项。</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+</CustomObjectTranslation>

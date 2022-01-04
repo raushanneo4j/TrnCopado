@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- IHC Mapping Konkurrerer med PSA --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- IHC Mappings Samstemmende med PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Felt af PSA Objekt, for hvilket transformation skal oprettes i Integration Hub Connector.</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>PSA Object, for hvilket transformation skal oprettes i Integration Hub Connector.</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Tredje parts applikationsobjekt, for hvilket transformation skal oprettes i Integration Hub Connector.</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>Tredjeparts applikationsobjekt, for hvilket transformation skal oprettes i Integration Hub Connector.</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>Tredjepartssøgning, for hvilken transformation skal oprettes i Integration Hub Connector.</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>Enig</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indtast Virtual Data Resource i Integration Hub Connector.</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>Navnet på Virtual Data Resource i Integration Hub Connector.</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object used for storing Neo4J license keys</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>License_Keys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Activation Keys</relationshipLabel>
+        <relationshipName>License_Keys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Email associated with the license key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email associated with the license key</inlineHelpText>
+        <label>Key recipient email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <description>Expiration date for the license key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiration date for the license key</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Feature_Version__c</fullName>
+        <description>Feature version associated with the license key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Feature version associated with the license key</inlineHelpText>
+        <label>Feature Version</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>*</fullName>
+                    <default>true</default>
+                    <label>Any Version</label>
+                </value>
+                <value>
+                    <fullName>&lt;1.0</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pre 1.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Feature__c</fullName>
+        <description>Feature associated with the license key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Feature associated with the license key</inlineHelpText>
+        <label>Product/Feature</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>neo4j-desktop</fullName>
+                    <default>false</default>
+                    <label>Neo4j Desktop</label>
+                </value>
+                <value>
+                    <fullName>neo4j-bloom-server</fullName>
+                    <default>false</default>
+                    <label>Neo4j Bloom Server (Plugin)</label>
+                </value>
+                <value>
+                    <fullName>neo4j-gds</fullName>
+                    <default>false</default>
+                    <label>Neo4j Graph Data Science (GDS)</label>
+                </value>
+                <value>
+                    <fullName>neo4j-bloom</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Neo4j Bloom (Desktop app)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key__c</fullName>
+        <description>Neo4j License Key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Neo4j License Key</inlineHelpText>
+        <label>Key</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipName>License_Keys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Active_Days__c</fullName>
+        <description>Calculates number of days from the create date to the expiration date</description>
+        <externalId>false</externalId>
+        <formula>Expiration_Date__c - DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Active Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity associated with License Key request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity associated with License Key request</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>License_Keys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Organization__c</fullName>
+        <description>Name of the organization associated with the license key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the organization associated with the license key</inlineHelpText>
+        <label>Organization</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Publisher__c</fullName>
+        <description>Publisher of the feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Publisher of the feature</inlineHelpText>
+        <label>Publisher</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>neo4j.com</fullName>
+                    <default>true</default>
+                    <label>neo4j.com</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <description>Number of user licenses associated with the key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of user licenses associated with the key</inlineHelpText>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registrant_First_Name__c</fullName>
+        <description>Registrant First Name used in email templates</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lead__c )),
+Lead__r.FirstName,
+Contact__r.FirstName
+)</formula>
+        <inlineHelpText>Registrant First Name used in email templates</inlineHelpText>
+        <label>Registrant First Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registrant__c</fullName>
+        <description>Name of the contact associated with the key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the contact associated with the key</inlineHelpText>
+        <label>Registrant</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_Email__c</fullName>
+        <description>Email of the Neo4j sales rep who owns the record</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lead__c )), 
+Lead__r.Owner:User.Email, 
+IF(NOT(ISBLANK( Opportunity__c )), 
+Opportunity__r.Owner.Email, 
+Contact__r.Owner.Email
+) 
+)</formula>
+        <inlineHelpText>Email of the Neo4j sales rep who owns the record</inlineHelpText>
+        <label>Sales Rep Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lead__c )), 
+Lead__r.Owner:User.Id, 
+IF(NOT(ISBLANK( Opportunity__c )), 
+Opportunity__r.Owner.Id, 
+Contact__r.Owner.Id 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Rep ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_Name__c</fullName>
+        <description>Name of the Neo4j sales rep who owns the record</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Lead__c )),
+Lead__r.Owner:User.FirstName &amp; &apos; &apos; &amp; Lead__r.Owner:User.LastName,
+IF(NOT(ISBLANK( Opportunity__c )),
+Opportunity__r.Owner.FirstName &amp; &apos; &apos; &amp; Opportunity__r.Owner.LastName,
+Contact__r.Owner.FirstName &amp; &apos; &apos; &amp; Contact__r.Owner.LastName
+)
+)</formula>
+        <inlineHelpText>Name of the Neo4j sales rep who owns the record</inlineHelpText>
+        <label>Sales Rep Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Type of key requested</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of key requested</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <label>Trial</label>
+                </value>
+                <value>
+                    <fullName>Production</fullName>
+                    <default>false</default>
+                    <label>Production</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>X_Expiration_Date_Formatted__c</fullName>
+        <description>Formatted date field used in email templates</description>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(Expiration_Date__c),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;, 
+4, &quot;April&quot;, 
+5, &quot;May&quot;, 
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+12, &quot;December&quot;,
+&quot;None&quot;) &amp; &apos; &apos; &amp; TEXT(DAY(Expiration_Date__c)) &amp; &apos;, &apos; &amp; TEXT(YEAR(Expiration_Date__c))</formula>
+        <inlineHelpText>Formatted date field used in email templates</inlineHelpText>
+        <label>X_Expiration_Date_Formatted</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X_Generate_License_Key__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Internal field for triggering the fetching of new license key from the key server</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal field for triggering the fetching of new license key from the key server</inlineHelpText>
+        <label>X_Generate_License_Key</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X_Send_License_Key__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field triggers the sending of licensing key to the registrant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field triggers the sending of licensing key to the registrant</inlineHelpText>
+        <label>X_Send_License_Key</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Activation Key</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>LK-{0000}</displayFormat>
+        <label>License Key Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Activation Keys</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

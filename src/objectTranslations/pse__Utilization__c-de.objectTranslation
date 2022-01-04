@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Nutzung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Nutzung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Die Anzahl der Zuweisungen, die bei der Berechnung der Auslastung in einem einzelnen Stapel verarbeitet werden sollen</help>
+        <label><!-- Assignment Batch Size --></label>
+        <name>pse__Assignment_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Legt die maximale Anzahl untergeordneter Datensätze fest, oberhalb derer eine Batch-Löschung anstelle einer kaskadierenden Löschung verwendet wird.</help>
+        <label><!-- Batch Deletion Cut-Off Point --></label>
+        <name>pse__Batch_Deletion_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>Ermöglicht die Berechnung der produktübergreifenden Kombination aus Region, Praxis und Gruppe. Zum Beispiel &quot;Region nach Praxis&quot; oder &quot;Gruppe nach Region&quot;</help>
+        <label><!-- Calculate Cross Products --></label>
+        <name>pse__Calculate_Cross_Products__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, berechnen Sie die geplante Zeit für angehaltene (nicht zugewiesene) Ressourcenanforderungen.</help>
+        <label><!-- Calculate Held Resource Request Time --></label>
+        <name>pse__Calculate_Held_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Summary By Role --></label>
+        <name>pse__Calculate_Summary_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Unheld Resource Request Time --></label>
+        <name>pse__Calculate_Unheld_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <help>Steuert die Felder im Ressourcenanforderungsobjekt, um Nutzungsberechnungen für nicht abgelegte Ressourcenanforderungen einzuschließen. Diese Einstellung akzeptiert benutzerdefinierte und Standardfeldwerte in SOQL-Abfragen. Wenn nicht definiert, verwenden Berechnungen Standardkriterien.</help>
+        <label><!-- Custom Filters for Unheld RR Utilization --></label>
+        <name>pse__CustomFiltersforUnheldRRUtilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Legt beim Batch-Löschen vorheriger Auslastungsberechnungen fest, wie viele Datensätze für Auslastungsberechnungen maximal pro Charge verarbeitet werden sollen.</help>
+        <label><!-- Deletion Batch Size --></label>
+        <name>pse__Deletion_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Legt beim Batch-Löschen vorheriger Auslastungsberechnungen die maximale Anzahl von Auslastungsdetail- und Zusammenfassungsdatensätzen fest, die pro Batch verarbeitet werden sollen.</help>
+        <label><!-- Deletion Child Record Batch Size --></label>
+        <name>pse__Deletion_Child_Record_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, verwendet die historische Verwendung den Starttag basierend auf dem Arbeitskalender anstelle des Gebietsschemas des Benutzers.</help>
+        <label><!-- Historical UTE Work Cal Start Day --></label>
+        <name>pse__Historical_UTE_Work_Cal_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Ressourcen, die bei der Berechnung der Auslastung in einem einzelnen Stapel verarbeitet werden</help>
+        <label><!-- Resource Batch Size --></label>
+        <name>pse__Resource_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request Batch Size --></label>
+        <name>pse__Resource_Request_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Utilization Approach --></label>
+        <name>pse__Target_Utilization_Approach__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Zeitkarten, die bei der Berechnung der Auslastung in einem einzelnen Stapel verarbeitet werden</help>
+        <label><!-- Timecard Batch Size --></label>
+        <name>pse__Timecard_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Eine kommagetrennte Liste von Zeitkartenstatuswerten, die verwendet werden, um zu ermitteln, welche Zeitkarten für die Verwendungsberechnungen verwendet werden.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, ob das Flag &quot;Is Report Master&quot; basierend auf dem Objekt &quot;Time Period and Parent&quot; (Checked) oder basierend auf dem Namen der Utilization Calculation (Unchecked) zurückgesetzt wird.</help>
+        <label><!-- Uncheck Master Based On Time/Parent --></label>
+        <name>pse__Uncheck_Master_Based_On_Time_Parent__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, berechnen Auslastungsdetails nicht das letzte Datum der Ressource.</help>
+        <label><!-- Use Last Date on Resource --></label>
+        <name>pse__Use_Last_Date_on_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird die Utilization Engine zur Berechnung der Auslastung mit der Schichtverwaltung verwendet. Der Standardwert ist falsch.</help>
+        <label><!-- Use Utilization Engine for Shift Mgmt --></label>
+        <name>pse__Use_Utilization_Engine_TOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Utilization Engine --></label>
+        <name>pse__Use_Utilization_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Engine Batch Size --></label>
+        <name>pse__Utilization_Engine_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Anzahl der Tage in der Zukunft an, um Echtzeitauslastungsdaten für das Schichtmanagement zu verwalten. Der Standardwert ist 30.</help>
+        <label><!-- Utilization Eng Max Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Max_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl von Tagen in der Zukunft, für die Echtzeit-Nutzungsdaten aufbewahrt werden</help>
+        <label><!-- Utilization Engine Max Range --></label>
+        <name>pse__Utilization_Engine_Max_Range__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Anzahl der Tage vor dem aktuellen Datum an, um Echtzeitauslastungsdaten für das Schichtmanagement zu berechnen. Der Standardwert ist 5.</help>
+        <label><!-- Utilization Eng Start Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Start_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Definiert die Anzahl der Tage vor dem aktuellen Datum, um Echtzeit-Nutzungsdaten zu berechnen. Auf 0 setzen, um die Berechnung ab dem aktuellen Datum zu starten. Der Standardwert ist 50.</help>
+        <label><!-- Utilization Engine Start Range --></label>
+        <name>pse__Utilization_Engine_Start_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

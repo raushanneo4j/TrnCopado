@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ARR (do not use) --></label>
+        <name>ARR_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project SFDC-0145 (Jan9&apos;21) changes the datatype from number to currency (no historic data migration) and is auto-calculated whenever oppline is &quot;subscription&quot; and Opportunity Stage is Open and &lt;=Sales Ops Review, based on line inputs/assumptions --></help>
+        <label><!-- ARR --></label>
+        <name>ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned User ID --></label>
+        <name>Assigned_User_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if a Aura Marketplace order. Name of person that will be accepting the Marketplace order. If others should receive the Marketplace order, rep will send an email to Deals Desk with names and emails. --></help>
+        <label><!-- Customer Contact Name --></label>
+        <name>Attn_Customer_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Credit Amount --></label>
+        <name>Aura_Annual_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate for Marketplace (MP) order. MP orders identified by Partner name and Partner Type = Fulfillment, Field is Local Gross amount (do not deduct MP Margin). This amt will be submitted in the MP Order which Deals Desk creates and submits. --></help>
+        <label><!-- Annual Amount --></label>
+        <name>Aura_Private_Offer_Annual_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. This is manually populated and does not influence automation. --></help>
+        <label><!-- Auto Renewal --></label>
+        <name>Auto_Renewal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Populate if this is an Aura Product Line Item --></help>
+        <label><!-- Cloud Provider --></label>
+        <name>Cloud_Provider__c</name>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Regions are physical locations around the world where data clusters are available for a particular provider selected from the &quot;Cloud Provider&quot; picklist. Populate if this is an Aura Product Line Item. --></help>
+        <label><!-- Cloud Region --></label>
+        <name>Cloud_Region__c</name>
+        <picklistValues>
+            <masterLabel>AWS Africa (Cape Town) Region</masterLabel>
+            <translation><!-- AWS Africa (Cape Town) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Hong Kong) Region</masterLabel>
+            <translation><!-- Asia Pacific (Hong Kong) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Mumbai) Region</masterLabel>
+            <translation><!-- Asia Pacific (Mumbai) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Osaka) Region</masterLabel>
+            <translation><!-- Asia Pacific (Osaka) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Seoul) Region</masterLabel>
+            <translation><!-- Asia Pacific (Seoul) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Singapore) Region</masterLabel>
+            <translation><!-- Asia Pacific (Singapore) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Sydney) Region</masterLabel>
+            <translation><!-- Asia Pacific (Sydney) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific (Tokyo) Region</masterLabel>
+            <translation><!-- Asia Pacific (Tokyo) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BELGIUM (europe-west1)</masterLabel>
+            <translation><!-- BELGIUM (europe-west1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada (Central) Region</masterLabel>
+            <translation><!-- Canada (Central) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (Frankfurt) Region</masterLabel>
+            <translation><!-- Europe (Frankfurt) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (Ireland) Region</masterLabel>
+            <translation><!-- Europe (Ireland) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (London) Region</masterLabel>
+            <translation><!-- Europe (London) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (Milan) Region</masterLabel>
+            <translation><!-- Europe (Milan) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (Paris) Region</masterLabel>
+            <translation><!-- Europe (Paris) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe (Stockholm) Region</masterLabel>
+            <translation><!-- Europe (Stockholm) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINLAND (europe-north1)</masterLabel>
+            <translation><!-- FINLAND (europe-north1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRANKFURT (europe-west3)</masterLabel>
+            <translation><!-- FRANKFURT (europe-west3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GovCloud (US-East) Region</masterLabel>
+            <translation><!-- GovCloud (US-East) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GovCloud (US-West) Region</masterLabel>
+            <translation><!-- GovCloud (US-West) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HONG KONG (asia-east2)</masterLabel>
+            <translation><!-- HONG KONG (asia-east2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA (us-central1)</masterLabel>
+            <translation><!-- IOWA (us-central1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JAKARTA (asia-southeast2)</masterLabel>
+            <translation><!-- JAKARTA (asia-southeast2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAS VEGAS (us-west4)</masterLabel>
+            <translation><!-- LAS VEGAS (us-west4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LONDON (europe-west2)</masterLabel>
+            <translation><!-- LONDON (europe-west2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOS ANGELES (us-west2)</masterLabel>
+            <translation><!-- LOS ANGELES (us-west2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTRÉAL (northamerica-northeast1)</masterLabel>
+            <translation><!-- MONTRÉAL (northamerica-northeast1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MUMBAI (asia-south1)</masterLabel>
+            <translation><!-- MUMBAI (asia-south1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mainland China (Beijing) Region</masterLabel>
+            <translation><!-- Mainland China (Beijing) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mainland China (Ningxia) Region</masterLabel>
+            <translation><!-- Mainland China (Ningxia) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle East (Bahrain) Region</masterLabel>
+            <translation><!-- Middle East (Bahrain) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N. VIRGINIA (us-east4)</masterLabel>
+            <translation><!-- N. VIRGINIA (us-east4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NETHERLANDS (europe-west4)</masterLabel>
+            <translation><!-- NETHERLANDS (europe-west4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON (us-west1)</masterLabel>
+            <translation><!-- OREGON (us-west1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSAKA (asia-northeast2)</masterLabel>
+            <translation><!-- OSAKA (asia-northeast2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALT LAKE CITY (us-west3)</masterLabel>
+            <translation><!-- SALT LAKE CITY (us-west3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEOUL (asia-northeast3)</masterLabel>
+            <translation><!-- SEOUL (asia-northeast3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SINGAPORE (asia-southeast1)</masterLabel>
+            <translation><!-- SINGAPORE (asia-southeast1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA (us-east1)</masterLabel>
+            <translation><!-- SOUTH CAROLINA (us-east1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYDNEY (australia-southeast1)</masterLabel>
+            <translation><!-- SYDNEY (australia-southeast1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South America (São Paulo) Region</masterLabel>
+            <translation><!-- South America (São Paulo) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SÃO PAULO (southamerica-east1)</masterLabel>
+            <translation><!-- SÃO PAULO (southamerica-east1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAIWAN (asia-east1)</masterLabel>
+            <translation><!-- TAIWAN (asia-east1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOKYO (asia-northeast1)</masterLabel>
+            <translation><!-- TOKYO (asia-northeast1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US East (Northern Virginia) Region</masterLabel>
+            <translation><!-- US East (Northern Virginia) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US East (Ohio) Region</masterLabel>
+            <translation><!-- US East (Ohio) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US West (Northern California) Region</masterLabel>
+            <translation><!-- US West (Northern California) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US West (Oregon) Region</masterLabel>
+            <translation><!-- US West (Oregon) Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZURICH (europe-west6)</masterLabel>
+            <translation><!-- ZURICH (europe-west6) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cloud Utilization (GB) --></label>
+        <name>Cloud_Utilization_GB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud Utilization (Hours) --></label>
+        <name>Cloud_Utilization_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if this is an Aura Product Line Item --></help>
+        <label><!-- Contract Price Discount % --></label>
+        <name>Contract_Price_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. --></help>
+        <label><!-- Contract Terms (months) --></label>
+        <name>Contract_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cores Per Production Instance --></label>
+        <name>Cores_Per_Production_Instance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount that we pay our partner, DTA, to deliver the managed services that we contract with our end customer. --></help>
+        <label><!-- DTA Annual Fee (USD) --></label>
+        <name>DTA_Annual_Fee_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>Description_Custom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the Product associated with this Opportunity Line Item qualifies for SAO credit. Only subscription products that can be sold on a stand-alone basis for new projects qualify. New projects are defined as either new customers or cross-sell opportunities with existing customers. --></help>
+        <label><!-- Eligible for SAO Credit --></label>
+        <name>EligibleForSAOCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if Eligible for Rollover is &quot;Yes&quot; with data that is not included in other fields in SFDC such as other quaifications to be eligible for rollover. --></help>
+        <label><!-- Eligible for Rollover Details --></label>
+        <name>Eligible_for_Rollover_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if this is an Aura Product Line Item. Select &quot;Yes&quot; if eligible for rollover which means they signed a Multi-Year Deal. --></help>
+        <label><!-- Eligible for Rollover --></label>
+        <name>Eligible_for_Rollover__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate whether we need to provision an environment for this implementation. --></help>
+        <label><!-- Environment Needs to be Provisioned --></label>
+        <name>Environment_Needs_to_be_Provisioned__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates what global region the Product Account is part of based on the shipping country listed on the Account record. --></help>
+        <label><!-- Global Territory --></label>
+        <name>GlobalTerritory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historic RLI Name --></label>
+        <name>Historical_RLI_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if this is an Aura Product Line Item. Date acquired from provisioning email. Term start date can not be prior to this date. Field to be populated by Deals Desk / Sales Ops. --></help>
+        <label><!-- Instance Provisioned Date --></label>
+        <name>Instance_Provisioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. This is manually populated and does not currently drive any salesforce database automation. --></help>
+        <label><!-- Invoice Frequency --></label>
+        <name>Invoice_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Upon Completion</masterLabel>
+            <translation><!-- Bill Upon Completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress Billing</masterLabel>
+            <translation><!-- Progress Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annual</masterLabel>
+            <translation><!-- Semi-Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upfront</masterLabel>
+            <translation><!-- Upfront --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line Item ID --></label>
+        <name>Line_Item_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Non-Editiable field. Local List Contract Price per GB base on List Price in USD of 0.25. FX updated once a year, last updated 1/3/21. --></help>
+        <label><!-- List Contract Price --></label>
+        <name>List_Contract_Price_per_GB_for_Aura__c</name>
+    </fields>
+    <fields>
+        <help><!-- Narrowly visible. Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. This is manually populated and does not currently drive any salesforce database automation. --></help>
+        <label><!-- MYC Contract Amount --></label>
+        <name>MYC_Contract_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if Marketplace order. Date that the Private Offer expires (similar to discount expirations) --></help>
+        <label><!-- Marketplace Expiration Date --></label>
+        <name>Marketplace_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- As of Dec&apos;20/Jan9&apos;21 this field resides on the line level, replacing a similar field that previously existed on Opportunity (No data migration). This is manually populated and does not currently drive any salesforce database automation. --></help>
+        <label><!-- Multi-Year Type --></label>
+        <name>Multi_Year_Type__c</name>
+        <picklistValues>
+            <masterLabel>Multi-Year Contractual</masterLabel>
+            <translation><!-- Multi-Year Contractual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Year Prepaid</masterLabel>
+            <translation><!-- Multi-Year Prepaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Year Prepaid and Contractual</masterLabel>
+            <translation><!-- Multi-Year Prepaid and Contractual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New or Cross Sell --></label>
+        <name>New_or_Cross_Sell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Product ID --></label>
+        <name>Original_Product_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- &quot;Other&quot; Use Case --></label>
+        <name>Other_Use_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate if a Aura Marketplace order. Email of person that will be accepting the Marketplace order. If others should receive the Marketplace order, rep will send an email to Deals Desk with names and emails. --></help>
+        <label><!-- Customer Contact Email --></label>
+        <name>PO_Executor_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that the Private Offer expires (similar to discount expirations) --></help>
+        <label><!-- PO Expiration Date --></label>
+        <name>PO_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. This is manually populated and does not currently drive any salesforce database automation. --></help>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Net 120</masterLabel>
+            <translation><!-- Net 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 180</masterLabel>
+            <translation><!-- Net 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 75</masterLabel>
+            <translation><!-- Net 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Perpetual --></label>
+        <name>Perpetual__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Acceptance ID from Marketplace Order. Deals Desk will populate. --></help>
+        <label><!-- Platform ID --></label>
+        <name>Platform_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required whenever product name contains &quot;Subscription - Aura Enterprise&quot;. --></help>
+        <label><!-- Private Offer Status --></label>
+        <name>Private_Offer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>ProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Forecast ARR --></label>
+        <name>Product_Forecast_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows what distinct category a Product belongs to. Category icons are displayed in the Traction Account hierarchy views on the Account records. --></help>
+        <label><!-- Product Group (Traction) --></label>
+        <name>Product_Group_Traction__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field takes its value from the name of the Product that this Opportunity Line represents. --></help>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select one of the applicable values from the picklist. --></help>
+        <label><!-- Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cross-Sell</masterLabel>
+            <translation><!-- Cross-Sell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Up-Sell</masterLabel>
+            <translation><!-- Up-Sell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Production Licenses --></label>
+        <name>Production_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profession Services Hours --></label>
+        <name>Profession_Services_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a system fields managed on the backend by the System Admins. It&apos;s automatically updated and non-editable to the end user. --></help>
+        <label><!-- Professional Services2 --></label>
+        <name>Professional_Services2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Services Expiration Date --></label>
+        <name>Professional_Services_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Services Hourly Rate --></label>
+        <name>Professional_Services_Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Services --></label>
+        <name>Professional_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note that numbers in Quota fields are prelim until statements are received --></help>
+        <label><!-- Quota ARR (USD) --></label>
+        <name>Quota_ARR_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota ARR --></label>
+        <name>Quota_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please note that numbers in Quota fields are prelim until statements are received --></help>
+        <label><!-- Quota Non-ARR (USD) --></label>
+        <name>Quota_Non_ARR_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota Non-ARR --></label>
+        <name>Quota_Non_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ram Capacity in terms of Gigabytes (GB). Populate if this is an Aura Product Line Item If # not in drop down please contact Salesforce@neo4j.com --></help>
+        <label><!-- RAM Capacity (GB) --></label>
+        <name>RAM_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- RLI Amount (US Dollar) --></label>
+        <name>RLI_Amount_US_Dollar__c</name>
+    </fields>
+    <fields>
+        <label><!-- RLI Amount --></label>
+        <name>RLI_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the Product associated with this Opportunity Line Item requires that Customer Success onboard the customer. --></help>
+        <label><!-- Requires Onboarding --></label>
+        <name>RequiresOnboarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Line Item Name --></label>
+        <name>Revenue_Line_Item_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required to be populated if Eligible for Rollover is &quot;Yes&quot;. --></help>
+        <label><!-- Rollover % --></label>
+        <name>RolloverPercent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used by Sales Ops Only. There is a calculation feature (SFDC-0145) that assists with writing values to the oppty product line item&apos;s &quot;ARR&quot; field for pipeline opportunities less than or equal to stage 98 (Sales Ops Review).   Optionally use this override. --></help>
+        <label><!-- SOPS Override ARR Calc for PipeLTE98 --></label>
+        <name>SOPS_Override_ARR_Calc_for_PipeLTE98__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field represents The Product2.Subscription_Product__c &quot;Dont edit this field, let the apex edit this field&quot; --></help>
+        <label><!-- Subscription2 --></label>
+        <name>Subscription2__c</name>
+    </fields>
+    <fields>
+        <help><!-- suffers this limitation: https://trailblazer.salesforce.com/ideaView?id=08730000000DfL5AAK.  This limited formula will soon sunset/deprecate/be replaced by OpportunityLineItem.Product2Subscription__c --></help>
+        <label><!-- Subscription --></label>
+        <name>Subscription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sugar Created Date --></label>
+        <name>Sugar_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sugar ID --></label>
+        <name>Sugar_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field introduced in SFDC-0542. This is currently visible only to system admins --></help>
+        <label><!-- Tenant ID --></label>
+        <name>Tenant_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. --></help>
+        <label><!-- Term End Date --></label>
+        <name>Term_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in project a7z3s0000004SGsAAM to replace a similar field that previously existed on Opportunity. --></help>
+        <label><!-- Term Start Date --></label>
+        <name>Term_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Licenses --></label>
+        <name>Test_Licenses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only applicable to ARR products --></help>
+        <label><!-- Upsell Reason --></label>
+        <name>Upsell_Reason__c</name>
+        <picklistValues>
+            <masterLabel>CPI</masterLabel>
+            <translation><!-- CPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Instances</masterLabel>
+            <translation><!-- More Instances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Product</masterLabel>
+            <translation><!-- New Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Increase</masterLabel>
+            <translation><!-- Price Increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Upgrade</masterLabel>
+            <translation><!-- Support Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- aSaveThatBypassesValidationRules --></label>
+        <name>aSaveThatBypassesValidationRules__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to admins only. Populated only on a named/small set of records in sandboxes to help relationally-reconstruct specific data in partial copy environments (This fields helps admins combat the random sampling nature of partial copy environments) --></help>
+        <label><!-- external id for n4jSFDC sandbox use only --></label>
+        <name>external_id_for_n4jSFDC_sandbox_use_only__c</name>
+    </fields>
+    <fields>
+        <help><!-- System field.  Dont change this.  This is to only be set by local namespaced apex,  which is hard to enforce for managed packages therefore make sure no managed package has access to this field. --></help>
+        <label><!-- neo4j_apexBypass_context --></label>
+        <name>neo4j_apexBypass_context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added To Project --></label>
+        <name>pse__Added_To_Project__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field was unused so we &apos;override&apos;  its label in Setup&gt;Override to &quot;z_deprecatedFeb3&apos;21 (isSvcsProductLine)&quot; --></help>
+        <label><!-- IsServicesProductLine --></label>
+        <name>pse__IsServicesProductLine__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Aura Marketplace Information --></label>
+            <section>Aura Marketplace Information</section>
+        </sections>
+        <sections>
+            <label><!-- Aura Subscription Information --></label>
+            <section>Aura Subscription Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other --></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label><!-- Terms Information --></label>
+            <section>Terms Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Only Subscription Products may have ARR populated --></errorMessage>
+        <name>ARR_for_Sub_Products_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Line Items associated with Closed Won Opportunities cannot be edited. --></errorMessage>
+        <name>Cannot_Edit_Products_on_Closed_won_Deals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have rights to edit this field. --></errorMessage>
+        <name>Cannot_Edit_SalesPrice_and_Qty_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot select &apos;Renewal&apos; for &apos;Type&apos; field, because Renewal Opportunities with their associated Products are created automatically. --></errorMessage>
+        <name>Cannot_Select_Renewal_in_Type_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have rights to edit this field --></errorMessage>
+        <name>Field_and_Finance_Field_Restrictions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Term End Date must be greater or equal to Term Start Date, or left blank. --></errorMessage>
+        <name>If_both_exist_RequireTermEndGteTermStart</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: Instance Provisioned Date cannot be later than the Term Start Date! --></errorMessage>
+        <name>InstanceProvisDateNoGreaterThanTermStart</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Products already designated as Renewal should not be adjusted. Please create a new Product to indicate an Up-Sell, Cross-Sell or New or reach out to Sales Operations if this Product should not be Renewal. --></errorMessage>
+        <name>Prevent_Changing_Type_From_Renewal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity must be 1. --></errorMessage>
+        <name>Quantity_must_be_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- [Invoice Frequency], [Payment Terms], and [Auto Renewal?] are required to enter Stage Finance Review (a7z3s0000004SGsAAM) --></errorMessage>
+        <name>Req_opportunityProduct_fields_by_99</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Edits are restricted while in Finance Review Stage... Please share your request with salesforce@neo4j.com. --></errorMessage>
+        <name>Restrict_Edits_in_Stage_Finance_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Edits are restricted while in Sales Ops Review Stage...  Please share your request with salesforce@neo4j.com. --></errorMessage>
+        <name>Restrict_Edits_in_Stage_Sales_Ops_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a different Product Type. The Product Type is incompatible with the Opportunity Type (Renewal). --></errorMessage>
+        <name>Restrict_ProductType_New_in_Renewal_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a different Product Type. The Product Type is incompatible with the Opportunity Type (New). --></errorMessage>
+        <name>Restrict_ProductTypes_in_TypeNew_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: “Rollover %” field must be populated. --></errorMessage>
+        <name>Rollover_Percentage_Must_be_Populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Save error.  This is a system field. Please do not change it.  Try again. --></errorMessage>
+        <name>Subscription2_is_only_editable_by_apex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Upsell Reason is required --></errorMessage>
+        <name>Upsell_Reason_Req_When_Type_Upsell</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field must be less or equal to 20% when [Eligible for Rollover] is &quot;yes&quot;. (This rule is on only for system admins in this soft-launch of SFDC-0542) --></errorMessage>
+        <name>req_RolloverPercent_when_Eligible</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- [Term Start Date], [Term End Date], are required to enter Stage Finance Review. (a7z3s0000004SGsAAM) --></errorMessage>
+        <name>req_fields_for_Subscription_OppLines</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Controls what validation rules users are able to bypass.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>On/Off switch for Account Validation Rules. JIRA: SFDCSPT-506</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On/Off switch for Account Validation Rules.</inlineHelpText>
+        <label>Account</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>On/Off switch for Contact Validation Rules. JIRA: SFDCSPT-506</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On/Off switch for Contact Validation Rules.</inlineHelpText>
+        <label>Contact</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>On/Off switch for Lead Validation Rules. JIRA: SFDCSPT-506</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On/Off switch for Lead Validation Rules.</inlineHelpText>
+        <label>Lead</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityAnalyticsBypass__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>Used in various validation rules as a mechanism to allow the Analytics team members to bypass restrictions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in various validation rules as a mechanism to allow the Analytics team members to bypass restrictions.</inlineHelpText>
+        <label>Opportunity: Analytics Bypass</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityCustomerSuccessBypass__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>Used in various validation rules as a mechanism to allow the Customer Success team members to bypass restrictions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in various validation rules as a mechanism to allow the Customer Success team members to bypass restrictions.</inlineHelpText>
+        <label>Opportunity: Customer Success Bypass</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityProduct__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>On/Off switch for Opportunity Product Validation Rules. JIRA: SFDCSPT-506</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On/Off switch for Opportunity Product Validation Rules.</inlineHelpText>
+        <label>Opportunity Product</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityRenewalsBypass__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>Used in various validation rules as a mechanism to allow the Renewals team members to bypass restrictions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in various validation rules as a mechanism to allow the Renewals team members to bypass restrictions.</inlineHelpText>
+        <label>Opportunity: Renewals Bypass</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunitySystemAdminBypass__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>Used in various validation rules as a mechanism to allow System Administrators bypass restrictions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in various validation rules as a mechanism to allow System Administrators bypass restrictions.</inlineHelpText>
+        <label>Opportunity: System Admin Bypass</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>true</defaultValue>
+        <description>On/Off switch for Opportunity Validation Rules. JIRA: SFDCSPT-506</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On/Off switch for Opportunity Validation Rules.</inlineHelpText>
+        <label>Opportunity</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Validation Rule Handler</label>
+    <visibility>Public</visibility>
+</CustomObject>

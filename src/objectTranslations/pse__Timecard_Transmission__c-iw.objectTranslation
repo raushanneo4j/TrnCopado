@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>העברת כרטיס זמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>העברת שידור כרטיס</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>המספר המרבי של המשאבים שאנו יכולים לשלוח אליהם כרטיסי זמן בתגובה יחידה.</help>
+        <label><!-- Batch Limit --></label>
+        <name>pse__Batch_Limit__c</name>
+    </fields>
+    <fields>
+        <help>תאריך הסיום הכלול בבקשת POST.</help>
+        <label><!-- End Date --></label>
+        <name>pse__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>ההודעה הוחזרה כאשר מתרחשת שגיאה.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>מספר שידורי המשאבים שעובדו בסטטוס שלם.</help>
+        <label><!-- Records Processed --></label>
+        <name>pse__Records_Processed__c</name>
+    </fields>
+    <fields>
+        <help>תאריך ההתחלה הכלול בבקשת POST.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>מצב שידור כרטיס הזמן.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation>כישלון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>בתהליך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>הצלחה</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Timecard Transmission Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם העברת כרטיס</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Objet de facture fournisseur</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Articles de facture fournisseur</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Currency --></label>
+        <name>pse__Account_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action: Recalc Vendor Currency Amount: --></label>
+        <name>pse__Action_Recalc_Vendor_Currency_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Header --></label>
+        <name>pse__Budget_Header__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense --></label>
+        <name>pse__Expense__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Exchange Rate Override --></label>
+        <name>pse__Item_Exchange_Rate_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Adjustment --></label>
+        <name>pse__Miscellaneous_Adjustment__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Item Exchange Rate --></label>
+        <name>pse__Override_Item_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>pse__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>pse__Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Currency Amount Number --></label>
+        <name>pse__Vendor_Currency_Amount_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Currency Amount --></label>
+        <name>pse__Vendor_Currency_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Currency Exchange Rate --></label>
+        <name>pse__Vendor_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Currency --></label>
+        <name>pse__Vendor_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice ER Override Applied --></label>
+        <name>pse__Vendor_Invoice_ER_Override_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice --></label>
+        <name>pse__Vendor_Invoice__c</name>
+        <relationshipLabel><!-- Vendor Invoice Items --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Vendor Invoice Item Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Amount field does not match Quantity times Unit Price --></errorMessage>
+        <name>pse__Amount_Calculation_Error</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice items may only be applied to Budget Headers with the type Vendor Purchase Order or Vendor Purchase Order Change Order --></errorMessage>
+        <name>pse__Budget_Check_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Currency does not match the budget&apos;s currency --></errorMessage>
+        <name>pse__Budget_Currency_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The budget&apos;s project must match the project --></errorMessage>
+        <name>pse__Budget_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Budget Header is required and cannot be changed once set --></errorMessage>
+        <name>pse__Budget_required_and_constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The selected project&apos;s account must match the account of the Vendor Invoice --></errorMessage>
+        <name>pse__Invoice_Account_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The currency must match the currency of the Vendor Invoice --></errorMessage>
+        <name>pse__Invoice_Currency_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Item Exchange Rate overrides are not permitted when an invoice level override is employed. --></errorMessage>
+        <name>pse__Invoice_Override_in_Effect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Amount and Date fields cannot be changed for submitted vendor invoices --></errorMessage>
+        <name>pse__Invoice_Submitted_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot create new items for a submitted vendor invoice --></errorMessage>
+        <name>pse__Invoice_Submitted_No_New_Items</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Project is required and cannot be changed once set --></errorMessage>
+        <name>pse__Project_is_constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item Exchange Rate Override must be supplied when checking the Override check box. --></errorMessage>
+        <name>pse__Rate_Required_when_Overriding</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Invoice_Items --></label>
+        <name>pse__New_Invoice_Items</name>
+    </webLinks>
+</CustomObjectTranslation>

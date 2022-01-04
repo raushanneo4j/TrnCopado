@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>예산</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Opp And Template Budget Columns --></label>
+        <name>pse__CreateProjectFromOppAndTempBudgetColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 관리자가 예산에 프로젝트 포함, 자원, 통화 또는 날짜의 편집을 포함하여 예산에 &apos;글로벌&apos;변경 사항을 포함 할 수 있습니다 (재무 포함 포함). 구성 요구 사항 : 실제 계산 모드는 &apos;예약 됨&apos;으로 설정되어야합니다.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>경비 금액 필드에 별도로 입력 한 금액을 포함하지 않고 예산의 금전적 금액. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다.</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>일반적으로 상태 필드를 기반으로 예산이 승인되면이 확인란을 선택해야합니다.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Header --></label>
+        <name>pse__Budget_Header__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>예산이 청구 이벤트 생성에 적합한 상태에 있음을 나타냅니다 (대금 결제 승인 플래그는 포함되지 않음, 글로벌 구성 당 필요할 수도 있음).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면이 비즈니스 레코드에 청구하지 마십시오. 청구 보류와 동일한 효과가 있지만 청구 생성에서 영구적 인 제외를 반영합니다.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <help>Budget의 Expenses에 명시된 화폐 금액 (있는 경우). 이는 예산 금액 필드와 별도로 추가됩니다. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다.</help>
+        <label><!-- Expense Amount --></label>
+        <name>pse__Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Transaction --></label>
+        <name>pse__Expense_Transaction__c</name>
+        <relationshipLabel><!-- Budget (Expense Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드가 설정되면 해당 프로젝트가 다른 그룹에 있더라도 예산 실사가 그룹 실사를 위해 롤업되는 그룹이 재정의됩니다. 일반적으로 예산 거래는 프로젝트 그룹에 롤백됩니다.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드가 설정되면 해당 프로젝트가 다른 실무에 있더라도 예산 실사가 실제 실무에 롤업되는 실습을 무시합니다. 일반적으로 예산 거래는 프로젝트 실무에 적용됩니다.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드가 설정되면 해당 프로젝트가 다른 지역에 있더라도 예산의 거래가 지역별 실사를 위해 롤업되는 지역을 대체합니다. 일반적으로 예산 거래는 프로젝트의 지역으로 롤업됩니다.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The portion of the combined Budget/Expense Amounts to be pre-billed. Defaults to and must always be same currency as Project. This field has been replaced by the newer Pre_Billed_Amount__c field. --></help>
+        <label><!-- DEPRECATED: Pre-Billed Amount --></label>
+        <name>pse__PreBilledAmount__c</name>
+    </fields>
+    <fields>
+        <help>사전 예산 청구서를 합산 한 부분. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다. 이 필드는 비 정수 소수를 허용하지 않는 이전 Pre-Billed Amount 필드 (PreBilledAmount__c)를 대체합니다.</help>
+        <label><!-- Pre-Billed Amount --></label>
+        <name>pse__Pre_Billed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Billed Transaction --></label>
+        <name>pse__Pre_Billed_Transaction__c</name>
+        <relationshipLabel><!-- Budget (Pre-Billed Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>승인 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>초안</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>열다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>거부 됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>pse__Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Budget --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order</masterLabel>
+            <translation>고객 구매 주문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order Change Request</masterLabel>
+            <translation>고객 구매 주문 변경 요청</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>내부 예산</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget Change Request</masterLabel>
+            <translation>내부 예산 변경 요청</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order</masterLabel>
+            <translation>공급 업체 구매 주문서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order Change Request</masterLabel>
+            <translation>공급 업체 구매 주문 변경 요청</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order</masterLabel>
+            <translation>작업 순서</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order Change Request</masterLabel>
+            <translation>작업 주문 변경 요청</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Budget Layout</layout>
+        <sections>
+            <label>감사</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>정보</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>지위</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>시스템 정보</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Budget Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>예산 이름</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s account must match the account on this budget --></errorMessage>
+        <name>pse__Budget_Header_Account_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s project does not match the project on this budget --></errorMessage>
+        <name>pse__Budget_Header_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s type must match the type on this budget --></errorMessage>
+        <name>pse__Budget_Header_Type_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Budget&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Budget_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount should be a positive value --></errorMessage>
+        <name>pse__Has_non_negative_budget_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pre Billed Amount should be a positive value --></errorMessage>
+        <name>pse__Has_non_negative_pre_billed_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Master Budget cannot be changed once set. --></errorMessage>
+        <name>pse__Master_Budget_is_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

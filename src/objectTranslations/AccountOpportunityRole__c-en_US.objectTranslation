@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Technology Involved</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Technologies Involved</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cloud Platform for Project Deployment --></label>
+        <name>Cloud_Platform_for_Project_Deployment2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optional.  Choose the Account, if any, that is the Cloud Platform for the Project Deployment. --></help>
+        <label><!-- Cloud Platform for Project Deployment --></label>
+        <name>Cloud_Platform_for_Project_Deployment__c</name>
+        <picklistValues>
+            <masterLabel>Alibaba Cloud</masterLabel>
+            <translation><!-- Alibaba Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon Web Services</masterLabel>
+            <translation><!-- Amazon Web Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baidu Cloud</masterLabel>
+            <translation><!-- Baidu Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Ocean</masterLabel>
+            <translation><!-- Digital Ocean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Cloud Platform</masterLabel>
+            <translation><!-- Google Cloud Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HostEurope</masterLabel>
+            <translation><!-- HostEurope --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBM Cloud</masterLabel>
+            <translation><!-- IBM Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure</masterLabel>
+            <translation><!-- Microsoft Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NTT Global Data Centers</masterLabel>
+            <translation><!-- NTT Global Data Centers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVH</masterLabel>
+            <translation><!-- OVH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Openshift</masterLabel>
+            <translation><!-- Openshift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle Cloud</masterLabel>
+            <translation><!-- Oracle Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal/ VMware</masterLabel>
+            <translation><!-- Pivotal/ VMware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T-Systems</masterLabel>
+            <translation><!-- T-Systems --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For duplicate prevention. This is a concatenated value from both master lookups, and other data values.  Worksaround salesforce limitation &quot;Error: A matching rule can have only one lookup relationship field&quot; (https://success.salesforce.com/ideaView?id=087 --></help>
+        <label><!-- Compound Key --></label>
+        <name>Compound_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-premise deployment? --></label>
+        <name>On_premise_deployment2__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Mark this if its considered an &quot;on-premise&quot; deployment. --></help>
+        <label><!-- deprecated. --></label>
+        <name>On_premise_deployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Technologies Involved --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Other (to be used if Cloud platform or integration is not found on fixed list) --></help>
+        <label><!-- Other Detail --></label>
+        <name>Other_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which technology company is the used-integration connecting to? If multiple integrations then please create multiple Technology Involved records. --></help>
+        <label><!-- Tech Company the integration connects to --></label>
+        <name>Tech_Company_the_integration_connects_to__c</name>
+        <picklistValues>
+            <masterLabel>AWS Kafka</masterLabel>
+            <translation><!-- AWS Kafka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azure Kafka</masterLabel>
+            <translation><!-- Azure Kafka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confluent</masterLabel>
+            <translation><!-- Confluent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Databricks</masterLabel>
+            <translation><!-- Databricks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dataiku</masterLabel>
+            <translation><!-- Dataiku --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H2O.AI</masterLabel>
+            <translation><!-- H2O.AI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Looker</masterLabel>
+            <translation><!-- Looker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microstrategy</masterLabel>
+            <translation><!-- Microstrategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau</masterLabel>
+            <translation><!-- Tableau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thales</masterLabel>
+            <translation><!-- Thales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ThoughtSpot</masterLabel>
+            <translation><!-- ThoughtSpot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tibco Spotfire</masterLabel>
+            <translation><!-- Tibco Spotfire --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ISV Integration used --></label>
+        <name>Which_ISV_Integration_is_used__c</name>
+    </fields>
+    <fields>
+        <help><!-- check this box if the cloud deployment is limited to test/ dev of the system --></help>
+        <label><!-- test &amp; development only --></label>
+        <name>test_development_only__c</name>
+    </fields>
+    <layouts>
+        <layout>accountOpportunityRole Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please input [Cloud Platform for Project Deployment].   (  [Cloud Platform for Project Deployment] is required when [On-premise deployment] is NO. ) --></errorMessage>
+        <name>cloud_platform_is_req_if_onprem_is_no</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input [Cloud Platform for Project Deployment].   (  [Cloud Platform for Project Deployment] is required when [On-premise deployment] is unchecked. ) --></errorMessage>
+        <name>dep_cloud_platform_is_req_if_onprem_is_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- [Other Detail] is required when [Cloud Platform for Project Deployment] is &quot;other&quot;. --></errorMessage>
+        <name>req_other_detail_if_cloud_plat_is_other</name>
+    </validationRules>
+</CustomObjectTranslation>

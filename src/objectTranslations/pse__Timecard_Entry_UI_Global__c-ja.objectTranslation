@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- タイムカード入力UIグローバル --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>[タイムカード入力]ページの[プロジェクト/割り当て]ルックアップで列として表示する割り当てフィールドを含むフィールドセットの名前を定義します。</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード割り当てドロップダウンにロードする割り当て数</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>拡張時間入力ページのプロジェクト/割り当てルックアップで列として表示する割り当てフィールドのAPI名のリスト。フィールドのAPI名にpse__名前空間プレフィックスを含めないでください。デフォルト値はName、Nick_Name__cです。</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードUIで課題をロードしている間の課題の開始日と終了日の制限。 trueの場合、開始日/終了日がタイムカードの日付範囲を含む、またはそれと重複する割り当てのみがロードされます。これはUIにのみ影響し、管理編集には影響しません。</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>dbから割り当てをロードする間に使用される割り当て状況値のリスト。</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、新しいタイムカードUIの初期ロード時に、前の週のタイムカードがチェックされます。前の週にタイムカードがいっぱいになっていない場合、UIはユーザーに前の週または今週のロードを要求する確認ウィンドウを表示します。偽の場合、通常どおりに動作します。</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>新しいTC UIで最大自動復帰時間の値を制御するように設定します。</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>新しいTC UIで最小自動復帰時間の値を制御するように設定します。</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、すべてのタイムカードが承認のために送信されます。 falseの場合、ユーザーが選択したタイムカードのみが送信されます。</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>[タイムカードエントリ]ページの[プロジェクト/割り当て]ルックアップで列として表示するプロジェクトフィールドを含むフィールドセットの名前を定義します。</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>機能強化された[時間入力]ページの[プロジェクト/割り当て]ルックアップで列として表示するプロジェクトフィールドのAPI名のリスト。フィールドのAPI名にpse__名前空間プレフィックスを含めないでください。デフォルト値はName、Account__r.Nameです。</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト/課題をdbからロードしている間のプロジェクトの開始日と終了日の制限。</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Sencha Timecard EntryページのResourceルックアップで列として表示するリソースフィールドを含むフィールドセットの名前を定義します。</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>config値が &apos;all&apos;に等しい場合、現在のユーザーリソースとともにすべてのリソースがロードされることを意味します。そうでなく、valueが &apos;resource&apos;またはnullに等しい場合、現在のユーザリソースだけがロードされます。</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIのリソース検索ポップアップの列に表示するリソースフィールドのリスト（完全修飾API名/パス）。最大4つのフィールド/列をお勧めします。デフォルト値：Name、Region__r.Name、Practice__r.Name、Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>1回のバッチ実行で保存または送信するタイムカードの数。</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Configはタイムカードの保存を0時間で制御するために使用されます。それが真であれば、ゼロのタイムカードは保存され、そうでなければ保存されません（警告はuiに表示されます）。</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>1回のリクエストで保存されたタイムカードレコードの数。関連レコードは含みません。</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>注文フィールドのAPI名でソートされたタイムカードを保持するための構成。ソート用に複数のカンマ区切りフィールドを入力できます。例：CreatedDate、Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSVタイムカードエントリ行を編集できるステータス値のリスト。</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>保存ボタンをクリックしたときにタイムカードがどのステータスに設定されるかを決定するために使用されます。</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>送信ボタンをクリックしたときにタイムカードがどのステータスに設定されるかを決定するために使用されます。</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合（true）、時間入力UI列の設定はローカルに保存されます。選択を解除すると（false）、設定はサーバーに保存されます。</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、LocationドロップダウンはTC UIのロケーション選択リストではなくProject Locationオブジェクトにバインドされます。</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>リソースに作業カレンダーがない場合、または週開始日のない作業カレンダーがある場合に使用されるデフォルトの週開始日の値。</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Configは、タイムカードの送信を0時間で制御するために使用されます。それが本当なら、ゼロのタイムカードを提出することができ、そうでなければ警告がuiに表示されます。</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Status --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Salesforce record ID of the record this batch status record relates to. --></help>
+        <label><!-- Record ID --></label>
+        <name>pse__Record_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates when the related record is queued ready for revenue forecast processing. This is a system controlled field. --></help>
+        <label><!-- Revenue Forecast Batch Update Pending --></label>
+        <name>pse__Revenue_Forecast_Batch_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time when this revenue forecast was last updated. --></help>
+        <label><!-- Revenue Forecast Last Updated --></label>
+        <name>pse__Revenue_Forecast_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- The processing status of this revenue forecast. --></help>
+        <label><!-- Revenue Forecast Processing Status --></label>
+        <name>pse__Revenue_Forecast_Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Batch Status Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

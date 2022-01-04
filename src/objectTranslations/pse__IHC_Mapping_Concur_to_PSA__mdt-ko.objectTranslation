@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- PSA와 IHC 매핑 공동 작업 --></value>
+    </caseValues>
+    <fields>
+        <help>통합 허브 커넥터에서 변환을 작성해야하는 PSA 오브젝트의 필드.</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>통합 허브 커넥터에서 변환을 작성해야하는 PSA 오브젝트.</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connector에서 변환을 작성해야하는 타사 응용 프로그램 오브젝트의 필드.</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>통합 허브 커넥터에서 변환을 작성해야하는 타사 응용 프로그램 오브젝트.</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>통합 허브 커넥터에서 변환을 작성해야하는 타사 응용 프로그램.</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>협조</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>통합 허브 커넥터의 가상 데이터 리소스를 입력하십시오.</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>통합 허브 커넥터의 가상 데이터 리소스 이름.</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

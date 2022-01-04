@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 계획자 환경 설정 - 자료 --></value>
+    </caseValues>
+    <fields>
+        <help>소수 자릿수를 표시 할 최대 시간입니다. 예를 들어, 100으로 설정하면 10 시간 정밀도가 100 시간 이하로 표시됩니다. 기본값은 &quot;100&quot;입니다.</help>
+        <label><!-- Display Decimal Precision Cutoff --></label>
+        <name>pse__Display_Decimal_Precision_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 편집 모드 설정 대화 상자를 숨길 지 여부를 결정합니다.</help>
+        <label><!-- Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 할당의 인라인 편집이 총 할당 시간 및 종료 날짜에 미치는 영향을 결정합니다.</help>
+        <label><!-- Hold total assignment hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>올바르게 할당 된 것으로 간주되는 리소스 할당 비율의 하한을 정의합니다. 이 임계 값 내의 자원은 자원 계획자에서 사용되는 녹색 자원 요약 색상 코드로 표시됩니다.</help>
+        <label><!-- lower threshold summary bar limit --></label>
+        <name>pse__Lower_Threshold_Summary_Bar_Limit__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 자원 계획자의 자원 가용성 열에 가용성이 시간 단위로 표시됩니다. 이 옵션을 선택하지 않으면 사용 가능 여부가 백분율로 표시됩니다. 이 값은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Resource Availability in Hours --></label>
+        <name>pse__Resource_Availability_In_Hours__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 자원 표시 줄에 야간 트리 아이콘이 표시되어 휴일을 나타냅니다.</help>
+        <label><!-- Show Holiday Icon --></label>
+        <name>pse__Show_Holiday_Icon__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 Shift 관리 할당이 계획자에 표시됩니다.</help>
+        <label><!-- Show Shift Management Assignments --></label>
+        <name>pse__Show_Shift_Schedule_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>올바르게 할당 된 것으로 간주되는 리소스 할당 비율의 상한을 정의합니다. 이 임계 값 내의 자원은 자원 계획자에서 사용되는 녹색 자원 요약 색상 코드로 표시됩니다.</help>
+        <label><!-- Upper threshold summary bar limit --></label>
+        <name>pse__Upper_Threshold_Summary_Bar_Limit__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Resource의 Utilization Target 필드가 작업 달력 시간의 100 %가 아닌 Resource Planner에서 빨간색 / 노란색 / 녹색 색상을 결정하는 데 사용됩니다.</help>
+        <label><!-- Use Utilization Target --></label>
+        <name>pse__Use_Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <help>기본 타임 라인 확대 / 축소 레벨입니다. 분기, 월, 주 또는 일의 값을 입력하십시오. 기본값은 &quot;week&quot;입니다.</help>
+        <label><!-- Zoom Level --></label>
+        <name>pse__Zoom_Level__c</name>
+    </fields>
+</CustomObjectTranslation>

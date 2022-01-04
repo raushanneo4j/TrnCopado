@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- ממשק המשתמש של כניסת כרטיס הזמן הגלובלי --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- ממשק המשתמש של כניסת כרטיס הזמן הגלובלי --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם מערך השדות המכיל שדות הקצאה להצגה כעמודות במבט פרויקט / הקצאה בדף כניסת כרטיס הזמן.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>מספר המשימות שיש לטעון עבור התפריט הנפתח למשימת כרטיס הזמן</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>רשימת שמות API של שדות הקצאה שיוצגו כעמודות במבט פרויקט / הקצאה בדף כניסה לזמן משופר. אל תכלול את קידומת מרחב השמות pse__ בשם API של שדה. ערך ברירת המחדל הוא שם, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>הגבלת תאריך התחלה ותאריך סיום במהלך טעינת המשימות בממשק המשתמש של כרטיס הטיימר. אם נכון, רק מטלות שתאריכי ההתחלה / סיום שלהן מכילים או חופפים לטווח התאריכים של כרטיס ה- TimCard נטענות. זה משפיע על ממשק המשתמש בלבד, ולא על עריכת מנהל המערכת.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>רשימת ערכי מצב הקצאה שישמשו בעת טעינת המטלות מ- db.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, בעומס הראשוני של ממשק המשתמש של כרטיס ה- Timecard זה יבדוק אם יש כרטיסי זמן בשבוע הקודמים. אם לא מלאו כרטיסי זמן לשבוע הקודם, ממשק המשתמש יציג חלון אישור שמבקש מהמשתמש לטעון את השבוע הקודם או את השבוע הנוכחי. אם שקר, עבד כרגיל.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>קביעת תצורה כדי לשלוט בערך השעה האוטומטי להחזר אוטומטי בממשק המשתמש החדש של TC.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>הגדר כדי לשלוט בערך השעה אוטומטית להחזרה אוטומטית בממשק המשתמש החדש של TC.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, כל כרטיסי הזמן מוגשים לאישור. אם הם שקריים, מוגשים רק כרטיסי זמן שהמשתמש בוחר.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם מערך השדות המכיל שדות פרוייקט להצגה כעמודות במבט פרויקט / הקצאה בדף כניסת כרטיס הזמן.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>רשימת שמות API של שדות פרוייקט שיוצגו כעמודות במבט פרויקט / הקצאה בדף כניסה לזמן משופר. אל תכלול את קידומת מרחב השמות pse__ בשם API של שדה. ערך ברירת המחדל הוא Name, Account__r.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>הגבלת תאריך התחלה וסיום פרויקט בעת טעינת הפרויקט / הקצאות מ- db.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם מערך השדות המכיל שדות משאבים להצגה כעמודות בחיפוש משאבים בדף הזנת כרטיס ה- Sencha.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>אם ערך התצורה שווה ל ’הכל’, פירושו שכל המשאבים יחד עם משאבי המשתמש הנוכחיים יוטענו. אחרת אם הערך שווה ל’משאב ’או לאפס, רק משאבי המשתמש הנוכחיים יוטענו.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>רשימת שדות משאבים (שמות / נתיבים ממשפחת ה- API המלאים) להצגה בעמודות עבור חלון קופץ של חיפוש משאבים בממשק המשתמש החדש של Timecard. ממליץ לכל היותר על 4 שדות / עמודות. ערך ברירת מחדל: שם, אזור__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>גודל מספר כרטיסי הזמן שיש לשמור / להגיש בביצוע אצווה אחד.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Config משמש לבקרת חיסכון של כרטיס זמן עם אפס שעות. אם זה נכון, כרטיסי זמן עם אפס נשמרים אחרת לא נשמר (אזהרה תוצג ב- ui).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>מספר רשומות כרטיסי הזמן, לא כולל רשומות קשורות, שנשמרו בבקשה יחידה.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>הגדרת תצורה להחזקת כרטיס הזמן ממוינת לפי שמות API בשדות סדר. ניתן להזין מספר שדות המופרדים בתרדמת למיון. דוגמה: CreatedDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>רשימת CSV של ערכי סטטוס שעבורם ניתן לערוך את שורות כניסת כרטיס הזמן.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>משמש לקביעת איזה מצב יוגדרו כרטיסי הזמן בלחיצת כפתור שמירה</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>משמש לקביעת איזה סטטוס יוגדרו כרטיסי הזמן בלחיצת כפתור</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר (נכון), העדפות העמודה של כניסת זמן נשמרות באופן מקומי. אם לא נבחרים (כוזבים), ההעדפות נשמרות בשרת.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, התפריטים הנפתחים ייקשרו לאובייקט Project Location במקום רשימות מיקומים בממשק המשתמש של TC</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>ערך ברירת מחדל של יום התחלה לשבוע המשמש כאשר למשאב אין לוח שנה לעבודה, או שיש לו לוח שנה ללא יום התחלה של שבוע.</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Config משמש לשליטה על הגשת כרטיס הזמן עם אפס שעות. אם זה נכון, ניתן להגיש כרטיסי זמן עם אפס אחרת אזהרה תוצג ב- ui.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

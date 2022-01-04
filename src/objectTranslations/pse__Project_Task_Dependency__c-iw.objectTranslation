@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>תלות במשימות פרוייקט</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>תלות במשימות פרוייקט</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>מציין אם קישור זה בין שתי משימות משתרע על שני פרויקטים</help>
+        <label><!-- Cross Project --></label>
+        <name>pse__Cross_Project__c</name>
+    </fields>
+    <fields>
+        <help>מציין את יחידות הזמן המשמשות למשימות פרויקט. ערכים תקפים הם שעות או ימים. ערך ברירת המחדל הוא ימים.</help>
+        <label><!-- Dependency Display Units --></label>
+        <name>pse__Dependency_Display_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date &amp; Time --></label>
+        <name>pse__Dependent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date --></label>
+        <name>pse__Dependent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date &amp; Time --></label>
+        <name>pse__Dependent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date --></label>
+        <name>pse__Dependent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>בדיקת פירוט אב זה מתייחסת למשימת הפרוייקט שהיא המשימה התלויה במערכת יחסים זו.</help>
+        <label><!-- Dependent Task --></label>
+        <name>pse__Dependent_Task__c</name>
+        <relationshipLabel><!-- Preceding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lag Time --></label>
+        <name>pse__Lag_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <help>מציג את סוג יחידת הפיגור כשעות או ימים.</help>
+        <label><!-- Lag Units --></label>
+        <name>pse__Lag_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Dependency Record --></label>
+        <name>pse__New_Dependency_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date &amp; Time --></label>
+        <name>pse__Preceding_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date --></label>
+        <name>pse__Preceding_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date &amp; Time --></label>
+        <name>pse__Preceding_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date --></label>
+        <name>pse__Preceding_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>בדיקה זו מתייחסת למשימת הפרוייקט שהיא המשימה הקודמת במערכת יחסים זו.</help>
+        <label><!-- Preceding Task --></label>
+        <name>pse__Preceding_Task__c</name>
+        <relationshipLabel><!-- Dependent Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Finish to Finish (FF)</masterLabel>
+            <translation>Finish to Finish (FF)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish to Start (FS)</masterLabel>
+            <translation>סיום להתחיל (FS)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Finish (SF)</masterLabel>
+            <translation>התחל לסיים (SF)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Start (SS)</masterLabel>
+            <translation>התחל להתחיל (SS)</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Task Relation Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מידע על תלות</label>
+            <section>Dependency Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מספר תלות של משימת הפרויקט</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The lag unit of a dependency can&apos;t be in hours when the duration of the successor task is in day units. Change the lag unit of the dependency, or change the duration unit of the successor task. --></errorMessage>
+        <name>pse__Validate_Lag_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Impostazione previsione fatturazione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Impostazione previsione fatturazione</value>
+    </caseValues>
+    <fields>
+        <help>Immettere il numero di giorni precedenti alla data corrente fino a cui devono essere inclusi gli effettivi. Immettere 0 per utilizzarlo oggi come data limite. Lascia vuoto per utilizzare la data di interruzione predefinita, che è la fine della scorsa settimana.</help>
+        <label><!-- Actuals Cutoff Offset --></label>
+        <name>pse__Actuals_Cutoff_Offset__c</name>
+    </fields>
+    <fields>
+        <help>La curva di previsione applicata a un&apos;opportunità durante un calcolo di previsione se all&apos;opportunità non è stata assegnata una curva.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Opportunity Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La curva di previsione applicata a un progetto durante un calcolo di previsione se al progetto non è assegnata una curva.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Project Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Denota l&apos;oggetto setup che verrà utilizzato per i nuovi calcoli di previsione.</help>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>Se si seleziona Prodotto opportunità, vengono inclusi solo i prodotti opportunità che dispongono di IsServicesProductLine. Se si seleziona Prodotto, vengono inclusi solo i prodotti opportunità che dispongono di IsServicesProduct sul prodotto stesso.</help>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity Product</masterLabel>
+            <translation>Prodotto di opportunità</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Prodotto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Se impostato su true, la curva di opportunità viene sempre applicata durante l’esecuzione di un calcolo della previsione di fatturazione.</help>
+        <label><!-- Use Opportunity Curve for Products --></label>
+        <name>pse__Use_Opportunity_Curve_For_Products__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Setup Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome impostazione previsione di fatturaz</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

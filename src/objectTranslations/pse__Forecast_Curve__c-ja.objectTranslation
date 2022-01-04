@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>請求予測曲線</value>
+    </caseValues>
+    <fields>
+        <help>請求予測曲線の計算を開始する前に適用するラグ（日数）。デフォルト値は0です。</help>
+        <label><!-- Lag --></label>
+        <name>pse__Lag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Billing Forecast Period --></label>
+        <name>pse__Max_Forecast_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Curve Period --></label>
+        <name>pse__Total_Curve_Period__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Curve Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>請求予測曲線名</nameFieldLabel>
+</CustomObjectTranslation>

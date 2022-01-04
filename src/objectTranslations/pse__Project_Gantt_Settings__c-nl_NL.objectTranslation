@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Projecttaak Gantt-instellingen --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Projecttaak Gantt-instellingen --></value>
+    </caseValues>
+    <fields>
+        <help>Wanneer een project is vergrendeld voor bewerking, bepaalt deze instelling of gebruikers (die toestemming hebben om taken in de Project Task Gantt te bewerken) de mogelijkheid hebben om het slot te verbreken en de andere gebruiker in de alleen-lezen modus te dwingen.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Definieert de API-naam van de veldset op het projecttaakobject, die de aangepaste kolommen bevat die moeten worden weergegeven in Projecttaak Gantt. Als de instelling leeg is, wordt het veld Aangepaste kolommen Gantt gebruikt.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden records in Project Task Gantt niet in een buffer geladen. De standaardwaarde is gedeselecteerd. Deze instelling moet alleen worden gewijzigd na overleg met de klantenservice van FinancialForce.com.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, wordt de knop voor het oplossen van problemen uitgeschakeld als de afhankelijkheden van de projecttaak worden gesynchroniseerd. Als u de selectie ongedaan maakt, blijft de knop actief wanneer de afhankelijkheden van de projecttaken niet hoeven te worden gesynchroniseerd. De standaardwaarde is gedeselecteerd.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt het aantal rijen dat moet worden weergegeven boven de huidige weergave in Project Task Gantt. De standaardinstelling is 20. Deze instelling zou alleen moeten worden gewijzigd na overleg met de klantenservice van FinancialForce.com.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die wordt gebruikt om een ​​aangepaste tooltip voor mijlpalen weer te geven. Indien gedefinieerd, vervangt deze instelling de standaard Milestone-tooltip.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die wordt gebruikt om een ​​aangepaste tooltip weer te geven voor toewijzing van projecttaken. Indien gedefinieerd, vervangt deze instelling de standaardtooltip Opdrachttoewijzing projecttaak.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt niveaus van Gantt-bewerkingsrechten voor de projectmanager. Waarden zijn &quot;Volledig&quot; (standaard) - kunnen gemaakte projecten bewerken, &quot;Lezen&quot; - heeft alleen alleen-lezen toegang, of &quot;Geen&quot; - toegang bepaald door machtigingsbesturingselementen.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die wordt gebruikt om een ​​aangepaste tooltip voor projecten weer te geven. Indien gedefinieerd, vervangt deze instelling de standaard tooltip Project.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van een veld ingesteld op een projecttaak met velden die niet kunnen worden bewerkt in Projecttaak Gantt.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden aanpassingen aan de breedte, volgorde en zichtbaarheid van kolommen in de Projecttaak Gantt per gebruiker onthouden.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, wordt de knop Resource demand maken weergegeven op de werkbalk Project Task Gantt. Gebruik dit om het projectplan te bemannen via de knop Resource Demand creëren op de pagina Toewijzing projecttaken.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt of het percentage uren voltooid is weergegeven in de taakbalkweergave in het deelvenster Planning. Deze instelling heeft geen betrekking op de weergave van de% Hrs-knop in het schemapaneel.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt of het procentuele percentage wordt weergegeven in de taakbalkweergave in het deelvenster Planning. Deze instelling is standaard geselecteerd. Deze instelling heeft geen betrekking op de weergave van de% Pts-knop in het deelvenster Planning.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die wordt gebruikt om een ​​aangepaste tooltip weer te geven voor projecttaken. Indien gedefinieerd, vervangt deze instelling de standaardtooltip Projecttaak.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt het aantal rijen dat moet worden weergegeven onder de huidige weergave in Projecttaak Gantt. De standaardinstelling is 10. Deze instelling mag alleen worden gewijzigd na overleg met de klantenservice van FinancialForce.com.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

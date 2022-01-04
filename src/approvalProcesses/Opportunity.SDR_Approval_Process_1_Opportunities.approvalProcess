@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>System_Admins</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Owner</field>
+        <field>StageName</field>
+        <field>Opportunity_Source__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>X1_SDR_Comp_Approval_Status_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Mgr_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>The approval request is sent to the direct Manager of the submitter.</description>
+        <label>Step 1: SDR Manager Approval</label>
+        <name>X1_SDR_Manager_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>X1_SDR_Comp_Approval_Status_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Mgr_Rejected</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Opportunity_Approval_Request_Rejected_by_SDR_Manager</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>X1_SDR_Comp_Approval_Status_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Dir_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Opportunity_Approval_Request_Approved_by_SDR_Director</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>stephen.depaoli@neo4j.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>The approval request is sent to the SDR Director. .</description>
+        <label>Step 2: SDR Director Approval</label>
+        <name>X1_SDR_Director_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>X1_SDR_Comp_Approval_Status_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Dir_Rejected</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>X1_SDR_Comp_Opportunity_Approval_Request_Rejected_by_SDR_Director</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>SDRs submit Opportunities in the &apos;Qualification - SDR&apos; (1%) stage to get compensated. JIRA: SFDCSPT-481.</description>
+    <emailTemplate>unfiled$public/OPP_1_SDR_Comp_Opportunity_Approval_Request_Template</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+$User.Id = OwnerId,
+ISPICKVAL(StageName,&quot;Qualification SDR&quot;),
+
+OR(
+$Profile.Name = &quot;Neo4j - SDR&quot;,
+$Profile.Name = &quot;Neo4j - SDR Manager&quot;
+),
+
+OR(
+ISPICKVAL(Opportunity_Source__c,&quot;SDR - Inbound Lead&quot;),
+ISPICKVAL(Opportunity_Source__c,&quot;SDR - Outbound Efforts&quot;),
+ISPICKVAL(Opportunity_Source__c,&quot;SDR + Channel / Indirect Partner&quot;),
+ISPICKVAL(Opportunity_Source__c,&quot;SDR + Cloud / Tech Partner&quot;)
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>X1_SDR_Comp_Approval_Status_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>X1_SDR_Comp_Opportunity_Approval_Request_Submitted_to_SDR_Manager</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>X1_SDR_Comp_Submitted_to_Mgr</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>SDR Approval Process: 1% Opportunities</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

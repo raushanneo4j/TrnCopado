@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Changed By --></label>
+        <name>ffct__ChangedById__c</name>
+        <relationshipLabel><!-- Migration Set Process Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Log Type --></label>
+        <name>ffct__LogType__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation><!-- Abort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARN</masterLabel>
+            <translation><!-- WARN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>ffct__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migration Set Job --></label>
+        <name>ffct__MigrationSetJob__c</name>
+        <relationshipLabel><!-- Migration Set Process Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Migration Set --></label>
+        <name>ffct__MigrationSet__c</name>
+        <relationshipLabel><!-- Migration Set Process Logs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Migration Set Process Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,120 @@
+<apex:page standardStylesheets="true" controller="RingLeadTrigger.ringleadConfigurationController" sideBar="true">
+    <head>
+        <style>
+            h1{
+                font-size: 35px !important;
+                font-weight: 400
+            }
+            h3{
+                font-size: 25px !important;
+                font-weight: 400
+            }
+            .settings{
+                margin-top: 25px;
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+                padding: 30px;
+            }
+            .settings_fields{
+                margin-top: 25px;
+                font-size: 15px;
+            }
+            #settings_batch_size {
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #settings_re_process_count {
+                padding: 10px;
+                border-radius: 10px;
+                text-align: right;
+            }
+            .batch_size{
+                margin-left: 15px;
+            }
+            .save_section{
+                text-align: center;
+                margin-top: 25px;
+            }
+            .force_sync_section{
+                margin-top: 25px;
+                font-size: 17px;
+                border-radius: 10px;
+            }
+            .force_sync_section button{
+                margin-left: 25px;
+            }
+            .save_button{
+                padding: 10px;
+                background: #0C6DBC !important;
+                min-width: 64px;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <apex:image value="{!$Resource.RingLeadTrigger__ringlead_logo}" width="40" height="50"/>
+            <h1>RingLead Trigger</h1>
+        </div>
+        <div class="settings">
+            <h3> Batch Trigger Settings</h3>
+            <div class="settings_fields">
+                <label for="settings_batch_size" class="batch_size">
+                    <strong>Trigger Batch Size:</strong>
+                    <input type="number" id="settings_batch_size" max="999999" min="1"/>
+                </label>
+                <label for="settings_re_process_count" class="batch_size">
+                    <strong>Re Process Record:</strong>
+                    <input type="number" id="settings_re_process_count" max="999999" min="1"/>
+                </label>
+                <div class="save_section">
+                    <button onclick="jsSaveSettings()" class="save_button"> Save </button>
+                </div>
+            </div>
+            <h3> Force Sync Options</h3>
+            <div class="force_sync_section">
+                <button onclick="forceSyncRecords()" class="save_button"> Force Sync Now </button>
+                <button onclick="restartSyncCycle()" class="save_button"> Restart Sync Cycle </button>
+                <button onclick="stopSyncCycle()" class="save_button"> Stop Sync Cycle </button>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            function init(){
+                let settings = {!settings_str};
+                let batch_size = document.getElementById('settings_batch_size');
+                let re_process_count = document.getElementById('settings_re_process_count');
+                batch_size.value = settings.batch_size;
+                re_process_count.value = settings.re_process_count;
+            }
+
+            function jsSaveSettings(){
+                let batch_size = document.getElementById('settings_batch_size');
+                let re_process_count = document.getElementById('settings_re_process_count');
+                let new_batch_size = batch_size.value;
+                let new_re_process_count = re_process_count.value;
+                let new_data = new_batch_size +';'+new_re_process_count
+                if(new_batch_size!== null || new_batch_size !== '')
+                    RingLeadTrigger.ringleadConfigurationController.saveSettings(new_data, afterSaveSettings)
+            }
+
+            function afterSaveSettings(result){
+                window.location.reload();
+            }
+
+            function forceSyncRecords(){
+                RingLeadTrigger.ringleadConfigurationController.forceSyncRecords(null, afterSaveSettings);
+            }
+
+            function restartSyncCycle(){
+                RingLeadTrigger.ringleadConfigurationController.restartSyncCycle(null, afterSaveSettings);
+            }
+
+            function stopSyncCycle(){
+                RingLeadTrigger.ringleadConfigurationController.stopSyncCycle(null, afterSaveSettings)
+            }
+
+            init()
+        </script>
+    </body>
+</apex:page>

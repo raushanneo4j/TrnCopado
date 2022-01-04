@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Abilità / Certificazione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Valutazioni abilità e certificazione</value>
+    </caseValues>
+    <fields>
+        <help>La data in cui è stata raggiunta la valutazione.</help>
+        <label><!-- Date Achieved --></label>
+        <name>pse__Date_Achieved__c</name>
+    </fields>
+    <fields>
+        <help>Data in cui è stata valutata la valutazione.</help>
+        <label><!-- Evaluation Date --></label>
+        <name>pse__Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <help>Data in cui scade il punteggio di competenza o certificazione.</help>
+        <label><!-- Expiration Date --></label>
+        <name>pse__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help>La data in cui la risorsa ha utilizzato per l&apos;ultima volta l&apos;abilità.</help>
+        <label><!-- Last Used Date --></label>
+        <name>pse__Last_Used_Date__c</name>
+    </fields>
+    <fields>
+        <help>È possibile inserire informazioni sull&apos;abilità o sulla valutazione della certificazione.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numerical Rating --></label>
+        <name>pse__Numerical_Rating__c</name>
+    </fields>
+    <fields>
+        <help>Il livello di esposizione o abilità che la risorsa ha per l&apos;abilità o la certificazione.</help>
+        <label><!-- Rating --></label>
+        <name>pse__Rating__c</name>
+        <picklistValues>
+            <masterLabel>1 - Limited Exposure</masterLabel>
+            <translation>1 - Esposizione limitata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Some Familiarity</masterLabel>
+            <translation>2 - Qualche familiarità</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Comfortable</masterLabel>
+            <translation>3 - Confortevole</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strong</masterLabel>
+            <translation>4 - Forte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Expert</masterLabel>
+            <translation>5 - Esperto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Nessuna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La risorsa a cui si applica la valutazione.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Skill and Certification Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L&apos;abilità o la certificazione a cui si applica la valutazione.</help>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Resource Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il numero di anni di esperienza in cui una risorsa ha un&apos;abilità.</help>
+        <label><!-- Years of Experience --></label>
+        <name>pse__Years_Experience__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Skill / Certification Rating Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Id di valutazione</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Resource lookup must be set to an Contact with Is Resource = true --></errorMessage>
+        <name>pse__Check_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

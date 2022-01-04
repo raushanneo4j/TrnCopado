@@ -1,0 +1,12 @@
+Please provide details of why the account is at risk in the opportunity description field, we want to understand why they are at risk {Risk Reason} and what we are doing to save the account, {Action}. 
+<br><br> 
+Please use the following format:  {Risk Reason}: (I.E.): Customer is having financial issues  {Action} (I.E.): Provide customer with several financial options to review.
+<br><br> 
+
+<br><b>Account:</b> <a href="{!Account.Link}">{!Account.Name}</a>
+<br><b>Opportunity:</b> <a href="{!Opportunity.Link}">{!Opportunity.Name}</a>
+<br><b>Sales Stage:</b> {!Opportunity.StageName}
+<br><b>Opportunity Owner: </b>{!Opportunity.OwnerFullName}
+<br><b>Opportunity Amount:</b>{!Opportunity.Amount}
+<br><b>Opportunity ARR:</b>{!Opportunity.ARR__c}
+<br><b>Expected Close Date:</b>{!Opportunity.CloseDate}

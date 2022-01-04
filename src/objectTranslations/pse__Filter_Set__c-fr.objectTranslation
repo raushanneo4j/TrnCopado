@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ensemble de filtres</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ensembles de filtres</value>
+    </caseValues>
+    <fields>
+        <help>Restreint où ce jeu de filtres sera affiché en option. Actuellement, seuls &quot;Resource Planner&quot; et &quot;Project Planner&quot; sont pris en charge.</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>Planificateur de projet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>Planificateur de ressources</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le nom du jeu de filtres.</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>Contient les attributs et les valeurs du filtre dans un jeu de filtres enregistré. Stocké en tant qu&apos;objet JSON.</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque coché, indique que le filtre est défini par défaut.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>Si true, seul le propriétaire pourra voir et utiliser ce filtre. Sinon, tout utilisateur partageant l&apos;accès peut l&apos;utiliser.</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>Les ensembles de filtres pouvant être associés à d&apos;autres objets, tels que des projets.</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de l&apos;API du SObject sur lequel cet ensemble de filtres fonctionne.</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

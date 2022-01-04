@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>bypass_account_name_edit_rule</name>
+    </customPermissions>
+    <description>Provides edit access to the &apos;Account Name&apos; field on the Account object. Organizer: a7z3s0000004SKGAA2; JIRA: SFDCSPT-341</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account.Name Field (FLS)</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

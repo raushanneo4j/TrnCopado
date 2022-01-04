@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Integration Hub Connector: Concur - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Integration Hub Connector: Concur - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Ta bort PSA-uppdrag i Concur.</help>
+        <label><!-- Allow Deletion of Assignments --></label>
+        <name>pse__Allow_Deletion_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Ta bort PSA-projekt i konkurs.</help>
+        <label><!-- Allow Deletion of Projects --></label>
+        <name>pse__Allow_Deletion_of_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Status som gör en Expense Report in Concur berättigad att skickas till PSA.</help>
+        <label><!-- Approval Status --></label>
+        <name>pse__Approval_Status__c</name>
+    </fields>
+    <fields>
+        <help>Oauth Proxy URL i Integration Hub Connector.</help>
+        <label><!-- DEPRECATED:CallBack Url --></label>
+        <name>pse__CallBack_Url__c</name>
+    </fields>
+    <fields>
+        <help>Konkurrensfält användes för att filtrera Expense Report. Möjligheter är &quot;None&quot;, &quot;IsBillable&quot; och / eller &quot;IsPersonal&quot; separerade med kommatecken.</help>
+        <label><!-- Concur Filter By Billable Expenses Field --></label>
+        <name>pse__Concur_Filter_By_Billable_Expenses_Field__c</name>
+    </fields>
+    <fields>
+        <help>Concur anpassat fält för Expense Billable Type.</help>
+        <label><!-- Concur field for Expense Billable Type --></label>
+        <name>pse__Concur_field_for_Expense_Billable_Type__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på det anpassade fältet i Concur för PSA-projektet. Om du vill synkronisera projektledaren med projektet anger du namnet på länklistan för PSA Project - Project Manager.</help>
+        <label><!-- Concur field for PSA Project --></label>
+        <name>pse__Concur_field_for_PSA_Project__c</name>
+    </fields>
+    <fields>
+        <help>Konfigurationsfältet Concur för PSA Resource-Assignment LinkedList.</help>
+        <label><!-- Concur field for PSA Resource-Assignment --></label>
+        <name>pse__Concur_field_for_PSA_Resource_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på formeln i Integration Hub Connector som används för att radera PSA Project och Assignment-poster i Concur.</help>
+        <label><!-- Delete Workflow Name --></label>
+        <name>pse__Delete_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>E-postadress för att ta emot felanmälningar om Integration with Concur misslyckas.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Samtycker till PSA Expense Report Billable Mapping.</help>
+        <label><!-- Expense Report Billable Mapping --></label>
+        <name>pse__Expense_Report_Billable_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>Samtycker till PSA Expense Report Status Mapping.</help>
+        <label><!-- Expense Report Status Mapping --></label>
+        <name>pse__Expense_Report_Status_Mapping__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på formeln i Integration Hub Connector som används för att synkronisera Expense Reports med kostnader från Concur till FinancialForce.</help>
+        <label><!-- Expenses Sync Workflow Name --></label>
+        <name>pse__Expenses_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Maximalt antal projekt, resurser och uppdrag som synkroniseras i en enda initial synkroniseringsbit. En ytterligare bit skapas varje gång denna gräns uppnås. Standardvärdet är 2000.</help>
+        <label><!-- Initial Sync Chunk Size --></label>
+        <name>pse__Initial_Sync_Chunk_Size__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på formeln i Integration Hub Connector som används för att utföra initial synkronisering av projekt, resurser och uppdrag från FinancialForce till Concur.</help>
+        <label><!-- Initial Sync Workflow Name --></label>
+        <name>pse__Initial_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>OAuth Proxy namn i Integration Hub Connector.</help>
+        <label><!-- DEPRECATED:Oauth Proxy Name --></label>
+        <name>pse__Oauth_Proxy_Name__c</name>
+    </fields>
+    <fields>
+        <help>PSA-anpassade fältet användes för att filtrera uppdrag för radering.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Assign --></label>
+        <name>pse__PSA_Filter_field_for_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>PSA-anpassade fält användes för att filtrera Projekt för radering.</help>
+        <label><!-- DEPRECATED: PSA Filter field for Project --></label>
+        <name>pse__PSA_Filter_field_for_Project__c</name>
+    </fields>
+    <fields>
+        <help>Formelnamn i Integration Hub Connector för att synkronisera Projekt från FinancialForce till Concur.</help>
+        <label><!-- Project Sync Workflow Name --></label>
+        <name>pse__ProjectWorkflowName__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på formeln i Integration Hub Connector som används för att synkronisera resurser och uppdrag från FinancialForce till Concur.</help>
+        <label><!-- Resource-Assignment Sync Workflow Name --></label>
+        <name>pse__Resource_Assignment_Sync_Workflow_Name__c</name>
+    </fields>
+    <fields>
+        <help>Synkronisera projekthanteraren när du synkroniserar PSA-projekt till Concur.</help>
+        <label><!-- Sync Project Managers --></label>
+        <name>pse__Sync_Project_Managers__c</name>
+    </fields>
+    <fields>
+        <help>Uppdrag har synkroniserats med Concur.</help>
+        <label><!-- Assignments Synced --></label>
+        <name>pse__Synched_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Projekt har synkroniserats med Concur.</help>
+        <label><!-- Projects Synced --></label>
+        <name>pse__Synched_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Resurser har synkroniserats med Concur.</help>
+        <label><!-- Resources Synced --></label>
+        <name>pse__Synched_Resources__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

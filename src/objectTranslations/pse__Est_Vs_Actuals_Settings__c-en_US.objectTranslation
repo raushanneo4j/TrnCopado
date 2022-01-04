@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Whether the Est Vs Actuals fields derived from the schedule (e.g., Estimated Hours) should be updated for Est Vs Actuals records that have an end date prior to the start of this week. --></help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Delete Est vs Actuals records even if they have actuals set for records that are no longer within a modified schedule&apos;s date range. NOTE: Records without actuals will always be deleted. --></help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma separated list of time period types for which to generate EVA records --></help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether to generate Est Vs Actuals records by month --></help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether to generate Est Vs Actuals records by quarter --></help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether to generate est vs actuals by week --></help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create Est Vs Actuals records for timecards that have hours outside of the assignment&apos;s start and end date. The Est Vs Actuals records will have zero values for estimates on these records. --></help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help><!-- The comma-delimited list of the Timecard Status field values to use when determining if the timecard should be used in the calculation of Estimates vs Actuals --></help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the batch size used when updating the Project Manager field from Project. The default is 2000. Consult with FinancialForce Support before changing this setting. --></help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this setting causes updates to the Project Manager field to be reflected in all Est Vs Actuals records for that Project. --></help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the number of Est Vs Actuals records to process synchronously when updating the Project Manager field from Project. Records in excess of this value are processed in a batch. The default is 9000. Consult with Support before changing this setting. --></help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- When true, weekly Estimates vs Actuals are not automatically-generated if you have custom Time Periods of a Week type defined that overlap with a given assignment. The default is false. --></help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+</CustomObjectTranslation>

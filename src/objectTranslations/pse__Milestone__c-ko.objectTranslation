@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>획기적 사건</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Milestone Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyMilestoneFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Milestones Columns --></label>
+        <name>pse__CreateProjFromTemplateMilestoneColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Link Assignment Milestone Columns --></label>
+        <name>pse__LinkAssignmentMilestoneColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- % Complete (Hours) --></label>
+        <name>Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Days Remaining --></label>
+        <name>ProjectStatusReport_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Sort --></label>
+        <name>ProjectStatusReport_Sort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Milestone Late --></label>
+        <name>psaws__Milestone_Is_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Is Active --></label>
+        <name>psaws__Project_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>저장을 선택하면 마일스톤과 관련된 비용을 기준으로 정보를 다시 계산합니다.</help>
+        <label><!-- Action: Refresh Expense Roll-Ups --></label>
+        <name>pse__Action_Refresh_Expense_Rollups__c</name>
+    </fields>
+    <fields>
+        <help>저장을 선택하면 마일스톤과 관련된 타임 카드에서 정보를 다시 계산합니다.</help>
+        <label><!-- Action: Refresh Timecard Roll-Ups --></label>
+        <name>pse__Action_Refresh_Timecard_Rollups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Date --></label>
+        <name>pse__Actual_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 관리자가 재무에 포함이 선택되어 있어도 마일스톤의 프로젝트, 자원, 통화 또는 날짜에 대한 편집을 포함하여 마일스톤에 대한 &apos;글로벌&apos;변경을 허용합니다. 구성 요구 사항 : 실제 계산 모드는 &apos;예약 됨&apos;으로 설정되어야합니다.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택한 경우 default-timecard-bill-rate-from-milestone config가 true로 설정된 경우 Default Bill Rate는 모든 자식 Timecards에 기본값으로 설정됩니다.</help>
+        <label><!-- Apply Default Bill Rate to Timecard --></label>
+        <name>pse__Apply_Default_Bill_Rate_to_Timecard__c</name>
+    </fields>
+    <fields>
+        <help>일반적으로 상태 필드를 기반으로 마일스톤이 승인되면이 확인란을 선택해야합니다.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount In Financials --></label>
+        <name>pse__Billable_Amount_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount Submitted --></label>
+        <name>pse__Billable_Amount_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days In Financials --></label>
+        <name>pse__Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days Submitted --></label>
+        <name>pse__Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses In Financials --></label>
+        <name>pse__Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses Submitted --></label>
+        <name>pse__Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours In Financials --></label>
+        <name>pse__Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours Submitted --></label>
+        <name>pse__Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Expense Entry --></label>
+        <name>pse__Closed_for_Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>구성된 경우이 마일스톤에 대한 시간표는이 요금을 상속합니다. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다.</help>
+        <label><!-- Default Bill Rate --></label>
+        <name>pse__Default_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 기본 청구 비율 값이 시간당 요율이 아니라 일일 요율을 나타냅니다.</help>
+        <label><!-- Default Bill Rate is Daily Rate --></label>
+        <name>pse__Default_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업 시간이 중요 시점에서 롤업되는지 결정합니다. 기본값은 false입니다.</help>
+        <label><!-- Disable Project Task Hours Roll Up --></label>
+        <name>pse__Disable_Project_Task_Hours_Roll_Up__c</name>
+    </fields>
+    <fields>
+        <help>마일스톤이 Billing Event Generation에 적합한 상태에 있음을 나타냅니다 (글로벌 구성 당 필요할 수도있는 Billing 플래그 승인 제외).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면이 비즈니스 레코드에 청구하지 마십시오. 청구 보류와 동일한 효과가 있지만 청구 생성에서 영구적 인 제외를 반영합니다.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Milestone Cost As External --></label>
+        <name>pse__Log_Milestone_Cost_As_External__c</name>
+    </fields>
+    <fields>
+        <help>마일스톤 자체와 관련된 청구 가능 금액 (어린이 시간표 / 비용에서 청구 가능한 금액 제외). 이것은 주로 고정 요금 프로젝트에 사용하기위한 것입니다. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다.</help>
+        <label><!-- Milestone Amount --></label>
+        <name>pse__Milestone_Amount__c</name>
+    </fields>
+    <fields>
+        <help>마일스톤과 관련된 외부 고정 수수료 비용으로 어린이 시간표 및 비용과 관련된 비용은 포함되지 않습니다. 기본값은와 같아야하며 항상 프로젝트와 동일한 통화 여야합니다.</help>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days In Financials --></label>
+        <name>pse__Non_Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days Submitted --></label>
+        <name>pse__Non_Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses In Financials --></label>
+        <name>pse__Non_Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses Submitted --></label>
+        <name>pse__Non_Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours In Financials --></label>
+        <name>pse__Non_Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours Submitted --></label>
+        <name>pse__Non_Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드를 설정하면 해당 프로젝트가 다른 그룹에 있어도 마일스톤 트랜잭션이 그룹 실제에 롤업되는 그룹을 재정의합니다. 일반적으로 마일스톤 트랜잭션은 프로젝트 그룹에 롤백됩니다.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드가 설정되면 해당 프로젝트가 다른 프랙티스에 있더라도 Milestone &apos;s Transactions가 Practice Actual에 롤업되는 Practice보다 우선합니다. 일반적으로 마일스톤의 거래는 프로젝트 실무에 적용됩니다.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>이 필드가 설정되면 해당 프로젝트가 다른 지역에 있더라도 마일스톤 트랜잭션이 지역별 실제 롤업을 수행 할 지역을 재정의합니다. 일반적으로 마일스톤의 거래는 프로젝트의 지역으로 롤업됩니다.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>&quot;% Complete&quot;인식 방법을 사용한 수익 예측 계산에 대해 완료된 시간 백분율입니다. 값은 (승인 된 타임 카드 시간의 합 / 계획 시간의 값 필드)에 100을 곱한 값입니다.</help>
+        <label><!-- % Hours Completed for Recognition --></label>
+        <name>pse__Percent_Hours_Completed_For_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>이 마일스톤에 대한 모든 리소스의 총 시간</help>
+        <label><!-- Planned Hours --></label>
+        <name>pse__Planned_Hours__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 (Bill Rate) 이정표의 실제 또는 목표 날짜를 기준으로 계산 된 기업 통화 대비 환율.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help>이 과제에 대한 타임 카드에 입력 된 총 프로젝트 작업 시간. 이 필드를 수동으로 편집하지 마십시오.</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>수익 예측을 위해이 레코드에 적용 할 인식 방법입니다.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Customer Sign-off --></label>
+        <name>pse__Requires_Customer_Sign_off__c</name>
+    </fields>
+    <fields>
+        <help>이 이정표의 시작 날짜입니다.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>승인 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>취소 된</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>열다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>계획된</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>pse__Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs In Financials --></label>
+        <name>pse__Timecard_External_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs Submitted --></label>
+        <name>pse__Timecard_External_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs In Financials --></label>
+        <name>pse__Timecard_Internal_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs Submitted --></label>
+        <name>pse__Timecard_Internal_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Completed Points from Tasks --></label>
+        <name>pse__Total_Completed_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Completed Tasks --></label>
+        <name>pse__Total_Number_of_Completed_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Tasks --></label>
+        <name>pse__Total_Number_of_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Points from Tasks --></label>
+        <name>pse__Total_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Milestone --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>공급 업체 송장에 사용할 공급 업체 계정</help>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Vendor Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Milestone - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Cost --></label>
+            <section>Billing &amp; Cost</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Milestone Totals --></label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Milestone Layout</layout>
+        <sections>
+            <label>감사</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>정보</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>마일스톤 합계</label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label>지위</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>시스템 정보</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>중요 시점 이름</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Milestone_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Milestone_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Milestone&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Milestone_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_Assignments --></label>
+        <name>pse__Link_to_Assignments</name>
+    </webLinks>
+</CustomObjectTranslation>

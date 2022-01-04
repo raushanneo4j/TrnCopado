@@ -1,0 +1,10 @@
+<html>
+	<body>
+        <p>{!Contact.Name},</p>
+        <p>You are receiving this email because project, <a href="{!pse__Proj__c.Link}">{!pse__Proj__c.Name}</a>, has reached/exceeded the threshold set.</p>
+        <p>Project billing cap: {!pse__Proj__c.pse__Bookings__c}</p>
+        <p>Threshold amount set: {!pse__Proj__c.pse__Alert_Threshold__c}%</p>
+        <p>Percentage used: {!pse__Proj__c.pse__Percentage_Used__c}%</p>
+        <p>Remaining amount: {!pse__Proj__c.pse__Remaining_Amount__c}</p>
+	</body>
+</html>

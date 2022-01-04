@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Limite de dépenses / tarif</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Limites de dépenses / Taux</value>
+    </caseValues>
+    <fields>
+        <help>Le montant de la limite ou du taux</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, cette case à cocher détermine si la limite ou le taux s&apos;applique à l&apos;enfant Projets / Régions / Pratiques / Groupes du projet / région / pratique / groupe spécifié.</help>
+        <label><!-- Cascading --></label>
+        <name>pse__Cascading__c</name>
+    </fields>
+    <fields>
+        <help>La date à utiliser pour le taux de change lors de la conversion de devise sur ce montant limite / taux.</help>
+        <label><!-- Currency Effective Date --></label>
+        <name>pse__Currency_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Limite de dépenses / date de fin du taux</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>pse__Is_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>Kilomètre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>Mile</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Expense Limits / Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Resource_Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Architecte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Consultant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Gestionnaire de clientèle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Chef de projet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Entraîneur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Analyste d&apos;affaires</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Limite de dépenses / date de début du tarif.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>Billet d&apos;avion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>Kilométrage automatique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>Repas d&apos;affaires</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>Location de voiture</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>Relations avec les employés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>De l&apos;essence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>Frais généraux et administratifs</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>Équipement et services informatiques</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>Hébergement (chambre et taxes)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>Divers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>Fournitures de bureau et services</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>Repas personnels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Téléphone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>Affranchissement et expédition</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>Recrutement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>Métro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>Taxi</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Expense Limit / Rate Layout</layout>
+        <sections>
+            <label>Applicabilité</label>
+            <section>Applicability</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Résumé</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Limite de dépenses / nom du tarif</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Expense Limit / Rate must not reference more than one of the following: Project, Region, Practice, Group. --></errorMessage>
+        <name>pse__Limit_Rate_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A project, region, practice, or group must be set. --></errorMessage>
+        <name>pse__Must_have_project_or_RPG_set</name>
+    </validationRules>
+</CustomObjectTranslation>

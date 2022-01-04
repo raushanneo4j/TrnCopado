@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prognose Batch Log</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prognose Batch-logfiler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Meddelelsen logget for den relaterede indtægtsprognose.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Søg efter den mulighed denne log blev genereret til.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Et opslag til projektet denne log blev genereret til.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Et opslag til den forventede indtægtsbatch, som denne log blev genereret til.</help>
+        <label><!-- Revenue Forecast Batch --></label>
+        <name>pse__Revenue_Forecast_Batch__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Log Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Navn på batchlog for indtægter</nameFieldLabel>
+</CustomObjectTranslation>

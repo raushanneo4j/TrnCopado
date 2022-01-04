@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>אזור מיומנות / הסמכה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>אזורי מיומנות / אישורים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Cascading --></label>
+        <name>pse__Cascading__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Skill / Certification Zones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Skill / Certification Zones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Skill / Certification Zones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Skill / Certification Zones --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Skill / Certification Zone Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם מיומנות / הסמכה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The Skill Zone must specify either a Region or a Practice or a Group for which it applies (but no more than one). --></errorMessage>
+        <name>pse__Skill_Must_be_for_Exactly_One_Zone_RPG</name>
+    </validationRules>
+</CustomObjectTranslation>

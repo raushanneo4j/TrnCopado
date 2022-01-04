@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>プロジェクト課題</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Project Task Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyProjTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Project Tasks Columns --></label>
+        <name>pse__CreateProjFromTemplateTasksColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Editable Custom Columns --></label>
+        <name>pse__Gantt_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Read Only Custom Columns --></label>
+        <name>pse__Gantt_Read_Only_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>タスクが実際に終了した日時。完了チェックボックスをチェックした場合</help>
+        <label><!-- Actual End Date &amp; Time --></label>
+        <name>pse__Actual_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>タスクが実際に終了した日付。完了チェックボックスをチェックした場合</help>
+        <label><!-- Actual End Date --></label>
+        <name>pse__Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>この作業に費やした時間。タイムカードのタスクタイムエントリからロールアップします。親タスクには子タスクからの時間が含まれます。</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <help>タスクが実際に開始された日付。開始チェックボックスをチェックした場合</help>
+        <label><!-- Actual Start Date &amp; Time --></label>
+        <name>pse__Actual_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>タスクが実際に開始された日付。開始チェックボックスをチェックした場合</help>
+        <label><!-- Actual Start Date --></label>
+        <name>pse__Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resources (Long) --></label>
+        <name>pse__Assigned_Resources_Long__c</name>
+    </fields>
+    <fields>
+        <help>割り当てられたリソースのシステム生成リスト。一覧はプロジェクトタスクの割り当てから生成されます。</help>
+        <label><!-- Assigned Resources --></label>
+        <name>pse__Assigned_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>pse__Blocked__c</name>
+    </fields>
+    <fields>
+        <help>チェックすると、[時間入力]ページのタスクセレクタでは、このプロジェクトタスクに対して新しいタスク時間を追加できません。</help>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <help>タスクが完了したかどうかが確認されます</help>
+        <label><!-- Completed --></label>
+        <name>pse__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto Update Parents --></label>
+        <name>pse__Do_Not_Auto_Update_Parents__c</name>
+    </fields>
+    <fields>
+        <help>日付、％完了などの自動計算フィールドの自動更新を回避するかどうか</help>
+        <label><!-- Do Not Auto Update This Task --></label>
+        <name>pse__Do_Not_Auto_Update_This_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Units --></label>
+        <name>pse__Duration_Unit__c</name>
+    </fields>
+    <fields>
+        <help>このタスクの作業が終了する予定の日時。それが時間入力のために閉じられていない限り、タイムカードはまだこの日付の後にタスクのために入力されるかもしれません。</help>
+        <label><!-- End Date &amp; Time --></label>
+        <name>pse__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help>タスクを完了するための推定時間を指定します。</help>
+        <label><!-- Estimated Time To Completion (Task) --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce以外のタスク管理システムまたはアプリケーションと統合するための外部タスクID。統合は、整合性を維持し、更新を許可するために外部システムIDにこのフィールドを使用する必要があります。</help>
+        <label><!-- External Task ID --></label>
+        <name>pse__External_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Information --></label>
+        <name>pse__Flag_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - No Coverage --></label>
+        <name>pse__Flag_Task_Dates_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - Partial Coverage --></label>
+        <name>pse__Flag_Task_Dates_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Milestone Bounds --></label>
+        <name>pse__Flag_Task_End_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Project Bounds --></label>
+        <name>pse__Flag_Task_End_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - No Coverage --></label>
+        <name>pse__Flag_Task_Hours_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - Partial Coverage --></label>
+        <name>pse__Flag_Task_Hours_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start - Milestone Bounds --></label>
+        <name>pse__Flag_Task_Start_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start  - Project Bounds --></label>
+        <name>pse__Flag_Task_Start_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <help>最上位の親タスクまでの「上位」の親タスクの数を示すシステムフィールド。最上位レベルのタスク自体の階層の深さは0、直下のタスクの階層の深さは1、というように続きます。</help>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合の推定完了時間（タスク）から派生したタスクを完了するために残っている時間数。それ以外の場合は、推定時間から実際の時間を引いて計算されます。</help>
+        <label><!-- Hours Remaining --></label>
+        <name>pse__Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>pse__Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスク割り当て数を合計した積み上げ集計項目</help>
+        <label><!-- Number of Assignments --></label>
+        <name>pse__Number_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peer Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date &amp; Time --></label>
+        <name>pse__Parent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date --></label>
+        <name>pse__Parent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date &amp; Time --></label>
+        <name>pse__Parent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date --></label>
+        <name>pse__Parent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>このルックアップはタスク階層をキャプチャします。サブタスクは、タスク階層内の次の上位レベルのタスクに対する親タスクルックアップ値を持ちます。これはタスク間の時間的（従属/先行）関係とは別のものであり、異なることに注意してください。</help>
+        <label><!-- Parent Task --></label>
+        <name>pse__Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Child Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Hours) --></label>
+        <name>pse__Percent_Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Points) --></label>
+        <name>pse__Percent_Complete_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Tasks) --></label>
+        <name>pse__Percent_Complete_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Baseline --></label>
+        <name>pse__Points_Baseline__c</name>
+    </fields>
+    <fields>
+        <help>完了したポイント数</help>
+        <label><!-- Points Complete --></label>
+        <name>pse__Points_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Remaining --></label>
+        <name>pse__Points_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>pse__Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>P1</masterLabel>
+            <translation>P1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2</masterLabel>
+            <translation>P2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3</masterLabel>
+            <translation>P3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation>P4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5</masterLabel>
+            <translation>P5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>子タスクを作成するときに[プロジェクト]フィールドを定義する必要はありません。 [プロジェクト]フィールドは、親タスクから自動的に入力され、入力された値を上書きします。</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>式フィールド実時間と完了までの推定時間の合計（タスク）完了までの推定時間（タスク）が空白の場合、予測時間は推定時間です。</help>
+        <label><!-- Projected Hours --></label>
+        <name>pse__Projected_Hours__c</name>
+    </fields>
+    <fields>
+        <help>このタスクの作業が開始される予定の日時。それが時間入力のために閉じられていない限り、タイムカードはまだこの日付の前にタスクのために入力されるかもしれません。</help>
+        <label><!-- Start Date &amp; Time --></label>
+        <name>pse__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>タスクが開始されたかどうか確認されます</help>
+        <label><!-- Started --></label>
+        <name>pse__Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation>ブロックされました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>延期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>ドラフト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>計画中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation>始めました</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、ガントで変更されたときに、関連するマイルストーンの目標日とタスクの終了日が同期されます。</help>
+        <label><!-- Synchronize Milestone and Task --></label>
+        <name>pse__Synchronize_Milestone_And_Task__c</name>
+    </fields>
+    <fields>
+        <help>トップレベルの親タスクまでの上位の親タスクIDのリストを区切って表示するシステムフィールド。</help>
+        <label><!-- Task ID Chain --></label>
+        <name>pse__Task_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key Chain --></label>
+        <name>pse__Task_Key_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key --></label>
+        <name>pse__Task_Key__c</name>
+    </fields>
+    <fields>
+        <help>これはタスク名チェーンを保持するための新しいフィールドです。このフィールドは、 &quot;タスク名チェーン&quot;フィールドと同じ動作をします。しかし、新しいデータタイプ（長いテキスト領域）では、階層内のプロジェクトタスクに対して、以前のもの（255文字）と比較して、より大きな番号の名前チェーンを使用できます。</help>
+        <label><!-- Task Name Chain (Long) --></label>
+        <name>pse__Task_Name_Chain_Long__c</name>
+    </fields>
+    <fields>
+        <help>最上位の親タスクまでの上位タスク名の区切りリストを示すシステムフィールド。</help>
+        <label><!-- Task Name Chain --></label>
+        <name>pse__Task_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>pse__Task_Number__c</name>
+    </fields>
+    <fields>
+        <help>この作業に費やした時間。タイムカードのタスクタイムエントリからロールアップします。</help>
+        <label><!-- Timecard Hours --></label>
+        <name>pse__Timecard_Hours__c</name>
+    </fields>
+    <fields>
+        <help>現在のタスクの最上位の親タスク（親タスクの親の親など）を示すシステムフィールド。最上位レベルのタスクには、親タスクまたは最上位レベルの親タスク自体はありません。</help>
+        <label><!-- Top-level Parent Task --></label>
+        <name>pse__Top_level_Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Top-level Parent Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>作業明細構造の要素番号またはID。外部のタスク管理システムにも対応できます。</help>
+        <label><!-- WBS Element Number --></label>
+        <name>pse__WBS_Element_Number__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクのスケジュールに使用される作業カレンダー。</help>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このタスクを完了するために必要な時間</help>
+        <label><!-- Work Remaining --></label>
+        <name>pse__Work_Remaining__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Task Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>リソース</label>
+            <section>Resources</section>
+        </sections>
+        <sections>
+            <label>タスク階層</label>
+            <section>Task Hierarchy</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>プロジェクトタスク名</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Actual Start Date &amp; Time must be before the Actual End Date &amp; Time --></errorMessage>
+        <name>pse__Actual_Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not mark as completed if not started --></errorMessage>
+        <name>pse__Can_not_complete_if_not_started</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Estimated Time To Completion cannot be negative. --></errorMessage>
+        <name>pse__No_Negative_ETC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Task Project must match Task Project. --></errorMessage>
+        <name>pse__Parent_Task_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points Complete cannot exceed Points --></errorMessage>
+        <name>pse__Points_Complete_Cannot_Exceed_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not be less then 0% --></errorMessage>
+        <name>pse__Points_complete_can_not_be_less_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not exceed 100% --></errorMessage>
+        <name>pse__Points_complete_can_not_exceed_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Task Project. --></errorMessage>
+        <name>pse__Project_Milestone_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date &amp; time must be before the end date &amp; time --></errorMessage>
+        <name>pse__Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Task Key field cannot be changed --></errorMessage>
+        <name>pse__Task_Key_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Task&apos;s Project field value may not be blank initially if it is a top-level Task (if child task, Project will be auto-set from parent) and may not be updated once set. --></errorMessage>
+        <name>pse__Task_Project_is_Required_and_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_project_Task_from_Template --></label>
+        <name>pse__Add_project_Task_from_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete --></label>
+        <name>pse__Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete_Tasks --></label>
+        <name>pse__Complete_Tasks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Assignments --></label>
+        <name>pse__Generate_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Held_Resource_Requests --></label>
+        <name>pse__Generate_Held_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Resource_Requests --></label>
+        <name>pse__Generate_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Link_Project_Task_Assignments --></label>
+        <name>pse__Mass_Link_Project_Task_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start --></label>
+        <name>pse__Start</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Tasks --></label>
+        <name>pse__Start_Tasks</name>
+    </webLinks>
+</CustomObjectTranslation>

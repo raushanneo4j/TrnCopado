@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Søk ressurser Global --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Søk ressurser Global --></value>
+    </caseValues>
+    <fields>
+        <help>Bestemmer et sett med kommaavskilt tegn for å tillate i adressefeltet.</help>
+        <label><!-- Allow Special Characters In Address --></label>
+        <name>pse__Allow_Special_Characters_In_Address__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt i kontaktobjektet som skal vises i Søkeressurser. Dette alternativet ignoreres når skjermressursbeskrivelsen er sant.</help>
+        <label><!-- Contact Field 1 --></label>
+        <name>pse__Contact_Field_1__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt i kontaktobjektet som skal vises i Søkeressurser. Dette alternativet ignoreres når skjermressursbeskrivelsen er sant.</help>
+        <label><!-- Contact Field 2 --></label>
+        <name>pse__Contact_Field_2__c</name>
+    </fields>
+    <fields>
+        <help>API navn på et felt i kontaktobjektet som skal vises i Søkeressurser. Dette alternativet ignoreres når skjermressursbeskrivelsen er sant.</help>
+        <label><!-- Contact Field 3 --></label>
+        <name>pse__Contact_Field_3__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sant, vises kun ressursbeskrivelsen. Når det er feil, vises kontaktfelt 1 til 3 hvis de inneholder et gyldig API-navn for et felt i kontaktobjektet. Standardverdien er feil.</help>
+        <label><!-- Display Resource Description --></label>
+        <name>pse__Display_Resource_Description__c</name>
+    </fields>
+    <fields>
+        <help>Mapping service URL som skal brukes når du oppnår breddegrad og lengdegrad ved hjelp av en adresse. Standard verdi: http://www.mapquestapi.com/geocoding/v1/address?key=Fmjtd%7Cluub2q6820%2Caa%3Do5-961xh0&amp;outFormat=json&amp;maxResults=1</help>
+        <label><!-- Geolocation Service URL --></label>
+        <name>pse__Geolocation_Service_URL__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer at lengdegrad og breddegrad ikke oppdateres når adressen er ugyldig. Støttet format: lengdegrad, breddegrad, lengdegrad, breddegrad.</help>
+        <label><!-- Invalid Longitude and Latitude --></label>
+        <name>pse__Invalid_Longitude_And_Latitude_Pairs__c</name>
+    </fields>
+    <fields>
+        <help>Definerer Mapquest Endpoint-nettadressen som brukes til å validere mot endepunktet i Salesforces eksterne nettstedinnstillinger før du bruker Mapquest Geolocation API. Denne nettadressen skal være en delmengde av nettadressen for geografisk adressering.</help>
+        <label><!-- Mapquest Endpoint URL --></label>
+        <name>pse__Mapquest_Endpoint_URL__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

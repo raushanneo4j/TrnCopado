@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stato batch previsione entrate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stati batch di previsione entrate</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Status --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L’ID record Salesforce del record a cui si riferisce questo record di stato batch.</help>
+        <label><!-- Record ID --></label>
+        <name>pse__Record_Id__c</name>
+    </fields>
+    <fields>
+        <help>Indica quando il record correlato è in coda pronto per l’elaborazione della previsione delle entrate. Questo è un campo controllato dal sistema.</help>
+        <label><!-- Revenue Forecast Batch Update Pending --></label>
+        <name>pse__Revenue_Forecast_Batch_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <help>Data e ora dell’ultimo aggiornamento di questa previsione delle entrate.</help>
+        <label><!-- Revenue Forecast Last Updated --></label>
+        <name>pse__Revenue_Forecast_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>Lo stato di elaborazione di questa previsione delle entrate.</help>
+        <label><!-- Revenue Forecast Processing Status --></label>
+        <name>pse__Revenue_Forecast_Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>Non iniziato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>in attesa di</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>in lavorazione</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Status Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome stato batch previsione entrate</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

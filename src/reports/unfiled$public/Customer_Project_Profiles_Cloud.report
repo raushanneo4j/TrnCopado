@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Global_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.Cloud_Platform__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.Neo4j_Version__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.production_status__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Account_Revenue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Project_Profile__c.CPP_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Inactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Customer_Project_Profile__c.Cloud_Platform__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,None,On Prem</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Enterprise Customers Deployed in Cloud</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Project_Profile__c@Customer_Project_Profile__c.Account_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Customer_Project_Profile__c.Cloud_Platform__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Customer_Project_Profile__c.Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

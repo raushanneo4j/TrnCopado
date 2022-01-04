@@ -1,0 +1,58 @@
+<messaging:emailTemplate subject="[Opportunity Source] was changed to [{!RelatedTo.Opportunity_Source__c}] - {!RelatedTo.Name} ({!RelatedTo.Id}"
+  recipientType="User"
+  relatedToType="Opportunity"
+>
+  <messaging:htmlEmailBody >
+    <html>
+      <body>
+Opportunity Source was changed to: {!RelatedTo.Opportunity_Source__c}<br /><br />
+SFDC OpportunityId: {!RelatedTo.Id}<br /><br />
+SFDC Account Name: {!RelatedTo.Account.Name}<br />
+SFDC AccountID: {!RelatedTo.AccountId}<br />
+OpportunityLineIds as of alert:<br />
+        <table>
+          <tr>
+            <th align="left">
+              Product
+            </th>
+
+            <th align="left">
+              LineId
+            </th>
+            <th align="left">
+              Date
+            </th>
+            <th align="left">
+              Description
+            </th>
+            <th align="left">
+              Total Price
+            </th>
+          </tr>
+          <apex:repeat value="{!RelatedTo.OpportunityLineItems}" var="lineItem">
+            <tr>
+              <td>
+                {!lineItem.Product2.Name}
+              </td>
+               <td>
+                {!lineItem.Product2.Id}
+              </td>
+
+              <td>
+                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                  <apex:param value="{!lineItem.ServiceDate}" />
+                </apex:outputText>
+              </td>
+              <td>
+                {!lineItem.Description}
+              </td>
+              <td>
+                   Intentionally Not Shown Over Email
+              </td>
+            </tr>
+          </apex:repeat>
+        </table>
+      </body>
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

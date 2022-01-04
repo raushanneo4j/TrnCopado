@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Record_Cannot_be_Saved_TRUE</name>
+        <label>&quot;Record Cannot be Saved&quot; = TRUE</label>
+        <locationX>50</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Record_Cannot_be_Saved__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Evaluates whether the Opportunity  is being moved to Stage either Finance Review (99%) or Closed Won (100%) stage.</description>
+        <name>Is_New_Stage_99_or_100</name>
+        <label>Is New Stage 99% or 100%?</label>
+        <locationX>380</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Finance Review</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Prior_Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Finance Review</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Prior_Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Opportunity_Line_Items</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Opportunity Line Items that meet the criteria outlined in the Get Record element found.</description>
+        <name>Opportunity_Line_Items_Foundx</name>
+        <label>Opportunity Line Items Found?</label>
+        <locationX>182</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity_Line_Items_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VarCollRecordOpportunityLineItems</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Record_Cannot_be_Saved_TRUE</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>This flow works with the &quot;Record Cannot be Saved&quot; checkbox referenced by &quot;CannotSaveRecordAuraProvisioning&quot; validation rule on the Opportunity object. It runs Before Save, preventing a user from saving the Opportunity when they attempt to change the stage to Finance Review or Closed Won while at least one of &quot;Subscription - Aura Enterprise&quot; Opportunity Line Items doesn&apos;t meet the following criteria: &quot;Environment Needs to be Provisioned&quot; = Yes OR Blank, Instance Provisioned Date is Blank AND/OR &quot;Private Offer Status&quot; = Declined. JIRA: SFDCSPT-301; SFDCSPT-610
+Version 3 - This version was created to use Custom Label Instead of hard code name of the Product. The product name has been changed to &apos;Neo4j - AuraDB&apos;
+Deactivated 12/16/2021 as it wasn&apos;t meeting the business needs and the entire Aura setup needs to be revisited.</description>
+    <interviewLabel>Cannot Move Opportunity to 99% or 100% {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Validation: Cannot Move Opportunity to 99% or 100%</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This element looks for the Opportunity Line Items that meet the criteria outlined below.</description>
+        <name>Get_Opportunity_Line_Items</name>
+        <label>Get Opportunity Line Items</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Opportunity_Line_Items_Foundx</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3) AND ((4 AND 5) OR (4 OR 5)) AND 6</filterLogic>
+        <filters>
+            <field>Product_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Label.aa_NEOSUBAURA_c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Environment_Needs_to_be_Provisioned__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Environment_Needs_to_be_Provisioned__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Instance_Provisioned__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Private_Offer_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Declined</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>OpportunityLineItem</object>
+        <outputReference>VarCollRecordOpportunityLineItems</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_Stage_99_or_100</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>The collected Opportunity Line Item records.</description>
+        <name>VarCollRecordOpportunityLineItems</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>OpportunityLineItem</objectType>
+    </variables>
+</Flow>

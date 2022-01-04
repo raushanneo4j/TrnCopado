@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>AccountOpportunityRole. Represents the TECHNICAL LANDSCAPE FOR THE PROJECT. Inspired by https://neo4j.lightning.force.com/lightning/r/organizer__ViewNodeMember__c/a7z3s0000004SCsAAM/view
+MAINTENANCE:  DUPE DETECTION: for reporting cleanliness we use a Matching Rule + Duplicate Rule and as of 2020-03-06 the field it inspects is a compound key set by process builder therefore when adding new fields to the schema make sure to update that process builder.
+PERMISSIONS: PermissionSets having description a7z3s0000004SCsAAM</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Cloud_Platform_for_Project_Deployment2__c</fullName>
+        <externalId>false</externalId>
+        <formula>/*z_Cloud_Platform_for_Project_Deployment__r.Name*/ TEXT(Cloud_Platform_for_Project_Deployment__c)</formula>
+        <label>Cloud Platform for Project Deployment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cloud_Platform_for_Project_Deployment__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional.  Choose the Account, if any, that is the Cloud Platform for the Project Deployment.</inlineHelpText>
+        <label>Cloud Platform for Project Deployment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Google Cloud Platform</fullName>
+                    <default>false</default>
+                    <label>Google Cloud Platform</label>
+                </value>
+                <value>
+                    <fullName>Amazon Web Services</fullName>
+                    <default>false</default>
+                    <label>Amazon Web Services</label>
+                </value>
+                <value>
+                    <fullName>Microsoft Azure</fullName>
+                    <default>false</default>
+                    <label>Microsoft Azure</label>
+                </value>
+                <value>
+                    <fullName>Alibaba Cloud</fullName>
+                    <default>false</default>
+                    <label>Alibaba Cloud</label>
+                </value>
+                <value>
+                    <fullName>Baidu Cloud</fullName>
+                    <default>false</default>
+                    <label>Baidu Cloud</label>
+                </value>
+                <value>
+                    <fullName>Pivotal/ VMware</fullName>
+                    <default>false</default>
+                    <label>Pivotal/ VMware</label>
+                </value>
+                <value>
+                    <fullName>Openshift</fullName>
+                    <default>false</default>
+                    <label>Openshift</label>
+                </value>
+                <value>
+                    <fullName>Oracle Cloud</fullName>
+                    <default>false</default>
+                    <label>Oracle Cloud</label>
+                </value>
+                <value>
+                    <fullName>IBM Cloud</fullName>
+                    <default>false</default>
+                    <label>IBM Cloud</label>
+                </value>
+                <value>
+                    <fullName>Digital Ocean</fullName>
+                    <default>false</default>
+                    <label>Digital Ocean</label>
+                </value>
+                <value>
+                    <fullName>OVH</fullName>
+                    <default>false</default>
+                    <label>OVH</label>
+                </value>
+                <value>
+                    <fullName>HostEurope</fullName>
+                    <default>false</default>
+                    <label>HostEurope</label>
+                </value>
+                <value>
+                    <fullName>NTT Global Data Centers</fullName>
+                    <default>false</default>
+                    <label>NTT Global Data Centers</label>
+                </value>
+                <value>
+                    <fullName>T-Systems</fullName>
+                    <default>false</default>
+                    <label>T-Systems</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Compound_Key__c</fullName>
+        <description>For duplicate prevention. This is a concatenated value from both master lookups, and other data values.  Worksaround salesforce limitation &quot;Error: A matching rule can have only one lookup relationship field&quot; (https://success.salesforce.com/ideaView?id=08730000000Dl8OAAS)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For duplicate prevention. This is a concatenated value from both master lookups, and other data values.  Worksaround salesforce limitation &quot;Error: A matching rule can have only one lookup relationship field&quot; (https://success.salesforce.com/ideaView?id=087</inlineHelpText>
+        <label>Compound Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>On_premise_deployment2__c</fullName>
+        <description>Picklist is better than checkbox because I cannot validate null on a checkbox, and this will sometimes rightfully be null.</description>
+        <externalId>false</externalId>
+        <label>On-premise deployment?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>On_premise_deployment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark this if its considered an &quot;on-premise&quot; deployment.</inlineHelpText>
+        <label>deprecated.</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>accountOpportunityRoles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Other_Detail__c</fullName>
+        <description>a7z3s0000000NolAAE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Other (to be used if Cloud platform or integration is not found on fixed list)</inlineHelpText>
+        <label>Other Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Tech_Company_the_integration_connects_to__c</fullName>
+        <description>a7z3s0000000NolAAE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which technology company is the used-integration connecting to? If multiple integrations then please create multiple Technology Involved records.</inlineHelpText>
+        <label>Tech Company the integration connects to</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AWS Kafka</fullName>
+                    <default>false</default>
+                    <label>AWS Kafka</label>
+                </value>
+                <value>
+                    <fullName>Azure Kafka</fullName>
+                    <default>false</default>
+                    <label>Azure Kafka</label>
+                </value>
+                <value>
+                    <fullName>Confluent</fullName>
+                    <default>false</default>
+                    <label>Confluent</label>
+                </value>
+                <value>
+                    <fullName>Databricks</fullName>
+                    <default>false</default>
+                    <label>Databricks</label>
+                </value>
+                <value>
+                    <fullName>Dataiku</fullName>
+                    <default>false</default>
+                    <label>Dataiku</label>
+                </value>
+                <value>
+                    <fullName>H2O.AI</fullName>
+                    <default>false</default>
+                    <label>H2O.AI</label>
+                </value>
+                <value>
+                    <fullName>Looker</fullName>
+                    <default>false</default>
+                    <label>Looker</label>
+                </value>
+                <value>
+                    <fullName>Microstrategy</fullName>
+                    <default>false</default>
+                    <label>Microstrategy</label>
+                </value>
+                <value>
+                    <fullName>Tableau</fullName>
+                    <default>false</default>
+                    <label>Tableau</label>
+                </value>
+                <value>
+                    <fullName>Thales</fullName>
+                    <default>false</default>
+                    <label>Thales</label>
+                </value>
+                <value>
+                    <fullName>ThoughtSpot</fullName>
+                    <default>false</default>
+                    <label>ThoughtSpot</label>
+                </value>
+                <value>
+                    <fullName>Tibco Spotfire</fullName>
+                    <default>false</default>
+                    <label>Tibco Spotfire</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Which_ISV_Integration_is_used__c</fullName>
+        <externalId>false</externalId>
+        <label>ISV Integration used</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ISV_Integrations</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>test_development_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Project Lead Logan describes this in https://neo4j.slack.com/archives/DRX1ZQD7F/p1583447052014600
+permissions for this and a7z3s0000004SCsAAM are done by permission set.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>check this box if the cloud deployment is limited to test/ dev of the system</inlineHelpText>
+        <label>test &amp; development only</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Technology Involved</label>
+    <nameField>
+        <displayFormat>AOR-{0000}</displayFormat>
+        <label>Relevant Technology Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Technologies Involved</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>cloud_platform_is_req_if_onprem_is_no</fullName>
+        <active>true</active>
+        <description>If “On-premise” (On_premise_deployment__c) is No then require “cloud platform…” field</description>
+        <errorConditionFormula>AND(
+isblank(TEXT(Cloud_Platform_for_Project_Deployment__c )),
+ ISPICKVAL(On_premise_deployment2__c, &quot;No&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Cloud_Platform_for_Project_Deployment__c</errorDisplayField>
+        <errorMessage>Please input [Cloud Platform for Project Deployment].   (  [Cloud Platform for Project Deployment] is required when [On-premise deployment] is NO. )</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>dep_cloud_platform_is_req_if_onprem_is_0</fullName>
+        <active>false</active>
+        <description>Can you make it so that if “On-premise” (On_premise_deployment__c) is checked that satisfies the mandatory “cloud platform…” field (Cloud_Platform_for_Project_Deployment__c)?</description>
+        <errorConditionFormula>AND(
+isblank( z_Cloud_Platform_for_Project_Deployment__c ),
+NOT(On_premise_deployment__c)
+)</errorConditionFormula>
+        <errorMessage>Please input [Cloud Platform for Project Deployment].   (  [Cloud Platform for Project Deployment] is required when [On-premise deployment] is unchecked. )</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>req_other_detail_if_cloud_plat_is_other</fullName>
+        <active>true</active>
+        <description>a7z3s0000000NolAAE</description>
+        <errorConditionFormula>if(and(
+ISPICKVAL(  Cloud_Platform_for_Project_Deployment__c , &quot;other&quot;),
+isblank( Other_Detail__c )
+),true,false)</errorConditionFormula>
+        <errorDisplayField>Other_Detail__c</errorDisplayField>
+        <errorMessage>[Other Detail] is required when [Cloud Platform for Project Deployment] is &quot;other&quot;.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

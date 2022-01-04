@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>收入预测设置</value>
+    </caseValues>
+    <fields>
+        <help>指示用于收入预测计算的收入预测设置记录。您只能有一个有效的收入预测设置记录。</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>如果选择，则将机会从收入预测的计划工作中排除。</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>选择以排除与项目和里程碑的保留资源请求有关的收入。</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>同时处理的记录数，例如考勤卡和费用。</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>同时处理的机会和机会订单项的数量。</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>同时处理的项目数。</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>输入要用作预期项目结束日期的商机对象上字段的API名称。</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>输入要用作预期项目开始日期的商机对象上字段的API名称。</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>在要用于计算“已完成的识别小时数”字段中的值的项目对象上选择字段的API名称。如果需要，您可以创建自己的字段并将其添加到选择列表。</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>自订连结</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>预测批次设置</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>机会设置</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>项目设定</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>设置细节</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>收入预测设置名称</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Report$Name</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Report$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Report$LastRunDate</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedBy.Profile</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedBy.UserRole</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Report$CreatedBy.IsActive</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedBy.LastLoginDate</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Reports with user information. Used primarily to identify and and remove unused reports.</description>
+    <filter>
+        <booleanFilter>(1 OR 4) AND (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>Report$LastRunDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Report$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Report$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Financial Force,Neo4j Marketing,Elixiter Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Report$LastRunDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/31/2018 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Administrative: Report Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Reports_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Report$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Report$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>バックログ計算</value>
+    </caseValues>
+    <fields>
+        <help>PSEによって使用される内部フィールド - ユーザーへの表示を目的としていません。</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>地域、実務、またはグループに含まれるプロジェクトのバックログを計算するかどうか。</help>
+        <label><!-- Calculate Project Backlog --></label>
+        <name>pse__Calculate_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Fields for Current Time Period --></label>
+        <name>pse__Copy_Fields_for_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <help>バックログ計算の終了日。終了日が指定されていない場合は、開始日からのすべてのレコードが処理されます。予定外のバックログを計算するときにこれをお勧めします。</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>選択した地域、慣行、またはグループのすべての下位レベルのバックログを計算するかどうか。バックログがリソースに対してのみ計算される場合、このフィールドは無視されます。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Process Batch Id --></label>
+        <name>pse__Post_Process_Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reuse Detail Objects --></label>
+        <name>pse__Reuse_Detail_Objects__c</name>
+    </fields>
+    <fields>
+        <help>この値を設定すると開始日フィールドが自動的に設定されます</help>
+        <label><!-- Start Calculating From --></label>
+        <name>pse__Start_Calculating_From__c</name>
+        <picklistValues>
+            <masterLabel>Start of next week</masterLabel>
+            <translation>来週の始まり</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of this week</masterLabel>
+            <translation>今週の始まり</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>今日</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>発生したエラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>始まっていない</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Processing</masterLabel>
+            <translation>後処理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他の</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>永遠の</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>週間</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>年</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Backlog Calculation Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>オプション</label>
+            <section>Options</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>バックログ計算名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Project may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Project is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+</CustomObjectTranslation>

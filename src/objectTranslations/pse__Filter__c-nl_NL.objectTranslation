@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Filter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Filters</value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Filter Arguments --></label>
+        <name>pse__Custom_Filter_Arguments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Filter Handler --></label>
+        <name>pse__Custom_Filter_Handler__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van het veld waarop dit filter werkt.</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Set SObject --></label>
+        <name>pse__Filter_Set_SObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Set --></label>
+        <name>pse__Filter_Set__c</name>
+        <relationshipLabel><!-- Filters --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indien false wordt dit filter niet gebruikt als geëvalueerd.</help>
+        <label><!-- Is Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>pse__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>bevat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>does not contain</masterLabel>
+            <translation>bevat geen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>is gelijk aan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>excludes</masterLabel>
+            <translation>uitsluit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equal</masterLabel>
+            <translation>groter of gelijk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>groter dan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>includes</masterLabel>
+            <translation>omvat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equal</masterLabel>
+            <translation>minder of gelijk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>minder dan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equal to</masterLabel>
+            <translation>niet gelijk aan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>begint met</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within</masterLabel>
+            <translation>binnen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Een JSON-object dat de waarde of waarden vertegenwoordigt waarmee u wilt vergelijken.</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Filter Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Filter ID</nameFieldLabel>
+</CustomObjectTranslation>

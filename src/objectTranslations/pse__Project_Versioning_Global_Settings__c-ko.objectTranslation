@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 프로젝트 버전 지정 전역 설정 --></value>
+    </caseValues>
+    <fields>
+        <help><!-- This field is reserved for future development. Do not use. --></help>
+        <label><!-- DEPRECATED:Capturing Version Config Name --></label>
+        <name>pse__Capturing_Version_Config_Name__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전을 만들 때 배치 크기를 정의합니다. 기본값은 500입니다.</help>
+        <label><!-- Create Version Batch Size --></label>
+        <name>pse__Create_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전을 삭제할 때 배치 크기를 정의합니다. 기본값은 500입니다.</help>
+        <label><!-- Delete Version Batch Size --></label>
+        <name>pse__Delete_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>소개 버전에서 언어 및 그래픽을 사용자 정의하는 데 사용할 정적 리소스 (네임 스페이스 접두사 사용)의 이름을 정의합니다. 기본 자원을 사용하려면 비워 두십시오.</help>
+        <label><!-- View Project Version Quick Help Resource --></label>
+        <name>pse__VPV_Quick_Help_Resource__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전보기의 상세보기에서로드 된 레코드 수를 정의합니다. 값을 늘리면로드 시간은 향상되지만 플랫폼 제한이 발생할 수 있습니다. 기본값은 500입니다.이 필드의 값으로 0을 입력하면 레코드가로드되지 않습니다.</help>
+        <label><!-- View Project Version Records Loaded --></label>
+        <name>pse__VPV_Records_loaded_per_call__c</name>
+    </fields>
+</CustomObjectTranslation>

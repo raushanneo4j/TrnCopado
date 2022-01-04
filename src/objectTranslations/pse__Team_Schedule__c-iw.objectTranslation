@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>לוח זמנים לקבוצה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>לוחות זמנים לצוות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>התאריך בו מתחיל לוח הזמנים.</help>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>הערות ללוח הזמנים של הצוות.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>שלח התראות</help>
+        <label><!-- Send Notifications --></label>
+        <name>pse__Send_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>מצב לוח הזמנים של הקבוצה.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>שהוקצה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>ממתין ל</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>מבט לתבנית לוח הזמנים של הצוות.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>הצוות שקשור ללוח הזמנים.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם לוח הזמנים של הצוות</nameFieldLabel>
+</CustomObjectTranslation>

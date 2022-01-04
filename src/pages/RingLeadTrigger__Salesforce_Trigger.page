@@ -1,0 +1,20 @@
+<apex:page controller="RingLeadTrigger.ringleadConfigurationController" sidebar="false" standardStylesheets="false">
+    <head>
+        <script type="text/javascript">
+            window.appSessionId = '{!appSessionId}';
+            window.sfInstanceUrl = '{!$Site.BaseUrl}';
+            window.urlForLogo = '{!URLFOR($Resource.ringlead_logo)}'
+            window.packageVersion = '{!packageVersion}';
+            console.log('{!$Site.BaseUrl}')
+        </script>
+    </head>
+    <body style="height: 100%;" >
+        <div id="body"></div>
+    </body>
+    <footer>
+        <apex:includeScript value="{!$Resource.RingLeadTrigger__ringlead_trigger}"/>
+<!--        Change below code to your local ngrok url  -->
+<!--        <script src="https://7151f7bbed1c.ngrok.io/bundle.js"></script>-->
+    </footer>
+
+</apex:page>

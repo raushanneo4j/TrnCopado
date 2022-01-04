@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 项目任务甘特图设置 --></value>
+    </caseValues>
+    <fields>
+        <help>当项目被锁定以进行编辑时，此设置确定是否为用户（有权在项目任务甘特图上编辑任务）提供了打破锁定并强制其他用户进入只读模式的选项。</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>定义项目任务对象上字段集的API名称，该名称包含要在“项目任务甘特图”上显示的自定义列。设置为空白时，将使用“甘特图可编辑自定义列”字段集。</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，Project Task Gantt中的记录不会加载到缓冲区中。取消选择默认值。只有在咨询FinancialForce.com客户支持后才能更改此设置。</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>如果选择，则在同步项目任务依赖项时将停用解析依赖关系按钮。如果取消选择，则在不需要同步项目任务依赖项时，该按钮将保持活动状态。取消选择默认值。</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>确定要在“项目任务甘特图”中的当前视图上方呈现的行数。默认值为20.只有在咨询FinancialForce.com客户支持后才能更改此设置。</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>用于显示里程碑的自定义工具提示的字段集的API名称。如果已定义，则此设置将替换默认的里程碑工具提示。</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>用于显示项目任务分配的自定义工具提示的字段集的API名称。如果已定义，则此设置将替换默认的“项目任务分配”工具提示。</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>确定项目经理的甘特图编辑访问级别。值为“Full”（默认值） - 可以编辑已创建的项目，“Read” - 只具有只读访问权限，或“None” - 访问权限由权限控制确定。</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>用于显示Projects的自定义工具提示的字段集的API名称。如果已定义，则此设置将替换默认的“项目”工具提示。</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>项目任务上设置的字段的API名称，包含在“项目任务甘特图”中不可编辑的字段。</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将按用户记住“项目任务甘特图”中列的宽度，顺序和可见性的自定义。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，“创建资源需求”按钮将显示在“项目任务甘特图”工具栏上。用于通过“项目任务分配”页面中的“创建资源需求”按钮配置项目计划。</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>确定“计划”窗格中任务栏显示中是否显示小时完成百分比。此设置不控制“计划”窗格中％Hrs按钮的显示。</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>确定“完成”百分比是否显示在“计划”窗格的任务栏显示中。默认情况下会选择此设置。此设置不控制“计划”窗格中“％Pts”按钮的显示。</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>用于显示“项目任务”的自定义工具提示的字段集的API名称。如果已定义，则此设置将替换默认的“项目任务”工具提示。</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>确定要在“项目任务甘特图”中的当前视图下方呈现的行数。默认值为10.只有在咨询FinancialForce.com客户支持后才能更改此设置。</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+</CustomObjectTranslation>

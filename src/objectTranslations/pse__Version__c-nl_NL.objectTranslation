@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Versie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Versies</value>
+    </caseValues>
+    <fields>
+        <help>Selecteer om de projectversie als de projectbasislijn te definiëren. Een baseline is een projectversie die wordt aangeduid als het overeengekomen plan voor het project. Een project kan slechts één projectbasislijn hebben. U kunt een nieuwe basislijn instellen om de vorige te verwijderen.</help>
+        <label><!-- Baseline --></label>
+        <name>pse__Baseline__c</name>
+    </fields>
+    <fields>
+        <help>De ID voor de Apex-taak die het batchproces Versiebeheer uitvoert.</help>
+        <label><!-- Batch Apex Job Id --></label>
+        <name>pse__Batch_Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Het gerelateerde record voor het bijbehorende batchproces Versioninging.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Aantekeningen met betrekking tot de versie.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Het project had betrekking op de versie.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Managed Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De status van de versie. Wanneer de status Verwerken is, geeft dit aan dat processen de versie wijzigen. Wanneer de status Voltooid is, zijn de versiegegevens vast en klaar voor gebruik in een vergelijking.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Deleting</masterLabel>
+            <translation>Wissen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nieuwe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Verwerken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation>Klaar</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Version Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Versienaam</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Your selected version is queued for deletion and cannot be set as a baseline. --></errorMessage>
+        <name>pse__Cannot_become_baseline_when_deleting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a name for this project version. --></errorMessage>
+        <name>pse__Version_should_have_a_name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Project_Version --></label>
+        <name>pse__Create_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Project_Version --></label>
+        <name>pse__Delete_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Project_Versions --></label>
+        <name>pse__View_Project_Versions</name>
+    </webLinks>
+</CustomObjectTranslation>

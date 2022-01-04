@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Backlog Detail Converted</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Backlog Detaljer Konverterad</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog Detail --></label>
+        <name>pse__Backlog_Detail__c</name>
+        <relationshipLabel><!-- Backlog Details Converted --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Faktureringsbeloppet som används för att beräkna oförutsedda intäkter.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <help>Bokningsbeloppet som används för att beräkna det obeskattade intäkterna.</help>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Time Cost --></label>
+        <name>pse__External_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request External Cost --></label>
+        <name>pse__Held_Resource_Request_External_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Hours --></label>
+        <name>pse__Held_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Internal Cost --></label>
+        <name>pse__Held_Resource_Request_Internal_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Revenue --></label>
+        <name>pse__Held_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Project Backlog --></label>
+        <name>pse__Inactive_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Time Cost --></label>
+        <name>pse__Internal_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reusable --></label>
+        <name>pse__Is_Reusable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Revenue --></label>
+        <name>pse__Milestone_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Held External --></label>
+        <name>pse__Resource_Requests_Cost_Held_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Held Internal --></label>
+        <name>pse__Resource_Requests_Cost_Held_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Unheld --></label>
+        <name>pse__Resource_Requests_Cost_Unheld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Hours Held --></label>
+        <name>pse__Resource_Requests_Hours_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Hours Unheld --></label>
+        <name>pse__Resource_Requests_Hours_Unheld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Revenue Held --></label>
+        <name>pse__Resource_Requests_Revenue_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Revenue Unheld --></label>
+        <name>pse__Resource_Requests_Revenue_Unheld__c</name>
+    </fields>
+    <fields>
+        <help>Totalt antal dagar som är schemalagda baserat på uppdragsplaner och scheman undantag. Till exempel om ett uppdrag har ett schema på 4 timmar måndag till och med onsdag och beräkningsperioden är 2 veckor inklusive är värdet 6 dagar (3 dagar per vecka * 2) .</help>
+        <label><!-- Scheduled Days --></label>
+        <name>pse__Scheduled_Days__c</name>
+    </fields>
+    <fields>
+        <help>Antalet timmar som planeras baserat på uppdragsplaner och schemalagda undantag under beräkningsperioden.</help>
+        <label><!-- Scheduled Hours --></label>
+        <name>pse__Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Inkomster från planerade uppdrag. För timmars uppdrag är det antalet schemalagda timmar * räkningsränta. För uppdrag med en daglig räntesats är det antalet schemalagda dagar * räntesats.</help>
+        <label><!-- Time Revenue --></label>
+        <name>pse__Time_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Cost --></label>
+        <name>pse__Unheld_Resource_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Hours --></label>
+        <name>pse__Unheld_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Revenue --></label>
+        <name>pse__Unheld_Resource_Request_Revenue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Backlog Detaljomvandlade namn</nameFieldLabel>
+</CustomObjectTranslation>

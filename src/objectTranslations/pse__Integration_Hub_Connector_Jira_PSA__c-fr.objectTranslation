@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Connecteur de hub d&apos;intégration: Jira - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Connecteur de hub d&apos;intégration: Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Adresse électronique pour la réception des notifications d&apos;erreur en cas d&apos;échec de l&apos;intégration avec Jira.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;URL de l&apos;application Jira. Utilisé pour l&apos;authentification.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque le champ Mapper les projets PSA aux problèmes Jira est sélectionné, détermine la catégorie des statuts de problème Jira qui met à jour le champ de projet mappé avec la valeur définie dans Valeur du champ PSA pour la mise à jour des projets.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque le champ Activer la synchronisation des projets avec les problèmes Jira est sélectionné, détermine le type de problèmes Jira avec lesquels les projets PSA sont synchronisés. Cette valeur est sensible à la casse et le type de problème doit exister dans votre application Jira.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les ressources PSA synchronisées avec Jira reçoivent une notification par courrier électronique avec leur nom d&apos;utilisateur Jira et un lien pour définir leur mot de passe.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Une fois sélectionnés, les projets PSA sont mappés sur les problèmes Jira, et non sur les projets Jira. Le type de problème Jira est déterminé par la valeur du champ Type de problème Jira.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre maximum de jours de la feuille de temps, à partir du lundi, peut être consigné chaque semaine pour une ressource. Vous pouvez entrer un nombre entier compris entre 1 et 7. Par exemple, entrez 5 pour activer l&apos;enregistrement de l&apos;heure du lundi au vendredi.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Nombre maximal d&apos;heures de carte de pointage pouvant être enregistrées chaque jour pour une ressource. Vous pouvez entrer une valeur entre 1 et 24.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque le champ Mapper les projets PSA aux problèmes Jira est sélectionné, détermine la valeur avec laquelle le champ de projet mappé est mis à jour lorsqu&apos;un problème Jira a le statut défini dans Catégorie de problème Jira. Cette valeur est sensible à la casse.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Nom du champ personnalisé Jira utilisé pour lier un problème à un type de problème parent, par exemple, Lien parent. La relation peut avoir plusieurs niveaux, mais le type de problème défini dans Type de problème Jira est le plus élevé pris en compte.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les journaux de travail Jira doivent être synchronisés avec les cartes de temps PSA. Remplit automatiquement lorsque le flux de travail Sync Work Logs de Jira vers Timecards dans PSA est activé à l&apos;aide de la console de fonctions.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les projets PSA doivent être synchronisés avec les problèmes Jira. Remplit automatiquement lorsque le flux de travail Synchroniser les projets de PSA vers Problèmes dans Jira est activé à l&apos;aide de la console de fonctions.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les projets PSA doivent être synchronisés avec les projets Jira. Remplit automatiquement lorsque le flux de travail Synchroniser des projets de PSA vers des projets dans Jira est activé à l&apos;aide de la console de fonctions.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les ressources PSA doivent être synchronisées avec les utilisateurs Jira. Remplit automatiquement lorsque le flux de travail Synchroniser les ressources de PSA vers Utilisateurs dans Jira est activé à l&apos;aide de Feature Console.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>Statut dans lequel les cartes de temps sont créées.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les projets PSA doivent être mis à jour en fonction du statut du problème Jira.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Indique si l&apos;application Jira fournie dans l&apos;URL de l&apos;application Jira est une version Jira Cloud. Laissez cette option désactivée si vous utilisez Jira Server.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

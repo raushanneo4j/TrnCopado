@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>假日</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Holidays --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>输入当天工作的小时数（例如，0表示全天休息，4表示半天）</help>
+        <label><!-- Work Hours --></label>
+        <name>pse__Work_Hours__c</name>
+    </fields>
+    <layouts>
+        <layout>Holiday Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>假日名称</nameFieldLabel>
+</CustomObjectTranslation>

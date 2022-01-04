@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Tidsvariabel Beregning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Tidsvariantberegninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Type --></label>
+        <name>pse__Date_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Week</masterLabel>
+            <translation>Nuværende uge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>Sidste uge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Run</masterLabel>
+            <translation>Manuel kørsel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vælg for at generere tidsvarianansberegningerne baseret på alle underniveauer i den valgte region, praksis eller gruppe.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week End Date --></label>
+        <name>pse__Week_End_Date__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Time Variance Calculation Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tidsvariabel Beregningsnavn</nameFieldLabel>
+</CustomObjectTranslation>

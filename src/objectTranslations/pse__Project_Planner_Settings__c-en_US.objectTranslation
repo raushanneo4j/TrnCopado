@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If selected, determines whether holiday schedule exception records are added if assignment date ranges are adjusted and the new date range falls within a holiday. --></help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, this setting allows users to drag the assignment bar to mass move assignments in the Project Planner. This setting is deselected by default. --></help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the additional fields to display in the &quot;Additional Fields&quot; section of the Create Assignment dialog in Project Planner. --></help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on an Assignment that controls the assignment color bars in Project Planner. --></help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting defines the API name of a field to order assignments by and, optionally, the direction (ASC or DESC). Assignments always appear above held resource requests. --></help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines which Assignment fields are searched with the text search box on the project planner. --></help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that contains the fields to show as tooltips for assignments on the project planner. The field set must exist in the Assignment object. --></help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that contains the columns to show on the project planner. The field set must exist in the Project object. --></help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting defines the number of future days, from today, for which the enhanced Project Planner will display assignments. For example, enter 30 to display assignments that start or end within 30 days of today. --></help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting defines the number of days prior to today for which the enhanced Project Planner will display assignments. For example, enter 30 to display assignments that start or end in the preceding 30 days. --></help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines a URL (absolute or relative) that points to the default image to use for resources without a profile photo. Image files of 22 pixels square work best. --></help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the fields used for filtering in the Project Planner. The value is a field set specifying fields available to filter on. --></help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- When selected, the Cost Rate fields on the Create Assignment dialog will be hidden for all users. --></help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED: Use Project_Planner_Preferences__c.Hide_Inline_Dialog__c instead. --></help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the start and end dates in the Create Assignments dialog are auto-populated from the project start and end dates. --></help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the resource role in the Create Assignments dialog is auto-populated from the Contacts record. --></help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED: Use Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c instead. --></help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the API name of the assignment to display in Project planner. If this field is blank, the Project planner displays the Assignment name by default. --></help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the API name of the resource request to display in Project planner. If this field is blank, the Project planner displays the Resource Request name by default. --></help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting defines the maximum number of projects that load in the background when viewing large numbers of records. Entering a higher value results in fewer loading interruptions, but uses more memory. --></help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines which Project fields are searched with the text search box on the project planner. --></help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that contains the fields to show as tooltips for projects on the project planner. The field set must exist in the Project object. --></help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the number of projects for which child data (assignments and resource requests) load per request. You should not adjust the Record Load Limit without first consulting Customer Support. --></help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the field set that contains the fields to show as tooltips for resource requests on the project planner. The field set must exist in the Resource Request object. --></help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines which Resource Request fields are searched with the text search box on the project planner. --></help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Resource Request that controls the Resource Request color bars in Project Planner. --></help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting defines the API name of a field to order held resource requests by and, optionally, the direction (ASC or DESC). Held resource requests always appear below assignments. --></help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, you cannot create an assignment with start date in the past. The default value is deselected. --></help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, you cannot edit Project Planner assignment and schedule hours in the past. The default value is deselected. --></help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, you cannot swap the resource on an assignment with a start date set in the past. The default value is deselected. --></help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, customizations to width, order, and visibility of columns in the Project Planner will be remembered per user. --></help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Beige for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Light Blue for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Light Green for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Light Red for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Light Yellow for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Pink for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Purple for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Turquoise for cells in Project Planner. Default = False --></help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting determines whether your users see the enhanced (new) or classic Project Planner. --></help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting determines whether or not your users will require a permission control, with the Staffing checkbox selected, before they can edit schedules on the enhanced Project Planner. --></help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+</CustomObjectTranslation>

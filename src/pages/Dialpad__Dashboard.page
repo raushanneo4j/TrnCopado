@@ -1,0 +1,29 @@
+<apex:page sidebar="false" showHeader="true" controller="Dialpad.DashboardController" standardStylesheets="true" docType="html-5.0"  tabStyle="Dialpad__tab">
+<html lang="en">
+  <head>
+    <title>Accounting Force Resources</title>
+   
+      <script>
+        window.onload = function(e) {
+           var Profile = '{!$Profile.Name}';
+            Redirect(Profile);
+            };
+      </script>
+  </head>
+
+  <body>
+             <div>            
+      <apex:form >      
+   <apex:actionFunction action="{!redirect}" name="Redirect" rerender="none">
+   <apex:param name="Profile1" assignTo="{!profileName}" value=""/>
+   </apex:actionFunction>
+        </apex:form>
+      </div><!--/row-->
+
+    
+   
+    
+  </body>
+</html>
+
+</apex:page>

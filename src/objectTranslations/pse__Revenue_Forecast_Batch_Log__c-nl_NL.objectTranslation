@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opbrengstprognose Batchlogboek</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Omzetprognoses Batchlogboeken</value>
+    </caseValues>
+    <fields>
+        <help>Het bericht vastgelegd voor de gerelateerde omzetprognose.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de Opportunity waarvoor dit logboek is gegenereerd</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Een link naar het project waarop deze overschrijving van toepassing is.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Een link naar de opbrengstprognosebatch waarvoor dit logboek is gegenereerd.</help>
+        <label><!-- Revenue Forecast Batch --></label>
+        <name>pse__Revenue_Forecast_Batch__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Log Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Omzetprognose Batchlognaam</nameFieldLabel>
+</CustomObjectTranslation>

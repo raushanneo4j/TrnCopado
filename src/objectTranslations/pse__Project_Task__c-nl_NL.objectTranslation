@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Projecttaak</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projecttaken</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Project Task Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyProjTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Project Tasks Columns --></label>
+        <name>pse__CreateProjFromTemplateTasksColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Editable Custom Columns --></label>
+        <name>pse__Gantt_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Read Only Custom Columns --></label>
+        <name>pse__Gantt_Read_Only_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>Datum en tijd waarop de taak daadwerkelijk is geëindigd. Wanneer het ingevulde selectievakje is aangevinkt</help>
+        <label><!-- Actual End Date &amp; Time --></label>
+        <name>pse__Actual_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Datum waarop de taak daadwerkelijk is geëindigd. Wanneer het ingevulde selectievakje is aangevinkt</help>
+        <label><!-- Actual End Date --></label>
+        <name>pse__Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Uren besteed aan deze taak. Rollen van tijdnotities op tijdkaarten. Op bovenliggende taken zijn uren van onderliggende taken inbegrepen.</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Datum waarop de taak daadwerkelijk is gestart. Wanneer het selectievakje is ingeschakeld, is dit aangevinkt</help>
+        <label><!-- Actual Start Date &amp; Time --></label>
+        <name>pse__Actual_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Datum waarop de taak daadwerkelijk is gestart. Wanneer het selectievakje is ingeschakeld, is dit aangevinkt</help>
+        <label><!-- Actual Start Date --></label>
+        <name>pse__Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resources (Long) --></label>
+        <name>pse__Assigned_Resources_Long__c</name>
+    </fields>
+    <fields>
+        <help>Door het systeem gegenereerde lijst met toegewezen bronnen. De lijst wordt gegenereerd op basis van de toewijzing van de projecttaak.</help>
+        <label><!-- Assigned Resources --></label>
+        <name>pse__Assigned_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>pse__Blocked__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingeschakeld, staat de taakselector op de pagina Tijdinvoer niet toe dat nieuwe taaktijd wordt toegevoegd aan deze projecttaak.</help>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Wordt gecontroleerd als de taak is voltooid</help>
+        <label><!-- Completed --></label>
+        <name>pse__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto Update Parents --></label>
+        <name>pse__Do_Not_Auto_Update_Parents__c</name>
+    </fields>
+    <fields>
+        <help>Of u automatische updates van automatisch berekende velden zoals datums,% voltooid, enz. Wilt overslaan</help>
+        <label><!-- Do Not Auto Update This Task --></label>
+        <name>pse__Do_Not_Auto_Update_This_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Units --></label>
+        <name>pse__Duration_Unit__c</name>
+    </fields>
+    <fields>
+        <help>De datum en tijd waarop het werk voor deze taak moet eindigen. Tijdkaarten kunnen nog steeds worden ingevoerd voor een taak na deze datum, zolang deze niet is gesloten voor tijdsinvoer.</help>
+        <label><!-- End Date &amp; Time --></label>
+        <name>pse__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert de geschatte uren om de taak te voltooien.</help>
+        <label><!-- Estimated Time To Completion (Task) --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Externe taak-ID voor integratie met niet-Salesforce-taakbeheersystemen of -toepassingen. Integraties moeten dit veld gebruiken voor de externe systeem-ID om de integriteit te behouden en ups toestaan.</help>
+        <label><!-- External Task ID --></label>
+        <name>pse__External_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Information --></label>
+        <name>pse__Flag_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - No Coverage --></label>
+        <name>pse__Flag_Task_Dates_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - Partial Coverage --></label>
+        <name>pse__Flag_Task_Dates_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Milestone Bounds --></label>
+        <name>pse__Flag_Task_End_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Project Bounds --></label>
+        <name>pse__Flag_Task_End_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - No Coverage --></label>
+        <name>pse__Flag_Task_Hours_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - Partial Coverage --></label>
+        <name>pse__Flag_Task_Hours_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start - Milestone Bounds --></label>
+        <name>pse__Flag_Task_Start_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start  - Project Bounds --></label>
+        <name>pse__Flag_Task_Start_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <help>Systeemveld dat het aantal oudertaken &apos;hoger in de keten&apos; toont naar de bovenliggende oudertaak. Taken op het hoogste niveau hebben zelf een hiërarchiediepte van 0, hun directe onderliggende taken hebben een hiërarchische diepte van 1, enzovoort.</help>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal resterende uren om de taak te voltooien die is afgeleid van Geschatte tijd tot voltooiing (taak) wanneer deze is ingesteld. Anders berekend op basis van geschatte uren minus werkelijke uren.</help>
+        <label><!-- Hours Remaining --></label>
+        <name>pse__Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>pse__Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Samenvattingsoverzichtsvel met totaalaantal toewijzing van projecttaken</help>
+        <label><!-- Number of Assignments --></label>
+        <name>pse__Number_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peer Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date &amp; Time --></label>
+        <name>pse__Parent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date --></label>
+        <name>pse__Parent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date &amp; Time --></label>
+        <name>pse__Parent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date --></label>
+        <name>pse__Parent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Deze zoekopdracht legt taakhiërarchieën vast: subtaken hebben een opzoekwaarde voor bovenliggende taken voor de volgende taak op hoger niveau in de taakhiërarchie. Merk op dat dit apart is en verschilt van temporele (afhankelijke / voorloper) relaties tussen taken.</help>
+        <label><!-- Parent Task --></label>
+        <name>pse__Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Child Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Hours) --></label>
+        <name>pse__Percent_Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Points) --></label>
+        <name>pse__Percent_Complete_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Tasks) --></label>
+        <name>pse__Percent_Complete_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Baseline --></label>
+        <name>pse__Points_Baseline__c</name>
+    </fields>
+    <fields>
+        <help>Aantal behaalde punten</help>
+        <label><!-- Points Complete --></label>
+        <name>pse__Points_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Remaining --></label>
+        <name>pse__Points_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>pse__Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>P1</masterLabel>
+            <translation>P1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2</masterLabel>
+            <translation>P2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3</masterLabel>
+            <translation>P3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation>P4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5</masterLabel>
+            <translation>P5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>U hoeft het veld Project niet te definiëren bij het maken van een onderliggende taak. Het veld Project wordt automatisch ingevuld vanuit de bovenliggende taak en overschrijft elke ingevoerde waarde.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Formule veld. De som van werkelijke uren en geschatte tijd tot voltooiing (taak). Wanneer Geschatte tijd tot voltooiing (taak) leeg is, zijn de geprojecteerde uren de geschatte uren.</help>
+        <label><!-- Projected Hours --></label>
+        <name>pse__Projected_Hours__c</name>
+    </fields>
+    <fields>
+        <help>De datum en tijd waarop het werk voor deze taak moet beginnen. Tijdkaarten kunnen nog steeds worden ingevoerd voor een taak vóór deze datum, zolang deze niet is gesloten voor tijdinvoer.</help>
+        <label><!-- Start Date &amp; Time --></label>
+        <name>pse__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Wordt gecontroleerd als de taak is gestart</help>
+        <label><!-- Started --></label>
+        <name>pse__Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation>Geblokkeerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Compleet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>Uitgestelde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Droogte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>Gepland</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation>Begonnen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden de gerelateerde streefdatum van de mijlpaal en de einddatum van de taak gesynchroniseerd wanneer ze worden gewijzigd in Gantt.</help>
+        <label><!-- Synchronize Milestone and Task --></label>
+        <name>pse__Synchronize_Milestone_And_Task__c</name>
+    </fields>
+    <fields>
+        <help>Systeemveld met de gescheiden lijst met bovenliggende taken-ID&apos;s &apos;hoger in de keten&apos; naar de bovenliggende bovenliggende taak.</help>
+        <label><!-- Task ID Chain --></label>
+        <name>pse__Task_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key Chain --></label>
+        <name>pse__Task_Key_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key --></label>
+        <name>pse__Task_Key__c</name>
+    </fields>
+    <fields>
+        <help>Dit is een nieuw veld om de keten van de taaknaam te behouden. Dit veld heeft hetzelfde gedrag als het veld &quot;Naam keten Taak&quot;. Maar het nieuwe gegevenstype (lange tekstgebied) laat een naamketen toe voor een groter aantal voor projecttaken in een hiërarchie in vergelijking met de oude (255 tekens)</help>
+        <label><!-- Task Name Chain (Long) --></label>
+        <name>pse__Task_Name_Chain_Long__c</name>
+    </fields>
+    <fields>
+        <help>Systeemveld met de gescheiden lijst met oudertaaknamen &apos;hoger in de keten&apos; naar de bovenliggende bovenliggende taak.</help>
+        <label><!-- Task Name Chain --></label>
+        <name>pse__Task_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>pse__Task_Number__c</name>
+    </fields>
+    <fields>
+        <help>Uren besteed aan deze taak. Rollen van tijdnotities op tijdkaarten.</help>
+        <label><!-- Timecard Hours --></label>
+        <name>pse__Timecard_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Systeemveld dat de bovenliggende bovenliggende taak (het bovenliggende item van de bovenliggende taak, enzovoort) voor de huidige taak laat zien. Taken op topniveau hebben zelf geen bovenliggende taak of hoofdtaken op topniveau.</help>
+        <label><!-- Top-level Parent Task --></label>
+        <name>pse__Top_level_Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Top-level Parent Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Work Breakdown Structure Element Number of ID. Kan overeenkomen met extern taakbeheersysteem.</help>
+        <label><!-- WBS Element Number --></label>
+        <name>pse__WBS_Element_Number__c</name>
+    </fields>
+    <fields>
+        <help>De werkkalender die wordt gebruikt om een projecttaak te plannen.</help>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De hoeveelheid tijd die nodig is om deze taak te voltooien</help>
+        <label><!-- Work Remaining --></label>
+        <name>pse__Work_Remaining__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Project Task Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beschrijving</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Middelen</label>
+            <section>Resources</section>
+        </sections>
+        <sections>
+            <label>Taakhiërarchie</label>
+            <section>Task Hierarchy</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Naam projecttaak</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Actual Start Date &amp; Time must be before the Actual End Date &amp; Time --></errorMessage>
+        <name>pse__Actual_Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not mark as completed if not started --></errorMessage>
+        <name>pse__Can_not_complete_if_not_started</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Estimated Time To Completion cannot be negative. --></errorMessage>
+        <name>pse__No_Negative_ETC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Task Project must match Task Project. --></errorMessage>
+        <name>pse__Parent_Task_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points Complete cannot exceed Points --></errorMessage>
+        <name>pse__Points_Complete_Cannot_Exceed_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not be less then 0% --></errorMessage>
+        <name>pse__Points_complete_can_not_be_less_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not exceed 100% --></errorMessage>
+        <name>pse__Points_complete_can_not_exceed_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Task Project. --></errorMessage>
+        <name>pse__Project_Milestone_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date &amp; time must be before the end date &amp; time --></errorMessage>
+        <name>pse__Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Task Key field cannot be changed --></errorMessage>
+        <name>pse__Task_Key_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Task&apos;s Project field value may not be blank initially if it is a top-level Task (if child task, Project will be auto-set from parent) and may not be updated once set. --></errorMessage>
+        <name>pse__Task_Project_is_Required_and_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_project_Task_from_Template --></label>
+        <name>pse__Add_project_Task_from_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete --></label>
+        <name>pse__Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete_Tasks --></label>
+        <name>pse__Complete_Tasks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Assignments --></label>
+        <name>pse__Generate_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Held_Resource_Requests --></label>
+        <name>pse__Generate_Held_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Resource_Requests --></label>
+        <name>pse__Generate_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Link_Project_Task_Assignments --></label>
+        <name>pse__Mass_Link_Project_Task_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start --></label>
+        <name>pse__Start</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Tasks --></label>
+        <name>pse__Start_Tasks</name>
+    </webLinks>
+</CustomObjectTranslation>

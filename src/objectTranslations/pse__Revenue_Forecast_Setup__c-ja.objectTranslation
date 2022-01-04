@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>収益予測の設定</value>
+    </caseValues>
+    <fields>
+        <help>収益予測の計算に使用される収益予測設定レコードを示します。有効な収益予測設定レコードは1つしか持てません。</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、商談は収益予測のスケジュール済みジョブから除外されます。</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトおよびマイルストーンで保留されているリソース要求に関連する収益を除外する場合に選択します。</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードや経費など、同時に処理されるレコードの数。</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>同時に処理される商談および商談品目の数。</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>同時に処理されるプロジェクトの数。</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトの予想終了日として使用する商談オブジェクトのフィールドのAPI名を入力します。</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトの開始予定日として使用する商談オブジェクトのフィールドのAPI名を入力します。</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>[認識のために完了した時間（％）]フィールドの値を計算するために使用するプロジェクトオブジェクトのフィールドのAPI名を選択します。必要に応じて、独自のフィールドを作成して選択リストに追加できます。</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>予測バッチ設定</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>商談の設定</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>プロジェクト設定</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>セットアップの詳細</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>収益予測設定名</nameFieldLabel>
+</CustomObjectTranslation>

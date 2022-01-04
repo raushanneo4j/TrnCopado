@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Veraltet: Prognoseeinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Veraltet: Prognoseeinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Veraltet: Prognoseeinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Veraltet: Prognoseeinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Veraltet: Prognoseeinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Geben Sie die Anzahl der Tage vor dem aktuellen Datum ein, die als Stichtag für tatsächliche oder geplante Artikel verwendet werden sollen. Benutze 0 für heute. Leer lassen, um automatisch &quot;Ende der letzten Woche&quot; zu verwenden</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Datensätze, die in einem einzelnen Stapel verarbeitet werden sollen. Der Wert ist standardmäßig 200.</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 1 zugewiesen wurde.</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 2 zugeordnet ist.</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 3 zugeordnet ist.</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 4 zugeordnet ist.</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 5 zugeordnet ist.</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 6 zugeordnet ist.</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>Das Label, das dem gewichteten Prognosebetrag für Kategorie 7 zugeordnet ist.</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>Die Prognosekurve, wenn keine Kurve für eine Opportunity festgelegt wurde. Eine Fehlermeldung wird angezeigt, wenn für eine Opportunity keine Kurve festgelegt ist und keine Standard-Opportunity-Kurve definiert ist.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>Die Prognosekurve, wenn keine Kurve für ein Projekt festgelegt wurde. Eine Fehlermeldung wird angezeigt, wenn für ein Projekt keine Kurve festgelegt ist und keine Standardprojektkurve definiert ist.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Benachrichtigungen von Prognose-Batch-Prozessen über Chatter an Empfänger gesendet, die in der Einstellung Notification Recipients aufgelistet sind. Dies ist standardmäßig deaktiviert.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Benachrichtigungen von Prognose-Batch-Prozessen per E-Mail an Empfänger gesendet, die in der Einstellung Notification Recipients aufgelistet sind. Dies ist standardmäßig deaktiviert.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Benachrichtigungsempfänger für Prognose-Batch-Benachrichtigungen an, die über Chatter oder E-Mail gesendet wurden. Der Wert ist eine Liste von E-Mail-Adressen, die durch Semikolons (;) voneinander getrennt sind. Diese Einstellung ist standardmäßig null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Benachrichtigungen von Prognose-Batch-Prozessen über Aufgaben gesendet. Dies ist standardmäßig deaktiviert.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 1 für Opportunity Forecasts.</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren, die zur Berechnung von Kategorie 2 für Opportunity Forecasts verwendet werden. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 3 für Opportunity Forecasts. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren, die zur Berechnung von Kategorie 4 für Opportunity Forecasts verwendet werden. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren, die zur Berechnung von Kategorie 5 für Opportunity Forecasts verwendet werden. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren, die zur Berechnung der Kategorie 6 für Opportunity Forecasts verwendet werden. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung von Kategorie 7 für Opportunity Forecasts. Für eine optimale Vorgehensweise sollte jeder Multiplikator höher als der vorherige Wert der Kategorie sein.</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren, die zur Berechnung der Kategorie 1 für Projektprognosen verwendet werden. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 2 für Projektprognosen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 3 für Projektprognosen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 4 für Projektprognosen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 5 für Projektprognosen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren zur Berechnung der Kategorie 6 für Projektprognosen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, unerwiderte Ressourcenanforderungen, geplante Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Die Multiplikatoren werden verwendet, um Kategorie 7 für Projektprognosen zu berechnen. Dies multipliziert in der Reihenfolge die Metriken für: Abrechnungen, Durchlaufabrechnungen, geplante Zeit, angehaltene Ressourcenanforderungen, nicht abgefragte Ressourcenanforderungen, geplante, Meilensteine ​​und ungeplanter Rückstand.</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie aus, ob Kategorie 1 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option aus, um zu bestimmen, ob Kategorie 2 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie aus, ob Kategorie 3 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option, um zu bestimmen, ob Kategorie 4 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie aus, ob Kategorie 5 in die Prognoseberechnung einbezogen werden soll.</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option, um zu bestimmen, ob Kategorie 6 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie, um zu bestimmen, ob Kategorie 7 in die Prognoseberechnung einbezogen wird.</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

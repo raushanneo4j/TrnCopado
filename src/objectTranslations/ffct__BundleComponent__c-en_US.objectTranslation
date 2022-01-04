@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ApexCode --></label>
+        <name>ffct__ApexCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Async D --></label>
+        <name>ffct__AsyncId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blacklist By Namespace --></label>
+        <name>ffct__Blacklist_By_Namespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <name>ffct__Bundle__c</name>
+        <relationshipLabel><!-- Bundle Component --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If this field is set then the records on the target org will get updated. It is only applicable if the component type is records. If this field is not set the records will get inserted. --></help>
+        <label><!-- Enable Update --></label>
+        <name>ffct__EnableUpdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>ffct__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldsToBlacklist --></label>
+        <name>ffct__FieldsToWhitelist__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Progress --></label>
+        <name>ffct__InProgress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Namespace --></label>
+        <name>ffct__PackageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Version --></label>
+        <name>ffct__PackageVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>ffct__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>ffct__Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skipped --></label>
+        <name>ffct__Skipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>ffct__Type__c</name>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InstalledPackage</masterLabel>
+            <translation><!-- InstalledPackage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metadata</masterLabel>
+            <translation><!-- Metadata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetadataPermissionSet</masterLabel>
+            <translation><!-- MetadataPermissionSet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetadataProfile</masterLabel>
+            <translation><!-- MetadataProfile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Records</masterLabel>
+            <translation><!-- Records --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SecondaryMetadata</masterLabel>
+            <translation><!-- SecondaryMetadata --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ChildRelationshipsToBlacklist --></label>
+        <name>ffct__child__c</name>
+    </fields>
+    <layouts>
+        <layout>Bundle Component Layout</layout>
+        <sections>
+            <label><!-- Apex --></label>
+            <section>Apex</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Installed Package --></label>
+            <section>Installed Package</section>
+        </sections>
+        <sections>
+            <label><!-- Processed --></label>
+            <section>Processed</section>
+        </sections>
+        <sections>
+            <label><!-- Records --></label>
+            <section>Records</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Enter Apex Code to be executed or choose BundleComponent Type other than &apos;Apex&apos;. --></errorMessage>
+        <name>ffct__Blank_Apex_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Package Name  to be installed or choose BundleComponent Type other than &apos;InstalledPackage&apos;. --></errorMessage>
+        <name>ffct__Blank_Package_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Package Version to be installed or choose BundleComponent Type other than &apos;InstalledPackage&apos;. --></errorMessage>
+        <name>ffct__Blank_Package_Version</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- BundleComponent Type is mandatory field. It cannot be left blank. --></errorMessage>
+        <name>ffct__BundleComponent_Type_Mandatory</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- DeepClone --></label>
+        <name>ffct__DeepClone</name>
+    </webLinks>
+</CustomObjectTranslation>

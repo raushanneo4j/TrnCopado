@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Planer - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird bestimmt, ob Urlaubsplanausnahmesätze hinzugefügt werden, wenn die Zuordnungszeiträume angepasst werden und der neue Datumsbereich in einen Feiertag fällt.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Benutzer die Zuweisungsleiste im Projektplaner in Massenverschiebungszuweisungen ziehen. Diese Einstellung ist standardmäßig deaktiviert.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die zusätzlichen Felder, die im Abschnitt &quot;Zusätzliche Felder&quot; des Dialogfelds &quot;Zuordnung erstellen&quot; im Projektplaner angezeigt werden sollen.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Felds in einer Zuweisung, die die Zuweisungsfarbbalken im Projektplaner steuert.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert den API-Namen eines Felds zum Zuordnen von Zuordnungen und optional die Richtung (ASC oder DESC). Zuweisungen erscheinen immer oberhalb der gehaltenen Ressourcenanforderungen.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, welche Zuordnungsfelder mit dem Textsuchfeld im Projektplaner gesucht werden.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die als QuickInfos für Zuordnungen im Projektplaner angezeigt werden sollen. Der Feldsatz muss im Zuweisungsobjekt vorhanden sein.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Spalten enthält, die im Projektplaner angezeigt werden sollen. Der Feldsatz muss im Projekt-Objekt vorhanden sein.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die Anzahl der zukünftigen Tage ab dem heutigen Tag, für die der erweiterte Projektplaner Zuordnungen anzeigt. Geben Sie beispielsweise 30 ein, um Zuordnungen anzuzeigen, die innerhalb von 30 Tagen von heute beginnen oder enden.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die Anzahl der Tage vor dem Tag, für die der erweiterte Projektplaner Zuordnungen anzeigen soll. Geben Sie beispielsweise 30 ein, um Zuordnungen anzuzeigen, die in den vorausgehenden 30 Tagen beginnen oder enden.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definiert eine URL (absolut oder relativ), die auf das Standardbild verweist, das für Ressourcen ohne Profilfoto verwendet werden soll. Bilddateien mit 22 Pixel im Quadrat funktionieren am besten.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Felder, die im Projektplaner für die Filterung verwendet werden. Der Wert ist ein Feld, das Felder angibt, nach denen gefiltert werden kann.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden die Felder für die Kostenrate im Dialogfeld &quot;Zuweisung erstellen&quot; für alle Benutzer ausgeblendet.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Verwenden Sie stattdessen Project_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden die Start- und Enddaten im Dialogfeld Zuweisungen erstellen automatisch von den Start- und Enddaten des Projekts ausgefüllt.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird die Ressourcenrolle im Dialogfeld Zuweisungen erstellen automatisch aus dem Kontaktdatensatz ausgefüllt.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Verwenden Sie stattdessen Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den API-Namen der Zuweisung an, die im Projektplaner angezeigt werden soll. Wenn dieses Feld leer ist, zeigt der Projektplaner standardmäßig den Namen der Zuweisung an.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den API-Namen der Ressourcenanforderung an, die im Projektplaner angezeigt werden soll. Wenn dieses Feld leer ist, zeigt der Projektplaner standardmäßig den Namen der Ressourcenanforderung an.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die maximale Anzahl von Projekten, die beim Anzeigen einer großen Anzahl von Datensätzen im Hintergrund geladen werden. Die Eingabe eines höheren Werts führt zu weniger Ladeunterbrechungen, benötigt jedoch mehr Speicher.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, welche Projektfelder mit dem Textsuchfeld im Projektplaner gesucht werden.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Felds in einem Projekt, das die Projektzusammenfassungsfarben steuert.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die als Tooltips für Projekte im Projektplaner angezeigt werden sollen. Der Feldsatz muss im Projekt-Objekt vorhanden sein.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Anzahl der Projekte an, für die untergeordnete Daten (Zuordnungen und Ressourcenanforderungen) pro Anforderung geladen werden. Sie sollten die Aufzeichnungsgrenze nicht anpassen, ohne zuvor den Kundendienst zu konsultieren.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die im Projektplaner als Tooltips für Ressourcenanforderungen angezeigt werden sollen. Der Feldsatz muss im Ressourcenanforderungsobjekt vorhanden sein.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, welche Ressourcenanforderungsfelder mit dem Textsuchfeld im Projektplaner gesucht werden.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Felds in einer Ressourcenanforderung, die die Ressourcenanforderungs-Farbbalken im Projektplaner steuert.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert den API-Namen eines Felds zum Sortieren angehaltener Ressourcenanforderungen und optional der Richtung (ASC oder DESC). Gehaltene Ressourcenanforderungen erscheinen immer unter Zuweisungen.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Zuordnung mit dem Anfangsdatum in der Vergangenheit erstellen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie die Zuweisung von Projektplanern und die Stundenplanung in der Vergangenheit nicht bearbeiten. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie die Ressource für eine Zuweisung nicht mit einem in der Vergangenheit festgelegten Startdatum austauschen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, werden Anpassungen an Breite, Reihenfolge und Sichtbarkeit der Spalten im Projektplaner für jeden Benutzer gespeichert.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Beige für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Hellblau für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Hellgrün für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Hellrot für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Light Yellow für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Rosa für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Lila für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Türkis für Zellen im Projektplaner. Standard = Falsch</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung legt fest, ob Ihre Benutzer den erweiterten (neuen) oder klassischen Projektplaner sehen.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung legt fest, ob Ihre Benutzer ein Berechtigungssteuerelement benötigen und ob das Kontrollkästchen Staffing aktiviert sein muss, bevor sie die Zeitpläne für den erweiterten Projektplaner bearbeiten können.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

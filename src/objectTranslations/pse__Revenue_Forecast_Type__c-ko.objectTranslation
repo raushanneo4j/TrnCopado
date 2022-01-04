@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>수익 예측 유형</value>
+    </caseValues>
+    <fields>
+        <help>날짜로 인식 된 매출 및 수익 보류 인식 필드의 결합 된 값을 포함합니다.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측 유형과 관련된 이정표를 찾습니다.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측 유형과 관련된 기회를 찾습니다.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측 유형과 관련된 프로젝트를 찾습니다.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>관련 수익 예측을 찾습니다.</help>
+        <label><!-- Revenue Forecast --></label>
+        <name>pse__Revenue_Forecast__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측에서 인식 할 수있는 수익입니다.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측에서 이미 인식 된 수익입니다.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 레코드의 수입원을 나타냅니다.</help>
+        <label><!-- Revenue Source --></label>
+        <name>pse__Revenue_Source__c</name>
+        <picklistValues>
+            <masterLabel>% Complete: Milestone</masterLabel>
+            <translation>완료율 : 마일스톤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Complete: Project</masterLabel>
+            <translation>완료율 : 프로젝트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: EVA</masterLabel>
+            <translation>배송 가능 : EVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Expense</masterLabel>
+            <translation>배송 가능 : 비용</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Milestone</masterLabel>
+            <translation>제공 가능 : 마일스톤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Miscellaneous Adjustment</masterLabel>
+            <translation>제공 가능 : 기타 조정</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Timecard</masterLabel>
+            <translation>배송 가능 : 타임 카드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Milestone</masterLabel>
+            <translation>균등 분할 : 마일스톤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Project</masterLabel>
+            <translation>동일 분할 : 프로젝트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation>기회</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이 레코드의 값이 실제 수익 또는 예측 수익에 적용되는지 여부를 나타냅니다.</help>
+        <label><!-- Revenue Type --></label>
+        <name>pse__Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actuals</masterLabel>
+            <translation>실제</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation>예보</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이 수익 예측에 대한 인식이 예정된 수익입니다.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>예정된 수입 또는 실제 수입이 포함되지 않은 월이있는 경우 예정된 수입 또는 실제 수입이 포함 된 달 사이에 빈 달이있는 경우를 제외하고 예정되지 않은 수입은 해당 월에 고르게 분산됩니다.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Type Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>수익 예측 유형 이름</nameFieldLabel>
+</CustomObjectTranslation>

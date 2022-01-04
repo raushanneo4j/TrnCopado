@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_OWNER</field>
+    </columns>
+    <columns>
+        <field>Contact.MQL_Date__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Last_Touch_MQL__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>APPLIED MATERIALS,Bayer Crop Science,Broadcom,Innovision,CenturyLink,Level 3,Core-Mark,CSAA,Dell,EMC,Quest,RSA,VM Ware,Dolby Labs,Equinix,FICO,Franklin Templeton,Gilead,Aruba Networks,Hewlett Packard Enterprise,Microfocus,Identropy,Lam Research,LDS,Church of Later Day,Dockers,Levis,Monsanto,Netflix,PG&amp;E,Rackspace,Rodan &amp; FIelds,Fusion IO,SanDisk,Sanmina,Concentrix,Synnex,Mark and Graham,Pottery Barn,Rejuvenation,West Elm,Williams-Sonoma,Tibco</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Angela Named Account Contacts Q2 2021</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.MQL_Date__c</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

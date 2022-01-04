@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Integration Hub Connector: Jira - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Integration Hub Connector: Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>E-postadress för att få felmeddelanden om integrationen med Jira misslyckas.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>URL-adressen till Jira-programmet. Används för autentisering.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>När fältet Map PSA Projects to Jira-valda är markerat, bestämmer kategorin för Jira-problemstatus som uppdaterar det mappade projektfältet med det värde som definieras i PSA-fältvärde för uppdatering av projekt.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>När fältet Aktivera synkroniseringsprojekt med Jira-problem är valt bestäms typen av Jira-frågor. PSA-projekt synkroniseras med. Det här värdet är skiftlägeskänsligt och problemet måste finnas i din Jira-applikation.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Anger om PSA-resurser synkroniserad med Jira får ett e-postmeddelande med sitt användarnamn för Jira och en länk för att ange lösenordet.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>När de är valda mappas PSA-projekt till Jira-frågor, istället för till Jira-projekt. Typen av Jira-frågan bestäms av värdet på fältet Jira-problemtyp.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Maximalt antal tidskort dagar, från och med måndag kan tiden loggas mot varje vecka för en resurs. Du kan ange ett helt tal mellan 1 och 7. Ange till exempel 5 för att aktivera tidsrapportering för måndag till fredag.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Maximalt antal timekortstimmar som kan loggas varje dag för en resurs. Du kan ange ett värde mellan 1 och 24.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>När fältet Map PSA Projects to Jira Issues väljs, bestämmer det värde som det mappade projektfältet uppdateras när ett Jira-problem har statusen definierad i Jira Issue Status Category. Detta värde är skiftlägeskänsligt.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Namnet på det anpassade fältet Jira som används för att länka ett problem till en förlagsproblemstyp, till exempel, Parent Link. Relationen kan ha flera nivåer, men den typ av problem som definieras i Jira Issue Type är den högsta som beaktas.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Anger om Jira-arbetsloggar ska synkroniseras med PSA-tidskort. Visas automatiskt när synkroniseringsarbetet loggar från Jira till tidskort i PSA-arbetsflödet är aktiverat med funktionskonsolen.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Anger om PSA-projekt ska synkroniseras med Jira-frågor. Visas automatiskt när synkroniseringsprojekten från PSA till problem i Jira-arbetsflödet är aktiverat med funktionskonsolen.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Anger om PSA-projekt ska synkroniseras med Jira-projekt. Visas automatiskt när Sync Projects från PSA till Projects i Jira-arbetsflödet är aktiverat med Feature Console.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Anger om PSA-resurser ska synkroniseras med Jira-användare. Visas automatiskt när synkroniseringsresurserna från PSA till användare i Jira-arbetsflödet är aktiverade med funktionskonsolen.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>Status där tidskort skapas.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Anger om PSA-projekt ska uppdateras baserat på Jira-status.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Anger om Jira-ansökan som tillhandahålls i Jira-ansökningsadressen är en Jira Cloud-version. Lämna avmarkerad om du använder Jira Server.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TEST Quarterly Invoice May Be Due</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name}: Quarterly Invoice May Be Due</subject>
+    <textOnly>This opportunity was Closed Won as a Quarterly payment. Please review if this deal needs to be invoiced at this time. Thanks!  Opportunity: {!Opportunity.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

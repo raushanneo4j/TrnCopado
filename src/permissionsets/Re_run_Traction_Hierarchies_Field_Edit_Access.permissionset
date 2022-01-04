@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives edit access to the &quot;Re-run Traction Hierarchies&quot; field on the Account object. Only select trusted users working on optimizing Account hierarchies should be given this permission set.
+
+JIRA: SFDCSPT-137</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.TracHier__Re_Run_Traction_Hierarchies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Re-run Traction Hierarchies Field: Edit Access</label>
+</PermissionSet>

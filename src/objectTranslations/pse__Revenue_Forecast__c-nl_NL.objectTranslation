@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Omzet prognose</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Omzetprognoses</value>
+    </caseValues>
+    <fields>
+        <help>Bevat de gecombineerde waarde van de opbrengsten die tot op heden zijn herkend en de velden Omzet in afwachting van erkenning.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Datum en tijd waarop deze omzetprognose voor het laatst is bijgewerkt.</help>
+        <label><!-- Last Updated --></label>
+        <name>pse__Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de mijlpaal waarop deze omzetprognose betrekking heeft.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Link naar de Opportunity waaraan dit omzet prognose is gerelateerd.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Link naar het project waarop deze omzetprognose betrekking heeft.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De omzet die gereed is voor erkenning op deze omzetprognose.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>De omzet die al is opgenomen in deze omzetprognose.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>De omzet die is gepland voor erkenning op deze omzetprognose.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de tijdsperiodeset die is ingesteld op deze omzetprognose.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>If there are months that do not contain any scheduled or actual revenue, the unscheduled revenue is spread evenly across those months, except for empty months that fall between months containing scheduled or actual revenue.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Omzetprognose Naam</nameFieldLabel>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast_Opportunity --></label>
+        <name>pse__Run_Revenue_Forecast_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

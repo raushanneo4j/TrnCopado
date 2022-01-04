@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity Closed Won</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Name} Is Closed - Won</subject>
+    <textOnly>{!Opportunity.Account} was closed-won on {!Opportunity.CloseDate}
+
+Opportunity: {!Opportunity.Name}
+
+Marketing Obligations: {!Opportunity.Marketing_Obligations__c}
+
+Invoice Instructions: {!Opportunity.Invoicing_Instructions__c}
+
+Total Opp Amount: {!Opportunity.Amount}
+
+Total Opp ARR (USD): {!Opportunity.ARR__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

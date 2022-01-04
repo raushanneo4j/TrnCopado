@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SDR informed that the request to approve the 1% Opportunity they submitted for compensation has received final approval from the SDR Director. JIRA: SFDCSPT-481</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OPP: 1% SDR Comp Opportunity Approval Request Approved by SDR Director</name>
+    <style>none</style>
+    <subject>&apos;{!Opportunity.Name}&apos;: 1% request for approval has been approved by SDR Director</subject>
+    <textOnly>Hi {!Opportunity.OwnerFirstName},
+
+The SDR Director has approved your request to approve the 1% &apos;{!Opportunity.Name}&apos; for compensation.
+
+OPPORTUNITY DETAILS
+
+
+Opportunity Link: {!Opportunity.Link}
+Sales Stage: {!Opportunity.StageName}
+Opportunity Source: {!Opportunity.Opportunity_Source__c}
+Account: {!Opportunity.Account}
+
+
+WHAT&apos;S NEXT?
+
+
+The Opportunity record has been unlocked.
+You can click on the Opportunity link to view the Approval History related list on the record page and read any decision notes your manager or SDR Director may have left.
+If you accept this decision as final, no further action is required on your part. SDR Director&apos;s approval means that you will be compensated for sourcing this Opportunity.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

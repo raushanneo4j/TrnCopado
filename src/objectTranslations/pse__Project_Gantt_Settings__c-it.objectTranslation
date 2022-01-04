@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Impostazioni di Gantt Task di progetto --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Impostazioni di Gantt Task di progetto --></value>
+    </caseValues>
+    <fields>
+        <help>Quando un progetto è bloccato per la modifica, questa impostazione determina se gli utenti (che dispongono dell&apos;autorizzazione per modificare le attività nel Gantt attività progetto) hanno la possibilità di interrompere il blocco e forzare l&apos;altro utente in modalità di sola lettura.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome dell&apos;API dell&apos;insieme di campi, nell&apos;oggetto attività del progetto, che contiene le colonne personalizzate da mostrare su Gantt dell&apos;attività di progetto. Quando l&apos;impostazione è vuota, viene utilizzato il set di campi Gantt Custom Columns.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, i record in Gantt Task di progetto non vengono caricati in un buffer. L&apos;impostazione predefinita è deselezionata. Questa impostazione deve essere modificata solo dopo aver consultato l&apos;Assistenza clienti di FinancialForce.com.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, il pulsante di dipendenza della risoluzione viene disattivato quando le dipendenze delle attività del progetto sono sincronizzate. Se deselezionato, il pulsante rimane attivo quando non è necessario sincronizzare le dipendenze delle attività del progetto. Il valore predefinito è deselezionato.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Determina il numero di righe da rendere sopra la vista corrente in Gantt Task di progetto. L&apos;impostazione predefinita è 20. Questa impostazione deve essere modificata solo dopo aver consultato l&apos;Assistenza clienti di FinancialForce.com.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato per visualizzare un suggerimento personalizzato per le pietre miliari. Se definita, questa impostazione sostituisce il suggerimento Milestone predefinito.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato per visualizzare un suggerimento personalizzato per le assegnazioni delle attività del progetto. Se definita, questa impostazione sostituisce la descrizione comando Assegnazione attività progetto predefinita.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Determina i livelli di accesso di modifica Gantt per Project Manager. I valori sono &quot;Completo&quot; (predefinito) - possono modificare i progetti creati, &quot;Leggi&quot; - ha solo accesso di sola lettura o &quot;Nessuno&quot; - accesso determinato dai Controlli di autorizzazione.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato per visualizzare un suggerimento personalizzato per Progetti. Se definita, questa impostazione sostituisce il suggerimento progetto di default.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Il nome dell&apos;API di un campo impostato su un&apos;attività di progetto contenente campi che non sono modificabili in Gantt Task di progetto.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le personalizzazioni di larghezza, ordine e visibilità delle colonne nel Gantt di attività di progetto verranno memorizzate per utente.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, il pulsante Crea richiesta risorsa viene visualizzato sulla barra degli strumenti di Gantt Task di progetto. Utilizzare per gestire il piano del progetto tramite il pulsante Crea richiesta risorsa dalla pagina Assegnazioni attività progetto.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Determina se la percentuale di completamento delle ore viene visualizzata nella barra delle applicazioni visualizzata nel riquadro Pianificazione. Questa impostazione non controlla la visualizzazione del pulsante% hrs nel riquadro Programma.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Determina se la percentuale di punti completa viene visualizzata nella barra delle applicazioni visualizzata nel riquadro Pianificazione. Questa impostazione è selezionata per impostazione predefinita. Questa impostazione non controlla la visualizzazione del pulsante% Pts nel riquadro Programma.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato per visualizzare un suggerimento personalizzato per le attività di progetto. Se definita, questa impostazione sostituisce il suggerimento predefinito del task di progetto.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Determina il numero di righe da visualizzare sotto la vista corrente in Gantt Task di progetto. L&apos;impostazione predefinita è 10. Questa impostazione deve essere modificata solo dopo aver consultato l&apos;Assistenza clienti di FinancialForce.com.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

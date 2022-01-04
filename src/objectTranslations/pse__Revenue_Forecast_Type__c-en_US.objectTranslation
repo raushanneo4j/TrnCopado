@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Contains the combined value of the Revenue Recognized to Date and the Revenue Pending Recognition fields. --></help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the milestone this revenue forecast type relates to. --></help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the opportunity this revenue forecast type relates to. --></help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the project this revenue forecast type relates to. --></help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the relevant revenue forecast. --></help>
+        <label><!-- Revenue Forecast --></label>
+        <name>pse__Revenue_Forecast__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The revenue that is ready for recognition on this revenue forecast. --></help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help><!-- The revenue that has already been recognized on this revenue forecast. --></help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the source of the revenue for this record. --></help>
+        <label><!-- Revenue Source --></label>
+        <name>pse__Revenue_Source__c</name>
+        <picklistValues>
+            <masterLabel>% Complete: Milestone</masterLabel>
+            <translation><!-- % Complete: Milestone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Complete: Project</masterLabel>
+            <translation><!-- % Complete: Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: EVA</masterLabel>
+            <translation><!-- Deliverable: EVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Expense</masterLabel>
+            <translation><!-- Deliverable: Expense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Milestone</masterLabel>
+            <translation><!-- Deliverable: Milestone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Miscellaneous Adjustment</masterLabel>
+            <translation><!-- Deliverable: Miscellaneous Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Timecard</masterLabel>
+            <translation><!-- Deliverable: Timecard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Milestone</masterLabel>
+            <translation><!-- Equal Split: Milestone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Project</masterLabel>
+            <translation><!-- Equal Split: Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the values in this record apply to actual or forecast revenue. --></help>
+        <label><!-- Revenue Type --></label>
+        <name>pse__Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actuals</masterLabel>
+            <translation><!-- Actuals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation><!-- Forecast --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The revenue that is scheduled for recognition on this revenue forecast. --></help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there are months that do not contain any scheduled or actual revenue, the unscheduled revenue is spread evenly across those months, except for empty months that fall between months containing scheduled or actual revenue. --></help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Type Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

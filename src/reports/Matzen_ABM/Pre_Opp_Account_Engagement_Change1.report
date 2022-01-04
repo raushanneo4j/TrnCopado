@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>CUST_CREATED_DATE</acrossGroupingContext>
+        <calculatedFormula>Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM-PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE)</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Net change engagement for week over week</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>FK_NAME</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Net Change Engagement</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>CUST_CREATED_DATE</acrossGroupingContext>
+        <calculatedFormula>(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM-PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE))/PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE)</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Net change engagement % for week over week</description>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>FK_NAME</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Engagement WoW%</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account_Snapshot__c.Snapshot_Number_of_Contacts__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This tile shows the net change (positive, flat, or negative) week over week.</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Priority Account Engagement</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Account_Snapshot__c@Account_Snapshot__c.Account_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

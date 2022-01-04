@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Planificateurs - Projet --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Planificateurs - Projet --></value>
+    </caseValues>
+    <fields>
+        <help>Si cette option est sélectionnée, détermine si les enregistrements d&apos;exception de planification de congés sont ajoutés si les plages de dates d&apos;affectation sont ajustées et si la nouvelle plage de dates tombe dans un jour férié.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, ce paramètre permet aux utilisateurs de faire glisser la barre d’affectation vers des affectations de déplacement en masse dans le planificateur de projet. Ce paramètre est désélectionné par défaut.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Détermine les champs supplémentaires à afficher dans la section &quot;Champs supplémentaires&quot; de la boîte de dialogue Créer une affectation dans Planificateur de projet.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom de l&apos;API du champ sur une affectation qui contrôle les barres de couleur d&apos;affectation dans Project Planner.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre définit le nom de l&apos;API d&apos;un champ pour ordonner les affectations par et, éventuellement, la direction (ASC ou DESC). Les affectations apparaissent toujours au-dessus des demandes de ressources tenues.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Détermine quels champs d&apos;affectation sont recherchés dans la zone de recherche de texte du planificateur de projet.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de l&apos;API du jeu de champs qui contient les champs à afficher en tant que info-bulles pour les affectations dans le planificateur de projet. L&apos;ensemble de champs doit exister dans l&apos;objet Affectation.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de l&apos;API du jeu de champs contenant les colonnes à afficher sur le planificateur de projet. Le jeu de champs doit exister dans l&apos;objet Projet.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre définit le nombre de jours futurs, à partir d&apos;aujourd&apos;hui, pour lesquels le planificateur de projet amélioré affichera les affectations. Par exemple, entrez 30 pour afficher les affectations qui commencent ou se terminent dans les 30 jours suivants.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre définit le nombre de jours avant le jour pour lequel le planificateur de projet amélioré affiche les affectations. Par exemple, entrez 30 pour afficher les affectations qui commencent ou se terminent dans les 30 jours précédents.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Définit une URL (absolue ou relative) qui pointe vers l&apos;image par défaut à utiliser pour les ressources sans photo de profil. Les fichiers image de 22 pixels carrés fonctionnent mieux.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Détermine les champs utilisés pour le filtrage dans le planificateur de projet. La valeur est un ensemble de champs spécifiant les champs disponibles pour le filtrage.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, les champs Taux de coût de la boîte de dialogue Créer une affectation seront masqués pour tous les utilisateurs.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Utilisez plutôt Project_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les dates de début et de fin de la boîte de dialogue Créer des affectations sont automatiquement renseignées à partir des dates de début et de fin du projet.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, le rôle de ressource dans la boîte de dialogue Créer des affectations est automatiquement renseigné à partir de l&apos;enregistrement Contacts.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Utilisez plutôt Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nom de l&apos;API de l&apos;affectation à afficher dans le planificateur de projet. Si ce champ est vide, le planificateur de projet affiche le nom de l&apos;affectation par défaut.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nom de l&apos;API de la demande de ressource à afficher dans le planificateur de projet. Si ce champ est vide, le planificateur de projet affiche le nom de la demande de ressource par défaut.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre définit le nombre maximal de projets chargés en arrière-plan lors de la visualisation d&apos;un grand nombre d&apos;enregistrements. Entrer une valeur plus élevée entraîne moins d&apos;interruptions de chargement, mais utilise plus de mémoire.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Détermine quels champs de projet sont recherchés avec le champ de recherche de texte du planificateur de projet.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom de l&apos;API du champ sur un projet qui contrôle les couleurs du récapitulatif du projet.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Le nom de l&apos;API du jeu de champs qui contient les champs à afficher comme des info-bulles pour les projets du planificateur de projet. Le jeu de champs doit exister dans l&apos;objet Projet.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nombre de projets pour lesquels les données enfant (affectations et demandes de ressources) sont chargées par requête. Vous ne devez pas ajuster la limite de charge d&apos;enregistrement sans d&apos;abord consulter le support client.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API du jeu de champs contenant les champs à afficher en tant qu&apos;infobulle pour les demandes de ressources sur le planificateur de projet. L&apos;ensemble de champs doit exister dans l&apos;objet Demande de ressource.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Détermine quels champs de demande de ressource sont recherchés dans la zone de recherche de texte du planificateur de projet.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom de l&apos;API du champ sur une demande de ressource qui contrôle les barres de couleur de demande de ressource dans Planificateur de projet.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre définit le nom de l&apos;API d&apos;un champ pour ordonner les demandes de ressources en attente par et, éventuellement, la direction (ASC ou DESC). Les demandes de ressources en attente apparaissent toujours sous les affectations.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, vous ne pouvez pas créer une affectation avec une date de début dans le passé. La valeur par défaut est désélectionnée.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, vous ne pouvez pas modifier l&apos;affectation du planificateur de projet et les heures de planification dans le passé. La valeur par défaut est désélectionnée.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, vous ne pouvez pas échanger la ressource sur une affectation avec une date de début définie dans le passé. La valeur par défaut est désélectionnée.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les personnalisations relatives à la largeur, à l&apos;ordre et à la visibilité des colonnes dans le planificateur de projet seront mémorisées par utilisateur.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez Beige pour les cellules dans Project Planner. Par défaut = faux</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez le bleu clair pour les cellules du planificateur de projet. Par défaut = faux</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez le vert clair pour les cellules dans le planificateur de projet. Par défaut = faux</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez le rouge clair pour les cellules dans le planificateur de projet. Par défaut = faux</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez le jaune clair pour les cellules du planificateur de projet. Par défaut = faux</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez Pink pour les cellules dans Project Planner. Par défaut = faux</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez Purple pour les cellules dans Project Planner. Par défaut = faux</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez Turquoise pour les cellules dans Project Planner. Par défaut = faux</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre détermine si vos utilisateurs voient le planificateur de projet amélioré (nouveau) ou classique.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre détermine si vos utilisateurs ont besoin ou non d&apos;un contrôle des autorisations, la case à cocher Dotation étant sélectionnée avant de pouvoir modifier les planifications sur le planificateur de projet amélioré.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

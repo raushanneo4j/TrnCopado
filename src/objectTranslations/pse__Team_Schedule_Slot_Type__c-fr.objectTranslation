@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Type de logement de calendrier d&apos;équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Types d&apos;emplacements de planning d&apos;équipe</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Blocking --></label>
+        <name>pse__Is_Blocking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Holiday --></label>
+        <name>pse__Is_Holiday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Weekend --></label>
+        <name>pse__Is_Weekend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Holiday, Blocking</masterLabel>
+            <translation>Vacances, blocage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday, Non-Blocking</masterLabel>
+            <translation>Vacances, sans blocage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekday, Blocking</masterLabel>
+            <translation>Jour de la semaine, blocage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekday, Non-blocking</masterLabel>
+            <translation>Jour de la semaine, non bloquant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend, Blocking</masterLabel>
+            <translation>Week-end, blocage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend, Non-blocking</masterLabel>
+            <translation>Week-end, non-bloquant</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Slot Type Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du type de logement de calendrier d&apos;</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

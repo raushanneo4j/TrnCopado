@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>项目任务依赖</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>指示两个任务之间的此链接是否跨越两个项目</help>
+        <label><!-- Cross Project --></label>
+        <name>pse__Cross_Project__c</name>
+    </fields>
+    <fields>
+        <help>指定用于项目任务的时间单位。有效值为小时或天。默认值为天。</help>
+        <label><!-- Dependency Display Units --></label>
+        <name>pse__Dependency_Display_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date &amp; Time --></label>
+        <name>pse__Dependent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date --></label>
+        <name>pse__Dependent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date &amp; Time --></label>
+        <name>pse__Dependent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date --></label>
+        <name>pse__Dependent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>此主 - 详细信息查找引用项目任务，该任务是此关系中的从属任务。</help>
+        <label><!-- Dependent Task --></label>
+        <name>pse__Dependent_Task__c</name>
+        <relationshipLabel><!-- Preceding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lag Time --></label>
+        <name>pse__Lag_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <help>将滞后单位类型显示为小时或天。</help>
+        <label><!-- Lag Units --></label>
+        <name>pse__Lag_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Dependency Record --></label>
+        <name>pse__New_Dependency_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date &amp; Time --></label>
+        <name>pse__Preceding_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date --></label>
+        <name>pse__Preceding_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date &amp; Time --></label>
+        <name>pse__Preceding_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date --></label>
+        <name>pse__Preceding_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>此查找引用项目任务，该任务是此关系中的前一个任务。</help>
+        <label><!-- Preceding Task --></label>
+        <name>pse__Preceding_Task__c</name>
+        <relationshipLabel><!-- Dependent Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Finish to Finish (FF)</masterLabel>
+            <translation>完成到完成（FF）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish to Start (FS)</masterLabel>
+            <translation>完成开始（FS）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Finish (SF)</masterLabel>
+            <translation>从头到尾（SF）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Start (SS)</masterLabel>
+            <translation>从头到尾（SS）</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Task Relation Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>依赖信息</label>
+            <section>Dependency Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>项目任务依赖项编号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The lag unit of a dependency can&apos;t be in hours when the duration of the successor task is in day units. Change the lag unit of the dependency, or change the duration unit of the successor task. --></errorMessage>
+        <name>pse__Validate_Lag_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

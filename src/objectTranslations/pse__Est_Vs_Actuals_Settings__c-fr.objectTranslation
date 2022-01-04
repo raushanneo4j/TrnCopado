@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Est Vs Actuals Paramètres --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Est Vs Actuals Paramètres --></value>
+    </caseValues>
+    <fields>
+        <help>Si les champs Est Vs Actual dérivés de la planification (par exemple, Heures estimées) doivent être mis à jour pour les enregistrements Est Vs Actual ayant une date de fin antérieure au début de cette semaine.</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Supprimez les enregistrements Est vs Réels même s&apos;ils comportent des valeurs réelles pour les enregistrements qui ne sont plus dans la plage de dates d&apos;un calendrier modifié. REMARQUE: Les enregistrements sans actualités seront toujours supprimés.</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Liste séparée par des virgules des types de période pour lesquels générer des enregistrements EVA</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>Que ce soit pour générer des enregistrements Est Vs Actuals par mois</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>S&apos;il faut générer des enregistrements Est Vs Actuals par trimestre</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Que ce soit pour générer de l&apos;est ou du réel par semaine</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Créez des enregistrements Est Vs Actuals pour les feuilles de temps qui ont des heures en dehors de la date de début et de fin de l&apos;affectation. Les enregistrements Est Vs Actuals auront des valeurs nulles pour les estimations sur ces enregistrements.</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>La liste délimitée par des virgules des valeurs du champ Statut de la carte de visite à utiliser pour déterminer si la carte de pointage doit être utilisée dans le calcul des estimations par rapport aux valeurs réelles</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Définit la taille de lot utilisée lors de la mise à jour du champ Gestionnaire de projets à partir du projet. La valeur par défaut est 2000. Consultez le support FinancialForce avant de modifier ce paramètre.</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, les mises à jour du champ Gestionnaire de projets sont répercutées dans tous les enregistrements Est Vs Actuals de ce projet.</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nombre d&apos;enregistrements Est Vs Actuals à traiter de manière synchrone lors de la mise à jour du champ Gestionnaire de projets à partir de Project. Les enregistrements dépassant cette valeur sont traités dans un lot. La valeur par défaut est 9000. Consultez le support avant de modifier ce paramètre.</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette valeur est définie sur true, les estimations hebdomadaires et les valeurs réelles ne sont pas générées automatiquement si vous définissez des périodes de temps personnalisées d&apos;un type de semaine qui chevauchent une affectation donnée. Le défaut est faux.</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

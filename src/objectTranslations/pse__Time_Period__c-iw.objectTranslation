@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>תקופת זמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>תקופות זמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>בחר לסמן פרק זמן זה כסגור לחזית הכנסות.</help>
+        <label><!-- Closed for Forecasting --></label>
+        <name>pse__Closed_For_Forecasting__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>חודש</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>תמידית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>רובע</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SemiMonthly</masterLabel>
+            <translation>חצי חודשי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>שבוע</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>שנה</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Period Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מידע</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>מידע מערכת</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם תקופת זמן</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Time Period may not end before it starts --></errorMessage>
+        <name>pse__Time_Period_may_not_end_before_it_starts</name>
+    </validationRules>
+</CustomObjectTranslation>

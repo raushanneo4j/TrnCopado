@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Projektuppgift</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Projektuppgifter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Project Task Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyProjTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Project Tasks Columns --></label>
+        <name>pse__CreateProjFromTemplateTasksColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Editable Custom Columns --></label>
+        <name>pse__Gantt_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Read Only Custom Columns --></label>
+        <name>pse__Gantt_Read_Only_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>Datum och tidpunkt då uppgiften faktiskt upphörde. När den färdiga kryssrutan var markerad</help>
+        <label><!-- Actual End Date &amp; Time --></label>
+        <name>pse__Actual_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Datum då uppgiften faktiskt upphörde. När den färdiga kryssrutan var markerad</help>
+        <label><!-- Actual End Date --></label>
+        <name>pse__Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Hours spenderas på denna uppgift. Rullar upp från uppgiftstidsposter på tidskort. I föräldrarnas uppgifter ingår timmar från barnuppgifter.</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Datum då uppgiften faktiskt startade. När kryssrutan startade var markerad</help>
+        <label><!-- Actual Start Date &amp; Time --></label>
+        <name>pse__Actual_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Datum då uppgiften faktiskt startade. När kryssrutan startade var markerad</help>
+        <label><!-- Actual Start Date --></label>
+        <name>pse__Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resources (Long) --></label>
+        <name>pse__Assigned_Resources_Long__c</name>
+    </fields>
+    <fields>
+        <help>Systemgenererad lista över tilldelade resurser. Listan genereras från projektuppgift.</help>
+        <label><!-- Assigned Resources --></label>
+        <name>pse__Assigned_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>pse__Blocked__c</name>
+    </fields>
+    <fields>
+        <help>När den är markerad tillåter inte aktivitetsväljaren på sidan Time Entry att lägga till en ny uppgiftstid gentemot den här projektuppgiften.</help>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Kontrolleras om uppgiften är klar</help>
+        <label><!-- Completed --></label>
+        <name>pse__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto Update Parents --></label>
+        <name>pse__Do_Not_Auto_Update_Parents__c</name>
+    </fields>
+    <fields>
+        <help>Om du vill kringgå automatiska uppdateringar av automatiskt beräknade fält som datum,% slutfört, etc.</help>
+        <label><!-- Do Not Auto Update This Task --></label>
+        <name>pse__Do_Not_Auto_Update_This_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Units --></label>
+        <name>pse__Duration_Unit__c</name>
+    </fields>
+    <fields>
+        <help>Datum och tid då arbetet för denna uppgift ska avslutas. Tidskort kan fortfarande anges för en uppgift efter det här datumet så länge det inte är stängt för tidsinmatning.</help>
+        <label><!-- End Date &amp; Time --></label>
+        <name>pse__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Anger de beräknade timmarna för att slutföra uppgiften.</help>
+        <label><!-- Estimated Time To Completion (Task) --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Externt uppgifts-ID för integration med systemlösningar eller applikationer för icke-Salesforce-arbetshantering. Integreringar ska använda detta fält för det externa system-ID för att upprätthålla integritet och tillåta uppstart.</help>
+        <label><!-- External Task ID --></label>
+        <name>pse__External_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Information --></label>
+        <name>pse__Flag_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - No Coverage --></label>
+        <name>pse__Flag_Task_Dates_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - Partial Coverage --></label>
+        <name>pse__Flag_Task_Dates_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Milestone Bounds --></label>
+        <name>pse__Flag_Task_End_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Project Bounds --></label>
+        <name>pse__Flag_Task_End_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - No Coverage --></label>
+        <name>pse__Flag_Task_Hours_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - Partial Coverage --></label>
+        <name>pse__Flag_Task_Hours_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start - Milestone Bounds --></label>
+        <name>pse__Flag_Task_Start_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start  - Project Bounds --></label>
+        <name>pse__Flag_Task_Start_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <help>Systemfält som visar antalet föräldrauppdrag &quot;uppför kedjan&quot; till överordnade moderuppgift. Uppgifter på toppnivå har en hierarki Djup på 0, deras omedelbara barn Uppgifter har en hierarki djup på 1, och så vidare.</help>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <help>Antalet timmar kvar för att slutföra uppgiften från beräknad tid till slutförande (uppgift) när den är inställd. Beräknas annars från beräknade timmar minus faktiska timmar.</help>
+        <label><!-- Hours Remaining --></label>
+        <name>pse__Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>pse__Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Sammanfattning av sammanfogningsfältet totalt antal projektuppgifter</help>
+        <label><!-- Number of Assignments --></label>
+        <name>pse__Number_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peer Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date &amp; Time --></label>
+        <name>pse__Parent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date --></label>
+        <name>pse__Parent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date &amp; Time --></label>
+        <name>pse__Parent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date --></label>
+        <name>pse__Parent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Det här uppslaget tar upp uppgiftshierarkier: Underuppgifter har ett uppdrag för föräldrars uppgift för nästa högre uppgift i uppgiftshierarkin. Observera att detta är separat och skiljer sig från tidsmässiga (beroende / föregångare) förhållanden mellan uppgifter.</help>
+        <label><!-- Parent Task --></label>
+        <name>pse__Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Child Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Hours) --></label>
+        <name>pse__Percent_Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Points) --></label>
+        <name>pse__Percent_Complete_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Tasks) --></label>
+        <name>pse__Percent_Complete_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Baseline --></label>
+        <name>pse__Points_Baseline__c</name>
+    </fields>
+    <fields>
+        <help>Antal poäng slutförda</help>
+        <label><!-- Points Complete --></label>
+        <name>pse__Points_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Remaining --></label>
+        <name>pse__Points_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>pse__Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>P1</masterLabel>
+            <translation>P1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2</masterLabel>
+            <translation>P2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3</masterLabel>
+            <translation>P3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation>P4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5</masterLabel>
+            <translation>P5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Du behöver inte definiera fältet Projekt när du skapar en barnuppgift. Projektfältet fyller automatiskt från överordningsuppgiften och skriver över det angivna värdet.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Formelfält. Summan av faktiska timmar och beräknad tid till slutförande (uppgift). När beräknad tid till slutförandet (uppgift) är tomt är projicerade timmar beräknade timmar.</help>
+        <label><!-- Projected Hours --></label>
+        <name>pse__Projected_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Datum och tid då arbetet för den här uppgiften ska startas. Tidskort kan fortfarande anges för en uppgift före det här datumet så länge det inte är stängt för tidsinmatning.</help>
+        <label><!-- Start Date &amp; Time --></label>
+        <name>pse__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Kontrolleras om uppgiften har startats</help>
+        <label><!-- Started --></label>
+        <name>pse__Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation>Blockerad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>Uppskjuten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Förslag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>Planerad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation>Satte igång</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <help>När det väljs synkroniseras det relaterade milstolpsmåldatumet och slutdatumet för uppgifterna när de ändras i Gantt.</help>
+        <label><!-- Synchronize Milestone and Task --></label>
+        <name>pse__Synchronize_Milestone_And_Task__c</name>
+    </fields>
+    <fields>
+        <help>Systemfältet visar den avgränsade listan över föräldrauppgifts-ID-er &quot;uppför kedjan&quot; till överordnade moderuppgift.</help>
+        <label><!-- Task ID Chain --></label>
+        <name>pse__Task_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key Chain --></label>
+        <name>pse__Task_Key_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key --></label>
+        <name>pse__Task_Key__c</name>
+    </fields>
+    <fields>
+        <help>Detta är ett nytt fält för att hålla uppgiftens namnkedja. Det här fältet har samma beteende som fältet &quot;Aktivitetsnamnskedja&quot;. Men den nya datatypen (lång textområde) tillåter namnkedjan för större antal för projektuppgifter i en hierarki som jämfört med den gamla (255 tecken)</help>
+        <label><!-- Task Name Chain (Long) --></label>
+        <name>pse__Task_Name_Chain_Long__c</name>
+    </fields>
+    <fields>
+        <help>Systemfält som visar den avgränsade listan över föräldrauppgiftens namn &quot;uppför kedjan&quot; till överordnad moderuppgift.</help>
+        <label><!-- Task Name Chain --></label>
+        <name>pse__Task_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>pse__Task_Number__c</name>
+    </fields>
+    <fields>
+        <help>Hours spenderas på denna uppgift. Rullar upp från uppgiftstidsposter på tidskort.</help>
+        <label><!-- Timecard Hours --></label>
+        <name>pse__Timecard_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Systemfält som visar överordnad moderuppgift (föräldragruppens förälders förälder etc.) för den aktuella uppgiften. Uppgifter på hög nivå har ingen föräldrauppgift eller uppgift om föräldrauppgift själv.</help>
+        <label><!-- Top-level Parent Task --></label>
+        <name>pse__Top_level_Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Top-level Parent Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Arbetsuppdelning Konstruktionselementnummer eller ID. Kan motsvara externt uppgiftshanteringssystem.</help>
+        <label><!-- WBS Element Number --></label>
+        <name>pse__WBS_Element_Number__c</name>
+    </fields>
+    <fields>
+        <help>Den arbetskalender som används för att schemalägga en projektuppgift.</help>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Mängd tid som behövs för att slutföra denna uppgift</help>
+        <label><!-- Work Remaining --></label>
+        <name>pse__Work_Remaining__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Project Task Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beskrivning</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Medel</label>
+            <section>Resources</section>
+        </sections>
+        <sections>
+            <label>Uppgift Hierarki</label>
+            <section>Task Hierarchy</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Projektuppgiftsnamn</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Actual Start Date &amp; Time must be before the Actual End Date &amp; Time --></errorMessage>
+        <name>pse__Actual_Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not mark as completed if not started --></errorMessage>
+        <name>pse__Can_not_complete_if_not_started</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Estimated Time To Completion cannot be negative. --></errorMessage>
+        <name>pse__No_Negative_ETC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Task Project must match Task Project. --></errorMessage>
+        <name>pse__Parent_Task_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points Complete cannot exceed Points --></errorMessage>
+        <name>pse__Points_Complete_Cannot_Exceed_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not be less then 0% --></errorMessage>
+        <name>pse__Points_complete_can_not_be_less_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not exceed 100% --></errorMessage>
+        <name>pse__Points_complete_can_not_exceed_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Task Project. --></errorMessage>
+        <name>pse__Project_Milestone_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date &amp; time must be before the end date &amp; time --></errorMessage>
+        <name>pse__Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Task Key field cannot be changed --></errorMessage>
+        <name>pse__Task_Key_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Task&apos;s Project field value may not be blank initially if it is a top-level Task (if child task, Project will be auto-set from parent) and may not be updated once set. --></errorMessage>
+        <name>pse__Task_Project_is_Required_and_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_project_Task_from_Template --></label>
+        <name>pse__Add_project_Task_from_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete --></label>
+        <name>pse__Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete_Tasks --></label>
+        <name>pse__Complete_Tasks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Assignments --></label>
+        <name>pse__Generate_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Held_Resource_Requests --></label>
+        <name>pse__Generate_Held_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Resource_Requests --></label>
+        <name>pse__Generate_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Link_Project_Task_Assignments --></label>
+        <name>pse__Mass_Link_Project_Task_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start --></label>
+        <name>pse__Start</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Tasks --></label>
+        <name>pse__Start_Tasks</name>
+    </webLinks>
+</CustomObjectTranslation>

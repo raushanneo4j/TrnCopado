@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>时间方差计算</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Type --></label>
+        <name>pse__Date_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Week</masterLabel>
+            <translation>本周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>上个星期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Run</masterLabel>
+            <translation>手动运行</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>选择以基于所选区域，练习或组的所有子级别生成时间方差计算。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Time Variance Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Week End Date --></label>
+        <name>pse__Week_End_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Time Variance Calculation Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>时间差异计算名称</nameFieldLabel>
+</CustomObjectTranslation>

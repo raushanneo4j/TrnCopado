@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_45193305</developerName>
+        <masterLabel>Customer Size</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Account_Revenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <value>Corporate</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <value>Startup</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.ARR__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Term_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Term_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Term_Start_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>12/31/2020</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Term_End_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/31/2020</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales Ops Review,Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>12/31/2020</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortByName>OpportunityLineItem.ARR__c</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Top ARR</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

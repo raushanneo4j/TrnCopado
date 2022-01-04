@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Account_Owner__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Lead_Contact_Owner__c</field>
+    </columns>
+    <columns>
+        <field>CampaignMember.Lead_Contact_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.Behavior_Score__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This report contains contacts who&apos;ve attended GDS webinars, downloaded GDS content, or taken GDS training.</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 7) AND 5 AND 6 AND 8</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>algo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>data science</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>gds</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>machine learning</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Behavior_Score__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Attended,Attended On-Demand,Attended Show,Completed,Engaged,Engaged Accelerated,Inquiry,Registered,Responded,Subscribed,Visited,Visited Booth</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CampaignMember.Offer_Discipline__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Data Science</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CampaignMember.Lead_Contact_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Alicia Frame</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>EMAIL</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GDS Campaign Contacts</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignContact</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

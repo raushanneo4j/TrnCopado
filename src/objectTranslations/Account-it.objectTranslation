@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CustomAccountLookup --></label>
+        <name>UniqueEntry__CustomAccountLookup</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ABM Account Maturity --></label>
+        <name>ABM_Account_Maturity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ABM Target Account --></label>
+        <name>ABM_Target_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the designated data quality control person has verified the Account data and matched the record to the correct entity in the D&amp;B database. This person may be an internal employee or an independent contractor. --></help>
+        <label><!-- Account  Data Verified --></label>
+        <name>AccountDataVerified__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED ON JANUARY 9, 2021 ( 2021-01-09 ) , BECAUSE after JAN 9, 2021 ARR BECOMES TRACKED AT LINE LEVEL, NOT OPPORTUNITY. No History Migration --></help>
+        <label><!-- DEPRECATED ON Jan9-2021, dont use2 --></label>
+        <name>Account_ARR_Beta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Manager --></label>
+        <lookupFilter>
+            <errorMessage><!-- This field can only be populated with Account Managers --></errorMessage>
+        </lookupFilter>
+        <name>Account_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Account Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED ON JANUARY 9, 2021 ( 2021-01-09 ) , previously this was Roll up Summary of ARR field on the opp for olpps  that are open. Excluded Renewal ARR.,     but after JAN 9, 2021 ARR BECOMES TRACKED AT LINE LEVEL, NOT OPPORTUNITY.  No History Migration --></help>
+        <label><!-- DEPRECATED ON Jan9-2021, dont use --></label>
+        <name>Account_Open_ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Revenue Source --></label>
+        <name>Account_Revenue_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Revenue ($) --></label>
+        <name>Account_Revenue__c</name>
+        <picklistValues>
+            <masterLabel>0 - 10 Million</masterLabel>
+            <translation><!-- 0 - 10 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 Billion - 5 Billion</masterLabel>
+            <translation><!-- 1 Billion - 5 Billion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - 25 Million</masterLabel>
+            <translation><!-- 10 - 25 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 - 500 Million</masterLabel>
+            <translation><!-- 100 - 500 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 - 100 Million</masterLabel>
+            <translation><!-- 25 - 100 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Billion +</masterLabel>
+            <translation><!-- 5 Billion + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 Million - 1 Billion</masterLabel>
+            <translation><!-- 500 Million - 1 Billion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates what specific customer or partner type this company is as it relates to Neo4j. Multiple values can be selected. --></help>
+        <label><!-- Account Subtype --></label>
+        <name>Account_Subtype__c</name>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM (Sub)</masterLabel>
+            <translation><!-- OEM (Sub) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systems Integrator</masterLabel>
+            <translation><!-- Systems Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation><!-- Technology Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allbound ID --></label>
+        <name>Allbound_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allbound Status --></label>
+        <name>Allbound_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned User ID --></label>
+        <name>Assigned_User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Email Address --></label>
+        <name>Billing_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to tag risky accounts. &apos;Yes&apos; indicates that Neo4j should wait until the payment has been received to recognize revenue. &apos;Yes&apos; means it is best to wait for the actual payment before before moving any Opportunity on the Account to Closed Won. &apos;No&apos; is the default value indicating that the team can proceed the standard way. --></help>
+        <label><!-- Cash Basis --></label>
+        <name>Cash_Basis__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Count 1 --></label>
+        <name>Count_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term start date of customers first subscription deal. This field is used by Sales Operations and Analytics. --></help>
+        <label><!-- Customer Start Date --></label>
+        <name>Customer_Acquisition_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Term end date of customers last active term if they have churned. This field is used by Sales Operations and Analytics. --></help>
+        <label><!-- Customer Cancellation Date --></label>
+        <name>Customer_Cancellation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment Update Status --></label>
+        <name>Customer_Segment_Update_Status__c</name>
+        <picklistValues>
+            <masterLabel>Auto-Calculated</masterLabel>
+            <translation><!-- Auto-Calculated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overwritten</masterLabel>
+            <translation><!-- Overwritten --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refresh</masterLabel>
+            <translation><!-- Refresh --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Segment --></label>
+        <name>Customer_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Aura Enterprise</masterLabel>
+            <translation><!-- Aura Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diamond</masterLabel>
+            <translation><!-- Diamond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic</masterLabel>
+            <translation><!-- Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is used by the Customer Success Team to indicate whether an Account is covered by a CSM and/or CSA. Changes should only be made by CS management. --></help>
+        <label><!-- Customer Success Top Account --></label>
+        <name>Customer_Success_Top_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether a customer is an OEM account or OEM and Subscription account. ATTENTION: This field will be deprecated. Use &apos;Account Subtype&apos; field instead. --></help>
+        <label><!-- Customer Type (DeprecateCandidate) --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>OEM</masterLabel>
+            <translation><!-- OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM (Sub)</masterLabel>
+            <translation><!-- OEM (Sub) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Displays the number of digits in the &apos;D&amp;B DUNS Number&apos; field. --></help>
+        <label><!-- D&amp;B DUNS Number Field Length --></label>
+        <name>DNB_D_U_N_S_Number_Field_Length__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upon successful match, Optimizer populates this field and references it for future refreshes. It is an identification number assigned by Dun &amp; Bradstreet that uniquely identifies the entity based on the Data Universal Numbering System (D-U-N-S). --></help>
+        <label><!-- D&amp;B DUNS Number --></label>
+        <name>DNBoptimizer__DNB_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upon a successful match, Optimizer populates this field that links the Account record to a specific D-U-N-S Number for display of the correct custom object with D&amp;B data. --></help>
+        <label><!-- AccountToDnB --></label>
+        <name>DNBoptimizer__DnBCompanyRecord__c</name>
+        <relationshipLabel><!-- AccountToDnB --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field calculates the number of linked Opportunities per Account to display on the Data Stewardship Dashboards. --></help>
+        <label><!-- Number Of Opportunity --></label>
+        <name>DNBoptimizer__Number_Of_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Business Name --></label>
+        <name>D_B_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Domestic Ultimate Business Name --></label>
+        <name>D_B_Domestic_Ultimate_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Domestic Ultimate D-U-N-S Number --></label>
+        <name>D_B_Domestic_Ultimate_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Employee Count Here --></label>
+        <name>D_B_Employee_Count_Here__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Employee Count Total --></label>
+        <name>D_B_Employee_Count_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Fortune 1000 Rank --></label>
+        <name>D_B_Fortune_1000_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Global Ultimate Business Name --></label>
+        <name>D_B_Global_Ultimate_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Global Ultimate D-U-N-S Number --></label>
+        <name>D_B_Global_Ultimate_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Headquarter Business Name --></label>
+        <name>D_B_Headquarter_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Headquarter D-U-N-S Number --></label>
+        <name>D_B_Headquarter_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Location Type --></label>
+        <name>D_B_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Mailing Address City --></label>
+        <name>D_B_Mailing_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Mailing Address Country Code --></label>
+        <name>D_B_Mailing_Address_Country_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- This formula field displays the full country name based on the value in the &quot;D&amp;B Mailing Address Country Code&quot; field. --></help>
+        <label><!-- D&amp;B Mailing Address Country/Region --></label>
+        <name>D_B_Mailing_Address_Country_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Mailing Address Line 1 --></label>
+        <name>D_B_Mailing_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Mailing Address Line 2 --></label>
+        <name>D_B_Mailing_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Mailing Address Postal Code --></label>
+        <name>D_B_Mailing_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the state or province where the business has its mail delivered. --></help>
+        <label><!-- D&amp;B Mailing Address State/Province --></label>
+        <name>D_B_Mailing_Address_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Match Data Profile --></label>
+        <name>D_B_Match_Data_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Match Grade --></label>
+        <name>D_B_Match_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Match Score/Confidence Code --></label>
+        <name>D_B_Match_Score_Confidence_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B NAICS Code 1 --></label>
+        <name>D_B_NAICS_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B NAICS Description 1 --></label>
+        <name>D_B_NAICS_Description_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B National Identification Number --></label>
+        <name>D_B_National_Identification_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Number of Family Members --></label>
+        <name>D_B_Number_of_Family_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Out of Business Indicator --></label>
+        <name>D_B_Out_of_Business_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Parent Business Name --></label>
+        <name>D_B_Parent_Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Parent D-U-N-S Number --></label>
+        <name>D_B_Parent_D_U_N_S_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address City --></label>
+        <name>D_B_Primary_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Country Code --></label>
+        <name>D_B_Primary_Address_Country_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the country/region where the business is physically located. --></help>
+        <label><!-- D&amp;B Primary Address Country/Region --></label>
+        <name>D_B_Primary_Address_Country_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Line 1 --></label>
+        <name>D_B_Primary_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Line 2 --></label>
+        <name>D_B_Primary_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Primary Address Postal Code --></label>
+        <name>D_B_Primary_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the state or province where the business is physically located. --></help>
+        <label><!-- D&amp;B Primary Address State/Province --></label>
+        <name>D_B_Primary_Address_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Public Private Indicator --></label>
+        <name>D_B_Public_Private_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC4 Code 1 Description --></label>
+        <name>D_B_SIC4_Code_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC4 Code 1 --></label>
+        <name>D_B_SIC4_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC8 Code 1 Description --></label>
+        <name>D_B_SIC8_Code_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B SIC8 Code 1 --></label>
+        <name>D_B_SIC8_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Sales Volume USD --></label>
+        <name>D_B_Sales_Volume_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Small Business Indicator --></label>
+        <name>D_B_Small_Business_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Telephone Number --></label>
+        <name>D_B_Telephone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Web Address --></label>
+        <name>D_B_Web_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Finance ERP Customer ID for the Account --></help>
+        <label><!-- ERP Customer ID --></label>
+        <name>ERP_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to exclude the Account from D&amp;B automatic updates, except when the key fields are blank. As long as this box remains checked, D&amp;B will not overwrite any data on this Account. You can clear the checkbox anytime to resume-auto-updates. --></help>
+        <label><!-- Exclude from D&amp;B Matching --></label>
+        <name>Exclude_from_D_B_Matching__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what global region the Account is part of based on the shipping country. --></help>
+        <label><!-- Global Territory --></label>
+        <name>Global_Territory__c</name>
+    </fields>
+    <fields>
+        <help><!-- TBD --></help>
+        <label><!-- DUNS &amp; Account Type --></label>
+        <name>HierarchyDUNSAndAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic Ultimate DUNS &amp; Account Type --></label>
+        <name>HierarchyDomesticUltimateDUNSAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Ultimate DUNS &amp; Account Type --></label>
+        <name>HierarchyGlobalUltimateDUNSAccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent DUNS &amp; Account Type --></label>
+        <name>HierarchyParentDUNSAccountType__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is auto-populated whenever an Account is created through the Traction Hierarchy app using Whitespace. --></help>
+        <label><!-- Imported from Whitespace --></label>
+        <name>Imported_from_Whitespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Processed --></label>
+        <name>Is_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Info --></label>
+        <name>JBCXM__CustomerInfo__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LD_EmailDomain --></label>
+        <name>LeanData__LD_EmailDomain__c</name>
+    </fields>
+    <fields>
+        <label><!-- LD_EmailDomains --></label>
+        <name>LeanData__LD_EmailDomains__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Customer --></label>
+        <name>LeanData__Reporting_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Has Opportunity --></label>
+        <name>LeanData__Reporting_Has_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Last Marketing Touch Date --></label>
+        <name>LeanData__Reporting_Last_Marketing_Touch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Last Sales Touch Date --></label>
+        <name>LeanData__Reporting_Last_Sales_Touch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Recent Marketing Touches --></label>
+        <name>LeanData__Reporting_Recent_Marketing_Touches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Target Acct Num (Deprecated) --></label>
+        <name>LeanData__Reporting_Target_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Target Account (Deprecated) --></label>
+        <name>LeanData__Reporting_Target_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Total Leads and Contacts --></label>
+        <name>LeanData__Reporting_Total_Leads_and_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Total Marketing Touches --></label>
+        <name>LeanData__Reporting_Total_Marketing_Touches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Total Sales Touches --></label>
+        <name>LeanData__Reporting_Total_Sales_Touches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Action --></label>
+        <name>LeanData__Routing_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>LeanData__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scenario 1 Owner --></label>
+        <name>LeanData__Scenario_1_Owner__c</name>
+        <relationshipLabel><!-- Accounts (Scenario 1 Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scenario 2 Owner --></label>
+        <name>LeanData__Scenario_2_Owner__c</name>
+        <relationshipLabel><!-- Accounts (Scenario 2 Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scenario 3 Owner --></label>
+        <name>LeanData__Scenario_3_Owner__c</name>
+        <relationshipLabel><!-- Accounts (Scenario 3 Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scenario 4 Owner --></label>
+        <name>LeanData__Scenario_4_Owner__c</name>
+        <relationshipLabel><!-- Accounts (Scenario 4 Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LeanData Search --></label>
+        <name>LeanData__Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Info --></label>
+        <name>LeanData__Status_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag --></label>
+        <name>LeanData__Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- MIN Close Date of All Closed Wons --></label>
+        <name>MIN_Close_Date_of_All_Closed_Wons__c</name>
+    </fields>
+    <fields>
+        <label><!-- MIN Created Date of All Opps --></label>
+        <name>MIN_Created_Date_of_All_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Member Of ID --></label>
+        <name>Member_Of_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Named Account --></label>
+        <name>Named_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Employees --></label>
+        <name>Neo_Account_Employees__c</name>
+        <picklistValues>
+            <masterLabel>1 to 9</masterLabel>
+            <translation><!-- 1 to 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1,000 to 2,499</masterLabel>
+            <translation><!-- 1,000 to 2,499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 to 19</masterLabel>
+            <translation><!-- 10 to 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10,000+</masterLabel>
+            <translation><!-- 10,000+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 to 249</masterLabel>
+            <translation><!-- 100 to 249 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2,500 to 4,999</masterLabel>
+            <translation><!-- 2,500 to 4,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 to 49</masterLabel>
+            <translation><!-- 20 to 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250 to 499</masterLabel>
+            <translation><!-- 250 to 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5,000 to 9,999</masterLabel>
+            <translation><!-- 5,000 to 9,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 to 99</masterLabel>
+            <translation><!-- 50 to 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 to 999</masterLabel>
+            <translation><!-- 500 to 999 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Closed Lost Opportunities --></label>
+        <name>Number_of_Closed_Lost_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Closed Won Opportunities --></label>
+        <name>Number_of_Closed_Won_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Contacts --></label>
+        <name>Number_of_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Open New Opportunities --></label>
+        <name>Number_of_Open_New_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- OEM Named Account --></label>
+        <name>OEM_Named_Account__c</name>
+        <picklistValues>
+            <masterLabel>James Landeros</masterLabel>
+            <translation><!-- James Landeros --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;POC/Perpetual&quot; associated with Closed Won Opportunities on the Account (POC: Advanced, Enterprise, OEM (Platform), PS – Consulting and, Perpetual - OEM (Royalty)). --></help>
+        <label><!-- POC/Perp. Group Products (Closed Won) --></label>
+        <name>POC_Perpetual_Group_Products_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;POC/Perpetual&quot; associated with Open Opportunities on the Account (POC: Advanced, Enterprise, OEM (Platform), PS – Consulting and, Perpetual - OEM (Royalty)). --></help>
+        <label><!-- POC/Perp. Group Products (Open) --></label>
+        <name>POC_Perpetual_Group_Products_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Required --></label>
+        <name>PO_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what specific partner type this company is to Neo4j. Multiple values can be selected. ATTENTION: This field will be deprecated. Use &apos;Account Subtype&apos; field instead. --></help>
+        <label><!-- Partner Subtype (DeprecateCandidate) --></label>
+        <name>Partner_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Systems Integrator</masterLabel>
+            <translation><!-- Systems Integrator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Partnership&quot; associated with Open Opportunities on the Account (Partnership). --></help>
+        <label><!-- Partnership Group Products (Closed Won) --></label>
+        <name>Partnership_Group_Products_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Partnership&quot; associated with Open Opportunities on the Account (Partnership). --></help>
+        <label><!-- Partnership Group Products (Open) --></label>
+        <name>Partnership_Group_Products_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary NAICS --></label>
+        <name>Primary_NAICS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Account Name --></label>
+        <name>Prior_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Account Revenue --></label>
+        <name>Prior_Account_Revenue__c</name>
+        <picklistValues>
+            <masterLabel>0 - 10 Million</masterLabel>
+            <translation><!-- 0 - 10 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 Billion - 5 Billion</masterLabel>
+            <translation><!-- 1 Billion - 5 Billion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - 25 Million</masterLabel>
+            <translation><!-- 10 - 25 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 - 500 Million</masterLabel>
+            <translation><!-- 100 - 500 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25 - 100 Million</masterLabel>
+            <translation><!-- 25 - 100 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Billion +</masterLabel>
+            <translation><!-- 5 Billion + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 Million - 1 Billion</masterLabel>
+            <translation><!-- 500 Million - 1 Billion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Shows what Product groups, if any, have been or are being sold to the Account (i.e. groups whose Products are associated with Closed Won or Open Opportunities). --></help>
+        <label><!-- Product Groups Sold --></label>
+        <name>Product_Groups_Sold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Professional Services&quot; associated with Closed Won Opportunities on the Account (Professional Services: Consulting, Innovation Lab, Training). --></help>
+        <label><!-- Prof. Serv. Group Products (Closed Won) --></label>
+        <name>Prof_Services_Group_Products_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Professional Services&quot; associated with Open Opportunities on the Account Professional (Services: Consulting, Innovation Lab, Training). --></help>
+        <label><!-- Prof. Services Group Products (Open) --></label>
+        <name>Prof_Services_Group_Products_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project in Production --></label>
+        <name>Project_in_Production__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>Rating__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what regional territory the Account falls into based on the shipping country and/or state. Auto-populated. --></help>
+        <label><!-- Regional Territory --></label>
+        <name>RegionalTerritoryAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Category --></label>
+        <name>Revenue_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consider Updates After --></label>
+        <name>RingLeadTrigger__Consider_Updates_After__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>RingLeadTrigger__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App  Field --></label>
+        <name>RingLeadTrigger__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>RingLeadTrigger__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Count --></label>
+        <name>RingLeadTrigger__RingLead_Processed_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Created --></label>
+        <name>RingLeadTrigger__Trigger_Type_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Updated --></label>
+        <name>RingLeadTrigger__Trigger_Type_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is part of RingLead (duplicate management tool) implementation and is used exclusively by System Administrators when processing Accounts records. --></help>
+        <label><!-- RingLead Do Not Merge Record --></label>
+        <name>RingLead_Do_Not_Merge_Record__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the field values from the losing record in a merge. It is auto-populated by RingLead. --></help>
+        <label><!-- RingLead Overwritten Field Values --></label>
+        <name>RingLead_Overwritten_Field_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Running User: Account Owner --></label>
+        <name>Running_User_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Account ID --></label>
+        <name>SFDC_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Target Account Status --></label>
+        <name>Sales_Target_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_Sales Target Account --></label>
+        <name>Sales_Target_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Subscription&quot; associated with Closed Won Opportunities on the Account (Subscription: GraphDataScience, OEM, Startup, Discovery, Advanced, Business, Enterprise, Aura Enterprise, Bloom, Kerberos, Linkurious). --></help>
+        <label><!-- Subscription Group Products (Closed Won) --></label>
+        <name>Subscription_Group_Products_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Subscription&quot; associated with Open Opportunities on the Account (Subscription: GraphDataScience, OEM, Startup, Discovery, Advanced, Business, Enterprise, Aura Enterprise, Bloom, Kerberos, Linkurious). --></help>
+        <label><!-- Subscription Group Products (Open) --></label>
+        <name>Subscription_Group_Products_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Support&quot; associated with Open Opportunities on the Account (Support: Dedicated, Enterprise, Managed Services, OEM, Platinum). --></help>
+        <label><!-- Support Group Products (Closed Won) --></label>
+        <name>Support_Group_Products_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products from a distinct Group - &quot;Support&quot; associated with Open Opportunities on the Account (Support: Dedicated, Enterprise, Managed Services, OEM, Platinum). --></help>
+        <label><!-- Support Group Products (Open) --></label>
+        <name>Support_Group_Products_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Level --></label>
+        <name>Support_Level__c</name>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by Partner</masterLabel>
+            <translation><!-- Provided by Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is used for any notes related to Territory Management activities (e.g. temporarily tagging Accounts during reshuffling, temp notes, instructions, etc.) --></help>
+        <label><!-- Territory Management Notes --></label>
+        <name>Territory_Management_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Ultimate Parent Company --></label>
+        <name>TracHier__DUNS_Global_Ultimate_Parent__c</name>
+        <relationshipLabel><!-- All Child Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>TracHier__Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Default Account Hierarchy --></label>
+        <name>TracHier__Excluded_From_Account_Hierarchies__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to group records by Global Ultimate Parent account in reports --></help>
+        <label><!-- Global Ultimate Grouping Id --></label>
+        <name>TracHier__Global_Ultimate_Grouping_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Company ID --></label>
+        <name>TracHier__Hierarchy_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date and time of the most recent processing by Build Hierarchies. --></help>
+        <label><!-- Last Build Hierarchy Date --></label>
+        <name>TracHier__Last_Build_Hierarchy_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the Sales rep who owns the Account. --></help>
+        <label><!-- Owner --></label>
+        <name>TracHier__Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Company --></label>
+        <name>TracHier__Parent_Company__c</name>
+        <relationshipLabel><!-- Direct Child Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Complete Company --></label>
+        <name>TracHier__Primary_Master_Account__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Territory --></label>
+        <name>TracHier__Primary_Territory__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Re-run Traction Hierarchies --></label>
+        <name>TracHier__Re_Run_Traction_Hierarchies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Traction GU ID --></label>
+        <name>Traction_GU_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Traction GU Name --></label>
+        <name>Traction_GU_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Traction ID --></label>
+        <name>Traction_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Traction Parent ID --></label>
+        <name>Traction_Parent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Traction Parent Name --></label>
+        <name>Traction_Parent_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- based on data quality of shipping location --></help>
+        <label><!-- US Territory --></label>
+        <name>US_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Dupes Ignored --></label>
+        <name>UniqueEntry__Account_Dupes_Ignored__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>UniqueEntry__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- EnrichedOn --></label>
+        <name>UniqueEntry__EnrichedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App Field --></label>
+        <name>UniqueEntry__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead Enrichment Result --></label>
+        <name>UniqueEntry__RingLead_Enrichment_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>UniqueEntry__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ringlead Id --></label>
+        <name>UniqueEntry__Ringlead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- isRingLeadEnriched --></label>
+        <name>UniqueEntry__isRingLeadEnriched__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is auto-populated whenever an Account is created through the Traction Hierarchy app using Whitespace and and cleared once the standard fields have been populated once with D&amp;B data. --></help>
+        <label><!-- Update from Whitespace --></label>
+        <name>Update_from_Whitespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT --></label>
+        <name>VAT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bizible&apos;s predictive metric using historical data to indicate how engaged an account is --></help>
+        <label><!-- Predictive Engagement Score --></label>
+        <name>bizible2__Engagement_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS --></label>
+        <name>duns_num__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to admins only. Populated only on a named/small set of records in sandboxes to help relationally-reconstruct specific data in partial copy environments (This fields helps admins combat the random sampling nature of partial copy environments) --></help>
+        <label><!-- external id for n4jSFDC sandbox use only --></label>
+        <name>external_id_for_n4jSFDC_sandbox_use_only__c</name>
+    </fields>
+    <fields>
+        <help>Certificato di esenzione fiscale per l&apos;account. Immettere un valore se non si è tenuti a riscuotere le tasse per l&apos;account e il team finanziario tiene traccia e verifica manualmente i certificati di esenzione fiscale.</help>
+        <label><!-- Exemption Certificate --></label>
+        <name>fferpcore__ExemptionCertificate__c</name>
+    </fields>
+    <fields>
+        <help>Indica se l&apos;indirizzo di fatturazione è stato convalidato rispetto agli indirizzi nel servizio di calcolo delle imposte esterne.</help>
+        <label><!-- Billing Address Validated --></label>
+        <name>fferpcore__IsBillingAddressValidated__c</name>
+    </fields>
+    <fields>
+        <help>Indica se l&apos;indirizzo di spedizione è stato convalidato rispetto agli indirizzi nel servizio di calcolo delle imposte esterne.</help>
+        <label><!-- Shipping Address Validated --></label>
+        <name>fferpcore__IsShippingAddressValidated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address Validated Reference --></label>
+        <name>fferpcore__MaterializedBillingAddressValidated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address Validated Reference --></label>
+        <name>fferpcore__MaterializedShippingAddressValidated__c</name>
+    </fields>
+    <fields>
+        <help>Il codice fiscale da utilizzare quando si calcola l&apos;imposta in una società IVA o GST.</help>
+        <label><!-- Output VAT/GST Code --></label>
+        <name>fferpcore__OutputVatCode__c</name>
+        <relationshipLabel><!-- Accounts (Output VAT/GST Code) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Lo stato fiscale di questo account per le società SUT.</help>
+        <label><!-- Sales Tax Status --></label>
+        <name>fferpcore__SalesTaxStatus__c</name>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation>Esonerare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt for Qualifying Products</masterLabel>
+            <translation>Esente per i prodotti qualificati</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable</masterLabel>
+            <translation>Imponibile</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Il primo codice fiscale SUT per questo account.</help>
+        <label><!-- Tax Code 1 --></label>
+        <name>fferpcore__TaxCode1__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il secondo codice fiscale SUT per questo account.</help>
+        <label><!-- Tax Code 2 --></label>
+        <name>fferpcore__TaxCode2__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il terzo codice fiscale SUT per questo account.</help>
+        <label><!-- Tax Code 3 --></label>
+        <name>fferpcore__TaxCode3__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il codice del paese per questo account. Ciò è necessario per la corretta comunicazione dell&apos;IVA sulle operazioni transfrontaliere all&apos;interno dell&apos;Unione europea.</help>
+        <label><!-- Tax Country Code --></label>
+        <name>fferpcore__TaxCountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Billing City --></label>
+        <name>fferpcore__ValidatedBillingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Billing Country --></label>
+        <name>fferpcore__ValidatedBillingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Billing Zip/Postal Code --></label>
+        <name>fferpcore__ValidatedBillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Billing State/Province --></label>
+        <name>fferpcore__ValidatedBillingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Billing Street --></label>
+        <name>fferpcore__ValidatedBillingStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Shipping City --></label>
+        <name>fferpcore__ValidatedShippingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Shipping Country --></label>
+        <name>fferpcore__ValidatedShippingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Shipping Zip/Postal Code --></label>
+        <name>fferpcore__ValidatedShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Shipping State/Province --></label>
+        <name>fferpcore__ValidatedShippingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validated Shipping Street --></label>
+        <name>fferpcore__ValidatedShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help>Numero identificativo utilizzato a fini fiscali.</help>
+        <label><!-- Tax Registration Number --></label>
+        <name>fferpcore__VatRegistrationNumber__c</name>
+    </fields>
+    <fields>
+        <help>Lo stato fiscale di questo account per gli account IVA / GST.</help>
+        <label><!-- Tax Status --></label>
+        <name>fferpcore__VatStatus__c</name>
+        <picklistValues>
+            <masterLabel>EC Non-registered</masterLabel>
+            <translation>EC Non registrato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC Registered</masterLabel>
+            <translation>Registrato CE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Export</masterLabel>
+            <translation>Esportare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Casa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B ID --></label>
+        <name>iSell__OSKeyID__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, tutti gli elementi evento di fatturazione esistenti vengono aggiunti a un evento di fatturazione esistente anziché creare un nuovo evento di fatturazione.</help>
+        <label><!-- Add BEIs To Existing Batches --></label>
+        <name>pse__Add_BEIs_To_Existing_Batches__c</name>
+    </fields>
+    <fields>
+        <help>Questo registra la chiave di correlazione del lavoratore utilizzata all&apos;interno del sistema erp.</help>
+        <label><!-- Foundations Worker Correlation --></label>
+        <name>pse__ERP_Worker_Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Billing Time Period Type --></label>
+        <name>pse__Services_Billing_Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Anno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__testCurrency__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer Account</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B Hoovers --></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B Optimizer --></label>
+            <section>D&amp;B Optimizer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Gainsight Account Widget --></label>
+            <section>Gainsight Account Widget</section>
+        </sections>
+        <sections>
+            <label><!-- Lean Data --></label>
+            <section>Lean Data</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo Sales Insight --></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FF PSA (Reserved for PS Consultants)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner Account</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B Hoovers --></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B Optimizer --></label>
+            <section>D&amp;B Optimizer</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Geo Information --></label>
+            <section>Geo Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Dialpad Call --></label>
+        <name>Dialpad__DialpadCall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Traction Hierarchies Fields --></label>
+        <name>Traction_Hierarchies_Fields</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Customer Accounts only (Customer, Prospect, Past Customer, OEM, etc.) --></description>
+        <label><!-- Customer --></label>
+        <name>Customer_Account_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Partner Accounts only (Partner, Prospective Partner, Past Partner, etc.) --></description>
+        <label><!-- Partner --></label>
+        <name>Partner_Account_Record_Type</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Billing and Shipping Country required --></errorMessage>
+        <name>Billing_Shipping_Country_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have access to update the customer segment fields. --></errorMessage>
+        <name>Cust_Segment_Fields_Edit_Limits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Type = Partner, &quot;Partner Sub Type&quot; must be populated --></errorMessage>
+        <name>If_type_is_partner_require_cust_type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: You do no have access to update the &apos;Account Name&apos; field on this record. Contact the Finance Team for assistance. --></errorMessage>
+        <name>Prevent_Customer_Account_Name_Changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have access to update this field --></errorMessage>
+        <name>Prevent_Customer_Rev_Changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DEPRECATED 2021-01-26 per Dave G&apos;s request. --></errorMessage>
+        <name>Req_Overwritten_to_Manually_Update_CS</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reassign_Account --></label>
+        <name>LeanData__Reassign_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ValidateBillingAddress --></label>
+        <name>fferpcore__ValidateBillingAddress</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ValidateShippingAddress --></label>
+        <name>fferpcore__ValidateShippingAddress</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List_Detail --></label>
+        <name>mkto_si__Add_to_Watch_List_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Billing --></label>
+        <name>pse__Account_Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Change_Request --></label>
+        <name>pse__Create_Change_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Membre de l&apos;équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adhésions d&apos;équipe</value>
+    </caseValues>
+    <fields>
+        <label><!-- Team Member Initials --></label>
+        <name>pse__Team_Member_Initials__c</name>
+    </fields>
+    <fields>
+        <help>Le membre de l&apos;équipe qui est affecté à l&apos;équipe.</help>
+        <label><!-- Team Member --></label>
+        <name>pse__Team_Member__c</name>
+        <relationshipLabel><!-- Team Memberships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team Scheduler Permission --></label>
+        <name>pse__Team_Scheduler_Permission__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;équipe à laquelle le membre de l&apos;équipe est affecté.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Memberships --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Membership Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom d&apos;adhésion de l&apos;équipe</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

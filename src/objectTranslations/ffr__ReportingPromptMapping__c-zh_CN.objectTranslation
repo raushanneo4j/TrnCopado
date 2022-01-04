@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>报告提示映射</value>
+    </caseValues>
+    <fields>
+        <label><!-- Prompt Tag --></label>
+        <name>ffr__PromptTag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Filter --></label>
+        <name>ffr__ReportingFilter__c</name>
+        <relationshipLabel><!-- Reporting Prompt Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reporting Prompt --></label>
+        <name>ffr__ReportingPrompt__c</name>
+        <relationshipLabel><!-- Reporting Prompt Mappings --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Reporting Prompt Mapping Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>报告提示映射名称</nameFieldLabel>
+</CustomObjectTranslation>

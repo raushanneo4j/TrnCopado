@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12359782</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_MANAGER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brock Alston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Mohr</sourceValue>
+            </sourceValues>
+            <value>NAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Nolten</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_56045751</developerName>
+        <masterLabel>Revenue Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Account_Revenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <value>NonEnterprise</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_43345</developerName>
+        <masterLabel>SDR Territory</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Herman Roelandts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonny Cheetham</sourceValue>
+            </sourceValues>
+            <value>EMEA Elliot</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Landeros</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Fredrickson</sourceValue>
+            </sourceValues>
+            <value>NAMW Julio</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Robert Wilcox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Lopez</sourceValue>
+            </sourceValues>
+            <value>NAMW Lewis</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Riccardo Ciarlo</sourceValue>
+            </sourceValues>
+            <value>EMEA Lorena</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Peter Philipp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <value>APAC Keoni</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Frei</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deniz Omer-Houssein</sourceValue>
+            </sourceValues>
+            <value>EMEA DACH</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yaacov Ankori</sourceValue>
+            </sourceValues>
+            <value>NAME Yigit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Randy McLaughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kym McIntosh</sourceValue>
+            </sourceValues>
+            <value>NAME Jeremy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Matthew Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Coltart</sourceValue>
+            </sourceValues>
+            <value>NAMW Angela</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yossi Krichli</sourceValue>
+            </sourceValues>
+            <value>EMEA Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cédric Fauvet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pascal Mary</sourceValue>
+            </sourceValues>
+            <value>EMEA Romain</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Zagalsky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carl Eklund</sourceValue>
+            </sourceValues>
+            <value>NAME Sophean</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bob Anthony</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Richard</sourceValue>
+            </sourceValues>
+            <value>NAME MikeS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tim Lewis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Turek</sourceValue>
+            </sourceValues>
+            <value>NAMW RyanS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fredrik Johansson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tomas Eriksson</sourceValue>
+            </sourceValues>
+            <value>EMEA Elin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Joe Odonnell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Carey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristin De Stefano</sourceValue>
+            </sourceValues>
+            <value>NAME Kevin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>David Vessie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Diggins</sourceValue>
+            </sourceValues>
+            <value>NAME Adam</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>John Caito</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brendon Peak</sourceValue>
+            </sourceValues>
+            <value>NAME Jeff</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mari Jansdotter</sourceValue>
+            </sourceValues>
+            <value>NAMW Keoni</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Michael Welch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dana Catalano</sourceValue>
+            </sourceValues>
+            <value>NAMW Austin</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_31681844</developerName>
+        <masterLabel>Sales Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Bob Anthony</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dan McGary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Richard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Zagalsky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Caito</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Carey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy McLaughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yaacov Ankori</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brendon Peak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carl Eklund</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Odonnell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ken Fogarty</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristin De Stefano</sourceValue>
+            </sourceValues>
+            <value>NAME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brock Alston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Vessie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Fredrickson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Wilcox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Coltart</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Turek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tim Lewis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Lopez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Diggins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dana Catalano</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Welch</sourceValue>
+            </sourceValues>
+            <value>NAMW</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cédric Fauvet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fredrik Johansson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Herman Roelandts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pascal Mary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tomas Eriksson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yossi Krichli</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Frei</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Riccardo Ciarlo</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Peter Philipp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>HaiLong (Peter) Hou</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Fong</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mari Jansdotter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Broad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Connon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chin Heng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Morten Schlosser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kym McIntosh</sourceValue>
+            </sourceValues>
+            <value>Indirect/OEM</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opp_Count_1__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SFDC_Opp_ID__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>User.Rep_Geo__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Sales_Development_Rep__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Source__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Recorded_Opp__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Manager_Approved__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1_SDR_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Qualification_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Approval_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Recorded_Opp_Date__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_TYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PartnerInvolvedAccountAsync__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All SAOs that are candidates for compensation for previous month in the East region</description>
+    <filter>
+        <booleanFilter>1 AND ((6 AND 7 AND 8 AND 2 AND 10) OR (3 AND 10) OR (9 AND 10) OR 4) AND 5 AND 11 AND 12</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_MANAGER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Stephen Depaoli,Michael McDermott,Keoni Gaspar,Jeremy Bell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Qualification_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Not Qualified,Not Qualified - Duplicate,Not Qualified - Non ARR,Not Qualified - Partnership,Not Qualified - Revenue Type,Not Qualified - Startup Rev and Product</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>INDUSTRY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Government</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>11/1/2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Rep_Geo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NA - East</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.EligibleforSAOCredit__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>East PM: Potential SAOs for SDR Comp</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>User.Rep_Geo__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

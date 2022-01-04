@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to generate and release Billing Events for Projects belonging to specified Regions/Practices/Groups, and to edit Billing-related fields (Billed checkbox and Billing Event Item) for Resources&apos; business records. --></help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box for Permission Controls associated with a hierarchy (e.g. Region, Practice, or Group) means that the Permission also applies to (Resources belonging to) all nodes lower in the hierarchy, in addition to the specified node. --></help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grants permission to the user to compare Project Versions. --></help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grants permission to the user to create Project Versions. --></help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grants permission to the user to delete Project Versions. --></help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the selected user can use Project Task Gantt in edit mode if they are not the project manager of the selected project. --></help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to enter/edit Expenses and Expense Reports for Resources other than their own. --></help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to edit Expenses and Expense Reports for Resources after they have been approved but before they have been billed. --></help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allowed to perform editing on the Forecasts page for the Region/Practice/Group --></help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allowed to view the Forecasts page for the Region/Practice/Group --></help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Group containing Resources that are the target of the specified action(s) - e.g. delegated Timecard Entry on behalf of Resources in this Group. --></help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to  to edit Invoicing-related fields (Invoiced checkbox, Invoice Date, Invoice Number) for Project&apos;s business records. --></help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Practice containing Resources that are the target of the specified action(s) - e.g. delegated Timecard Entry on behalf of Resources in this Practice. --></help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the Project containing Assignments for Resources that are the target of the specified action(s) - e.g. delegated Timecard Entry on behalf of Resources in this Project, only in relation to the Project. --></help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the Region containing Resources that are the target of the specified action(s) - e.g. delegated Timecard Entry on behalf of Resources in this Region. --></help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to enter/edit Resource Requests for specified Regions/Practices/Groups. --></help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Resource who is the target of the specified action(s) - e.g. delegated Timecard Entry on behalf of this Resource. --></help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to staff Resources from specified Regions/Practices/Groups. --></help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, grants permission to the user to create a team. --></help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grants permission for the user to edit the indicated team if the user is not the team owner. --></help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grants permission for the user to view the indicated team in read-only mode if the user is not the team owner. --></help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Team that is the target of the specified action(s) – e.g. Team View on behalf of this User. --></help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to enter/edit Timecards for Resources other than their own. --></help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox governs the User&apos;s ability to edit Timecards for Resources after they have been approved but before they have been billed. --></help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the selected user can use Project Task Gantt in read-only mode if they are not the project manager of the selected project. --></help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Permissions --></label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tariefkaart</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tariefkaarten</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Rate Card Fields For Rate Card Set --></label>
+        <name>pse__Rate_Card_Fields_For_Rate_Card_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate --></label>
+        <name>pse__Average_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cascading Role --></label>
+        <name>pse__Cascading_Role__c</name>
+    </fields>
+    <fields>
+        <help>De tariefkaart wordt niet meer toegepast na de hier ingevoerde datum. Als u een einddatum invoert, moet u ook een startdatum invoeren. Als er een begindatum en geen einddatum is, wordt de tariefkaart toegepast.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Architect</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Consultant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Klanten manager</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Projectleider</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Trainer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Business Analyst</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>De tariefkaart wordt van kracht op de hier ingevoerde datum.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate --></label>
+        <name>pse__Suggested_Bill_Rate__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Rate Card Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Overzicht</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tarief kaartnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Rate Card must not reference more than one of the following: Account, Region, Practice, Group. --></errorMessage>
+        <name>pse__Rate_Card_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The start date must be before the end date. --></errorMessage>
+        <name>pse__Start_Date_must_be_before_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

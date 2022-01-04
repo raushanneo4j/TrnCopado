@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Crear documentos de facturación por lotes de configuración --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Crear documentos de facturación por lotes de configuración --></value>
+    </caseValues>
+    <fields>
+        <help>El número de registros para procesar en un solo lote. El valor es 3 por defecto.</help>
+        <label><!-- Create Billing Documents Batch Size --></label>
+        <name>pse__Create_Billing_Documents_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las notificaciones de los procesos por lotes Crear documentos de facturación se envían a través de Chatter a los destinatarios enumerados en la configuración de Destinatarios de notificaciones. Esto está deseleccionado por defecto.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las notificaciones de los procesos por lotes Crear documentos de facturación se envían por correo electrónico a los destinatarios enumerados en la configuración Destinatarios de notificaciones. Esto esta seleccionado por defecto.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Especifica los destinatarios de notificaciones para las notificaciones por lotes de Crear documentos de facturación enviadas a través de Chatter o correo electrónico. El valor es una lista de direcciones de correo electrónico separadas por punto y coma (;). Esta configuración es nula por defecto.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las notificaciones de los procesos por lotes Crear documentos de facturación se envían a través de tareas. Esto está deseleccionado por defecto.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Certain users need these permissions even though users with their profile generally don’t get them. Example use case: the APAC Marketing team creates those records based on their professional network. JIRA: SFDCSPT-615</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Create and Edit Leads, Accounts, Contacts, AND Convert Leads</label>
+    <permissionSets>Account_Create_and_Edit</permissionSets>
+    <permissionSets>Convert_Leads</permissionSets>
+    <permissionSets>Create_and_Edit_Contacts</permissionSets>
+    <permissionSets>Create_and_Edit_Leads</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

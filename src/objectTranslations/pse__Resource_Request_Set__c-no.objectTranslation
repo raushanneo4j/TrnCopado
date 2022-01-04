@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Ressursforespørselssett</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Ressursforespørselssett</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Oppslag til kontoen. Dette kopieres fra ressursforespørselen.</help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oppslag til ressursforespørselen som skal kopieres når du oppretter et ressursforespørselssett.</help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oppsøk muligheten. Dette kopieres fra ressursforespørselen.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oppsøk til prosjektet. Dette kopieres fra ressursforespørselen.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dato og klokkeslett hvor en ressursforespørsel som tilhører det samme ressursforespørselssettet, ble bemannet.</help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help>Oppslag til ressursforespørselen. Dette er fylt med den siste bemandede ressursforespørselen som tilhører dette ressursforespørselssettet.</help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Ressursforespørselssett Navn</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+</CustomObjectTranslation>

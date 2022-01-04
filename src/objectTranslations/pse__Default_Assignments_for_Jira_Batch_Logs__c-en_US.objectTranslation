@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The log record identifier. --></help>
+        <label><!-- Default Assignments Jira Batch Log ID --></label>
+        <name>pse__Default_Assignments_Jira_Batch_Log_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Master-Detail link to the related Default Assignments for Jira Batch record. --></help>
+        <label><!-- Default Assignments for Jira Batch --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates the type of log (Error, Information, Abort, External). --></help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation><!-- Abort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The text of the message. --></help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+</CustomObjectTranslation>

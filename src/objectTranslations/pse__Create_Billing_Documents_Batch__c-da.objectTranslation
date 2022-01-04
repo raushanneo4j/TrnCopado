@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Opret Faktura Documents Batch</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Opret faktureringsdokumentsatcher</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Unik identifikator for det nuværende batch Apex job.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Opslag til batch proces rekord. Batchprocessen registreres automatisk, hvis processen fuldføres med succes.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Den type anmeldelse, der blev sendt, da processen blev gennemført: Vellykket, Fejl eller Blandet.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>Den aktuelle status for batchjobbet: &quot;Behandling&quot;, &quot;Komplet&quot; eller &quot;Fejl&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fejl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Forarbejdning</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor Log Type er Afbryd.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_Of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor Log Type er Fejl.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_Of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor Log Type er Ekstern.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_Of_External__c</name>
+    </fields>
+    <fields>
+        <help>Det samlede antal logfiler.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Opret Faktura Documents Batch ID</nameFieldLabel>
+</CustomObjectTranslation>

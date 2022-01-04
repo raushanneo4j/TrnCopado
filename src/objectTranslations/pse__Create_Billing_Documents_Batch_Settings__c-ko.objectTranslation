@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 대금 청구 문서 생성 배치 설정 생성 --></value>
+    </caseValues>
+    <fields>
+        <help>단일 배치에서 처리 할 레코드 수입니다. 값은 기본적으로 3입니다.</help>
+        <label><!-- Create Billing Documents Batch Size --></label>
+        <name>pse__Create_Billing_Documents_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Chatter를 통해 대금 청구 문서 생성 프로세스의 통지가 통지 수신자 설정에 나열된 수신자에게 전송됩니다. 이것은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 대금 청구 문서 생성 프로세스의 통지가 전자 메일을 통해 알림 수신자 설정에 나열된 수신인에게 전송됩니다. 이것은 기본적으로 선택됩니다.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Chatter 또는 전자 메일을 통해 전송되는 대금 청구 문서 생성 일괄 알림 생성에 대한 알림 수신자를 지정합니다. 값은 세미콜론 (;)으로 구분 된 전자 메일 주소 목록입니다. 이 설정은 기본적으로 null입니다.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 대금 청구 문서 생성 배치 프로세스의 통지가 작업을 통해 전송됩니다. 이것은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+</CustomObjectTranslation>

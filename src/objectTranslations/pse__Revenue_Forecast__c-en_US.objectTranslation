@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Contains the combined value of the Revenue Recognized to Date and the Revenue Pending Recognition fields. --></help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time when this revenue forecast was last updated. --></help>
+        <label><!-- Last Updated --></label>
+        <name>pse__Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the milestone this revenue forecast relates to. --></help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the opportunity this revenue forecast relates to. --></help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the project this revenue forecast relates to. --></help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The revenue that is ready for recognition on this revenue forecast. --></help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help><!-- The revenue that has already been recognized on this revenue forecast. --></help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The revenue that is scheduled for recognition on this revenue forecast. --></help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the time period set on this revenue forecast. --></help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If there are months that do not contain any scheduled or actual revenue, the unscheduled revenue is spread evenly across those months, except for empty months that fall between months containing scheduled or actual revenue. --></help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast_Opportunity --></label>
+        <name>pse__Run_Revenue_Forecast_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

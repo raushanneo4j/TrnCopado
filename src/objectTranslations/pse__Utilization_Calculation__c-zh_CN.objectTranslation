@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>利用率计算</value>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Id Unheld Calc --></label>
+        <name>pse__Batch_Id_Unheld_Calc__c</name>
+    </fields>
+    <fields>
+        <help>PSE使用的内部字段 - 不打算向用户显示。</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>是否从时间卡记录中计算历史利用率。</help>
+        <label><!-- Calculate Historical Utilization --></label>
+        <name>pse__Calculate_Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>是否从计划的分配中计算前瞻性利用率。</help>
+        <label><!-- Calculate Scheduled Utilization --></label>
+        <name>pse__Calculate_Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Prior Calculation --></label>
+        <name>pse__Delete_Prior_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Date --></label>
+        <name>pse__Deleted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <help>选择不需要创建利用率摘要记录的角色。</help>
+        <label><!-- Excluded Roles --></label>
+        <name>pse__Excluded_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>建筑师</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation>业务分析师</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Manager</masterLabel>
+            <translation>客户经理</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>顾问</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation>承包商</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>行政人员</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>专案经理</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Consultant</masterLabel>
+            <translation>高级顾问</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>训练者</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>选择描述历史利用率计算应何时停止的值。这通常是输入所有时间卡的一周中的最后一天。</help>
+        <label><!-- Historical Utilization Cut-Off Date --></label>
+        <name>pse__Historical_Utilization_Cut_Off_Date__c</name>
+        <picklistValues>
+            <masterLabel>End of Last Week</masterLabel>
+            <translation>上周末</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of This Week</masterLabel>
+            <translation>本周末</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>今天</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization End Date --></label>
+        <name>pse__Historical_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Start Date --></label>
+        <name>pse__Historical_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>是否计算所选区域，练习或组的所有子级别的利用率。如果仅为资源计算利用率，则忽略此字段。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Sublevels in Subtotals --></label>
+        <name>pse__Include_Sublevels_in_Subtotals__c</name>
+    </fields>
+    <fields>
+        <help>此计算是否为区域/实践/组/资源和时间段组合的主计算。</help>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization End Date --></label>
+        <name>pse__Scheduled_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Start Date --></label>
+        <name>pse__Scheduled_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>发生了错误</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>进行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>没有开始</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Group --></label>
+        <name>pse__Subtotal_by_Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Practice --></label>
+        <name>pse__Subtotal_by_Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal By Practice) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Region --></label>
+        <name>pse__Subtotal_by_Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Region) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>计算利用率的时间段类型。</help>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>25美分硬币</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>年</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>选择一个时间段来计算利用率。选择后，日期将自动为您调整。</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>选择描述此计算的类型。</help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Month and Last Month</masterLabel>
+            <translation>本月和上个月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Month and Next Month</masterLabel>
+            <translation>本月和下个月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Last Quarter</masterLabel>
+            <translation>本季度和上一季度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Next Quarter</masterLabel>
+            <translation>本季度和下一季度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Last Week</masterLabel>
+            <translation>本周和上周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Next Week</masterLabel>
+            <translation>本周和下周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Last Year</masterLabel>
+            <translation>当年和去年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Next Year</masterLabel>
+            <translation>当年和明年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Month</masterLabel>
+            <translation>上个月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Quarter</masterLabel>
+            <translation>上个季度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>上个星期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Year</masterLabel>
+            <translation>去年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Month</masterLabel>
+            <translation>最后，当前和下个月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Quarter</masterLabel>
+            <translation>最后，当前和下一季度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Week</masterLabel>
+            <translation>最后，当前和下周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Year</masterLabel>
+            <translation>最后，当前和明年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month Forecast</masterLabel>
+            <translation>月预测</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month to Date</masterLabel>
+            <translation>本月至今</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Month</masterLabel>
+            <translation>下个月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Quarter</masterLabel>
+            <translation>下个季度</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Week</masterLabel>
+            <translation>下周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Year</masterLabel>
+            <translation>明年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter Forecast</masterLabel>
+            <translation>季度预测</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter to Date</masterLabel>
+            <translation>季度到目前为止</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week Forecast</masterLabel>
+            <translation>周预测</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week to Date</masterLabel>
+            <translation>周至今</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year Forecast</masterLabel>
+            <translation>年度预测</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year to Date</masterLabel>
+            <translation>今年迄今为止</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Utilization Calculation Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日期</label>
+            <section>Dates</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>利用率计算名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Batch ID is required --></errorMessage>
+        <name>pse__batch_id_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_historical_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_scheduled_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization start date must immediately follow the historical utilization end date. --></errorMessage>
+        <name>pse__continuous_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical utilization calculation for future dates is not allowed --></errorMessage>
+        <name>pse__disallow_historical_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization calculation for past dates is not allowed --></errorMessage>
+        <name>pse__disallow_scheduled_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical Start and End Date are required --></errorMessage>
+        <name>pse__historical_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Resource may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one value may be specified: Subtotal by Region, Practice or Group. --></errorMessage>
+        <name>pse__only_one_subtotal_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Start and End Date are required --></errorMessage>
+        <name>pse__scheduled_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Resource is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+</CustomObjectTranslation>

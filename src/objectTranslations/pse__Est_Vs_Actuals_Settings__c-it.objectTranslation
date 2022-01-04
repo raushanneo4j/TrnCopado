@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Est Vs Impostazioni reali --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Est Vs Impostazioni reali --></value>
+    </caseValues>
+    <fields>
+        <help>Se i campi Est Vs Actuals derivati ​​dalla pianificazione (ad esempio, Ore stimate) devono essere aggiornati per i record di Vs effettivi che hanno una data di fine prima dell&apos;inizio di questa settimana.</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Elimina i record di Est vs Actuals anche se sono stati impostati per i record che non rientrano più nell&apos;intervallo di date di un programma modificato. NOTA: i record senza actual verranno sempre eliminati.</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Elenco separato da virgola di tipi di periodo di tempo per i quali generare record EVA</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>Indica se generare i record di Est Vs Actuals per mese</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Indica se generare i record di Est Vs Actual per trimestre</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Se generare est vs actuals di settimana</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Crea record di Vs effettivi per i timecards che hanno ore al di fuori della data di inizio e di fine del compito. I record di Est Vs Actuals avranno valori zero per le stime su questi record.</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;elenco delimitato da virgole dei valori del campo Stato scheda di tempo da utilizzare per determinare se il cartellino deve essere utilizzato nel calcolo delle stime rispetto alle effettive</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definisce la dimensione del batch utilizzata durante l&apos;aggiornamento del campo Project Manager da Project. L&apos;impostazione predefinita è 2000. Consulta il supporto FinancialForce prima di modificare questa impostazione.</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionata, questa impostazione fa sì che gli aggiornamenti del campo Project Manager si riflettano in tutti i record di Vs effettivi di quel progetto.</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il numero di record di Est Vs Actual da elaborare in modo sincrono quando si aggiorna il campo Project Manager da Project. I record superiori a questo valore vengono elaborati in un batch. Il valore predefinito è 9000. Consultare il supporto prima di modificare questa impostazione.</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Quando è vero, le stime settimanali rispetto a quelle effettive non vengono generate automaticamente se si dispone di periodi personalizzati di un tipo di settimana definiti che si sovrappongono a un determinato compito. Il valore predefinito è falso.</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

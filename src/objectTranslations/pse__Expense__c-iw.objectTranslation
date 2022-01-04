@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>הוצאה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>הוצאות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment PDF --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPDF</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment Page --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Editable Columns --></label>
+        <name>pse__ExpenseHeaderRowEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Read Only Columns --></label>
+        <name>pse__ExpenseHeaderRowReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Editable Columns --></label>
+        <name>pse__ExpenseNotesFieldsEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Read Only Columns --></label>
+        <name>pse__ExpenseNotesFieldsReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobile Expenses: Additional Fields in New and Edit Mode --></label>
+        <name>pse__Mobile_Expenses_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <help>אם הוא מסומן, מאפשר למנהל לבצע שינויים ’גלובליים’ בהוצאה, כולל עריכות לפרויקט, משאב, מטבע או תאריך של ההוצאה, גם אם מסומן כלול בכספים. דרישת תצורה: יש להגדיר את מצב החישוב בפועל ל’מתוזמן ’.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Bill --></label>
+        <name>pse__Amount_To_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Reimburse --></label>
+        <name>pse__Amount_To_Reimburse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>השדה יחזיק בשיעור ההוצאה שיוחל על ההוצאה.</help>
+        <label><!-- Applied Expense Rate --></label>
+        <name>pse__Applied_Expense_Rate__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>יש לסמן את תיבת הסימון הזו עם אישור ההוצאה, שצריכה להתבסס על האם אישור דוח ההוצאות האב (אם קיים).</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>נבדק אוטומטית לפי תצורה כדי לציין אם קבצים מצורפים להוצאות הועברו משורת ההוצאות לדוח ההוצאות.</help>
+        <label><!-- Attachments moved to ER --></label>
+        <name>pse__Attachments_moved_to_ER__c</name>
+    </fields>
+    <fields>
+        <help>היסטוריה של הערות ביקורת על חנויות. כאשר משתמש משנה פרוייקט או מטלה באמצעות ממשק המשתמש של כרטיס ה- Timecard ופתקי הביקורת חורגים מ- 255 תווים, הערות ביקורת ישנות מועברות ומצורפות כאן.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>נוסחה זו שווה לסכום (מינוס סכום בלתי הניתן לחיוב ובמס אם יש) להוצאות הניתנות לחיוב ואפס להוצאות שלא ניתן לחיוב: הכל במטבע שנגרם.</help>
+        <label><!-- Billable Amount --></label>
+        <name>pse__Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>עמלה שטוחה במטבע הפרויקט באמצעותה ניתן להגדיל את סכום ההוצאה הניתנת לחיוב, שהוגדרה כברירת מחדל מהפרויקט. החישוב יחול כל עמלת הוצאה באחוזים * לפני * סכום עמלת הוצאה שטוחה זו.</help>
+        <label><!-- Billable Fee Flat Amount --></label>
+        <name>pse__Billable_Fee_Flat_Amount__c</name>
+    </fields>
+    <fields>
+        <help>נוסחת טקסט המציגה עמלה שטוחה במטבע הפרויקט באמצעותה ניתן להגדיל את הסכום הניתן לחיוב של הוצאות, שהוגדר כברירת מחדל מפרויקט יחד עם מטבע פרויקט. החישוב יחול כל עמלת הוצאה באחוזים * לפני * סכום עמלת הוצאה שטוחה זו.</help>
+        <label><!-- Billable Fee Flat --></label>
+        <name>pse__Billable_Fee_Flat__c</name>
+    </fields>
+    <fields>
+        <help>אחוז עמלה באמצעותו ניתן להגדיל את סכום ההוצאה הניתנת לחיוב, כברירת מחדל מהפרויקט. 0% פירושו לא עלייה (ברירת מחדל) ואילו 100% פירושם כפול. החישוב יחול את דמי ההוצאה האחוזית * לפני * כל עמלת הוצאה שטוחה.</help>
+        <label><!-- Billable Fee Percentage --></label>
+        <name>pse__Billable_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount (Pre-Fee Subtotal) --></label>
+        <name>pse__Billing_Amount_Pre_Fee_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount --></label>
+        <name>pse__Billing_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>pse__Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>מרחק נסע להחזר קילומטראז ’אוטומטי.</help>
+        <label><!-- Distance --></label>
+        <name>pse__Distance__c</name>
+    </fields>
+    <fields>
+        <help>מציין שההוצאה במצב היא כשירה להפקת אירועי חיוב (לא כולל הדגל מאושר לחיוב, אשר עשוי להידרש גם לכל תצורה גלובלית).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Billing Currency) --></label>
+        <name>pse__Exchange_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Incurred Currency) --></label>
+        <name>pse__Exchange_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Reimbursement Currency) --></label>
+        <name>pse__Exchange_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <help>כאשר מוגדר, שדה זה מגדיר את שער החליפין * היחסי * בין שער נגמר ושיעור החזר שחווה המשאב שגורם את ההוצאה.</help>
+        <label><!-- Exchange Rate (Resource-Defined) --></label>
+        <name>pse__Exchange_Rate_Resource_Defined__c</name>
+    </fields>
+    <fields>
+        <help>אם הוא מסומן, אל תחייב את הרשומה העסקית הזו. אותה השפעה כמו החזקת חיוב, אך נועדה לשקף הרחקה קבועה מהפקת חיוב.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Date --></label>
+        <name>pse__Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>pse__Expense_Report__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Split Parent --></label>
+        <name>pse__Expense_Split_Parent__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <help>אם נבדק אם הוצאה הניתנת לחיוב, פירוש הדבר שחלק מסכום ההוצאה שצוין בשדה מיסים לא ניתן לחיוב. (זה נפרד ובנוסף לכל סכום בשדה הסכום שלא ניתן לחיוב).</help>
+        <label><!-- Incurred Tax Non-Billable --></label>
+        <name>pse__Incurred_Tax_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help>גובה המס שנגרם</help>
+        <label><!-- Incurred Tax --></label>
+        <name>pse__Incurred_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <help>שדה זה גלוי בממשק המשתמש אם המשתמש דורש צירוף לקווי הוצאות אם מוגש דוח הוצאות. אם שדה זה מוגדר נכון, המשתמש אינו צריך להוסיף קובץ מצורף למרות שהתצורה מוגדרת כ- true.</help>
+        <label><!-- Lost Receipt --></label>
+        <name>pse__Lost_Receipt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Expense Reference ID --></label>
+        <name>pse__Mobile_Expense_Reference_ID__c</name>
+    </fields>
+    <fields>
+        <help>נוסחה זו שווה סכום להוצאות שאינן ניתנות לחיוב ולסכום ומסים בלתי הניתנים לחיוב (בכל מקום מאפס לסכום הוצאה) להוצאות הניתנות לחיוב: הכל במטבע שנגרם.</help>
+        <label><!-- Non-Billable Amount --></label>
+        <name>pse__Non_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>אם נקבע הוצאה לחיוב, זה מופרע מסכום ההוצאה (מטבע שהוצא) לחישוב הסכום הניתן לחיוב. דקה ערך אפס, מקסימום ערך סכום הוצאה. ערך ברירת מחדל: אפס או אפס. אין השפעה על הוצאות שאינן ניתנות לחיוב.</help>
+        <label><!-- Non-Billable Incurred Amount --></label>
+        <name>pse__Non_Billable_Incurred_Amount__c</name>
+    </fields>
+    <fields>
+        <help>נוסחה זו מוסיפה כל מס שלא ניתן לחיוב (רק אם נבדק מס שאינו ניתן לחיוב במס) לכל סכום נוסף שלא ניתן לחיוב, כדי לקבל סכום משנה בלתי הניתן לחיוב, עם מינימום של 0.00 והמקסימום של סכום ההוצאה.</help>
+        <label><!-- Non-Billable Incurred Subtotal --></label>
+        <name>pse__Non_Billable_Incurred_Subtotal__c</name>
+    </fields>
+    <fields>
+        <help>אם תיבת סימון זו מסומנת, סכום ההחזר עבור ההוצאה יהיה אפס ללא קשר לסכום שנגרם.</help>
+        <label><!-- Non-Reimbursable --></label>
+        <name>pse__Non_Reimbursible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Group Currency Code --></label>
+        <name>pse__Override_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>עוקף את הקבוצה אליה יתפתחו עסקאות ההוצאות עבור פעולות בקבוצה, גם אם הפרויקט נמצא בקבוצה אחרת. בדרך כלל עסקאות של הוצאות מתקדמות לקבוצת הפרויקט או לקבוצת המשאבים שלהן בהתבסס על כללים ’כדלקמן’.</help>
+        <label><!-- Override Group --></label>
+        <name>pse__Override_Group__c</name>
+        <relationshipLabel><!-- Override Group For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Practice Currency Code --></label>
+        <name>pse__Override_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>עוקף את התרגול אליו יתפתחו עסקאות ההוצאה לצורך פעולות בפועל, גם אם הפרויקט נמצא בפרקטיקה אחרת. בדרך כלל, עסקאות של הוצאה מסתכמות בפרקטיקה של הפרוייקט או המשאבים המבוססים על כללי ’כדלקמן’.</help>
+        <label><!-- Override Practice --></label>
+        <name>pse__Override_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Billing Currency) --></label>
+        <name>pse__Override_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Incurred Currency) --></label>
+        <name>pse__Override_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Reimbursement Currency) --></label>
+        <name>pse__Override_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Region Currency Code --></label>
+        <name>pse__Override_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>עוקף את האזור אליו יתגלו עסקאות ההוצאות עבור פעולות אזוריות, גם אם הפרויקט נמצא באזור אחר. בדרך כלל, עסקאות של הוצאות מסתכמות באזור הפרוייקט או המשאבים שלה על פי כללי ’כדלקמן’.</help>
+        <label><!-- Override Region --></label>
+        <name>pse__Override_Region__c</name>
+        <relationshipLabel><!-- Override Region For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת מתודולוגיית הפרויקט</help>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת שלב לפרויקט</help>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>קילומטר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>מייל</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>שיטת ההכרה החלה על רשומה זו לחיזוי הכנסות.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <help>שדה זה מאחסן ערך מספרי עבור סכום ההחזר המרה למטבע הפרויקט (חיוב) באמצעות שיעורי מערכת (לא מבוטלים), לשימוש מאוחר יותר בחשבוניות הספק.</help>
+        <label><!-- Reimbursement Amount In Project Currency --></label>
+        <name>pse__Reimbursement_Amount_In_Project_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Amount --></label>
+        <name>pse__Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Currency --></label>
+        <name>pse__Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Expense --></label>
+        <name>pse__Split_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Notes --></label>
+        <name>pse__Split_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>אושר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>טיוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>נדחה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>מוגש</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>תיבת סימון זו מיועדת לשימוש במערכת. זה מיועד להיבדק בשילוב עם כל הכנסה / עדכון של ה- Split Timecard המבוצע בשיטה עתידית, ואז יבטיח כי לא נקראות שיטות עתידיות במורד הזרם.</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <help>סוג אופציונלי של מס שנכלל בהוצאה</help>
+        <label><!-- Tax Type --></label>
+        <name>pse__Tax_Type__c</name>
+        <picklistValues>
+            <masterLabel>GST</masterLabel>
+            <translation>GST</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 1</masterLabel>
+            <translation>מע&quot;מ 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 2</masterLabel>
+            <translation>מע&quot;מ 2</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>מזהה ההוצאה מיישום ההוצאות של צד שלישי.</help>
+        <label><!-- Third-Party Expenses App Expense ID --></label>
+        <name>pse__Third_Party_Expenses_App_Expense_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>טיסה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>קילומטראז ’אוטומטי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>ארוחות עסקיות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>השכרת רכב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>יחסי עובדים</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>בנזין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>הוצאות כלליות וניהול</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>ציוד ושירותי IT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>לינה (חדר ומס)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>שונות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>ציוד משרדי ושירותים</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>ארוחות אישיות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>מכשיר טלפון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>דמי משלוח ומשלוח</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>גיוס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>רכבת תחתית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>מונית</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Expense Admin Layout</layout>
+        <sections>
+            <label>ביקורת</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>פרטי חיוב</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מרחק</label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label>מידע על הפרויקט</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>סטטוס</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>סיכום</label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label>מידע מערכת</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מידע על הפרויקט</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>סטטוס</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>סיכום</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Distance --></label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label><!-- Expense Tax Information --></label>
+            <section>Expense Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מספר הוצאות</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Assignment Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment Resource must match Expense Resource. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Project must match Expense Report Project. --></errorMessage>
+        <name>pse__Expense_ER_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Resource must match Expense Report Resource. --></errorMessage>
+        <name>pse__Expense_ER_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Expense_Line_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Expense_Line_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense Line may not be submitted or included in financials unless it belongs to an Expense Report. --></errorMessage>
+        <name>pse__Expense_Line_Needs_Parent_For_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Project field value may not be updated once set (unless parent Expense Report is changed, Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Expense Report may not be changed if it is submitted or included in financials. --></errorMessage>
+        <name>pse__Expense_Line_Report_Fixed_If_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense may only be marked as Billable if its Project is Billable and its Expense Report and Assignment, if any, are Billable. --></errorMessage>
+        <name>pse__Expense_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Report is required --></errorMessage>
+        <name>pse__Expense_Requires_Expense_Report</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the incurred tax amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Incurred_Tax_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the non-billable incurred amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Incurred_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The non-billable incurred subtotal for an Expense (any non-billable amount plus any non-billable tax) must not be greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Subtotal_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate can only be set if Incurred and Resource currencies are different.  If the currencies are the same, a relative rate of 1.0 is implied. --></errorMessage>
+        <name>pse__Res_Defined_Rate_Diff_Currencies_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate must either be greater than 0.0 (zero) or null/empty. --></errorMessage>
+        <name>pse__Res_Defined_Rate_may_not_be_Negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice cannot change once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Expenses --></label>
+        <name>pse__Edit_Expenses</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_Expense_Entry_UI --></label>
+        <name>pse__Multiple_Expense_Entry_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ready_to_Submit --></label>
+        <name>pse__Ready_to_Submit</name>
+    </webLinks>
+</CustomObjectTranslation>

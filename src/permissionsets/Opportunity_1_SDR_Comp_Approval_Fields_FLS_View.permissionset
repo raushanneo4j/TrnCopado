@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives users view access to &apos;1% SDR Comp Approval Status&apos; and &apos;1% SDR Comp Approval Status Date&apos; fields on the Opportunity object JIRA: SFDCSPT-481</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.X1SDRCompApprovalStatusDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.X1SDRCompApprovalStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity &gt; 1% SDR Comp Approval Fields &gt; FLS View</label>
+</PermissionSet>

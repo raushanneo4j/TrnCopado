@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Parte de trabajo faltantes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partes de trabajo faltantes</value>
+    </caseValues>
+    <fields>
+        <label><!-- User Missing TC workspace --></label>
+        <name>User_Missing_TC_workspace__c</name>
+    </fields>
+    <fields>
+        <help>La fecha y la hora en que se ingresó la tarjeta de tiempo</help>
+        <label><!-- Date Timecard Entered --></label>
+        <name>pse__Date_Timecard_Entered__c</name>
+    </fields>
+    <fields>
+        <help>La fecha de finalización de la semana en la que se verifican las tarjetas de tiempo faltantes.</help>
+        <label><!-- Week End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Si se debe calcular la tarjeta de tiempo perdida para todos los niveles secundarios de la región, práctica o grupo seleccionado. Este campo se ignora si la tarjeta de TI faltante se calcula solo para un recurso.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Timecard Calculation --></label>
+        <name>pse__Missing_Timecard_Calculation__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El comienzo de la semana que corresponde a la fecha de finalización.</help>
+        <label><!-- Week Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Missing Timecard Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Falta el nombre de la tarjeta de tiempo</nameFieldLabel>
+    <webLinks>
+        <label><!-- Schedule_Missing_Timecard --></label>
+        <name>pse__Schedule_Missing_Timecard</name>
+    </webLinks>
+</CustomObjectTranslation>

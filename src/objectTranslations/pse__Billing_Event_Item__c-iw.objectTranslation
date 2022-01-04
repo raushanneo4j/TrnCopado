@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>פריט אירוע חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>פריטי אירוע לחיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Name --></label>
+        <name>Resource_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Batch --></label>
+        <name>pse__Billing_Event_Batch__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Calculation --></label>
+        <name>pse__Billing_Event_Calculation__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>pse__Budget__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>pse__Category__c</name>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation>תקציב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense</masterLabel>
+            <translation>הוצאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milestone</masterLabel>
+            <translation>אבן דרך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Adjustment</masterLabel>
+            <translation>התאמה שונות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard</masterLabel>
+            <translation>קלף זמן</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense --></label>
+        <name>pse__Expense__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Released --></label>
+        <name>pse__Is_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Adjustment --></label>
+        <name>pse__Miscellaneous_Adjustment__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Object Id --></label>
+        <name>pse__Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product or Service --></label>
+        <name>pse__ProductService__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>pse__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rounded Amount --></label>
+        <name>pse__Rounded_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subcategory --></label>
+        <name>pse__Subcategory__c</name>
+    </fields>
+    <fields>
+        <help>סיכום תיאור פריט אירוע החיוב.</help>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Split --></label>
+        <name>pse__Timecard_Split__c</name>
+        <relationshipLabel><!-- Billing Event Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>pse__Unit_Price__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Billing Event Item Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <webLinks>
+        <label><!-- ClearBillingData --></label>
+        <name>pse__ClearBillingData</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

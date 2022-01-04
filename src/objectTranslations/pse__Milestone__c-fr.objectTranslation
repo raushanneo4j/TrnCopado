@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Étape importante</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Les étapes</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Milestone Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyMilestoneFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Milestones Columns --></label>
+        <name>pse__CreateProjFromTemplateMilestoneColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Link Assignment Milestone Columns --></label>
+        <name>pse__LinkAssignmentMilestoneColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- % Complete (Hours) --></label>
+        <name>Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Days Remaining --></label>
+        <name>ProjectStatusReport_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Sort --></label>
+        <name>ProjectStatusReport_Sort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Milestone Late --></label>
+        <name>psaws__Milestone_Is_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Is Active --></label>
+        <name>psaws__Project_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée lors de la sauvegarde, recalcule les informations à partir des dépenses associées au jalon.</help>
+        <label><!-- Action: Refresh Expense Roll-Ups --></label>
+        <name>pse__Action_Refresh_Expense_Rollups__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée lors de l’enregistrement, recalcule les informations des fiches de présence associées au jalon.</help>
+        <label><!-- Action: Refresh Timecard Roll-Ups --></label>
+        <name>pse__Action_Refresh_Timecard_Rollups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Date --></label>
+        <name>pse__Actual_Date__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, l&apos;administrateur peut apporter des modifications «globales» au jalon, y compris des modifications au projet, à la ressource, à la devise ou à la date du jalon, même si l&apos;option Inclure dans les états financiers est cochée. Configuration requise: le mode de calcul réel doit être défini sur &quot;Planifié&quot;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est cochée et si la configuration par défaut de timecard-bill-rate-from-milestone est définie sur true, le taux de facture par défaut sera appliqué par défaut à toutes les cartes de pointage enfant.</help>
+        <label><!-- Apply Default Bill Rate to Timecard --></label>
+        <name>pse__Apply_Default_Bill_Rate_to_Timecard__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher doit être cochée lorsque le jalon est approuvé - généralement en fonction du champ Statut.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount In Financials --></label>
+        <name>pse__Billable_Amount_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount Submitted --></label>
+        <name>pse__Billable_Amount_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days In Financials --></label>
+        <name>pse__Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days Submitted --></label>
+        <name>pse__Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses In Financials --></label>
+        <name>pse__Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses Submitted --></label>
+        <name>pse__Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours In Financials --></label>
+        <name>pse__Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours Submitted --></label>
+        <name>pse__Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Expense Entry --></label>
+        <name>pse__Closed_for_Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si elle est configurée, les cartes de pointage pour ce jalon hériteront de ce taux de facturation. La valeur par défaut est et doit toujours être la même devise que le projet.</help>
+        <label><!-- Default Bill Rate --></label>
+        <name>pse__Default_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, cela signifie que la valeur du taux de facture par défaut signifie un taux par jour plutôt qu&apos;un taux par heure.</help>
+        <label><!-- Default Bill Rate is Daily Rate --></label>
+        <name>pse__Default_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si les heures de la tâche du projet sont cumulées lors du jalon. La valeur par défaut est false.</help>
+        <label><!-- Disable Project Task Hours Roll Up --></label>
+        <name>pse__Disable_Project_Task_Hours_Roll_Up__c</name>
+    </fields>
+    <fields>
+        <help>Indique que le jalon est dans un état éligible pour la génération d&apos;événement de facturation (à l&apos;exception de l&apos;indicateur Approuvé pour la facturation, qui peut également être requis par configuration globale).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, ne jamais facturer cet enregistrement professionnel. Même effet que le blocage de la facturation, mais destiné à refléter une exclusion permanente de la génération de facturation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Milestone Cost As External --></label>
+        <name>pse__Log_Milestone_Cost_As_External__c</name>
+    </fields>
+    <fields>
+        <help>Montant facturable associé au jalon lui-même (n&apos;incluant pas les montants facturables des cartes de pointage / dépenses de l&apos;enfant). Ceci est principalement destiné à être utilisé pour des projets à honoraires fixes. La valeur par défaut est et doit toujours être la même devise que le projet.</help>
+        <label><!-- Milestone Amount --></label>
+        <name>pse__Milestone_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Coûts externes forfaitaires associés à Milestone, à l&apos;exclusion des coûts associés aux cartes de pointage et aux dépenses des enfants. La valeur par défaut est et doit toujours être la même devise que le projet.</help>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days In Financials --></label>
+        <name>pse__Non_Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days Submitted --></label>
+        <name>pse__Non_Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses In Financials --></label>
+        <name>pse__Non_Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses Submitted --></label>
+        <name>pse__Non_Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours In Financials --></label>
+        <name>pse__Non_Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours Submitted --></label>
+        <name>pse__Non_Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Si ce champ est défini, il remplace le groupe auquel les transactions du jalon seront cumulées pour les valeurs réelles du groupe, même si son projet appartient à un groupe différent. En règle générale, les transactions de Milestone sont intégrées au groupe de projets.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Si ce champ est défini, il remplace la pratique à laquelle les transactions du jalon seront cumulées pour les données réelles, même si son projet est dans une pratique différente. En règle générale, les transactions d&apos;un jalon sont intégrées à la pratique de son projet.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Si ce champ est défini, il remplace la région dans laquelle les transactions du jalon seront cumulées pour les statistiques régionales, même si son projet se trouve dans une autre région. En règle générale, les transactions d&apos;un jalon rejoignent la région de son projet.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Pourcentage d’heures terminées, pour les calculs de prévision du revenu utilisant la méthode de reconnaissance &quot;% terminé&quot;. La valeur est multipliée par 100 (somme des heures de la fiche de pointage approuvée / valeur en heures planifiées).</help>
+        <label><!-- % Hours Completed for Recognition --></label>
+        <name>pse__Percent_Hours_Completed_For_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre total d&apos;heures de toutes les ressources pour ce jalon</help>
+        <label><!-- Planned Hours --></label>
+        <name>pse__Planned_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Projet (taux de change) Taux de change, par rapport à la devise de l&apos;entreprise, calculé à la date réelle ou cible du jalon.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Nombre total d&apos;heures de tâches du projet entrées pour les fiches de présence par rapport à cette affectation. Ne modifiez pas manuellement ce champ.</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La méthode de comptabilisation à appliquer à cet enregistrement pour la prévision des revenus.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Customer Sign-off --></label>
+        <name>pse__Requires_Customer_Sign_off__c</name>
+    </fields>
+    <fields>
+        <help>La date de début de ce jalon.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>Annulé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Ouvrir</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>Prévu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>pse__Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs In Financials --></label>
+        <name>pse__Timecard_External_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs Submitted --></label>
+        <name>pse__Timecard_External_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs In Financials --></label>
+        <name>pse__Timecard_Internal_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs Submitted --></label>
+        <name>pse__Timecard_Internal_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Completed Points from Tasks --></label>
+        <name>pse__Total_Completed_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Completed Tasks --></label>
+        <name>pse__Total_Number_of_Completed_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Tasks --></label>
+        <name>pse__Total_Number_of_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Points from Tasks --></label>
+        <name>pse__Total_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Milestone --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le compte fournisseur à utiliser pour la facturation fournisseur</help>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Vendor Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Milestone - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Cost --></label>
+            <section>Billing &amp; Cost</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Milestone Totals --></label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Milestone Layout</layout>
+        <sections>
+            <label>Vérification</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Information</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>Totaux jalons</label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label>Statut</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Informations système</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;étape</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Milestone_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Milestone_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Milestone&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Milestone_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_Assignments --></label>
+        <name>pse__Link_to_Assignments</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89666778</developerName>
+        <masterLabel>Annual Revenue Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CampaignMember.Annual_Revenue_Range__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$5 Billion +</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$1 Billion - $5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$1B+</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>$0-10M</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$100M-500M</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$100 Million - $500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$10M-100M</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$10 Million - $100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$500M-1B</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>$500 Million - $1 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>0 - 10 Million | 10 - 25 Million | 25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>0 - 10 Million | 1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 Million - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 Million - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 Million - 10 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <value>Non-Enterprise</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>COUNTRY</field>
+    </columns>
+    <columns>
+        <field>STATE</field>
+    </columns>
+    <columns>
+        <field>MEMBER_TYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Neo4j Aura Professional Customers</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CampaignMember.Account_Owner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LC_OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_89666778</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Neo4j Aura Professional Customers</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignWithCampaignMembers</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

@@ -1,0 +1,85 @@
+<apex:page standardController="Account" extensions="DNBoptimizer.SBC_VF_ControllerExtension" sidebar="false" >
+    <script>
+    	dataLayer=[{
+            'pageCategory':'Search Before Create'
+        }];
+    </script>
+    <apex:includeLightning />
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX5V4GS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <div id="lightning" style="height: calc(100vh - 206px);"/>
+    <script>
+    $Lightning.use("{!JSENCODE(NamespacePrefix)}:Search_Before_Create_ClassicExp", function() { // Lightning out app 
+            // Create component dynamically
+            $Lightning.createComponent("{!JSENCODE(NamespacePrefix)}:SBCComponent", // name of the lighting component
+                                     {"pageNumber" : "1"}, // attributes to set on the component when it’s created
+                                     "lightning", //The DOM element or element ID that indicates where on the page to insert the created component. 
+                                     function(cmp) { //A function to call once the component is added to and active on the page. 
+                                         //The callback receives the component created as its only argument.
+                console.log("Lightning Componenet was created");
+				$A.eventService.addHandler({
+                    event:'{!JSENCODE(NamespacePrefix)}:tagManagerEvent',
+                    handler:function(event){
+                        console.log(event.getParam("element"));
+                        var element = event.getParam("element");
+                        dataLayer.push({'event': element+'-click'});
+                    }
+                });
+                $A.eventService.addHandler({
+                    event: 'force:createRecord',
+                    handler: function(event) { 
+                        var link = '{!URLFOR($Action.Account.New, null, null, true)}';
+                        var myEventData = event.getParam("defaultFieldValues");
+                        var recordTypeSelection = event.getParam("recordTypeId");
+                        var escapedName = (myEventData["Name"] && myEventData["Name"].includes('%') ) ? myEventData["Name"].replace('%', '%25') :  (myEventData["Name"]) ? myEventData["Name"] : '';
+                        escapedName = (myEventData["Name"] && myEventData["Name"].includes('&') ) ?  myEventData["Name"].replace('&', '%26') :  (myEventData["Name"]) ? myEventData["Name"] : '';
+                        var escapedStreet = (myEventData["BillingStreet"] && myEventData["BillingStreet"].includes('%') ) ? myEventData["BillingStreet"].replace('%', '%25') :  (myEventData["BillingStreet"]) ? myEventData["BillingStreet"] : '';
+                        escapedStreet = (myEventData["BillingStreet"] && myEventData["BillingStreet"].includes('&') ) ?  myEventData["BillingStreet"].replace('&', '%26') :  (myEventData["BillingStreet"]) ? myEventData["BillingStreet"] : '';
+                        var escapedCity = (myEventData["BillingStreet"] && myEventData["BillingCity"].includes('&') ) ?  myEventData["BillingCity"].replace('&', '%26') :  (myEventData["BillingCity"]) ? myEventData["BillingCity"] : '';
+                        
+                        var params = (myEventData["Name"] == undefined ? '' : "&acc2="+escapedName) + 
+                            (myEventData["{!JSENCODE(DunsFieldName)}"] == undefined ? '' : "&{!JSENCODE(DunsFieldId)}=" + myEventData["{!JSENCODE(DunsFieldName)}"]) +
+                            (myEventData["BillingStreet"] == undefined ? '' : "&acc17street="+escapedStreet) +
+                            (myEventData["BillingCity"] == undefined ? '' : "&acc17city="+escapedCity) +
+                            (myEventData["BillingState"] == undefined ? '' : "&acc17state="+myEventData["BillingState"]) +
+                            (myEventData["BillingCountry"] == undefined ? '' : "&acc17country="+myEventData["BillingCountry"]) +
+                            (myEventData["BillingPostalCode"] == undefined ? '' : "&acc17zip="+myEventData["BillingPostalCode"]) +
+                            (recordTypeSelection == undefined ? '' : "&RecordType="+recordTypeSelection);
+                        link = link + params;
+                        if(link.includes("setup/ui/recordtypeselect.jsp")){
+                            link = link.replace("setup/ui/recordtypeselect.jsp","001/e");
+                        }
+                        window.location = link;
+                        
+                    }
+                });
+
+                $A.eventService.addHandler({
+                    event: 'force:navigateToSObject',
+                    handler: function(event) { 
+                        var recordId =  event.getParam("recordId");
+                        
+                        window.location = '/'+recordId;
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+    	let header = document.getElementById("AppBodyHeader");
+    	if(header == null){
+            document.getElementById("lightning").style.height = "100vh";
+        }
+    </script>
+    <!-- Google Tag Manager -->
+	<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PX5V4GS');
+    </script>
+	<!-- End Google Tag Manager -->
+</apex:page>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>许可控制</value>
+    </caseValues>
+    <fields>
+        <help>此复选框控制用户为属于指定区域/实践/组的项目生成和下达开票事件的能力，以及编辑资源业务记录的开票相关字段（开票复选框和开票事件项）。</help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help>选中此框以查找与层次结构关联的权限控制（例如，区域，实践或组），这意味着除了指定的节点之外，权限还适用于（属于资源）层次结构中较低的所有节点。</help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help>授予用户比较项目版本的权限。</help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>授予用户创建项目版本的权限。</help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>授予用户删除项目版本的权限。</help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>指示此用户是否可以在“项目任务甘特图”和“甘特图”中编辑项目任务详细信息。</help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>此复选框控制用户输入/编辑自己以外的资源的费用和费用报表的功能。</help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help>此复选框控制用户在批准资源之后但在结算之前编辑资源的费用和费用报表的能力。</help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help>允许在Region / Practice / Group的Forecasts页面上执行编辑</help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help>允许查看地区/实践/组的预测页面</help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help>这是包含作为指定操作的目标的资源的组 - 例如代表此组中的资源的委派时间卡条目。</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此复选框控制用户编辑项目业务记录的与开票相关的字段（开票复选框，发票日期，发票编号）的能力。</help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help>这是包含作为指定操作的目标的资源的实践 - 例如，在本实践中代表资源委托的时间卡输入。</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>这是包含作为指定操作目标的资源分配的项目 - 例如，代表本项目中的资源委派的时间卡输入，仅与项目有关。</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>这是包含作为指定操作的目标的资源的区域 - 例如，代表此区域中的资源的委派的时间卡条目。</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此复选框控制用户输入/编辑指定区域/实践/组的资源请求的能力。</help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help>这是作为指定操作的目标的资源 - 例如代表此资源的委派的时间卡输入。</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help>此复选框控制用户从指定的区域/实践/组中配置资源的能力。</help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则授予用户创建团队的权限。</help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help>如果用户不是团队所有者，则授予用户编辑指定团队的权限。</help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help>如果用户不是团队所有者，则授予用户以只读模式查看指定团队的权限。</help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help>这是作为指定操作的目标的团队 - 例如代表此用户的团队视图。</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此复选框控制用户输入/编辑其他资源的时间卡的能力。</help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help>此复选框控制用户在获得批准后但在结算之前编辑资源的时间卡的能力。</help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>指示此用户是否可以在只读模式下使用Project Task Gantt和Gantt。</help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>权限</label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label>摘要</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>权限控制名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

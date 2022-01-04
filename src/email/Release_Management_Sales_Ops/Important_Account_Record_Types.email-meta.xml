@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>&apos;Customer&apos; and &apos;Partner&apos; Account Record Types (Nov &apos;21)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Important: Account Record Types</name>
+    <style>freeForm</style>
+    <subject>Upcoming Change: Separate &apos;Partner&apos; &amp; &apos;Customer&apos; Account Types in SFDC</subject>
+    <textOnly>Hello Salesforce Users!
+
+**WHAT YOU NEED TO KNOW**
+
+This upcoming change concerns users who work with Accounts in SFDC, especially those who create Accounts either through Lead conversion or the ‘Accounts’ tab.
+
+We are moving to separate direct and Partner accounts in SFDC to reflect the distinct nature of our relationship with each type of entity. The new structure will give the Partner team a better way to manage Partners in SFDC, facilitate partner-specific reporting, enable a separate hierarchy for Partner Accounts, keep ownership clean (AEs vs Partner team), and set the foundation for our future Salesforce-powered Partner Community implementation. This change will be live in SFDC for all users on November 15th, 2021.
+
+DEFINITIONS
+
+The two Account types are ‘Customer’ and ‘Partner’. They are just short system names that encompass multiple subtypes within each category.
+
+‘Customer’ applies to current customers, past customers, OEM, and prospects targeted as direct.
+
+‘Partner’ applies to current partners, past partners and prospective partners.
+
+
+WHAT TO EXPECT
+
+When creating an Account by converting a Lead, you will not notice any difference. This is because each user will be assigned a default Account type for converting Leads (‘Partner’ or ‘Customer’). For example, if your default type is ‘Customer’, when you convert a Lead, the resulting Account will be of type ‘Customer’ and vice versa.
+
+When creating an Account through the ‘Accounts’ tab, after clicking ‘New’, you will see the two choices on the screen (‘Partner’ and ‘Customer’) with your assigned default type preselected. If you want to create the other Account type, simply click the other radio button and proceed as usual.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+On the existing Account page, the fields, related lists, and picklist values will apply to the specific Account type of the record. For example, E&amp;Y Australia is a ‘Partner’ Account and therefore, the ‘Account Type’ field will show only Partner-specific values (i.e. Partner, Prospective Partner, Past Partner).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To change Account type of an existing Account, use the ‘Change Record Type’ button at the top of your screen. This need may arise for some AEs whose assigned default type is ‘Customer’ and who mostly create ‘Customer’ Accounts, but sometimes ‘Partner’ Accounts as well.
+
+
+
+
+
+
+
+
+
+
+
+Please let us know if you have any questions by reaching out to us at salesforce@neo4j.com.
+
+Thank you,
+Salesforce Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

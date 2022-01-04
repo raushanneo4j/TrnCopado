@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Jira設定のデフォルトの割り当て --></value>
+    </caseValues>
+    <fields>
+        <help>単一のバッチで処理するレコードの数。デフォルト値は1です。</help>
+        <label><!-- Default Assignments for Jira Batch Size --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Chatter、電子メール、またはタスクを介して送信されるJiraバッチ通知のデフォルト割り当ての通知受信者を指定します。値は、セミコロン（;）で区切られた電子メールアドレスのリストです。空白のままにすると、プロセスを開始したユーザーに通知されます。</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notification_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Jiraバッチプロセスのデフォルトの割り当てからの通知がChatterを介して[通知受信者]フィールドにリストされた受信者に送信されます。これはデフォルトでは選択解除されています。</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_by_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Jiraバッチプロセスのデフォルトの割り当てからの通知が、[通知の受信者]フィールドにリストされた受信者に電子メールで送信されます。これはデフォルトでは選択解除されています。</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_by_Email__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Jiraバッチプロセスのデフォルトの割り当てからの通知は、タスクを介して[通知の受信者]フィールドにリストされた受信者に送信されます。これはデフォルトでは選択解除されています。</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_by_Task__c</name>
+    </fields>
+</CustomObjectTranslation>

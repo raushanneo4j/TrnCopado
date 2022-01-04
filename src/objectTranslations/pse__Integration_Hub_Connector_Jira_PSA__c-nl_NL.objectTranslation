@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Integratie Hub-connector: Jira - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Integratie Hub-connector: Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>E-mailadres voor het ontvangen van foutmeldingen als de integratie met Jira mislukt.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>De URL naar de Jira-applicatie. Gebruikt voor authenticatie.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer het veld Map PSA Projects to Jira Issues is geselecteerd, wordt de categorie van Jira issue-statussen bepaald die het toegewezen projectveld bijwerken met de waarde die is gedefinieerd in PSA veldwaarde voor het bijwerken van projecten.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer het veld Synchronisatieprojecten met Jira-issues inschakelen is geselecteerd, bepaalt het type Jira-issues waarmee PSA-projecten worden gesynchroniseerd. Deze waarde is hoofdlettergevoelig en het issue type moet in uw Jira-app aanwezig zijn.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of PSA-medewekers die met Jira zijn gesynchroniseerd een e-mailmelding ontvangen met hun Jira-gebruikersnaam en een link om hun wachtwoord in te stellen.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden PSA-projecten toegewezen aan Jira-issues, in plaats van aan Jira-projecten. Het type Jira-issue wordt bepaald door de waarde van het veld Jira-issuetype.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Maximumaantal dagen van de tijdkaart, beginnend met maandag, de tijd kan voor elke medewerker worden vastgelegd tegen elke week. U kunt een geheel getal tussen 1 en 7 invoeren. Voer bijvoorbeeld 5 in om de tijdsregistratie in te schakelen voor maandag tot vrijdag.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Maximum aantal tijdkaart-uren dat dagelijks voor een medewerker kan worden vastgelegd. U kunt een waarde tussen 1 en 24 invoeren.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer het veld Map PSA Projects to Jira Issues is geselecteerd, wordt de waarde bepaald waarmee het toegewezen projectveld wordt bijgewerkt wanneer een Jira-issue de status heeft die is gedefinieerd in Jira Issue Status Categorie. Deze waarde is hoofdlettergevoelig.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Naam van het aangepaste Jira-veld dat wordt gebruikt om een probleem te koppelen aan een bovenliggend issue type, bijvoorbeeld HoofdLink. De relatie kan meerdere niveaus hebben, maar het probleemtype dat is gedefinieerd in Jira Issue Type is het hoogste type waarmee rekening is gehouden.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of Jira-werklogboeken moeten worden gesynchroniseerd met PSA-tijdkaarten. Wordt automatisch ingevuld wanneer Synchronisatiewerklogboeken van Jira naar tijdkaarten in PSA-workflow worden ingeschakeld met behulp van de functieconsole.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of PSA-projecten moeten worden gesynchroniseerd met Jira-issues. Wordt automatisch ingevuld wanneer de Synchronisatieprojecten van PSA naar issues in Jira-workflow zijn ingeschakeld met behulp van de functieconsole.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of PSA-projecten moeten worden gesynchroniseerd met Jira-projecten. Wordt automatisch ingevuld wanneer de Synchronisatieprojecten van PSA naar projecten in Jira-workflow is ingeschakeld met behulp van de functieconsole.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of PSA-medewekers moeten worden gesynchroniseerd met Jira-gebruikers. Wordt automatisch ingevuld wanneer de Synchronisatiemedewekers van PSA naar gebruikers in Jira-workflow zijn ingeschakeld met behulp van de functieconsole.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>Status waarin tijdkaarten worden gemaakt.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of PSA-projecten moeten worden bijgewerkt op basis van de Jira-uitgavestatus.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de Jira-toepassing in de Jira-toepassings-URL een Jira Cloud-versie is. Verlof gedeselecteerd als u Jira Server gebruikt.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

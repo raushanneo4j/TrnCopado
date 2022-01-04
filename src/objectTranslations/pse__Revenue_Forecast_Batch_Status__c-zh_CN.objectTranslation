@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>收入预测批次状态</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Status --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>与该批处理状态记录相关的记录的Salesforce记录ID。</help>
+        <label><!-- Record ID --></label>
+        <name>pse__Record_Id__c</name>
+    </fields>
+    <fields>
+        <help>指示何时将相关记录排入队列以准备进行收入预测。这是系统控制的字段。</help>
+        <label><!-- Revenue Forecast Batch Update Pending --></label>
+        <name>pse__Revenue_Forecast_Batch_Update_Pending__c</name>
+    </fields>
+    <fields>
+        <help>上次更新收入预测的日期和时间。</help>
+        <label><!-- Revenue Forecast Last Updated --></label>
+        <name>pse__Revenue_Forecast_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>此收入预测的处理状态。</help>
+        <label><!-- Revenue Forecast Processing Status --></label>
+        <name>pse__Revenue_Forecast_Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>错误</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>没有开始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>待定</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>处理中</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Batch Status Layout</layout>
+        <sections>
+            <label>自订连结</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>收入预测批次状态名称</nameFieldLabel>
+</CustomObjectTranslation>

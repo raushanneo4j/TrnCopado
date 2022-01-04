@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_6351219</developerName>
+        <masterLabel>Opp Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Ops Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Procurement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renewal 75%</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Selected / Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renewal 50%</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Proposal/Price Quote</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renewal 25%</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Needs Analysis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Qualification</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.ARR__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CLOSE_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>STAGE_NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE2</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.ARR__c</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Use_Case__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Free Startup License,Free Education License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Qualification,Needs Analysis,Renewal 25%,Proposal/Price Quote,Renewal 50%,Selected / Negotiation,Renewal 75%,Contract Negotiation,Procurement,Sales Ops Review,Closed Won,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>CLOSE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My Pipeline This Year by Quarter</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>OpportunityLineItem.ARR__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

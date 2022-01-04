@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Utnyttelse --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Utnyttelse --></value>
+    </caseValues>
+    <fields>
+        <help>Antall oppgaver som skal behandles i en enkelt batch ved beregning av utnyttelse</help>
+        <label><!-- Assignment Batch Size --></label>
+        <name>pse__Assignment_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Angir maksimalt antall barnoppføringer over hvilke en batch-sletting brukes i stedet for å slette cascading.</help>
+        <label><!-- Batch Deletion Cut-Off Point --></label>
+        <name>pse__Batch_Deletion_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>Tillater beregning av kryssproduktkombinasjon av region, praksis og gruppe. Slik som Region etter praksis, eller Gruppe etter region</help>
+        <label><!-- Calculate Cross Products --></label>
+        <name>pse__Calculate_Cross_Products__c</name>
+    </fields>
+    <fields>
+        <help>Hvis sann, beregne mengden av planlagt tid for holdte (ikke tilordnede) ressursforespørsler.</help>
+        <label><!-- Calculate Held Resource Request Time --></label>
+        <name>pse__Calculate_Held_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Summary By Role --></label>
+        <name>pse__Calculate_Summary_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Unheld Resource Request Time --></label>
+        <name>pse__Calculate_Unheld_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <help>Kontrollerer feltene i ressursforespørselsobjektet for å inkludere bruksberegninger av uheldige ressursforespørsler. Denne innstillingen aksepterer egendefinerte og standardfeltverdier i SOQL-spørringer. Hvis ikke definert, bruker beregninger standardkriterier.</help>
+        <label><!-- Custom Filters for Unheld RR Utilization --></label>
+        <name>pse__CustomFiltersforUnheldRRUtilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Når batch sletter tidligere bruksberegninger, setter du det maksimale antall beregningsrekord for bruk for å behandle per batch.</help>
+        <label><!-- Deletion Batch Size --></label>
+        <name>pse__Deletion_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Når parti sletter tidligere bruksberegninger, setter du det maksimale antall bruksdetaljer og sammendragsposter for å behandle per batch.</help>
+        <label><!-- Deletion Child Record Batch Size --></label>
+        <name>pse__Deletion_Child_Record_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sant, bruker historisk bruk startdagen basert på arbeidskalenderen i stedet for brukerens lokalitet.</help>
+        <label><!-- Historical UTE Work Cal Start Day --></label>
+        <name>pse__Historical_UTE_Work_Cal_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Antall ressurser som skal behandles i en enkelt batch ved beregning av utnyttelse</help>
+        <label><!-- Resource Batch Size --></label>
+        <name>pse__Resource_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request Batch Size --></label>
+        <name>pse__Resource_Request_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Utilization Approach --></label>
+        <name>pse__Target_Utilization_Approach__c</name>
+    </fields>
+    <fields>
+        <help>Antall tidskort som skal behandles i en enkelt batch ved beregning av utnyttelse</help>
+        <label><!-- Timecard Batch Size --></label>
+        <name>pse__Timecard_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>En kommaavgrenset liste over tidskortstatusverdier som brukes til å bestemme hvilke tidskort som brukes til beregning av bruk.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer om flagget &quot;Report Master&quot; er tilbakestilt basert på tidsperioden og foreldreobjektet (kontrollert) eller basert på bruksberegningsnavnet (ikke merket)</help>
+        <label><!-- Uncheck Master Based On Time/Parent --></label>
+        <name>pse__Uncheck_Master_Based_On_Time_Parent__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sant, beregner bruksdetaljer ikke lenger enn sist dato på ressursen.</help>
+        <label><!-- Use Last Date on Resource --></label>
+        <name>pse__Use_Last_Date_on_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sant, brukes bruksmotor til beregning av utnyttelse med Shift Management. Standard er false.</help>
+        <label><!-- Use Utilization Engine for Shift Mgmt --></label>
+        <name>pse__Use_Utilization_Engine_TOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Utilization Engine --></label>
+        <name>pse__Use_Utilization_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Engine Batch Size --></label>
+        <name>pse__Utilization_Engine_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Angir antall dager i fremtiden for å opprettholde sanntidsutnyttelsesdata for Shift Management. Standardverdien er 30.</help>
+        <label><!-- Utilization Eng Max Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Max_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antall dager inn i fremtiden for å opprettholde real-time utnyttelsesdata</help>
+        <label><!-- Utilization Engine Max Range --></label>
+        <name>pse__Utilization_Engine_Max_Range__c</name>
+    </fields>
+    <fields>
+        <help>Angir antall dager før gjeldende dato for å beregne sanntidsutnyttelsesdata for Shift Management. Standardverdien er 5.</help>
+        <label><!-- Utilization Eng Start Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Start_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Definerer antall dager før gjeldende dato for å beregne sanntidsutnyttelsesdata. Sett til 0 for å begynne å beregne fra dagens dato. Standardverdien er 50.</help>
+        <label><!-- Utilization Engine Start Range --></label>
+        <name>pse__Utilization_Engine_Start_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

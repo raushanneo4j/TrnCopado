@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Type de prévision de revenu</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Types de prévisions de revenus</value>
+    </caseValues>
+    <fields>
+        <help>Contient la valeur combinée des champs Reconnaissance comptabilisée à ce jour et Reconnaissance en attente de revenu.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Recherchez le jalon auquel ce type de prévision de revenus se rapporte.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Recherche de l’opportunité à laquelle ce type de prévision de revenus se rapporte.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Recherche dans le projet auquel ce type de prévision de revenus se rapporte.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Recherchez les prévisions de revenus correspondantes.</help>
+        <label><!-- Revenue Forecast --></label>
+        <name>pse__Revenue_Forecast__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le chiffre d’affaires prêt à être comptabilisé dans cette prévision.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>Le chiffre d&apos;affaires qui a déjà été comptabilisé dans cette prévision de chiffre d&apos;affaires.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indique la source des revenus pour cet enregistrement.</help>
+        <label><!-- Revenue Source --></label>
+        <name>pse__Revenue_Source__c</name>
+        <picklistValues>
+            <masterLabel>% Complete: Milestone</masterLabel>
+            <translation>% Achevé: Jalon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Complete: Project</masterLabel>
+            <translation>% Achevé: projet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: EVA</masterLabel>
+            <translation>Livrable: EVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Expense</masterLabel>
+            <translation>Livrable: Dépense</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Milestone</masterLabel>
+            <translation>Livrable: Jalon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Miscellaneous Adjustment</masterLabel>
+            <translation>Livrable: ajustement divers</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Timecard</masterLabel>
+            <translation>Livrable: fiche de présence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Milestone</masterLabel>
+            <translation>Égal partage: Jalon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Project</masterLabel>
+            <translation>Égal partage: projet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation>Opportunité</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Indique si les valeurs de cet enregistrement s&apos;appliquent aux revenus réels ou prévus.</help>
+        <label><!-- Revenue Type --></label>
+        <name>pse__Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actuals</masterLabel>
+            <translation>Chiffres réels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation>Prévoir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le chiffre d&apos;affaires dont la comptabilisation est prévue dans cette prévision.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Si certains mois ne contiennent aucun revenu prévu ou réel, le revenu non planifié est réparti uniformément sur ces mois, à l’exception des mois vides compris entre des mois contenant des revenus prévus ou réels.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Type Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du type de prévision de revenu</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

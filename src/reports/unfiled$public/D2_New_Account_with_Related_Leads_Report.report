@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.LeanData__Leads__r$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$Company</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>D2 New Account with Related Leads Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeanData__Account_with_Related_Leads__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.LeanData__Leads__r$Company</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.LeanData__Leads__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-03-02</startDate>
+    </timeFrameFilter>
+</Report>

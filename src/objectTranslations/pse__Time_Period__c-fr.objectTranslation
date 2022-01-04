@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Période de temps</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Périodes de temps</value>
+    </caseValues>
+    <fields>
+        <help>Sélectionnez cette option pour marquer cette période comme fermée pour la prévision des revenus.</help>
+        <label><!-- Closed for Forecasting --></label>
+        <name>pse__Closed_For_Forecasting__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Mois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>Perpétuel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SemiMonthly</masterLabel>
+            <translation>Semi-mensuelle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>La semaine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>An</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Period Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Information</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>Informations système</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de période</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Time Period may not end before it starts --></errorMessage>
+        <name>pse__Time_Period_may_not_end_before_it_starts</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Opp moved down from Closed Won (unable to limit users from doing this at this time, filed support ticket 1/5/2018)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Opp Moved From Closed Won</name>
+    <style>none</style>
+    <subject>URGENT: {!Opportunity.Name} Moved Down from Closed Won</subject>
+    <textOnly>Opp Link: {!Opportunity.Link}
+New Stage: {!Opportunity.StageName}
+Opp Owner: {!Opportunity.OwnerFullName}
+Modified by:  {!Opportunity.LastModifiedBy}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

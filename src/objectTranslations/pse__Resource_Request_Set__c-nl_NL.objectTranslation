@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Medewerkersaanvraag Set</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Medewerkersaanvraag sets</value>
+    </caseValues>
+    <fields>
+        <help>Zoek naar het account. Dit wordt gekopieerd uit het bronresource-verzoek.</help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Opzoeken naar het bronverzoek dat moet worden gekopieerd bij het maken van een resourceaanvraagset.</help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zoek de kans op. Dit wordt gekopieerd uit het bronresource-verzoek.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Opzoeken naar het project. Dit wordt gekopieerd uit het bronresource-verzoek.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Datum en tijd waarop een resourceaanvraag behorend tot dezelfde resourceaanvraagset was bezet.</help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help>Opzoeken naar het resourceaanvraag. Dit is gevuld met het definitieve bemande resourceaanvraag behorend bij deze resourceaanvraagset.</help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Medewerkersaanvraag set naam</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+</CustomObjectTranslation>

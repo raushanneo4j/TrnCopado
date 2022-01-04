@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Permissie Control</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Permission Controls</value>
+    </caseValues>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om factureringsgebeurtenissen te genereren en vrij te geven voor projecten die behoren tot bepaalde regio&apos;s / praktijken / groepen en om factureringsgerelateerde velden (gefactureerd selectievakje en facturatiegebeurtenisitem) voor bedrijfsrecords van bronnen te bewerken.</help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help>Als u dit selectievakje inschakelt voor machtigingsregels die zijn gekoppeld aan een hiërarchie (bijvoorbeeld regio, praktijk of groep), betekent dit dat de machtiging ook geldt voor (bronnen behorend bij) alle knooppunten lager in de hiërarchie, naast het opgegeven knooppunt.</help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help>Verleent toestemming aan de gebruiker om projectversies te vergelijken.</help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Verleent toestemming aan de gebruiker om projectversies te maken.</help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Verleent toestemming aan de gebruiker om projectversies te verwijderen.</help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de geselecteerde gebruiker Projecttaak Gantt in de bewerkingsmodus kan gebruiken als ze niet de projectbeheerder van het geselecteerde project zijn.</help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om kosten- en onkostenrapporten in te voeren / bewerken voor andere bronnen dan die van hemzelf.</help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om onkosten- en onkostenrapporten voor resources te bewerken nadat deze zijn goedgekeurd maar voordat ze zijn gefactureerd.</help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Toegestaan ​​om te bewerken op de pagina Prognoses voor de regio / praktijk / groep</help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Toegestaan ​​om de pagina Prognoses voor de regio / praktijk / groep te bekijken</help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help>Dit is de groep met bronnen die het doelwit zijn van de opgegeven actie (s) - bijvoorbeeld gedelegeerde tijdkaartinvoer namens bronnen in deze groep.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om factuurgerelateerde velden (gefactureerd selectievakje, factuurdatum, factuurnummer) voor de bedrijfsrecords van Project te bewerken.</help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help>Dit is de praktijk met bronnen die het doelwit zijn van de opgegeven actie (s) - bijvoorbeeld gedelegeerde tijdkaartinvoer namens bronnen in deze praktijk.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit is het project met toewijzingen voor bronnen die het doelwit zijn van de opgegeven actie (s) - bijvoorbeeld gedelegeerde tijdkaartinvoer namens bronnen in dit project, alleen in relatie tot het project.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit is het gebied met bronnen die het doelwit zijn van de opgegeven actie (s) - bijvoorbeeld gedelegeerde tijdkaartinvoer namens bronnen in deze regio.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om resourceaanvragen in te voeren / bewerken voor bepaalde regio&apos;s / praktijken / groepen.</help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Dit is de resource die het doelwit is van de opgegeven actie (s) - bijvoorbeeld gedevalueerde tijdkaartvermelding namens deze resource.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt het vermogen van de gebruiker om resources van bepaalde regio&apos;s / praktijken / groepen te personnen.</help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, geeft het de gebruiker toestemming om een ​​team te maken.</help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help>Verleent toestemming voor de gebruiker om het aangegeven team te bewerken als de gebruiker niet de teameigenaar is.</help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Verleent toestemming voor de gebruiker om het aangegeven team in de alleen-lezen modus te bekijken als de gebruiker niet de teameigenaar is.</help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help>Dit is het team dat het doelwit is van de opgegeven actie (s) - bijvoorbeeld TeamView namens deze gebruiker.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om tijdkaarten in te voeren / bewerken voor andere bronnen dan die van hemzelf.</help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Dit selectievakje bepaalt de mogelijkheid van de gebruiker om tijdkaarten voor bronnen te bewerken nadat deze zijn goedgekeurd maar voordat ze zijn gefactureerd.</help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geeft aan of de geselecteerde gebruiker Projecttaak Gantt in de alleen-lezenmodus kan gebruiken als deze niet de projectbeheerder van het geselecteerde project is.</help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Machtigingen</label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label>Overzicht</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Permission Control Naam</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

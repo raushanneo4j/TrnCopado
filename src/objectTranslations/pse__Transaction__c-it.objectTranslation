@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transazione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Le transazioni</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>pse__Budget__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>pse__Category__c</name>
+        <picklistValues>
+            <masterLabel>Billable External Hours</masterLabel>
+            <translation>Ore esterne fatturabili</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billable Internal Hours</masterLabel>
+            <translation>Ore interne fatturabili</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billed Revenue</masterLabel>
+            <translation>Entrate fatturate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked Revenue</masterLabel>
+            <translation>Entrate prenotate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation>Costo preventivato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Expense Cost</masterLabel>
+            <translation>Costo di spesa preventivato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credited Non-Billable Internal Hours</masterLabel>
+            <translation>Ore interne non fatturabili accreditate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluded Hours</masterLabel>
+            <translation>Ore escluse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Budget</masterLabel>
+            <translation>Budget delle spese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Cost</masterLabel>
+            <translation>Costo di spesa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Cost</masterLabel>
+            <translation>Costo esterno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>Budget interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Cost</masterLabel>
+            <translation>Costo interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoiced Revenue</masterLabel>
+            <translation>Entrate fatturate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Billable External Hours</masterLabel>
+            <translation>Ore esterne non fatturabili</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Billable Internal Hours</masterLabel>
+            <translation>Ore interne non fatturabili</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Cost</masterLabel>
+            <translation>Altro costo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass-Through Ready-to-Bill Revenue</masterLabel>
+            <translation>Entrate Ready-to-Bill pass-through</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Billed Revenue</masterLabel>
+            <translation>Entrate pre-fatturate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready-to-Bill Revenue</masterLabel>
+            <translation>Entrate pronte per la fatturazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>Reddito</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense --></label>
+        <name>pse__Expense__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group Currency Code --></label>
+        <name>pse__Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Currency Exchange Rate --></label>
+        <name>pse__Group_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Adjustment --></label>
+        <name>pse__Miscellaneous_Adjustment__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Se selezionata, questa casella di controllo indica che il Gruppo per la Transazione è stato impostato indipendentemente dalle consuete &quot;regole seguenti&quot; per i roll-up. Invece, è stato sovrascritto al livello di business record (Budget, Milestone, Misc Adjustment).</help>
+        <label><!-- Overridden Group --></label>
+        <name>pse__Overridden_Group__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionata, questa casella di controllo indica che la Procedura per la Transazione è stata impostata indipendentemente dalle consuete &quot;regole seguenti&quot; per i roll-up. Invece, è stato sovrascritto al livello di business record (Budget, Milestone, Misc Adjustment).</help>
+        <label><!-- Overridden Practice --></label>
+        <name>pse__Overridden_Practice__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionata, questa casella di controllo indica che la Regione per la Transazione è stata impostata indipendentemente dalle consuete &quot;regole seguenti&quot; per i roll-up. Invece, è stato sovrascritto al livello di business record (Budget, Milestone, Misc Adjustment).</help>
+        <label><!-- Overridden Region --></label>
+        <name>pse__Overridden_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Currency Code --></label>
+        <name>pse__Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Currency Exchange Rate --></label>
+        <name>pse__Practice_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Currency Code --></label>
+        <name>pse__Project_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region Currency Code --></label>
+        <name>pse__Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Currency Exchange Rate --></label>
+        <name>pse__Region_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Record Ineligible --></label>
+        <name>pse__Related_Record_Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record ID --></label>
+        <name>pse__Related_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record Name --></label>
+        <name>pse__Related_Record_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record --></label>
+        <name>pse__Related_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Currency Code --></label>
+        <name>pse__Resource_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Currency Exchange Rate --></label>
+        <name>pse__Resource_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation>Bilancio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense</masterLabel>
+            <translation>Spese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice (Inbound)</masterLabel>
+            <translation>Fattura (in entrata)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice (Outbound)</masterLabel>
+            <translation>Fattura (in uscita)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milestone</masterLabel>
+            <translation>Pietra miliare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Adjustment</masterLabel>
+            <translation>Regolazione Varie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Order</masterLabel>
+            <translation>Ordinazione d&apos;acquisto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Order</masterLabel>
+            <translation>Ordine di vendita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard</masterLabel>
+            <translation>Cartellino</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- For Billing --></label>
+        <name>pse__isBilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cost --></label>
+        <name>pse__isCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Expense --></label>
+        <name>pse__isExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- For Invoicing --></label>
+        <name>pse__isInvoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Revenue --></label>
+        <name>pse__isRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Time --></label>
+        <name>pse__isTime__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label>Informazioni sulla valuta</label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazione</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>Regione, Pratica e Gruppo</label>
+            <section>Region, Practice, and Group</section>
+        </sections>
+        <sections>
+            <label>Informazioni di sistema</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numero di transazione</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Transactions must have an Effective Date. --></errorMessage>
+        <name>pse__Transactions_must_have_an_Effective_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

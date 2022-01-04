@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert appropriate PS team members when an Opportunity with at least one PS product moves to Sales Ops Review (98%)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Professional Services Opportunity Moves to Sales Ops Review (98%)</name>
+    <style>none</style>
+    <subject>PS Opportunity Moved to Sales Ops Review (98%): {!Opportunity.Name}</subject>
+    <textOnly>Opportunity: {!Opportunity.Name}
+Account: {!Account.Name}
+Amount: {!Opportunity.Amount}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

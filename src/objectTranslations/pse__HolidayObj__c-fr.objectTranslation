@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vacances</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vacances</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Holidays --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Entrez le nombre d&apos;heures travaillées ce jour-là (par exemple, 0 pour une journée de congé complète, 4 pour une demi-journée)</help>
+        <label><!-- Work Hours --></label>
+        <name>pse__Work_Hours__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Holiday Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de vacances</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,2332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>タイムカード分割</value>
+    </caseValues>
+    <fields>
+        <help>このチェックボックスは、タイムカード分割が承認されたときにチェックする必要があります。これは、親のタイムカードが承認されたかどうかに基づいて行う必要があります。</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Currency Code --></label>
+        <name>pse__Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード分割の終了日に計算された、企業通貨に対する相対為替レート</help>
+        <label><!-- Cost Rate Exchange Rate --></label>
+        <name>pse__Cost_Rate_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>タイムカード分割が請求イベント生成に適格な状態にあることを示します（請求承認フラグは含まれません。これはグローバル設定ごとにも必要となる場合があります）。</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>OBSOLETE FIELD</help>
+        <label><!-- Est Vs Actuals --></label>
+        <name>pse__Est_Vs_Actuals__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>チェックした場合、このビジネス記録に請求しないでください。 Billing Holdと同じ効果ですが、Billing Generationからの永久的な除外を反映することを目的としています。</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Notes --></label>
+        <name>pse__Friday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location - Fri --></label>
+        <name>pse__Location_Fri__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Mon --></label>
+        <name>pse__Location_Mon__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sat --></label>
+        <name>pse__Location_Sat__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sun --></label>
+        <name>pse__Location_Sun__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Thu --></label>
+        <name>pse__Location_Thu__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Tue --></label>
+        <name>pse__Location_Tue__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Wed --></label>
+        <name>pse__Location_Wed__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>アラバマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>アラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>アメリカ領サモア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>アンザック</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>アリゾナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>アーカンソー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>アジア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>カリフォルニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>カナダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>コロラド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>デラウェア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>コロンビアの地区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ミクロネシア連邦</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>フロリダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ジョージア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>グアム</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>ハワイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>アイダホ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>イリノイ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>インディアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>アイオワ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>カンザス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>ケンタッキー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>ラテンアメリカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>ルイジアナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>メイン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>マーシャル諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>メリーランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>マサチューセッツ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>メキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>ミチガン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>ミネソタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>ミスシピピ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>ミスソウリ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>モンタナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>ネブラスカ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>ネバダ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ニューハンプシャー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ニュージャージー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ニューメキシコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ニューヨーク</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>ノースカロライナ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>ノースダコタ州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>北マリアナ諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>オハイオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>オクラホマ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>オレゴン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>パラオ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>ペンシルバニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>プエルトリコ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>ロードアイランド</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>南カロライナ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>サウス・ダコタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>テネシー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>テキサス</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>ユタ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>バーモント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>ヴァージン諸島</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>バージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>ワシントン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>ウェストバージニア</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ウィスコンシン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>ワイオミング</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Notes --></label>
+        <name>pse__Monday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Group Currency Code --></label>
+        <name>pse__Override_Cost_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、そのプロジェクトまたはリソースが別のグループに属していても、TC分割の原価取引がグループ実績にロールアップするグループをオーバーライドします。</help>
+        <label><!-- Override Cost Group --></label>
+        <name>pse__Override_Cost_Group__c</name>
+        <relationshipLabel><!-- Override Cost Group For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Practice Currency Code --></label>
+        <name>pse__Override_Cost_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、そのプロジェクトまたはリソースが異なるプラクティスにある場合でも、TCスプリットの原価取引がプラクティス実績にロールアップするプラクティスをオーバーライドします。</help>
+        <label><!-- Override Cost Practice --></label>
+        <name>pse__Override_Cost_Practice__c</name>
+        <relationshipLabel><!-- Override Cost Practice For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Region Currency Code --></label>
+        <name>pse__Override_Cost_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、そのプロジェクトまたはリソースが別の地域にある場合でも、TC分割の原価取引が地域の実績にロールアップする地域をオーバーライドします。</help>
+        <label><!-- Override Cost Region --></label>
+        <name>pse__Override_Cost_Region__c</name>
+        <relationshipLabel><!-- Override Cost Region For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Group Currency Code --></label>
+        <name>pse__Override_Revenue_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、プロジェクトまたはリソースが別のグループに属していても、TC分割の収入取引がグループ実績にロールアップするグループをオーバーライドします。</help>
+        <label><!-- Override Revenue Group --></label>
+        <name>pse__Override_Revenue_Group__c</name>
+        <relationshipLabel><!-- Override Revenue Group For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Practice Currency Code --></label>
+        <name>pse__Override_Revenue_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、そのプロジェクトまたはリソースが異なるプラクティスにある場合でも、TCスプリットの収益取引がプラクティス実績にロールアップするプラクティスをオーバーライドします。</help>
+        <label><!-- Override Revenue Practice --></label>
+        <name>pse__Override_Revenue_Practice__c</name>
+        <relationshipLabel><!-- Override Revenue Practice For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Region Currency Code --></label>
+        <name>pse__Override_Revenue_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>設定されている場合、そのプロジェクトまたはリソースが別の地域にある場合でも、TC分割の収入取引が地域の実績にロールアップする地域をオーバーライドします。</help>
+        <label><!-- Override Revenue Region --></label>
+        <name>pse__Override_Revenue_Region__c</name>
+        <relationshipLabel><!-- Override Revenue Region For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>タイムカード分割の終了日に計算された、会社の通貨に対するプロジェクト（請求レート）為替レート</help>
+        <label><!-- Project Exchange Rate --></label>
+        <name>pse__Project_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>収益予測のためにこのレコードに適用する認識方法。</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Notes --></label>
+        <name>pse__Saturday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>拒否されました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation>保存しました</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>送信済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Notes --></label>
+        <name>pse__Sunday_Notes__c</name>
+    </fields>
+    <fields>
+        <help>このチェックボックスはシステム用です。これは、将来のメソッド内で実行されるタイムカード分割の挿入/更新と併せてチェックすることを目的としており、それ以降の将来のメソッドが呼び出されないようにします。</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Notes --></label>
+        <name>pse__Thursday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Credited --></label>
+        <name>pse__Time_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Excluded --></label>
+        <name>pse__Time_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Transaction --></label>
+        <name>pse__Time_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Time Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard Header --></label>
+        <name>pse__Timecard_Header__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard Notes --></label>
+        <name>pse__Timecard_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>pse__Total_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>pse__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>pse__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Fri --></label>
+        <name>pse__Travel_Fri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Mon --></label>
+        <name>pse__Travel_Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sat --></label>
+        <name>pse__Travel_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sun --></label>
+        <name>pse__Travel_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Thu --></label>
+        <name>pse__Travel_Thu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Tue --></label>
+        <name>pse__Travel_Tue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Wed --></label>
+        <name>pse__Travel_Wed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel? --></label>
+        <name>pse__Travel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Notes --></label>
+        <name>pse__Tuesday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Notes --></label>
+        <name>pse__Wednesday_Notes__c</name>
+    </fields>
+    <layouts>
+        <layout>Timecard Split Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>財務データ</label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label>情報</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>システムインフォメーション</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>タイムカード分割ID</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Project must match Assignment Project. --></errorMessage>
+        <name>pse__TimecardSplit_Assignment_Proj_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Resource must match Assignment Resource. --></errorMessage>
+        <name>pse__TimecardSplit_Assignment_Res_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bill Date is locked if Billed or Invoiced. --></errorMessage>
+        <name>pse__TimecardSplit_Bill_Date_Locking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard Split to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__TimecardSplit_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Date is locked if Invoiced. --></errorMessage>
+        <name>pse__TimecardSplit_Invoice_Date_Locking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard Split to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__TimecardSplit_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Project must match Milestone Project. --></errorMessage>
+        <name>pse__TimecardSplit_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Split&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked and Audit Notes are provided on the parent Timecard Header and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Split_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Splits for this Project and/or Resource require an Assignment. --></errorMessage>
+        <name>pse__Timecard_Split_Requires_Assignment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Split&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked and Audit Notes are provided on the parent Timecard Header and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Split_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice item cannot be changed once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

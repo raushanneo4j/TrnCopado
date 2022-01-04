@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 项目版本控制全局设置 --></value>
+    </caseValues>
+    <fields>
+        <help><!-- This field is reserved for future development. Do not use. --></help>
+        <label><!-- DEPRECATED:Capturing Version Config Name --></label>
+        <name>pse__Capturing_Version_Config_Name__c</name>
+    </fields>
+    <fields>
+        <help>在创建项目版本时定义批处理大小。默认值为500。</help>
+        <label><!-- Create Version Batch Size --></label>
+        <name>pse__Create_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>删除项目版本时定义批处理大小。默认值为500。</help>
+        <label><!-- Delete Version Batch Size --></label>
+        <name>pse__Delete_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>在比较版本的简介快速帮助中定义用于自定义语言和图形的静态资源的名称（带名称空间前缀）。留空以使用默认资源。</help>
+        <label><!-- View Project Version Quick Help Resource --></label>
+        <name>pse__VPV_Quick_Help_Resource__c</name>
+    </fields>
+    <fields>
+        <help>定义View Project Versions的详细视图中加载的记录数。增加该值可以改善加载时间，但可能会遇到平台限制。默认值为500.输入0作为此字段的值将导致不加载任何记录。</help>
+        <label><!-- View Project Version Records Loaded --></label>
+        <name>pse__VPV_Records_loaded_per_call__c</name>
+    </fields>
+</CustomObjectTranslation>

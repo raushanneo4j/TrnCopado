@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Aufgabenverwaltungseinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Aufgabenverwaltungseinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Aufgabenverwaltungseinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Aufgabenverwaltungseinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Aufgabenverwaltungseinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Wenn dies der Fall ist, werden Fehler beim Erstellen von Zuweisungen oder Zuweisungsmeilensteinen ignoriert, und dadurch werden Datensätze für die Zuweisung von Projektaufgaben erstellt. Diese Option wird ignoriert, es sei denn, Aufgabenzuweisungen automatisch erstellen ist wahr.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob beim Zuweisen einer Ressource zu einem Projekt oder beim Erstellen eines neuen Zuweisungsmeilenstein-Datensatzes nicht zugewiesene Projektaufgaben automatisch zugeordnet werden sollen, die zum selben Meilenstein gehören wie die Zuweisung. Der Standardwert ist false.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, werden Fehler beim Löschen von Zuweisungen oder Zuweisungsmeilensteinen ignoriert und das Löschen von Projektaufgabenzuweisungssätzen wird verursacht. Diese Option wird ignoriert, es sei denn, Aufgabenzuweisungen automatisch entfernen ist wahr.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob Projektaufgabenzuweisungen automatisch entfernt werden, wenn eine Ressource oder ein Meilenstein entfernt wird oder der Meilenstein nicht mehr mit dieser Zuordnung verknüpft ist. Der Standardwert ist false.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Steuert die Standardreihenfolge von Aufgaben auf der Taskverwaltungsschnittstelle beim ersten Laden und nach dem Aktualisieren. Dies muss nach einer SOQL ORDER BY-Klausel gültig sein.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Name des Feldsets im Projektaufgabenzuweisungsobjekt, das eine Liste von Feldern enthält, die zur Bearbeitung gesperrt werden, wenn der Datensatz nicht gesperrt ist.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Name des Feldsets im Projektaufgabenabhängigkeitsobjekt, das eine Liste von Feldern enthält, die zur Bearbeitung gesperrt werden, wenn der Datensatz nicht gesperrt ist.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Name des Feldsets für das Projektaufgabenobjekt, das eine Liste von Feldern enthält, die zur Bearbeitung gesperrt werden, wenn der Datensatz nicht gesperrt ist.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl der Projekte, die für die Auswahl in der Task Management-Benutzeroberfläche geladen werden sollen</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Änderungen am Enddatum der Aufgabe speichern, wenn diese größer als das Meilensteinzieldatum ist.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, können Sie keine Änderungen am Enddatum der Aufgabe speichern, wenn sie außerhalb des Bereichs der Start- und Enddaten des Projekts liegen.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Änderungen am Enddatum der Aufgabe speichern, wenn diese außerhalb der Reichweite der Aufgaben für die Projektaufgabenzuweisung liegen.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Änderungen am Enddatum der Aufgabe speichern, wenn diese außerhalb der Reichweite der Stunden für die Zuweisung von Projektaufgaben liegt.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, können Sie keine Änderungen am Startdatum der Aufgabe speichern, wenn diese größer als das Meilensteinzieldatum ist.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Änderungen am Startdatum der Aufgabe speichern, wenn sie außerhalb des Bereichs der Start- und Enddaten des Projekts liegen.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

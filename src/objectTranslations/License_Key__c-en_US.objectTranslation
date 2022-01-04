@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Activation Key</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Activation Keys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Activation Keys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Activation Keys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Email associated with the license key --></help>
+        <label><!-- Key recipient email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Expiration date for the license key --></help>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feature version associated with the license key --></help>
+        <label><!-- Feature Version --></label>
+        <name>Feature_Version__c</name>
+        <picklistValues>
+            <masterLabel>Any Version</masterLabel>
+            <translation><!-- Any Version --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Feature associated with the license key --></help>
+        <label><!-- Product/Feature --></label>
+        <name>Feature__c</name>
+        <picklistValues>
+            <masterLabel>Neo4j Bloom Server (Plugin)</masterLabel>
+            <translation><!-- Neo4j Bloom Server (Plugin) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Desktop</masterLabel>
+            <translation><!-- Neo4j Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Graph Data Science (GDS)</masterLabel>
+            <translation><!-- Neo4j Graph Data Science (GDS) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Neo4j License Key --></help>
+        <label><!-- Key --></label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Activation Keys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Days --></label>
+        <name>Number_of_Active_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity associated with License Key request --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Activation Keys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of the organization associated with the license key --></help>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+    </fields>
+    <fields>
+        <help><!-- Publisher of the feature --></help>
+        <label><!-- Publisher --></label>
+        <name>Publisher__c</name>
+        <picklistValues>
+            <masterLabel>neo4j.com</masterLabel>
+            <translation><!-- neo4j.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of user licenses associated with the key --></help>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Registrant First Name used in email templates --></help>
+        <label><!-- Registrant First Name --></label>
+        <name>Registrant_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the contact associated with the key --></help>
+        <label><!-- Registrant --></label>
+        <name>Registrant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email of the Neo4j sales rep who owns the record --></help>
+        <label><!-- Sales Rep Email --></label>
+        <name>Sales_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep ID --></label>
+        <name>Sales_Rep_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Neo4j sales rep who owns the record --></help>
+        <label><!-- Sales Rep Name --></label>
+        <name>Sales_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of key requested --></help>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formatted date field used in email templates --></help>
+        <label><!-- X_Expiration_Date_Formatted --></label>
+        <name>X_Expiration_Date_Formatted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal field for triggering the fetching of new license key from the key server --></help>
+        <label><!-- X_Generate_License_Key --></label>
+        <name>X_Generate_License_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field triggers the sending of licensing key to the registrant --></help>
+        <label><!-- X_Send_License_Key --></label>
+        <name>X_Send_License_Key__c</name>
+    </fields>
+    <layouts>
+        <layout>License Key Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

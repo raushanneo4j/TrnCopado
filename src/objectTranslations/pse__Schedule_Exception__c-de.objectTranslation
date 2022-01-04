@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zeitplan-Ausnahme</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ausnahmen planen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitplan-Ausnahme --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Ausnahmen planen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitplan-Ausnahme --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Ausnahmen planen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Zeitplan-Ausnahme --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Ausnahmen planen --></value>
+    </caseValues>
+    <fields>
+        <help>Geben Sie das Startdatum des Ausnahmezeitraums ein</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>Das Enddatum des Ausnahmezeitraums</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie die Standardanzahl von Stunden ein, die verwendet werden sollen, wenn für einen einzelnen Tag kein Wert angegeben ist. Wenn dieser Wert beispielsweise 2 ist und kein Wert für Montag Stunden angegeben ist, wird die Anzahl der Stunden für Montag wie 2 behandelt.</help>
+        <label><!-- Default Exception Hours Per Day --></label>
+        <name>pse__Exception_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Friday End Time ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Friday End Time --></label>
+        <name>pse__Friday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Freitag Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Friday Start Time --></label>
+        <name>pse__Friday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Die Montag-Endzeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Monday End Time --></label>
+        <name>pse__Monday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Monday Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Monday Start Time --></label>
+        <name>pse__Monday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Samstagsendezeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Saturday End Time --></label>
+        <name>pse__Saturday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Samstag Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Saturday Start Time --></label>
+        <name>pse__Saturday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>pse__Schedule__c</name>
+        <relationshipLabel><!-- Schedule Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sonntag Endzeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Sunday End Time --></label>
+        <name>pse__Sunday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Sonntag Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Sunday Start Time --></label>
+        <name>pse__Sunday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Donnerstag Endzeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Thursday End Time --></label>
+        <name>pse__Thursday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Donnerstag Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Thursday Start Time --></label>
+        <name>pse__Thursday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Dienstag Endzeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Tuesday End Time --></label>
+        <name>pse__Tuesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Dienstag Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Tuesday Start Time --></label>
+        <name>pse__Tuesday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Mittwoch Endzeit ist die geplante Endzeit am angegebenen Tag.</help>
+        <label><!-- Wednesday End Time --></label>
+        <name>pse__Wednesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Mittwoch Startzeit ist die geplante Startzeit am angegebenen Tag.</help>
+        <label><!-- Wednesday Start Time --></label>
+        <name>pse__Wednesday_Start_Time__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Schedule Exception Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Std</label>
+            <section>Hours</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Ausnahmenname einplanen</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start and/or End Date does not fall within the start and end dates of the schedule. --></errorMessage>
+        <name>pse__Check_Date_Range</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates the revenue forecast setup record used for revenue forecast calculations. You can only have one active revenue forecast setup record. --></help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, opportunities are excluded from revenue forecast scheduled jobs. --></help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to exclude revenue relating to held resource requests on projects and milestones. --></help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records to be processed at the same time, such as timecards and expenses. --></help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of opportunities and opportunity line items to be processed at the same time. --></help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of projects to be processed at the same time. --></help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field on the Opportunity object you want to use as the expected project end date. --></help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field on the Opportunity object you want to use as the expected project start date. --></help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the API name of the field on the Project object you want to use to calculate the value in the % Hours Completed For Recognition field. If required, you can create your own field and add it to the picklist. --></help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation><!-- pse__Estimated_Hours_at_Completion__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation><!-- pse__Planned_Hours__c --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Forecast Batch Settings --></label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Settings --></label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Project Settings --></label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Setup Details --></label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

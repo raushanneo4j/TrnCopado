@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>Create Renewal Opp and its Lines flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>create renewal opp and lines flow</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Create_Renewal_Opp_and_its_Lines_flow</actionName>
+        <actionType>flow</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>varOpportunityID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>varOpportunityID</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Has subscrip and becomes won?</label>
+        </rules>
+    </decisions>
+    <description>Added in SFDC-0145. Revised on 2021-Feb-09 to no longer submit the opp into approvals locking. Revised on 2021-03-31 As of 2021-03-31 we use process builder to call flow because we cannot use ischanged/priorvalue formulas in Flow criteria unless you pass it as a variable from process builder: https://trailblazers.salesforce.com/answers?id=9063A000000ivmhQAA.  An alternative would be to call the flow from apex, or use apex entirely.  Additionally turning off the pb anti recursion check and instead leaning on keeping the pb&gt; advanced  &gt; allow recursion OFF.</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ischanged([Opportunity].stagename),
+priorvalue([Opportunity].iswon)==false,
+[Opportunity].iswon,
+[Opportunity].Has_Subscription_Line_Items__c ,
+NOT([Opportunity].Do_Not_Create_Renewal__c),
+NOT([Opportunity].Stop_Recursion_in_Renewal_Opp_Create__c )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ischanged({!myVariable_current.StageName}),
+priorvalue({!myVariable_current.IsWon})==false,
+{!myVariable_current.IsWon},
+{!myVariable_current.Has_Subscription_Line_Items__c} ,
+NOT({!myVariable_current.Do_Not_Create_Renewal__c}),
+NOT({!myVariable_current.Stop_Recursion_in_Renewal_Opp_Create__c} )
+)</expression>
+    </formulas>
+    <interviewLabel>Create_Renewal_Opp_and_lines_processbuilder-8_InterviewLabel</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>Oppty: Create Subscrip Renewal Opp and Lines</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

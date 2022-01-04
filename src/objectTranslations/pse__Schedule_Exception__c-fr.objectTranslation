@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Exception d&apos;horaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programmer des exceptions</value>
+    </caseValues>
+    <fields>
+        <help>Entrez la date de début de la plage de dates d&apos;exception</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>La date de fin de la plage de dates d&apos;exception</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Entrez le nombre d&apos;heures par défaut à utiliser si aucune valeur n&apos;est donnée pour un jour individuel. Par exemple, si cette valeur est 2 et qu&apos;aucune valeur pour le lundi n&apos;est fournie, le nombre d&apos;heures du lundi sera traité comme 2.</help>
+        <label><!-- Default Exception Hours Per Day --></label>
+        <name>pse__Exception_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de fin du vendredi est l&apos;heure de fin programmée le jour indiqué.</help>
+        <label><!-- Friday End Time --></label>
+        <name>pse__Friday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de début vendredi est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Friday Start Time --></label>
+        <name>pse__Friday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Heure de fin lundi est l&apos;heure de fin planifiée le jour indiqué.</help>
+        <label><!-- Monday End Time --></label>
+        <name>pse__Monday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L &apos;heure de début du lundi est l&apos; heure de début planifiée du jour indiqué.</help>
+        <label><!-- Monday Start Time --></label>
+        <name>pse__Monday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de fin du samedi est l&apos;heure de fin programmée le jour indiqué.</help>
+        <label><!-- Saturday End Time --></label>
+        <name>pse__Saturday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de début du samedi est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Saturday Start Time --></label>
+        <name>pse__Saturday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>pse__Schedule__c</name>
+        <relationshipLabel><!-- Schedule Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Heure de fin du dimanche correspond à l&apos;heure de fin prévue le jour indiqué.</help>
+        <label><!-- Sunday End Time --></label>
+        <name>pse__Sunday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Heure de début du dimanche est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Sunday Start Time --></label>
+        <name>pse__Sunday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de fin du jeudi correspond à l&apos;heure de fin du jour indiqué.</help>
+        <label><!-- Thursday End Time --></label>
+        <name>pse__Thursday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de début du jeudi est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Thursday Start Time --></label>
+        <name>pse__Thursday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de fin du mardi est l&apos;heure de fin programmée le jour indiqué.</help>
+        <label><!-- Tuesday End Time --></label>
+        <name>pse__Tuesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de début du mardi est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Tuesday Start Time --></label>
+        <name>pse__Tuesday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de fin du mercredi est l&apos;heure de fin programmée le jour indiqué.</help>
+        <label><!-- Wednesday End Time --></label>
+        <name>pse__Wednesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure de début mercredi est l&apos;heure de début prévue le jour indiqué.</help>
+        <label><!-- Wednesday Start Time --></label>
+        <name>pse__Wednesday_Start_Time__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Schedule Exception Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Heures</label>
+            <section>Hours</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;exception de planification</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Start and/or End Date does not fall within the start and end dates of the schedule. --></errorMessage>
+        <name>pse__Check_Date_Range</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

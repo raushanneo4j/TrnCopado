@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Restricts where this filter set will be shown as an option. Currently only &quot;Resource Planner&quot; and &quot;Project Planner&quot; are supported. --></help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation><!-- Project Planner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation><!-- Resource Planner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The name of the Filter Set. --></help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the filter attributes and values in a saved filter set. Stored as a JSON object. --></help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, indicates the filter set is the default. --></help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true only the owner will be able to view and use this filter. Otherwise any user who has sharing access may make use of it. --></help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help><!-- Filter sets that can be associated with other objects, such as projects. --></help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the SObject this set of filters operates on. --></help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

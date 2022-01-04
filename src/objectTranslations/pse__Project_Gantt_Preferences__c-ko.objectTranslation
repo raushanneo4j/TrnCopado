@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 프로젝트 작업 Gantt 환경 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>이 옵션을 선택하면 작업 날짜가 중요 시점 목표 날짜 범위를 벗어 났을 때 경고 그래픽 및 툴팁 메시지가 표시됩니다.</help>
+        <label><!-- Alerts - Task dates - Milestone --></label>
+        <name>pse__Alert_Task_Dates_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 날짜가 프로젝트 작업 할당 날짜 범위 밖에있을 때 경고 그래픽 및 툴팁 메시지가 표시됩니다.</help>
+        <label><!-- Alerts - Task dates - PTA dates --></label>
+        <name>pse__Alert_Task_Dates_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 날짜가 프로젝트 시작 날짜 및 종료 날짜 범위 밖에있을 때 경고 그래픽 및 툴팁이 표시됩니다.</help>
+        <label><!-- Alerts - Task dates - Project --></label>
+        <name>pse__Alert_Task_Dates_Project__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 시간이 프로젝트 작업 할당 시간 범위를 벗어나는 경우 경고 그래픽 및 툴팁 메시지가 표시됩니다.</help>
+        <label><!-- Alerts - Task hours - PTA hours --></label>
+        <name>pse__Alert_Task_Hours_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>사실 인 경우 Project Task Gantt는 하루 세부 확대 / 축소 수준을 제공하여 확장 된 날짜로 표시되는 시간을 표시합니다. 기본값은 false입니다.</help>
+        <label><!-- Enable Day Detail --></label>
+        <name>pse__Enable_Day_Detail__c</name>
+    </fields>
+    <fields>
+        <help>저장을 클릭 할 때마다 대화 상자를 표시할지 여부를 결정합니다. 이를 통해 조직의 실제 기록에 커밋하기 전에 제안 된 프로젝트 작업 변경 사항을 검토 할 수 있습니다. 설정은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Hide Preview and Confirmation on Save --></label>
+        <name>pse__Hide_Save_Preview__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Gantt에서 Create Resource Demand 단추를 클릭 할 때 기본 리소스 요구 유형을 지정합니다. 값은 &quot;자원 요청&quot;, &quot;보유 자원 요청&quot;또는 &quot;배정&quot;입니다. 기본값은 &quot;자원 요청&quot;입니다.</help>
+        <label><!-- Resource Demand Default --></label>
+        <name>pse__Resource_Demand_Default__c</name>
+    </fields>
+    <fields>
+        <help>Gantt에 작업 노트 표시</help>
+        <label><!-- Show Task Notes --></label>
+        <name>pse__Show_Task_Notes__c</name>
+    </fields>
+    <fields>
+        <help>기본 Project Task Gantt 작업 창 선택 동작을 두 번 클릭에서 한 번 클릭으로 변경할 수 있습니다. 설정은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Single Click Task Selection --></label>
+        <name>pse__Single_Click_Task_Selection__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 새 프로젝트 작업 할당이 기존 할당 또는 자원 요청에 연결되지 않도록 Project Task Gantt의 기본 동작을 변경할 수 있습니다. 이 설정은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Suppress Auto Link Assignment --></label>
+        <name>pse__Suppress_Auto_Link_PTA__c</name>
+    </fields>
+    <fields>
+        <help>타임 라인의 기본 확대 / 축소 수준을 지정합니다. 유효한 값은 quarter, month, week, day 또는 daydetail입니다. 이 설정은 기본적으로 week로 설정됩니다.</help>
+        <label><!-- Zoom Level --></label>
+        <name>pse__Zoom_Level__c</name>
+    </fields>
+</CustomObjectTranslation>

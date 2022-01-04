@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>請求予測設定カテゴリ</value>
+    </caseValues>
+    <fields>
+        <help>プロジェクトの実際の請求対象金額に適用される乗数。これには、請求済みタイムカード、請求済みマイルストーン、およびその他の調整が含まれます。</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトの経費に適用される乗数。これは費用の請求可能額です。</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>この請求予測カテゴリが使用される請求予測設定。少なくとも1つの請求予測カテゴリを設定する必要があります。</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>加重請求予測カテゴリに表示されるラベル。たとえば、期待、ベストケース、ワーストケースなど。</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>この加重請求予測カテゴリの商談に適用される乗数。</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>請求予測カテゴリの順序は、請求予測の計算に適用されます。 1〜3の値を入力できます。</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドは非推奨になり、Order__cに置き換えられました</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトの割り当ての値に適用される乗数。</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>[リソース保留]フィールドがチェックされているときに、プロジェクトのリソース要求時間に適用される乗数。</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトのスケジュールされたマイルストーンの値に適用される乗数。</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Resource Heldフィールドのチェックが外されているときに、プロジェクトの予定リソース要求時間に適用される乗数。</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>バックログ計算によって生成された値を使用して、プロジェクトの予定外のバックログの値に適用される乗数。</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>請求予測設定カテゴリ名</nameFieldLabel>
+</CustomObjectTranslation>

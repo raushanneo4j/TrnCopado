@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>‘Eligible for SAO Credit’ Automation in SFDC (12/11/2021)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>&apos;Eligible for SAO Credit&apos; New Checkbox Fields</name>
+    <style>freeForm</style>
+    <subject>Upcoming Change: ‘Eligible for SAO Credit’ Automation in SFDC</subject>
+    <textOnly>Hello Salesforce Users!
+
+
+This update is intended for those who add products to opportunities in Salesforce and/or use reports that track which opportunities are eligible for SAO credit. Even though this change is effective immediately, you can perform the suggested change to your reports whenever it is convenient for you.
+
+
+**WHAT YOU NEED TO KNOW**
+
+Key Definitions:
+
+&apos;Product&apos; is a base record that corresponds to a single SKU in the official price list. This record is created and edited by the system admins.
+&apos;Opportunity Product&apos;, also known as Opportunity Line Item (OLI) is a record of a different object and results from adding a product record to an opportunity.
+
+
+When you create a new OLI or edit an existing one, the system calculates whether or not the OLI is eligible for SAO credit.
+
+Only New and Cross-Sell OLIs with ‘Sales Price’ greater than ‘0’ from the list of eligible products are considered eligible.
+
+Eligible products are defined as subscription products that can be sold on a stand-alone basis for new projects. New projects are defined as either new customers or cross-sell opportunities with existing customers.
+
+The eligibility status is reflected at the individual OLI and parent opportunity level.
+
+The ‘Eligible for SAO Credit’ checkbox field is visible on the OLI page, but NOT on the Opportunity page. It can be pulled into any relevant reports.
+
+Reports that use product names to track SAO credit eligibility are not scalable. To avoid having to update your filters every time a new product is added or an existing one renamed and eventually running into the character limit, simply use the new ‘Eligible for SAO Credit’ checkbox at the opportunity level (or, if you wish, at the OLIs level as a sub-filter the same way you use product names today).
+
+Please let us know if you have any questions by reaching out to us at salesforce@neo4j.com.
+
+Thank you!
+The Salesforce Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

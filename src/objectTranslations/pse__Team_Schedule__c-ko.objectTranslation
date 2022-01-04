@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>팀 일정</value>
+    </caseValues>
+    <fields>
+        <help>일정이 시작되는 날짜입니다.</help>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>팀 일정 노트.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>알림 보내기</help>
+        <label><!-- Send Notifications --></label>
+        <name>pse__Send_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>팀 일정의 상태.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>배정 된</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>대기중인</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>팀 일정 템플릿 조회.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>팀은 일정과 관련이 있습니다.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Schedule Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>팀 일정 이름</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>청구 예측 설정 카테고리</value>
+    </caseValues>
+    <fields>
+        <help>프로젝트의 실제 청구 가능 금액에 적용되는 배율입니다. 여기에는 청구 된 시간표, 청구 된 마일스톤 및 기타 조정이 포함됩니다.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트의 비용에 적용되는 배율입니다. 비용의 청구 가능 금액입니다.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 범주와 함께 사용되는 청구 예측 설정입니다. 하나 이상의 청구 예측 범주를 구성해야합니다.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>가중 청구 예측 범주에 대해 표시되는 레이블 (예 : 예상, 최상의 경우, 최악의 경우).</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>이 가중 청구 예측 범주의 기회에 승수가 적용되었습니다.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>청구 예측 범주가 청구 예측 계산에 적용되는 순서입니다. 1에서 3 사이의 값을 입력 할 수 있습니다.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 더 이상 사용되지 않으며 Order__c로 대체되었습니다.</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트의 배정 값에 적용되는 배율입니다.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>자원 보유 필드가 선택되면 프로젝트의 자원 요청 시간에 적용되는 배율입니다.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트의 예정된 마일스톤 값에 적용되는 배율입니다.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>자원 보유 필드가 선택 취소 된 경우 프로젝트의 계획된 자원 요청 시간에 적용되는 배율입니다.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>배율 계산에 의해 생성 된 값을 사용하여 프로젝트의 예약되지 않은 백 로그 값에 적용되는 배율입니다.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>청구 예측 설정 카테고리 이름</nameFieldLabel>
+</CustomObjectTranslation>

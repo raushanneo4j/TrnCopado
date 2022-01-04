@@ -1,0 +1,47 @@
+<messaging:emailTemplate subject="Aura opp - {!RelatedTo.Account.Name} at 98% and time to provision"
+  recipientType="User"
+  relatedToType="Opportunity"
+>
+  <messaging:htmlEmailBody >
+    <html>
+      <body>
+      <!-- BY Jan.27th 2021 make these edits: per chat with LK on 2020-12-17
+      cloud provider, cloud region, ram capacity, & change subject, and have product id first before any other ids & link to oppty ,  and we dont need acctId, OppId, add sumeet to email, -->
+      Hello Aura Provisioning Team,<br/><br/>
+      Time to provision for the following 98% Sales Ops Review Opp <br/><br/>
+SFDC Account Name: {!RelatedTo.Account.Name}<br/>
+SFDC Opportunity Name: {!RelatedTo.Name}<br/><br/>
+Product Information of Aura Enterprise:<br/><br/>
+        <table>
+          <apex:repeat value="{!RelatedTo.OpportunityLineItems}" var="lineItem">
+              <apex:outputPanel rendered="{!lineItem.Product2.Name=='Subscription - Aura Enterprise'}">            
+                  <tr>
+                   <td>
+                    Product Line ID # - {!lineItem.Id}
+                  </td>
+                  </tr>
+                  <tr>
+                  <td>
+                     Cloud Provider - {!lineItem.Cloud_Provider__c}
+                  </td>
+                  </tr>
+                  <tr>
+                  <td>
+                      Cloud Region- {!lineItem.Cloud_Region__c}
+                  </td>
+                  </tr>
+                  <tr>
+                  <td>
+                     RAM Capacity- {!lineItem.RAM_Capacity__c}
+                  </td>
+                </tr>
+              </apex:outputPanel>
+          </apex:repeat>
+        </table><br/><br/>
+        Once instance is provisioned either save email into the file section of the opp or forward email to DealDeskAura@neo4j.com <br/> <br/> 
+        Thanks!<br/><br/>
+        DealDesk<br/><br/>
+      </body>
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

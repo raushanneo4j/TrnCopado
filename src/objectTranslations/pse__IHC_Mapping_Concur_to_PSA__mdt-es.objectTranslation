@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- IHC Mapping Concur to PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Asignaciones de IHC concurren a PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Campo del objeto PSA para el que se debe crear la transformación en el conector del conector de integración.</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>Objeto de PSA para el que se debe crear la transformación en el conector del conector de integración.</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Campo del objeto de aplicación de terceros para el que se debe crear la transformación en el conector del concentrador de integración.</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>Objeto de aplicación de terceros para el que se debe crear la transformación en el conector de Integration Hub.</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>Aplicación de terceros para la que se debe crear la transformación en el conector de Integration Hub.</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>Concurrir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Clave en el recurso de datos virtuales en el conector de Integration Hub.</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>El nombre del recurso de datos virtuales en el conector de Integration Hub.</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

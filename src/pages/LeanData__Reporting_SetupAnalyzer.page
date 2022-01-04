@@ -1,0 +1,167 @@
+<apex:page controller="LeanData.Reporting_SetupAnalyzerController" sidebar="false" standardStylesheets="false" docType="html-5.0">
+    <!-- Bootstrap Core CSS -->
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__DataTables, 'DataTables/2.0.2-responsive.dataTables.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__DataTables, 'DataTables/1.10.4-jquery.dataTables.css')}"/>
+    <apex:includeScript value="{!$Resource.LeanData__viewJSResource}"/>
+    <c:googleAnalytics analyticsCategory="Reporting" />
+    <c:style />
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            src: url("{!URLFOR($Resource.LeanData__Libraries, 'fonts/OpenSans-Regular.ttf')}") format('truetype')
+        }
+
+        @font-face {
+            font-family: 'Oswald';
+            src: url("{!URLFOR($Resource.LeanData__Libraries, 'fonts/Oswald-VariableFont_wght.ttf')}") format('truetype')
+        }
+
+        .noSidebarCell {
+            padding: 0;
+        }
+        
+        .pagination-standard{
+            cursor:pointer;
+            color:#1b527e;
+        }
+        
+        .pagination-active-page{
+            color:#6bd3bb;
+            text-decoration: underline;
+        
+        }
+        
+        .pagination-standard:hover { 
+            color: #6bd3bb;
+        }
+        
+        .pagination-dots {       
+            cursor: default;
+        }
+        
+        .pagination-dots:hover {        
+            color: #043e57;
+        }
+        .header-title {
+            font-size: 21.5px;
+            line-height: 55px;
+            margin-left: 180px;
+            float: left;
+            position: absolute;
+            color: var(--dk-grey-2);
+        }
+    </style>
+    <!-- Bootstrap Core CSS -->
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__bootstrap_v3_3_4, 'css/bootstrap.css')}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <!-- Fonts -->
+    <apex:composition template="LeanData__Reporting_Template">
+        <apex:define name="customHeaderContent">
+            <div class="customHeaderContent-right">
+                <apex:image value="{!URLFOR($Resource.LeanData__Reporting_Images, 'Info_Button_Icon.png')}" styleClass="customHeaderContent-right-information" />
+            </div>
+        </apex:define>
+        <apex:define name="mainContent">
+            <div class="dg_outer-wrapper">
+                <div class="dg_outer-wrapper-content">
+                    <div class="dg_inner-wrapper">
+                        <div class="dg_inner-wrapper-header" id="modeLabel"></div>
+                        <div class="dg_inner-wrapper-content">
+                            <apex:outputPanel layout="block" id="mainOutput">
+                               <table class="dg_details-table-div view" id="contentTable" style="width:100%;"></table>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+    <!-- jQuery Version 3.5.1 -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-3.5.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-ui-1.12.1.min.js')}" />
+    <!-- Bootstrap Core JavaScript -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'bootstrap-4.5.3.min.js')}" />
+    <!-- JavaScript -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__DataTables, 'DataTables/1.10.4-jquery.dataTables.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__DataTables, 'DataTables/2.0.2-responsive.dataTables.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'moment-2.29.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__DataTables, 'DataTables/1.10.12-sorting-datetime-moment.js')}"/>
+    <script>
+        j$ = jQuery.noConflict();
+        var mode = "";
+        var OPPORTUNITY_COLUMNS = [
+            {"label" : "Name", "name" : "Name", "type" : "STRING"},
+            {"label" : "Stage Name", "name" : "StageName", "type" : "STRING"},
+            {"label" : "Created Date", "name" : "CreatedDate", "type" : "DATETIME"},
+            {"label" : "Type", "name" : "Type", "type" : "STRING"}
+        ];
+        var CAMPAIGN_COLUMNS = [
+            {"label" : "Name", "name" : "Name", "type" : "STRING"},
+            {"label" : "Type", "name" : "Type", "type" : "STRING"},
+            {"label" : "Start Date", "name" : "StartDate", "type" : "DATETIME"}
+        ];
+
+        j$(document).ready(function() {
+            // hide left sidebar if is frontend setting is off
+            {!isFrontendOn} == true ? j$(".left-sidebar").show() : j$(".left-sidebar").hide();
+
+            mode = getParameterByName('mode') || 'oppWithOutdatedOpportunityTypes';
+            setModeLabel(mode)
+            getTableContent(mode);
+            setPageTitle({!isFrontendOn} ? 'Settings | Data Analyzer' : '');
+        });
+
+        // Remoting call to get table content depending on mode. Calls Generates table method with contents retrieved.
+        function getTableContent(){
+            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Reporting_SetupAnalyzerController.getTableContent}', mode, 
+                function(result, event) {
+                    if (event.type === 'exception') {
+                        console.log("Get Table Content Exception");
+                        console.log(event);
+                    } else if (event.status) {
+                        generateTable(result, (mode === 'campaignsWithOutdatedCampaignTypes')?CAMPAIGN_COLUMNS:OPPORTUNITY_COLUMNS);
+                    }
+                }
+            );
+        }
+
+        /**
+         * Generates table data with Data Table. Extra processing for name columns to make it link to SFDC id.
+         * @param  {Object} tableContent   Contents to display
+         * @param  {Object} displayColumns Column data
+         */
+        function generateTable(tableContent, displayColumns){
+            tableParent = document.getElementById("contentTable");
+            tableParent.appendChild(table = generateTableAndHeader(tableParent, displayColumns, 'outdated-data'));
+     
+            table.appendChild(tbody = document.createElement("tbody"));
+            for (var i=0; i<tableContent.length; i++) {
+                obj = tableContent[i];
+                tbody.appendChild(row = generateTableRow());
+                for (var j = 0; j < displayColumns.length; j++) {
+                    var cell = generateDataTablesCell(row, false);
+                    cell.style.padding = "5px";
+                    if(displayColumns[j]["name"] === "Name") 
+                      cell.innerHTML = '<a target="_blank" class="customTarget" href="/' + obj["Id"] + '">' + obj["Name"] + '</a>';
+                    else
+                      cell.innerHTML = getHTMLForValue(obj, displayColumns[j]);
+                }
+            }
+            initializeDataTable(j$(table), 'outdated-data', {"pageLength" : 100});
+        }
+
+        // Set mode label depending on mode
+        function setModeLabel(){
+            if (mode === 'oppWithOutdatedOpportunityStages'){
+                j$('#modeLabel').html('Opportunities With Outdated Opportunity Stages');
+            }
+            else if (mode === 'campaignsWithOutdatedCampaignTypes'){
+                j$('#modeLabel').html('Campaigns With Outdated Campaign Types');
+            }
+            else if (mode === 'oppWithOutdatedOpportunityTypes'){
+                j$('#modeLabel').html('Opportunities With Outdated Opportunity Types');
+            }
+        }
+    </script>
+</apex:page>

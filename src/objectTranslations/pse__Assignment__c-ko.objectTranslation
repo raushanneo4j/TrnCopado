@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>할당</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Assign Resource Assignment Information Section FieldSet --></label>
+        <name>pse__AssignResAssignmentInfoSecFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Assignment Columns for Multiple Assignment Creation UI --></label>
+        <name>pse__AssignmentColumnsforMultipleAssignmentUI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Assignment Custom Lookup Column --></label>
+        <name>pse__Assignment_Custom_Lookup_Column</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Assignment Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyAssignmentField</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Assignments Columns --></label>
+        <name>pse__CreateProjFromTemplateAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LinkMethodologyAssignmentColumns --></label>
+        <name>pse__LinkMethodologyAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Link Milestone Assignment Columns --></label>
+        <name>pse__LinkMilestoneAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LinkPhaseAssignmentColumns --></label>
+        <name>pse__LinkPhaseAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MassReassignAssignmentColumns --></label>
+        <name>pse__MassReassignAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SelfAssignmentUIAssignmentFields --></label>
+        <name>pse__SelfAssignmentUIAssignmentFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Unfilled Resource Requests Assignment Columns --></label>
+        <name>pse__UnfilledRRAssignmentGridFieldSet</name>
+    </fieldSets>
+    <fields>
+        <label><!-- User Assignment Workspace --></label>
+        <name>User_Assignment_Workspace__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Assignment Correlation ID --></label>
+        <name>pse__API_Assignment_Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <help>저장시 선택하면 할당과 관련된 시간표의 Est Vs Actuals 레코드에 대한 실제 시간 정보를 새로 고칩니다.</help>
+        <label><!-- Action: Refresh EVA Hours From Timecards --></label>
+        <name>pse__Action_Refresh_EVA_Hours_From_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>저장을 선택하면 배정과 관련된 비용을 기준으로 정보를 다시 계산합니다.</help>
+        <label><!-- Action: Refresh Expense Roll-Ups --></label>
+        <name>pse__Action_Refresh_Expense_Rollups__c</name>
+    </fields>
+    <fields>
+        <help>저장시 선택하면 할당 일정과 관련된 예약 된 시간 및 예상 실제 레코드가 새로 고쳐집니다.</help>
+        <label><!-- Action: Refresh Hours From Schedule --></label>
+        <name>pse__Action_Refresh_Hours_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>저장을 선택하면 할당과 관련된 타임 카드에서 정보를 다시 계산합니다.</help>
+        <label><!-- Action: Refresh Timecard Roll-Ups --></label>
+        <name>pse__Action_Refresh_Timecard_Rollups__c</name>
+    </fields>
+    <fields>
+        <help>Assignment Daily Notes 하위 레코드에서 가장 최근에 삽입 / 업데이트 / 삭제 / 삭제 취소 한 날짜 - 시간.</help>
+        <label><!-- Assignment Daily Notes Last Updated --></label>
+        <name>pse__Assignment_Daily_Notes_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>과제의 일별 메모 하위 레코드에서 연결 메모를 표시합니다.</help>
+        <label><!-- Assignment Daily Notes --></label>
+        <name>pse__Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Number --></label>
+        <name>pse__Assignment_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate Currency Code --></label>
+        <name>pse__Average_Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate Number --></label>
+        <name>pse__Average_Cost_Rate_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate --></label>
+        <name>pse__Average_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Sequence Number --></label>
+        <name>pse__Batch_Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Sequence --></label>
+        <name>pse__Batch_Sequence__c</name>
+    </fields>
+    <fields>
+        <help>자원의 시간당 청구 비율을 입력하십시오.</help>
+        <label><!-- Bill Rate --></label>
+        <name>pse__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount In Financials --></label>
+        <name>pse__Billable_Amount_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount Submitted --></label>
+        <name>pse__Billable_Amount_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days In Financials --></label>
+        <name>pse__Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days Submitted --></label>
+        <name>pse__Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses In Financials --></label>
+        <name>pse__Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses Submitted --></label>
+        <name>pse__Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours In Financials --></label>
+        <name>pse__Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours Submitted --></label>
+        <name>pse__Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Expense Entry --></label>
+        <name>pse__Closed_for_Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Amount --></label>
+        <name>pse__Cost_Rate_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Currency Code --></label>
+        <name>pse__Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate --></label>
+        <name>pse__Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate is Daily Rate --></label>
+        <name>pse__Daily_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate is Daily Rate --></label>
+        <name>pse__Daily_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Timecard Notes Required --></label>
+        <name>pse__Daily_Timecard_Notes_Required__c</name>
+    </fields>
+    <fields>
+        <help>이 과제가 프로젝트 및 리소스에 대한 PSA 타임 카드와 Jira 작업 로그를 동기화하는 데 사용되는지 결정합니다. 단일 프로젝트 및 리소스에 대해 Jira에서 시간을 동기화하는 데 한 할당 만 사용할 수 있습니다.</help>
+        <label><!-- Use for Syncing Time from Jira --></label>
+        <name>pse__Default_Assignment_to_Sync_Jira_Worklog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>이는 Foundations 시스템에서 사용 된 부재 요청 상관 키를 기록합니다.</help>
+        <label><!-- Foundations Absence Correlation --></label>
+        <name>pse__ERP_Absence_Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible for Schedule Recalculation --></label>
+        <name>pse__Eligible_for_Schedule_Recalculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>선택하면이 할당이 사용률 계산에서 제외됩니다.</help>
+        <label><!-- Exclude from Utilization --></label>
+        <name>pse__Exclude_From_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>이 플래그가 선택되면 할당의 하위 Timecard Splits 및 Expenses가 청구 생성에서 제외 될 수 있도록 청구에서 제외 플래그와 함께 생성됩니다. 이는 하위 레벨에서 대체 될 수 있습니다.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 자원 및 프로젝트 계획자에서 배정을 제외합니다. 모든 배제 된 과제는 플래너의 총계 계산 및 색상 코딩에 포함되지 않습니다.</help>
+        <label><!-- Exclude from Planners --></label>
+        <name>pse__Exclude_from_Planners__c</name>
+    </fields>
+    <fields>
+        <help>이 할당에 대해 시간 카드를 시간에서 일로 변환하는 방법을 지정합니다.</help>
+        <label><!-- Hours to Days Rule --></label>
+        <name>pse__Hours_to_Days_Rule__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Is_Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>pse__Location__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>과제가 마일스톤과 연결되어있는 경우 해당 과제에 기록 된 시간 기록표는 기본적으로 해당 과제의 마일스톤과 연관됩니다.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Nick Name --></label>
+        <name>pse__Nick_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days In Financials --></label>
+        <name>pse__Non_Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days Submitted --></label>
+        <name>pse__Non_Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses In Financials --></label>
+        <name>pse__Non_Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses Submitted --></label>
+        <name>pse__Non_Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours In Financials --></label>
+        <name>pse__Non_Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours Submitted --></label>
+        <name>pse__Non_Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>설정되면 프로젝트 또는 자원이 다른 그룹에 있더라도이 할당의 지출 트랜잭션이 그룹 실제에 대해 롤업되는 기본 그룹을 대체합니다.</help>
+        <label><!-- Override Expense Group --></label>
+        <name>pse__Override_Expense_Group__c</name>
+        <relationshipLabel><!-- Override Expense Group For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 사례에 있더라도이 과제의 지출 트랜잭션이 실제 사례로 롤업되는 기본 프랙티스를 무시합니다.</help>
+        <label><!-- Override Expense Practice --></label>
+        <name>pse__Override_Expense_Practice__c</name>
+        <relationshipLabel><!-- Override Expense Practice For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 지역에 있더라도이 할당의 지출 트랜잭션이 지역별 실제 값으로 롤업되는 기본 지역을 대체합니다.</help>
+        <label><!-- Override Expense Region --></label>
+        <name>pse__Override_Expense_Region__c</name>
+        <relationshipLabel><!-- Override Expense Region For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>배정 타임 카드 (수익 및 비용) 및 비용 관련 거래의 지역 / 관행 / 그룹에 대한 모든 재정의와 관련된 감사 노트.</help>
+        <label><!-- Override RPG Audit Notes --></label>
+        <name>pse__Override_RPG_Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 배정 타임 카드 (수익 및 비용) 및 경비 관련 트랜잭션에 대해 재정의 할 영역, 관행 및 그룹을 설정할 수 있습니다.</help>
+        <label><!-- Override RPG Enabled --></label>
+        <name>pse__Override_RPG_Enabled__c</name>
+    </fields>
+    <fields>
+        <help>이 속성이 설정되면 프로젝트 또는 자원이 다른 그룹에 있더라도이 할당의 시간 소비 원가 트랜잭션이 그룹 실제에 대해 롤업되는 기본 그룹을 대체합니다.</help>
+        <label><!-- Override Timecard Cost Group --></label>
+        <name>pse__Override_Timecard_Cost_Group__c</name>
+        <relationshipLabel><!-- Override Timecard Cost Group For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 연습에 있더라도이 과제의 시간 소비 원가 트랜잭션이 실제 사례에 롤업되는 기본 연습을 재정의합니다.</help>
+        <label><!-- Override Timecard Cost Practice --></label>
+        <name>pse__Override_Timecard_Cost_Practice__c</name>
+        <relationshipLabel><!-- Override Timecard Cost Practice For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 속성이 설정되면 프로젝트 또는 자원이 다른 지역에 있더라도이 할당의 시간 소비 원가 트랜잭션이 지역별 실제에 대해 롤업되는 기본 지역을 대체합니다.</help>
+        <label><!-- Override Timecard Cost Region --></label>
+        <name>pse__Override_Timecard_Cost_Region__c</name>
+        <relationshipLabel><!-- Override Timecard Cost Region For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 그룹에 있더라도이 할당 시간 수 수익 트랜잭션이 그룹 실제에 대해 롤업되는 기본 그룹을 대체합니다.</help>
+        <label><!-- Override Timecard Revenue Group --></label>
+        <name>pse__Override_Timecard_Revenue_Group__c</name>
+        <relationshipLabel><!-- Override Timecard Revenue Group For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정되면 프로젝트 또는 자원이 다른 연습에 있더라도이 과제의 타임 카드 수익 거래가 실제 사례에 적용되는 기본 연습을 재정의합니다.</help>
+        <label><!-- Override Timecard Revenue Practice --></label>
+        <name>pse__Override_Timecard_Revenue_Practice__c</name>
+        <relationshipLabel><!-- Override Timecard Revenue Practice For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 속성이 설정되면 프로젝트 또는 자원이 다른 지역에 있더라도이 지정 시간 카드 수익 트랜잭션이 지역별 실제에 대해 롤업되는 기본 지역을 대체합니다.</help>
+        <label><!-- Override Timecard Revenue Region --></label>
+        <name>pse__Override_Timecard_Revenue_Region__c</name>
+        <relationshipLabel><!-- Override Timecard Revenue Region For Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Allocated --></label>
+        <name>pse__Percent_Allocated__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 잠재적 가치를 평가하기위한 과제를 계획하는 동안 사용되는 청구 비율입니다. 실제 청구 비율이 0 인 고정 가격 프로젝트에 주로 사용됩니다.</help>
+        <label><!-- Planned Bill Rate --></label>
+        <name>pse__Planned_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>원래이 과제를 위해 계획된 시간. 이 값은 스케줄 된 실제 시간 수와 별개입니다.</help>
+        <label><!-- Planned Hours --></label>
+        <name>pse__Planned_Hours__c</name>
+    </fields>
+    <fields>
+        <help>계획 시간 * 빌 비율</help>
+        <label><!-- Planned Revenue (Hours) --></label>
+        <name>pse__Planned_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>이 과제에 대한 타임 카드에 입력 된 총 프로젝트 작업 시간. 이 필드를 수동으로 편집하지 마십시오.</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Projected Revenue --></label>
+        <name>pse__Projected_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Card --></label>
+        <name>pse__Rate_Card__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Cost Rate Date --></label>
+        <name>pse__Resource_Cost_Rate_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>pse__Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>건축가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>컨설턴트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation><!-- DevOps Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>프로젝트 매니저</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>훈련자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation><!-- UI Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Schedule Updated --></label>
+        <name>pse__Schedule_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>pse__Schedule__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Days --></label>
+        <name>pse__Scheduled_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Hours --></label>
+        <name>pse__Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <help>배정이 제 3 자 비용 애플리케이션으로 전송되는지 여부를 제어합니다.</help>
+        <label><!-- Send to Third-Party Expenses Application --></label>
+        <name>pse__Send_to_Third_Party_Expenses_Application__c</name>
+    </fields>
+    <fields>
+        <help>시간 입력 페이지 및 비용 항목 페이지의 방법론 필드에 할당 방법론 만 나열되는지 여부를 나타냅니다. true 일 경우 할당 방법론 만 표시됩니다. false이면 관련 프로젝트에 속한 방법론이 표시됩니다.</help>
+        <label><!-- Show Assignment Methodologies Only --></label>
+        <name>pse__Show_Assignment_Methodologies_Only__c</name>
+    </fields>
+    <fields>
+        <help>시간 입력 페이지 및 비용 항목 페이지의 마일스톤 필드에 할당 마일스톤 만 표시되는지 여부를 나타냅니다. true 일 경우 할당 마일스톤 만 표시됩니다. false이면 프로젝트에 속한 마일스톤이 표시됩니다.</help>
+        <label><!-- Show Assignment Milestones Only --></label>
+        <name>pse__Show_Assignment_Milestones_Only__c</name>
+    </fields>
+    <fields>
+        <help>시간 입력 페이지 및 지출 항목 페이지의 단계 필드에 할당 단계 만 나열되는지 여부를 나타냅니다. true 일 경우 할당 단계 만 표시됩니다. false이면 할당과 관련된 프로젝트에 속한 단계가 표시됩니다.</help>
+        <label><!-- Show Assignment Phases Only --></label>
+        <name>pse__Show_Assignment_Phases_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>닫은</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation>예정</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tentative</masterLabel>
+            <translation>시험</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate Currency Code --></label>
+        <name>pse__Suggested_Bill_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate Number --></label>
+        <name>pse__Suggested_Bill_Rate_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate --></label>
+        <name>pse__Suggested_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 가장 최근의 스왑이 발생한 날짜를 표시합니다. 이 필드는 Team Schedule Planner의 스왑 이동 기능에서만 사용됩니다.</help>
+        <label><!-- Team Member Swap Date --></label>
+        <name>pse__Team_Member_Swap_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 이전에 교대 전환 작업 전에 배정 된 가장 최근의 리소스를 표시합니다. 이 필드는 Team Schedule Planner의 스왑 이동 기능에 사용됩니다.</help>
+        <label><!-- Team Member Swapped Out --></label>
+        <name>pse__Team_Member_Swapped_Out__c</name>
+        <relationshipLabel><!-- Assignments (Team Member Swapped Out) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>관련 Project, Resource 및 Team Schedule Slot ID 목록입니다.</help>
+        <label><!-- Team Schedule Slot Key --></label>
+        <name>pse__Team_Schedule_Slot_Key__c</name>
+    </fields>
+    <fields>
+        <help>팀 일정 슬롯.</help>
+        <label><!-- Team Schedule Slot --></label>
+        <name>pse__Team_Schedule_Slot__c</name>
+        <relationshipLabel><!-- Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 비 청구 대상 할당에 대해 점검되어야하며,이 할당 시간은 사용으로 계산됩니다.</help>
+        <label><!-- Time Credited --></label>
+        <name>pse__Time_Credited__c</name>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 요금 청구가 허용되지 않는 할당에 대해 확인되어야하며 시간은 사용률을 고려하지 않아야합니다.</help>
+        <label><!-- Time Excluded --></label>
+        <name>pse__Time_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs In Financials --></label>
+        <name>pse__Timecard_External_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs Submitted --></label>
+        <name>pse__Timecard_External_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs In Financials --></label>
+        <name>pse__Timecard_Internal_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs Submitted --></label>
+        <name>pse__Timecard_Internal_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Currency For Resource Cost --></label>
+        <name>pse__Use_Project_Currency_For_Resource_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Resource Currency For Resource Cost --></label>
+        <name>pse__Use_Resource_Currency_For_Resource_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Resource Default Cost Rate --></label>
+        <name>pse__Use_Resource_Default_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Resource Default Cost Rate as Daily --></label>
+        <name>pse__Use_Resource_Default_Cost_Rate_as_Daily__c</name>
+    </fields>
+    <layouts>
+        <layout>Assignment - BP</layout>
+        <sections>
+            <label><!-- Assignment Attributes --></label>
+            <section>Assignment Attributes</section>
+        </sections>
+        <sections>
+            <label><!-- Assignment Totals --></label>
+            <section>Assignment Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Developer Data --></label>
+            <section>Developer Data</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Information --></label>
+            <section>Rate Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assignment Layout</layout>
+        <sections>
+            <label>할당 속성</label>
+            <section>Assignment Attributes</section>
+        </sections>
+        <sections>
+            <label>과제 합계</label>
+            <section>Assignment Totals</section>
+        </sections>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>개발자 데이터</label>
+            <section>Developer Data</section>
+        </sections>
+        <sections>
+            <label>정보</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>지역 / 실습 / 그룹 재정의</label>
+            <section>Override Region/Practice/Group</section>
+        </sections>
+        <sections>
+            <label>요금 정보</label>
+            <section>Rate Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Assignment Partner Layout</layout>
+        <sections>
+            <label>할당 속성</label>
+            <section>Assignment Attributes</section>
+        </sections>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>개발자 데이터</label>
+            <section>Developer Data</section>
+        </sections>
+        <sections>
+            <label>정보</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>요금 정보</label>
+            <section>Rate Information</section>
+        </sections>
+        <sections>
+            <label>시스템 정보</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>과제 이름</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Planned Bill Rate must be populated --></errorMessage>
+        <name>Planned_Bill_Rate_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Assignment&apos;s Currency field value may not be updated once set. --></errorMessage>
+        <name>pse__Assignment_Currency_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Assignment may only be marked &apos;Is Billable&apos; if it is for a Billable Project. --></errorMessage>
+        <name>pse__Assignment_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Assignment&apos;s Project field value may not be blank and may not be updated once set. --></errorMessage>
+        <name>pse__Assignment_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Assignment&apos;s Resource field value can not be changed. --></errorMessage>
+        <name>pse__Assignment_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Assignment&apos;s Resource field value may not be blank. --></errorMessage>
+        <name>pse__Assignment_Resource_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment requires a Bill Rate. --></errorMessage>
+        <name>pse__Bill_Rate_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignments may only be marked as &quot;Time Credited&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Assignments_may_not_be_Credited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignments may only be marked as &quot;Time Excluded&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Assignments_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignments may not be marked as &quot;Time Excluded&quot; if they are also marked as &quot;Time Credited&quot;. --></errorMessage>
+        <name>pse__Credited_Assignments_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At most one of the two override checkboxes may be set for which currency to hold Resource Cost Rates constant in - Resource or Project.  If neither is checked, the default config is used. --></errorMessage>
+        <name>pse__Max_One_Default_Resource_Cost_Currency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignments marked non-billable may not have a bill rate greater than zero. --></errorMessage>
+        <name>pse__Non_Billable_Bill_Rate_must_be_Zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot switch the schedule record once set. --></errorMessage>
+        <name>pse__cannot_switch_schedule_records</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select an active resource. --></errorMessage>
+        <name>pse__select_resource</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Assign_Multiple_Milestones_to_Assignments --></label>
+        <name>pse__Assign_Multiple_Milestones_to_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_Multiple_Projects --></label>
+        <name>pse__Assign_Multiple_Projects</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_Multiple_Resources --></label>
+        <name>pse__Assign_Multiple_Resources</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_Resource --></label>
+        <name>pse__Assign_Resource</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_Assignment --></label>
+        <name>pse__Close_Assignment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_Assignments --></label>
+        <name>pse__Close_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Schedule --></label>
+        <name>pse__Edit_Schedule</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_To_Methodologies --></label>
+        <name>pse__Link_To_Methodologies</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_To_Phases --></label>
+        <name>pse__Link_To_Phases</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_Milestones --></label>
+        <name>pse__Link_to_Milestones</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reschedule_Assignments --></label>
+        <name>pse__Reschedule_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Zero_Schedule --></label>
+        <name>pse__Zero_Schedule</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jira批处理日志的默认分配</value>
+    </caseValues>
+    <fields>
+        <help>日志记录标识符。</help>
+        <label><!-- Default Assignments Jira Batch Log ID --></label>
+        <name>pse__Default_Assignments_Jira_Batch_Log_ID__c</name>
+    </fields>
+    <fields>
+        <help>Master-Detail链接到Jira Batch记录的相关默认分配。</help>
+        <label><!-- Default Assignments for Jira Batch --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>表示日志类型（错误，信息，中止，外部）。</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>退出</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>错误</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>外部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>信息</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>消息的文本。</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <nameFieldLabel>默认分配Jira批日志名称</nameFieldLabel>
+</CustomObjectTranslation>

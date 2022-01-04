@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 廃止予定：予測設定 --></value>
+    </caseValues>
+    <fields>
+        <help>現在の日付より前の日数を入力して、実際のアイテムと予定されているアイテムの締切日として使用します。今日は0を使用してください。自動的に「先週末」を使用するには空白のままにします</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>単一バッチで処理するレコードの数デフォルト値は200です。</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー1の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー2の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー3の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー4の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー5の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー6の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリー7の加重予測金額に割り当てられたラベル。</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>商談にカーブが設定されていない場合に適用される予測カーブ。商談にカーブが設定されておらず、デフォルトの商談カーブが定義されていない場合は、エラーメッセージが表示されます。</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトにカーブが設定されていない場合に適用される予測カーブ。プロジェクトにカーブが設定されておらず、デフォルトのプロジェクトカーブが定義されていない場合は、エラーメッセージが表示されます。</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、予測バッチプロセスからの通知がChatter経由で[通知受信者]設定に表示されている受信者に送信されます。これはデフォルトでは選択されていません。</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、予測バッチプロセスからの通知は、電子メールを介して通知受信者設定にリストされた受信者に送信されます。これはデフォルトでは選択されていません。</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Chatterまたは電子メールを介して送信される売上予測一括通知の通知受信者を指定します。値は、セミコロン（;）で区切られたEメールアドレスのリストです。この設定はデフォルトではnullです。</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、予測バッチプロセスからの通知がタスクを介して送信されます。これはデフォルトでは選択されていません。</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ1の計算に使用された乗数。</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ2の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ3の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ4の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ5の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ6の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>商談予測のカテゴリ7の計算に使用された乗数。ベストプラクティスのために、各乗数は前のカテゴリ値より高くなければなりません。</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ1の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ2の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ3の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ4の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ5の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ6の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留されたリソース要求、保留されていないリソース要求、スケジュールされたマイルストーンおよびスケジュールされていないバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト予測のカテゴリ7の計算に使用された乗数。これにより、請求、パススルー請求、スケジュールされた時間、保留リソース要求、保留リソース要求、スケジュール済み、マイルストーン、および未スケジュールバックログのメトリックが順番に増加します。</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ1が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ2が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ3が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ4が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ5が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ6が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>カテゴリ7が予測計算に含まれるかどうかを決定するために選択します。</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>프로젝트 작업</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Project Task Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyProjTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Project Tasks Columns --></label>
+        <name>pse__CreateProjFromTemplateTasksColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Editable Custom Columns --></label>
+        <name>pse__Gantt_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Read Only Custom Columns --></label>
+        <name>pse__Gantt_Read_Only_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>작업이 실제로 종료 된 날짜 및 시간입니다. 완성 된 확인란을 선택하면</help>
+        <label><!-- Actual End Date &amp; Time --></label>
+        <name>pse__Actual_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>작업이 실제로 종료 된 날짜입니다. 완성 된 확인란을 선택하면</help>
+        <label><!-- Actual End Date --></label>
+        <name>pse__Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 작업에 소비 된 시간. 타임 카드의 작업 시간 항목에서 롤업합니다. 상위 타스크에는 하위 타스크의 시간이 포함됩니다.</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <help>작업이 실제로 시작된 날짜입니다. 시작한 확인란을 선택하면</help>
+        <label><!-- Actual Start Date &amp; Time --></label>
+        <name>pse__Actual_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>작업이 실제로 시작된 날짜입니다. 시작한 확인란을 선택하면</help>
+        <label><!-- Actual Start Date --></label>
+        <name>pse__Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resources (Long) --></label>
+        <name>pse__Assigned_Resources_Long__c</name>
+    </fields>
+    <fields>
+        <help>시스템은 할당 된 자원 목록을 생성했습니다. 목록은 Project Task Assignment에서 생성됩니다.</help>
+        <label><!-- Assigned Resources --></label>
+        <name>pse__Assigned_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>pse__Blocked__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 시간 입력 페이지의 작업 선택기가이 프로젝트 작업에 대해 새 작업 시간을 추가하는 것을 허용하지 않습니다.</help>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <help>작업이 완료되었는지 확인합니다.</help>
+        <label><!-- Completed --></label>
+        <name>pse__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto Update Parents --></label>
+        <name>pse__Do_Not_Auto_Update_Parents__c</name>
+    </fields>
+    <fields>
+        <help>날짜, 완료율 등 자동 계산 된 필드의 자동 업데이트를 무시할지 여부</help>
+        <label><!-- Do Not Auto Update This Task --></label>
+        <name>pse__Do_Not_Auto_Update_This_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Units --></label>
+        <name>pse__Duration_Unit__c</name>
+    </fields>
+    <fields>
+        <help>이 작업에 대한 작업이 종료되어야하는 날짜 및 시간. 시간 항목이 닫히지 않는 한이 날짜 이후에 작업에 대한 시간 카드를 계속 입력 할 수 있습니다.</help>
+        <label><!-- End Date &amp; Time --></label>
+        <name>pse__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help>작업을 완료하는 데 걸리는 예상 시간을 지정합니다.</help>
+        <label><!-- Estimated Time To Completion (Task) --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce 이외의 작업 관리 시스템 또는 응용 프로그램과의 통합을위한 외부 작업 ID. 통합은 무결성을 유지하고 upserts를 허용하기 위해 외부 시스템 ID에이 필드를 사용해야합니다.</help>
+        <label><!-- External Task ID --></label>
+        <name>pse__External_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Information --></label>
+        <name>pse__Flag_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - No Coverage --></label>
+        <name>pse__Flag_Task_Dates_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - Partial Coverage --></label>
+        <name>pse__Flag_Task_Dates_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Milestone Bounds --></label>
+        <name>pse__Flag_Task_End_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Project Bounds --></label>
+        <name>pse__Flag_Task_End_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - No Coverage --></label>
+        <name>pse__Flag_Task_Hours_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - Partial Coverage --></label>
+        <name>pse__Flag_Task_Hours_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start - Milestone Bounds --></label>
+        <name>pse__Flag_Task_Start_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start  - Project Bounds --></label>
+        <name>pse__Flag_Task_Start_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <help>최상위 상위 작업에 대한 상위 작업의 수를 보여주는 시스템 필드입니다. 최상위 태스크의 계층 깊이는 0이고, 하위 계층 태스크의 계층 깊이는 1입니다.</help>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <help>설정된 예상 시간 (작업)에서 파생 된 작업을 완료하는 데 남은 시간입니다. 예상 시간에서 실제 시간을 뺀 시간에 계산됩니다.</help>
+        <label><!-- Hours Remaining --></label>
+        <name>pse__Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>pse__Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업 할당 수를 합산하는 롤업 요약 필드</help>
+        <label><!-- Number of Assignments --></label>
+        <name>pse__Number_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peer Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date &amp; Time --></label>
+        <name>pse__Parent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date --></label>
+        <name>pse__Parent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date &amp; Time --></label>
+        <name>pse__Parent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date --></label>
+        <name>pse__Parent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 조회는 작업 계층 구조를 캡처합니다. 하위 작업에는 작업 계층의 다음 상위 수준 작업에 대한 상위 작업 조회 값이 있습니다. 이것은 작업 간의 시간적 (종속 / 선행) 관계와는 별개이며 별개임을 유의하십시오.</help>
+        <label><!-- Parent Task --></label>
+        <name>pse__Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Child Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Hours) --></label>
+        <name>pse__Percent_Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Points) --></label>
+        <name>pse__Percent_Complete_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Tasks) --></label>
+        <name>pse__Percent_Complete_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Baseline --></label>
+        <name>pse__Points_Baseline__c</name>
+    </fields>
+    <fields>
+        <help>완료 포인트 수</help>
+        <label><!-- Points Complete --></label>
+        <name>pse__Points_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Remaining --></label>
+        <name>pse__Points_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>pse__Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>P1</masterLabel>
+            <translation>P1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2</masterLabel>
+            <translation>P2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3</masterLabel>
+            <translation>P3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation>P4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5</masterLabel>
+            <translation>P5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>하위 작업을 만들 때 프로젝트 필드를 정의 할 필요가 없습니다. 프로젝트 필드는 상위 작업에서 자동으로 채워지고 입력 된 값을 덮어 씁니다.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>수식 필드. 실제 시간과 예상 소요 시간의 합계 (작업). 완료 예상 시간 (작업)이 비어 있으면 예상 시간은 예상 시간입니다.</help>
+        <label><!-- Projected Hours --></label>
+        <name>pse__Projected_Hours__c</name>
+    </fields>
+    <fields>
+        <help>이 작업에 대한 작업이 시작될 예정인 날짜 및 시간입니다. 시간 항목이 닫히지 않는 한,이 날짜 이전에 작업에 대한 시간 카드를 계속 입력 할 수 있습니다.</help>
+        <label><!-- Start Date &amp; Time --></label>
+        <name>pse__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>작업이 시작되었는지 확인합니다.</help>
+        <label><!-- Started --></label>
+        <name>pse__Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation>막힌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>완전한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>연기 된</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>초안</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>계획된</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation>시작됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 관련 마일스톤 대상 날짜와 작업 종료 날짜가 Gantt에서 수정 될 때 동기화됩니다.</help>
+        <label><!-- Synchronize Milestone and Task --></label>
+        <name>pse__Synchronize_Milestone_And_Task__c</name>
+    </fields>
+    <fields>
+        <help>최상위 상위 작업에 &apos;체인까지 상위 작업 ID의 구분 된 목록을 표시하는 시스템 필드입니다.</help>
+        <label><!-- Task ID Chain --></label>
+        <name>pse__Task_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key Chain --></label>
+        <name>pse__Task_Key_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key --></label>
+        <name>pse__Task_Key__c</name>
+    </fields>
+    <fields>
+        <help>이것은 작업 이름 체인을 유지하는 새로운 필드입니다. 이 필드는 &quot;작업 이름 체인&quot;필드와 동일한 동작을합니다. 그러나 새로운 데이터 유형 (긴 텍스트 영역)은 오래된 것 (255 문자)과 비교하여 계층 구조에서 더 많은 수의 프로젝트 작업을위한 이름 체인을 허용합니다.</help>
+        <label><!-- Task Name Chain (Long) --></label>
+        <name>pse__Task_Name_Chain_Long__c</name>
+    </fields>
+    <fields>
+        <help>최상위 상위 작업에 &apos;상위 체인&apos;의 상위 작업 이름의 구분 된 목록을 표시하는 시스템 필드입니다.</help>
+        <label><!-- Task Name Chain --></label>
+        <name>pse__Task_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>pse__Task_Number__c</name>
+    </fields>
+    <fields>
+        <help>이 작업에 소비 된 시간. 타임 카드의 작업 시간 항목에서 롤업합니다.</help>
+        <label><!-- Timecard Hours --></label>
+        <name>pse__Timecard_Hours__c</name>
+    </fields>
+    <fields>
+        <help>현재 작업에 대한 최상위 상위 작업 (상위 작업의 상위 작업 부모 등)을 표시하는 시스템 필드입니다. 최상위 태스크에는 상위 태스크 또는 최상위 상위 태스크 자체가 없습니다.</help>
+        <label><!-- Top-level Parent Task --></label>
+        <name>pse__Top_level_Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Top-level Parent Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>작업 분류 구조 요소 번호 또는 ID. 외부 작업 관리 시스템에 해당 할 수 있습니다.</help>
+        <label><!-- WBS Element Number --></label>
+        <name>pse__WBS_Element_Number__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업을 예약하는 데 사용되는 작업 일정.</help>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 작업을 완료하는 데 필요한 시간</help>
+        <label><!-- Work Remaining --></label>
+        <name>pse__Work_Remaining__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Task Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>기술</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>자원</label>
+            <section>Resources</section>
+        </sections>
+        <sections>
+            <label>작업 계층 구조</label>
+            <section>Task Hierarchy</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>프로젝트 작업 이름</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Actual Start Date &amp; Time must be before the Actual End Date &amp; Time --></errorMessage>
+        <name>pse__Actual_Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not mark as completed if not started --></errorMessage>
+        <name>pse__Can_not_complete_if_not_started</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Estimated Time To Completion cannot be negative. --></errorMessage>
+        <name>pse__No_Negative_ETC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Task Project must match Task Project. --></errorMessage>
+        <name>pse__Parent_Task_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points Complete cannot exceed Points --></errorMessage>
+        <name>pse__Points_Complete_Cannot_Exceed_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not be less then 0% --></errorMessage>
+        <name>pse__Points_complete_can_not_be_less_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not exceed 100% --></errorMessage>
+        <name>pse__Points_complete_can_not_exceed_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Task Project. --></errorMessage>
+        <name>pse__Project_Milestone_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date &amp; time must be before the end date &amp; time --></errorMessage>
+        <name>pse__Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Task Key field cannot be changed --></errorMessage>
+        <name>pse__Task_Key_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Task&apos;s Project field value may not be blank initially if it is a top-level Task (if child task, Project will be auto-set from parent) and may not be updated once set. --></errorMessage>
+        <name>pse__Task_Project_is_Required_and_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_project_Task_from_Template --></label>
+        <name>pse__Add_project_Task_from_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete --></label>
+        <name>pse__Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete_Tasks --></label>
+        <name>pse__Complete_Tasks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Assignments --></label>
+        <name>pse__Generate_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Held_Resource_Requests --></label>
+        <name>pse__Generate_Held_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Resource_Requests --></label>
+        <name>pse__Generate_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Link_Project_Task_Assignments --></label>
+        <name>pse__Mass_Link_Project_Task_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start --></label>
+        <name>pse__Start</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Tasks --></label>
+        <name>pse__Start_Tasks</name>
+    </webLinks>
+</CustomObjectTranslation>

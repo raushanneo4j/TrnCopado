@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>휴일</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Holidays --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 날에 근무한 시간 수를 입력하십시오 (예를 들어 하루 종일 0 시간, 반나절 4 시간)</help>
+        <label><!-- Work Hours --></label>
+        <name>pse__Work_Hours__c</name>
+    </fields>
+    <layouts>
+        <layout>Holiday Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>휴일 이름</nameFieldLabel>
+</CustomObjectTranslation>

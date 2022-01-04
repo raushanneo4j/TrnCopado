@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>休日</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Holidays --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この日の勤務時間数を入力します（たとえば、終日休業の場合は0、半日営業の場合は4）。</help>
+        <label><!-- Work Hours --></label>
+        <name>pse__Work_Hours__c</name>
+    </fields>
+    <layouts>
+        <layout>Holiday Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>休日の名前</nameFieldLabel>
+</CustomObjectTranslation>

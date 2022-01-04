@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- IHC-Zuordnung stimmt mit der PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- IHC-Mappings stimmen mit PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- IHC-Zuordnung stimmt mit der PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- IHC-Mappings stimmen mit PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- IHC-Zuordnung stimmt mit der PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- IHC-Mappings stimmen mit PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- IHC-Zuordnung stimmt mit der PSA überein --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- IHC-Mappings stimmen mit PSA überein --></value>
+    </caseValues>
+    <fields>
+        <help>Feld des PSA-Objekts, für das die Umwandlung in Integration Hub Connector erstellt werden muss.</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>PSA-Objekt, für das eine Umwandlung in Integration Hub Connector erstellt werden muss.</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Feld des Anwendungsobjekts von Drittanbietern, für das die Umwandlung in Integration Hub Connector erstellt werden muss.</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>Drittanbieter-Anwendungsobjekt, für das eine Umwandlung in Integration Hub Connector erstellt werden muss.</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>Drittanbieteranwendung, für die eine Umwandlung in Integration Hub Connector erstellt werden muss.</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>Concur</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geben Sie die virtuelle Datenressource in Integration Hub Connector ein.</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>Der Name der virtuellen Datenressource im Integration Hub Connector.</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set is intended for the Oktopost Integration user. It gives Edit access to the Social Last Source&apos; fields on the Lead and Contact objects. JIRA: SFDCSPT-608</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Oktopost_Social_Last_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Oktopost_Social_Last_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Oktopost Integration</label>
+</PermissionSet>

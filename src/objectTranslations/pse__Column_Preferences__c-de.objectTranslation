@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Spalteneinstellungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Spalteneinstellungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Spalteneinstellungen --></value>
+    </caseValues>
+    <fields>
+        <help>Definiert die Funktion, auf die die Einstellungen angewendet werden sollen. Die Werte sind: 0 (für den Projektplaner), 1 (für den Ressourcenplaner), 2 (für die Projektaufgabe Gantt), 3 (für die Zeitkarten), 4 (für die Zeitkartengenehmigung) oder 5 (für die Zeitkartenaufgabenzeit).</help>
+        <label><!-- Feature --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>0</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Enthält einen oder mehrere API-Namen für die Felder, einschließlich objektübergreifender Felder, auf denen diese Spalte basiert. Dies ist ein vom System generiertes Feld. Bearbeiten Sie dieses Feld nicht manuell.</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <help>Die Reihenfolge von links nach rechts zeigt die Spalte in der Benutzeroberfläche für das angegebene Feature an.</help>
+        <label><!-- Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Der Benutzer, dem die Einstellungen zugewiesen sind.</help>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Column Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der gespeicherte Wert des jeweiligen Feldes.</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, ist die Spalte auf der Benutzeroberfläche für den Benutzer sichtbar.</help>
+        <label><!-- Visible --></label>
+        <name>pse__Visible__c</name>
+    </fields>
+    <fields>
+        <help>Die Breite der Spalte in Pixel.</help>
+        <label><!-- Width --></label>
+        <name>pse__Width__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Name der Spaltenvoreinstellung</nameFieldLabel>
+</CustomObjectTranslation>

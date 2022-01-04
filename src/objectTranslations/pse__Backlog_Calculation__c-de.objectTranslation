@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Rückstandsberechnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Rückstandsberechnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Rückstandsberechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Rückstandsberechnungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Rückstandsberechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Rückstandsberechnungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Rückstandsberechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Rückstandsberechnungen --></value>
+    </caseValues>
+    <fields>
+        <help>Ein internes Feld, das von PSE verwendet wird - nicht zur Anzeige für Benutzer gedacht.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Ob Backlog für Projekte in der Region, Praxis oder Gruppe berechnet werden soll.</help>
+        <label><!-- Calculate Project Backlog --></label>
+        <name>pse__Calculate_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Fields for Current Time Period --></label>
+        <name>pse__Copy_Fields_for_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <help>Das Enddatum für Rückstandsberechnungen. Wenn kein Enddatum angegeben ist, werden alle Datensätze vom Startdatum verarbeitet. Dies wird empfohlen, wenn Sie einen ungeplanten Rückstand berechnen.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt an, ob der Rückstand für alle Unterebenen der ausgewählten Region, Praxis oder Gruppe berechnet werden soll. Dieses Feld wird ignoriert, wenn der Rückstand nur für eine Ressource berechnet wird.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Process Batch Id --></label>
+        <name>pse__Post_Process_Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reuse Detail Objects --></label>
+        <name>pse__Reuse_Detail_Objects__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Sie diesen Wert festlegen, wird das Startdatum automatisch festgelegt</help>
+        <label><!-- Start Calculating From --></label>
+        <name>pse__Start_Calculating_From__c</name>
+        <picklistValues>
+            <masterLabel>Start of next week</masterLabel>
+            <translation>Anfang nächster Woche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of this week</masterLabel>
+            <translation>Anfang dieser Woche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>Heute</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>Ein Fehler ist aufgetreten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>In Bearbeitung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>Nicht angefangen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Processing</masterLabel>
+            <translation>Nachbearbeitung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Monat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Andere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>Unaufhörlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Quartal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Woche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Jahr</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Backlog Calculation Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Optionen</label>
+            <section>Options</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Backlog-Berechnungsname</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Project may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Project is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+</CustomObjectTranslation>

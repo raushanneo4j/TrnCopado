@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>一括削除管理レコード</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>ffr__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Process --></label>
+        <name>ffr__BatchProcess__c</name>
+        <relationshipLabel><!-- MassDeleteControlRecord --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Status --></label>
+        <name>ffr__BatchStatus__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>処理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JobName --></label>
+        <name>ffr__JobName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Type --></label>
+        <name>ffr__NotificationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of records attempted to Process --></label>
+        <name>ffr__NumberAttemptedToProcess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Errors from Queuable Jobs --></label>
+        <name>ffr__NumberOfQueuableErrors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ffr__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Aborts --></label>
+        <name>ffr__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Errors --></label>
+        <name>ffr__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of External --></label>
+        <name>ffr__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Logs --></label>
+        <name>ffr__TotalNumberOfLogs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number Of Records Deleted --></label>
+        <name>ffr__TotalNumberOfRecordsDeleted__c</name>
+    </fields>
+    <nameFieldLabel>ID</nameFieldLabel>
+</CustomObjectTranslation>

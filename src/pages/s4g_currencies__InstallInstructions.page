@@ -1,0 +1,47 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" title="{!$Label.s4g_currencies__instructions_page_title}">
+		
+	<!--link rel="stylesheet" href="{!URLFOR($Resource.bootstrapSF1,'/bootstrapSF1/dist/css/bootstrap-lightning.min.css')}" type="text/css" media="screen" title="no title" charset="utf-8" /-->
+
+  	<style type="text/css">
+  		.outer {
+		    display: table;
+		    position: absolute;
+		    height: 100%;
+		    width: 100%;
+		    background-color: #F5F5F5;
+		}
+
+		.middle {
+		    display: table-cell;
+		    vertical-align: middle;
+		}
+  		.container {
+  			width: 80%;
+  			margin-left: auto;
+		    margin-right: auto; 
+  		}
+  	</style>
+
+  	<div class="outer">
+  		<div class="middle">
+  			<div class="container">
+		  		<h1>
+		  			{!$Label.INSTRUCTIONS_GENERAL_TITLE}
+		  		</h1>
+		  		<div>
+			  		<p>{!$Label.INSTRUCTIONS_GO_TO_CONFIG} <a href="/apex/CurrencyUpdaterStart" target="_blank">{!$Label.INSTRUCTIONS_LINK}</a></p>
+			  		<p>{!$Label.INSTRUCTIONS_FOLLOW_STEPS}</p>
+			  		<ol>
+			  			<li>{!$Label.INSTRUCTIONS_AUTH_STEP}</li>
+			  			<li>{!$Label.INSTRUCTIONS_CURRENCY_TYPE}</li>
+			  			<li>{!$Label.INSTRUCTIONS_ORIGIN}</li>
+			  			<li>{!$Label.INSTRUCTIONS_SCHEDULE}</li>
+			  		</ol>
+			  	</div>	  	
+			  	
+		  	</div>
+  		</div>
+  	</div>
+  	
+  	
+</apex:page>

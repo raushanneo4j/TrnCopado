@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prognos typ för intäkter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prognostyper för intäkter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Innehåller det kombinerade värdet på inkomster som redovisas till datum och de intäkter som väntar på erkännande.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Uppslag till milstolpen som denna intäktsprognos typ avser.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sök upp till den möjlighet som denna inkomstprognos typ avser.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Uppslag till projektet som denna inkomstprognos typ avser.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sök upp till relevant intäktsprognos.</help>
+        <label><!-- Revenue Forecast --></label>
+        <name>pse__Revenue_Forecast__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Intäkterna som är redo för redovisning i denna intäktsprognos.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>Intäkterna som redan har redovisats i denna intäktsprognos.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>Anger inkomstkällan för denna post.</help>
+        <label><!-- Revenue Source --></label>
+        <name>pse__Revenue_Source__c</name>
+        <picklistValues>
+            <masterLabel>% Complete: Milestone</masterLabel>
+            <translation>% Komplett: milstolpe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Complete: Project</masterLabel>
+            <translation>% Avslutat: projekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: EVA</masterLabel>
+            <translation>Levereras: EVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Expense</masterLabel>
+            <translation>Levereras: Kostnad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Milestone</masterLabel>
+            <translation>Levereras: Milestone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Miscellaneous Adjustment</masterLabel>
+            <translation>Levereras: Diverse justeringar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Timecard</masterLabel>
+            <translation>Levereras: Timecard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Milestone</masterLabel>
+            <translation>Equal Split: Milestone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Project</masterLabel>
+            <translation>Equal Split: Project</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation>Möjlighet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Anger om värdena i denna post gäller faktiska eller prognostiserade intäkter.</help>
+        <label><!-- Revenue Type --></label>
+        <name>pse__Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actuals</masterLabel>
+            <translation>utfall</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation>Prognos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Intäkterna som är planerade för redovisning i denna intäktsprognos.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Om det finns månader som inte innehåller några schemalagda eller faktiska intäkter sprids de oplanerade intäkterna jämnt över de månaderna, med undantag för tomma månader som faller mellan månader som innehåller schemalagda eller faktiska intäkter.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Type Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Inkomster Prognos Typ Namn</nameFieldLabel>
+</CustomObjectTranslation>

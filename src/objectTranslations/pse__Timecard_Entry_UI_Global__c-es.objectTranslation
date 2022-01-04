@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Entrada de tarjeta de tiempo UI Global --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Entrada de tarjeta de tiempo UI Global --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>Define el nombre de un conjunto de campos que contiene campos de asignación para que se muestren como columnas en la búsqueda Proyecto / Asignación en la página Entrada de la tarjeta de registro.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Número de asignaciones que se cargarán para la asignación de la tarjeta de tiempo desplegable</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Lista de nombres de API de campos de asignación para mostrar como columnas en la búsqueda Proyecto / Asignación en la página de Entrada de tiempo mejorada. No incluya el prefijo de espacio de nombres pse__ en el nombre API de un campo. El valor predeterminado es Nombre, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Restricción de la fecha de inicio y finalización de la tarea mientras se cargan las Asignaciones en la IU de la tarjeta de tiempo. Si es verdadero, solo se cargan Asignaciones cuyas fechas de inicio / final contienen o se superponen con el intervalo de fechas de la hoja de horas. Esto afecta únicamente a la IU, no a la edición de administrador.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Lista de valores de estado de asignación que se utilizarán al cargar las asignaciones de db.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, en la carga inicial de la nueva IU de la tarjeta de tiempo, comprobará las tarjetas de la semana anterior. Si no se han llenado las tarjetas de la semana anterior, la IU mostrará la ventana de confirmación solicitando al usuario que cargue la semana anterior o la semana actual. Si es falso, trabaja como siempre.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Config para controlar el valor máximo de la hora de revertir automáticamente en la nueva interfaz de usuario TC.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>Config para controlar el valor mínimo de la hora de reversión automática en la nueva interfaz de usuario TC.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, todas las tarjetas de tiempo se envían para su aprobación. Si es falso, solo se envían las tarjetas de tiempo que el usuario selecciona.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>Define el nombre de un conjunto de campos que contiene campos de proyectos para que se muestren como columnas en la búsqueda Proyecto / Asignación en la página Entrada de tarjeta de tiempo.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Lista de nombres de API de campos de proyecto para mostrar como columnas en la búsqueda Proyecto / Asignación en la página de Entrada de tiempo mejorada. No incluya el prefijo de espacio de nombres pse__ en el nombre API de un campo. El valor predeterminado es Name, Account__r.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Restricción de la fecha de inicio y final del proyecto al cargar el proyecto / asignaciones de db.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Define el nombre de un conjunto de campos que contiene campos de recursos para mostrarlos como columnas en la búsqueda de Recursos en la página de entrada de la tarjeta Sencha.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Si el valor de configuración es igual a &apos;todo&apos;, significa que se cargarán todos los recursos junto con los recursos de usuario actuales. De lo contrario, si value equivale a &apos;resource&apos; o null, solo se cargarán los recursos de usuario actuales.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>Lista de campos de recursos (nombres / rutas de API totalmente calificados) para mostrar en columnas para la ventana emergente de búsqueda de recursos en la nueva IU de la tarjeta de tiempo. Recomendar como máximo 4 campos / columnas. Valor predeterminado: Nombre, Region__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Tamaño del número de tarjetas de tiempo para guardar / enviar en una ejecución por lotes.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Config se utiliza para controlar el guardado de la tarjeta de tiempo con cero horas. Si es verdadero, se guardan las tarjetas de tiempo con cero else else no guardadas (la advertencia se mostrará en ui).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>El número de registros de tarjetas de tiempo, sin incluir registros relacionados, guardados en una sola solicitud.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Config para mantener la tarjeta de tiempo ordenada por los campos de orden de los nombres de API. Se pueden ingresar múltiples campos separados por coma para la clasificación. Ejemplo: CreatedDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV Lista de valores de estado para los que se pueden editar las filas de entrada de la hoja de horas.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Usado para determinar en qué estado se configurarán las tarjetas de tiempo en el botón de guardar clic</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Se usa para determinar en qué estado se configurarán las tarjetas de tiempo en el botón Enviar. Haga clic en.</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona (verdadero), las preferencias de la columna UI de entrada de tiempo se guardan localmente. Si no se selecciona (falso), las preferencias se guardan en el servidor.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, los menús desplegables de Ubicación se vincularán al objeto Ubicación del proyecto en lugar de las listas de ubicación en la interfaz de usuario TC</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>Valor predeterminado del día de inicio de semana utilizado cuando un recurso no tiene un calendario de trabajo o tiene un calendario de trabajo sin un día de inicio de semana.</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Config se usa para controlar el envío de la tarjeta de tiempo con cero horas. Si es cierto, se pueden enviar tarjetas de tiempo con cero, de lo contrario la advertencia se mostrará en ui.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

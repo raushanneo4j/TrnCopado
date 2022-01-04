@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>백 로그 계산</value>
+    </caseValues>
+    <fields>
+        <help>PSE에서 사용하는 내부 필드로, 사용자에게 표시하기위한 것이 아닙니다.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>지역, 실습 또는 그룹에 포함 된 프로젝트의 백 로그를 계산할지 여부.</help>
+        <label><!-- Calculate Project Backlog --></label>
+        <name>pse__Calculate_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Fields for Current Time Period --></label>
+        <name>pse__Copy_Fields_for_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <help>백 로그 계산의 종료 날짜입니다. 종료 날짜가 지정되지 않으면 시작 날짜의 모든 레코드가 처리됩니다. 예약되지 않은 백 로그를 계산할 때 권장됩니다.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>선택한 지역, 실습 또는 그룹의 모든 하위 수준에 대한 백 로그를 계산할지 여부. 백 로그가 자원에 대해서만 계산되는 경우이 필드는 무시됩니다.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Process Batch Id --></label>
+        <name>pse__Post_Process_Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reuse Detail Objects --></label>
+        <name>pse__Reuse_Detail_Objects__c</name>
+    </fields>
+    <fields>
+        <help>이 값을 설정하면 자동으로 시작 날짜 필드가 설정됩니다.</help>
+        <label><!-- Start Calculating From --></label>
+        <name>pse__Start_Calculating_From__c</name>
+        <picklistValues>
+            <masterLabel>Start of next week</masterLabel>
+            <translation>다음 주 시작</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of this week</masterLabel>
+            <translation>이번 주 시작</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>오늘</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>완전한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>오류가 발생했습니다.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>진행 중</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>시작되지 않음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Processing</masterLabel>
+            <translation>사후 처리</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>달</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>부단한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>쿼터</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>년</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Backlog Calculation Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>옵션</label>
+            <section>Options</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>백 로그 계산 이름</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Project may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Project is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+</CustomObjectTranslation>

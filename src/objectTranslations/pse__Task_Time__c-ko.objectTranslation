@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>작업 시간</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Task Time Editable Columns --></label>
+        <name>pse__TaskTimeUIEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Task Time Read-Only Columns --></label>
+        <name>pse__TaskTimeUIReadOnlyColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Notes --></label>
+        <name>pse__Friday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Notes --></label>
+        <name>pse__Monday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Task Assignment --></label>
+        <lookupFilter>
+            <errorMessage><!-- The project task associated with the project task assignment must match the selected project task. --></errorMessage>
+            <informationalMessage><!-- Only project task assignments for the selected project task are shown. --></informationalMessage>
+        </lookupFilter>
+        <name>pse__Project_Task_Assignment__c</name>
+        <relationshipLabel><!-- Task Time --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Task --></label>
+        <name>pse__Project_Task__c</name>
+        <relationshipLabel><!-- Task Time --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Notes --></label>
+        <name>pse__Saturday_Notes__c</name>
+    </fields>
+    <fields>
+        <help>관련 타임 카드의 요일.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Notes --></label>
+        <name>pse__Sunday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Notes --></label>
+        <name>pse__Thursday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Task Time --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Notes --></label>
+        <name>pse__Tuesday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Notes --></label>
+        <name>pse__Wednesday_Notes__c</name>
+    </fields>
+    <layouts>
+        <layout>Task Time Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>작업 시간 번호</nameFieldLabel>
+</CustomObjectTranslation>

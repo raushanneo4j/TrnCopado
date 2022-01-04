@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Integrationshub-Anschluss: Jira-PSA --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Integrationshub-Anschluss: Jira-PSA --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Integrationshub-Anschluss: Jira-PSA --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Integrationshub-Anschluss: Jira-PSA --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Integrationshub-Anschluss: Jira-PSA --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>E-Mail-Adresse für den Empfang von Fehlermeldungen, wenn die Integration mit Jira fehlschlägt.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Die URL zur Jira-Anwendung. Wird zur Authentifizierung verwendet.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld PSA-Projekte zu Jira-Problemen zuordnen ausgewählt ist, wird die Kategorie der Jira-Problemstatus festgelegt, die das zugeordnete Projektfeld mit dem in PSA-Feldwert für die Aktualisierung von Projekten definierten Wert aktualisieren.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld Synchronisierung von Projekten mit Jira-Problemen aktivieren ausgewählt ist, wird festgelegt, mit welcher Art von Jira-Problemen PSA-Projekte synchronisiert werden. Dieser Wert unterscheidet zwischen Groß- und Kleinschreibung und der Problemtyp muss in Ihrer Jira-Anwendung vorhanden sein.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob mit Jira synchronisierte PSA-Ressourcen eine E-Mail-Benachrichtigung mit ihrem Jira-Benutzernamen und einem Link zum Festlegen des Kennworts erhalten.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden PSA-Projekte Jira-Problemen anstatt Jira-Projekten zugeordnet. Die Art der Jira-Ausgabe wird durch den Wert des Felds Jira Issue Type bestimmt.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Die maximale Anzahl von Zeitkartentagen, beginnend mit Montag, kann für jede Woche für eine Ressource protokolliert werden. Sie können eine ganze Zahl zwischen 1 und 7 eingeben. Geben Sie beispielsweise 5 ein, um die Zeitprotokollierung für Montag bis Freitag zu aktivieren.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl von Zeitkartenstunden, die pro Tag für eine Ressource protokolliert werden können. Sie können einen Wert zwischen 1 und 24 eingeben.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld PSA-Projekte zu Jira-Problemen zuordnen ausgewählt ist, wird der Wert bestimmt, mit dem das zugeordnete Projektfeld aktualisiert wird, wenn ein Jira-Problem den in Kategorie Jira-Problemstatus definierten Status hat. Dieser Wert unterscheidet zwischen Groß- und Kleinschreibung.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Name des benutzerdefinierten Jira-Felds, das zum Verknüpfen eines Problems mit einem übergeordneten Problemtyp verwendet wird, z. B. Übergeordneter Link. Die Beziehung kann mehrere Ebenen haben, aber der in Jira Issue Type definierte Issue-Typ ist der höchste, der berücksichtigt wird.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob Jira-Arbeitsprotokolle mit PSA-Zeitkarten synchronisiert werden sollen. Wird automatisch ausgefüllt, wenn die Synchronisierung von Arbeitsprotokollen von Jira zu Zeitkarten im PSA-Workflow über die Feature-Konsole aktiviert wird.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob PSA-Projekte mit Jira-Problemen synchronisiert werden sollen. Wird automatisch ausgefüllt, wenn das Synchronisieren von Projekten von PSA zu Problemen im Jira-Workflow über die Feature-Konsole aktiviert wird.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob PSA-Projekte mit Jira-Projekten synchronisiert werden sollen. Wird automatisch ausgefüllt, wenn das Synchronisieren von Projekten von PSA zu Projekten im Jira-Workflow über die Feature-Konsole aktiviert wird.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob PSA-Ressourcen mit Jira-Benutzern synchronisiert werden sollen. Wird automatisch ausgefüllt, wenn die Synchronisierung von Ressourcen von PSA mit Benutzern im Jira-Workflow über die Feature-Konsole aktiviert wird.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>Status, in dem Timecards erstellt werden.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob PSA-Projekte basierend auf dem Jira-Problemstatus aktualisiert werden sollen.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob es sich bei der in der Jira-Anwendungs-URL bereitgestellten Jira-Anwendung um eine Jira-Cloud-Version handelt. Deaktivieren Sie diese Option, wenn Sie Jira Server verwenden.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

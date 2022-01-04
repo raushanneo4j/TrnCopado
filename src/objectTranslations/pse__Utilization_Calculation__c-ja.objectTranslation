@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>利用計算</value>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Id Unheld Calc --></label>
+        <name>pse__Batch_Id_Unheld_Calc__c</name>
+    </fields>
+    <fields>
+        <help>PSEによって使用される内部フィールド - ユーザーへの表示を目的としていません。</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードレコードから履歴使用率を計算するかどうか。</help>
+        <label><!-- Calculate Historical Utilization --></label>
+        <name>pse__Calculate_Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>スケジュールされた割り当てから将来の使用率を計算するかどうか。</help>
+        <label><!-- Calculate Scheduled Utilization --></label>
+        <name>pse__Calculate_Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Prior Calculation --></label>
+        <name>pse__Delete_Prior_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Date --></label>
+        <name>pse__Deleted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <help>使用状況要約レコードを作成する必要のない役割を選択してください。</help>
+        <label><!-- Excluded Roles --></label>
+        <name>pse__Excluded_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>建築家</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation>ビジネスアナリスト</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Manager</masterLabel>
+            <translation>クライアントマネージャ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>コンサルタント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation>請負業者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>エグゼクティブ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>プロジェクトマネージャ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Consultant</masterLabel>
+            <translation>上級顧問</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>トレーナー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>履歴使用率計算をいつ停止するかを説明する値を選択します。これは通常、すべてのタイムカードが入力された週の最後の日です。</help>
+        <label><!-- Historical Utilization Cut-Off Date --></label>
+        <name>pse__Historical_Utilization_Cut_Off_Date__c</name>
+        <picklistValues>
+            <masterLabel>End of Last Week</masterLabel>
+            <translation>先週末</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of This Week</masterLabel>
+            <translation>今週の終わり</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>今日</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization End Date --></label>
+        <name>pse__Historical_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Start Date --></label>
+        <name>pse__Historical_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>選択した地域、実践、またはグループのすべての下位レベルの使用率を計算するかどうか。使用率がリソースに対してのみ計算される場合、このフィールドは無視されます。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Sublevels in Subtotals --></label>
+        <name>pse__Include_Sublevels_in_Subtotals__c</name>
+    </fields>
+    <fields>
+        <help>この計算が、Region / Practice / Group / ResourceとTime Periodの組み合わせのマスター計算かどうか。</help>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization End Date --></label>
+        <name>pse__Scheduled_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Start Date --></label>
+        <name>pse__Scheduled_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>発生したエラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>始まっていない</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Group --></label>
+        <name>pse__Subtotal_by_Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Practice --></label>
+        <name>pse__Subtotal_by_Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal By Practice) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Region --></label>
+        <name>pse__Subtotal_by_Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Region) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>使用率を計算する期間のタイプ。</help>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>週間</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>年</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>使用率を計算する期間を選択します。選択後、日付は自動的に調整されます。</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この計算を説明するタイプを選択してください。</help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Month and Last Month</masterLabel>
+            <translation>今月と先月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Month and Next Month</masterLabel>
+            <translation>今月と来月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Last Quarter</masterLabel>
+            <translation>現在の四半期と最後の四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Next Quarter</masterLabel>
+            <translation>現在の四半期と次の四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Last Week</masterLabel>
+            <translation>今週と先週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Next Week</masterLabel>
+            <translation>今週と来週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Last Year</masterLabel>
+            <translation>今年と昨年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Next Year</masterLabel>
+            <translation>今年と来年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Month</masterLabel>
+            <translation>先月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Quarter</masterLabel>
+            <translation>前四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>先週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Year</masterLabel>
+            <translation>昨年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Month</masterLabel>
+            <translation>先月、今月、そして来月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Quarter</masterLabel>
+            <translation>ラスト、現在および次の四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Week</masterLabel>
+            <translation>先週、今週、そして来週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Year</masterLabel>
+            <translation>昨年、現在、そして来年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month Forecast</masterLabel>
+            <translation>月予報</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month to Date</masterLabel>
+            <translation>過去1カ月間</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Month</masterLabel>
+            <translation>来月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Quarter</masterLabel>
+            <translation>次の四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Week</masterLabel>
+            <translation>来週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Year</masterLabel>
+            <translation>来年</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter Forecast</masterLabel>
+            <translation>四半期予測</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter to Date</masterLabel>
+            <translation>今までの四半期</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week Forecast</masterLabel>
+            <translation>週間予報</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week to Date</masterLabel>
+            <translation>今週</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year Forecast</masterLabel>
+            <translation>年間予測</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year to Date</masterLabel>
+            <translation>年初来</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Utilization Calculation Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>日付</label>
+            <section>Dates</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>利用計算名</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Batch ID is required --></errorMessage>
+        <name>pse__batch_id_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_historical_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_scheduled_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization start date must immediately follow the historical utilization end date. --></errorMessage>
+        <name>pse__continuous_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical utilization calculation for future dates is not allowed --></errorMessage>
+        <name>pse__disallow_historical_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization calculation for past dates is not allowed --></errorMessage>
+        <name>pse__disallow_scheduled_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical Start and End Date are required --></errorMessage>
+        <name>pse__historical_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Resource may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one value may be specified: Subtotal by Region, Practice or Group. --></errorMessage>
+        <name>pse__only_one_subtotal_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Start and End Date are required --></errorMessage>
+        <name>pse__scheduled_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Resource is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catégorie de configuration des prévisions de facturation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catégories de configuration des prévisions de facturation</value>
+    </caseValues>
+    <fields>
+        <help>Le multiplicateur appliqué au montant facturable réel sur un projet. Cela comprend les feuilles de temps facturées, les jalons facturés et les ajustements divers.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué aux dépenses sur un projet. C&apos;est le montant facturable des dépenses.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>La configuration de la prévision avec laquelle cette catégorie de prévision est utilisée. Vous devez configurer au moins une catégorie de prévision.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette affichée pour une catégorie de prévision pondérée, par exemple, Expected, Best Case, Worst Case.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué aux opportunités pour cette catégorie de prévision pondérée.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ordre dans lequel les catégories de prévision sont appliquées dans le calcul de la prévision. Vous pouvez entrer des valeurs de 1 à 3.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ est obsolète et remplacé par Order__c</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué à la valeur des affectations sur un projet.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué aux heures de demande de ressource sur un projet, lorsque le champ Resource Held est coché.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué à la valeur des jalons programmés pour un projet.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué aux heures de demande de ressources planifiées pour un projet, lorsque le champ Resource Held n&apos;est pas coché.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Le multiplicateur appliqué à la valeur du retard non planifié sur un projet, en utilisant la valeur générée par le calcul du carnet de commandes.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la catégorie de configuration des</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

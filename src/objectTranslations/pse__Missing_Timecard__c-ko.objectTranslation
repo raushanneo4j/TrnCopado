@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>누락 된 시간표</value>
+    </caseValues>
+    <fields>
+        <label><!-- User Missing TC workspace --></label>
+        <name>User_Missing_TC_workspace__c</name>
+    </fields>
+    <fields>
+        <help>시간표가 입력 된 날짜와 시간</help>
+        <label><!-- Date Timecard Entered --></label>
+        <name>pse__Date_Timecard_Entered__c</name>
+    </fields>
+    <fields>
+        <help>누락 된 시간표가 점검되는 주 종료 날짜입니다.</help>
+        <label><!-- Week End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>선택한 지역, 실습 또는 그룹의 모든 하위 수준에 대해 누락 된 시간 카드를 계산할지 여부. 누락 된 TImecard가 자원에 대해서만 계산되는 경우이 필드는 무시됩니다.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Timecard Calculation --></label>
+        <name>pse__Missing_Timecard_Calculation__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>종료 날짜에 해당하는주의 시작.</help>
+        <label><!-- Week Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Missing Timecard Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>누락 된 시간표 이름</nameFieldLabel>
+    <webLinks>
+        <label><!-- Schedule_Missing_Timecard --></label>
+        <name>pse__Schedule_Missing_Timecard</name>
+    </webLinks>
+</CustomObjectTranslation>

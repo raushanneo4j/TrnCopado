@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>资源传输</value>
+    </caseValues>
+    <fields>
+        <help>资源ID。</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>如果已返回所有请求的时间卡数据，则显示完成。否则，显示待定。</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>有待</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>时间卡传输ID。</help>
+        <label><!-- Timecard Transmission --></label>
+        <name>pse__Timecard_Transmission__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Resource Transmission Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>资源传输名称</nameFieldLabel>
+</CustomObjectTranslation>

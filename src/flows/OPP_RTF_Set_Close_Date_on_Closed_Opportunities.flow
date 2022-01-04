@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <description>Update the Close Date field to TODAY()</description>
+        <name>Update_Close_Date_to_Today</name>
+        <label>Update Close Date to Today</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CloseDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FormulaCloseDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Looks at whether the Opportunity has been set to either Closed Won or Lost or other any other stage. The flow continues to the next element ONLY if the new stage is Closed Won or Closed Lost.</description>
+        <name>Selected_Opportunity_Stage</name>
+        <label>Selected Opportunity Stage</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Other Stages</defaultConnectorLabel>
+        <rules>
+            <name>Closed_Won_or_Lost</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Close_Date_to_Today</targetReference>
+            </connector>
+            <label>Closed Won or Lost</label>
+        </rules>
+    </decisions>
+    <description>This flow sets &apos;Close Date&apos; to TODAY&apos;s date when an Opportunity is moved to either Closed Won and Closed Lost. JIRA: SFDCSPT-538</description>
+    <formulas>
+        <description>Close date = TODAY()</description>
+        <name>FormulaCloseDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>OPP: Set Close Date on Closed Opportunities {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPP: Set Close Date on Closed Opportunities</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Selected_Opportunity_Stage</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

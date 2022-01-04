@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Omzetprognose Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Omzetprognose Types</value>
+    </caseValues>
+    <fields>
+        <help>Bevat de gecombineerde waarde van de opbrengsten die tot op heden zijn herkend en de velden Omzet in afwachting van erkenning.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de mijlpaal waarop deze omzetprognose type betrekking heeft.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Link naar de Opportunity waaraan dit omzet prognose type is gerelateerd.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Link naar het project waarop deze omzetprognose type betrekking heeft.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zoek naar de relevante omzet prognose.</help>
+        <label><!-- Revenue Forecast --></label>
+        <name>pse__Revenue_Forecast__c</name>
+        <relationshipLabel><!-- Revenue Forecast Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De omzet die gereed is voor erkenning op deze omzetprognose.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>De omzet die al is opgenomen in deze omzetprognose.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>Geeft de bron van de omzet voor dit record aan.</help>
+        <label><!-- Revenue Source --></label>
+        <name>pse__Revenue_Source__c</name>
+        <picklistValues>
+            <masterLabel>% Complete: Milestone</masterLabel>
+            <translation>% Voltooid: mijlpaal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>% Complete: Project</masterLabel>
+            <translation>% Voltooid: project</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: EVA</masterLabel>
+            <translation>Leverbaar: EVA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Expense</masterLabel>
+            <translation>Leverbaar: onkosten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Milestone</masterLabel>
+            <translation>Leverbaar: mijlpaal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Miscellaneous Adjustment</masterLabel>
+            <translation>Leverbaar: diverse aanpassingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliverable: Timecard</masterLabel>
+            <translation>Leverbaar: Tijdkaart</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Milestone</masterLabel>
+            <translation>Gelijke verdeling: mijlpaal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equal Split: Project</masterLabel>
+            <translation>Gelijke verdeling: Project</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation>Opportunity</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geeft aan of de waarden in deze record van toepassing zijn op werkelijke of voorspelde inkomsten.</help>
+        <label><!-- Revenue Type --></label>
+        <name>pse__Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actuals</masterLabel>
+            <translation>Gerealiseerde resultaten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecast</masterLabel>
+            <translation>prognose</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>De omzet die is gepland voor erkenning op deze omzetprognose.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>If there are months that do not contain any scheduled or actual revenue, the unscheduled revenue is spread evenly across those months, except for empty months that fall between months containing scheduled or actual revenue.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Type Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Omzetprognose Type naam</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>예상 Vs 실제</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Billings --></label>
+        <name>psa_report__Actual_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvA Variance --></label>
+        <name>psa_report__EvA_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Billings --></label>
+        <name>psa_report__Scheduled_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Is Last Sunday --></label>
+        <name>psaws__End_Date_Is_Last_Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Hours Percent Variance --></label>
+        <name>psaws__High_Hours_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>실제 청구 가능 금액을 실제 시간 또는 실제 날짜로 나눈 값</help>
+        <label><!-- Actual Average Bill Rate --></label>
+        <name>pse__Actual_Average_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>시간당 청구 가능 금액</help>
+        <label><!-- Actual Billable Amount --></label>
+        <name>pse__Actual_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>주별 집계 된 타임 카드를 기준으로 기간에 근무한 실제 일수입니다.</help>
+        <label><!-- Actual Days (Aggregated) --></label>
+        <name>pse__Actual_Days_Aggregated__c</name>
+    </fields>
+    <fields>
+        <help>해당 기간 동안 근무한 실제 일수</help>
+        <label><!-- Actual Days --></label>
+        <name>pse__Actual_Days__c</name>
+    </fields>
+    <fields>
+        <help>시간표에 입력 된 시간 수</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Percent Variance --></label>
+        <name>pse__Days_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Variance --></label>
+        <name>pse__Days_Variance__c</name>
+    </fields>
+    <fields>
+        <help>이 레코드 기간의 종료 날짜입니다. 이것은 관련된 임무의 종료 날짜와 혼동되어서는 안됩니다.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>해당 기간 동안 작업 예정일 수</help>
+        <label><!-- Estimated Days --></label>
+        <name>pse__Estimated_Days__c</name>
+    </fields>
+    <fields>
+        <help>예정 시간 수</help>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Percent Variance --></label>
+        <name>pse__Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <help>계획의 끝 날짜에 계산 된 프로젝트 통화 (법인 통화 기준) 환율.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>pse__Project_Manager__c</name>
+        <relationshipLabel><!-- Est Vs Actuals (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>요청 된 자원에 대한 청구 비율 금액.</help>
+        <label><!-- Resource Request Bill Rate --></label>
+        <name>pse__Resource_Request_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>기간 동안 보류 된 자원 요청에 대한 작업 일정으로 요청 된 일 수입니다.</help>
+        <label><!-- Resource Request Days --></label>
+        <name>pse__Resource_Request_Days__c</name>
+    </fields>
+    <fields>
+        <help>보류 된 리소스 요청에 대해 예약 된 요청 된 시간 수입니다.</help>
+        <label><!-- Resource Request Hours --></label>
+        <name>pse__Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <help>이 견적 대 실제 레코드와 관련된 보류 된 리소스 요청을 조회합니다.</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Estimates Versus Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>배정 된 요금</help>
+        <label><!-- Scheduled Bill Rate --></label>
+        <name>pse__Scheduled_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Bill Rate is Daily Rate --></label>
+        <name>pse__Scheduled_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <help>이 레코드의 기간 시작 날짜. 이것은 관련된 할당이나 타임 카드의 시작 날짜와 혼동되어서는 안됩니다.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 기간이 나타내는 기간 유형</help>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>달</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>쿼터</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>주</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>관련 기간</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>관련 타임 카드가 제출 되었습니까?</help>
+        <label><!-- Timecards Submitted --></label>
+        <name>pse__Timecards_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>시간의 변화량</help>
+        <label><!-- Hours Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <layouts>
+        <layout>Est Vs Actuals Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>예상 Vs 실제 이름</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- The estimates versus actuals comparison record requires either an assignment or a resource request. --></errorMessage>
+        <name>pse__Assignment_required</name>
+    </validationRules>
+</CustomObjectTranslation>

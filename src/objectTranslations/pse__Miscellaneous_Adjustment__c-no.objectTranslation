@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Diverse justering</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Diverse justeringer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Hvis den er merket, tillater Admin å gjøre «globale» endringer i Misc Adj., Inkludert redigeringer til Misc Adj. Prosjekt, Ressurs, Valuta eller Dato, selv om Inkluder i finans er merket. Konfigeringskrav: Aktualsberegningsmodus må settes til &apos;Planlagt&apos;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Det monetære beløpet for Diversejusteringen. Standard og må alltid være samme valuta som Project.</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Denne avmerkingsboksen bør kontrolleres når Diverse justering er godkjent - vanligvis basert på Status-feltet.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Angir forskjellig justering er i en tilstand som er kvalifisert for fakturering av generering av fakturaer (ikke inkludert godkjent for fakturering-flagg eller ha en kvalifisert transaksjonskategori, som kanskje også kreves per global konfigurasjon).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <help>Hvis du er merket, må du aldri regne med denne forretningsrekorden. Samme effekt som Billing Hold, men ment å gjenspeile permanent utelukkelse fra Billing Generation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette feltet er angitt, overstyrer det gruppen som en Misc Adjustment Transaksjoner vil rulle opp for Gruppespørsmål, selv om prosjektet er i en annen gruppe. Vanligvis ringer en annen justeringstransaksjoner opp til prosjektets gruppe.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette feltet er angitt, tilsidesætter det praksisen som en annen justeringstransaksjoner vil kaste opp for praksishandlere, selv om prosjektet er i en annen praksis. Vanligvis går en Misc Adjustment Transaksjoner opp til Prosjektets praksis.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette feltet er angitt, overstyrer det regionen som en Misc Adjustment Transaksjoner vil kaste opp for regionale aktører, selv om prosjektet ligger i en annen region. Vanligvis ringer en multisjusteringstransaksjoner opp til prosjektets region.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Anerkjennelsesmetoden som skal brukes på denne posten for inntektsprognoser.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Godkjent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Utkast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Avvist</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Sendt inn</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Category --></label>
+        <name>pse__Transaction_Category__c</name>
+        <picklistValues>
+            <masterLabel>Booked Revenue</masterLabel>
+            <translation>Bokført inntekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation>Budsjettert kostnad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Expense Cost</masterLabel>
+            <translation>Budsjettert kostnadskostnad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Budget</masterLabel>
+            <translation>Utgiftsbudsjett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Cost</masterLabel>
+            <translation>Kostnadskostnad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Cost</masterLabel>
+            <translation>Eksterne kostnader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>Internt budsjett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Cost</masterLabel>
+            <translation>Intern kostnad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Cost</masterLabel>
+            <translation>Andre kostnader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass-Through Ready-to-Bill Revenue</masterLabel>
+            <translation>Pass-Through Klar-til-regning Inntekter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Billed Revenue</masterLabel>
+            <translation>Pre-Billed Inntekter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready-to-Bill Revenue</masterLabel>
+            <translation>Klar-til-regning inntekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>Inntekter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Miscellaneous Adjustment Layout</layout>
+        <sections>
+            <label>Revisjon</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Status</label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Diverse justeringsnavn</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Misc_Adj_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Misc_Adj_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Miscellaneous Adjustment&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Misc_Adj_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

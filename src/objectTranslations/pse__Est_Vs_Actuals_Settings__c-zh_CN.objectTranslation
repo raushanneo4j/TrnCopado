@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Est Vs实际设置 --></value>
+    </caseValues>
+    <fields>
+        <help>对于在本周开始之前有结束日期的Est Vs Actuals记录，是否应更新从计划中得出的Est Vs Actuals字段（例如，估计小时数）。</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>删除Est与Actuals记录，即使它们为不再在修改的计划日期范围内的记录设置了实际值。注意：将始终删除没有实际值的记录。</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>逗号分隔的时间段类型列表，用于生成EVA记录</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>是否按月生成Est Vs Actuals记录</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>是否按季度生成Est Vs Actuals记录</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>是否按周生成est与实际值</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>为时间卡创建Est Vs Actuals记录，这些时间卡的时间超出了任务的开始和结束日期。 Est Vs Actuals记录对这些记录的估计值将为零。</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>以逗号分隔的Timecard Status字段值列表，用于确定是否应在计算Estimates vs Actuals时使用时间卡</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>定义从Project更新“项目管理器”字段时使用的批处理大小。默认值为2000.在更改此设置之前，请咨询FinancialForce支持。</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则此设置会使项目经理字段的更新反映在该项目的所有Est Vs Actuals记录中。</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>定义从Project更新“项目管理器”字段时要同步处理的Est Vs Actuals记录的数量。超过此值的记录将批量处理。默认值为9000.在更改此设置之前，请咨询支持部门。</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则如果您定义的一周类型的自定义时间段与分配或保留的资源请求重叠，则不会自动生成每周估计值与实际值。默认值为false。</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+</CustomObjectTranslation>

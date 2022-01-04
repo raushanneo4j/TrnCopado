@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>帐单预测摘要类别</value>
+    </caseValues>
+    <fields>
+        <help>公式字段，表示在此“计费预测摘要”类别的“计费预测”页面上显示的值。</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <help>查找应用于此计费预测摘要类别的当前活动计费预测替代。</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Summary --></label>
+        <name>pse__Forecast_Enhanced_Summary__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Opportunities Value --></label>
+        <name>pse__Forecast_Opportunities_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Projects Value --></label>
+        <name>pse__Forecast_Projects_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Sublevels Value --></label>
+        <name>pse__Forecast_Sublevels_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>查找创建了应用于此计费预测摘要类别的当前活动计费预测替代的用户。</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>当前活动的计费预测替代的创建日期和时间已应用于此计费预测摘要类别。</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>关于当前有效的计费预测替代的注释应用于此计费预测摘要类别。</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>RPG层次结构中此摘要类别以下的所有摘要类别的汇总差异汇总，包括相关账单预测明细类别的替代。</help>
+        <label><!-- Override Roll-Up Variance --></label>
+        <name>pse__Override_Rollup_Variance__c</name>
+    </fields>
+    <fields>
+        <help>当前活动的计费预测替代值应用于此计费预测摘要类别的值。</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Summary Category Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>帐单预测摘要类别名称</nameFieldLabel>
+</CustomObjectTranslation>

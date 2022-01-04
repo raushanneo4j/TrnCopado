@@ -1,0 +1,11 @@
+Hi Marketing,
+<br>
+<br>A new or cross-sell customer deal with potential marketing obligations just closed!
+<br>
+<br><b>Account Name:</b> <a href="{!Account.Link}">{!Account.Name}</a>
+<Br>
+<br><b>Opportunity Name:</b> <a href="{!Opportunity.Link}">{!Opportunity.Name}</a>
+<Br>
+<br><b>Potential marketing opportunities are:</b>  {!Opportunity.Marketing_Obligations__c}
+<br><br><font color ="red">
+PLEASE CONFIRM WITH THE OPPORTUNITY'S SALES REP ({!Opportunity.OwnerFullName}) OR ACCOUNT OWNER ({!Account.OwnerFullName}) BEFORE MOVING FORWARD WITH ANY MARKETING OBLIGATIONS FOR THIS ACCOUNT.</font>

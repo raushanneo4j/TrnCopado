@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognos inställningskategori</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Inställningskategorier för faktureringsprognoser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Multiplikatorn tillämpade på det faktiska fakturabeloppet på ett projekt. Detta inkluderar Billed Timecards, Billed Milestone och Diverse Justeringar.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpade kostnaderna för ett projekt. Detta är den fakturerade kostnaden.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Prognosen setup denna prognos kategori används med. Du måste konfigurera minst en prognoskategori.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Etiketten visas för en vägt prognoskategori, till exempel Förväntat, Bäst fall, Sämst fall.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpade möjligheter för denna viktprognoskategori.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Den ordning som prognoskategorierna tillämpas i prognosberäkningen. Du kan ange värden från 1 till 3.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Det här fältet har avlägsnats och ersatts av Order__c</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpade värdet av uppdragen på ett projekt.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn applicerades på resursförfrågningstimmarna i ett projekt, när fältet Resurshelt är markerat.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpade värdet av de schemalagda milstolparna för ett projekt.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpades på de planerade resursförfrågningstiderna för ett projekt, när fältet Resurshelt inte är markerat.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorn tillämpade värdet av den obestämda eftersläpningen på ett projekt, med hjälp av värdet som genereras av beräkningen av eftersläpningen.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognos inställningskategori</nameFieldLabel>
+</CustomObjectTranslation>

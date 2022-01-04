@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for sending license keys to customer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>X_DEPRECATED_Neo4J Send Trial License Key To Customer</name>
+    <style>freeForm</style>
+    <subject>Activation key for {!License_Key__c.Feature__c}</subject>
+    <textOnly>Dear {!License_Key__c.Registrant__c},
+Congratulations on choosing the Neo4j graph database platform! Your trial activation key for {!License_Key__c.Feature__c} is attached to this email. You will need the activation key during the installation process. This key is set to expire on {!License_Key__c.Expiration_Date__c}. Please refer to Neo4j documentation (https://neo4j.com/docs) or the Neo4j Bloom getting started guide (https://bit.ly/2zdfHeW) for detailed instructions.
+
+Should you have any questions, please reach out to your Neo4j point of contact {!License_Key__c.Sales_Rep_Name__c} at {!License_Key__c.Sales_Rep_Email__c}.
+Best Regards,
+Neo4j Licensing Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

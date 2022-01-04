@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Version</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Versioner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Vælg for at definere projektversionen som projektbaseline. En basislinje er en projektversion identificeret som den aftalte plan for projektet. Et projekt kan kun have en projektbaseline. Du kan indstille en ny basislinje for at fjerne den forrige.</help>
+        <label><!-- Baseline --></label>
+        <name>pse__Baseline__c</name>
+    </fields>
+    <fields>
+        <help>ID for Apex-jobet, der udfører Versioning-batchprocessen.</help>
+        <label><!-- Batch Apex Job Id --></label>
+        <name>pse__Batch_Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Den tilhørende post for den tilhørende versioneringsbatchproces.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Noter relateret til versionen.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Projektet relaterede til versionen.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Managed Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Status for versionen. Når statusen er Behandling, betyder dette, at processer ændrer versionen. Når status er færdig, er versionsdataene fast og klar til brug i en sammenligning.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Deleting</masterLabel>
+            <translation>Sletning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fejl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Ny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Forarbejdning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation>Parat</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Version Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Version Navn</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Your selected version is queued for deletion and cannot be set as a baseline. --></errorMessage>
+        <name>pse__Cannot_become_baseline_when_deleting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a name for this project version. --></errorMessage>
+        <name>pse__Version_should_have_a_name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Project_Version --></label>
+        <name>pse__Create_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Project_Version --></label>
+        <name>pse__Delete_Project_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Project_Versions --></label>
+        <name>pse__View_Project_Versions</name>
+    </webLinks>
+</CustomObjectTranslation>

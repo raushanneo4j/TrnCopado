@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Timecard Transmission</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Timecard Transmissioner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Maksimalt antal ressourcer, vi kan sende timekort til i et enkelt svar.</help>
+        <label><!-- Batch Limit --></label>
+        <name>pse__Batch_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Slutdatoen er indeholdt i POST-anmodningen.</help>
+        <label><!-- End Date --></label>
+        <name>pse__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Meddelelsen returneres, når der opstår en fejl.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Antal ressourcetransmissioner behandlet med status for Komplet.</help>
+        <label><!-- Records Processed --></label>
+        <name>pse__Records_Processed__c</name>
+    </fields>
+    <fields>
+        <help>Startdatoen er indeholdt i POST-anmodningen.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Status for tidskortsoverførslen.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation>Fiasko</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>I gang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>Succes</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Timecard Transmission Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Timecard Transmission Navn</nameFieldLabel>
+</CustomObjectTranslation>

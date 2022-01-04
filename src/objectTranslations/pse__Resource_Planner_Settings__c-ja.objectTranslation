@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- プランナー - リソース --></value>
+    </caseValues>
+    <fields>
+        <help>選択した場合、割り当て日付範囲が調整され、新しい日付範囲が休日内にある場合に休日スケジュールの例外レコードを追加するかどうかを決定します。</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerの「割り当ての作成」ダイアログの「追加フィールド」セクションに表示する追加フィールドを決定します。</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerの割り当てカラーバーを制御する割り当て上のフィールドのAPI名を定義します。</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、割り当てを順序付けするフィールドのAPI名、およびオプションで方向（ASCまたはDESC）を定義します。割り当ては常に保留リソース要求の上に表示されます。</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナのテキスト検索ボックスでどの割り当てフィールドを検索するかを決定します。</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーの割り当てのツールチップとして表示するフィールドを含むフィールドセットのAPI名。項目セットはAssignmentオブジェクトに存在しなければなりません。</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerの「可用性」列に可用性パーセント値を表示するときに小数点の右側に表示する桁数。値は整数です。デフォルトはゼロです。</help>
+        <label><!-- Availability Decimal Precision --></label>
+        <name>pse__Availability_Percentage_Precision__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーに表示する列を含むフィールドセットのAPI名。フィールドセットは連絡先オブジェクトに存在する必要があります。</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、拡張Resource Plannerが割り当てを表示する、今日からの将来の日数を定義します。たとえば、今日から30日以内に開始または終了する割り当てを表示するには、30を入力します。</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、拡張Resource Plannerが割り当てを表示する今日までの日数を定義します。たとえば、過去30日間に開始または終了する割り当てを表示するには、30と入力します。</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>プロフィール写真のないリソースに使用するデフォルトの画像を指すURL（絶対または相対）を定義します。 22ピクセル四方の画像ファイルが最適です。</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーの[リソースリクエスト]パネルで、リソースリクエストの終了日より後に含まれる日付に追加する日数を決定します。</help>
+        <label><!-- Add Included Dates After RR End Date --></label>
+        <name>pse__Default_URR_End_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーの[リソース要求]パネルで、リソース要求の開始日より前に含まれる日付に追加する日数を決定します。</help>
+        <label><!-- Add Included Dates Before RR Start Date --></label>
+        <name>pse__Default_URR_Start_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerでフィルタリングに使用されるフィールドを決定します。値は、フィルタ処理に使用できるフィールドを指定するフィールドセットです。</help>
+        <label><!-- Resource Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、[割り当ての作成]ダイアログの[コストレート]フィールドがすべてのユーザーに対して非表示になります。</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>非推奨：代わりにResource_Planner_Preferences__c.Hide_Inline_Dialog__cを使用してください。</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、[割り当ての作成]ダイアログの開始日と終了日は、プロジェクトの開始日と終了日から自動的に入力されます。</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、[割り当ての作成]ダイアログのリソースロールは、連絡先レコードから自動的に入力されます。</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>非推奨：代わりにResource_Planner_Preferences__c.Inline_Edit_Mode_THHC__cを使用してください。</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Resource plannerに表示する割り当てのAPI名を指定します。このフィールドが空白の場合、Resource plannerはデフォルトで割り当て名を表示します。</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Resource plannerに表示するリソース要求のAPI名を指定します。このフィールドが空白の場合、Resource plannerはデフォルトでリソース要求名を表示します。</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、多数のレコードを表示するときにバックグラウンドでロードされるリソースの最大数を定義します。高い値を入力すると、ロードの中断が少なくなりますが、より多くのメモリが使用されます。</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーのリソース要求のツールチップとして表示するフィールドを含むフィールドセットのAPI名。フィールドセットは、リソース要求オブジェクトに存在しなければなりません。</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナのテキスト検索ボックスでどのリソース要求フィールドを検索するかを決定します。</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのリソース要求カラーバーを制御するリソース要求のフィールドのAPI名を定義します。</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、保持されているリソース要求を順序付けするためのフィールドのAPI名、およびオプションで方向（ASCまたはDESC）を定義します。保留リソース要求は常に割り当ての下に表示されます。</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナのテキスト検索ボックスでどのリソースフィールドを検索するかを決定します。</help>
+        <label><!-- Search Fieldset Name --></label>
+        <name>pse__Resource_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>リソースプランナーのリソースのツールチップとして表示するフィールドを含むフィールドセットのAPI名。フィールドセットは連絡先オブジェクトに存在する必要があります。</help>
+        <label><!-- Resource Tooltip Field Set --></label>
+        <name>pse__Resource_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、過去の開始日を指定して課題を作成することはできません。デフォルト値は選択されていません。</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、Resource Plannerの割り当てを編集したり、過去の時間をスケジュールしたりすることはできません。デフォルト値は選択されていません。</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、過去に設定された開始日を持つ割り当てのリソースを交換することはできません。デフォルト値は選択されていません。</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、Resource Plannerの列の幅、順序、および表示のカスタマイズは、ユーザーごとに記憶されます。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、[可用性]列はResource Plannerに表示されます。この設定はデフォルトで選択されています。</help>
+        <label><!-- Show Availability Column --></label>
+        <name>pse__Show_Availability_Column__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルにはベージュを使用してください。デフォルト= False</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルには水色を使用してください。デフォルト= False</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルに薄緑色を使用します。デフォルト= False</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルには薄い赤を使用してください。デフォルト= False</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルに薄い黄色を使用してください。デフォルト= False</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルにピンクを使用します。デフォルト= False</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルに紫を使用します。デフォルト= False</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Resource Plannerのセルにターコイズを使用します。デフォルト= False</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、ユーザーが拡張（新規）または従来のResource Plannerを表示するかどうかを決定します。</help>
+        <label><!-- DEPRECATED:Use New Resource Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>要求ごとに子データ（割り当てとリソース要求）がロードされるリソースの数を指定します。最初にカスタマーサポートに相談しないでレコードロード制限を調整しないでください。</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__record_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>この設定は、拡張Resource Plannerでスケジュールを編集する前に、「スタッフ配置」チェック・ボックスを選択した状態で、ユーザーが許可制御を必要とするかどうかを決定します。</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+</CustomObjectTranslation>

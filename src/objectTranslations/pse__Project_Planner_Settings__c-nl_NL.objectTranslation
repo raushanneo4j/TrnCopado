@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Planners - Project --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Planners - Project --></value>
+    </caseValues>
+    <fields>
+        <help>Als deze optie is geselecteerd, wordt bepaald of uitzonderingsrecords voor vakantierooster worden toegevoegd als de toewijzingsdatumbereiken worden aangepast en de nieuwe periode binnen een vakantie valt.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, stelt deze instelling gebruikers in staat om de toewijzingsbalk naar massa-verplaatsingstoewijzingen in de Projectplanner te slepen. Deze instelling is standaard uitgeschakeld.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de extra velden die moeten worden weergegeven in het gedeelte &quot;Aanvullende velden&quot; van het dialoogvenster Toewijzing maken in Projectplanner.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definieert de API-naam van het veld in een toewijzing die de toewijzingskleurbalken in Projectplanner bestuurt.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling definieert de API-naam van een veld voor toewijzingen door en, optioneel, de richting (ASC of DESC). Toewijzingen verschijnen altijd boven vastgehouden bronverzoeken.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt welke toewijzingsvelden worden doorzocht met het tekstzoekvak in de projectplanner.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van de veldset met de velden die moeten worden weergegeven als tooltips voor toewijzingen in de projectplanner. De veldset moet bestaan ​​in het object Toewijzing.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van de veldset met de kolommen die in de projectplanner moeten worden weergegeven. De veldset moet bestaan ​​in het projectobject.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling definieert het aantal toekomstige dagen vanaf vandaag, waarvoor de verbeterde Projectplanner toewijzingen zal weergeven. Voer bijvoorbeeld 30 in om opdrachten weer te geven die binnen 30 dagen na vandaag beginnen of eindigen.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling definieert het aantal dagen voorafgaand aan vandaag waarvoor de verbeterde projectplanner toewijzingen zal weergeven. Voer bijvoorbeeld 30 in om opdrachten weer te geven die in de voorgaande 30 dagen beginnen of eindigen.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definieert een URL (absoluut of relatief) die verwijst naar de standaardafbeelding voor bronnen zonder profielfoto. Afbeeldingsbestanden van 22 pixels in het vierkant werken het best.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de velden die worden gebruikt voor filtering in de projectplanner. De waarde is een veldset met velden die beschikbaar zijn om op te filteren.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden de velden Kostenpercentage in het dialoogvenster Toewijzing maken verborgen voor alle gebruikers.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Gebruik in plaats daarvan Project_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Als deze optie is geselecteerd, worden de begin- en einddatums in het dialoogvenster Toewijzingen automatisch ingevuld vanuit de start- en einddatums van het project.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Als deze optie is geselecteerd, wordt de resourcerol in het dialoogvenster Toewijzingen maken automatisch ingevuld in de record Contacten.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Gebruik in plaats hiervan Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert de API-naam van de toewijzing die moet worden weergegeven in Projectplanner. Als dit veld leeg is, geeft de projectplanner standaard de naam van de toewijzing weer.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert de API-naam van de resourceaanvraag die moet worden weergegeven in Projectplanner. Als dit veld leeg is, geeft de projectplanner standaard de naam van het resourceaanvraag weer.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling definieert het maximale aantal projecten dat op de achtergrond wordt geladen bij het bekijken van grote aantallen records. Het invoeren van een hogere waarde resulteert in minder laadonderbrekingen, maar gebruikt meer geheugen.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt welke projectvelden worden doorzocht met het tekstzoekvak in de projectplanner.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Definieert de API-naam van het veld in een project dat de kleuren van de projectsamenvatting beheert.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van de veldset met de velden die moeten worden weergegeven als tooltips voor projecten in de projectplanner. De veldset moet bestaan ​​in het projectobject.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Geeft het aantal projecten aan waarvoor onderliggende gegevens (toewijzingen en resourceaanvragen) per aanvraag worden geladen. U dient de Record Load Limit niet aan te passen zonder eerst de klantenservice te raadplegen.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>De API-naam van de veldset met de velden die worden weergegeven als tooltips voor resourceaanvragen in de projectplanner. De veldset moet bestaan ​​in het Resource Request-object.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt welke velden voor resource-aanvragen worden doorzocht met het tekstzoekvak in de projectplanner.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definieert de API-naam van het veld op een resourceaanvraag die de kleurbalken van de Resource Request in Project Planner bestuurt.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling definieert de API-naam van een veld om bewaarde resource-aanvragen te bestellen door en, optioneel, de richting (ASC of DESC). Ingehouden resourceaanvragen verschijnen altijd onder toewijzingen.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u in het verleden geen opdracht met startdatum maken. De standaardwaarde is gedeselecteerd.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u de toewijzing van Projectplanner en de geplande uren in het verleden niet bewerken. De standaardwaarde is gedeselecteerd.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u de resource van een toewijzing niet omwisselen met een startdatum die in het verleden is ingesteld. De standaardwaarde is gedeselecteerd.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden aanpassingen aan de breedte, volgorde en zichtbaarheid van kolommen in de projectplanner onthouden per gebruiker.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Beige voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Light Blue voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Lichtgroen voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Light Red voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Lichtgeel voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Pink voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Purple voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Gebruik Turquoise voor cellen in Projectplanner. Standaard = False</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling bepaalt of uw gebruikers de verbeterde (nieuwe) of klassieke Projectplanner zien.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling bepaalt of uw gebruikers een machtigingscontrole nodig hebben, met het selectievakje Staffing geselecteerd, voordat ze planningen kunnen bewerken op de verbeterde projectplanner.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

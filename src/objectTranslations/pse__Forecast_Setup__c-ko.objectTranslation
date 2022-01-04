@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>청구 예측 설정</value>
+    </caseValues>
+    <fields>
+        <help>실제 값이 포함되어야하는 현재 날짜 이전 일 수를 입력하십시오. 오늘 컷오프 날짜로 사용하려면 0을 입력하십시오. 공백으로두면 지난 주말 인 기본 마감일을 사용할 수 있습니다.</help>
+        <label><!-- Actuals Cutoff Offset --></label>
+        <name>pse__Actuals_Cutoff_Offset__c</name>
+    </fields>
+    <fields>
+        <help>기회에 곡선이 할당되지 않은 경우 청구 예측 계산 중 기회에 청구 예측 곡선이 적용됩니다.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Opportunity Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>프로젝트에 곡선이 지정되지 않은 경우 청구 예측 계산 중에 프로젝트에 적용된 청구 예측 곡선.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Project Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>새로운 청구 예측 계산에 사용될 설정 레코드를 나타냅니다.</help>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>기회 제품을 선택하면 IsServicesProductLine이 선택된 기회 제품 만 포함됩니다. 제품을 선택하면 IsServicesProduct가 제품 자체에서 확인 된 기회 제품 만 포함됩니다.</help>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity Product</masterLabel>
+            <translation>기회 제품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>생성물</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>true로 설정하면 청구 예측 계산을 실행할 때 기회 곡선이 항상 적용됩니다.</help>
+        <label><!-- Use Opportunity Curve for Products --></label>
+        <name>pse__Use_Opportunity_Curve_For_Products__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Setup Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>청구 예측 설정 이름</nameFieldLabel>
+</CustomObjectTranslation>

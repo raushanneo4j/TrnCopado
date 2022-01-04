@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>FFR-Stapelverarbeitungsdetail</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>FFR-Stapelverarbeitungsdetails</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetail --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetails --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetail --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetails --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetail --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- FFR-Stapelverarbeitungsdetails --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>ffr__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Process --></label>
+        <name>ffr__BatchProcess__c</name>
+        <relationshipLabel><!-- Batch Process Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Chain Number --></label>
+        <name>ffr__ChainNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Detail --></label>
+        <name>ffr__StatusDetail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>ffr__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation>Abgebrochen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Abgeschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Gescheitert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holding</masterLabel>
+            <translation>Halten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparing</masterLabel>
+            <translation>Vorbereitung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Wird bearbeitet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>In Warteschlange</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Batch Process Detail Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name</nameFieldLabel>
+</CustomObjectTranslation>

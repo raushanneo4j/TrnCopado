@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome di un gruppo di campi contenente i campi di assegnazione da visualizzare come colonne nella ricerca Progetto / Assegnazione nella pagina Voce di bordo.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Il numero di assegnazioni da caricare per l&apos;assegnazione del cartellino orario scenderà</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Elenco dei nomi API dei campi di assegnazione da visualizzare come colonne nella ricerca Progetto / Assegnazione nella pagina Time Entry avanzata. Non includere il prefisso dello spazio dei nomi pse__ nel nome dell&apos;API di un campo. Il valore predefinito è Name, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Limite di inizio e fine data di assegnazione durante il caricamento delle assegnazioni nell&apos;interfaccia utente scheda. Se è true, vengono caricate solo le assegnazioni le cui date di inizio / fine contengono o si sovrappongono all&apos;intervallo di date del segnatempo. Questo riguarda solo l&apos;interfaccia utente, non la modifica dell&apos;amministratore.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Elenco dei valori dello stato dell&apos;assegnazione da utilizzare durante il caricamento dei compiti da db.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Se è vero, al caricamento iniziale della nuova interfaccia utente di Timecard verranno controllati i timecard della settimana precedente. Se non ci sono timecode riempiti per la settimana precedente, l&apos;interfaccia utente mostrerà la finestra di conferma che chiede all&apos;utente di caricare la settimana precedente o la settimana corrente. Se falso, funziona normalmente.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Config per controllare il valore massimo di auto-ripristino dell&apos;ora sulla nuova UI TC.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>Config per controllare il valore minimo di auto-ripristino dell&apos;ora sulla nuova UI TC.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>Se è vero, tutti i cartellini sono presentati per l&apos;approvazione. Se falso, vengono inviati solo timecards selezionati dall&apos;utente.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome di un set di campi contenente i campi del progetto da visualizzare come colonne nella ricerca Progetto / Assegnazione sulla pagina Timecard.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Elenco dei nomi API dei campi del progetto da visualizzare come colonne nella ricerca Progetto / Assegnazione nella pagina Time Entry avanzata. Non includere il prefisso dello spazio dei nomi pse__ nel nome dell&apos;API di un campo. Il valore predefinito è Nome, Account__r.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Limitazione della data di inizio e di fine del progetto durante il caricamento del progetto / assegnazioni da db.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome di un set di campi contenente campi di risorse da visualizzare come colonne nella ricerca Risorsa nella pagina Voce Timecard Sencha.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Se il valore di configurazione è uguale a &quot;tutto&quot;, significa che verranno caricate tutte le risorse insieme alle risorse utente correnti. Altrimenti, se il valore è uguale a &quot;risorsa&quot; o null, verranno caricate solo le risorse utente correnti.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>Elenco dei campi di risorse (nomi / percorsi API completi) da visualizzare nelle colonne per il popup di ricerca risorse nella nuova interfaccia utente di Timecard. Consiglia al massimo 4 campi / colonne. Valore predefinito: Nome, Region__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Dimensione del numero di schede da salvare / inviare in un&apos;unica esecuzione batch.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>La configurazione viene utilizzata per controllare il salvataggio del cartellino con zero ore. Se è vero, i segnapunti con zero vengono salvati altrimenti non salvati (l&apos;avviso verrà visualizzato su ui).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>Il numero di record di schede di tempo, esclusi i record correlati, salvati in una singola richiesta.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Config per tenere il segnaposto ordinato per nomi API dei campi ordine. È possibile inserire più campi separati da virgola per l&apos;ordinamento. Es .: CreatedDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV Elenco dei valori di stato per i quali è possibile modificare le righe di voce del cartellino.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzato per determinare lo stato in cui i timecards saranno impostati al clic sul pulsante di salvataggio</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzato per determinare lo stato in cui verranno impostati i cartellini al momento dell&apos;invio del pulsante</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato (true), le preferenze della colonna UI di inserimento orario vengono salvate localmente. Se deselezionato (falso), le preferenze vengono salvate sul server.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Se è vero, i menu a discesa Posizione si collegheranno all&apos;oggetto Posizione progetto invece degli elenchi di selezione posizione sull&apos;interfaccia utente di TC</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>Valore predefinito giorno di inizio settimana utilizzato quando una risorsa non ha un calendario di lavoro o ha un calendario di lavoro senza un giorno di inizio settimana.</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>La configurazione viene utilizzata per controllare la presentazione del cartellino con zero ore. Se è vero, i timecards con zero possono essere inviati altrimenti l&apos;avviso verrà mostrato su ui.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

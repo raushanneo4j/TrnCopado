@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Defines the feature to apply preferences to. Values are: 0 (for Project Planner), 1 (for Resource Planner), 2 (for Project Task Gantt), 3 (for Timecards), 4 (for Timecard Approval) or 5 (for Timecard Task Time). --></help>
+        <label><!-- Feature --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Contains one or more API names for the fields, including cross-object fields, this column is based on. This is a system-generated field. Do not edit this field manually. --></help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The order, from left to right, the column displays in the UI for the indicated feature. --></help>
+        <label><!-- Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user to whom the preferences are assigned. --></help>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Column Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The saved value of the respective field. --></help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- When true, the column is visible on the UI for the user. --></help>
+        <label><!-- Visible --></label>
+        <name>pse__Visible__c</name>
+    </fields>
+    <fields>
+        <help><!-- The width of the column, in pixels. --></help>
+        <label><!-- Width --></label>
+        <name>pse__Width__c</name>
+    </fields>
+</CustomObjectTranslation>

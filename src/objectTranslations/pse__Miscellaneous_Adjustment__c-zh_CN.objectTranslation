@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>杂项调整</value>
+    </caseValues>
+    <fields>
+        <help>如果选中，则允许管理员对其他调整进行“全局”更改，包括对其他项目，资源，货币或日期的编辑，即使选中“包括在财务中”也是如此。配置要求：实际计算模式必须设置为“已计划”。</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>杂项调整的金额。默认为且必须始终与Project相同。</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>批准杂项调整时，应检查此复选框 - 通常基于“状态”字段。</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>表示杂项调整处于符合计费事件生成条件的状态（不包括已批准的开票标记或具有符合条件的交易类别，每个全局配置也可能需要）。</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则永远不会记录此业务记录。与账单保留相同，但旨在反映账单生成的永久排除。</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，则它将覆盖Misc Adjustment的交易将为Group Actuals汇总的Group，即使其Project位于不同的Group中。通常，杂项调整的交易汇总到其项目组。</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，它将覆盖其他Misc调整事务将为实际实际汇总的实践，即使其项目处于不同的实践中。通常情况下，杂项调整的交易汇总到其项目实践。</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，它将覆盖Misc Adjustment的交易将为区域实际汇总的区域，即使其项目位于不同的区域。通常，杂项调整的交易汇总到其项目区域。</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>适用于此记录的收入预测的识别方法。</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>批准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>草案</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>被拒绝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>提交</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Category --></label>
+        <name>pse__Transaction_Category__c</name>
+        <picklistValues>
+            <masterLabel>Booked Revenue</masterLabel>
+            <translation>预订收入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation>预算成本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Expense Cost</masterLabel>
+            <translation>预算费用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Budget</masterLabel>
+            <translation>费用预算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Cost</masterLabel>
+            <translation>费用成本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Cost</masterLabel>
+            <translation>外部成本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>内部预算</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Cost</masterLabel>
+            <translation>内部成本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Cost</masterLabel>
+            <translation>其他费用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass-Through Ready-to-Bill Revenue</masterLabel>
+            <translation>传递准备账单收入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Billed Revenue</masterLabel>
+            <translation>预先计费的收入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready-to-Bill Revenue</masterLabel>
+            <translation>准备账单收入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>收入</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Miscellaneous Adjustment Layout</layout>
+        <sections>
+            <label>审计</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>状态</label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>杂项调整名称</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Misc_Adj_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Misc_Adj_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Miscellaneous Adjustment&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Misc_Adj_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

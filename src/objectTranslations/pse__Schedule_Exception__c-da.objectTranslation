@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Planlæg undtagelse</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Planlæg undtagelser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Indtast startdatoen for undtagelsestidspunktet</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>Slutdatoen for undtagelsestidspunktet</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indtast standard antal timer, der skal bruges, hvis der ikke er angivet en værdi for en enkelt dag. For eksempel, hvis denne værdi er 2 og ingen værdi for mandagstimer leveres, bliver antallet af timer for mandag behandlet som 2.</help>
+        <label><!-- Default Exception Hours Per Day --></label>
+        <name>pse__Exception_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Fredag ​​sluttid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Friday End Time --></label>
+        <name>pse__Friday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Fredag ​​Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Friday Start Time --></label>
+        <name>pse__Friday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Mandag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Monday End Time --></label>
+        <name>pse__Monday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Mandag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Monday Start Time --></label>
+        <name>pse__Monday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Lørdag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Saturday End Time --></label>
+        <name>pse__Saturday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Lørdag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Saturday Start Time --></label>
+        <name>pse__Saturday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>pse__Schedule__c</name>
+        <relationshipLabel><!-- Schedule Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Søndag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Sunday End Time --></label>
+        <name>pse__Sunday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Søndag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Sunday Start Time --></label>
+        <name>pse__Sunday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Torsdag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Thursday End Time --></label>
+        <name>pse__Thursday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Torsdag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Thursday Start Time --></label>
+        <name>pse__Thursday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Tirsdag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Tuesday End Time --></label>
+        <name>pse__Tuesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Tirsdag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Tuesday Start Time --></label>
+        <name>pse__Tuesday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>Onsdag Slut Tid er den planlagte sluttid på den angivne dag.</help>
+        <label><!-- Wednesday End Time --></label>
+        <name>pse__Wednesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Onsdag Starttidspunkt er den planlagte starttid på den angivne dag.</help>
+        <label><!-- Wednesday Start Time --></label>
+        <name>pse__Wednesday_Start_Time__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Schedule Exception Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Timer</label>
+            <section>Hours</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Planlæg undtagelsesnavn</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start and/or End Date does not fall within the start and end dates of the schedule. --></errorMessage>
+        <name>pse__Check_Date_Range</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>עסקה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>עסקאות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>pse__Budget__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>pse__Category__c</name>
+        <picklistValues>
+            <masterLabel>Billable External Hours</masterLabel>
+            <translation>שעות חיצוניות לחיוב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billable Internal Hours</masterLabel>
+            <translation>שעות פנימיות הניתנות לחיוב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billed Revenue</masterLabel>
+            <translation>הכנסה מחויבת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked Revenue</masterLabel>
+            <translation>הכנסות שהוזמנו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation>עלות מתוקצבת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Expense Cost</masterLabel>
+            <translation>עלות הוצאה מתוקצבת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credited Non-Billable Internal Hours</masterLabel>
+            <translation>שעות פנימיות ללא זיכוי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluded Hours</masterLabel>
+            <translation>שעות לא נכללות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Budget</masterLabel>
+            <translation>תקציב הוצאות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Cost</masterLabel>
+            <translation>עלות הוצאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Cost</masterLabel>
+            <translation>עלות חיצונית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>תקציב פנימי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Cost</masterLabel>
+            <translation>עלות פנימית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoiced Revenue</masterLabel>
+            <translation>הכנסות חשבוניות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Billable External Hours</masterLabel>
+            <translation>שעות חיצוניות שאינן ניתנות לחיוב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Billable Internal Hours</masterLabel>
+            <translation>שעות פנימיות שאינן ניתנות לחיוב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Cost</masterLabel>
+            <translation>עלות אחרת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass-Through Ready-to-Bill Revenue</masterLabel>
+            <translation>הכנסות מוכנות לחיוב עוברות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Billed Revenue</masterLabel>
+            <translation>הכנסה מחויבת מראש</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready-to-Bill Revenue</masterLabel>
+            <translation>הכנסות מוכנות לחיוב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>הכנסות</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense --></label>
+        <name>pse__Expense__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group Currency Code --></label>
+        <name>pse__Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Currency Exchange Rate --></label>
+        <name>pse__Group_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Adjustment --></label>
+        <name>pse__Miscellaneous_Adjustment__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>אם מסומנים, תיבת סימון זו מצביעה על כך שהקבוצה לביצוע העסקה הוגדרה באופן עצמאי מהרגיל ’עוקב אחר הכללים’ עבור הרשימות. במקום זאת, הוא הוחלף ברמת השיא העסקית (תקציב, אבן דרך, התאמה שונות).</help>
+        <label><!-- Overridden Group --></label>
+        <name>pse__Overridden_Group__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים, תיבת סימון זו מציינת כי התרגול לביצוע העסקה הוגדר באופן עצמאי מהרגיל ’עוקב אחר הכללים’ עבור הרשימות. במקום זאת, הוא הוחלף ברמת השיא העסקית (תקציב, אבן דרך, התאמה שונות).</help>
+        <label><!-- Overridden Practice --></label>
+        <name>pse__Overridden_Practice__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים, תיבת סימון זו מציינת שאזור העסקה הוגדר באופן עצמאי מהרגיל ’עוקב אחר הכללים’ עבור רשימות. במקום זאת, הוא הוחלף ברמת השיא העסקית (תקציב, אבן דרך, התאמה שונות).</help>
+        <label><!-- Overridden Region --></label>
+        <name>pse__Overridden_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Currency Code --></label>
+        <name>pse__Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Currency Exchange Rate --></label>
+        <name>pse__Practice_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Currency Code --></label>
+        <name>pse__Project_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region Currency Code --></label>
+        <name>pse__Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Currency Exchange Rate --></label>
+        <name>pse__Region_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Record Ineligible --></label>
+        <name>pse__Related_Record_Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record ID --></label>
+        <name>pse__Related_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record Name --></label>
+        <name>pse__Related_Record_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record --></label>
+        <name>pse__Related_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Currency Code --></label>
+        <name>pse__Resource_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Currency Exchange Rate --></label>
+        <name>pse__Resource_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Transaction Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation>תקציב</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense</masterLabel>
+            <translation>הוצאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice (Inbound)</masterLabel>
+            <translation>חשבונית (נכנסת)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice (Outbound)</masterLabel>
+            <translation>חשבונית (יוצא)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milestone</masterLabel>
+            <translation>אבן דרך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous Adjustment</masterLabel>
+            <translation>התאמה שונות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Order</masterLabel>
+            <translation>הזמנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Order</masterLabel>
+            <translation>סדר מכירות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timecard</masterLabel>
+            <translation>קלף זמן</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- For Billing --></label>
+        <name>pse__isBilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cost --></label>
+        <name>pse__isCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Expense --></label>
+        <name>pse__isExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- For Invoicing --></label>
+        <name>pse__isInvoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Revenue --></label>
+        <name>pse__isRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Time --></label>
+        <name>pse__isTime__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label>מידע על מטבע</label>
+            <section>Currency Information</section>
+        </sections>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מידע</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>אזור, תרגול וקבוצה</label>
+            <section>Region, Practice, and Group</section>
+        </sections>
+        <sections>
+            <label>מידע מערכת</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מספר העסקה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Transactions must have an Effective Date. --></errorMessage>
+        <name>pse__Transactions_must_have_an_Effective_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

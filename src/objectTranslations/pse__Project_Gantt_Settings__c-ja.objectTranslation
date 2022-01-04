@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- プロジェクトタスクガント設定 --></value>
+    </caseValues>
+    <fields>
+        <help>プロジェクトが編集用にロックされている場合、この設定は、ユーザー（プロジェクトタスクガントでタスクを編集する権限を持つユーザー）にロックを解除して他のユーザーを読み取り専用モードにするオプションを与えるかどうかを決定します。</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクガントに表示するカスタム列を含む、プロジェクトタスクオブジェクト上のフィールドセットのAPI名を定義します。設定が空白の場合は、[ガント編集可能なカスタム列]フィールドセットが使用されます。</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクトタスクガントのレコードはバッファにロードされません。デフォルトは選択されていません。この設定は、FinancialForce.comのカスタマーサポートに相談した後にのみ変更してください。</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクトタスクの依存関係が同期されると、依存関係の解決ボタンが無効になります。選択を解除すると、プロジェクトタスクの依存関係を同期させる必要がないときにボタンがアクティブのままになります。デフォルト値は選択されていません。</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクガントの現在のビューの上に表示する行数を決定します。デフォルトは20です。この設定は、FinancialForce.comのカスタマーサポートに相談した後でのみ変更してください。</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>マイルストーン用のカスタムツールチップを表示するために使用されるフィールドセットのAPI名。定義されている場合、この設定はデフォルトのマイルストーンツールチップを置き換えます。</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスク割り当てのカスタムツールチップを表示するために使用されるフィールドセットのAPI名。定義されている場合、この設定はデフォルトのプロジェクトタスク割り当てツールチップを置き換えます。</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトマネージャに対するガント編集アクセスのレベルを決定します。値は「Full」（デフォルト） - 作成されたプロジェクトを編集できます、「Read」 - 読み取り専用アクセス権のみ、または「None」 - アクセス権によって決定されたアクセス権です。</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトのカスタムツールチップを表示するために使用されるフィールドセットのAPI名。定義されている場合、この設定はデフォルトのプロジェクトツールチップを置き換えます。</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクガントで編集できないフィールドを含むプロジェクトタスクに設定されたフィールドのAPI名。</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクトタスクガントの列の幅、順序、および表示設定のカスタマイズは、ユーザーごとに記憶されます。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、「プロジェクト要求ガント」ツールバーに「リソース要求の作成」ボタンが表示されます。 [プロジェクトタスクの割り当て]ページの[リソース需要の作成]ボタンを使用してプロジェクト計画を配置するために使用します。</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>[スケジュール]ウィンドウのタスクバー表示に完了時間の割合が表示されるかどうかを決定します。この設定は、スケジュールペインの％Hrsボタンの表示を制御しません。</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>[スケジュール]ペインのタスクバー表示にポイント完了率を表示するかどうかを決定します。この設定はデフォルトで選択されています。この設定は、スケジュールペインの％Ptsボタンの表示を制御しません。</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクのカスタムツールチップを表示するために使用されるフィールドセットのAPI名。定義されている場合、この設定はデフォルトのプロジェクトタスクツールチップを置き換えます。</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクガントの現在のビューの下に表示する行数を決定します。デフォルトは10です。この設定は、FinancialForce.comのカスタマーサポートに相談した後でのみ変更してください。</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+</CustomObjectTranslation>

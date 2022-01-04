@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddContactRole</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddContactRole</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddContactRole</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Opportunity_Contact_Role_Layout_Custom</fullName>
+        <fields>OpportunityId</fields>
+        <fields>ContactId</fields>
+        <fields>Role</fields>
+        <fields>PSContactRole__c</fields>
+        <fields>IsPrimary</fields>
+        <label>Opportunity Contact Role Layout (Custom)</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IsPrimary</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PSContactRole__c</fullName>
+        <businessOwnerGroup>Professional_Services</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is intended for Contacts related to the client projects or services delivered by the Neo4j Professional Services team. JIRA:SFDCSPT-600</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Contacts on projects delivered by PS Team. Select value that best reflects Contact’s role in relation to project for this Opportunity. Project Sponsor: authority ultimately accountable for the project. Project Manager: responsible for planning and execution of the project. Project Lead: assists Project Manager by managing people throughout the project. Technical Consultant: SME who brings specific expertise to the project. Business Administrator: oversees day-to-day operations to ensure goals are met.</inlineHelpText>
+        <label>PS Contact Role</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Project Sponsor</fullName>
+                    <default>false</default>
+                    <label>Project Sponsor</label>
+                </value>
+                <value>
+                    <fullName>Project Manager</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>Project Lead</fullName>
+                    <default>false</default>
+                    <label>Project Lead</label>
+                </value>
+                <value>
+                    <fullName>Technical Consultant</fullName>
+                    <default>false</default>
+                    <label>Technical Consultant</label>
+                </value>
+                <value>
+                    <fullName>Business Administrator</fullName>
+                    <default>false</default>
+                    <label>Business Administrator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReceivesPSAlerts__c</fullName>
+        <businessOwnerGroup>Professional_Services</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>false</defaultValue>
+        <description>As a PS team member, I want to send automated alerts related to projects to designated contacts related to opportunities, so that only the right contacts receive the information they need. JIRA: SFDCSPT-724</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the contact should receive project alerts related to the project(s) on this opportunity.</inlineHelpText>
+        <label>Receives PS Alerts</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role</fullName>
+        <type>Picklist</type>
+    </fields>
+</CustomObject>

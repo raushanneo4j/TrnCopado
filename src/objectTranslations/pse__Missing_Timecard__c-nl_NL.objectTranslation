@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ontbrekende tijdkaart</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ontbrekende tijdkaarten</value>
+    </caseValues>
+    <fields>
+        <label><!-- User Missing TC workspace --></label>
+        <name>User_Missing_TC_workspace__c</name>
+    </fields>
+    <fields>
+        <help>De datum en tijd waarop de tijdkaart werd ingevoerd</help>
+        <label><!-- Date Timecard Entered --></label>
+        <name>pse__Date_Timecard_Entered__c</name>
+    </fields>
+    <fields>
+        <help>De einddatum van de week waarop de tijdkaarten ontbreken, wordt gecontroleerd.</help>
+        <label><!-- Week End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Of de ontbrekende tijdkaart voor alle subniveaus van de geselecteerde regio, oefening of groep moet worden berekend. Dit veld wordt genegeerd als Ontbrekende TImecard alleen voor een resource wordt berekend.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Timecard Calculation --></label>
+        <name>pse__Missing_Timecard_Calculation__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het begin van de week dat overeenkomt met de einddatum.</help>
+        <label><!-- Week Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Missing Timecard Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Ontbrekende tijdkaart-naam</nameFieldLabel>
+    <webLinks>
+        <label><!-- Schedule_Missing_Timecard --></label>
+        <name>pse__Schedule_Missing_Timecard</name>
+    </webLinks>
+</CustomObjectTranslation>

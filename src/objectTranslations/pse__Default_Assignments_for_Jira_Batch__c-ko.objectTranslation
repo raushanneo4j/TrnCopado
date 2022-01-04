@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jira Batch의 기본 할당</value>
+    </caseValues>
+    <fields>
+        <help>현재 배치 Apex 작업의 고유 식별자입니다.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_ID__c</name>
+    </fields>
+    <fields>
+        <help>배치 프로세스 레코드를 찾습니다. 프로세스가 성공적으로 완료되면 배치 프로세스 레코드가 자동으로 삭제됩니다.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>배치 레코드 식별자</help>
+        <label><!-- Default Assignments for Jira Batch ID --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_ID__c</name>
+    </fields>
+    <fields>
+        <help>프로세스 완료시 전송 된 알림 유형 : 성공, 실패 또는 혼합.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>일괄 작업의 현재 상태 : &quot;처리 중&quot;, &quot;완료&quot;또는 &quot;오류&quot;</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>완전한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>오류</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>가공</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>로그 유형이 중단 인 로그 수입니다.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>로그 유형이 오류 인 로그 수입니다.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>로그 유형이 외부인 로그 수입니다.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_of_External__c</name>
+    </fields>
+    <fields>
+        <help>총 로그 수</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_of_Logs__c</name>
+    </fields>
+    <nameFieldLabel>Jira 배치 이름의 기본 할당</nameFieldLabel>
+</CustomObjectTranslation>

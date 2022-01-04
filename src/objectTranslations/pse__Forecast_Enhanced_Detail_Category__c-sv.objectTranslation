@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognosdetaljkategori</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognosdetaljkategorier</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Actuals-värdet är summan av Billings: Expenses, Billings: Milestone, Billings: Misc Adjustments, och Billings: Timecards.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Formelfält som representerar värdet som visas på sidan Faktureringsprognos för denna kategori för faktureringsprognos.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <help>Fakturering för kostnader.</help>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <help>Fakturorna för milstolpar.</help>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Fakturorna för diverse justeringar.</help>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help>Fakturorna för tidskort.</help>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Detail --></label>
+        <name>pse__Forecast_Enhanced_Detail__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Sökning till den nuvarande aktiva faktureringsprognosen som åsidosätts för denna kategori för faktureringsprognosdetaljer.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>Sök upp till användaren som skapade den nuvarande aktiva faktureringsprognosen åsidosatt tillämpas på denna kategori för faktureringsprognosdetaljer.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Skapat datum och tid för den nuvarande aktiva faktureringsprognosöverskridningen som tillämpas på denna kategori för faktureringsprognosdetaljer.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>Anmärkningar om den för närvarande aktiva faktureringsprognosen åsidosätter tillämpas på denna kategori för faktureringsprognosdetaljer.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Värdet på den nuvarande aktiva faktureringsprognosen åsidosätter tillämpas på denna kategori för faktureringsprognosdetaljer.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>De schemalagda uppdragen.</help>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Planerat backlogvärde är summan av Schemalagd: Uppdrag, Schemalagd: Held RR, Schemalagd: Olyckad RR, och Schemalagd: Milstolpar.</help>
+        <label><!-- Scheduled Backlog --></label>
+        <name>pse__Scheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <help>De planerade resursförfrågningarna.</help>
+        <label><!-- Scheduled: Held RRs --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>De schemalagda milstolparna.</help>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Den planerade olyckade resursanmodan.</help>
+        <label><!-- Scheduled: Unheld RRs --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Potentiell eftersläpning, i samband med eviga tidsperioder (Alla tidsperioder).</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Detail Category Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognosdetaljekategorinamn</nameFieldLabel>
+</CustomObjectTranslation>

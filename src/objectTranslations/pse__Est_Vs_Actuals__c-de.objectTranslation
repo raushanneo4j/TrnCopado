@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Est Vs Actuals --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Billings --></label>
+        <name>psa_report__Actual_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvA Variance --></label>
+        <name>psa_report__EvA_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Billings --></label>
+        <name>psa_report__Scheduled_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Is Last Sunday --></label>
+        <name>psaws__End_Date_Is_Last_Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Hours Percent Variance --></label>
+        <name>psaws__High_Hours_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>Aktueller abrechenbarer Betrag dividiert durch tatsächliche Stunden oder tatsächliche Tage</help>
+        <label><!-- Actual Average Bill Rate --></label>
+        <name>pse__Actual_Average_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Die abrechenbare Menge an Stundenkartenstunden</help>
+        <label><!-- Actual Billable Amount --></label>
+        <name>pse__Actual_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Tatsächliche Anzahl der Arbeitstage im Zeitraum basierend auf aggregierten Zeitkarten pro Woche.</help>
+        <label><!-- Actual Days (Aggregated) --></label>
+        <name>pse__Actual_Days_Aggregated__c</name>
+    </fields>
+    <fields>
+        <help>Tatsächliche Anzahl der in dem Zeitraum gearbeiteten Tage</help>
+        <label><!-- Actual Days --></label>
+        <name>pse__Actual_Days__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Stunden, die auf Zeitkarten eingegeben wurden</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Percent Variance --></label>
+        <name>pse__Days_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Variance --></label>
+        <name>pse__Days_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Enddatum des Zeitraums für diesen Datensatz Dies sollte nicht mit dem Enddatum der zugehörigen Zuweisung oder Zeitkarten verwechselt werden.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der geplanten Tage für die Arbeit während des Zeitraums</help>
+        <label><!-- Estimated Days --></label>
+        <name>pse__Estimated_Days__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der geplanten Stunden</help>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Percent Variance --></label>
+        <name>pse__Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Wechselkurs des Projekts (Rechnungskurs) in Bezug auf die Unternehmenswährung, berechnet am Ende des Zeitplans.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>pse__Project_Manager__c</name>
+        <relationshipLabel><!-- Est Vs Actuals (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der Rechnungsbetrag für die angeforderte Ressource.</help>
+        <label><!-- Resource Request Bill Rate --></label>
+        <name>pse__Resource_Request_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der angeforderten Tage, die für die Arbeit an der angehaltenen Ressourcenanforderung während des Zeitraums geplant sind.</help>
+        <label><!-- Resource Request Days --></label>
+        <name>pse__Resource_Request_Days__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der angeforderten Stunden, die für die angehaltene Ressourcenanforderung geplant sind.</help>
+        <label><!-- Resource Request Hours --></label>
+        <name>pse__Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Suchen Sie nach der angehaltenen Ressourcenanforderung, die sich auf diesen Datensatz &quot;Schätzungen versus Ist&quot; bezieht.</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Estimates Versus Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bill Rate aus der Zuordnung</help>
+        <label><!-- Scheduled Bill Rate --></label>
+        <name>pse__Scheduled_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Bill Rate is Daily Rate --></label>
+        <name>pse__Scheduled_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Startdatum des Zeitraums für diesen Datensatz Dies sollte nicht mit dem Startdatum der zugeordneten Zuweisung oder Zeitkarten verwechselt werden.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Die Art des Zeitraums, den diese Zeitspanne darstellt</help>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Monat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Quartal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Woche</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der zugehörige Zeitraum</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wird eine zugehörige Zeitkarte übermittelt?</help>
+        <label><!-- Timecards Submitted --></label>
+        <name>pse__Timecards_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Die Höhe der Abweichung in Stunden</help>
+        <label><!-- Hours Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Est Vs Actuals Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Est Vs Actuals Name</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- The estimates versus actuals comparison record requires either an assignment or a resource request. --></errorMessage>
+        <name>pse__Assignment_required</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 项目任务甘特首选项 --></value>
+    </caseValues>
+    <fields>
+        <help>如果选中，则当任务日期超出里程碑目标日期范围时，将显示警报图形和工具提示消息。</help>
+        <label><!-- Alerts - Task dates - Milestone --></label>
+        <name>pse__Alert_Task_Dates_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则当任务日期超出项目任务分配日期范围时，将显示警报图形和工具提示消息。</help>
+        <label><!-- Alerts - Task dates - PTA dates --></label>
+        <name>pse__Alert_Task_Dates_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则当任务日期超出项目开始日期和结束日期范围时，将显示警报图形和工具提示。</help>
+        <label><!-- Alerts - Task dates - Project --></label>
+        <name>pse__Alert_Task_Dates_Project__c</name>
+    </fields>
+    <fields>
+        <help>如果选中此选项，则当任务时间超出项目任务分配时间范围时，将显示警报图形和工具提示消息。</help>
+        <label><!-- Alerts - Task hours - PTA hours --></label>
+        <name>pse__Alert_Task_Hours_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则Project Task Gantt会提供日期详细信息缩放级别，显示在展开日期显示中计划的小时数。默认值为false。</help>
+        <label><!-- Enable Day Detail --></label>
+        <name>pse__Enable_Day_Detail__c</name>
+    </fields>
+    <fields>
+        <help>确定每次单击“保存”时是否显示对话框。这允许您在将项目任务提交到组织中的实际记录之前查看对项目任务的建议更改。默认情况下取消选择该设置。</help>
+        <label><!-- Hide Preview and Confirmation on Save --></label>
+        <name>pse__Hide_Save_Preview__c</name>
+    </fields>
+    <fields>
+        <help>单击“项目任务甘特图”中的“创建资源需求”按钮时，指定默认资源需求类型。值包括：“资源请求”，“保留资源请求”或“分配”。默认值为“资源请求”。</help>
+        <label><!-- Resource Demand Default --></label>
+        <name>pse__Resource_Demand_Default__c</name>
+    </fields>
+    <fields>
+        <help>在甘特图中显示任务注释</help>
+        <label><!-- Show Task Notes --></label>
+        <name>pse__Show_Task_Notes__c</name>
+    </fields>
+    <fields>
+        <help>允许您将默认的“项目任务甘特图”任务窗格选择行为从双击更改为单击。默认情况下取消选择该设置。</help>
+        <label><!-- Single Click Task Selection --></label>
+        <name>pse__Single_Click_Task_Selection__c</name>
+    </fields>
+    <fields>
+        <help>选中后，允许您更改“项目任务甘特图”的默认行为，以便新项目任务分配不会链接到现有分配或资源请求。默认情况下取消选择此设置。</help>
+        <label><!-- Suppress Auto Link Assignment --></label>
+        <name>pse__Suppress_Auto_Link_PTA__c</name>
+    </fields>
+    <fields>
+        <help>指定时间轴的默认缩放级别。有效值为：quarter，month，week，day或daydetail。默认情况下，此设置设置为星期。</help>
+        <label><!-- Zoom Level --></label>
+        <name>pse__Zoom_Level__c</name>
+    </fields>
+</CustomObjectTranslation>

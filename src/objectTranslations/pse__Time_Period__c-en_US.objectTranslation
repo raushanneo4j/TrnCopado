@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select to mark this time period as closed for Revenue Forecasting. --></help>
+        <label><!-- Closed for Forecasting --></label>
+        <name>pse__Closed_For_Forecasting__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation><!-- Perpetual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation><!-- Quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SemiMonthly</masterLabel>
+            <translation><!-- SemiMonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation><!-- Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Time Period Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Time Period may not end before it starts --></errorMessage>
+        <name>pse__Time_Period_may_not_end_before_it_starts</name>
+    </validationRules>
+</CustomObjectTranslation>

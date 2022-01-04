@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Kostnader</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Utgifter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment PDF --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPDF</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment Page --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Editable Columns --></label>
+        <name>pse__ExpenseHeaderRowEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Read Only Columns --></label>
+        <name>pse__ExpenseHeaderRowReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Editable Columns --></label>
+        <name>pse__ExpenseNotesFieldsEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Read Only Columns --></label>
+        <name>pse__ExpenseNotesFieldsReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobile Expenses: Additional Fields in New and Edit Mode --></label>
+        <name>pse__Mobile_Expenses_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <help>Hvis markert, tillater Admin å gjøre globale endringer i utgiften, inkludert endringer i utgiftens prosjekt, ressurs, valuta eller dato, selv om Inkluder i finans er merket. Konfigeringskrav: Aktualsberegningsmodus må settes til &apos;Planlagt&apos;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Bill --></label>
+        <name>pse__Amount_To_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Reimburse --></label>
+        <name>pse__Amount_To_Reimburse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Felt vil holde kostnadskursen påkostnad brukt.</help>
+        <label><!-- Applied Expense Rate --></label>
+        <name>pse__Applied_Expense_Rate__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Denne avkryssningsboksen bør kontrolleres når utgiften er godkjent, som bør baseres på om dens overordnede kostnadsrapport (hvis noen) er godkjent.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Automatisk kontrollert av konfigurasjon for å indikere om kostnadsvedlegg er flyttet fra kostnadslinjen til kostnadsrapporten.</help>
+        <label><!-- Attachments moved to ER --></label>
+        <name>pse__Attachments_moved_to_ER__c</name>
+    </fields>
+    <fields>
+        <help>Lagrer revisjonsnotathistorikk. Når en bruker endrer et prosjekt eller en oppgave ved hjelp av tidskortbrukergrensesnittet og revisjonsnotatene overstiger 255 tegn, blir eldre revisjonsnotater flyttet og lagt til her.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Denne formelen er lik beløp (minus ikke-regnskapsført opptjent beløp og eventuell skatt) for fakturerbare utgifter og null for ikke-regningsutgifter: alt i den påløpte valutaen.</help>
+        <label><!-- Billable Amount --></label>
+        <name>pse__Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Flatgebyr i Prosjektvaluta for å øke regningsverdien av utgiften, misligholdt fra prosjektet. Beregningen vil gjelde en prosentvis utgift avgift * før * dette flate kostnadsgebyrbeløpet.</help>
+        <label><!-- Billable Fee Flat Amount --></label>
+        <name>pse__Billable_Fee_Flat_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Tekstformel som viser flat avgift i Prosjektvaluta for å øke det regningsbare beløpet for Utgiften, misligholdt fra Prosjekt sammen med Prosjektvaluta. Beregningen vil gjelde en prosentvis utgift avgift * før * dette flate kostnadsgebyrbeløpet.</help>
+        <label><!-- Billable Fee Flat --></label>
+        <name>pse__Billable_Fee_Flat__c</name>
+    </fields>
+    <fields>
+        <help>Fee prosentandel for å øke regningsverdien av utgiften, misligholdt fra prosjektet. 0% betyr ingen økning (standard), mens 100% betyr dobbelt. Beregningen vil gjelde prosentenavgiften * før * eventuell flatgebyr.</help>
+        <label><!-- Billable Fee Percentage --></label>
+        <name>pse__Billable_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount (Pre-Fee Subtotal) --></label>
+        <name>pse__Billing_Amount_Pre_Fee_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount --></label>
+        <name>pse__Billing_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>pse__Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Distanse reist for automatisk kjørelengde refusjon.</help>
+        <label><!-- Distance --></label>
+        <name>pse__Distance__c</name>
+    </fields>
+    <fields>
+        <help>Indikerer at kostnaden er i en stat som er kvalifisert for fakturering av generering av fakturaer (ikke inkludert godkjent for fakturering-flagg, som kanskje også kreves per global konfigurasjon).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Billing Currency) --></label>
+        <name>pse__Exchange_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Incurred Currency) --></label>
+        <name>pse__Exchange_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Reimbursement Currency) --></label>
+        <name>pse__Exchange_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <help>Når dette er angitt, angir dette feltet * relativ * -kursen mellom Incurred Rate og Refusjonsfrekvens som oppleves av ressursen som påfører kostnadene.</help>
+        <label><!-- Exchange Rate (Resource-Defined) --></label>
+        <name>pse__Exchange_Rate_Resource_Defined__c</name>
+    </fields>
+    <fields>
+        <help>Hvis du er merket, må du aldri regne med denne forretningsrekorden. Samme effekt som Billing Hold, men ment å gjenspeile permanent utelukkelse fra Billing Generation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Date --></label>
+        <name>pse__Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>pse__Expense_Report__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Split Parent --></label>
+        <name>pse__Expense_Split_Parent__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sjekket for en fakturerbar utgift, betyr dette at delen av utgiftsbeløpet spesifisert i feltet Incurred Tax ikke kan faktureres. (Dette er atskilt fra og i tillegg til hvilket som helst beløp i feltet Ikke-regnskapsført opptjent beløp).</help>
+        <label><!-- Incurred Tax Non-Billable --></label>
+        <name>pse__Incurred_Tax_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help>Mengden av skatt påløpt</help>
+        <label><!-- Incurred Tax --></label>
+        <name>pse__Incurred_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <help>Dette feltet er synlig på brukergrensesnitt dersom brukeren krever vedlegg på utgiftslinjer hvis utgiftsrapport er sendt. Hvis dette feltet er satt, må brukeren ikke legge til vedlegg, selv om config er satt til true.</help>
+        <label><!-- Lost Receipt --></label>
+        <name>pse__Lost_Receipt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Expense Reference ID --></label>
+        <name>pse__Mobile_Expense_Reference_ID__c</name>
+    </fields>
+    <fields>
+        <help>Denne formelen tilsvarer beløp for ikke-regningsutgifter og ikke-regnskapsført opptjent beløp og skatt (hvor som helst fra null til utgiftsbeløp) for fakturerbare utgifter: alt i den påløpte valutaen.</help>
+        <label><!-- Non-Billable Amount --></label>
+        <name>pse__Non_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er oppgitt for en fakturabel kostnad, trekkes denne fra kostprisen (påløpt valuta) for å beregne kostnadens fakturerbare beløp. Min. verdi null, maks. verdi kostnad beløp. Standard verdi: null eller null. Ingen effekt på ikke-regningsutgifter.</help>
+        <label><!-- Non-Billable Incurred Amount --></label>
+        <name>pse__Non_Billable_Incurred_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Denne formelen legger til en ikke-fakturerbar innkrevd skatt (kun hvis ikke-fakturerbar skatt ikke er fakturert) til en eventuell tilleggsbeløp som ikke kan regnskapsføres, for å få en ikke-fakturerbar innkrevd subtotal, med minimum 0,00 og maksimalt utgiftsbeløpet.</help>
+        <label><!-- Non-Billable Incurred Subtotal --></label>
+        <name>pse__Non_Billable_Incurred_Subtotal__c</name>
+    </fields>
+    <fields>
+        <help>Hvis denne avkryssningsboksen er merket, vil refusjonsbeløpet for utgiften være null, uansett det påløpte beløpet.</help>
+        <label><!-- Non-Reimbursable --></label>
+        <name>pse__Non_Reimbursible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Group Currency Code --></label>
+        <name>pse__Override_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Overstyrer konsernet som kostnadstransaksjonene vil rulle opp for konsernaktuelle, selv om prosjektet er i en annen gruppe. Vanligvis går en utgiftstransaksjoner opp til prosjektets eller ressursgruppens konsern basert på &quot;følger&quot; -regler.</help>
+        <label><!-- Override Group --></label>
+        <name>pse__Override_Group__c</name>
+        <relationshipLabel><!-- Override Group For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Practice Currency Code --></label>
+        <name>pse__Override_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Overstyrer praksisen som kostnadstransaksjonene vil rulle opp for praksisaktører, selv om prosjektet er i en annen praksis. Vanligvis går en utgiftstransaksjoner opp til prosjektets eller ressursens praksis basert på &quot;følger&quot; regler.</help>
+        <label><!-- Override Practice --></label>
+        <name>pse__Override_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Billing Currency) --></label>
+        <name>pse__Override_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Incurred Currency) --></label>
+        <name>pse__Override_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Reimbursement Currency) --></label>
+        <name>pse__Override_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Region Currency Code --></label>
+        <name>pse__Override_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Overstyrer regionen som utgiftstransaksjonene vil rulle opp for regionale aktører, selv om prosjektet ligger i en annen region. Vanligvis går en utgiftstransaksjoner opp til prosjektets eller ressursregionen basert på &quot;følger&quot; -reglene.</help>
+        <label><!-- Override Region --></label>
+        <name>pse__Override_Region__c</name>
+        <relationshipLabel><!-- Override Region For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oppsøk til prosjektmetodikk</help>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Oppslag til prosjektfase</help>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>Kilometer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>Mile</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Anerkjennelsesmetoden som skal brukes på denne posten for inntektsprognoser.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <help>Dette feltet lagrer en numerisk verdi for refusjonsbeløpet som er konvertert til prosjektfakturaen (valuta) ved hjelp av systempriser (ikke overstyrt), for senere bruk i leverandørfakturering.</help>
+        <label><!-- Reimbursement Amount In Project Currency --></label>
+        <name>pse__Reimbursement_Amount_In_Project_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Amount --></label>
+        <name>pse__Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Currency --></label>
+        <name>pse__Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Expense --></label>
+        <name>pse__Split_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Notes --></label>
+        <name>pse__Split_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Godkjent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Utkast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Avvist</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Sendt inn</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Denne boksen er for systembruk. Det er ment å bli sjekket i forbindelse med eventuelle innlegg / oppdateringer av tidskortet Split utført i en fremtidig metode, og vil da sikre at ingen fremtidige fremtidige metoder kalles.</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <help>En valgfri type skatt som er inkludert på bekostning</help>
+        <label><!-- Tax Type --></label>
+        <name>pse__Tax_Type__c</name>
+        <picklistValues>
+            <masterLabel>GST</masterLabel>
+            <translation>GST</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 1</masterLabel>
+            <translation>MVA 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 2</masterLabel>
+            <translation>MVA 2</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Utgifts-ID fra Tredjeparts Utgifter Applikasjon.</help>
+        <label><!-- Third-Party Expenses App Expense ID --></label>
+        <name>pse__Third_Party_Expenses_App_Expense_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>Flybillett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>Automatisk kjørelengde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>Forretningsmat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>Bilutleie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>Ansatt forhold</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>Bensin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>Generelle og administrasjonskostnader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>IT-utstyr og tjenester</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>Overnatting (Rom og skatt)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>Diverse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>Kontorrekvisita og tjenester</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>Personlige måltider</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Telefon</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>Frakt og frakt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>Rekruttering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>Undergrunnsbanen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>Taxi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Expense Admin Layout</layout>
+        <sections>
+            <label>revisjon</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Faktureringsinformasjon</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Avstand</label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label>Prosjektinformasjon</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Status</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Sammendrag</label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label>Systeminformasjon</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Prosjektinformasjon</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Status</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Sammendrag</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Distance --></label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label><!-- Expense Tax Information --></label>
+            <section>Expense Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Utgiftsnummer</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Assignment Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment Resource must match Expense Resource. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Project must match Expense Report Project. --></errorMessage>
+        <name>pse__Expense_ER_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Resource must match Expense Report Resource. --></errorMessage>
+        <name>pse__Expense_ER_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Expense_Line_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Expense_Line_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense Line may not be submitted or included in financials unless it belongs to an Expense Report. --></errorMessage>
+        <name>pse__Expense_Line_Needs_Parent_For_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Project field value may not be updated once set (unless parent Expense Report is changed, Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Expense Report may not be changed if it is submitted or included in financials. --></errorMessage>
+        <name>pse__Expense_Line_Report_Fixed_If_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense may only be marked as Billable if its Project is Billable and its Expense Report and Assignment, if any, are Billable. --></errorMessage>
+        <name>pse__Expense_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Report is required --></errorMessage>
+        <name>pse__Expense_Requires_Expense_Report</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the incurred tax amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Incurred_Tax_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the non-billable incurred amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Incurred_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The non-billable incurred subtotal for an Expense (any non-billable amount plus any non-billable tax) must not be greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Subtotal_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate can only be set if Incurred and Resource currencies are different.  If the currencies are the same, a relative rate of 1.0 is implied. --></errorMessage>
+        <name>pse__Res_Defined_Rate_Diff_Currencies_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate must either be greater than 0.0 (zero) or null/empty. --></errorMessage>
+        <name>pse__Res_Defined_Rate_may_not_be_Negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice cannot change once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Expenses --></label>
+        <name>pse__Edit_Expenses</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_Expense_Entry_UI --></label>
+        <name>pse__Multiple_Expense_Entry_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ready_to_Submit --></label>
+        <name>pse__Ready_to_Submit</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regolazione Varie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Aggiustamenti vari</value>
+    </caseValues>
+    <fields>
+        <help>Se selezionato, consente all&apos;amministratore di apportare modifiche &quot;globali&quot; a &quot;Misc Adj&quot;, incluse le modifiche al progetto, alla risorsa, alla valuta o alla data di Misc Adj., Anche se l&apos;opzione In In Financials è selezionata. Requisiti di configurazione: la modalità di calcolo degli effettivi deve essere impostata su &quot;Pianificata&quot;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;importo monetario dell&apos;Aggiustamento vario. Il valore predefinito e deve essere sempre la stessa valuta del Progetto.</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Questa casella di controllo deve essere selezionata quando l&apos;Aggiustamento varie è approvato, in genere in base al campo Stato.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indica che l&apos;Aggiustamento varie è in uno stato idoneo per la generazione di eventi di fatturazione (non incluso il contrassegno Approvato per fatturazione o con una Categoria di transazione idonea, che può anche essere richiesta per configurazione globale).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non fatturare mai questo record aziendale. Stesso effetto di Billing Hold, ma inteso a riflettere un&apos;esclusione permanente da Billing Generation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sostituisce il gruppo in cui verranno eseguite le transazioni di un aggiustamento varie per i gruppi effettivi, anche se il suo progetto si trova in un gruppo diverso. In genere, le Transazioni di un aggiustamento vario vengono portate al gruppo del progetto.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sovrascrive la pratica in cui le Transazioni di un aggiustamento vario verranno presentate per le Pratiche effettive, anche se il suo Progetto è in una pratica diversa. In genere, le Transazioni di un aggiustamento vario si arrotolano alla pratica del progetto.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sostituisce la Regione in cui verranno eseguite le Transazioni di un Complemento diverso per le Azioni regionali, anche se il suo Progetto si trova in una Regione diversa. In genere, le Transazioni di un aggiustamento vario vengono portate all&apos;area del progetto.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il metodo di riconoscimento da applicare a questo record per la previsione delle entrate.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Bozza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Respinto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Inserito</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Category --></label>
+        <name>pse__Transaction_Category__c</name>
+        <picklistValues>
+            <masterLabel>Booked Revenue</masterLabel>
+            <translation>Entrate prenotate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Cost</masterLabel>
+            <translation>Costo preventivato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgeted Expense Cost</masterLabel>
+            <translation>Costo di spesa preventivato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Budget</masterLabel>
+            <translation>Budget delle spese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense Cost</masterLabel>
+            <translation>Costo di spesa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Cost</masterLabel>
+            <translation>Costo esterno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>Budget interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Cost</masterLabel>
+            <translation>Costo interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Cost</masterLabel>
+            <translation>Altro costo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass-Through Ready-to-Bill Revenue</masterLabel>
+            <translation>Entrate Ready-to-Bill pass-through</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Billed Revenue</masterLabel>
+            <translation>Entrate pre-fatturate</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready-to-Bill Revenue</masterLabel>
+            <translation>Entrate pronte per la fatturazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>Reddito</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustment --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Miscellaneous Adjustments --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Miscellaneous Adjustment Layout</layout>
+        <sections>
+            <label>Revisione</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Stato</label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome regolazione diversa</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Misc_Adj_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Miscellaneous Adjustment to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Misc_Adj_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Miscellaneous Adjustment&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Misc_Adj_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

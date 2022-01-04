@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Standard permission. Allows the user to change the status of multiple Leads in a list view.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Leads</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageLeads</name>
+    </userPermissions>
+</PermissionSet>

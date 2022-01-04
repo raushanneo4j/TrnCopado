@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>פירוט הצבר המרה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>פרטי הצבר הומר</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog Detail --></label>
+        <name>pse__Backlog_Detail__c</name>
+        <relationshipLabel><!-- Backlog Details Converted --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>סכום החיובים המשמש לחישוב הכנסות שלא מתוכננות.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <help>סכום ההזמנות המשמש לחישוב סכום ההכנסה שלא מתוכנן.</help>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Time Cost --></label>
+        <name>pse__External_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request External Cost --></label>
+        <name>pse__Held_Resource_Request_External_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Hours --></label>
+        <name>pse__Held_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Internal Cost --></label>
+        <name>pse__Held_Resource_Request_Internal_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Revenue --></label>
+        <name>pse__Held_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Project Backlog --></label>
+        <name>pse__Inactive_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Time Cost --></label>
+        <name>pse__Internal_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reusable --></label>
+        <name>pse__Is_Reusable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Revenue --></label>
+        <name>pse__Milestone_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Held External --></label>
+        <name>pse__Resource_Requests_Cost_Held_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Held Internal --></label>
+        <name>pse__Resource_Requests_Cost_Held_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Cost Unheld --></label>
+        <name>pse__Resource_Requests_Cost_Unheld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Hours Held --></label>
+        <name>pse__Resource_Requests_Hours_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Hours Unheld --></label>
+        <name>pse__Resource_Requests_Hours_Unheld__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Revenue Held --></label>
+        <name>pse__Resource_Requests_Revenue_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Requests Revenue Unheld --></label>
+        <name>pse__Resource_Requests_Revenue_Unheld__c</name>
+    </fields>
+    <fields>
+        <help>המספר הכולל של הימים המתוזמנים על פי לוחות הזמנים של הקצאה וחריגות לוח הזמנים. לדוגמא, אם למשימה יש לוח זמנים של 4 שעות בימים שני עד רביעי ותקופת החישוב היא שבועיים כולל הערך הוא 6 ימים (3 ימים בשבוע * 2) .</help>
+        <label><!-- Scheduled Days --></label>
+        <name>pse__Scheduled_Days__c</name>
+    </fields>
+    <fields>
+        <help>מספר השעות שנקבעו על בסיס לוחות זמנים להקצאה וחריגים מתוזמנים בטווח זמן החישוב.</help>
+        <label><!-- Scheduled Hours --></label>
+        <name>pse__Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Backlog Detail Converteds --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>הכנסות הניתנות לחיוב ממשימות מתוזמנות. עבור הקצאות לפי שעה, זהו מספר השעות המתוזמנות * שער החיוב. למשימות עם שיעור חיוב יומי, זהו מספר הימים שנקבעו * שער החשבון.</help>
+        <label><!-- Time Revenue --></label>
+        <name>pse__Time_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Cost --></label>
+        <name>pse__Unheld_Resource_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Hours --></label>
+        <name>pse__Unheld_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Revenue --></label>
+        <name>pse__Unheld_Resource_Request_Revenue__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם המרה של פרטי הצבר</nameFieldLabel>
+</CustomObjectTranslation>

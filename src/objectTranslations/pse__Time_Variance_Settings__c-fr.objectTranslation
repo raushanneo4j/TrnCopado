@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Paramètres de variance temporelle --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Paramètres de variance temporelle --></value>
+    </caseValues>
+    <fields>
+        <help>Spécifie la variance temporelle par rapport aux heures de travail planifiées pour inclure dans les calculs de variance temporelle.</help>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie la variance temporelle sous les heures de travail planifiées pour inclure dans les calculs de variance temporelle.</help>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les heures facturables sont ignorées lors du calcul de la variance temporelle.</help>
+        <label><!-- Exclude Billable Hours --></label>
+        <name>pse__Exclude_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les heures créditées sont ignorées lors du calcul de la variance temporelle.</help>
+        <label><!-- Exclude Credited Hours --></label>
+        <name>pse__Exclude_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les heures exclues sont ignorées lors du calcul de la variance temporelle.</help>
+        <label><!-- Exclude Excluded Hours --></label>
+        <name>pse__Exclude_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Indique que les calculs de variance temporelle incluent des détails sur toutes les ressources, y compris les ressources qui ne sont pas affichées en dehors des plages de variances autorisées.</help>
+        <label><!-- Report All --></label>
+        <name>pse__Report_All__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, les valeurs des paramètres Variance autorisée et Variance autorisée sous sous sont des pourcentages de la variance temporelle. Si la valeur est false, les valeurs figurant dans les paramètres Variance autorisée et Variance autorisée sous sont des heures. Ce paramètre est vrai par défaut.</help>
+        <label><!-- Use Percentage --></label>
+        <name>pse__Use_Percentage__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

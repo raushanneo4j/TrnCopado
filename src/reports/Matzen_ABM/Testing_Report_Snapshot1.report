@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Account_Snapshot__c.Snapshot_Account_Name__c</acrossGroupingContext>
+        <calculatedFormula>(Account_Snapshot__c.Snapshot_ABM_Account_Score__c:SUM -
+PREVGROUPVAL(Account_Snapshot__c.Snapshot_ABM_Account_Score__c:SUM, CUST_CREATED_DATE)) / 
+PREVGROUPVAL(Account_Snapshot__c.Snapshot_ABM_Account_Score__c:SUM, CUST_CREATED_DATE)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>CUST_CREATED_DATE</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>WoW% Behavior Score</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account_Snapshot__c.Snapshot_Account_Name__c</acrossGroupingContext>
+        <calculatedFormula>(Account_Snapshot__c.Snapshot_Number_of_Contacts__c:SUM -
+PREVGROUPVAL(Account_Snapshot__c.Snapshot_Number_of_Contacts__c:SUM, CUST_CREATED_DATE)) / 
+PREVGROUPVAL(Account_Snapshot__c.Snapshot_Number_of_Contacts__c:SUM, CUST_CREATED_DATE)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>CUST_CREATED_DATE</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>WoW% Contacts</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account_Snapshot__c.Snapshot_Account_Name__c</acrossGroupingContext>
+        <calculatedFormula>BLANKVALUE(Account_Snapshot__c.Snapshot_ABM_Account_Score__c:SUM - PREVGROUPVAL(Account_Snapshot__c.Snapshot_ABM_Account_Score__c:SUM, CUST_CREATED_DATE),0)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>CUST_CREATED_DATE</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Account Score Net Change</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account_Snapshot__c.Snapshot_Account_Name__c</acrossGroupingContext>
+        <calculatedFormula>(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM -
+PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE)) / 
+PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <downGroupingContext>CUST_CREATED_DATE</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>WoW% Behavior Score (not attached)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account_Snapshot__c.Snapshot_Account_Name__c</acrossGroupingContext>
+        <calculatedFormula>BLANKVALUE(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM - 
+PREVGROUPVAL(Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c:SUM, CUST_CREATED_DATE),0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <downGroupingContext>CUST_CREATED_DATE</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Account Score Net Change (unattached)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_CREATED_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>Account_Snapshot__c.Snapshot_Account_ID__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account_Snapshot__c.ABM_Account_Score_Unattached_Contacts__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Industry__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Shipping_Country__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Account_Shipping_State__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_Number_of_Open_New_Opps__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account_Snapshot__c.Snapshot_Number_of_Contacts__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account_Snapshot__c.Snapshot_ABM_Account_Score__c</field>
+    </columns>
+    <columns>
+        <field>Account_Snapshot__c.Snapshot_ABM_Account_Maturity__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account_Snapshot__c.Snapshot_Account_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Darryl</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account_Snapshot__c.Snapshot_Account_ID__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account_Snapshot__c.Snapshot_Account_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ABM WoW% and Change</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$Account_Snapshot__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

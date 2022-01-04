@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the name of a field set containing assignment fields to display as columns in the Project/Assignment lookup on the Timecard Entry page. --></help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Assignments to be loaded for the timecard assignment drop down --></help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of API names of assignment fields to display as columns on the Project/Assignment  lookup in the enhanced  Time Entry page. Do not include the pse__ namespace prefix in the API name of a field. The default value is Name, Nick_Name__c. --></help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assignment start and end date restriction while loading the Assignments in the Timecard UI.  If true, only Assignments whose start/end dates either contain or overlap with the Timecard date range are loaded.  This affects the UI only, not Admin edit. --></help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of assignment status values to be used while loading the assignments from db. --></help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true,  on initial load of  new Timecard UI it will check for previous week timecards. If there is no timecards filled for the previous week, UI will show confirmation window asking user to load previous week or current week.  If false, work as normal. --></help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Config  to control max auto-revert hour value on the new TC UI. --></help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Config  to control min auto-revert hour value on the new TC UI. --></help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, all timecards are submitted for approval. If false, only timecards that the user selects are submitted. --></help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the name of a field set containing project fields to display as columns in the Project/Assignment lookup on the Timecard Entry page. --></help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of API names of project fields to display as columns on the Project/Assignment  lookup in the enhanced  Time Entry page. Do not include the pse__ namespace prefix in the API name of a field. The default value is Name, Account__r.Name. --></help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project start and end date restriction while loading the project/assignments from db. --></help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the name of a field set containing resource fields to display as columns in the Resource lookup on the Sencha Timecard Entry page. --></help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If config value equals to &apos;all&apos; , means all resources along with current user resources will be loaded. Else if value equals to &apos;resource&apos; or null, only current user resources will be loaded. --></help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of Resource fields (fully-qualified API names/paths) to display on columns for Resource lookup pop-up in new Timecard UI. Recommend at most 4 fields/columns. Default value: Name, Region__r.Name, Practice__r.Name, Group__r.Name --></help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Size of Number of timecards to be save/submit in one batch execution. --></help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Config is used to control the saving of timecard with zero hours. If it is true, timecards with zero are saved else not saved(warning will be shown on ui). --></help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of timecard records, not including related records, saved in a single request. --></help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Config for holding the timecard sorted by order fields API names. Multiple coma separated fields can be entered for sorting. Ex : CreatedDate, Project__r.Name --></help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- CSV List of status values for which the timecard entry rows can be edited. --></help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to determines what status the timecards will be set to on save button click --></help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to determines what status the timecards will be set to on submit button click --></help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected (true), Time Entry UI column preferences are saved locally. If deselected (false), the preferences are saved on the server. --></help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, then Location drop-downs will bind to Project Location object instead of location picklists on TC UI --></help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default week start day value used when a resource does not have a work calendar, or has a work calendar without a week start day. --></help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Config is used to control the submit of timecard with zero hours. If it is true, timecards with zero can be submitted else warning will be shown on ui. --></help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+</CustomObjectTranslation>

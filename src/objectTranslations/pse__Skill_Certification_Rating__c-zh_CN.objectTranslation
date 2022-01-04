@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>技能/认证等级</value>
+    </caseValues>
+    <fields>
+        <help>达到评级的日期。</help>
+        <label><!-- Date Achieved --></label>
+        <name>pse__Date_Achieved__c</name>
+    </fields>
+    <fields>
+        <help>评估评级的日期。</help>
+        <label><!-- Evaluation Date --></label>
+        <name>pse__Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <help>技能或认证等级到期的日期。</help>
+        <label><!-- Expiration Date --></label>
+        <name>pse__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help>资源上次使用该技能的日期。</help>
+        <label><!-- Last Used Date --></label>
+        <name>pse__Last_Used_Date__c</name>
+    </fields>
+    <fields>
+        <help>您可以输入有关技能或认证等级的信息。</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numerical Rating --></label>
+        <name>pse__Numerical_Rating__c</name>
+    </fields>
+    <fields>
+        <help>资源对技能或认证的暴露程度或能力。</help>
+        <label><!-- Rating --></label>
+        <name>pse__Rating__c</name>
+        <picklistValues>
+            <masterLabel>1 - Limited Exposure</masterLabel>
+            <translation>1 - 有限的曝光</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Some Familiarity</masterLabel>
+            <translation>2 - 一些熟悉</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Comfortable</masterLabel>
+            <translation>3 - 舒适</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strong</masterLabel>
+            <translation>4 - 强</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Expert</masterLabel>
+            <translation>5 - 专家</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>没有</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>评级适用的资源。</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Skill and Certification Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>评级适用的技能或认证。</help>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Resource Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>资源在技能方面的经验年数。</help>
+        <label><!-- Years of Experience --></label>
+        <name>pse__Years_Experience__c</name>
+    </fields>
+    <layouts>
+        <layout>Skill / Certification Rating Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>评级ID</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Resource lookup must be set to an Contact with Is Resource = true --></errorMessage>
+        <name>pse__Check_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission alone allows users to import leads via the Data Import Wizard. Coupled with the Marketing User checkbox checked on the User record and Edit on Campaigns, it allows users to add/update campaign members. JIRA: SFDCSPT-247</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Import Leads</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ImportLeads</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,2423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Opportunity Detail Fields on RR From Template Field Set --></label>
+        <name>pse__OppDetailOnRRFromTemplateFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Fields For Rate Card Set --></label>
+        <name>pse__Opportunity_Fields_For_Rate_Card_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ARR - Original ARR --></label>
+        <name>ARR_Original_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sums ARR of all line items.  Change the inputs at the opp product (opp line) level to see this change. --></help>
+        <label><!-- ARR --></label>
+        <name>ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allbound ID --></label>
+        <name>Allbound_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount USD --></label>
+        <name>Amount_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned User ID --></label>
+        <name>Assigned_User_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The individual(s) with authority to make a decision have been identified. As larger organizations often have committees of people involved in the decision-making process, it is important to at least understand whether or not a committee or a specific individual would make the decision. 
+
+ACTION: Identify who can ultimately sign off on the deal and how we are going to establish contact with that Authority. --></help>
+        <label><!-- Authority --></label>
+        <name>Authority__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contract renews automatically as per the contract terms. --></help>
+        <label><!-- Auto Renewal --></label>
+        <name>Auto_Renewal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Strictly a System Admin field. --></help>
+        <label><!-- Automation Bypass Date/Time --></label>
+        <name>AutomationBypassDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Budget is confirmed by the prospect, or a discussion about the budget approval process has been established. 
+
+ACTION: Discuss budget with prospect as it relates to the specific project. --></help>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of churn ARR (either full-loss or downsell) that the assigned Renewals Manager projects for this Opportunity. Zero (0) means a flat renewal; a negative value means ARR we plan on losing; a positive value means ARR we plan on gaining (upsell/cross-sell). Owned and updated by Renewals only. --></help>
+        <label><!-- Churn Forecast --></label>
+        <name>ChurnForecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the name of the competitor to which the Opportunity has been lost. --></help>
+        <label><!-- Closed Lost Competitor --></label>
+        <name>Closed_Lost_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>AgensGraph</masterLabel>
+            <translation><!-- AgensGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alibaba graph</masterLabel>
+            <translation><!-- Alibaba graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AllegroGraph</masterLabel>
+            <translation><!-- AllegroGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon (AWS) Neptune</masterLabel>
+            <translation><!-- Amazon (AWS) Neptune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AnzoGraph DB</masterLabel>
+            <translation><!-- AnzoGraph DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arango DB</masterLabel>
+            <translation><!-- Arango DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtomRain</masterLabel>
+            <translation><!-- AtomRain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aura Professional</masterLabel>
+            <translation><!-- Aura Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BigQuery</masterLabel>
+            <translation><!-- BigQuery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blazegraph</masterLabel>
+            <translation><!-- Blazegraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cassandra</masterLabel>
+            <translation><!-- Cassandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DataStax</masterLabel>
+            <translation><!-- DataStax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dgraph</masterLabel>
+            <translation><!-- Dgraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDRAMP High Required</masterLabel>
+            <translation><!-- FEDRAMP High Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDRAMP Medium Required</masterLabel>
+            <translation><!-- FEDRAMP Medium Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fauna</masterLabel>
+            <translation><!-- Fauna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FlockDB</masterLabel>
+            <translation><!-- FlockDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fluree</masterLabel>
+            <translation><!-- Fluree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giraph</masterLabel>
+            <translation><!-- Giraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Engine</masterLabel>
+            <translation><!-- Graph Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphBase</masterLabel>
+            <translation><!-- GraphBase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphDB</masterLabel>
+            <translation><!-- GraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HGraphDB</masterLabel>
+            <translation><!-- HGraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HugeGraph</masterLabel>
+            <translation><!-- HugeGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HyperGraphDB</masterLabel>
+            <translation><!-- HyperGraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InfiniteGraph</masterLabel>
+            <translation><!-- InfiniteGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JanusGraph</masterLabel>
+            <translation><!-- JanusGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memgraph</masterLabel>
+            <translation><!-- Memgraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure Cosmos DB</masterLabel>
+            <translation><!-- Microsoft Azure Cosmos DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongo DB</masterLabel>
+            <translation><!-- Mongo DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebula Graph</masterLabel>
+            <translation><!-- Nebula Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Community Edition</masterLabel>
+            <translation><!-- Neo4j Community Edition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle Spatial &amp; Graph</masterLabel>
+            <translation><!-- Oracle Spatial &amp; Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OrientDB</masterLabel>
+            <translation><!-- OrientDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sparksee</masterLabel>
+            <translation><!-- Sparksee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stardog</masterLabel>
+            <translation><!-- Stardog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tencent Graph</masterLabel>
+            <translation><!-- Tencent Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TerminusDB</masterLabel>
+            <translation><!-- TerminusDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TigerGraph</masterLabel>
+            <translation><!-- TigerGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TinkerGraph</masterLabel>
+            <translation><!-- TinkerGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titan</masterLabel>
+            <translation><!-- Titan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TypeDB</masterLabel>
+            <translation><!-- TypeDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VelocityDB</masterLabel>
+            <translation><!-- VelocityDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtuoso</masterLabel>
+            <translation><!-- Virtuoso --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Cloud&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Cloud(prod/dev) Partner Involved Account --></label>
+        <name>Cloud_prod_dev_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Competitor&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Competitor Partner Involved Account --></label>
+        <name>Competitor_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate the Contract ID associated with the PO. --></help>
+        <label><!-- Contract ID --></label>
+        <name>Contract_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Contract Terms (deprecated jan9&apos;21) --></label>
+        <name>Contract_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy of Lead Source --></label>
+        <name>Copy_of_Lead_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Project Profile --></label>
+        <name>Customer_Project_Profile__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS LastSeen influencer PI AcctComboId --></label>
+        <name>DLRS_last_seen_influencer_PI_Acct_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen influencer PI CtcComboId --></label>
+        <name>DLRS_last_seen_influencer_PI_Ctc_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen primary PI AcctComboId --></label>
+        <name>DLRS_last_seen_primary_PI_Acct_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only.  Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen primary PI CtcComboId --></label>
+        <name>DLRS_last_seen_primary_PI_Ctc_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen referral PI AcctComboId --></label>
+        <name>DLRS_last_seen_referral_PI_Acct_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen referral PI CtcComboId --></label>
+        <name>DLRS_last_seen_referral_PI_Ctc_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen reseller PI AcctComboId --></label>
+        <name>DLRS_last_seen_reseller_PI_Acct_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is for system admin use only. Other formula fields may reference it for the purpose of surfacing the information onto Opportunity reports (a7z3s0000004SOcAAM ) --></help>
+        <label><!-- DLRS last seen reseller PI CtcComboId --></label>
+        <name>DLRS_last_seen_reseller_PI_Ctc_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Close (qualification to close) --></label>
+        <name>Days_to_Close_qualification_to_close__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Decision&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Decision Maker Partner Involved Account --></label>
+        <name>Decision_Maker_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discovery Notes --></label>
+        <name>Discovery_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Create Renewal --></label>
+        <name>Do_Not_Create_Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- A temporary field to give the Aura EAP core team the ability to track Aura Enterprise EAP Opportunities. --></help>
+        <label><!-- EAP Approval --></label>
+        <name>EAP_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this opportunity qualifies for SAO credit. Only subscription products that can be sold on a stand-alone basis for new projects qualify. New projects are defined as either new customers or cross-sell opportunities with existing customers. &apos;Sales Price&apos; field on the product record must have a price in order for that product to be tagged as qualified. --></help>
+        <label><!-- Eligible for SAO Credit --></label>
+        <name>EligibleforSAOCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Criteria --></label>
+        <name>Evaluation_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Stage --></label>
+        <name>Evaluation_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Evaluation/POC Complete</masterLabel>
+            <translation><!-- Evaluation/POC Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation/POC Planning</masterLabel>
+            <translation><!-- Evaluation/POC Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Evaluation/POC</masterLabel>
+            <translation><!-- In Evaluation/POC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Selection</masterLabel>
+            <translation><!-- Technical Selection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Status Notes --></label>
+        <name>Evaluation_Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Closed Date --></label>
+        <name>Expected_Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Field Engineer --></label>
+        <name>Field_Engineer2__c</name>
+        <picklistValues>
+            <masterLabel>Adam Cowley</masterLabel>
+            <translation><!-- Adam Cowley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alex Rivilis</masterLabel>
+            <translation><!-- Alex Rivilis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benoit Simard</masterLabel>
+            <translation><!-- Benoit Simard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Skardon</masterLabel>
+            <translation><!-- Chris Skardon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Upkes</masterLabel>
+            <translation><!-- Chris Upkes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cynthia Femano</masterLabel>
+            <translation><!-- Cynthia Femano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Flavin</masterLabel>
+            <translation><!-- Dan Flavin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Paczosa</masterLabel>
+            <translation><!-- Dan Paczosa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dana Canzano</masterLabel>
+            <translation><!-- Dana Canzano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dave Gordon</masterLabel>
+            <translation><!-- Dave Gordon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dave Voutila</masterLabel>
+            <translation><!-- Dave Voutila --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Fauth</masterLabel>
+            <translation><!-- David Fauth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Rosemblum</masterLabel>
+            <translation><!-- David Rosemblum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ed Crowther</masterLabel>
+            <translation><!-- Ed Crowther --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabe Stanek</masterLabel>
+            <translation><!-- Gabe Stanek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gal Bello</masterLabel>
+            <translation><!-- Gal Bello --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gary Mann</masterLabel>
+            <translation><!-- Gary Mann --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gunnar Lindfors</masterLabel>
+            <translation><!-- Gunnar Lindfors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Håkan Löfqvist</masterLabel>
+            <translation><!-- Håkan Löfqvist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeffrey Tallman</masterLabel>
+            <translation><!-- Jeffrey Tallman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jesus Barrasa</masterLabel>
+            <translation><!-- Jesus Barrasa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joe Depeau</masterLabel>
+            <translation><!-- Joe Depeau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joshua Yu</masterLabel>
+            <translation><!-- Joshua Yu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Fine</masterLabel>
+            <translation><!-- Justin Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kees Vegter</masterLabel>
+            <translation><!-- Kees Vegter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Kyle</masterLabel>
+            <translation><!-- Kevin Kyle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ljubica Lazarevic</masterLabel>
+            <translation><!-- Ljubica Lazarevic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luis Salvador</masterLabel>
+            <translation><!-- Luis Salvador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luke Gannon</masterLabel>
+            <translation><!-- Luke Gannon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Quinsland</masterLabel>
+            <translation><!-- Mark Quinsland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Max DeMarzi</masterLabel>
+            <translation><!-- Max DeMarzi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicolas Rouyer</masterLabel>
+            <translation><!-- Nicolas Rouyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phani Dathar</masterLabel>
+            <translation><!-- Phani Dathar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pieter Caillaiu</masterLabel>
+            <translation><!-- Pieter Caillaiu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rob Martin</masterLabel>
+            <translation><!-- Rob Martin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rohan Kharwar</masterLabel>
+            <translation><!-- Rohan Kharwar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rui Fernandes</masterLabel>
+            <translation><!-- Rui Fernandes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam Fowler</masterLabel>
+            <translation><!-- Sam Fowler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Marino</masterLabel>
+            <translation><!-- Scott Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stefan Armbruster</masterLabel>
+            <translation><!-- Stefan Armbruster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stefan Kolmar</masterLabel>
+            <translation><!-- Stefan Kolmar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stuart Laurie</masterLabel>
+            <translation><!-- Stuart Laurie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sven Janko</masterLabel>
+            <translation><!-- Sven Janko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom Geudens</masterLabel>
+            <translation><!-- Tom Geudens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vik Malhotra</masterLabel>
+            <translation><!-- Vik Malhotra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viksit Puri</masterLabel>
+            <translation><!-- Viksit Puri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wayne McCrum</masterLabel>
+            <translation><!-- Wayne McCrum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Who is the Field Engineer for this Opportunity? --></help>
+        <label><!-- Field Engineer --></label>
+        <name>Field_Engineer__c</name>
+        <relationshipLabel><!-- Opportunities (Field Engineer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- First Year Renewal --></label>
+        <name>First_Year_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Status --></label>
+        <name>Forecast_Status__c</name>
+        <picklistValues>
+            <masterLabel>Best Case</masterLabel>
+            <translation><!-- Best Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Most Likely</masterLabel>
+            <translation><!-- Most Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omitted</masterLabel>
+            <translation><!-- Omitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline</masterLabel>
+            <translation><!-- Pipeline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;fullfillment&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Fulfillment Partner Involved Account --></label>
+        <name>Fulfillment_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gating Items --></label>
+        <name>Gating_Items__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates what global region the parent Account is part of based on the shipping country. --></help>
+        <label><!-- Global Territory --></label>
+        <name>GlobalTerritory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Hardware&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Hardware Partner Involved Account --></label>
+        <name>Hardware_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Pro Services Line Items --></label>
+        <name>Has_Pro_Services_Line_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Subscription Line Items --></label>
+        <name>Has_Subscription_Line_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historil RLI Name --></label>
+        <name>Historil_RLI_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Influencer&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Influencer Partner Involved Account --></label>
+        <name>Influencer_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Integration&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Integration Partner Involved Account --></label>
+        <name>Integration_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Invoice Frequency (deprecated jan9&apos;21) --></label>
+        <name>Invoice_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Upon Completion</masterLabel>
+            <translation><!-- Bill Upon Completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress Billing</masterLabel>
+            <translation><!-- Progress Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annual</masterLabel>
+            <translation><!-- Semi-Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upfront</masterLabel>
+            <translation><!-- Upfront --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoicing Instructions --></label>
+        <name>Invoicing_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Strictly a System Admin field. --></help>
+        <label><!-- Is Automation Bypassed? --></label>
+        <name>IsAutomationBypassed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is_Influenced --></label>
+        <name>LID__Is_Influenced__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Stage --></label>
+        <name>LeanData__Days_In_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days To Close (Deprecated) --></label>
+        <name>LeanData__Days_To_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>LeanData__OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Last Run Date (Deprecated) --></label>
+        <name>LeanData__Reporting_Last_Run_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Opportunity Source --></label>
+        <name>LeanData__Reporting_Opportunity_Source__c</name>
+        <picklistValues>
+            <masterLabel>Marketing Influenced</masterLabel>
+            <translation><!-- Marketing Influenced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Sourced</masterLabel>
+            <translation><!-- Marketing Sourced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Only</masterLabel>
+            <translation><!-- Sales Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Total Marketing Touches --></label>
+        <name>LeanData__Reporting_Total_Marketing_Touches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Won Number (Deprecated) --></label>
+        <name>LeanData__Reporting_Won_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Action --></label>
+        <name>LeanData__Routing_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Info --></label>
+        <name>LeanData__Status_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Item Count --></label>
+        <name>Line_Item_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the reason this Opportunity was marked as Closed Lost. --></help>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Loss - 1% Not Qualified</masterLabel>
+            <translation><!-- Loss - 1% Not Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Competition</masterLabel>
+            <translation><!-- Loss - Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Default on Payment</masterLabel>
+            <translation><!-- Loss - Default on Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Duplicate</masterLabel>
+            <translation><!-- Loss - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - FEDRAMP</masterLabel>
+            <translation><!-- Loss - FEDRAMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Keep Existing Solution</masterLabel>
+            <translation><!-- Loss - Keep Existing Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Lack of functionality</masterLabel>
+            <translation><!-- Loss - Lack of functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - No Budget or Approved Project</masterLabel>
+            <translation><!-- Loss - No Budget or Approved Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - No Decision</masterLabel>
+            <translation><!-- Loss - No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - No Response</masterLabel>
+            <translation><!-- Loss - No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Price</masterLabel>
+            <translation><!-- Loss - Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Product Instability</masterLabel>
+            <translation><!-- Loss - Product Instability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loss - Project Delayed/Pushed-Out</masterLabel>
+            <translation><!-- Loss - Project Delayed/Pushed-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Acquisition/Merger</masterLabel>
+            <translation><!-- Renewal - Acquisition/Merger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Bankruptcy</masterLabel>
+            <translation><!-- Renewal - Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Change in Business Direction</masterLabel>
+            <translation><!-- Renewal - Change in Business Direction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Default on Payment</masterLabel>
+            <translation><!-- Renewal - Default on Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Duplicate</masterLabel>
+            <translation><!-- Renewal - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Lack of Adoption</masterLabel>
+            <translation><!-- Renewal - Lack of Adoption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Lack of perceived Value</masterLabel>
+            <translation><!-- Renewal - Lack of perceived Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Loss of Budget</masterLabel>
+            <translation><!-- Renewal - Loss of Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Lost Champion</masterLabel>
+            <translation><!-- Renewal - Lost Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Project Canceled</masterLabel>
+            <translation><!-- Renewal - Project Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal - Project Never Implemented</masterLabel>
+            <translation><!-- Renewal - Project Never Implemented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- MYC Contract Amount (deprecated jan9&apos;21) --></label>
+        <name>MYC_Contract_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated with TODAY&apos;s date when the &apos;Manager Approved&apos; checkbox on the Opportunity is checked. Locked for editing by end users with the exception of Sales Ops who sometimes need to make edits as they review Opportunities for data quality. Managers, if the date must be changed, please notify Sales Ops. --></help>
+        <label><!-- Manager Approval Date --></label>
+        <name>Manager_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Approved --></label>
+        <name>Manager_Approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hold Ctrl + Left Click to select multiple values --></help>
+        <label><!-- Marketing Obligations --></label>
+        <name>Marketing_Obligations__c</name>
+        <picklistValues>
+            <masterLabel>Ambassador Program</masterLabel>
+            <translation><!-- Ambassador Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog Post or Equivalent</masterLabel>
+            <translation><!-- Blog Post or Equivalent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meetup Host</masterLabel>
+            <translation><!-- Meetup Host --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organize a Meetup</masterLabel>
+            <translation><!-- Organize a Meetup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Present at a Meetup</masterLabel>
+            <translation><!-- Present at a Meetup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press Release</masterLabel>
+            <translation><!-- Press Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Usability Testing</masterLabel>
+            <translation><!-- Private Usability Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Presentation or Webinar</masterLabel>
+            <translation><!-- Public Presentation or Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Quote (CTO/CEO)</masterLabel>
+            <translation><!-- Public Quote (CTO/CEO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recorded Interview and Case Study</masterLabel>
+            <translation><!-- Recorded Interview and Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use of Logo</masterLabel>
+            <translation><!-- Use of Logo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use of Name</masterLabel>
+            <translation><!-- Use of Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Multi-Year Type (deprecated jan9&apos;21) --></label>
+        <name>Multiyear_Type__c</name>
+        <picklistValues>
+            <masterLabel>Multi-Year Contractual</masterLabel>
+            <translation><!-- Multi-Year Contractual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Year Prepaid</masterLabel>
+            <translation><!-- Multi-Year Prepaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Year Prepaid and Contractual</masterLabel>
+            <translation><!-- Multi-Year Prepaid and Contractual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- There is a clearly identified business and/or technical problem that the prospect has to solve, where Neo4j could fit. The prospect has indicated an interest to move forward with discussions and/or an evaluation of Neo4j to address this identified use case. 
+
+ACTION: Identify why it is necessary for the prospect to address a specific problem and how Neo4j can help solve it. --></help>
+        <label><!-- Need --></label>
+        <name>Need__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Analysis Date --></label>
+        <name>Needs_Analysis_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the correct billing entity of Neo4j. --></help>
+        <label><!-- Neo4j Billing Entity --></label>
+        <name>Neo4j_Billing_Entity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summarizes Products where the Type is New, Cross-Sell or Up-Sell. --></help>
+        <label><!-- New/Cross-Sell/Up-Sell Summary --></label>
+        <name>New_Cross_Sell_Up_Sell_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- New or Cross Sell Summary --></label>
+        <name>New_or_Cross_Sell_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates how many Products associated with this Opportunity require onboarding. --></help>
+        <label><!-- Onboarding Product Count --></label>
+        <name>Onboarding_Product_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identify ALL competitors for this deal. Multiple values can be selected by holding Ctrl + Left Click. --></help>
+        <label><!-- Open Opportunity Competitors --></label>
+        <name>Open_Opportunity__c</name>
+        <picklistValues>
+            <masterLabel>AgensGraph</masterLabel>
+            <translation><!-- AgensGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alibaba graph</masterLabel>
+            <translation><!-- Alibaba graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AllegroGraph</masterLabel>
+            <translation><!-- AllegroGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon (AWS) Neptune</masterLabel>
+            <translation><!-- Amazon (AWS) Neptune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AnzoGraph DB</masterLabel>
+            <translation><!-- AnzoGraph DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arango DB</masterLabel>
+            <translation><!-- Arango DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtomRain</masterLabel>
+            <translation><!-- AtomRain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aura Professional</masterLabel>
+            <translation><!-- Aura Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BigQuery</masterLabel>
+            <translation><!-- BigQuery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blazegraph</masterLabel>
+            <translation><!-- Blazegraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cassandra</masterLabel>
+            <translation><!-- Cassandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DataSTax</masterLabel>
+            <translation><!-- DataSTax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDRAMP High Required</masterLabel>
+            <translation><!-- FEDRAMP High Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDRAMP Medium Required</masterLabel>
+            <translation><!-- FEDRAMP Medium Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fauna</masterLabel>
+            <translation><!-- Fauna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FlockDB</masterLabel>
+            <translation><!-- FlockDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fluree</masterLabel>
+            <translation><!-- Fluree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giraph</masterLabel>
+            <translation><!-- Giraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Engine</masterLabel>
+            <translation><!-- Graph Engine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphBase</masterLabel>
+            <translation><!-- GraphBase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphDB</masterLabel>
+            <translation><!-- GraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HGraphDB</masterLabel>
+            <translation><!-- HGraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HugeGraph</masterLabel>
+            <translation><!-- HugeGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HyperGraphDB</masterLabel>
+            <translation><!-- HyperGraphDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InfiniteGraph</masterLabel>
+            <translation><!-- InfiniteGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JanusGraph</masterLabel>
+            <translation><!-- JanusGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memgraph</masterLabel>
+            <translation><!-- Memgraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure Cosmos DB</masterLabel>
+            <translation><!-- Microsoft Azure Cosmos DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongo DB</masterLabel>
+            <translation><!-- Mongo DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebula Graph</masterLabel>
+            <translation><!-- Nebula Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Community Edition</masterLabel>
+            <translation><!-- Neo4j Community Edition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle Spatial &amp; Graph</masterLabel>
+            <translation><!-- Oracle Spatial &amp; Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OrientDB</masterLabel>
+            <translation><!-- OrientDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sparksee</masterLabel>
+            <translation><!-- Sparksee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stardog</masterLabel>
+            <translation><!-- Stardog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tencent Graph</masterLabel>
+            <translation><!-- Tencent Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TerminusDB</masterLabel>
+            <translation><!-- TerminusDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TigerGraph</masterLabel>
+            <translation><!-- TigerGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TinkerGraph</masterLabel>
+            <translation><!-- TinkerGraph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titan</masterLabel>
+            <translation><!-- Titan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TypeDB</masterLabel>
+            <translation><!-- TypeDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VelocityDB</masterLabel>
+            <translation><!-- VelocityDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtuoso</masterLabel>
+            <translation><!-- Virtuoso --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opp Count 1 --></label>
+        <name>Opp_Count_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Currency --></label>
+        <name>Opp_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp SDR Comped --></label>
+        <name>Opp_SDR_Comped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Support Level --></label>
+        <name>Opp_Support_Level__c</name>
+        <picklistValues>
+            <masterLabel>No Support</masterLabel>
+            <translation><!-- No Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by OEM</masterLabel>
+            <translation><!-- Provided by OEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided by Partner</masterLabel>
+            <translation><!-- Provided by Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Doc --></label>
+        <name>Opportunity_Doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Forecast ARR --></label>
+        <name>Opportunity_Forecast_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the original source of this Opportunity. --></help>
+        <label><!-- Opportunity Source --></label>
+        <name>Opportunity_Source__c</name>
+        <picklistValues>
+            <masterLabel>Channel / Indirect Partner</masterLabel>
+            <translation><!-- Channel / Indirect Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud / Tech Partner</masterLabel>
+            <translation><!-- Cloud / Tech Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Success - Upsell</masterLabel>
+            <translation><!-- Customer Success - Upsell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR + Channel / Indirect Partner</masterLabel>
+            <translation><!-- SDR + Channel / Indirect Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR + Cloud / Tech Partner</masterLabel>
+            <translation><!-- SDR + Cloud / Tech Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR - Inbound Lead</masterLabel>
+            <translation><!-- SDR - Inbound Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR - Outbound Efforts</masterLabel>
+            <translation><!-- SDR - Outbound Efforts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Generated</masterLabel>
+            <translation><!-- Sales Generated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number_set__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the URL of the original base Opportunity. Used in the Renewals flow and populated automatically when each Renewal Opportunity is created. --></help>
+        <label><!-- Original Opportunity --></label>
+        <name>Original_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- &quot;Other&quot; Use Case --></label>
+        <name>Other_Use_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows how many Products from a distinct Group - &quot;POC/Perpetual&quot;, are attached to the Opportunity (POC: Advanced, Enterprise, OEM (Platform), PS – Consulting and, Perpetual - OEM (Royalty)). --></help>
+        <label><!-- POC/Perpetual Product Group Count --></label>
+        <name>POC_Perpetual_Product_Group_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Pending? --></label>
+        <name>PO_Pending__c</name>
+        <picklistValues>
+            <masterLabel>No (Already Uploaded)</masterLabel>
+            <translation><!-- No (Already Uploaded) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No (Not Required)</masterLabel>
+            <translation><!-- No (Not Required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Asterisks because its calculated on a delayed basis, and it is a formula field thus its value is inherited and nobody can affect value-change to this api column in dml update files. --></help>
+        <label><!-- PI Acct ID --></label>
+        <name>PartnerInvolvedAccountAsyncAccId18Digit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a read-only summary of the Opportunity &gt; Related &gt; Partners Involved list, based on business rules for displaying one from potentially many records.  To make changes you must create/change (PI) record entries in Related &gt; &quot;Partners Involved&quot; --></help>
+        <label><!-- Partner Involved Account --></label>
+        <name>PartnerInvolvedAccountAsync__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a read-only summary of the Opportunity &gt; Related &gt; Partners Involved list, based on business rules for displaying one from potentially many records.  To make changes you must create/change (PI) record entries in Related &gt; &quot;Partners Involved&quot; --></help>
+        <label><!-- Partner Involved Contact --></label>
+        <name>PartnerInvolvedContactAsync__c</name>
+    </fields>
+    <fields>
+        <help><!-- This data is now captured in Partners Involved object. Contact the partner team if you have any questions. --></help>
+        <label><!-- Old data Legacy field - do not use --></label>
+        <name>Partner_Contact__c</name>
+        <relationshipLabel><!-- Opportunities Custom --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This data is now captured in Partners Involved object. Contact the partner team if you have any questions. --></help>
+        <label><!-- Old data Legacy field - do not use --></label>
+        <name>Partner_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This data is now captured in Partners Involved object. Contact the partner team if you have any questions. --></help>
+        <label><!-- Old data Legacy field - do not use --></label>
+        <name>Partner_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Neo4j</masterLabel>
+            <translation><!-- Neo4j --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This data is now captured in Partners Involved object. Contact the partner team if you have any questions. --></help>
+        <label><!-- Old data Legacy field - do not use --></label>
+        <name>Partner_Role__c</name>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing</masterLabel>
+            <translation><!-- Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral (Past Opp)</masterLabel>
+            <translation><!-- Referral (Past Opp) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Contractor</masterLabel>
+            <translation><!-- Sub Contractor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This data is now captured in Partners Involved object. Contact the partner team if you have any questions. --></help>
+        <label><!-- Old data Legacy field - do not use --></label>
+        <name>Partner__c</name>
+        <relationshipLabel><!-- Partner Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Shows how many Products from a distinct Group - &quot;Partnership&quot;, are attached to the Opportunity (Partnership). --></help>
+        <label><!-- Partnership Product Group Count --></label>
+        <name>Partnership_Product_Group_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Payment Terms (deprecated jan9&apos;21) --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Net 120</masterLabel>
+            <translation><!-- Net 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 180</masterLabel>
+            <translation><!-- Net 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 75</masterLabel>
+            <translation><!-- Net 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the preferred provider of the company in relation to this Opportunity. If the preferred provider indicated by the company is not part of the current picklist, please reach out to the Salesforce Administration team. --></help>
+        <label><!-- Preferred Cloud Provider --></label>
+        <name>Preferred_Cloud_Provider__c</name>
+        <picklistValues>
+            <masterLabel>Gov - AWS</masterLabel>
+            <translation><!-- Gov - AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gov - GCP</masterLabel>
+            <translation><!-- Gov - GCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gov - MS Azure</masterLabel>
+            <translation><!-- Gov - MS Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Prem</masterLabel>
+            <translation><!-- On-Prem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private - Colocate</masterLabel>
+            <translation><!-- Private - Colocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private - Openshift</masterLabel>
+            <translation><!-- Private - Openshift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private - Pivotal</masterLabel>
+            <translation><!-- Private - Pivotal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - AWS</masterLabel>
+            <translation><!-- Pub - AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - Alibaba</masterLabel>
+            <translation><!-- Pub - Alibaba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - GCP</masterLabel>
+            <translation><!-- Pub - GCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - IBM</masterLabel>
+            <translation><!-- Pub - IBM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - MS Azure</masterLabel>
+            <translation><!-- Pub - MS Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub - Oracle</masterLabel>
+            <translation><!-- Pub - Oracle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;PrimeContractor&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- PrimeContractor Partner Involved Account --></label>
+        <name>PrimeContractor_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Stage --></label>
+        <name>Prior_Stage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the total number of Professional Services Products attached to the Opportunity. --></help>
+        <label><!-- Professional Services Product Count --></label>
+        <name>Prof_Services_Product_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows how many Products from a distinct Group - &quot;Professional Services&quot;, are attached to the Opportunity (Professional Services: Consulting, Innovation Lab, Training). --></help>
+        <label><!-- Prof. Services Product Group Count --></label>
+        <name>Prof_Services_Product_Group_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualification Date --></label>
+        <name>Qualification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rebillable Expenses Limit --></label>
+        <name>Rebillable_Expenses_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rebillable Expenses? --></label>
+        <name>Rebillable_Expenses__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is intended for admin use only. --></help>
+        <label><!-- Record Cannot be Saved #1 --></label>
+        <name>Record_Cannot_be_Saved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type ID --></label>
+        <name>Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recorded Opp Date --></label>
+        <name>Recorded_Opp_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the final Sales Ops approval call for New and Cross-Sell Opportunities in the &apos;Qualification (10%)&apos; Stage. Approved and officially recorded Opportunities are split by revenue segment. Not Qualified Opportunities are coupled with the reason that applies. --></help>
+        <label><!-- Recorded Opp --></label>
+        <name>Recorded_Opp__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified</masterLabel>
+            <translation><!-- Not Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified - Duplicate</masterLabel>
+            <translation><!-- Not Qualified - Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified - Non ARR</masterLabel>
+            <translation><!-- Not Qualified - Non ARR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified - Partnership</masterLabel>
+            <translation><!-- Not Qualified - Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified - Revenue Type</masterLabel>
+            <translation><!-- Not Qualified - Revenue Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Qualified - Startup Rev and Product</masterLabel>
+            <translation><!-- Not Qualified - Startup Rev and Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Startup</masterLabel>
+            <translation><!-- Startup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Referral&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Referral Partner Involved Account --></label>
+        <name>Referral_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of ARR the Renewals Team is tasked with renewing before the subscription expiration date. This represents the Renewals Team quota for this Opportunity. This field is updated from the RCC and also used in SFDC reports as well as RCC reports. Data owned by Renewals. --></help>
+        <label><!-- Renewal Base --></label>
+        <name>RenewalBase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows Renewals and Sales to ensure clear team ownership of Opportunities. --></help>
+        <label><!-- Renewal Driver --></label>
+        <name>Renewal_Driver__c</name>
+        <picklistValues>
+            <masterLabel>AE-Driven</masterLabel>
+            <translation><!-- AE-Driven --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM-Driven</masterLabel>
+            <translation><!-- RM-Driven --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Terms End Date --></label>
+        <name>Renewal_Terms_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Terms Start Date --></label>
+        <name>Renewal_Terms_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is the Renewals Manager for this Opportunity? --></help>
+        <label><!-- Renewals Manager --></label>
+        <name>Renewals_Manager__c</name>
+        <relationshipLabel><!-- Opportunities (Renewals Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Reseller&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Reseller Partner Involved Account --></label>
+        <name>Reseller_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consider Updates After --></label>
+        <name>RingLeadTrigger__Consider_Updates_After__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>RingLeadTrigger__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App Field --></label>
+        <name>RingLeadTrigger__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>RingLeadTrigger__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Count --></label>
+        <name>RingLeadTrigger__RingLead_Processed_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Created --></label>
+        <name>RingLeadTrigger__Trigger_Type_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Type Updated --></label>
+        <name>RingLeadTrigger__Trigger_Type_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Z_Running User: Opp Owner --></label>
+        <name>Running_User_Opp_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Running User: SDR --></label>
+        <name>Running_User_SDR__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Opp ID --></label>
+        <name>SFDC_Opp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Development ID --></label>
+        <name>Sales_Development_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Development Rep --></label>
+        <name>Sales_Development_Rep__c</name>
+        <relationshipLabel><!-- Opportunities (Sales Development Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Source&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Source Partner Involved Account --></label>
+        <name>Source_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Terms --></label>
+        <name>Special_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Change Date --></label>
+        <name>Stage_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Duration (Days) --></label>
+        <name>Stage_Duration_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- This flag added in Added in Stage Project (SFDC-0143) to prevent recursion in renewal Opportunity creation logic. --></help>
+        <label><!-- Stop Recursion in Renewal Opp Create --></label>
+        <name>Stop_Recursion_in_Renewal_Opp_Create__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Sub Contractor&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Sub Contractor Partner Involved Account --></label>
+        <name>Sub_Contractor_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows how many Products from a distinct Group - &quot;Subscription&quot;, are attached to the Opportunity (Subscription: GraphDataScience, OEM, Startup, Discovery, Advanced, Business, Enterprise, Aura Enterprise, Bloom, Kerberos, Linkurious). --></help>
+        <label><!-- Subscription Product Group Count --></label>
+        <name>Subscription_Product_Group_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sugar ID --></label>
+        <name>Sugar_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sugar Order No --></label>
+        <name>Sugar_Order_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows how many Products from a distinct Group - &quot;Support&quot;, are attached to the Opportunity (Support: Dedicated, Enterprise, Managed Services, OEM, Platinum). --></help>
+        <label><!-- Support Product Group Count --></label>
+        <name>Support_Product_Group_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- TCV USD --></label>
+        <name>TCV_USD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated with the &quot;Term End Date&quot; of the first Subscription Opportunity Line Item added to the Opportunity. --></help>
+        <label><!-- Term End Date (First Subscription OLI) --></label>
+        <name>Term_End_Date_First_Subscription_OLI__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Term End Date (deprecated jan9&apos;21) --></label>
+        <name>Term_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Jan9&apos;21) This field is now deprecated, because this field no longer belongs on the Opportunity. Instead use the field on the Opportunity Product line level. --></help>
+        <label><!-- Term Start Date (deprecated jan9&apos;21) --></label>
+        <name>Term_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Licenses --></label>
+        <name>Test_Licenses__c</name>
+    </fields>
+    <fields>
+        <help><!-- The opportunity has a chance to reach a Closed Won in the foreseeable future, as confirmed by the prospect’s go-live or start date, or as described by a timeline of key milestones. We define the foreseeable future as within the next 12 months (exceptions may apply). 
+
+ACTION: Confirm the prospect’s internal timeline. --></help>
+        <label><!-- Timeline --></label>
+        <name>Timeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Value --></label>
+        <name>Total_Contract_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Production Licenses --></label>
+        <name>Total_Production_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Test Licenses --></label>
+        <name>Total_Test_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Endpoint --></label>
+        <name>UniqueEntry__Current_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- RingLead App Field --></label>
+        <name>UniqueEntry__RingLead_App_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Processed Date --></label>
+        <name>UniqueEntry__RingLead_Last_Processed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Case Detail --></label>
+        <name>Use_Case_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Case Subcategory --></label>
+        <name>Use_Case_Sub__c</name>
+        <picklistValues>
+            <masterLabel>Anti Money Laundering</masterLabel>
+            <translation><!-- Anti Money Laundering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claim Processing</masterLabel>
+            <translation><!-- Claim Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance meta-data (GDPR, BSBS 239, MiFID II, Other)</masterLabel>
+            <translation><!-- Compliance meta-data (GDPR, BSBS 239, MiFID II, Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Risk Management</masterLabel>
+            <translation><!-- Credit Risk Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer 360 / KYC</masterLabel>
+            <translation><!-- Customer 360 / KYC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyber Security</masterLabel>
+            <translation><!-- Cyber Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Governance</masterLabel>
+            <translation><!-- Data Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration</masterLabel>
+            <translation><!-- Data Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Media MDM</masterLabel>
+            <translation><!-- Digital Media MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee MDM</masterLabel>
+            <translation><!-- Employee MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise MDM</masterLabel>
+            <translation><!-- Enterprise MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Detection</masterLabel>
+            <translation><!-- Fraud Detection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Analytics</masterLabel>
+            <translation><!-- Graph Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intelligence</masterLabel>
+            <translation><!-- Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Data (Customer 360 / KYC, Employee / Product / Sales / Supply Chain / Other)</masterLabel>
+            <translation><!-- Master Data (Customer 360 / KYC, Employee / Product / Sales / Supply Chain / Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product MDM</masterLabel>
+            <translation><!-- Product MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales MDM</masterLabel>
+            <translation><!-- Sales MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain MDM</masterLabel>
+            <translation><!-- Supply Chain MDM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the value that best describes how and/or why the prospect will use the product(s) included in this oppotrunity. --></help>
+        <label><!-- Use Case --></label>
+        <name>Use_Case__c</name>
+        <picklistValues>
+            <masterLabel>Embedded</masterLabel>
+            <translation><!-- Embedded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Based Search</masterLabel>
+            <translation><!-- Graph Based Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity and Access Management</masterLabel>
+            <translation><!-- Identity and Access Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge Graph</masterLabel>
+            <translation><!-- Knowledge Graph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master &amp; Meta-Data Management</masterLabel>
+            <translation><!-- Master &amp; Meta-Data Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network and IT Operations</masterLabel>
+            <translation><!-- Network and IT Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommendations</masterLabel>
+            <translation><!-- Recommendations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management</masterLabel>
+            <translation><!-- Risk Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Lab</masterLabel>
+            <translation><!-- Solutions Lab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically populated based on whichever Account was most recently tagged as &quot;Visualization&quot; within Opportunity &gt; Related &gt; Partners Involved listing. --></help>
+        <label><!-- Visualization Partner Involved Account --></label>
+        <name>Visualization_Partner_Involved_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data Science uses algorithms, global queries, and machine learning/AI. Transactional workloads focus on real-time interactions and local queries. --></help>
+        <label><!-- Workload Type --></label>
+        <name>Workload_Type__c</name>
+        <picklistValues>
+            <masterLabel>Data Science</masterLabel>
+            <translation><!-- Data Science --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid/Both</masterLabel>
+            <translation><!-- Hybrid/Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Response date to the SDR&apos;s approval request for this Opportunity to be included in their 1% compensation for the month of request submission. The date in this field reflects the date of the last response and corresponds to the value currently displayed in the &apos;1% SDR Comp Approval Decision&apos; field. --></help>
+        <label><!-- 1% SDR Comp Approval Status Date --></label>
+        <name>X1SDRCompApprovalStatusDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the latest status of the SDR&apos;s approval request for this Opportunity to be included in their 1% compensation for the current month. 
+
+This two-step approval process requires that all Opportunities first be approved by the SDR&apos;s manager followed by the SDR Director. If the field displays &apos;Approved by Manager - Pending SDR Director Approval&apos; and the record is still locked, it means the Opportunity is currently awaiting SDR Director&apos;s review and decision. --></help>
+        <label><!-- 1% SDR Comp Approval Status --></label>
+        <name>X1SDRCompApprovalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved by SDR Director - Final Approval</masterLabel>
+            <translation><!-- Approved by SDR Director - Final Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved by SDR Manager - Pending SDR Director Approval</masterLabel>
+            <translation><!-- Approved by SDR Manager - Pending SDR Director Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by SDR Director - Final Rejection</masterLabel>
+            <translation><!-- Rejected by SDR Director - Final Rejection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by SDR Manager - Final Rejection</masterLabel>
+            <translation><!-- Rejected by SDR Manager - Final Rejection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - Pending SDR Manager Approval</masterLabel>
+            <translation><!-- Submitted - Pending SDR Manager Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The SDR team along with AEs and sales leaders use reports containing this field to identify Opportunities to progress to 10% for this quarter. --></help>
+        <label><!-- 1% SDR Date --></label>
+        <name>X1_SDR_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 99% Reason --></label>
+        <name>X99_Reason__c</name>
+        <picklistValues>
+            <masterLabel>ARR Calculations</masterLabel>
+            <translation><!-- ARR Calculations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Details (VAT, email, etc.)</masterLabel>
+            <translation><!-- Billing Details (VAT, email, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Basis/Outstanding Past Invoices</masterLabel>
+            <translation><!-- Cash Basis/Outstanding Past Invoices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirming OEM Details</masterLabel>
+            <translation><!-- Confirming OEM Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirming Product Name/Rev Type</masterLabel>
+            <translation><!-- Confirming Product Name/Rev Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery Bundle Production Status</masterLabel>
+            <translation><!-- Discovery Bundle Production Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete/Incorrect Field Values</masterLabel>
+            <translation><!-- Incomplete/Incorrect Field Values --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Question</masterLabel>
+            <translation><!-- Legal Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Partner Related File</masterLabel>
+            <translation><!-- Missing Partner Related File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Renewal Confirmation</masterLabel>
+            <translation><!-- Missing Renewal Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Signature</masterLabel>
+            <translation><!-- Missing Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PS EMEA</masterLabel>
+            <translation><!-- PS EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PS NA (based on time/delivery rather than prepaid)</masterLabel>
+            <translation><!-- PS NA (based on time/delivery rather than prepaid) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal in Future Month</masterLabel>
+            <translation><!-- Renewal in Future Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Dates</masterLabel>
+            <translation><!-- Term Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for PO</masterLabel>
+            <translation><!-- Waiting for PO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- aSaveThatBypassesValidationRules --></label>
+        <name>aSaveThatBypassesValidationRules__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only to be used if a number other than Amount should be used to calculate attribution --></help>
+        <label><!-- Bizible Opportunity Amount --></label>
+        <name>bizible2__Bizible_Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to admins only. Populated only on a named/small set of records in sandboxes to help relationally-reconstruct specific data in partial copy environments (This fields helps admins combat the random sampling nature of partial copy environments) --></help>
+        <label><!-- external id for n4jSFDC sandbox use only --></label>
+        <name>external_id_for_n4jSFDC_sandbox_use_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- XXX Batch Process --></label>
+        <name>ffr__BatchProcess__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketo ID --></label>
+        <name>mkto_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketo Opportunity Analysis --></label>
+        <name>mkto_si__MarketoAnalyzer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Part of the &quot;Power Editor&quot; page feature. System field. No user should edit data in this field. --></help>
+        <label><!-- neo4j_apexBypass_context --></label>
+        <name>neo4j_apexBypass_context__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of Products on the Opportunity EXCLUDING Neo4j - AuraDB and PS. --></help>
+        <label><!-- #oppLines: Excl. Neo4j - Aura --></label>
+        <name>num_lines_Excl_Neo4j_Aura__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of Neo4j - Aura Products on the Opportunity. --></help>
+        <label><!-- #oppLines: Neo4j - Aura --></label>
+        <name>num_lines_Neo4j_Aura__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to admins only. Added to help support requirements of SFDC-0542. This rollup field was built specifically to help identify when salesforce should require specific fields at the Opportunity Product level. --></help>
+        <label><!-- # of fulfillment-roled Partners Involved --></label>
+        <name>num_of_fulfillment_roledPartnersInvolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- # subscription opp lines --></label>
+        <name>num_subscription_opp_lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- # PI Records --></label>
+        <name>partner_involved_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Curve --></label>
+        <name>pse__Forecast_Curve__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsParentOpportunityServices --></label>
+        <name>pse__IsParentOpportunityServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Change Request --></label>
+        <name>pse__Is_Change_Request__c</name>
+    </fields>
+    <fields>
+        <help>これがサービスの機会であるかどうかを確認してください</help>
+        <label><!-- Is Services Opportunity --></label>
+        <name>pse__Is_Services_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Opportunity --></label>
+        <name>pse__Parent_Opportunity__c</name>
+        <relationshipLabel><!-- Child Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DEPRECATED: Pre-Billed Amount --></label>
+        <name>pse__PreBilledAmount__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドは、整数以外の小数点以下桁数を許可していなかった古いPre-Billed Amountフィールド（PreBilledAmount__c）に代わるものです。</help>
+        <label><!-- Pre-Billed Amount --></label>
+        <name>pse__Pre_Billed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Project --></label>
+        <name>pse__Primary_Project__c</name>
+        <relationshipLabel><!-- Primary Project For Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>割引が適用される料金表の最小推奨請求料金。</help>
+        <label><!-- Rate Card Discount Limit --></label>
+        <name>pse__Rate_Card_Discount_Limit__c</name>
+    </fields>
+    <fields>
+        <help>商談のリソースリクエストを作成または更新するときに、料金表の推奨請求レートに適用されるパーセントでの割引。</help>
+        <label><!-- Rate Card Percentage Discount --></label>
+        <name>pse__Rate_Card_Percentage_Discount__c</name>
+    </fields>
+    <fields>
+        <help>レートカードセットは、複数の別々のレートカードで構成され、プロジェクトに適用されるレートカードを決定します。</help>
+        <label><!-- Rate Card Set --></label>
+        <name>pse__Rate_Card_Set__c</name>
+        <relationshipLabel><!-- Rate Card Set Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Services Attached From Products --></label>
+        <name>pse__Services_Attached_From_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Attached % From Products --></label>
+        <name>pse__Services_Attached_Percent_From_Products__c</name>
+    </fields>
+    <fields>
+        <help><!-- Keep it hidden from everyone. Added in Stage Project (SFDC-0143) made visible to sysadmins only --></help>
+        <label><!-- # subscrip opp lines with Auto Renewal --></label>
+        <name>subscr_opp_lines_with_Auto_Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in Added in Stage Project (SFDC-0143) made visible to sysadmins only. --></help>
+        <label><!-- # subscr opp lines with contract term --></label>
+        <name>subscr_opp_lines_with_Contract_term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in Stage Project (SFDC-0143) made visible to sysadmins only. --></help>
+        <label><!-- # subscr opplines with Invoice Frequency --></label>
+        <name>subscr_opp_lines_with_Invoice_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in ARR Project (SFDC-0145) made visible to sysadmins only. --></help>
+        <label><!-- # subscr opp lines with Payment Terms --></label>
+        <name>subscr_opp_lines_with_Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in ARR Project (SFDC-0145) made visible to sysadmins only. This rollup counts each Opportunity Products that has a nonblank value in the given field.  This helps enforce opp product/line data inputs at closed won so that renewal logic doesnt fail --></help>
+        <label><!-- # subscr opp lines with Term End Date --></label>
+        <name>subscr_opp_lines_with_Term_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Added in ARR Project (SFDC-0145) made visible to sysadmins only. This rollup counts each Opportunity Products that has a nonblank value in the given field.  This helps enforce opp product/line data inputs at closed won so that renewal logic doesnt fail --></help>
+        <label><!-- # subscr opp lines with Term Start Date --></label>
+        <name>subscr_opp_lines_with_Term_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Approvals Information --></label>
+            <section>Approvals Information</section>
+        </sections>
+        <sections>
+            <label>コストと収益の概要</label>
+            <section>Cost and Revenue Summary</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Information --></label>
+            <section>Deal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description Information --></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Information --></label>
+            <section>Finance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Gainsight Opportunity Widget --></label>
+            <section>Gainsight Opportunity Widget</section>
+        </sections>
+        <sections>
+            <label><!-- Long Description --></label>
+            <section>Long Description</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo Sales Insight --></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label>PSAデータ</label>
+            <section>PSA Data</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Information --></label>
+            <section>Renewal Information</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Evaluation --></label>
+            <section>Technical Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- Terms Information --></label>
+            <section>Terms Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- 99% Opp Fields --></label>
+        <name>X99_Opp_Fields</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Closed Won Opportunity --></label>
+        <name>Closed_Won_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New --></label>
+        <name>New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- ATTENTION: ALL BANT fields in the &apos;Deal Information&apos; section must be populated in order to move the Opportunity beyond &apos;Qualification SDR&apos; stage. --></errorMessage>
+        <name>BANTFieldsMustBePopulatedBeyond1Percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: at least one &quot;Neo4j - AuraDB&quot; Product is missing Instance Provisioned Date and/or the Private Offer Status is Declined. Environment Needs to be Provisioned cannot be blank. Resolve to move the Opportunity to the next stage. --></errorMessage>
+        <name>CannotSaveRecordAuraProvisioning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Opportunities are historical records that should not be reassigned. If you believe this Opportunity was assigned to the current owner in error, email us the details at salesforce@neo4j.com. --></errorMessage>
+        <name>Cannot_Reassign_Closed_Opportunities</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Lost Competitor field is only used for Closed Lost opps with Loss Reason Competition --></errorMessage>
+        <name>Competitors_Field_Blank_If_Not_CL_Compet</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Use Case is &quot;Other&quot;, you must provide details in &quot;Other Use Case&quot; text --></errorMessage>
+        <name>If_Use_case_is_Other_require_Text</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rebillable Expenses Limit field is required when Rebillables Expenses is Yes. If there is no limit, please input &quot;none&quot;. --></errorMessage>
+        <name>Limit_Req_When_Rebillable_Expenses_Yes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason is only used when Sales Stage is Closed Lost --></errorMessage>
+        <name>Loss_Reason_Blank_If_Not_Closed_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Loss Reason is Competition, you must populate the Closed Lost Competitor field --></errorMessage>
+        <name>Loss_Reason_is_Competitors</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Loss Reason Required on Closed Lost Opportunity --></errorMessage>
+        <name>Loss_reason_required_on_closed_lost_oppt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;Neo4j Entity&apos; is a required field at &apos;Finance Review&apos; stage. --></errorMessage>
+        <name>Neo4j_Entity_Required_at_Finance_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;Opp Support Level&apos; field must be populated in order to move the Opportunity with subscription line items to &apos;Sales Ops Review&apos; stage. --></errorMessage>
+        <name>Opp_Support_Level_Req_at_98</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- [Opportunity Source] field is no longer accepting edits. --></errorMessage>
+        <name>Opportunity_Source_isLockedPost_Recorded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;Preferred Cloud Provider&apos; field must be populated to move this Opportunity to the next stage. --></errorMessage>
+        <name>Preferred_Cloud_Provider_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Line Items Required Beyond Prospecting Stage --></errorMessage>
+        <name>Product_Required_Beyond_QualificationSDR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rebillable Expenses field is required for PS opps at Sales Ops Review 98% --></errorMessage>
+        <name>Rebillable_Expenses_Field_Req_at_98_PS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rebillable Expenses field is required for PS opps at Sales Ops Review 99% --></errorMessage>
+        <name>Rebillable_Expenses_Field_Req_at_99_PS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit won opportunities.  Only users granted a special Custom Permission may unlock and edit fields on won opps, further subject to their FLS settings. --></errorMessage>
+        <name>Require_Unlock_CP_to_edit_Won_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Stage edit to Closed Won is not allowed because of one or both conditions: 1) Stage must enter Closed Won from Finance Review (99%) stage and or 2) moving to Closed Won requires specific permissions held by finance. --></errorMessage>
+        <name>Requires_ChangeTo100_perm_to_move_to_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only users granted [Opportunity_AllowStageChangeTo99 ]  may change opportunity Stage to 99% Finance Review. --></errorMessage>
+        <name>Requires_ChangeTo99_perm_to_move_to_99</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Administrators can change the Stage of a won Opportunity. --></errorMessage>
+        <name>Requires_SysAdmin_To_Change_Fr_Won_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Edits are restricted while in &apos;Finance Review&apos; stage Please share your request with Finance cc salesforce@neo4j.com. --></errorMessage>
+        <name>Restrict_Edits_in_Stage_Finance_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Edits are restricted while in Sales Ops Review Stage.  Please share your request with Sales Ops cc salesops@neo4j.com. --></errorMessage>
+        <name>Restrict_Edits_in_Stage_Sales_Ops_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities should not move backwards from 10% Qualification --></errorMessage>
+        <name>Restrict_Opp_Moving_Down_Fr_10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Sales Development Rep&quot; field is no longer accepting edits. --></errorMessage>
+        <name>Sales_Development_Rep_Field_Locked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities that have been manager approved for more than 30 days cannot be unapproved. --></errorMessage>
+        <name>Updating_Manager_Approved_Box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Use Case is required --></errorMessage>
+        <name>Use_Case_Required_at_60</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;Use Case Subcategory&apos; field must be populated. --></errorMessage>
+        <name>Use_Case_Subcategory_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Populate the &quot;Workload Type&quot; field in order to save the record. --></errorMessage>
+        <name>Workload_Type_Field_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Rate Card Percentage Discount must be between 0 and 100. --></errorMessage>
+        <name>pse__Discount_Rates_Must_Be_Between_0_to_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot associate the rate card set with the opportunity. They must both use the same currency. --></errorMessage>
+        <name>pse__Opp_Rate_Card_Set_Currency_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ALL subscription products associated to the Opportunity must have &quot;Term Info&quot; before stage Won.  Please open each &quot;subscription&quot; Opportunity Product for this opportunity and ensure that the &quot;Term Info&quot; section is completed before trying again. --></errorMessage>
+        <name>req_fields_by_won_for_renewal_processes</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_License_Key --></label>
+        <name>Generate_License_Key</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Apply_Rate_Card_Discount --></label>
+        <name>pse__Apply_Rate_Card_Discount</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Change_Request --></label>
+        <name>pse__Create_Change_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Project --></label>
+        <name>pse__Create_Project</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prognosinställning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prognosinställning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Indikerar inställningsposten för inkomstprognos som används för beräkningar av intäktsprognoser. Du kan bara ha en aktiv postprognos för inställningar.</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs utesluts möjligheter från planerade jobb för inkomster.</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Välj för att utesluta intäkter relaterade till begärda resursbegäranden för projekt och milstolpar.</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>Antal poster som ska behandlas samtidigt, t.ex. tidskort och utgifter.</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Antalet möjligheter och möjlighetsrader som ska behandlas samtidigt.</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Antal projekt som ska behandlas samtidigt.</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Ange API-namnet på fältet på Opportunity-objektet som du vill använda som förväntat slutdatum för projektet.</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Ange API-namnet på fältet på Opportunity-objektet du vill använda som förväntat projektdatum.</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Välj API-namnet på fältet på projektobjektet du vill använda för att beräkna värdet i fältet% timmar slutfört för erkännande. Vid behov kan du skapa ditt eget fält och lägga till det i picklistan.</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Prognos Batch-inställningar</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>Möjlighetsinställningar</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>Projektinställningar</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>Inställningsdetaljer</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Inställningsnamn för intäkter</nameFieldLabel>
+</CustomObjectTranslation>

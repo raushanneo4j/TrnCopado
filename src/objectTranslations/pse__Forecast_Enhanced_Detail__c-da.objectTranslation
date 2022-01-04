@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognosdetaljer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognoseoplysninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Billings: Budgets --></label>
+        <name>pse__Billings_Budgets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Calculation --></label>
+        <name>pse__Forecast_Enhanced_Calculation__c</name>
+        <relationshipLabel><!-- Billing Forecast Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Billing Forecast Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Et opslag til faktureringsprognosoversigten for regionen, praksis eller gruppe af projektet eller muligheden for denne faktureringsprognosoversigt.</help>
+        <label><!-- Parent Billing Forecast Summary --></label>
+        <name>pse__Parent_Summary__c</name>
+        <relationshipLabel><!-- Child Billing Forecast Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Backlog: Budgets --></label>
+        <name>pse__Perpetual_Backlog_Budgets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Backlog: Held RRs --></label>
+        <name>pse__Perpetual_Backlog_Held_RR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Backlog: Unheld RRs --></label>
+        <name>pse__Perpetual_Backlog_Unheld_RR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Billings: Budgets --></label>
+        <name>pse__Perpetual_Billings_Budgets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Billings: Expenses --></label>
+        <name>pse__Perpetual_Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Billings: Milestones --></label>
+        <name>pse__Perpetual_Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Billings: Misc Adjustments --></label>
+        <name>pse__Perpetual_Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perpetual Billings: Timecards --></label>
+        <name>pse__Perpetual_Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Billing Forecast Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled: Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled: Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Detail Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Prognosefaktorer</label>
+            <section>Forecast Factors</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Navn på faktureringsprognose</nameFieldLabel>
+</CustomObjectTranslation>

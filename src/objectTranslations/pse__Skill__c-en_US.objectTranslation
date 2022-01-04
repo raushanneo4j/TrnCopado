@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Organization or institution that grants this certification. --></help>
+        <label><!-- Certification Source --></label>
+        <name>pse__Certification_Source__c</name>
+        <picklistValues>
+            <masterLabel>Cisco</masterLabel>
+            <translation><!-- Cisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft</masterLabel>
+            <translation><!-- Microsoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce.com</masterLabel>
+            <translation><!-- Salesforce.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Text description of this skill or certification. --></help>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ID to identify this skill in an external system. --></help>
+        <label><!-- External ID --></label>
+        <name>pse__External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist of certification groups. --></help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <picklistValues>
+            <masterLabel>BI (Visualization) Tools</masterLabel>
+            <translation><!-- BI (Visualization) Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Data (Hadoop-Eco System)</masterLabel>
+            <translation><!-- Big Data (Hadoop-Eco System) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD/CI Applications</masterLabel>
+            <translation><!-- CD/CI Applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database</masterLabel>
+            <translation><!-- Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETL ( Data Int)</masterLabel>
+            <translation><!-- ETL ( Data Int) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Languages</masterLabel>
+            <translation><!-- Languages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Partner-Open Source</masterLabel>
+            <translation><!-- Neo4j Partner-Open Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Products</masterLabel>
+            <translation><!-- Neo4j Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Solution Framework</masterLabel>
+            <translation><!-- Neo4j Solution Framework --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operating Systems</masterLabel>
+            <translation><!-- Operating Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming Languages</masterLabel>
+            <translation><!-- Programming Languages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management Methodology</masterLabel>
+            <translation><!-- Project Management Methodology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Tools</masterLabel>
+            <translation><!-- Project Tools --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Key Path --></label>
+        <name>pse__Hierarchy_Key_Path__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the level within the skills hierarchy. --></help>
+        <label><!-- Hierarchy Level --></label>
+        <name>pse__Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Path field for auto-generated concatenated ancestor names of the skill in the hierarchy. --></help>
+        <label><!-- Hierarchy Path --></label>
+        <name>pse__Hierarchy_Path__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the parent in the skills hierarchy. Parent must have a record type of category. --></help>
+        <label><!-- Parent Category --></label>
+        <name>pse__Parent_Category__c</name>
+        <relationshipLabel><!-- Category Children --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Hierarchy Level --></label>
+        <name>pse__Parent_Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Record Type --></label>
+        <name>pse__Parent_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>pse__Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated. See Record Type instead. --></help>
+        <label><!-- Skill Or Certification --></label>
+        <name>pse__Skill_Or_Certification__c</name>
+        <picklistValues>
+            <masterLabel>Certification</masterLabel>
+            <translation><!-- Certification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skill</masterLabel>
+            <translation><!-- Skill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Set of skill types. Used when grouping skills capacity reports. --></help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming</masterLabel>
+            <translation><!-- Programming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft Skill</masterLabel>
+            <translation><!-- Soft Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The unique skill name. --></help>
+        <label><!-- Unique Name --></label>
+        <name>pse__Unique_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Category Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Certification Layout</layout>
+        <sections>
+            <label><!-- Certification Details --></label>
+            <section>Certification Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skill Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- A level in a hierarchy. Skills and certifications can belong to a category. --></description>
+        <label><!-- Category --></label>
+        <name>pse__Category</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A document relating to a status or a level of achievement. --></description>
+        <label><!-- Certification --></label>
+        <name>pse__Certification</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An ability, proficiency, or expertise, in a subject area. --></description>
+        <label><!-- Skill --></label>
+        <name>pse__Skill</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- CascadeDelete --></label>
+        <name>pse__CascadeDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

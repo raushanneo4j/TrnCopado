@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>עקיפה של תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>עקיפה של תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>מבט לחישוב תחזית החיוב שעבורו זה חל.</help>
+        <label><!-- Billing Forecast Calculation --></label>
+        <name>pse__Forecast_Enhanced_Calculation__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת קטגוריית פירוט תחזית החיוב עליה חלה דרישה.</help>
+        <label><!-- Billing Forecast Detail Category --></label>
+        <name>pse__Forecast_Enhanced_Detail_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>מבט לקטגוריית סיכום תחזית החיוב עליה חלה עליה.</help>
+        <label><!-- Billing Forecast Summary Category --></label>
+        <name>pse__Forecast_Enhanced_Summary_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת מידע לקבוצה עליה חלה עליה.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>קובע אם ההעלאה הזו היא הביטול הפעיל כרגע עבור קטגוריית הסיכום או קטגוריית הפירוט עליה היא מיושמת.</help>
+        <label><!-- Is Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>מידע נוסף כדי להסביר מדוע הוחל על ההפעלה.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>הסתכלות על ההזדמנות שחלפה עליה.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>הערך שהוזן לביטול תחזית החיוב.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>הסתכלות על התרגול שעליו חלה הגישה.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת הפרוייקט עליה חלה עליה.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>מבט לאזור שעליו חלה דריסת הגישה.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Override Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם עקף את תחזית החיוב</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Taak Management Instellingen --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Taak Management Instellingen --></value>
+    </caseValues>
+    <fields>
+        <help>Wanneer dit waar is, worden fouten genegeerd bij het maken van toewijzingen of mijlpalen voor de toewijzing en worden er projecttaaktoewijzingsrecords gemaakt. Deze optie wordt genegeerd tenzij Toewijzing automatisch toewijzen van taken klopt.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of automatisch niet-toegewezen projecttaken moeten worden toegewezen die tot dezelfde mijlpaal behoren als de toewijzing bij het toewijzen van een resource aan een project of het maken van een mijlpaalrecord voor nieuwe toewijzing. De standaardwaarde is false.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer dit waar is, worden fouten genegeerd bij het verwijderen van toewijzingen of mijlpalen van toewijzingen en dit zal leiden tot verwijdering van projecttaaktoewijzingsrecords. Deze optie wordt genegeerd, tenzij Taaktoewijzingen automatisch wordt verwijderd.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of projecttaaktoewijzingen automatisch moeten worden verwijderd wanneer resource of mijlpaal wordt verwijderd of de mijlpaal niet langer aan die toewijzing is gekoppeld. De standaardwaarde is false.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de standaardvolgorde van taken op de taakbeheersinterface bij de eerste keer laden en na het vernieuwen. Dit moet geldig zijn na een SOQL ORDER BY-component.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Naam van de veldset in het Projecttaaktoewijzingsobject dat een lijst bevat met velden die worden beperkt voor bewerking wanneer de record niet is vergrendeld.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Naam van de veldset in het projecttaakafhankelijkheidsobject dat een lijst bevat met velden die worden beperkt voor bewerking wanneer de record niet is vergrendeld.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Naam van de veldset in het Project Task-object dat een lijst met velden bevat die kunnen worden bewerkt wanneer de record niet is vergrendeld.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Maximumaantal projecten dat moet worden geladen voor selectie in de gebruikersinterface voor taakbeheer</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u wijzigingen niet opslaan in de einddatum van de taak wanneer deze groter is dan de datum van de mijlpaaldoelen.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Als deze optie is geselecteerd, kunt u wijzigingen niet opslaan in de einddatum van de taak wanneer deze zich buiten het bereik van de begin- en einddatum van het project bevindt.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, wordt u beperkt in het opslaan van wijzigingen in de einddatum van de taak wanneer deze zich buiten het bereik van de projecttaaktoewijzingsdatums bevindt.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, wordt u beperkt in het opslaan van wijzigingen in de einddatum van de taak wanneer deze zich buiten het bereik van de uren van de toewijzing projecttaak bevindt.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u wijzigingen niet opslaan in de startdatum van de taak wanneer deze groter is dan de datum van de mijlpaaldoelen.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, kunt u wijzigingen niet opslaan in de startdatum van de taak wanneer deze zich buiten het bereik van de start- en einddatum van het project bevindt.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

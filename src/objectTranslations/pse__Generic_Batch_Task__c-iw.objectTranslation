@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>משימת אצווה גנרית</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>משימות אצווה כלליות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- GenericBatchTasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>שלם</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>שגיאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>מעבד</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Identifier --></label>
+        <name>pse__UniqueIdentifier__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Generic Batch Task Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>שדות</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>משימת אצווה גנרית</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Projektvariantbatchindstillinger --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Projektvariantbatchindstillinger --></value>
+    </caseValues>
+    <fields>
+        <help>Hvis det er valgt, sendes meddelelser fra Procesvariation-batchprocesser via Chatter til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Procesvariation-batchprocesser via e-mail til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Angiver meddelelsesmodtagerne for batchmeddelelser fra Project Variance, der sendes via Chatter eller e-mail. Værdien er en liste over e-mailadresser adskilt af semikolon (;). Denne indstilling er som standard null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Hvis der vælges, sendes meddelelser fra projektvariantbatchprocesser via opgaver. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af poster, der skal behandles i en enkelt batch. Værdien er 5 som standard.</help>
+        <label><!-- Project Variance Batch Size --></label>
+        <name>pse__ProjectVariance_Batch_Size__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

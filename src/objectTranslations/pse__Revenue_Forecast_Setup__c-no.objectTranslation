@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prognoseoppsett</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prognoseoppsett</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Indikerer inntekter for inntektsvarsel som brukes til beregning av inntektsprognose. Du kan bare ha en aktiv inntektsmeldingsoppgave.</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette er valgt, blir mulighetene ekskludert fra planlagte jobber for inntekt.</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Velg for å ekskludere inntekter knyttet til forespurte ressurser om prosjekter og milepæler.</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>Antall poster som skal behandles samtidig, for eksempel tidskort og utgifter.</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Antall muligheter og ordrelinjer som skal behandles samtidig.</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Antall prosjekter som skal behandles samtidig.</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Skriv inn API-navnet til feltet på Opportunity-objektet du vil bruke som forventet sluttdato for prosjektet.</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Skriv inn API-navnet til feltet på Opportunity-objektet du vil bruke som forventet prosjektdato.</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Velg API-navnet på feltet på prosjektobjektet du vil bruke til å beregne verdien i feltet% timer fullført for anerkjennelse. Om nødvendig kan du opprette ditt eget felt og legge det til i pluklisten.</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>Tilpassede lenker</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Prognose batchinnstillinger</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>Mulighetsinnstillinger</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>Prosjektinnstillinger</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>Oppsettdetaljer</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Navn på oppsett for prognose</nameFieldLabel>
+</CustomObjectTranslation>

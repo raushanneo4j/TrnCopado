@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Benutting --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Benutting --></value>
+    </caseValues>
+    <fields>
+        <help>Het aantal toewijzingen om in een enkele batch te verwerken bij het berekenen van het gebruik</help>
+        <label><!-- Assignment Batch Size --></label>
+        <name>pse__Assignment_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Stelt het maximale aantal onderliggende records in waarboven een batchverwijdering wordt gebruikt in plaats van trapsgewijze verwijdering.</help>
+        <label><!-- Batch Deletion Cut-Off Point --></label>
+        <name>pse__Batch_Deletion_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>Hiermee kan de combinatie van kruisproduct van regio, praktijk en groep worden berekend. Zoals Region by Practice of Group by Region</help>
+        <label><!-- Calculate Cross Products --></label>
+        <name>pse__Calculate_Cross_Products__c</name>
+    </fields>
+    <fields>
+        <help>Als het waar is, moet u het geplande tijdstip berekenen voor (niet-toegewezen) resourceaanvragen in de wachtrij.</help>
+        <label><!-- Calculate Held Resource Request Time --></label>
+        <name>pse__Calculate_Held_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Summary By Role --></label>
+        <name>pse__Calculate_Summary_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Unheld Resource Request Time --></label>
+        <name>pse__Calculate_Unheld_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de velden in het Resource Request-object die moeten worden opgenomen voor gebruikberekeningen van niet-gereserveerde resourceaanvragen. Deze instelling accepteert aangepaste en standaard veldwaarden in SOQL-query&apos;s. Indien niet gedefinieerd, gebruiken berekeningen standaardcriteria.</help>
+        <label><!-- Custom Filters for Unheld RR Utilization --></label>
+        <name>pse__CustomFiltersforUnheldRRUtilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer batch bestaande berekeningen voor gebruik worden verwijderd, stelt u het maximale aantal benuttingsberekeningsrecords in dat per batch moet worden verwerkt.</help>
+        <label><!-- Deletion Batch Size --></label>
+        <name>pse__Deletion_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer batch bestaande berekeningen voor gebruik wordt verwijderd, stelt u het maximumaantal benuttingsdetails en samenvattingsrecords in dat per batch moet worden verwerkt.</help>
+        <label><!-- Deletion Child Record Batch Size --></label>
+        <name>pse__Deletion_Child_Record_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer true, gebruikt historisch gebruik de startdag op basis van de werkkalender in plaats van de landinstelling van de gebruiker.</help>
+        <label><!-- Historical UTE Work Cal Start Day --></label>
+        <name>pse__Historical_UTE_Work_Cal_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal bronnen dat moet worden verwerkt in één batch bij het berekenen van het gebruik</help>
+        <label><!-- Resource Batch Size --></label>
+        <name>pse__Resource_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request Batch Size --></label>
+        <name>pse__Resource_Request_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Utilization Approach --></label>
+        <name>pse__Target_Utilization_Approach__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal tijdkaarten dat in één batch moet worden verwerkt bij het berekenen van het gebruik</help>
+        <label><!-- Timecard Batch Size --></label>
+        <name>pse__Timecard_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Een door komma&apos;s gescheiden lijst met waarden van de tijdkaartstatus die worden gebruikt om te bepalen welke tijdkaarten worden gebruikt voor gebruikberekeningen.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt of die &quot;Is Report Master&quot; -vlag wordt gereset op basis van de tijdsperiode en het bovenliggende object (aangevinkt) of op basis van de berekeningsnaam voor gebruik (niet aangevinkt)</help>
+        <label><!-- Uncheck Master Based On Time/Parent --></label>
+        <name>pse__Uncheck_Master_Based_On_Time_Parent__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer waar, berekenen gebruiksgegevens niet meer dan de laatste datum van de resource.</help>
+        <label><!-- Use Last Date on Resource --></label>
+        <name>pse__Use_Last_Date_on_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Indien waar, wordt de gebruiksmotor gebruikt voor het berekenen van het gebruik met Shift Management. De standaardwaarde is false.</help>
+        <label><!-- Use Utilization Engine for Shift Mgmt --></label>
+        <name>pse__Use_Utilization_Engine_TOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Utilization Engine --></label>
+        <name>pse__Use_Utilization_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Engine Batch Size --></label>
+        <name>pse__Utilization_Engine_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert het aantal dagen in de toekomst om realtime gebruiksgegevens voor Shift Management te behouden. De standaardwaarde is 30.</help>
+        <label><!-- Utilization Eng Max Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Max_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Maximaal aantal dagen in de toekomst waarvoor u real-time gebruiksgegevens wilt bijhouden</help>
+        <label><!-- Utilization Engine Max Range --></label>
+        <name>pse__Utilization_Engine_Max_Range__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert het aantal dagen voorafgaand aan de huidige datum om realtime gebruiksgegevens voor Shift Management te berekenen. De standaardwaarde is 5.</help>
+        <label><!-- Utilization Eng Start Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Start_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt het aantal dagen voorafgaand aan de huidige datum om realtime gebruiksgegevens te berekenen. Stel in op 0 om de berekening vanaf de huidige datum te starten. De standaardwaarde is 50.</help>
+        <label><!-- Utilization Engine Start Range --></label>
+        <name>pse__Utilization_Engine_Start_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

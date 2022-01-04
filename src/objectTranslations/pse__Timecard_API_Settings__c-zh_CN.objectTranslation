@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 时间卡API设置 --></value>
+    </caseValues>
+    <fields>
+        <help>用于通过PSA时间卡API发送收入代码信息的字段的API名称，用于记录针对分配的时间卡。</help>
+        <label><!-- Earnings Code (Assignment) --></label>
+        <name>pse__Earnings_Code_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>用于通过PSA Timecards API发送收入代码信息的字段的API名称，用于针对全局项目记录的时间卡。</help>
+        <label><!-- Earnings Code (Project) --></label>
+        <name>pse__Earnings_Code_Project__c</name>
+    </fields>
+    <fields>
+        <help>使用“项目类型”从响应中筛选出时间卡。该值是以逗号分隔的项目类型列表。</help>
+        <label><!-- Exclude Project Type from POST Response --></label>
+        <name>pse__Exclude_Project_Type_From_Post_Response__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Einrichtungskategorie für Abrechnungsprognose</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Einrichtungskategorien für die Abrechnungsprognose</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Einrichtungskategorie für Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Einrichtungskategorien für die Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Einrichtungskategorie für Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Einrichtungskategorien für die Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Einrichtungskategorie für Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Einrichtungskategorien für die Abrechnungsprognose --></value>
+    </caseValues>
+    <fields>
+        <help>Der Multiplikator wurde auf den tatsächlichen abrechenbaren Betrag eines Projekts angewendet. Dazu gehören berechnete Zeitkarten, in Rechnung gestellte Meilensteine ​​und verschiedene Anpassungen.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator wurde auf die Ausgaben für ein Projekt angewendet. Dies ist der abrechenbare Betrag der Ausgaben.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Das Prognose-Setup, mit dem diese Prognosekategorie verwendet wird. Sie müssen mindestens eine Prognosekategorie konfigurieren.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Das Label, das für eine gewichtete Prognosekategorie angezeigt wird, z. B. Erwartet, Best Case, Worst Case.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator wurde auf Chancen für diese gewichtete Prognosekategorie angewendet.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Die Reihenfolge, in der die Prognosekategorien in der Prognoserechnung angewendet werden. Sie können Werte von 1 bis 3 eingeben.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld wurde eingestellt und durch Order__c ersetzt</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator wird auf den Wert der Zuweisungen für ein Projekt angewendet.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator, der auf die Ressourcenanforderungsstunden für ein Projekt angewendet wird, wenn das Feld Ressourcen gehalten aktiviert ist.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator wird auf den Wert der geplanten Meilensteine ​​für ein Projekt angewendet.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator gilt für die geplanten Ressourcenanforderungsstunden für ein Projekt, wenn das Feld Ressourcen gehalten deaktiviert ist.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Der Multiplikator wurde auf den Wert des ungeplanten Rückstandes eines Projekts angewendet, wobei der Wert verwendet wurde, der durch die Rückstandsberechnung generiert wurde.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Abrechnungsprognose-Einrichtung</nameFieldLabel>
+</CustomObjectTranslation>

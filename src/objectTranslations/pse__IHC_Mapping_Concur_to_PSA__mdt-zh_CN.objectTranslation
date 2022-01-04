@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- IHC Mapping与PSA相符 --></value>
+    </caseValues>
+    <fields>
+        <help>PSA对象的字段，需要在Integration Hub Connector中创建转换。</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>需要在Integration Hub Connector中创建转换的PSA对象。</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>需要在Integration Hub Connector中创建转换的第三方应用程序对象的字段。</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>需要在Integration Hub Connector中创建转换的第三方应用程序对象。</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>需要在Integration Hub Connector中创建转换的第三方应用程序。</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>同意</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>密钥集成连接器中的虚拟数据资源。</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub连接器中的虚拟数据资源的名称。</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

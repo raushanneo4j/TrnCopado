@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>סט בקשת משאבים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>ערכות בקשת משאבים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>חיפוש לחשבון. זה מועתק מבקשת משאב המקור.</help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>חיפוש לבקשת המשאב להעתקה בעת יצירת ערכת בקשת משאבים.</help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>חפש להזדמנות. זה מועתק מבקשת משאב המקור.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בדיקת הפרויקט. זה מועתק מבקשת משאב המקור.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>תאריך ושעה שבהם מאוישים בקשת משאבים השייכת לאותה קבוצת בקשת משאבים.</help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help>חיפוש לבקשת המשאב. זה מאוכלס בבקשת המשאב המאוישת הסופית השייכת לקבוצת בקשות המשאבים הזו.</help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם הגדרת בקשת משאבים</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+</CustomObjectTranslation>

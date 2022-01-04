@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Abrechnungsprognose - Detailkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Abrechnungsprognose-Detailkategorien</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsprognose - Detailkategorie --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Detailkategorien --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsprognose - Detailkategorie --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Detailkategorien --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsprognose - Detailkategorie --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Detailkategorien --></value>
+    </caseValues>
+    <fields>
+        <help>Der Istwert ist die Summe aus Abrechnungen: Ausgaben, Abrechnungen: Meilensteine, Abrechnungen: Verschiedene Anpassungen und Abrechnungen: Timecards.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Formelfeld, das den Wert darstellt, der auf der Seite &quot;Abrechnungsprognose&quot; für diese Detailkategorie der Abrechnungsprognose angezeigt wird.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungen für die Ausgaben.</help>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungen für Meilensteine.</help>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungen für sonstige Anpassungen.</help>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help>Die Abrechnungen für Zeitkarten.</help>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Detail --></label>
+        <name>pse__Forecast_Enhanced_Detail__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Suche nach der aktuell aktiven Überschreibung der Abrechnungsprognose für diese Detailkategorie der Abrechnungsprognose.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>Suche nach dem Benutzer, der die derzeit aktive Überschreibung der Abrechnungsprognose erstellt hat, die auf diese Detailkategorie der Abrechnungsprognose angewendet wurde.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Erstellungsdatum und -uhrzeit der derzeit aktiven Überschreibung der Abrechnungsprognose, die auf diese Detailkategorie der Abrechnungsprognose angewendet wird.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>Hinweise zum Überschreiben der derzeit aktiven Abrechnungsprognose, die auf diese Detailkategorie der Abrechnungsprognose angewendet werden.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Der Wert der derzeit aktiven Überschreibung der Rechnungsprognose, die auf diese Detailkategorie der Rechnungsprognose angewendet wird.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>Die geplanten Zuweisungen.</help>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Der Wert für Scheduled Backlog ist die Summe aus Scheduled: Zuweisungen, Scheduled: Gehaltene RRs, Scheduled: Unheld-RRs und Scheduled: Milestones.</help>
+        <label><!-- Scheduled Backlog --></label>
+        <name>pse__Scheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <help>Die geplanten gehaltenen Ressourcenanforderungen.</help>
+        <label><!-- Scheduled: Held RRs --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Die geplanten Meilensteine.</help>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Die geplanten nicht gehosteten Ressourcenanforderungen.</help>
+        <label><!-- Scheduled: Unheld RRs --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Möglicher Rückstand im Zusammenhang mit unbefristeten Zeiträumen (Alle Zeiträume).</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Detail Category Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Detailkategorie der Abrechnungs</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Funderingen PSA Berichten Instellingen --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Funderingen PSA Berichten Instellingen --></value>
+    </caseValues>
+    <fields>
+        <help>ERP-sleutelnaam die moet worden gebruikt voor het filteren van verzuimverzoekberichten.</help>
+        <label><!-- Absence Filter Field Key --></label>
+        <name>pse__Absence_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-berichtsleutelwaarde (n) gebruikt voor het filteren van verzuimverzoekberichten. Tekst- en keuzelijstvelden ondersteunen meerdere, door puntkomma&apos;s gescheiden waarden.</help>
+        <label><!-- Absence Filter Values --></label>
+        <name>pse__Absence_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>De Salesforce-record-ID van het project die moet worden gebruikt bij het maken van time off-opdrachten via ERP.</help>
+        <label><!-- Absence Request Project --></label>
+        <name>pse__Absence_Request_Project__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, keurt PSA automatisch tijdkaarten goed die zijn gemaakt via de PSA Assignment API wanneer er een relevant goedkeuringsproces bestaat op het Timecard-object.</help>
+        <label><!-- Automatically Approve API Timecards --></label>
+        <name>pse__Automatically_Approve_API_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Als deze optie is geselecteerd, maakt PSA actieve bronrecords wanneer API-broncorrelatie-ID wordt ingevuld. API Resource Correlation ID wordt altijd ingevuld wanneer gegevens via de API worden ingevoerd.</help>
+        <label><!-- Create Records as Active Resources --></label>
+        <name>pse__Create_Records_as_Active_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Als dit is geselecteerd en API Resource Correlation ID is ingevuld, werkt PSA de startdatum of de laatste datum bij wanneer de status van een resource actief wordt of wordt beëindigd. API Resource Correlation ID wordt altijd ingevuld wanneer gegevens via de API worden ingevoerd.</help>
+        <label><!-- Update Resource Employment Dates --></label>
+        <name>pse__Update_Resource_Employment_Dates__c</name>
+    </fields>
+    <fields>
+        <help>ERP-sleutelnaam die moet worden gebruikt voor het filteren van werkberichten voor het maken van persoonsaccounts.</help>
+        <label><!-- Worker Account Filter Field Key --></label>
+        <name>pse__Worker_Account_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-berichtensleutelwaarde (n) gebruikt voor het filteren van werkberichten voor het maken van persoonsaccounts. Tekst- en keuzelijstvelden ondersteunen meerdere, door puntkomma&apos;s gescheiden waarden.</help>
+        <label><!-- Worker Account Filter Values --></label>
+        <name>pse__Worker_Account_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>ERP-sleutelnaam die moet worden gebruikt voor het filteren van worker-berichten.</help>
+        <label><!-- Worker Filter Field Key --></label>
+        <name>pse__Worker_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-berichtsleutelwaarde (n) die wordt gebruikt voor het filteren van werkberichten voor het maken van contactpersonen. Tekst- en keuzelijstvelden ondersteunen meerdere, door puntkomma&apos;s gescheiden waarden.</help>
+        <label><!-- Worker Filter Values --></label>
+        <name>pse__Worker_Filter_Values__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

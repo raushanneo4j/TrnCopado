@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows user to monitor or abort Bulk API jobs to prevent Import Wizard users from seeing &quot;No link is available because you do not have the correct permissions to manage Bulk Api jobs&quot;. Todo wider rollout. Worth it to sfdc data import stakeholders, imo.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Data Integrations</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageDataIntegrations</name>
+    </userPermissions>
+</PermissionSet>

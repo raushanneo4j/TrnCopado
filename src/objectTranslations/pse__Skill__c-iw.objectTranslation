@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>מיומנות / הסמכה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>מיומנויות ואישורים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>ארגון או מוסד המעניק הסמכה זו.</help>
+        <label><!-- Certification Source --></label>
+        <name>pse__Certification_Source__c</name>
+        <picklistValues>
+            <masterLabel>Cisco</masterLabel>
+            <translation>סיסקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation>גוגל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft</masterLabel>
+            <translation>מיקרוסופט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce.com</masterLabel>
+            <translation>Salesforce.com</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>תיאור טקסט של מיומנות או הסמכה זו.</help>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>המזהה לזהות מיומנות זו במערכת חיצונית.</help>
+        <label><!-- External ID --></label>
+        <name>pse__External_Id__c</name>
+    </fields>
+    <fields>
+        <help>רשימת בחירות של קבוצות הסמכה.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <picklistValues>
+            <masterLabel>BI (Visualization) Tools</masterLabel>
+            <translation><!-- BI (Visualization) Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Data (Hadoop-Eco System)</masterLabel>
+            <translation><!-- Big Data (Hadoop-Eco System) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD/CI Applications</masterLabel>
+            <translation><!-- CD/CI Applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database</masterLabel>
+            <translation><!-- Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ETL ( Data Int)</masterLabel>
+            <translation><!-- ETL ( Data Int) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Languages</masterLabel>
+            <translation><!-- Languages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Partner-Open Source</masterLabel>
+            <translation><!-- Neo4j Partner-Open Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Products</masterLabel>
+            <translation><!-- Neo4j Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Solution Framework</masterLabel>
+            <translation><!-- Neo4j Solution Framework --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operating Systems</masterLabel>
+            <translation><!-- Operating Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming Languages</masterLabel>
+            <translation><!-- Programming Languages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management Methodology</masterLabel>
+            <translation><!-- Project Management Methodology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Tools</masterLabel>
+            <translation><!-- Project Tools --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Key Path --></label>
+        <name>pse__Hierarchy_Key_Path__c</name>
+    </fields>
+    <fields>
+        <help>מציין את הרמה בהיררכיית המיומנויות.</help>
+        <label><!-- Hierarchy Level --></label>
+        <name>pse__Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <help>שדה נתיב לשמות אבות מקושרים משורבבים אוטומטית של המיומנות בהיררכיה.</help>
+        <label><!-- Hierarchy Path --></label>
+        <name>pse__Hierarchy_Path__c</name>
+    </fields>
+    <fields>
+        <help>חפש להורה במדרג הכישורים. על ההורה להיות סוג רשומה של קטגוריה.</help>
+        <label><!-- Parent Category --></label>
+        <name>pse__Parent_Category__c</name>
+        <relationshipLabel><!-- Category Children --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Hierarchy Level --></label>
+        <name>pse__Parent_Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Record Type --></label>
+        <name>pse__Parent_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>pse__Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <help>מיושן. ראה במקום זאת סוג הקלטה.</help>
+        <label><!-- Skill Or Certification --></label>
+        <name>pse__Skill_Or_Certification__c</name>
+        <picklistValues>
+            <masterLabel>Certification</masterLabel>
+            <translation>תעודה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skill</masterLabel>
+            <translation>מיומנות</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>סט סוגי מיומנויות. משמש בעת קיבוץ דוחות קיבולת מיומנויות.</help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Programming</masterLabel>
+            <translation>תכנות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft Skill</masterLabel>
+            <translation><!-- Soft Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation>טכני</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>שם המיומנות הייחודי.</help>
+        <label><!-- Unique Name --></label>
+        <name>pse__Unique_Name__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Category Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Certification Layout</layout>
+        <sections>
+            <label>פרטי אישור</label>
+            <section>Certification Details</section>
+        </sections>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Skill Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם מיומנות / הסמכה</nameFieldLabel>
+    <recordTypes>
+        <description><!-- A level in a hierarchy. Skills and certifications can belong to a category. --></description>
+        <label><!-- Category --></label>
+        <name>pse__Category</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A document relating to a status or a level of achievement. --></description>
+        <label><!-- Certification --></label>
+        <name>pse__Certification</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An ability, proficiency, or expertise, in a subject area. --></description>
+        <label><!-- Skill --></label>
+        <name>pse__Skill</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- CascadeDelete --></label>
+        <name>pse__CascadeDelete</name>
+    </webLinks>
+</CustomObjectTranslation>

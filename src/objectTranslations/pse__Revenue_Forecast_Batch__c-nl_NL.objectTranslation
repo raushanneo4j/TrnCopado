@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Omzetprognose Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Omzetprognose Batches</value>
+    </caseValues>
+    <fields>
+        <help>Een unieke identificatie voor de omzetprognosebatch Apex-taak. Dit is een systeemgecontroleerd veld.</help>
+        <label><!-- Batch ID --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Een link naar het batchprocesrecord dat wordt gebruikt voor de omzetprognose.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De huidige status van de batchtaak.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Omzetprognose Naam</nameFieldLabel>
+</CustomObjectTranslation>

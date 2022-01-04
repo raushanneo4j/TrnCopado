@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Downtime1</name>
+    <style>freeForm</style>
+    <subject>Salesforce error?   - If you saw a red &quot;restriction&quot; error while editing salesforce within the last 90 minutes, that should be resolved now.</subject>
+    <textOnly>Hello Neo4j Salesforce constituents,
+
+Salesforce will be unavailable (down for maintenance) for a 12-hour window between:
+
+Downtime starts:
+
+San Francisco, CA, USA PST (UTC -8) Sat, Jan 9, 2021 9:00 am
+Malmö, Sweden CET (UTC +1) Sat, Jan 9, 2021 6:00 pm
+
+Downtime ends:
+
+San Francisco, CA, USA PST (UTC -8) Sat, Jan 9, 2021 9:00 pm
+Malmö, Sweden CET (UTC +1) Sun, Jan 10, 2021 6:00 am
+
+
+Your Action is Required before &quot;downtime starts&quot;:
+
+Follow the steps below to move your Reports to a &quot;shared&quot; Folder, such as &quot;Public Folder&quot; or &quot;Unfiled Public Reports&quot;
+
+Steps:
+
+1. List your &quot;Private Reports&quot; by clicking &quot;Run&quot; on this page: https://neo4j.lightning.force.com/lightning/r/Report/00O4o000004NspyEAC/view
+
+2. For each row,  click the &quot;Name&quot; then &gt; &quot;Edit&quot; &gt; &quot;Properties&quot; &gt; and change the Folder to any of: &quot;Unfiled Public Reports&quot;, _or_ &quot;Public Folder&quot;,  and save. Either option works (the former if you&apos;re in Classic, and the latter if you&apos;re in Lightning)
+
+3. Repeat step #1 through 3, which we cannot do for you due to sfdc limitations.
+
+
+
+What happens if you do nothing between now and &quot;downtime starts&quot;?
+
+If you take no actions before &quot;downtime starts&quot;, we cannot do that step for you; meaning any Reports listed for you in step 1 may likely break, especially if they pertain to Opportunity or Opportunity Product lines;  &quot;Break&quot; in this context means &quot;will likely lose columns/filters/groupings&quot;.
+
+What to expect after &quot;downtime ends&quot;
+If everything goes to plan, then after downtime ends there will be new features (bulleted below) in salesforce and only the subset of Reports found in &quot;shared&quot; folders will be upgraded automatically to be compatible with the new features, which are:
+
+ARR Auto calculated using term dates and/or contract months. Reps will not be able to edit, but do not have to figure out how to calc ARR
+
+ARR calculated in both local currency and USD (visible and reportable)
+
+New Sales stage - 98% Sales Ops Review. This is the sales stage that reps will move opps to. 
+The 99% will be renamed to Finance Review. Finance will move opps to 100% (closed won).
+
+Terms Information section will be moved to the product line item. These fields include term start and end date, contract months, Payment terms, Invoice Frequency, etc...
+
+
+
+If you have any questions, please reach me or salesforce@neo4j.com for wider coverage.
+Happy holidays!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

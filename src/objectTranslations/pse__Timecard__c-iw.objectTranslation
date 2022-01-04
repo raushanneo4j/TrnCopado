@@ -1,0 +1,2347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>פיצול הזמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>פיצולי זמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>יש לסמן את תיבת הסימון הזו כאשר אישור פיצול ה- Timecard צריך להתבסס על האם אישור ה- Timecard של האם שלה.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Currency Code --></label>
+        <name>pse__Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>שער עלות שער חליפין, יחסית למטבע תאגידי, המחושב בתאריך הסיום של פיצול כרטיס הזמן</help>
+        <label><!-- Cost Rate Exchange Rate --></label>
+        <name>pse__Cost_Rate_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>מציין כי פיצול כרטיס ה- Timec נמצא במצב הכשיר להפקת אירוע חיוב (לא כולל הדגל מאושר לחיוב, אשר עשוי להידרש גם לכל תצורה גלובלית).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>שדה OBSOLETE</help>
+        <label><!-- Est Vs Actuals --></label>
+        <name>pse__Est_Vs_Actuals__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>אם הוא מסומן, אל תחייב את הרשומה העסקית הזו. אותה השפעה כמו החזקת חיוב, אך נועדה לשקף הרחקה קבועה מהפקת חיוב.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Notes --></label>
+        <name>pse__Friday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location - Fri --></label>
+        <name>pse__Location_Fri__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Mon --></label>
+        <name>pse__Location_Mon__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sat --></label>
+        <name>pse__Location_Sat__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sun --></label>
+        <name>pse__Location_Sun__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Thu --></label>
+        <name>pse__Location_Thu__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Tue --></label>
+        <name>pse__Location_Tue__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Wed --></label>
+        <name>pse__Location_Wed__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>אלסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>סמואה האמריקנית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>אריזונה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ארקנסס</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>אסיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>קליפורניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>קנדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>קולורדו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>חיבור</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>מחוז קולומביה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>מדינות פדרציה של מיקרונזיה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>פלורידה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>ג’ורג’יה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>אינדיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>קנטוקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>אמריקה הלטינית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>לואיזיאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>איים של מרשל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>מרילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>מישיגן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>מיסורי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>מונטנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>נבראסקה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>נבאדה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>ניו המפשייר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>ניו ג’רזי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>ניו מקסיקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>ניו יורק</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>צפון קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>צפון דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>איי צפון מריאנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>אוהיו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>אוקלהומה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>אורגון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>אחר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>פנינסילבניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>פוארטו ריקו</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>רוד איילנד</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>דרום קרוליינה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>דרום דקוטה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>מטפלת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>ורמונט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>איי הבתולה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>וושינגטון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>מערב וירג’יניה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>ויסקונסין</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>נשים</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Notes --></label>
+        <name>pse__Monday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Group Currency Code --></label>
+        <name>pse__Override_Cost_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם היא מוגדרת, היא גוברת על הקבוצה שאליה יתבצעו עסקאות העלות של ה- TC Split עבור פעולות בקבוצה, גם אם הפרויקט או המשאב שלה נמצאים בקבוצה אחרת.</help>
+        <label><!-- Override Cost Group --></label>
+        <name>pse__Override_Cost_Group__c</name>
+        <relationshipLabel><!-- Override Cost Group For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Practice Currency Code --></label>
+        <name>pse__Override_Cost_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם היא מוגדרת, היא גוברת על התרגול אליו יתגלו עסקאות העלות של ה- TC Split עבור פעולות בפועל, גם אם הפרויקט או המשאב שלו נמצאים בפרקטיקה אחרת.</help>
+        <label><!-- Override Cost Practice --></label>
+        <name>pse__Override_Cost_Practice__c</name>
+        <relationshipLabel><!-- Override Cost Practice For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Cost Region Currency Code --></label>
+        <name>pse__Override_Cost_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם מוגדר, הוא מבטל את האזור אליו יתגלו עסקאות העלות של ה- TC Split עבור פעולות אזוריות, גם אם הפרויקט או המשאב שלו נמצאים באזור אחר.</help>
+        <label><!-- Override Cost Region --></label>
+        <name>pse__Override_Cost_Region__c</name>
+        <relationshipLabel><!-- Override Cost Region For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Group Currency Code --></label>
+        <name>pse__Override_Revenue_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם היא מוגדרת, היא גוברת על הקבוצה שאליה יבוצעו עסקאות ההכנסות של ה- TC Split עבור פעולות בקבוצה, גם אם הפרויקט או המשאב שלה נמצאים בקבוצה אחרת.</help>
+        <label><!-- Override Revenue Group --></label>
+        <name>pse__Override_Revenue_Group__c</name>
+        <relationshipLabel><!-- Override Revenue Group For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Practice Currency Code --></label>
+        <name>pse__Override_Revenue_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם היא מוגדרת, היא גוברת על התרגול אליו יבוצעו עסקאות ההכנסה של ה- TC Split עבור פעולות בפועל, גם אם הפרויקט או המשאב שלו נמצאים בפרקטיקה אחרת.</help>
+        <label><!-- Override Revenue Practice --></label>
+        <name>pse__Override_Revenue_Practice__c</name>
+        <relationshipLabel><!-- Override Revenue Practice For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Revenue Region Currency Code --></label>
+        <name>pse__Override_Revenue_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>אם מוגדר, הוא מבטל את האזור אליו יבוצעו עסקאות ההכנסה של ה- TC Split עבור פעולות אזוריות, גם אם הפרויקט או המשאב שלו נמצאים באזור אחר.</help>
+        <label><!-- Override Revenue Region --></label>
+        <name>pse__Override_Revenue_Region__c</name>
+        <relationshipLabel><!-- Override Revenue Region For Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>פרויקט (שער חיובי) שער חליפין, יחסית למטבע תאגידי, מחושב בתאריך הסיום של פיצול כרטיס הזמן</help>
+        <label><!-- Project Exchange Rate --></label>
+        <name>pse__Project_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>שיטת ההכרה החלה על רשומה זו לחיזוי הכנסות.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Notes --></label>
+        <name>pse__Saturday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>אושר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>נדחה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation>נשמר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>מוגש</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Notes --></label>
+        <name>pse__Sunday_Notes__c</name>
+    </fields>
+    <fields>
+        <help>תיבת סימון זו מיועדת לשימוש במערכת. זה מיועד להיבדק בשילוב עם כל הכנסה / עדכון של ה- Split Timecard המבוצע בשיטה עתידית, ואז יבטיח כי לא נקראות שיטות עתידיות במורד הזרם.</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Notes --></label>
+        <name>pse__Thursday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Credited --></label>
+        <name>pse__Time_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Excluded --></label>
+        <name>pse__Time_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Transaction --></label>
+        <name>pse__Time_Transaction__c</name>
+        <relationshipLabel><!-- Timecard Split (Time Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard Header --></label>
+        <name>pse__Timecard_Header__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timecard Notes --></label>
+        <name>pse__Timecard_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>pse__Total_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>pse__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>pse__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Fri --></label>
+        <name>pse__Travel_Fri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Mon --></label>
+        <name>pse__Travel_Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sat --></label>
+        <name>pse__Travel_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sun --></label>
+        <name>pse__Travel_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Thu --></label>
+        <name>pse__Travel_Thu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Tue --></label>
+        <name>pse__Travel_Tue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Wed --></label>
+        <name>pse__Travel_Wed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel? --></label>
+        <name>pse__Travel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Notes --></label>
+        <name>pse__Tuesday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Timecard Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Notes --></label>
+        <name>pse__Wednesday_Notes__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Timecard Split Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>מידע פיננסי</label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label>מידע</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>מידע מערכת</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מזהה פיצול של כרטיס זמן</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Project must match Assignment Project. --></errorMessage>
+        <name>pse__TimecardSplit_Assignment_Proj_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Resource must match Assignment Resource. --></errorMessage>
+        <name>pse__TimecardSplit_Assignment_Res_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bill Date is locked if Billed or Invoiced. --></errorMessage>
+        <name>pse__TimecardSplit_Bill_Date_Locking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard Split to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__TimecardSplit_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Date is locked if Invoiced. --></errorMessage>
+        <name>pse__TimecardSplit_Invoice_Date_Locking</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard Split to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__TimecardSplit_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Split Project must match Milestone Project. --></errorMessage>
+        <name>pse__TimecardSplit_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Split&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked and Audit Notes are provided on the parent Timecard Header and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Split_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Splits for this Project and/or Resource require an Assignment. --></errorMessage>
+        <name>pse__Timecard_Split_Requires_Assignment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Split&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked and Audit Notes are provided on the parent Timecard Header and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Split_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice item cannot be changed once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

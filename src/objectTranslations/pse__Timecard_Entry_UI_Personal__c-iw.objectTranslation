@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- ממשק המשתמש של כניסת כרטיס הזמן האישי --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- ממשק המשתמש של כניסת כרטיס הזמן האישי --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, בדף הזנת זמן, כאשר משתמשים לוחצים על כפתור או מוציאים מתאי זמן המשימה או מזינים ידנית לאפס, ערך הפרויקט / הקצאה מתעדכן לאפס. ערך ברירת המחדל הוא כוזב. יש להגדיר את מצב הזנת המשימה לחישוב.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, ניתן לשנות את הפרוייקט או המשימה כל עוד הסטטוס של כרטיס הזמן הוא אחד מערכי &quot;כרטיס הזמן-עריכה-סטטוס / Timecard_edit_status_values__c&quot;.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>השדות שישמשו כסימן כלים למשימות. דרושים שמות שדה רגישים לאותיות באופן מלא (עם מרחב שמות, אם רלוונטי)</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>אם השדה הניתן לחיוב מוגדר להצגה, קובע אם יש להציג אותו משמאל או מימין לשעות בקו הכותרת של כרטיס הזמן של ממשק המשתמש של כרטיס ה- Timecard.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם כרטיסי זמן עם אותו שילוב בדיוק של שבוע, פרויקט, הקצאה, משאב, החיוב, פרויקט, מתודולוגיה, מיקום, נסיעות משולבים בדף הזנת הכרטיס.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים, יועתקו שדות נוספים מכרטיסי הזמן של השבוע הקודם.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה ETC מסומן יועתק מכרטיסי הזמן בשבוע הקודם</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם שדות שעות מסומנות כמו שעות בימי שני, שעות שלישי וכו ’יועתקו מכרטיסי הזמן בשבוע הקודם</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים שדות פרטי מיקום כמו מיקום שני וכו ’יועתקו מכרטיסי השעה הקודמים של השבוע</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה המתודולוגיה מסומן יועתק מכרטיסי הזמן בשבוע הקודם</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם סימון אבני דרך יועתקו מכרטיסי הזמן של השבוע הקודם</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים, תועתקו ההערות מכרטיסי הזמן בשבוע שעבר</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה שלב מסומן יועתק מכרטיסי הזמן בשבוע הקודם</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם מוגדר לאמת, הפונקציונליות העתק מתזמון מאכלסת את שדות ההערות עבור כל יום בכרטיס הזמן אם היא מוצאת רשומות ילדים של הערות יומיות של הערות במשימה לאותו יום. (ברירת מחדל כוזבת)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>בבחירתך מועתקות שעות המשימות מכרטיס הזמן של השבוע הקודם.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים, מידע המשימות מועתק מכרטיס הזמן של השבוע הקודם.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם מסומנים שדות מידע על נסיעות כמו שבוע נסיעות, יום שני נסיעות וכו ’יועתקו מכרטיסי השעה הקודמים של השבוע</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, והקופץ ’בדיקת משאבים’ בממשק המשתמש החדש של כרטיס הזמן מחזיר רק תוצאה אחת, הקופץ ’בדיקת משאבים’ נסגר אוטומטית ושדה המשאב מוגדר כמשאב שהוחזר.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, שדה נפתח לחיוב בממשק המשתמש בכרטיס הזמן יוצג כנכה, כלומר לא ניתן לעריכה על ידי המשתמש.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI מטמון את כל המטלות / הפרויקטים שהוקצו יחד עם אבני הדרך בזמן שהוא נטען. זה עשוי להוביל למגבלת התצוגה של Salesforce, אם למשתמש יש משימות / פרויקטים רבים. הגדרת ערך תצורה זה לאמיתי תמזער את המטמון הזה.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>שורות כרטיסי הזמן הריקות הרבות הללו יתווספו, כשתלחץ על כפתור הוספת שורות.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>זהו המספר המינימלי של שורות שיהיו זמינות תמיד לכניסה חדשה של כרטיס זמן.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם העמודה הניתנת לחיוב בדף הזנת כרטיס הזמנים מוסתרת. כאשר נכון, העמודה מוסתרת ותיבת הסימון הניתנת לחיוב היא ברירת מחדל לבחירה. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם הכפתור העתק מהשבוע הקודם בממשק המשתמש של כרטיס הזמן החדש מוסתר. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו היא כפילות וייתכן שהיא תוסר במהדורה עתידית. אנא ערוך במקום זאת את ההגדרה &quot;הסתר העתקה מכפתור השבוע הקודם&quot;.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם כפתור העתקת לוחות הזמנים בממשק המשתמש החדש של כרטיס הזמן מוסתר. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, הקישור הרחב משימות או כווץ משימות מוסתר בדף הזנת זמן. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, העמודה הערות שמופיעה בדרך כלל בדף כניסת כרטיס הזמן מוסתרת. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם הכפתור שמור בממשק המשתמש החדש של כרטיס הזמן מוסתר. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, הכפתורים ’כל המשימות’ ו’המשימות שלי ’מוסתרים בפופ-קופץ הוסף משימות בדף הזנת זמן. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם לחצן ’שלח’ בממשק המשתמש החדש של כרטיס הזמן מוסתר. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר ומצב כניסת זמן המשימה מוגדר לחישוב, מוצגת רק שורה אחת של שעות משימה. ערך ברירת המחדל של תיבת הסימון ברור.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>אם מצב כניסת זמן נכון ומצב הוא נוכחי, הקישורים להציג או לערוך פרטים המוצגים בעת ריחוף מעל קו כרטיס זמן מוסתרים. אם נכון ומצב כניסת זמן משימה אינו נוכחי, הכרטיסייה הערות מוסתרת בקישורים. ערך ברירת המחדל הוא כוזב</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>השדה / התצורה הנתון משמש לצבע קוד הכותרת של עמודת התאריך עבור חופשת לוח השנה של העבודה עבור המשאב שנבחר בממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>קובע את רוחב הפיקסלים של תאי שעות שעון הזמן בכרטיס ה- Timecard V15.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של שעות שמשאב יכול להזין ביום כרטיס זמן יחיד. אם המספר הכולל של השעות עבור משאב עולה על סכום זה ביום כרטיס זמן בודד, מוצגת הודעת שגיאה.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של שעות שמשאב יכול להיכנס לשבוע כרטיס זמן. אם חריגה, מוצגת הודעת שגיאה. הזן ערך וסמל אחוז, למשל. 90%, כדי לציין אחוז מקסימאלי משעות העבודה של לוח השנה.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה המתודולוגיה מוגדר להצגה, קובע אם יש להציג אותו משמאל או מימין לשעות בקו הכותרת של כרטיס הזמן בממשק המשתמש של כרטיס ה- Timecard.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>דגל תצורה זה קובע אם יש להציג שדה מתודולוגיה על קופץ הערות או בעמוד הראשון.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה Milestone מוגדר להצגה, קובע אם יש להציג אותו משמאל או מימין לשעות בשורת הכותרת של כרטיס הזמן של ממשק המשתמש של כרטיס הטיימר.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>דגל תצורה זה קובע אם יש להציג שדה אבן דרך על קופץ הערות או בעמוד הראשון.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>מספר השעות המינימלי שמשאב יכול להכנס אליו במשך שבוע כרטיס זמן. אם השעות השבועיות נמוכות מהסכום הזה, מוצגת הודעת שגיאה. הזן ערך וסמל אחוז, למשל. 30%, כדי לציין אחוז מינימלי משעות העבודה של לוח השנה.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>אם זה נכון, הכינוי למשימה ניתן לעריכה אחרת לא.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, שדה מיקום יוצג בתיבת הדו-שיח הקופץ של הערת timacard</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, התפריט הנפתח הראשי של המיקום יוצג בממשק המשתמש של TC.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>אם השדה שלב מוגדר להצגה, קובע אם יש להציג אותו משמאל או מימין לשעות בקו הכותרת של כרטיס הזמן של ממשק המשתמש של כרטיס ה- Timecard.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>דגל התצורה הזה קובע אם יש להציג שדה פאזה על קופץ הערות או בעמוד הראשון.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחרים, משימות מאוכלסות מראש עבור המשתמש והפרויקט שנבחר. ערך ברירת המחדל של תיבת הסימון ברור.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>אם שדה המיקום הראשי מוגדר להצגה, קובע אם יש להציג אותו משמאל או מימין לשעות בקו הכותרת של כרטיס הזמן של ממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>כאשר הערה המיקום הראשי המותר מוגדר לאמיתי, קובע אם השדה מיקום ראשי מופיע בקטע הערות או בשורת כרטיס הזמן.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>פרויקט כרטיס זמן / חשבון הקצאה נפתח ערך תצוגה</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>שדות בערכת שדה זו מגדירים את השדות המוצגים בהפצת הכלים עבור קו המשימות פרוייקט ביומן כרטיס כניסה עם ממשק זמן המשימות.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>&quot;פרויקט הקצאה הניתן לעריכה לאחר שמירה&quot; נותן גישה למשתמשים לשנות את הפרוייקט / הקצאה עבור כרטיסי הזמן שנשמרו אך זה דורש הגדרת הערת ביקורת עבור כרטיס הזמן. ניתן להגדיר הערות ביקורת על ידי תצורה זו.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>רשימת שדות פרוייקט שיוצגו כסמל הכל בכניסה של כרטיס ה- tim של כרטיס ה- tim.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>בבחירתך, המשימות שאוכלסו מראש מבוססות על המטלה שנבחרה. לאחר מכן, שדה &quot;הגבל למשימות עם הקצאה תואמת&quot; בפופ-חלון בחר משימות מסומן כברירת מחדל. הגבלת המשימה על סמך הקצאה אינה מסומנת כברירת מחדל.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>בבחירתך, המשימות שאוכלסו מראש מבוססות על ציון הדרך שנבחר. לאחר מכן נבדק כברירת מחדל השדה &quot;הגבלה למשימות עם אבן דרך תואמת&quot; שבקופץ Select Tasks. הגבלת המשימה בהתבסס על אבן דרך אינה מסומנת כברירת מחדל.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>אם ייבחרו, ייזכרו התאמות אישיות לרוחב, סדר ונראות עמודות בכניסה לזמן למשתמש.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>שמות API של שדות הקצאה שיוצגו כשמרחפים מעל סמל הסבר הכלים בקטע לוח הזמנים של כרטיס הזמן.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>שמות API של שדות פרוייקט שיוצגו כשמרחפים מעל סמל הסבר הכלים בקטע לוח הזמנים של כרטיס הזמן.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>תצורה נתונה משמשת להצגת התראה אם ערך לא אפס שהוזן בקטע כרטיס הזמן ליום המסומן כחג (שיש לו אפס שעות) בלוח השנה של עבודת המשאבים שנבחר.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>תצורה נתונה משמשת להצגת התראה אם ערך לא אפס שהוזן בקטע רשת לוח הזמנים ליום שיש לו אפס שעות בתבנית ימי העבודה של לוח השנה שנבחרו.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, שעות שאינן ניתנות לחיוב הניתנות לחיוב יופיעו באמצעות טקסט בריחוף על כל סה&quot;כ בשורת הסיכומים עבור כל העמודות היומיות ועמודת הסכום בכרטיס הזמן בכניסה לזמן.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם קופץ הכניסה הקל מופיע בדף הזנת זמן כאשר אתה לוחץ פעמיים על תא שעה הניתן לעריכה בשורה של כרטיס זמן או לחץ על מקש החץ למטה בזמן שנבחר התא.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>מכיל שדה שערכו יוצג ברשימה הנפתחת של אבן דרך TC UI. אם אלה חסרים / null, ממשק המשתמש של TC פשוט ממשיך להציג את שדות שם אבן הדרך של אבני הדרך הזמינות ברשימה הנפתחת. אין הפניות לחיפוש __r הן תמיכה</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config משמש לשליטה בקישור לזכירת התצוגה בכל כרטיס זמן שהוגש. בלחיצה עליו, שכבת-על לזכירה תהיה פתוחה, שם עלינו להזין את התגובה ולהיזכר בבקשת האישור לכרטיס הזמן.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>מסומן, פירושו שלוח הזמנים יוצג כברירת מחדל בכניסה של כרטיס הזמן.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יוצגו תיבות הסימון בממשק המשתמש של כרטיס הזמן החדש. ערך ברירת המחדל נכון.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, פרק לוח הזמנים יופיע בכרטיס הזמן ui אחר שלא</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>אם הוא מוגדר כ- true, מציג את סמל הסמל הכלים ליד שם ההקצאה בקטע לוח הזמנים של TC UI. תקלת שגיאה (התנהגות קיימת, ללא עמודת הסבר כלים)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>כדי להציג או להסתיר שדה וכו &apos;</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, שיטת מתודולוגיית כרטיסי הזמן תוצג בממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>כדי להציג או להסתיר את רשימת הבחירות באבן דרך</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, שדה שלב כרטיסי הזמן יוצג בממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>כאשר היא שגויה, העמודה סטטוס / זיכרון תוצג מייד משמאל לעמודה של ההערות. כאשר נכון, מצב / זיכרון יופיע מימין לשדות נוספים.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת את אובייקט ה- Timecard. שדות בערכת שדה זו מגדירים את השדות הניתנים לעריכה המוצגים משמאל לשעות בקו הכותרת של כרטיס הזמן של ממשק המשתמש של כרטיס ה- Timecard.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת את אובייקט ה- Timecard. שדות בערכת שדה זו מגדירים את השדות הניתנים לעריכה בשורת הכותרת של כרטיס הזמן בממשק המשתמש של כרטיס הטיימר.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת את אובייקט ה- Timecard. שדות בערכת שדה זו מגדירים שדות לקריאה בלבד בשורת הכותרת של כרטיס הזמן בממשק המשתמש של כרטיס הטיימר</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV כדי לציין שדות כותרת כרטיס זמן להעתקה מלוח הזמנים. רק שדות השעה האלו תקפים לתצורה זו &quot;יום שני_שעות__ ג, יום שלישי_שעות__ ג, רביעי_שעות__ ג, חמישי_שעות__ ג, שישי_שעות__ ג, שבת_שעה__ ג, יום ראשון_שעות__ ג&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת את אובייקט ה- Timecard. שדות בערכת שדה זו מגדירים שדות הניתנים לעריכה בקטע הערות בשורות כרטיס זמן בממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת את אובייקט ה- Timecard. שדות בערכת שדה זו מגדירים שדות לקריאה בלבד בקטע הערות בשורות כרטיס זמן בממשק המשתמש של כרטיס הזמן.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>שדה משמש להחזקת רשימה מופרדת של תרדמת (,) של ערכי מצב הזמן אשר יהיו מוסתרים בממשק המשתמש של TC.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>מציין משימות להסתיר כאשר אוכלוסין מראש בכרטיסי הזמן אלא אם כן יש להם זמן רישום משויך. הערך הוא רשימת סטטוסים מופרדים בפסיק.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם המשאב יכול לבחור רק משימות שיש להן מטלה בעת הזנת זמן כנגד משימות פרויקט. כאשר אפשרות זו לא נבחרה, משתמשים יכולים לאפשר תכונה זו בדף הזנת זמן.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את התנהגות הסינון בתאריכי המשימה בבחירת משימות להיכנס בזמן. הגדר כ- ללא או לחפיפה. אם אין, לא מתרחש סינון. אם חפיפה, המשימות מופיעות רק כאשר לכרטיס הזמן ולמשימות הניתנות לבחירה יש חפיפה מסוימת בתאריכים.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>מצב כניסת השעה שישמש בעת הכניסה של זמן המשימה לשורה של כרטיס זמן. אתה יכול לבחור אחד מערכים אלה: התאמה, נוכחית, חישוב או צורה חופשית. ערך ברירת המחדל הוא נוכחי.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>מספר המטלות העליונות שיש לטעון כדי להציג בשכבת-על לפרוייקט / להקצאה</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>מספר השבועות שעבורם הועמסו המשימות / הפרויקטים המובילים להצגה בשכבת העל של הפרויקט</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>מספר הפרויקטים המובילים שיש לטעון בכדי להציג על שכבת על פרויקט / מטלה</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>מאפשר לך לשנות את השיטה המועדפת עליך לניהול שדות גלויים בדף כניסת הכרטיס. אם לא נכון, PSA ישתמש באפשרויות תצורה או בהגדרות מותאמות אישית כדי להגדיר את ממשק המשתמש. אם נכון, PSA ישתמש בקבוצות שדות כדי להגדיר את ממשק המשתמש.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש להשתמש במזהה הקצאה בעת הצגת משימות בדף כרטיס הזמן</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>שדה / תצורה נתון משמש לצבע קוד הכותרת של עמודת התאריך עבור ימי 0 שעות מתוזמנים לפי תבנית לוח הזמנים (לא חגים) בלוח העבודה של המשאב שנבחר.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>שולט ברוחב הפיקסלים עבור התפריט הנפתח של אבן דרך בממשק המשתמש של כניסת הכרטיס. אנא ציין מספר שלם לערך זה, מכיוון שהוא ישירות לרוחב.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>שולט ברוחב הפיקסלים עבור התפריט הנפתח פרויקט / הקצאה בממשק המשתמש של כניסת הכרטיס. אנא ציין מספר שלם לערך זה, מכיוון שהוא ישירות לרוחב. עבור ex ערך 300 יסדיר את רוחב התפריט ל- 300px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Account Subtype Field Replaces Customer Type &amp; Partner Subtype Fields (Nov &apos;21)</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Important: Account Subtype Field Replaces Customer Type &amp; Partner Subtype Fields</name>
+    <style>freeForm</style>
+    <subject>Upcoming Change: &apos;Account Subtype&apos; Field Replaces Customer Type &amp; Partner Subtype Fields</subject>
+    <textOnly>Hello Salesforce Users!
+
+**WHAT YOU NEED TO KNOW**
+
+&apos;Customer Type&apos; and &apos;Partner Subtype&apos; are two separate legacy fields tracking the same type of data. They are being consolidated into a single field called &apos;Account Subtype&apos; effective November 15, 2021.
+
+
+
+You can still see both legacy fields on the Account page with &quot;DeprecateCandidate&quot; in their label to indicate that they should not longer be used.
+
+No data will be lost as part of this transition. We will transfer the values from the two legacy fields on the existing records into the new field as the final step prior to locking the fields and removing them from your view.
+
+We encourage you to add the new field &apos;Account Subtype&apos; as soon as possible to any existing reports where the two legacy fields are referenced so you are ready for the transition.
+
+Finally, if you are aware of any connected apps that pull data out of &apos;Customer Type&apos; or &apos;Partner Subtype&apos; field, please let us know.
+
+Please let us know if you have any questions by reaching out to us at salesforce@neo4j.com.
+
+Thank you,
+Salesforce Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

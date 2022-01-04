@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Filter Set</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Filter Sets</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Begränser där det här filtret kommer att visas som ett alternativ. För närvarande stöds bara &quot;Resursplanerare&quot; och &quot;Projektplanerare&quot;.</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>Projektplaneraren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>Resursplaneraren</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Namnet på filtersatsen.</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>Håller filterattributen och värdena i en sparad filteruppsättning. Lagras som ett JSON-objekt.</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>När den är markerad, indikerar att filteruppsättningen är standard.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>Om det är sant bara kommer ägaren att kunna se och använda det här filtret. Annars kan alla användare som delar åtkomst utnyttja det.</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>Filteruppsättningar som kan kopplas till andra objekt, till exempel projekt.</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på SObject den här uppsättningen filter fungerar på.</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Namn</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CPP_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>APIs_in_Use__c</fullName>
+        <externalId>false</externalId>
+        <label>APIs in Use</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HTTP API</fullName>
+                    <default>false</default>
+                    <label>HTTP API</label>
+                </value>
+                <value>
+                    <fullName>SDN OGM/SDN RX</fullName>
+                    <default>false</default>
+                    <label>SDN OGM/SDN RX</label>
+                </value>
+                <value>
+                    <fullName>Stored Procedures</fullName>
+                    <default>false</default>
+                    <label>Stored Procedures</label>
+                </value>
+                <value>
+                    <fullName>Unmanaged Extensions</fullName>
+                    <default>false</default>
+                    <label>Unmanaged Extensions</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>.NET Driver</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>.NET Driver</label>
+                </value>
+                <value>
+                    <fullName>APOC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>APOC</label>
+                </value>
+                <value>
+                    <fullName>Graph Algorithms</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Graph Algorithms</label>
+                </value>
+                <value>
+                    <fullName>GraphQL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>GraphQL</label>
+                </value>
+                <value>
+                    <fullName>HTTP</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HTTP</label>
+                </value>
+                <value>
+                    <fullName>JDBC Driver</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>JDBC Driver</label>
+                </value>
+                <value>
+                    <fullName>JS Driver</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>JS Driver</label>
+                </value>
+                <value>
+                    <fullName>Java API</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Java API</label>
+                </value>
+                <value>
+                    <fullName>Java Driver</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Java Driver</label>
+                </value>
+                <value>
+                    <fullName>OGM</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>OGM</label>
+                </value>
+                <value>
+                    <fullName>Procedures</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Procedures</label>
+                </value>
+                <value>
+                    <fullName>Python Driver</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Python Driver</label>
+                </value>
+                <value>
+                    <fullName>SDN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SDN</label>
+                </value>
+                <value>
+                    <fullName>UnEx</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>UnEx</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Customer_Segment__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account_Name__r.Customer_Segment__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Customer Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Global_Territory__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Global_Territory__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Global Territory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Project Profiles</relationshipLabel>
+        <relationshipName>Customer_Project_Profiles</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_US_Territory__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.US_Territory__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account US Territory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_3rd_Party_Technologies__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>List any additional technologies used alongside Neo4j. Commonly seen technologies, mainly DBs and BI tools.</inlineHelpText>
+        <label>Additional 3rd-Party Technologies</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cassandra</fullName>
+                    <default>false</default>
+                    <label>Cassandra</label>
+                </value>
+                <value>
+                    <fullName>Db2</fullName>
+                    <default>false</default>
+                    <label>Db2</label>
+                </value>
+                <value>
+                    <fullName>Elasticsearch</fullName>
+                    <default>false</default>
+                    <label>Elasticsearch</label>
+                </value>
+                <value>
+                    <fullName>Microsoft SQL Server</fullName>
+                    <default>false</default>
+                    <label>Microsoft SQL Server</label>
+                </value>
+                <value>
+                    <fullName>Microstrategy</fullName>
+                    <default>false</default>
+                    <label>Microstrategy</label>
+                </value>
+                <value>
+                    <fullName>MongoDB</fullName>
+                    <default>false</default>
+                    <label>MongoDB</label>
+                </value>
+                <value>
+                    <fullName>MySQL</fullName>
+                    <default>false</default>
+                    <label>MySQL</label>
+                </value>
+                <value>
+                    <fullName>Oracle</fullName>
+                    <default>false</default>
+                    <label>Oracle</label>
+                </value>
+                <value>
+                    <fullName>PostgreSQL</fullName>
+                    <default>false</default>
+                    <label>PostgreSQL</label>
+                </value>
+                <value>
+                    <fullName>PowerBI</fullName>
+                    <default>false</default>
+                    <label>PowerBI</label>
+                </value>
+                <value>
+                    <fullName>Qlik</fullName>
+                    <default>false</default>
+                    <label>Qlik</label>
+                </value>
+                <value>
+                    <fullName>Redis</fullName>
+                    <default>false</default>
+                    <label>Redis</label>
+                </value>
+                <value>
+                    <fullName>SAP</fullName>
+                    <default>false</default>
+                    <label>SAP</label>
+                </value>
+                <value>
+                    <fullName>Spark</fullName>
+                    <default>false</default>
+                    <label>Spark</label>
+                </value>
+                <value>
+                    <fullName>Tableau</fullName>
+                    <default>false</default>
+                    <label>Tableau</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Authentication_Authorization__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Method of user authentication configured to Neo4j.</inlineHelpText>
+        <label>Authentication &amp; Authorization</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Kerberos</fullName>
+                    <default>false</default>
+                    <label>Kerberos</label>
+                </value>
+                <value>
+                    <fullName>LDAP/AD</fullName>
+                    <default>false</default>
+                    <label>LDAP/AD</label>
+                </value>
+                <value>
+                    <fullName>Mixed</fullName>
+                    <default>false</default>
+                    <label>Mixed</label>
+                </value>
+                <value>
+                    <fullName>Native</fullName>
+                    <default>false</default>
+                    <label>Native</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Avg_of_Props_Node__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Avg # of Props/Node</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Avg_of_Props_Rel__c</fullName>
+        <externalId>false</externalId>
+        <label>z_Avg # of Props/Rel</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Backup_Strategy_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How is the customer backing up the database and how often?</inlineHelpText>
+        <label>Backup Strategy &amp; Frequency</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Build_Config__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What tools does this customer use to manage configuration and deployment?</inlineHelpText>
+        <label>Build &amp; Config</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ansible</fullName>
+                    <default>false</default>
+                    <label>Ansible</label>
+                </value>
+                <value>
+                    <fullName>Chef</fullName>
+                    <default>false</default>
+                    <label>Chef</label>
+                </value>
+                <value>
+                    <fullName>Jenkins</fullName>
+                    <default>false</default>
+                    <label>Jenkins</label>
+                </value>
+                <value>
+                    <fullName>Puppet</fullName>
+                    <default>false</default>
+                    <label>Puppet</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CMS_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this a Cloud Managed Service (CMS) customer?</inlineHelpText>
+        <label>CMS Customer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPP_Status__c</fullName>
+        <description>Indicates the status of the Customer Project Profile (CPP). Updated manually by the Customer Success team.</description>
+        <externalId>false</externalId>
+        <label>CPP Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>ELA Master</fullName>
+                    <default>false</default>
+                    <label>ELA Master</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Part of ELA</fullName>
+                    <default>false</default>
+                    <label>Part of ELA</label>
+                </value>
+                <value>
+                    <fullName>PoC</fullName>
+                    <default>false</default>
+                    <label>PoC</label>
+                </value>
+                <value>
+                    <fullName>Pre-Sales</fullName>
+                    <default>false</default>
+                    <label>Pre-Sales</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPUs__c</fullName>
+        <externalId>false</externalId>
+        <label>CPUs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSA_Assigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CSA Assigned</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CSM_Assigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>CSM stands for Customer Success Manager. Indicate whether a CSM has been assigned to this project by checking this box.</inlineHelpText>
+        <label>CSM Assigned</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cloud_Platform__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the primary Cloud provider (or On Prem)?</inlineHelpText>
+        <label>Cloud Platform</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alibaba Cloud</fullName>
+                    <default>false</default>
+                    <label>Alibaba Cloud</label>
+                </value>
+                <value>
+                    <fullName>AWS</fullName>
+                    <default>false</default>
+                    <label>AWS</label>
+                </value>
+                <value>
+                    <fullName>Azure</fullName>
+                    <default>false</default>
+                    <label>Azure</label>
+                </value>
+                <value>
+                    <fullName>GCP</fullName>
+                    <default>false</default>
+                    <label>GCP</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>On Prem</fullName>
+                    <default>false</default>
+                    <label>On Prem</label>
+                </value>
+                <value>
+                    <fullName>OpenStack</fullName>
+                    <default>false</default>
+                    <label>OpenStack</label>
+                </value>
+                <value>
+                    <fullName>Pivotal Cloud Foundry</fullName>
+                    <default>false</default>
+                    <label>Pivotal Cloud Foundry</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Dynamic Cloud</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Dynamic Cloud</label>
+                </value>
+                <value>
+                    <fullName>SAP</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SAP</label>
+                </value>
+                <value>
+                    <fullName>T-Systems</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>T-Systems</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Complex_Query_Filters__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <inlineHelpText>Does query have more than 3 filters?</inlineHelpText>
+        <label>z_Complex Query Filters</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Complex_Query_Notes__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Complex Query Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complex_Query_Score__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Complex Query Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomerSuccessTopAccount__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field pulls its data from the master field on the Account object. The master field is manually maintained by Customer Success management to indicate whether the Account has CSM and/or CSA coverage. JIRA: SFDCSPT-502</description>
+        <externalId>false</externalId>
+        <formula>Account_Name__r.Customer_Success_Top_Account__c</formula>
+        <inlineHelpText>This field cannot be edited as it pulls its data from the master field by the same name on the Account. The master field is used by the Customer Success Team to indicate whether an Account is covered by a CSM and/or CSA. Changes should only be made by CS management.</inlineHelpText>
+        <label>Customer Success Top Account</label>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Google_Drive_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Google Drive Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Success_Account_Manager__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>An abbreviation of Customer Success Manager.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CSM stands for Customer Success Manager. Select the name of the CSM assigned to this project. 
+.</inlineHelpText>
+        <label>CSM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Project_Profiles1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Success_Architect__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>An abbreviation of Customer Success Architect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CSA stands for Customer Success Architect. Select the name of the CSA assigned to this project.</inlineHelpText>
+        <label>CSA</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Project_Profiles</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Success_Plan__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <description>URL to customer success plan</description>
+        <externalId>false</externalId>
+        <label>z_Customer Success Plan:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Success_Trello__c</fullName>
+        <description>URL to customer success trello card</description>
+        <externalId>false</externalId>
+        <label>Customer Success Trello:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Temperature__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Customer Temperature</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                    <label>Yellow</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DR_Multi_DC_required__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_DR/Multi-DC required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deployment_Mode__c</fullName>
+        <externalId>false</externalId>
+        <label>Deployment Mode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Embedded</fullName>
+                    <default>false</default>
+                    <label>Embedded</label>
+                </value>
+                <value>
+                    <fullName>Mixed</fullName>
+                    <default>false</default>
+                    <label>Mixed</label>
+                </value>
+                <value>
+                    <fullName>Server</fullName>
+                    <default>false</default>
+                    <label>Server</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Disks__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate what type of disks are used for production server storage.</inlineHelpText>
+        <label>Disks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HDD</fullName>
+                    <default>false</default>
+                    <label>HDD</label>
+                </value>
+                <value>
+                    <fullName>NVMe</fullName>
+                    <default>false</default>
+                    <label>NVMe</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>SAN</fullName>
+                    <default>false</default>
+                    <label>SAN</label>
+                </value>
+                <value>
+                    <fullName>SSD</fullName>
+                    <default>false</default>
+                    <label>SSD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Drivers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate which driver(s) the customer uses, if any.</inlineHelpText>
+        <label>Drivers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>.Net</fullName>
+                    <default>false</default>
+                    <label>.Net</label>
+                </value>
+                <value>
+                    <fullName>Go</fullName>
+                    <default>false</default>
+                    <label>Go</label>
+                </value>
+                <value>
+                    <fullName>Java</fullName>
+                    <default>false</default>
+                    <label>Java</label>
+                </value>
+                <value>
+                    <fullName>JavaScript</fullName>
+                    <default>false</default>
+                    <label>JavaScript</label>
+                </value>
+                <value>
+                    <fullName>JDBC</fullName>
+                    <default>false</default>
+                    <label>JDBC</label>
+                </value>
+                <value>
+                    <fullName>PHP</fullName>
+                    <default>false</default>
+                    <label>PHP</label>
+                </value>
+                <value>
+                    <fullName>Python</fullName>
+                    <default>false</default>
+                    <label>Python</label>
+                </value>
+                <value>
+                    <fullName>R</fullName>
+                    <default>false</default>
+                    <label>R</label>
+                </value>
+                <value>
+                    <fullName>Ruby</fullName>
+                    <default>false</default>
+                    <label>Ruby</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Encryption__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If encryption is in use, how has it been configured?</inlineHelpText>
+        <label>Encryption</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Encryption at rest</fullName>
+                    <default>false</default>
+                    <label>Encryption at rest</label>
+                </value>
+                <value>
+                    <fullName>Encryption for external connections</fullName>
+                    <default>false</default>
+                    <label>Encryption for external connections</label>
+                </value>
+                <value>
+                    <fullName>Intra-cluster encryption</fullName>
+                    <default>false</default>
+                    <label>Intra-cluster encryption</label>
+                </value>
+                <value>
+                    <fullName>No encryption</fullName>
+                    <default>false</default>
+                    <label>No encryption</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Environment_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a general description of the environment, including topology and technology stack.</inlineHelpText>
+        <label>Environment Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Evolving_Schema_Notes__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Evolving Schema Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Evolving_Schema_Score__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Evolving Schema Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Evolving_Schema__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <inlineHelpText>What type of methodology are you using for this project? Will the release cycles be more than 3 months?</inlineHelpText>
+        <label>z_Evolving Schema</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Failover_Required__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Failover Required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GainsighAccountHealthScore__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is automatically populated by Gainsight. JIRA: SFDCSPT-292</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is automatically populated by Gainsight.</inlineHelpText>
+        <label>Account Health Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GainsightAccountHealthScoreLabel__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is automatically populated by Gainsight. JIRA: SFDCSPT-292</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is automatically populated by Gainsight.</inlineHelpText>
+        <label>Account Health Score Label</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gainsight_Company_ID__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is automatically populated by Gainsight. JIRA: SFDCSPT-287</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is automatically populated by Gainsight.</inlineHelpText>
+        <label>Gainsight Company ID</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Go_Live_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If unknown, please input 01/01/1900</inlineHelpText>
+        <label>Go Live Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Instance_Type__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <inlineHelpText>Example: r5.xlarge or hardware, if On Prem.</inlineHelpText>
+        <label>Instance Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Instances_in_Production__c</fullName>
+        <externalId>false</externalId>
+        <label>Instances in Production</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Java_Development_Kit__c</fullName>
+        <externalId>false</externalId>
+        <label>Java Development Kit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Amazon Corretto</fullName>
+                    <default>false</default>
+                    <label>Amazon Corretto</label>
+                </value>
+                <value>
+                    <fullName>IBM</fullName>
+                    <default>false</default>
+                    <label>IBM</label>
+                </value>
+                <value>
+                    <fullName>OpenJDK</fullName>
+                    <default>false</default>
+                    <label>OpenJDK</label>
+                </value>
+                <value>
+                    <fullName>Oracle</fullName>
+                    <default>false</default>
+                    <label>Oracle</label>
+                </value>
+                <value>
+                    <fullName>RedHat OpenJDK</fullName>
+                    <default>false</default>
+                    <label>RedHat OpenJDK</label>
+                </value>
+                <value>
+                    <fullName>ZuluJDK</fullName>
+                    <default>false</default>
+                    <label>ZuluJDK</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Java_Version__c</fullName>
+        <externalId>false</externalId>
+        <label>Java Version</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KICKOFF_CALL_NOTES__c</fullName>
+        <description>Migrated from long text to rich text on ~2020-02-03T14:08:15-0800</description>
+        <externalId>false</externalId>
+        <label>Kickoff Call Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Kickoff_Call_Notes_dep__c</fullName>
+        <externalId>false</externalId>
+        <label>KickoffCallNotes(deprecated use newer v)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Meeting_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Meeting Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Neo4j_Visit_Date__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Last Neo4j Visit Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>License_Info__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the purpose for which this subscription is licensed.</inlineHelpText>
+        <label>License Info</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Monitoring__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How is the customer monitoring their Neo4j environment? What tools are in use?</inlineHelpText>
+        <label>Monitoring</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Appdynamics</fullName>
+                    <default>false</default>
+                    <label>Appdynamics</label>
+                </value>
+                <value>
+                    <fullName>Cloud Watch</fullName>
+                    <default>false</default>
+                    <label>Cloud Watch</label>
+                </value>
+                <value>
+                    <fullName>CSV Metrics</fullName>
+                    <default>false</default>
+                    <label>CSV Metrics</label>
+                </value>
+                <value>
+                    <fullName>Datadog</fullName>
+                    <default>false</default>
+                    <label>Datadog</label>
+                </value>
+                <value>
+                    <fullName>Grafana</fullName>
+                    <default>false</default>
+                    <label>Grafana</label>
+                </value>
+                <value>
+                    <fullName>Graphite</fullName>
+                    <default>false</default>
+                    <label>Graphite</label>
+                </value>
+                <value>
+                    <fullName>Halin</fullName>
+                    <default>false</default>
+                    <label>Halin</label>
+                </value>
+                <value>
+                    <fullName>HTTP endpoints</fullName>
+                    <default>false</default>
+                    <label>HTTP endpoints</label>
+                </value>
+                <value>
+                    <fullName>JMX</fullName>
+                    <default>false</default>
+                    <label>JMX</label>
+                </value>
+                <value>
+                    <fullName>New Relic</fullName>
+                    <default>false</default>
+                    <label>New Relic</label>
+                </value>
+                <value>
+                    <fullName>Prometheus</fullName>
+                    <default>false</default>
+                    <label>Prometheus</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Neo4j_Graph_Expertise__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Neo4j-Graph Expertise</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Expert</fullName>
+                    <default>false</default>
+                    <label>Expert</label>
+                </value>
+                <value>
+                    <fullName>Intermediate</fullName>
+                    <default>false</default>
+                    <label>Intermediate</label>
+                </value>
+                <value>
+                    <fullName>Novice</fullName>
+                    <default>false</default>
+                    <label>Novice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Neo4j_Version__c</fullName>
+        <externalId>false</externalId>
+        <label>Neo4j Version</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Check_in_Quarter__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Next Check-in Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2019 - Q3</fullName>
+                    <default>false</default>
+                    <label>2019 - Q3</label>
+                </value>
+                <value>
+                    <fullName>2019 - Q4</fullName>
+                    <default>false</default>
+                    <label>2019 - Q4</label>
+                </value>
+                <value>
+                    <fullName>2020 - Q1</fullName>
+                    <default>false</default>
+                    <label>2020 - Q1</label>
+                </value>
+                <value>
+                    <fullName>2020 - Q2</fullName>
+                    <default>false</default>
+                    <label>2020 - Q2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Nodes__c</fullName>
+        <externalId>false</externalId>
+        <label># Nodes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Clusters_in_Production__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many clusters exist in the production environment? Typically, there&apos;s one cluster.</inlineHelpText>
+        <label># of Clusters in Production</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Databases__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many databases are running in the production environment (1 prior to 4.0)?</inlineHelpText>
+        <label># of Databases</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Datacenters_Regions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of datacenters or regions across which cluster(s) are deployed.</inlineHelpText>
+        <label># of Datacenters/Regions</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Number_of_Properties__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the total count of properties in the graph?</inlineHelpText>
+        <label># of Properties</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Read_Replicas_in_Production__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What&apos;s the total number of Replicas deployed in the production environment?</inlineHelpText>
+        <label># of Read Replicas in Production</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OS__c</fullName>
+        <externalId>false</externalId>
+        <label>OS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Amazon Linux</fullName>
+                    <default>false</default>
+                    <label>Amazon Linux</label>
+                </value>
+                <value>
+                    <fullName>CentOS</fullName>
+                    <default>false</default>
+                    <label>CentOS</label>
+                </value>
+                <value>
+                    <fullName>Debian</fullName>
+                    <default>false</default>
+                    <label>Debian</label>
+                </value>
+                <value>
+                    <fullName>Red Hat</fullName>
+                    <default>false</default>
+                    <label>Red Hat</label>
+                </value>
+                <value>
+                    <fullName>SuSE</fullName>
+                    <default>false</default>
+                    <label>SuSE</label>
+                </value>
+                <value>
+                    <fullName>Ubuntu</fullName>
+                    <default>false</default>
+                    <label>Ubuntu</label>
+                </value>
+                <value>
+                    <fullName>Windows</fullName>
+                    <default>false</default>
+                    <label>Windows</label>
+                </value>
+                <value>
+                    <fullName>Other: Unix/Linux type</fullName>
+                    <default>false</default>
+                    <label>Other: Unix/Linux type</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Orchestration__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the customer has container orchestration, what technology do they use?</inlineHelpText>
+        <label>Orchestration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Apache Mesos</fullName>
+                    <default>false</default>
+                    <label>Apache Mesos</label>
+                </value>
+                <value>
+                    <fullName>Docker</fullName>
+                    <default>false</default>
+                    <label>Docker</label>
+                </value>
+                <value>
+                    <fullName>Kubernetes</fullName>
+                    <default>false</default>
+                    <label>Kubernetes</label>
+                </value>
+                <value>
+                    <fullName>Openshift</fullName>
+                    <default>false</default>
+                    <label>Openshift</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Peak_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From metrics, usually reported during a Health Check.</inlineHelpText>
+        <label>Peak Transactions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Plugins_Tools__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which of these plugins, if any, does the customer use in the production environment?</inlineHelpText>
+        <label>Plugins &amp; Tools</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>APOC</fullName>
+                    <default>false</default>
+                    <label>APOC</label>
+                </value>
+                <value>
+                    <fullName>BI Connector</fullName>
+                    <default>false</default>
+                    <label>BI Connector</label>
+                </value>
+                <value>
+                    <fullName>Bloom</fullName>
+                    <default>false</default>
+                    <label>Bloom</label>
+                </value>
+                <value>
+                    <fullName>GRAND Stack</fullName>
+                    <default>false</default>
+                    <label>GRAND Stack</label>
+                </value>
+                <value>
+                    <fullName>Graph Data Science Library</fullName>
+                    <default>false</default>
+                    <label>Graph Data Science Library</label>
+                </value>
+                <value>
+                    <fullName>GraphQL</fullName>
+                    <default>false</default>
+                    <label>GraphQL</label>
+                </value>
+                <value>
+                    <fullName>Kettle</fullName>
+                    <default>false</default>
+                    <label>Kettle</label>
+                </value>
+                <value>
+                    <fullName>Linkurious</fullName>
+                    <default>false</default>
+                    <label>Linkurious</label>
+                </value>
+                <value>
+                    <fullName>Neo4j Streams / Kafka</fullName>
+                    <default>false</default>
+                    <label>Neo4j Streams / Kafka</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Production_Architecture__c</fullName>
+        <externalId>false</externalId>
+        <label>Production Architecture</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Causal</fullName>
+                    <default>false</default>
+                    <label>Causal</label>
+                </value>
+                <value>
+                    <fullName>Causal - Multi-DC</fullName>
+                    <default>false</default>
+                    <label>Causal - Multi-DC</label>
+                </value>
+                <value>
+                    <fullName>HA</fullName>
+                    <default>false</default>
+                    <label>HA</label>
+                </value>
+                <value>
+                    <fullName>Single</fullName>
+                    <default>false</default>
+                    <label>Single</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Health_Score_Label__c</fullName>
+        <businessOwnerUser>maria.turegano@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <label>Project Health Score Label</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Health_Score__c</fullName>
+        <businessOwnerUser>maria.turegano@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <label>Project Health Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RAM_GB__c</fullName>
+        <externalId>false</externalId>
+        <label>RAM (GB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ROLL_OUT_PLAN__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <description>Migrated from long text to rich text on ~2020-02-03T14:08:15-0800</description>
+        <externalId>false</externalId>
+        <label>z_Roll Out Plan</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Read_Throughput__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a description of the read throughput requirements.</inlineHelpText>
+        <label>Read Throughput</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Real_Time_Info__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Real Time Info?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Real_Time_Score__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Real-Time Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Real_Time__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Real-Time Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Roll_out_Plan_dep__c</fullName>
+        <externalId>false</externalId>
+        <label>Roll-out Plan (deprecated use newer ver)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SFDC_CPP_ID__c</fullName>
+        <description>18 character id</description>
+        <externalId>false</externalId>
+        <formula>casesafeid(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC CPP ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SPECIAL_HANDLING_INSTRUCTIONS__c</fullName>
+        <description>Migrated from long text to rich text on ~2020-02-03T14:08:15-0800</description>
+        <externalId>false</externalId>
+        <label>Special Handling Instructions</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Scale_Out_Reads_Required__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Scale Out Reads Required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Special_Handling_Instructions_dep__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Handling(deprecated use newer v)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Supplementary_Databases__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Other Databases in Architecture (Polyglot)</inlineHelpText>
+        <label>z_Supplementary Databases</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Total_Store_Size_GB__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Store Size (GB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Trec_Score__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <formula>Transactional_Score__c  +  Real_Time_Score__c + Evolving_Schema_Score__c + Complex_Query_Score__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>z_Total Trec Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transactional_Notes__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Transactional Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transactional_Score__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <label>z_Transactional Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transactional_Update_Frequency__c</fullName>
+        <businessStatus>DeprecateCandidate</businessStatus>
+        <externalId>false</externalId>
+        <inlineHelpText>How often will the data in DB be updated? (hourly? monthly?)</inlineHelpText>
+        <label>z_Transactional - Update Frequency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>USE_CASE_DESCRIPTION__c</fullName>
+        <description>Migrated from long text to rich text on ~2020-02-03T14:08:15-0800</description>
+        <externalId>false</externalId>
+        <label>Use Case Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>UpgradeStatusNotes__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is used by the Customer Success Team. It&apos;s used for notes regarding the customer&apos;s upgrade status. The field is mapped to the corresponding field in Gainsight. It&apos;s populated in Gainsight by the CST and then automatically populated/updated in Salesforce. JIRA: SFDCSPT-491</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains notes regarding the customer&apos;s current upgrade status. The field populated by the Customer Success Team in Gainsight and then automatically populated/updated by Gainsight in Salesforce.</inlineHelpText>
+        <label>Upgrade Status Notes</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UpgradeStatus__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>This field is used by the Customer Success Team. It shows the current upgrade status of the customer. The field is mapped to the corresponding field in Gainsight. It&apos;s populated in Gainsight by the CST and then automatically populated/updated in Salesforce. JIRA: SFDCSPT-491</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the current upgrade status of the customer. The field populated by the Customer Success Team in Gainsight and then automatically populated/updated by Gainsight in Salesforce.</inlineHelpText>
+        <label>Upgrade Status</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Excluded - Planning to Upgrade</fullName>
+                    <default>false</default>
+                    <label>Excluded - Planning to Upgrade</label>
+                </value>
+                <value>
+                    <fullName>Plans Unknown</fullName>
+                    <default>false</default>
+                    <label>Plans Unknown</label>
+                </value>
+                <value>
+                    <fullName>Not Planning to Upgrade</fullName>
+                    <default>false</default>
+                    <label>Not Planning to Upgrade</label>
+                </value>
+                <value>
+                    <fullName>Upgrade Completed</fullName>
+                    <default>false</default>
+                    <label>Upgrade Completed</label>
+                </value>
+                <value>
+                    <fullName>Already Upgraded</fullName>
+                    <default>false</default>
+                    <label>Already Upgraded</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Use_Case_Description_dep__c</fullName>
+        <externalId>false</externalId>
+        <label>Use Case Descrip(deprecated use newer v)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Workload_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Transactional (OLTP), Analytical/Batch (OLAP) or Mixed (HTAP)?</inlineHelpText>
+        <label>Workload Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HTAP Mixed</fullName>
+                    <default>false</default>
+                    <label>HTAP (Mixed)</label>
+                </value>
+                <value>
+                    <fullName>OLAP</fullName>
+                    <default>false</default>
+                    <label>OLAP</label>
+                </value>
+                <value>
+                    <fullName>OLTP</fullName>
+                    <default>false</default>
+                    <label>OLTP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Write_Throughput__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a description of the write throughput requirements.</inlineHelpText>
+        <label>Write Throughput</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zendesk_Org_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Zendesk Org ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>of_Rels__c</fullName>
+        <externalId>false</externalId>
+        <label># of Rels</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>production_status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are they in production? If so, is it a full-scale production or only an inital, limited scale?</inlineHelpText>
+        <label>Production Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Limited Production</fullName>
+                    <default>false</default>
+                    <label>Limited Production</label>
+                </value>
+                <value>
+                    <fullName>Full Production</fullName>
+                    <default>false</default>
+                    <label>Full Production</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Customer Project Profile</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Go_Live_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CPPs_by_Next_Check_In_Q</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Customer_Segment__c</columns>
+        <columns>Customer_Success_Architect__c</columns>
+        <columns>Customer_Success_Account_Manager__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_US_Territory__c</field>
+            <operation>equals</operation>
+            <value>West,Central</value>
+        </filters>
+        <filters>
+            <field>CPP_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>West Central by Next Check-In Q</label>
+    </listViews>
+    <listViews>
+        <fullName>EMEA_by_Next_Check_In_Q</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Customer_Segment__c</columns>
+        <columns>Customer_Success_Architect__c</columns>
+        <columns>Customer_Success_Account_Manager__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Global_Territory__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </filters>
+        <filters>
+            <field>CPP_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>EMEA by Next Check-In Q</label>
+    </listViews>
+    <listViews>
+        <fullName>East_by_Next_Check_In_Q</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Customer_Segment__c</columns>
+        <columns>Customer_Success_Architect__c</columns>
+        <columns>Customer_Success_Account_Manager__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_US_Territory__c</field>
+            <operation>equals</operation>
+            <value>East</value>
+        </filters>
+        <filters>
+            <field>CPP_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>East by Next Check-In Q</label>
+    </listViews>
+    <listViews>
+        <fullName>ROW_by_Next_Check_In_Q</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Customer_Segment__c</columns>
+        <columns>Customer_Success_Architect__c</columns>
+        <columns>Customer_Success_Account_Manager__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Global_Territory__c</field>
+            <operation>equals</operation>
+            <value>LATAM,APAC</value>
+        </filters>
+        <filters>
+            <field>CPP_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>ROW by Next Check-In Q</label>
+    </listViews>
+    <nameField>
+        <label>Customer Project Profile Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Customer Project Profiles</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

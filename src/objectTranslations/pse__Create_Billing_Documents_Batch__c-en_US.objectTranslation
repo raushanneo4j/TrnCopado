@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Unique identifier for the current batch Apex job. --></help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the batch process record. The batch process record is deleted automatically if the process completes successfully. --></help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The type of notification sent when the process completed: Successful, Failure, or Mixed. --></help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current status of the batch job: &quot;Processing&quot;, &quot;Complete&quot;, or &quot;Error&quot;. --></help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is Abort. --></help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_Of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is Error. --></help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_Of_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is External. --></help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_Of_External__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of logs. --></help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <layouts>
+        <layout>Create Billing Documents Batch Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

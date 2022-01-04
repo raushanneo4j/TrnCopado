@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 时间卡输入UI全局 --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>定义包含赋值字段的字段集的名称，以在“时间卡条目”页面的“项目/分配”查找中显示为列。</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>要为时间卡分配下拉列表加载的分配数</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>在增强的“时间输入”页面的“项目/分配”查找中显示为列的分配字段的API名称列表。不要在字段的API名称中包含pse__名称空间前缀。默认值为Name，Nick_Name__c。</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>在时间卡UI中加载分配时的分配开始和结束日期限制。如果为true，则仅加载其开始/结束日期包含或与时间卡日期范围重叠的分配。这仅影响UI，而不影响管理员编辑。</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>从db加载分配时要使用的分配状态值的列表。</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则在初始加载新的Timecard UI时，它将检查上周的时间卡。如果前一周没有填写时间卡，UI将显示确认窗口，要求用户加载上周或当前周。如果错误，正常工作。</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>配置以控制新TC UI上的最大自动恢复小时值。</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>配置以控制新TC UI上的最小自动恢复小时值。</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则提交所有时间卡以供批准。如果为false，则仅提交用户选择的时间卡。</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>定义包含项目字段的字段集的名称，以在“时间卡条目”页面的“项目/分配”查找中显示为列。</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>项目字段的API名称列表，在“增强的时间输入”页面的“项目/分配”查找中显示为列。不要在字段的API名称中包含pse__名称空间前缀。默认值为Name，Account__r.Name。</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>从db加载项目/分配时的项目开始和结束日期限制。</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>定义包含资源字段的字段集的名称，以在Sencha Timecard Entry页面的Resource查找中显示为列。</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>如果配置值等于&apos;all&apos;，则表示将加载所有资源以及当前用户资源。否则，如果值等于&apos;resource&apos;或null，则仅加载当前用户资源。</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>资源字段列表（完全限定的API名称/路径），显示在新的Timecard UI中的资源查找弹出列上。最多推荐4个字段/列。默认值：Name，Region__r.Name，Practice__r.Name，Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>一次批量执行中要保存/提交的时间卡数量的大小。</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Config用于控制零时间的时间卡保存。如果为真，则保存零的时间卡，否则不保存（警告将显示在ui上）。</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>保存在单个请求中的时间卡记录数（不包括相关记录）。</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>用于保存按订单字段API名称排序的时间卡的配置。可输入多个彗差分隔字段进行排序。例如：CreatedDate，Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV可以编辑时间卡输入行的状态值列表。</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>用于确定在单击保存按钮时将时间卡设置为的状态</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>用于确定在提交按钮单击时将时间卡设置为什么状态</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>如果选中（true），则在本地保存时间输入UI列首选项。如果取消选择（false），首选项将保存在服务器上。</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则Location下拉菜单将绑定到Project Location对象，而不是TC UI上的位置选项列表</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>资源没有工作日历时使用的默认周开始日值，或者具有没有工作日开始日的工作日历。</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>配置用于控制零时间的时间卡提交。如果是，则可以提交零时间卡，否则将在ui上显示警告。</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+</CustomObjectTranslation>

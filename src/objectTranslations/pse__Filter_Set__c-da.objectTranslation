@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Filter sæt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Filtreringssæt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Begrænser, hvor dette filtersæt vises som en mulighed. I øjeblikket understøttes kun &quot;Ressourceplanlægger&quot; og &quot;Projektplanlægger&quot;.</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>Projektplanlægger</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>Ressourceplanlægger</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Navnet på filtersættet.</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>Indeholder filterattributterne og værdierne i et gemt filtersæt. Gemt som et JSON objekt.</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>Når det er markeret, angiver filteret sæt som standard.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det kun er sandt, vil ejeren kunne se og bruge dette filter. Ellers kan enhver bruger, der deler adgang, gøre brug af den.</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>Filtrersæt, der kan tilknyttes andre objekter, f.eks. Projekter.</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>API-navnet på SObject dette sæt filtre virker på.</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Navn</nameFieldLabel>
+</CustomObjectTranslation>

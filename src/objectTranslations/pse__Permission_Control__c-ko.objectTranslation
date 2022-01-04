@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>사용 권한 제어</value>
+    </caseValues>
+    <fields>
+        <help>이 체크 박스는 지정된 지역 / 관행 / 그룹에 속한 프로젝트에 대한 청구 이벤트를 생성 및 릴리스하고 자원의 비즈니스 레코드에 대한 청구 관련 필드 (청구 확인란 및 청구 이벤트 항목)를 편집하는 사용자의 기능을 제어합니다.</help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help>계층 (예 : Region, Practice 또는 Group)과 연관된 사용 권한 제어에 대한이 상자를 선택하면 사용 권한은 지정된 노드 이외에 계층 구조의 아래쪽에있는 모든 노드 (소유하는 자원)에도 적용됩니다.</help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전을 비교할 수있는 권한을 사용자에게 부여합니다.</help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전을 만들 수있는 권한을 사용자에게 부여합니다.</help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 버전을 삭제할 수있는 권한을 사용자에게 부여합니다.</help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>이 사용자가 Project Task Gantt 및 Gantt에서 프로젝트 작업 정보를 편집 할 수 있는지 여부를 나타냅니다.</help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 확인란은 사용자가 자신의 자원 이외의 자원에 대한 비용 및 경비 보고서를 입력 / 편집하는 기능을 제어합니다.</help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 자원이 승인되고 비용이 청구되기 전에 자원에 대한 비용 및 경비 보고서를 편집 할 수있는 사용자의 능력을 제어합니다.</help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help>지역 / 실습 / 그룹의 예측 페이지에서 편집을 수행 할 수 있습니다.</help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help>지역 / 실습 / 그룹의 예측 페이지를 볼 수 있음</help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help>이 그룹의 리소스를 대신하여 위임 된 팀 카드 항목과 같이 지정된 작업의 대상인 리소스가 포함 된 그룹입니다.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 프로젝트의 비즈니스 기록에 대한 인보이스 관련 필드 (송장 처리 된 체크 박스, 송장 일자, 송장 번호)를 편집 할 수있는 사용자 권한을 관리합니다.</help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help>이것은 특정 행동의 대상인 리소스를 포함하는 프랙티스입니다 (예 :이 프랙티스의 리소스 대신 위임 된 타임 카드 항목).</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이것은 지정된 동작의 대상인 자원에 대한 할당을 포함하는 프로젝트입니다 (예 :이 프로젝트의 자원을 대신하여 위임 된 시간 달력 항목, 프로젝트와 관련해서 만).</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이것은 지정된 동작의 대상인 리소스를 포함하는 영역입니다 (예 :이 지역의 리소스 대신 위임 된 Timecard Entry).</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 확인란은 지정된 영역 / 관행 / 그룹에 대한 자원 요청을 입력 / 편집 할 수있는 사용자 권한을 제어합니다.</help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help>이 리소스 대신 지정된 작업 (예 : 위임 된 Timecard Entry)의 대상인 리소스입니다.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 사용자가 지정된 지역 / 관행 / 그룹에서 리소스를 스태프하는 기능을 제어합니다.</help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 사용자에게 팀을 만들 수있는 권한을 부여합니다.</help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help>사용자가 팀 소유자가 아닌 경우 지정된 팀을 편집 할 수있는 권한을 부여합니다.</help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help>사용자가 팀 소유자가 아닌 경우 표시된 팀을 읽기 전용 모드로 볼 수있는 권한을 부여합니다.</help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help>이것은 지정된 동작 (예 :이 사용자를 대신하여 팀보기)의 대상인 팀입니다.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 자신의 리소스 이외의 리소스에 대해 타임 카드를 입력 / 편집 할 수있는 권한을 제어합니다.</help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help>이 체크 박스는 승인 된 후 청구되기 전에 리소스에 대한 타임 카드를 편집 할 수있는 권한을 제어합니다.</help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 사용자가 Project Task Gantt 및 Gantt를 읽기 전용 모드로 사용할 수 있는지 여부를 나타냅니다.</help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>권한</label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label>개요</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>사용 권한 제어 이름</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

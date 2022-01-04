@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Unique identifier for the current batch Apex job. --></help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the batch process record. The batch process record is deleted automatically if the process completes successfully. --></help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The type of notification sent when the process completed: Successful, Failure, or Mixed. --></help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The current status of the batch job: &quot;Processing&quot;, &quot;Complete&quot;, or &quot;Error&quot;. --></help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is Abort. --></help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is Error. --></help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of logs where Log Type is External. --></help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of logs. --></help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

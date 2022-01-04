@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.mkto71_Lead_Score__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.Behavior_Score__c</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Grouped by Account
+Contacts with score, email, phone</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.mkto71_Lead_Score__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>79</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Refinitiv,Abrigo,Jumio/Beam,NICE Systems,RDC Moody&apos;s,Smarsh/Digital Reasoning,Symphony AI,FICO,Verafin,Nasdaq,Fiserv,Lexis Nexis,Oracle,SAS,Checkr,Sisense,OneStream,Pipedrive,Pendo,BitSight,Collibra,IBM Fivetran,Teradata,Splunk,Nutanix,Cohesity,Rubrik,Segment,Atlassian,AppDirect,Shopify,Yotpo,Anaplan,Workiva,nCino,Factset,FIS Global,SS&amp;C Technologies,AvidXchange,Blackline Gong.io,HighRadius,Ultimate Software,Kronos,ServiceNow,Workday,Ceridian,Cornerstone,BambooHR,Zenefits,ADP,Gusto,Auth0,BigID,Saviynt,ForgeRock,Idaptive,Cyberark,Okta,OneLogin,Ping,Parametric Technology Corporation,Verint,Central Square,Highspot,Seismic,Talend,Informatica,Actian,Dell Boomi,Tibco,Information Builders,Snap Logic,Arcadia,Lucid,Automattic,Toast,Outreach,Mcafee,Netskope,Akamai Technologies,Pindrop Security,Tanium,Lookout,OneTrust,Confluent,Blue Yonder,JDA,KeepTruckin,Automation Anywhere,Thoughtspot</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>KMc High Score Outreach Campaign</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact.Behavior_Score__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

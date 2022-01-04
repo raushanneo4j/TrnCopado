@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 시간표 항목 UI 개인 --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>시간 항목 페이지에서 사용자가 작업 시간 셀을 클릭하거나 탭하거나 수동으로 0을 입력하면 프로젝트 / 할당 값이 0으로 업데이트됩니다. 기본값은 false입니다. Task Time Entry Mode는 Calculated로 설정되어야합니다.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 프로젝트 또는 할당은 시간 기록의 상태가 &quot;시간 기록 편집 상태 값 / Timecard_edit_status_values__c&quot;값 중 하나 일 때 변경 될 수 있습니다.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>할당에 대한 툴팁으로 사용할 필드입니다. 정규화 된 경우 (해당되는 경우 네임 스페이스 사용) 대소 문자를 구분하는 필드 이름이 필요합니다.</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Billable 필드가 표시되도록 구성되어 있으면 Timecard UI의 시간 헤더 행에 Hours의 왼쪽 또는 오른쪽으로 표시할지 여부를 결정합니다.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>주, 프로젝트, 배정, 자원, 청구 가능 항목, 프로젝트, 방법론, 위치, 여행의 동일한 조합이있는 근무 시간표가 시간표 항목 페이지에 결합되었는지 여부를 나타냅니다.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 추가 필드가 지난주의 시간 기록표에서 복사됩니다.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>ETC 필드가 선택되면 이전주의 시간 기록표에서 복사됩니다.</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>월요일 시간, 화요일 시간 등과 같은 시간 필드를 선택하면 지난주의 시간 기록표에서 복사됩니다</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 위치 정보와 같은 위치 정보 필드가 지난주의 시간 기록표에서 복사됩니다</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>선택되면 방법론 필드가 이전 주 시간표에서 복사됩니다.</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>선택한 경우 마일스톤은 이전주의 시간 기록표에서 복사됩니다</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>체크하면 노트가 지난주의 시간 기록에서 복사됩니다.</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>페이즈 필드를 체크하면 이전 주 타임 카드에서 복사됩니다.</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 해당 일정에 할당에서 일일 메모 하위 레코드를 찾으면 일정에서 복사 기능이 시간 필드의 각 날짜에 대한 메모 필드를 채 웁니다. (기본값은 false)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 시간이 지난주의 시간 기록에서 복사됩니다.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 작업 정보가 지난주의 시간 기록표에서 복사됩니다.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 여행 주, 여행 월 등의 여행 정보 필드가 지난주의 시간 기록표에서 복사됩니다</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하고 새 타임 카드 UI의 Resource Lookup 팝업이 하나의 결과 만 반환하면 Resource Lookup 팝업이 자동으로 닫히고 자원 필드가 반환 된 자원으로 설정됩니다.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우, 타임 카드 UI의 청구 가능 드롭 다운 필드는 비활성화 됨으로 표시됩니다 (즉, 사용자가 편집 할 수 없음).</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI는 할당 된 모든 과제물 / 프로젝트가로드되는 동안 마일스톤과 함께 캐시합니다. 사용자가 많은 과제 / 프로젝트를 보유하고있는 경우 salesforce의 조회 상태 제한으로 이어질 수 있습니다. 이 구성 값을 true로 설정하면이 캐시가 최소화됩니다.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>행 추가 버튼을 클릭하면 이러한 빈 시간대가 많이 추가됩니다.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>이것은 새로운 타임 카드 입력에 항상 사용할 수있는 최소 회선입니다.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>시간표 항목 페이지의 청구 가능 항목 열이 숨겨져 있는지 여부를 나타냅니다. true로 설정하면 열이 숨겨지고 청구 가능 확인란의 기본값이 선택됩니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>새 시간표 UI의 이전 주간에서 복사 버튼이 숨겨져 있는지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 중복되어 있으며 이후 릴리스에서 제거 될 수 있습니다. 대신 &quot;이전 주 버튼에서 사본 숨기기&quot;설정을 편집하십시오.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>새 시간 달력 UI의 일정 복사 단추가 숨겨져 있는지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 작업 확장 또는 작업 축소 링크가 시간 항목 페이지에서 숨겨집니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 일반적으로 시간표 항목 페이지에 나타나는 메모 열이 숨겨집니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>새 타임 카드 UI의 저장 버튼이 숨겨져 있는지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 시간 항목 페이지의 작업 추가 팝업에서 &apos;모든 작업&apos;및 &apos;내 작업&apos;버튼이 숨겨집니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>새 시간 달력 UI의 제출 단추가 숨겨져 있는지 여부를 나타냅니다. 기본값은 false입니다.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하고 작업 시간 입력 모드를 계산 됨으로 설정하면 한 시간의 작업 시간 만 표시됩니다. 확인란의 기본값은 선명합니다.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>true이고 Task Time Entry Mode가 Current 인 경우 시간표 라인 위로 마우스를 가져 가면 표시된보기 또는 세부 정보 링크가 숨겨집니다. true이고 Task Time Entry Mode가 Current가 아니면 Notes 탭이 링크에서 숨겨집니다. 기본값은 false입니다.</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>주어진 field / config는 Timecard UI에서 선택한 리소스에 대한 Work Calendar Holiday의 날짜 열 머리글을 색으로 구분하는 데 사용됩니다.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Timecard V15 Entry 페이지에서 시간 카드 시간 픽셀의 픽셀 너비를 결정합니다.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>리소스가 단일 시간 달력 일에 입력 할 수있는 최대 시간입니다. 자원의 총 시간 수가 한 번의 시간 달력으로이 금액을 초과하면 오류 메시지가 표시됩니다.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>자원이 타임 카드 주 동안 입력 할 수있는 최대 시간. 초과하면 오류 메시지가 표시됩니다. 백분율 값과 기호를 입력하십시오 (예 : 작업 달력 시간의 최대 백분율을 지정하려면 90 %.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Methodology 필드가 표시되도록 구성된 경우, Timecard UI의 timecard 헤더 행에 Hours의 왼쪽 또는 오른쪽으로 표시되어야하는지 여부를 결정합니다.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>이 구성 플래그는 방법 팝업 필드가 노트 팝업 또는 프론트 페이지에 표시되어야하는지 여부를 결정합니다.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>마일스톤 필드가 표시되도록 구성된 경우, Timecard UI의 타임 카드 헤더 행에서 Hours의 왼쪽 또는 오른쪽에 표시되어야하는지 여부를 결정합니다.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>이 설정 플래그는 이정표 필드가 메모 팝업에 표시되는지 또는 앞 페이지에 표시되어야 하는지를 결정합니다.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>자원이 타임 카드 주 동안 입력 할 수있는 최소 시간. 주 단위 시간이이 값보다 작 으면 오류 메시지가 표시됩니다. 백분율 값과 기호를 입력하십시오 (예 : 작업 달력 시간의 최소 백분율을 지정하려면 30 %.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>true이면 할당 닉네임을 편집 할 수 없습니다.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>true이면, timacard entry note 팝업 대화 상자에 위치 필드가 표시됩니다.</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 기본 UI 드롭 다운이 TC UI에 표시됩니다.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Phase 필드가 표시되도록 구성되어 있으면 Timecard UI의 timecard 헤더 행에서 Hours의 왼쪽 또는 오른쪽으로 표시되어야하는지 여부를 결정합니다.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>이 구성 플래그는 위상 필드가 노트 팝업 또는 프론트 페이지에 표시되어야하는지 여부를 결정합니다.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 선택한 사용자 및 프로젝트에 대한 작업이 미리 채워집니다. 확인란의 기본값은 선명합니다.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>기본 위치 필드가 표시되도록 구성되어있는 경우, 시간 카드 UI의 시간표 헤더 행에서 시간의 왼쪽 또는 오른쪽에 표시할지 여부를 결정합니다.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>주 기본 위치 허용이 true로 설정된 경우 주 위치 필드가 메모 섹션에 있는지 또는 시간표 라인에 나타나는지를 결정합니다.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>시간표 프로젝트 / 할당 계정 드롭 다운 표시 값</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>이 필드의 필드는 작업 시간이 기록 된 시간 기록 UI의 프로젝트 작업 행에 대한 툴팁에 표시된 필드를 정의합니다.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>&quot;저장 후 편집 할 수있는 과제 프로젝트&quot;는 저장된 시간 코드에 대한 프로젝트 / 할당을 변경하는 사용자 액세스 권한을 제공하지만 시간 메모에는 감사 메모를 설정해야합니다. 이 구성으로 감사 노트를 설정할 수 있습니다.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>시간표 항목 ui의 툴팁으로 표시 될 프로젝트 필드 목록.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>선택한 경우 미리 채워진 작업은 선택한 할당을 기반으로합니다. 그런 다음 작업 선택 팝업의 &quot;일치하는 작업으로 제한&quot;필드가 기본적으로 선택됩니다. 할당에 따라 작업 제한이 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>선택한 경우 미리 채워진 작업은 선택한 마일스톤을 기반으로합니다. 그런 다음 작업 선택 팝업의 &quot;일치하는 마일스톤으로 작업 제한&quot;필드가 기본적으로 선택됩니다. Milestone에 기반한 작업 제한은 기본적으로 선택 취소됩니다.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 시간 항목의 너비, 순서 및 열에 대한 사용자 정의가 사용자별로 기억됩니다.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>시간표의 일정 섹션에있는 툴팁 아이콘 위로 마우스를 가져 가면 표시 될 할당 필드의 API 이름입니다.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>시간표의 일정 섹션에있는 툴팁 아이콘 위로 마우스를 가져 가면 표시 될 프로젝트 필드의 API 이름입니다.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>지정된 자원 작업 달력에서 공휴일 (0 시간 있음)으로 표시된 요일의 시간 카드 섹션에 0이 아닌 값이 입력되면 경고를 표시하는 지정된 구성이 사용됩니다.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>지정된 자원 작업 달력 일 패턴에서 0 시간을 갖는 요일에 일정 그리드 섹션에 0이 아닌 값이 입력되면 경고를 표시하는 지정된 구성이 사용됩니다.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 청구 가능 항목 인 청구 불가능한 시간은 모든 일일 열의 합계 행에있는 각 합계와 시간 항목의 시간 카드에있는 합계 열에 마우스를 가져 가면 표시됩니다.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>시간대 행의 편집 가능한 시간 셀을 두 번 클릭하거나 해당 셀을 선택한 상태에서 아래쪽 화살표 키를 누르면 시간 입력 페이지에 쉬운 항목 팝업이 나타나는지 여부를 나타냅니다.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>값이 TC UI 마일스톤 드롭 다운 목록에 표시되는 필드를 포함합니다. 이러한 항목이 없거나 null 인 경우 TC UI는 드롭 다운 목록에 사용 가능한 마일스톤의 마일스톤 이름 필드를 계속해서 표시합니다. 조회가없는 __r 참조는 supp입니다.</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config는 제출 된 각 시간표의 디스플레이 호출 링크를 제어하는 데 사용됩니다. 그것을 클릭하면 리콜 오버레이가 열리고 여기서 코멘트를 입력하고 타임 카드에 대한 승인 요청을 회수해야합니다.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>선택, 즉 일정 그리드가 기본적으로 시간표 항목에 확장되어 표시됩니다.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>새 시간표 UI의 여행 확인란을 표시할지 여부를 나타냅니다. 기본값은 true입니다.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>true이면 일정 표 섹션에 시간 카드가 표시됩니다.</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>true로 설정하면 TC UI의 예약 섹션에 할당 이름 옆에 툴팁 아이콘이 표시됩니다. 기본값 false (기존 동작, 툴팁 열 없음)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>구성을 표시하거나 숨기려면 config</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 시간표 방법 필드가 시간 카드 UI에 표시됩니다.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>설정으로 중요 시점 선택 목록 표시 또는 숨기기</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>true 일 경우, 시간 카드 단계 필드는 시간 카드 UI에 표시됩니다.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>false이면 Status / recall 열이 Notes 열 바로 오른쪽에 표시됩니다. 참이면 상태 / 리콜이 추가 필드의 오른쪽에 표시됩니다.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Timecard 개체에서 사용하는 필드 집합의 API 이름입니다. 이 필드의 필드는 Timecard UI의 timecard 헤더 행에서 Hours 왼쪽에 표시된 편집 가능한 필드를 정의합니다.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard 개체에서 사용하는 필드 집합의 API 이름입니다. 이 필드의 필드는 타임 카드 UI의 타임 카드 헤더 행에서 편집 가능한 필드를 정의합니다.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard 개체에서 사용하는 필드 집합의 API 이름입니다. 이 필드의 필드는 Timecard UI의 타임 카드 헤더 행에 읽기 전용 필드를 정의합니다</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV를 사용하여 일정에서 복사 할 시간 필드를 지정합니다. 이 시간 필드 만이 &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;에 유효합니다.</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Timecard 개체에서 사용하는 필드 집합의 API 이름입니다. 이 필드의 필드는 Timecard UI의 시간표 라인의 메모 섹션에서 편집 가능한 필드를 정의하도록 설정합니다.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard 개체에서 사용하는 필드 집합의 API 이름입니다. 이 필드의 필드는 타임 카드 UI의 타임 카드 행에있는 노트 섹션에 읽기 전용 필드를 정의합니다.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>필드는 TC UI에서 숨길 시간 카드 상태 값의 혼수 (,)로 구분 된 목록을 유지하는 데 사용됩니다.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>연결된 시간이 기록되지 않은 경우 시간 카드에 미리 채울 때 숨길 작업을 지정합니다. 값은 쉼표로 구분 된 상태 목록입니다.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>자원이 프로젝트 작업에 대해 시간을 입력 할 때 할당 된 작업 만 선택할 수 있는지 여부를 나타냅니다. 이 옵션을 선택하지 않으면 사용자가 시간 항목 페이지에서이 기능을 활성화 할 수 있습니다.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>시간을 입력 할 작업을 선택할 때 작업 날짜에 대한 필터링 동작을 정의합니다. 없음 또는 겹침으로 설정하십시오. None이면 필터링이 발생하지 않습니다. 겹침 (Overlap) 인 경우, 작업은 시간 기록표와 선택 가능한 작업이 날짜에 겹칠 때만 나열됩니다.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>타임 카드 행의 작업 시간을 입력 할 때 사용할 시간 입력 모드입니다. 조정 값, 현재 값, 계산 된 값 또는 자유형 값 중 하나를 선택할 수 있습니다. 기본값은 Current입니다.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 / 할당 오버레이에 표시 할로드 할 상위 할당 수</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 / 할당 오버레이에 표시 할로드 할 상위 할당 / 프로젝트의 주 단위 수</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 / 할당 오버레이에 표시 할로드 할 최상위 프로젝트 수</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>시간표 항목 페이지에서 보이는 필드를 관리하는 기본 방법을 전환 할 수 있습니다. False 인 경우 PSA는 구성 옵션 또는 사용자 정의 설정을 사용하여 UI를 구성합니다. 참이면 PSA는 필드 세트를 사용하여 UI를 구성합니다.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>시간 카드 페이지에 할당을 표시하는 동안 할당 ID를 사용해야하는지 나타냅니다.</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>주어진 field / config는 선택된 Resource의 Work Calendar에있는 Schedule Pattern (휴일이 아닌)에 따라 Schedule 0-hour day의 날짜 - 열 머리글을 색으로 구분하는 데 사용됩니다.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>시간표 항목 UI에서 마일스톤 드롭 다운의 픽셀 너비를 조정합니다. 이 값은 너비에 직접 적용되므로이 값의 정수를 지정하십시오.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Timecard Entry UI에서 프로젝트 / 할당 드롭 다운의 픽셀 너비를 조정합니다. 이 값은 너비에 직접 적용되므로이 값의 정수를 지정하십시오. 예를 들어 값 300은 드롭 다운 폭을 300px로 설정합니다.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+</CustomObjectTranslation>

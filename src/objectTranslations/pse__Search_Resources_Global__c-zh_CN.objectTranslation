@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 搜索资源全球 --></value>
+    </caseValues>
+    <fields>
+        <help>确定地址字段中允许的一组逗号分隔字符。</help>
+        <label><!-- Allow Special Characters In Address --></label>
+        <name>pse__Allow_Special_Characters_In_Address__c</name>
+    </fields>
+    <fields>
+        <help>要在“搜索资源”中显示的联系人对象中字段的API名称。当显示资源描述为真时，将忽略此选项。</help>
+        <label><!-- Contact Field 1 --></label>
+        <name>pse__Contact_Field_1__c</name>
+    </fields>
+    <fields>
+        <help>要在“搜索资源”中显示的联系人对象中字段的API名称。当显示资源描述为真时，将忽略此选项。</help>
+        <label><!-- Contact Field 2 --></label>
+        <name>pse__Contact_Field_2__c</name>
+    </fields>
+    <fields>
+        <help>要在“搜索资源”中显示的联系人对象中字段的API名称。当显示资源描述为真时，将忽略此选项。</help>
+        <label><!-- Contact Field 3 --></label>
+        <name>pse__Contact_Field_3__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则仅显示资源的描述。如果为false，则显示Contact字段1到3，如果它们包含联系对象中字段的有效API名称。默认值为false。</help>
+        <label><!-- Display Resource Description --></label>
+        <name>pse__Display_Resource_Description__c</name>
+    </fields>
+    <fields>
+        <help>映射服务URL以在使用地址获取纬度和经度时使用。默认值：http：//www.mapquestapi.com/geocoding/v1/address？key = FMmtd％7Cluub2q6820 %2Caa％3Do5-961xh0 &amp;outFormat = json＆maxResults = 1</help>
+        <label><!-- Geolocation Service URL --></label>
+        <name>pse__Geolocation_Service_URL__c</name>
+    </fields>
+    <fields>
+        <help>确定地址无效时不更新经度和纬度。支持的格式：经度，纬度;经度，纬度。</help>
+        <label><!-- Invalid Longitude and Latitude --></label>
+        <name>pse__Invalid_Longitude_And_Latitude_Pairs__c</name>
+    </fields>
+    <fields>
+        <help>在使用Mapquest Geolocation API之前，定义用于在Salesforce远程站点设置中验证端点的Mapquest端点URL。此URL应该是地理定位服务URL的子集。</help>
+        <label><!-- Mapquest Endpoint URL --></label>
+        <name>pse__Mapquest_Endpoint_URL__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>积压计算</value>
+    </caseValues>
+    <fields>
+        <help>PSE使用的内部字段 - 不打算向用户显示。</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>是否计算区域，实践或组中包含的项目的积压。</help>
+        <label><!-- Calculate Project Backlog --></label>
+        <name>pse__Calculate_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Fields for Current Time Period --></label>
+        <name>pse__Copy_Fields_for_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <help>积压计算的结束日期。如果未指定结束日期，则将处理开始日期的所有记录。计算未计划的积压时建议使用此方法。</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>是否计算所选区域，练习或组的所有子级别的积压。如果仅针对资源计算积压，则忽略此字段。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Process Batch Id --></label>
+        <name>pse__Post_Process_Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reuse Detail Objects --></label>
+        <name>pse__Reuse_Detail_Objects__c</name>
+    </fields>
+    <fields>
+        <help>设置此值将自动设置开始日期字段</help>
+        <label><!-- Start Calculating From --></label>
+        <name>pse__Start_Calculating_From__c</name>
+        <picklistValues>
+            <masterLabel>Start of next week</masterLabel>
+            <translation>下周开始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of this week</masterLabel>
+            <translation>本周开始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>今天</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>发生了错误</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>进行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>没有开始</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Processing</masterLabel>
+            <translation>后期处理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>永动的</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>25美分硬币</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>周</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>年</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Backlog Calculation Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>选项</label>
+            <section>Options</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>积压计算名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Project may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Project is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+</CustomObjectTranslation>

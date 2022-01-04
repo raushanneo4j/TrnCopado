@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Masse Supprimer le journal des lots</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Masse Supprimer les journaux de lots</value>
+    </caseValues>
+    <fields>
+        <label><!-- Log Type --></label>
+        <name>ffr__LogType__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Avorter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Erreur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Externe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Information</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MassDeleteControlRecord__c --></label>
+        <name>ffr__MassDeleteControlRecord__c</name>
+        <relationshipLabel><!-- Mass Delete Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>ffr__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

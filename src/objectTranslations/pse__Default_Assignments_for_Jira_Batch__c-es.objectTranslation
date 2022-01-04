@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asignaciones predeterminadas para Jira Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asignaciones predeterminadas para lotes de Jira</value>
+    </caseValues>
+    <fields>
+        <help>Identificador único para el trabajo actual de Apex por lotes.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_ID__c</name>
+    </fields>
+    <fields>
+        <help>Busque el registro del proceso por lotes. El registro del proceso por lotes se elimina automáticamente si el proceso se completa con éxito.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El identificador de registro de lote.</help>
+        <label><!-- Default Assignments for Jira Batch ID --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_ID__c</name>
+    </fields>
+    <fields>
+        <help>El tipo de notificación enviada cuando se completa el proceso: Correcto, Fallido o Mixto.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>El estado actual del trabajo por lotes: &quot;Procesando&quot;, &quot;Completo&quot; o &quot;Error&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Tratamiento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El número de registros donde Tipo de registro es Abortar.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>El número de registros donde Tipo de registro es Error.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>El número de registros donde el tipo de registro es externo.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_of_External__c</name>
+    </fields>
+    <fields>
+        <help>El número total de registros.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_of_Logs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Asignaciones predeterminadas para Jira B</nameFieldLabel>
+</CustomObjectTranslation>

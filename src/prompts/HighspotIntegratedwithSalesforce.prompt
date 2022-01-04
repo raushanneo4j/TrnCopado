@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Highspot Integrated with Salesforce</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn More Here</actionButtonLabel>
+        <actionButtonLink>https://neo4j.highspot.com/items/615e0795e6303bc46c922732?lfrm=rhp-ft.0</actionButtonLink>
+        <body>Add and pin a tab for instant access to all Highspot functionality while working in Salesforce. See and Pitch recommended content from an Opportunity.</body>
+        <customApplication>standard__LightningSales</customApplication>
+        <delayDays>2</delayDays>
+        <description>To alerts the intended users that Highspot has been integrated with Salesforce and is available for use.</description>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-11-15</endDate>
+        <imageAltText>Highspot logo</imageAltText>
+        <imageLocation>Right</imageLocation>
+        <isPublished>false</isPublished>
+        <masterLabel>Highspot Integrated with Salesforce</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-10-29</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>5</timesToDisplay>
+        <title>Highspot Integrated with Salesforce!</title>
+        <uiFormulaRule>
+            <criteria>
+                <leftValue>{!$Permission.CustomPermission.Highspot_Custom_Permission}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>TRUE</rightValue>
+            </criteria>
+        </uiFormulaRule>
+        <userAccess>SpecificPermissions</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

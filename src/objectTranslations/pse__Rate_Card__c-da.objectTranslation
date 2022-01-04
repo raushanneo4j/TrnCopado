@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Rate Card</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Rate Cards</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Rate Card Fields For Rate Card Set --></label>
+        <name>pse__Rate_Card_Fields_For_Rate_Card_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate --></label>
+        <name>pse__Average_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cascading Role --></label>
+        <name>pse__Cascading_Role__c</name>
+    </fields>
+    <fields>
+        <help>Priskortet vil ikke længere blive anvendt efter den dato, der er indtastet her. Hvis du indtaster en slutdato, skal du også indtaste en startdato. Hvis der er en startdato og ingen slutdato, anvendes satskortet.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Arkitekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Konsulent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Client Manager</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Projektleder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Træner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Business analytiker</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Priskortet træder i kraft den dato, der er indtastet her.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate --></label>
+        <name>pse__Suggested_Bill_Rate__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Rate Card Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Resumé</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Vurder kortnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Rate Card must not reference more than one of the following: Account, Region, Practice, Group. --></errorMessage>
+        <name>pse__Rate_Card_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The start date must be before the end date. --></errorMessage>
+        <name>pse__Start_Date_must_be_before_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

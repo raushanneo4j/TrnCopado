@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Lookup to the account. This is copied from the source resource request. --></help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the resource request to be copied when creating a resource request set. --></help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the opportunity. This is copied from the source resource request. --></help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the project. This is copied from the source resource request. --></help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date and time on which a resource request belonging to the same resource request set was staffed. --></help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the resource request. This is populated with the final staffed resource request belonging to this resource request set. --></help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+</CustomObjectTranslation>

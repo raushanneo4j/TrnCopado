@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>PowerEditorCTLR</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PowerEditorOpportunityLineItemCTLR</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>PowerEditor 1_0_0. A salesops-utility. PowerEditor respects org security but bypasses validation layers. Grant-based (up to 10 field).
+Helps admins avoid freq VR inc/excl rewrites.  Metadata/config found in Setup&gt; Custom Setting&gt; Bypassable*</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PowerEditor pages and controllers</label>
+    <pageAccesses>
+        <apexPage>PowerEditor</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>PowerEditorOpportunityLineItem</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

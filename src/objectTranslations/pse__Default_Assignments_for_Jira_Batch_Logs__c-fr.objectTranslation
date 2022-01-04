@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assignations par défaut pour les journaux de lot Jira</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assignations par défaut pour les journaux de lot Jira</value>
+    </caseValues>
+    <fields>
+        <help>L&apos;identifiant d&apos;enregistrement du journal.</help>
+        <label><!-- Default Assignments Jira Batch Log ID --></label>
+        <name>pse__Default_Assignments_Jira_Batch_Log_ID__c</name>
+    </fields>
+    <fields>
+        <help>Lien Master-Detail avec l’assignation par défaut associée pour l’enregistrement de lot Jira.</help>
+        <label><!-- Default Assignments for Jira Batch --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique le type de journal (Erreur, Information, Abandonner, Externe).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Avorter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Erreur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Externe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Information</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le texte du message.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Assignation par défaut Nom du journal de</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

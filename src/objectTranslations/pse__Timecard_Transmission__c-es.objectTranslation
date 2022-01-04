@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transmisión de tarjeta de tiempo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transmisiones de tarjeta de tiempo</value>
+    </caseValues>
+    <fields>
+        <help>Número máximo de recursos que podemos enviar tarjetas de tiempo en una sola respuesta.</help>
+        <label><!-- Batch Limit --></label>
+        <name>pse__Batch_Limit__c</name>
+    </fields>
+    <fields>
+        <help>La fecha de finalización contenida en la solicitud POST.</help>
+        <label><!-- End Date --></label>
+        <name>pse__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Mensaje devuelto cuando se produce un error.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Número de transmisiones de recursos procesadas con un estado de Completo.</help>
+        <label><!-- Records Processed --></label>
+        <name>pse__Records_Processed__c</name>
+    </fields>
+    <fields>
+        <help>La fecha de inicio contenida en la solicitud POST.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Estado de la transmisión de la tarjeta de tiempo.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation>Fallido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>En progreso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>Éxito</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Timecard Transmission Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de transmisión de la tarjeta de t</nameFieldLabel>
+</CustomObjectTranslation>

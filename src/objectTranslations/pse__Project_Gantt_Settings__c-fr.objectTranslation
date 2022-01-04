@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Paramètres de Gantt de tâche de projet --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Paramètres de Gantt de tâche de projet --></value>
+    </caseValues>
+    <fields>
+        <help>Lorsqu&apos;un projet est verrouillé pour modification, ce paramètre détermine si les utilisateurs (autorisés à modifier des tâches sur le Gantt de tâches du projet) ont la possibilité d&apos;interrompre le verrouillage et de forcer l&apos;autre utilisateur en mode lecture seule.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom de l&apos;API du jeu de champs, sur l&apos;objet de tâche du projet, qui contient les colonnes personnalisées à afficher dans le Gantt de tâches du projet. Lorsque le paramètre est vide, le jeu de champs Colonnes personnalisées Gantt est utilisé.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les enregistrements dans Project Task Gantt ne sont pas chargés dans un tampon. La valeur par défaut est désélectionnée. Ce paramètre ne doit être modifié qu&apos;après consultation du service clientèle de FinancialForce.com.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, le bouton de résolution des dépendances est désactivé lorsque les dépendances des tâches du projet sont synchronisées. S&apos;il est désélectionné, le bouton reste actif lorsque les dépendances des tâches du projet n&apos;ont pas besoin d&apos;être synchronisées. La valeur par défaut est désélectionnée.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Détermine le nombre de lignes à afficher au-dessus de la vue actuelle dans le projet Gantt. La valeur par défaut est 20. Ce paramètre ne doit être modifié qu&apos;après consultation du service clientèle de FinancialForce.com.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé pour afficher une info-bulle personnalisée pour les jalons. S&apos;il est défini, ce paramètre remplace l&apos;info-bulle Milestone par défaut.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé pour afficher une info-bulle personnalisée pour les affectations de tâches de projet. S&apos;il est défini, ce paramètre remplace l&apos;info-bulle d&apos;affectation des tâches de projet par défaut.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Détermine les niveaux d&apos;accès à l&apos;édition de Gantt pour le gestionnaire de projet. Les valeurs sont &quot;Full&quot; (valeur par défaut) - peuvent éditer des projets créés, &quot;Read&quot; - n&apos;a qu&apos;un accès en lecture seule, ou &quot;None&quot; - accès déterminé par des contrôles d&apos;autorisation.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé pour afficher une info-bulle personnalisée pour les projets. S&apos;il est défini, ce paramètre remplace l&apos;info-bulle du projet par défaut.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un champ défini sur une tâche de projet contenant des champs non modifiables dans Gantt de la tâche de projet.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les personnalisations relatives à la largeur, à l&apos;ordre et à la visibilité des colonnes dans le Gantt de tâches du projet seront mémorisées par utilisateur.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, le bouton Créer une demande de ressource est affiché dans la barre d&apos;outils Gantt de la tâche de projet. Utilisez cette option pour affecter le plan de projet via le bouton Créer une demande de ressource à partir de la page Affectations aux tâches du projet.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si le nombre d&apos;heures écoulé s&apos;affiche dans l&apos;affichage de la barre des tâches dans le volet Planification. Ce paramètre ne contrôle pas l&apos;affichage du bouton% Hrs dans le volet Planification.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si les points remplissent le pourcentage affiché dans la barre des tâches dans le volet Planification. Ce paramètre est sélectionné par défaut. Ce paramètre ne contrôle pas l&apos;affichage du bouton% Pts dans le volet Planification.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé pour afficher une info-bulle personnalisée pour les tâches du projet. S&apos;il est défini, ce paramètre remplace l&apos;info-bulle de la tâche de projet par défaut.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Détermine le nombre de lignes à afficher en dessous de la vue actuelle dans Gantt de tâches du projet. La valeur par défaut est 10. Ce paramètre ne doit être modifié qu&apos;après consultation du service clientèle de FinancialForce.com.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

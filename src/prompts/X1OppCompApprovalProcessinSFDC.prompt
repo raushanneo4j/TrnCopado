@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>1% Opp Comp Approval Process in SFDC</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn More Here</actionButtonLabel>
+        <actionButtonLink>https://docs.google.com/document/d/1HNjDhcNzaYArtZyaxdTeyiAjjYKQ7eSndxtAF5-GYEI/edit</actionButtonLink>
+        <body>The Google tracker is being phased out! All SDRs can now submit their 1% opps for approval right out of Salesforce.</body>
+        <customApplication>standard__LightningSales</customApplication>
+        <delayDays>1</delayDays>
+        <description>The old Google tracker is being phased out and replaced by an automated approval process in SFDC for the SDRs to submit their 1% opportunities for approval to their managers and the SDR director.</description>
+        <dismissButtonLabel>Great to know!</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-11-20</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>1% Opp Comp Approval Process in SFDC</masterLabel>
+        <publishedDate>2021-11-15</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-11-15</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>5</timesToDisplay>
+        <title>1% Opp Approval Process in SFDC</title>
+        <uiFormulaRule>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - sdr</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - sdr manager</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - analytics</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - sales operations</rightValue>
+            </criteria>
+        </uiFormulaRule>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>SpecificProfiles</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

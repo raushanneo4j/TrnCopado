@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 集成集线器连接器：Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>如果与Jira集成失败，则接收错误通知的电子邮件地址。</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Jira应用程序的URL。用于身份验证。</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>选择Map PSA Projects to Jira Issues字段时，确定使用PSA字段值更新项目中定义的值更新映射项目字段的Jira问题状态类别。</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>选中“启用与Jira问题同步项目”字段时，将确定与PSA项目同步的Jira问题的类型。此值区分大小写，并且问题类型必须存在于Jira应用程序中。</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>指示同步到Jira的PSA资源是否接收带有Jira用户名的电子邮件通知以及用于设置其密码的链接。</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>选择后，PSA项目将映射到Jira问题，而不是映射到Jira项目。 Jira问题的类型由Jira Issue Type字段的值确定。</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>从星期一开始的最大时间卡天数，可以针对资源每周记录时间。您可以输入1到7之间的整数。例如，输入5以启用星期一到星期五的时间记录。</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>每天可以为资源记录的最大时间卡小时数。您可以输入1到24之间的值。</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>选择“将PSA项目映射到Jira问题”字段时，确定当Jira问题具有在Jira问题状态类别中定义的状态时更新映射项目字段的值。此值区分大小写。</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>用于将问题链接到父问题类型的Jira自定义字段的名称，例如，父链接。关系可以有多个级别，但Jira Issue Type中定义的问题类型是考虑的最高级别。</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>指示是否应将Jira工作日志同步到PSA时间卡。使用功能控制台启用PSA工作流程中从Jira到时间卡的同步工作日志时自动填充。</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>指示PSA项目是否应与Jira问题同步。使用功能控制台启用从PSA到问题的同步项目工作流程时自动填充。</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>指示PSA项目是否应与Jira项目同步。使用功能控制台启用从PSA到项目中的同步项目时，自动填充。</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>指示是否应将PSA资源同步到Jira用户。使用功能控制台启用从Jira工作流中的PSA到用户的同步资源时自动填充。</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>创建时间卡的状态。</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>指示是否应根据Jira问题状态更新PSA项目。</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>指示Jira应用程序URL中提供的Jira应用程序是否为Jira Cloud版本。如果您使用的是Jira Server，请取消选择。</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+</CustomObjectTranslation>

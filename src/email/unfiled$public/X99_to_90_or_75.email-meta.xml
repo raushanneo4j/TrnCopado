@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>99% to 90% or 75%</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>99% to 90% or 75%</name>
+    <style>none</style>
+    <subject>ACTION REQUIRED: {!Opportunity.Name} Has Moved Down From 99%</subject>
+    <textOnly>{!Opportunity.Name} has moved down from 99% because either:
+
+- One or more fields are incorrect/incomplete. Please review the Closed Won Checklist
+- The file attached to the opp does not follow the naming convention. Please rename using the  File Naming Convention</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

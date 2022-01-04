@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tariefkaart set Verbinding</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tariefkaart set Verbindingen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Rate Card Set --></label>
+        <name>pse__Rate_Card_Set__c</name>
+        <relationshipLabel><!-- Rate Card Set Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Card --></label>
+        <name>pse__Rate_Card__c</name>
+        <relationshipLabel><!-- Rate Card Set Junctions --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Rate Card Set Junction Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tariefkaart set Verbindingsnaam</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You cannot associate the rate card with the rate card set. They must both use the same currency. --></errorMessage>
+        <name>pse__Rate_Card_Set_Currency_Mismatch</name>
+    </validationRules>
+</CustomObjectTranslation>

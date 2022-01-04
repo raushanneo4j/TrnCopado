@@ -1,0 +1,69 @@
+Dear {!Opportunity.OwnerFirstName}, 
+<br><br>
+
+Congratulations on closing Aura Enterprise with {!Opportunity.Name} with {!Opportunity.Account}. It is critical to get the customer onboarded as soon as possible.  The assigned Customer Success Manager (CSM) will email the customer contact, as per the Order Form, a confirmation that their environment has been provisioned. 
+<br><br>
+
+We need you to:
+<ol><li>Introduce the assigned CSM to the customer. You can use <a href="https://drive.google.com/file/d/1M4ushmCH3S4lMr1CwKTjiBWyhGO2USkD/view?usp=sharing">this email template</a> or write your own, using the same key points as the template.</li>
+<li>Review the <a href="https://sites.google.com/neotechnology.com/services/methodology/customer-success/cs-processes/covered-accounts-onboarding-process?authuser=1#h.a2u153bpr5ko">Internal Debrief</a> document and participate in the Internal Debrief meeting that the CSM will schedule in the next week..</li>
+<li>Attend the Onboarding meeting, which will be coordinated by the CSM.</li>
+</ol>
+
+
+After you introduce the CSM, he/she will coordinate the onboarding communication with the customer. We will invite you and the SE to the Onboarding call to ensure a smooth transition to the customer’s post-sale journey with Neo4j.
+<br><br>
+
+The Internal Debrief is a critical, brief meeting that prepares the CSM with the proper background and intel that they will need to represent Neo4j in advising and advocating for this new customer. Please be prepared to address the following topics:
+
+<ul>
+<li>Key stakeholders - Project Team, Project/Initiative Owner, Business Sponsor, Champion(s), etc.</li>
+<li>Customer level of knowledge/skills</li>
+<li>Use case, challenges, success criteria, milestones, etc.</li>
+<li>Deal content confirmation, including any Professional Services </li>
+</ul>
+
+Prior to the Internal Debrief, the CSM will review the Opportunity and linked Opportunity Doc  - please ensure that the CSM has access to that document.
+<br><br>
+
+Thank you.
+
+<br><br><br>
+
+<b>Salesforce Info: </b>
+<br><br>
+
+{!Opportunity.Account} has a deal that has moved to 99%, please begin coordinating the customer on-boarding. 
+<br><br>
+
+- Opportunity Link: {!Opportunity.Link}
+<br><br>
+
+- Field Engineer: {!Opportunity.Field_Engineer__c}
+<br><br>
+
+- Account Name: {!Opportunity.Account}
+<br><br>
+
+- Account ID: {!Opportunity.AccountId} 
+<br><br>
+
+- Account Location: {!Account.ShippingCountry}
+<br><br>
+
+- Use Case: {!Opportunity.Use_Case__c}, {!Opportunity.Use_Case_Sub__c}
+<br><br>
+
+- Partner: {!Opportunity.Partner__c}
+<br><br>
+
+- Partner Role: {!Opportunity.Partner_Role__c} 
+<br><br>
+
+- Revenue: {!Account.Account_Revenue__c}
+<br><br>
+
+- Support Level: {!Opportunity.Opp_Support_Level__c}
+<br><br>
+
+- Deal Size: {!Opportunity.ARR__c}

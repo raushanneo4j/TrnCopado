@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Backlog Berekening</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Backlog Berekeningen</value>
+    </caseValues>
+    <fields>
+        <help>Een intern veld gebruikt door PSE - niet bedoeld voor weergave aan gebruikers.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Of u de achterstand van projecten in de regio, in de praktijk of in een groep wilt berekenen.</help>
+        <label><!-- Calculate Project Backlog --></label>
+        <name>pse__Calculate_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Fields for Current Time Period --></label>
+        <name>pse__Copy_Fields_for_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <help>De einddatum voor backlogberekeningen. Als er geen einddatum is opgegeven, worden alle records vanaf de startdatum verwerkt. Dit wordt aanbevolen bij het berekenen van niet-geplande achterstanden.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Of u de achterstand voor alle subniveaus van de geselecteerde regio, training of groep wilt berekenen. Dit veld wordt genegeerd als de backlog alleen wordt berekend voor een resource.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Process Batch Id --></label>
+        <name>pse__Post_Process_Batch_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reuse Detail Objects --></label>
+        <name>pse__Reuse_Detail_Objects__c</name>
+    </fields>
+    <fields>
+        <help>Als u deze waarde instelt, wordt het veld Begindatum automatisch ingesteld</help>
+        <label><!-- Start Calculating From --></label>
+        <name>pse__Start_Calculating_From__c</name>
+        <picklistValues>
+            <masterLabel>Start of next week</masterLabel>
+            <translation>Begin volgende week</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of this week</masterLabel>
+            <translation>Begin van deze week</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>Vandaag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Compleet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>Fout opgetreden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Bezig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>Niet begonnen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Processing</masterLabel>
+            <translation>Nabewerking</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Maand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>Eeuwigdurend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Kwartaal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Week</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Jaar</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Backlog Calculation Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Opties</label>
+            <section>Options</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Backlog Berekening Naam</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Project may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Project is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+</CustomObjectTranslation>

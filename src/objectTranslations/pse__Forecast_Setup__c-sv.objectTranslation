@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognosinställning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognosinställning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Ange antal dagar före det aktuella datumet till vilket aktuella händelser ska ingå. Ange 0 för att använda idag som cutoffdatum. Lämna tomt för att använda standardavstängningsdatumet, vilket är slutet av förra veckan.</help>
+        <label><!-- Actuals Cutoff Offset --></label>
+        <name>pse__Actuals_Cutoff_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Prognoskurvan använde sig av en möjlighet under en prognosberäkning om möjligheten inte har en kurva tilldelad den.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Opportunity Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Prognoskurvan applicerades på ett projekt under en prognosberäkning om projektet inte har en kurva tilldelad den.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Project Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Anger installationsobjektet som kommer att användas för nya prognosberäkningar.</help>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>Om du väljer Opportunity Product, ingår endast möjlighetsprodukter som har kontrollerat IsServicesProductLine. Om du väljer Produkt, ingår endast möjlighetsprodukter som har IsServicesProdukt markerad på själva produkten.</help>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity Product</masterLabel>
+            <translation>Möjlighet Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produkt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Om den är satt, tillämpas alltid möjlighetskurvan när du gör en beräkning av faktureringsprognoser.</help>
+        <label><!-- Use Opportunity Curve for Products --></label>
+        <name>pse__Use_Opportunity_Curve_For_Products__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Setup Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognos inställningsnamn</nameFieldLabel>
+</CustomObjectTranslation>

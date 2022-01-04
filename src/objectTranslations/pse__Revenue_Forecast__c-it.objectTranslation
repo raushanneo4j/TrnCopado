@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Previsione delle entrate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Previsioni delle entrate</value>
+    </caseValues>
+    <fields>
+        <help>Contiene il valore combinato dei campi Entrate riconosciute fino alla data e Entrate in attesa di riconoscimento.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Data e ora dell&apos;ultimo aggiornamento di questa previsione delle entrate.</help>
+        <label><!-- Last Updated --></label>
+        <name>pse__Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>Cerca la pietra miliare a cui questa previsione delle entrate si riferisce.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cerca l’opportunità a cui si riferisce questa previsione delle entrate.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cerca il progetto a cui si riferisce questa previsione delle entrate.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Entrate pronte per il riconoscimento in questa previsione delle entrate.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>Le entrate che sono già state riconosciute in questa previsione delle entrate.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>Entrate pianificate per il riconoscimento in questa previsione delle entrate.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Cerca il periodo di tempo impostato su questa previsione delle entrate.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Se ci sono mesi che non contengono entrate pianificate o effettive, le entrate non programmate vengono ripartite uniformemente tra quei mesi, ad eccezione dei mesi vuoti che cadono tra i mesi contenenti entrate programmate o effettive.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome previsione entrate</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast_Opportunity --></label>
+        <name>pse__Run_Revenue_Forecast_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

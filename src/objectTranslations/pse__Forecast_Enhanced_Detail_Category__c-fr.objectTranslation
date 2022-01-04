@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catégorie de détail des prévisions de facturation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catégories détaillées des prévisions de facturation</value>
+    </caseValues>
+    <fields>
+        <help>La valeur Réelle est la somme de Factures: Dépenses, Factures: Jalons, Factures: Ajustements divers et Factures: Cartes de pointage.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Champ de formule représentant la valeur affichée sur la page Prévisions de facturation pour cette catégorie de détail des prévisions de facturation.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <help>La facturation des dépenses.</help>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <help>La facturation des jalons.</help>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>La facturation des ajustements divers.</help>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help>La facturation des fiches de présence.</help>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Detail --></label>
+        <name>pse__Forecast_Enhanced_Detail__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Recherchez le remplacement de prévision de facturation actuellement appliqué à cette catégorie de détail de prévision de facturation.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>Recherchez l’utilisateur qui a créé le remplacement de prévision de facturation actuellement actif appliqué à cette catégorie de détail de prévision de facturation.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Date et heure de création du remplacement de prévision de facturation actuellement actif appliqué à cette catégorie de détail de prévision de facturation.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>Remarques sur le remplacement des prévisions de facturation actuellement appliqué à cette catégorie de détail des prévisions de facturation.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Valeur de la substitution de prévisions de facturation actuellement active appliquée à cette catégorie de détail des prévisions de facturation.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>Les affectations prévues.</help>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>La valeur du backlog programmé correspond à la somme des enregistrements programmés: affectations, programmés: enregistrements conservés, enregistrés, et des événements jalons.</help>
+        <label><!-- Scheduled Backlog --></label>
+        <name>pse__Scheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <help>Les demandes de ressources en attente planifiées.</help>
+        <label><!-- Scheduled: Held RRs --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Les jalons prévus.</help>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Les demandes de ressources non cachées planifiées.</help>
+        <label><!-- Scheduled: Unheld RRs --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Arriéré potentiel, dans le contexte de périodes perpétuelles (Toutes les périodes).</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Detail Category Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la catégorie de détail des prévis</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

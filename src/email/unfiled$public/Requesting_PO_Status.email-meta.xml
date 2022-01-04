@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Requesting PO Status</name>
+    <style>none</style>
+    <subject>Action Item: Provide PO Status for {!Opportunity.Name}</subject>
+    <textOnly>&quot;Yes&quot; was selected for the PO Pending field for {!Opportunity.Name}
+
+Please provide the status of the PO to Finance (CC&apos;ed)</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

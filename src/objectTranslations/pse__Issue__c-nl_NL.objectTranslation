@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Problemen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Plan --></label>
+        <name>pse__Action_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>pse__Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>pse__Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>pse__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Raised --></label>
+        <name>pse__Date_Raised__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impact --></label>
+        <name>pse__Impact__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue Description --></label>
+        <name>pse__Issue_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Name --></label>
+        <name>pse__Issue_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Owner --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>pse__Issue_Owner__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Task --></label>
+        <name>pse__Project_Task__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De ernst van het probleem. Berekend door de waarde Impact en Priority te vermenigvuldigen.</help>
+        <label><!-- Severity --></label>
+        <name>pse__Severity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed - No action</masterLabel>
+            <translation>Gesloten - Geen actie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Voltooid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Bezig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Started</masterLabel>
+            <translation>Nog niet gestart</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation>In de wacht</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het risico dat aan het probleem is verbonden.</help>
+        <label><!-- Risk --></label>
+        <name>pse__risk__c</name>
+        <relationshipLabel><!-- Issues --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Issue Layout</layout>
+        <sections>
+            <label>Auditng</label>
+            <section>Auditng</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Detail</label>
+            <section>Detail</section>
+        </sections>
+        <sections>
+            <label>Staat</label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Issue nummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The Closed Date cannot be blank if the status is set to Completed or Closed - No Action. --></errorMessage>
+        <name>pse__Close_date_mandatory_if_status_is_closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Closed date must be blank if the status is set to  Not Yet Started, In Progress or On Hold. --></errorMessage>
+        <name>pse__Closed_Date_Blank_If_Status_Not_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The issue&apos;s closed date must be after it was raised. --></errorMessage>
+        <name>pse__Closed_Date_Greater_Than_Date_Raised</name>
+    </validationRules>
+</CustomObjectTranslation>

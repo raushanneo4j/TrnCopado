@@ -1,0 +1,2864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cartes de temps</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Timecard Left Header Row Editable --></label>
+        <name>Timecard_Left_Header_Row_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fri Easy Entry Fields --></label>
+        <name>pse__Fri_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mon Easy Entry Fields --></label>
+        <name>pse__Mon_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sat Easy Entry Fields --></label>
+        <name>pse__Sat_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sun Easy Entry Fields --></label>
+        <name>pse__Sun_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCFriHourTooltip --></label>
+        <name>pse__TCFriHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCMonHourTooltip --></label>
+        <name>pse__TCMonHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCSatHourTooltip --></label>
+        <name>pse__TCSatHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCSunHourTooltip --></label>
+        <name>pse__TCSunHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCThuHourTooltip --></label>
+        <name>pse__TCThuHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCTueHourTooltip --></label>
+        <name>pse__TCTueHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCWedHourTooltip --></label>
+        <name>pse__TCWedHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Thu Easy Entry Fields --></label>
+        <name>pse__Thu_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Approval Columns --></label>
+        <name>pse__TimeCardApprovalColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Header Row Editable --></label>
+        <name>pse__TimeCard_Header_Row_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Header Row Readonly --></label>
+        <name>pse__TimeCard_Header_Row_Readonly</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Notes Field Editable --></label>
+        <name>pse__TimeCard_Notes_Field_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Notes Field Readonly --></label>
+        <name>pse__TimeCard_Notes_Field_Readonly</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tue Easy Entry Fields --></label>
+        <name>pse__Tue_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Wed Easy Entry Fields --></label>
+        <name>pse__Wed_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- PSR Total Billable Hours --></label>
+        <name>ProjectStatusReport_Total_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Si les notes agrégées des fiches de présence sur l&apos;interface utilisateur TCEntry pour des lignes similaires dépassent la limite de 255 caractères, les notes agrégées y sont enregistrées.</help>
+        <label><!-- Additional Notes --></label>
+        <name>pse__Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, l&apos;administrateur peut apporter des modifications &quot;globales&quot; à la carte de pointage, y compris aux modifications apportées au projet, à la ressource, à la devise ou à la date de la carte de visite, même si l&apos;option Inclure dans les données financières est cochée. Configuration requise: le mode de calcul réel doit être défini sur &quot;Planifié&quot;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher doit être cochée lorsque la carte de pointage est approuvée - généralement en fonction du champ Statut.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Stocke l&apos;historique des notes d&apos;audit. Lorsqu&apos;un utilisateur modifie un projet ou une affectation à l&apos;aide de l&apos;interface Timecard et que les notes d&apos;audit dépassent 255 caractères, les anciennes notes d&apos;audit sont déplacées et ajoutées ici.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Indique que le taux de facturation de la carte de pointage était initialement défini par défaut sur un jalon (plutôt que sur une affectation).</help>
+        <label><!-- Bill Rate Defaulted from Milestone --></label>
+        <name>pse__Bill_Rate_Defaulted_from_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate --></label>
+        <name>pse__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Amount --></label>
+        <name>pse__Cost_Rate_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Currency Code --></label>
+        <name>pse__Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Taux de change Taux de change, par rapport à la devise d&apos;entreprise, calculé à la date de fin du calendrier</help>
+        <label><!-- Cost Rate Exchange Rate --></label>
+        <name>pse__Cost_Rate_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate --></label>
+        <name>pse__Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate is Daily Rate --></label>
+        <name>pse__Daily_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate is Daily Rate --></label>
+        <name>pse__Daily_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Permet de remplacer le nombre de jours de calcul</help>
+        <label><!-- Days Worked Override --></label>
+        <name>pse__Days_Worked_Override__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, cela devrait désactiver toute soumission automatique basée sur des déclencheurs PSA pour approbation pour la carte de pointage.</help>
+        <label><!-- Disable Approval Auto Submit --></label>
+        <name>pse__Disable_Approval_Auto_Submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, cochez la case Exclure de la facturation des fractionnements de la carte de pointage enfant, qui a le même effet que le blocage de la facturation, mais vise à exclure définitivement la génération de facturation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la carte de pointage est exclue du nombre maximal d&apos;heures défini dans l&apos;option de configuration max-resource-hours-per-day pouvant être entrée par jour pour une ressource. Voir &quot;max-ressource-heures-par-jour&quot;.</help>
+        <label><!-- Exclude from Daily Maximum --></label>
+        <name>pse__Exclude_from_Daily_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Notes --></label>
+        <name>pse__Friday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours To Days Rule (Assignment) --></label>
+        <name>pse__Hours_To_Days_Rule_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours To Days Rule (Project) --></label>
+        <name>pse__Hours_To_Days_Rule_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location - Fri --></label>
+        <name>pse__Location_Fri__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Mon --></label>
+        <name>pse__Location_Mon__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sat --></label>
+        <name>pse__Location_Sat__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sun --></label>
+        <name>pse__Location_Sun__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Thu --></label>
+        <name>pse__Location_Thu__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Tue --></label>
+        <name>pse__Location_Tue__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Wed --></label>
+        <name>pse__Location_Wed__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Notes --></label>
+        <name>pse__Monday_Notes__c</name>
+    </fields>
+    <fields>
+        <help>S&apos;il est défini, il remplace le groupe auquel les transactions de coût de l&apos;en-tête de la carte de pointage sont cumulées pour les valeurs réelles du groupe, même si son projet ou sa ressource appartient à un groupe différent.</help>
+        <label><!-- Override Cost Group --></label>
+        <name>pse__Override_Cost_Group__c</name>
+        <relationshipLabel><!-- Override Cost Group For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si elle est définie, elle remplace la pratique à laquelle les transactions de coût de l&apos;en-tête de la carte de pointage seront cumulées pour les données réelles, même si son projet ou sa ressource est dans une pratique différente.</help>
+        <label><!-- Override Cost Practice --></label>
+        <name>pse__Override_Cost_Practice__c</name>
+        <relationshipLabel><!-- Override Cost Practice For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>S&apos;il est défini, il remplace la région dans laquelle les transactions de coût de l&apos;en-tête de la carte de pointage sont cumulées pour les régions réelles, même si son projet ou sa ressource se trouve dans une région différente.</help>
+        <label><!-- Override Cost Region --></label>
+        <name>pse__Override_Cost_Region__c</name>
+        <relationshipLabel><!-- Override Cost Region For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Si cette option est définie, elle remplace le groupe auquel les transactions sur revenus de l&apos;en-tête de la carte de pointage sont cumulées pour les comptes réels de groupe, même si leur projet ou ressource fait partie d&apos;un groupe différent.</help>
+        <label><!-- Override Revenue Group --></label>
+        <name>pse__Override_Revenue_Group__c</name>
+        <relationshipLabel><!-- Override Revenue Group For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>S&apos;il est défini, il remplace la pratique à laquelle les transactions de revenus de l&apos;en-tête de la carte de pointage seront cumulées pour les données réelles, même si son projet ou sa ressource est dans une pratique différente.</help>
+        <label><!-- Override Revenue Practice --></label>
+        <name>pse__Override_Revenue_Practice__c</name>
+        <relationshipLabel><!-- Override Revenue Practice For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>S&apos;il est défini, il remplace la région dans laquelle les transactions de revenus de l&apos;en-tête de la carte de pointage seront cumulées pour les régions réelles, même si son projet ou sa ressource se trouve dans une région différente.</help>
+        <label><!-- Override Revenue Region --></label>
+        <name>pse__Override_Revenue_Region__c</name>
+        <relationshipLabel><!-- Override Revenue Region For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Location --></label>
+        <name>pse__Primary_Location__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>ALABAMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>ALASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>SAMOA AMÉRICAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>ARIZONA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>ARKANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>ASIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>CALIFORNIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>CANADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>COLORADO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>CONNECTICUT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>DELAWARE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>DISTRICT DE COLOMBIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>ÉTATS FÉDÉRÉS DE MICRONÉSIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>FLORIDE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>GÉORGIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>GUAM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>HAWAII</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>IDAHO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>ILLINOIS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>INDIANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>KANSAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>KENTUCKY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>AMÉRIQUE LATINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>LOUISIANE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>ILES MARSHALL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>MARYLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>MASSACHUSETTS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>MICHIGAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>MINNESOTA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>MISSISSIPPI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>MISSOURI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>MONTANA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>NEBRASKA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>NEVADA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>NEW HAMPSHIRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>NEW JERSEY</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>NOUVEAU MEXIQUE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>NEW YORK</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>ÎLES MARIANNES DU NORD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>OKLAHOMA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>OREGON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>AUTRE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>PALAU</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>PENNSYLVANIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>PORTO RICO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>RHODE ISLAND</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>CAROLINE DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>DAKOTA DU SUD</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>TENNESSEE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>TEXAS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>UTAH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>VERMONT</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>LES ILES VIERGES</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>VIRGINIE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>WASHINGTON</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>VIRGINIE OCCIDENTALE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>WISCONSIN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>WYOMING</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Project Location --></label>
+        <name>pse__Primary_Project_Location__c</name>
+        <relationshipLabel><!-- Primary Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Taux de change du projet (taux de facturation), par rapport à la devise d&apos;entreprise, calculé à la date de fin du calendrier</help>
+        <label><!-- Project Exchange Rate --></label>
+        <name>pse__Project_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Fri --></label>
+        <name>pse__Project_Location_Fri__c</name>
+        <relationshipLabel><!-- Friday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Mon --></label>
+        <name>pse__Project_Location_Mon__c</name>
+        <relationshipLabel><!-- Monday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Sat --></label>
+        <name>pse__Project_Location_Sat__c</name>
+        <relationshipLabel><!-- Saturday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Sun --></label>
+        <name>pse__Project_Location_Sun__c</name>
+        <relationshipLabel><!-- Sunday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Thu --></label>
+        <name>pse__Project_Location_Thu__c</name>
+        <relationshipLabel><!-- Thursday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Tue --></label>
+        <name>pse__Project_Location_Tue__c</name>
+        <relationshipLabel><!-- Tuesday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Wed --></label>
+        <name>pse__Project_Location_Wed__c</name>
+        <relationshipLabel><!-- Wednesday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology_Object__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <picklistValues>
+            <masterLabel>Methodology Step 1</masterLabel>
+            <translation>Méthodologie Étape 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Methodology Step 2</masterLabel>
+            <translation>Méthodologie Étape 2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Methodology Step 3</masterLabel>
+            <translation>Méthodologie Étape 3</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase_Object__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Deployment</masterLabel>
+            <translation>Déploiement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation>Conception</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation>Développement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation>Entretien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation>Planification</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirements</masterLabel>
+            <translation>Exigences</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategy</masterLabel>
+            <translation>Stratégie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation>Soutien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation>Essai</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation>Entraînement</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le nombre total d&apos;heures liées aux tâches du projet pour cette carte de pointage.</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Notes --></label>
+        <name>pse__Saturday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rejeté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation>Enregistré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Soumis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Notes --></label>
+        <name>pse__Sunday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Notes --></label>
+        <name>pse__Thursday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Credited --></label>
+        <name>pse__Time_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Excluded --></label>
+        <name>pse__Time_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Notes --></label>
+        <name>pse__Timecard_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Pour administrateur uniquement. Sélectionné s&apos;il a été créé à partir de l&apos;interface de la carte de pointage à l&apos;aide de l&apos;option Terminé. Non sélectionné lors de l&apos;utilisation de Enregistrer ou Soumettre dans l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Timecard UI Save/Submit Needed --></label>
+        <name>pse__Timecard_UI_Save_Submit_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>pse__Total_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>pse__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked Advanced --></label>
+        <name>pse__Total_Days_Worked_Advanced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>pse__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Fri --></label>
+        <name>pse__Travel_Fri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Mon --></label>
+        <name>pse__Travel_Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sat --></label>
+        <name>pse__Travel_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sun --></label>
+        <name>pse__Travel_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Thu --></label>
+        <name>pse__Travel_Thu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Tue --></label>
+        <name>pse__Travel_Tue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Wed --></label>
+        <name>pse__Travel_Wed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Week --></label>
+        <name>pse__Travel_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Notes --></label>
+        <name>pse__Tuesday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Notes --></label>
+        <name>pse__Wednesday_Notes__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Timecard Header Layout - BP</layout>
+        <sections>
+            <label><!-- Audit Information --></label>
+            <section>Audit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Estimated Totals (may not be accurate in multi-currency orgs) --></label>
+            <section>Estimated Totals (may not be accurate in multi-currency orgs)</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Data --></label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label><!-- Hours and Notes --></label>
+            <section>Hours and Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Timecard Attributes --></label>
+            <section>Timecard Attributes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Timecard Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Totaux estimés (peuvent ne pas être précis dans les organisations multidevises)</label>
+            <section>Estimated Totals (may not be accurate in multi-currency orgs)</section>
+        </sections>
+        <sections>
+            <label>Données financières</label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label>Heures et notes</label>
+            <section>Hours and Notes</section>
+        </sections>
+        <sections>
+            <label>Lieu et Voyage</label>
+            <section>Location and Travel</section>
+        </sections>
+        <sections>
+            <label>Phase du projet, emplacement et méthodologie</label>
+            <section>Project Phase, Location and Methodology</section>
+        </sections>
+        <sections>
+            <label>Substitutions Région / Pratique / Groupe</label>
+            <section>Region/Practice/Group Overrides</section>
+        </sections>
+        <sections>
+            <label>Données de planification</label>
+            <section>Scheduling Data</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Timecard Id</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- No individual day for a single line can be less than zero hours --></errorMessage>
+        <name>pse__A_Day_Can_Not_Be_Less_Then_Zero_Hrs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No individual day for a single line can be more than 24 hours --></errorMessage>
+        <name>pse__A_Day_Can_Not_Be_More_Then_24_Hrs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You entered more time than scheduled --></errorMessage>
+        <name>pse__Assignment_Hours</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may only be marked as &quot;Time Credited&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Timecards_may_not_be_Credited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may only be marked as &quot;Time Excluded&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Timecards_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may not be marked as &quot;Time Excluded&quot; if they are also marked as &quot;Time Credited&quot;. --></errorMessage>
+        <name>pse__Credited_Timecards_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard to be marked as Approved, it must also be marked as Submitted. --></errorMessage>
+        <name>pse__Timecard_Approval_Requires_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Project must match Assignment Project. --></errorMessage>
+        <name>pse__Timecard_Assignment_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Resource must match Assignment Resource. --></errorMessage>
+        <name>pse__Timecard_Assignment_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Header&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Header_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Header&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Header_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Header must span 1 week (7 days inclusive). --></errorMessage>
+        <name>pse__Timecard_Header_must_be_1_week_long</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard may only be marked as Billable if its Project is Billable and its Assignment, if any, is Billable. --></errorMessage>
+        <name>pse__Timecard_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the methodology with this timecard. The methodology must belong to the same project as the timecard. Select a methodology that belongs to the same project as the timecard. --></errorMessage>
+        <name>pse__Timecard_Methodology_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Project must match Milestone Project. --></errorMessage>
+        <name>pse__Timecard_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the phase with this timecard. The phase must belong to the same project as the timecard. Select a phase that belongs to the same project as the timecard. --></errorMessage>
+        <name>pse__Timecard_Phase_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards for this Project and/or Resource require an Assignment. --></errorMessage>
+        <name>pse__Timecard_Requires_Assignment</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_A_Timecard --></label>
+        <name>pse__Log_A_Timecard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_a_Timecard_New_UI --></label>
+        <name>pse__Log_a_Timecard_New_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_a_Timecard_with_Task_Time --></label>
+        <name>pse__Log_a_Timecard_with_Task_Time</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Time_Entry --></label>
+        <name>pse__Time_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- edit_in_time_entry --></label>
+        <name>pse__edit_in_time_entry</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>리소스 전송</value>
+    </caseValues>
+    <fields>
+        <help>자원 ID.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>요청 된 모든 타임 카드 데이터가 반환되면 완료를 표시합니다. 그렇지 않으면 대기 중을 표시합니다.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>완전한</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>대기중인</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>타임 카드 전송 ID.</help>
+        <label><!-- Timecard Transmission --></label>
+        <name>pse__Timecard_Transmission__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Resource Transmission Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>리소스 전송 이름</nameFieldLabel>
+</CustomObjectTranslation>

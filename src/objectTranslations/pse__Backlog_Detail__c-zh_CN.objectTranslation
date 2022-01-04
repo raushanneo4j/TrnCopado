@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>积压细节</value>
+    </caseValues>
+    <fields>
+        <label><!-- Time Period Type --></label>
+        <name>psa_report__Time_Period_Type__c</name>
+    </fields>
+    <fields>
+        <help>相关分配 - 仅在设置了资源时适用</help>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>比林斯用于计算未计划收入的金额</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <help>预订金额用于计算未计划的收入金额</help>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Time Cost --></label>
+        <name>pse__External_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request External Cost --></label>
+        <name>pse__Held_Resource_Request_External_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Hours --></label>
+        <name>pse__Held_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Internal Cost --></label>
+        <name>pse__Held_Resource_Request_Internal_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Revenue --></label>
+        <name>pse__Held_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Project Backlog --></label>
+        <name>pse__Inactive_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Time Cost --></label>
+        <name>pse__Internal_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reusable --></label>
+        <name>pse__Is_Reusable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Revenue --></label>
+        <name>pse__Milestone_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>根据分配计划和计划例外计划的总天数。例如，如果作业的计划时间为4小时MW，计算期间为2周的包含期，则该值为6天（3天/周* 2）</help>
+        <label><!-- Scheduled Days --></label>
+        <name>pse__Scheduled_Days__c</name>
+    </fields>
+    <fields>
+        <help>在计算时间范围内根据分配计划和计划例外安排的小时数。</help>
+        <label><!-- Scheduled Hours --></label>
+        <name>pse__Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>来自预定作业的可结算收入。对于每小时分配，这是预定小时数*账单费率。对于具有每日帐单费率的分配，这是预定天数*帐单费率。</help>
+        <label><!-- Time Revenue --></label>
+        <name>pse__Time_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Cost --></label>
+        <name>pse__Unheld_Resource_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Hours --></label>
+        <name>pse__Unheld_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Revenue --></label>
+        <name>pse__Unheld_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <layouts>
+        <layout>Backlog Detail Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>收入</label>
+            <section>Revenue</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>积压明细ID</nameFieldLabel>
+</CustomObjectTranslation>

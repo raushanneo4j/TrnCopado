@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom d&apos;un jeu de champs contenant des champs d&apos;affectation à afficher sous forme de colonnes dans la recherche Projet / Affectation sur la page Entrée de la fiche de présence.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;affectations à charger pour la liste déroulante d&apos;affectation des feuilles de temps</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Liste des noms d&apos;API des champs d&apos;affectation à afficher sous forme de colonnes dans la recherche Projet / Affectation dans la page Saisie temporelle améliorée. N&apos;incluez pas le préfixe d&apos;espace de noms pse__ dans le nom de l&apos;API d&apos;un champ. La valeur par défaut est Name, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Restriction de date de début et de fin d’affectation lors du chargement des affectations dans l’interface Timecard. Si la valeur est true, seules les affectations dont les dates de début / fin contiennent ou chevauchent la plage de dates de la carte de pointage sont chargées. Cela affecte uniquement l&apos;interface utilisateur, pas la modification de l&apos;administrateur.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Liste des valeurs d&apos;état d&apos;affectation à utiliser lors du chargement des affectations à partir de la base de données.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Si c&apos;est le cas, lors du chargement initial de la nouvelle Timecard UI, il vérifie les fiches de présence de la semaine précédente. S&apos;il n&apos;y a pas de feuille de temps remplie pour la semaine précédente, l&apos;interface utilisateur affichera une fenêtre de confirmation demandant à l&apos;utilisateur de charger la semaine précédente ou la semaine en cours. Si c&apos;est faux, travaillez comme d&apos;habitude.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Config pour contrôler la valeur maximale de l&apos;heure de retour automatique sur la nouvelle interface utilisateur TC.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>Config pour contrôler la valeur de l&apos;heure de retour automatique minimum sur la nouvelle interface utilisateur TC.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, toutes les cartes de pointage sont soumises pour approbation. Si la valeur est false, seules les fiches de présence sélectionnées par l&apos;utilisateur sont soumises.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom d&apos;un ensemble de champs contenant des champs de projet à afficher sous forme de colonnes dans la recherche Projet / Affectation sur la page Entrée de la carte de pointage.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Liste des noms d&apos;API des champs de projet à afficher sous forme de colonnes dans la recherche Projet / Affectation dans la page Saisie temporelle améliorée. N&apos;incluez pas le préfixe d&apos;espace de noms pse__ dans le nom de l&apos;API d&apos;un champ. La valeur par défaut est Name, Account__r.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Restriction de date de début et de fin du projet lors du chargement du projet / des affectations à partir de la base de données.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom d&apos;un ensemble de champs contenant des champs de ressources à afficher sous forme de colonnes dans la recherche de ressources sur la page Sencha Timecard Entry.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur de configuration est égale à «tous», cela signifie que toutes les ressources ainsi que les ressources utilisateur actuelles seront chargées. Sinon, si la valeur est égale à «ressource» ou nulle, seules les ressources utilisateur actuelles seront chargées.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>Liste des champs de ressources (noms / chemins d&apos;accès complets à l&apos;API) à afficher dans les colonnes de la fenêtre contextuelle de recherche de ressources dans la nouvelle interface de carte de pointage. Recommander au plus 4 champs / colonnes. Valeur par défaut: Name, Region__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Taille du nombre de fiches de présence à enregistrer / soumettre en une seule exécution.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>La configuration est utilisée pour contrôler la sauvegarde de la carte de pointage avec zéro heure. Si cela est vrai, les feuilles de temps avec zéro sont enregistrées sinon pas enregistrées (un avertissement sera affiché sur l&apos;interface utilisateur).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;enregistrements de la carte de pointage, sans compter les enregistrements associés, enregistrés dans une seule demande.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Config pour conserver la carte de pointage triée par nom de champs API Plusieurs champs séparés par un coma peuvent être saisis pour le tri. Ex: CrééDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV Liste des valeurs d&apos;état pour lesquelles les lignes d&apos;entrée de la carte de pointage peuvent être modifiées.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Utilisé pour déterminer quel statut les feuilles de temps seront définies sur le bouton de sauvegarde</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Utilisé pour déterminer quel statut les cartes de pointage seront définies sur le clic du bouton de soumission</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée (true), les préférences de colonne de l&apos;interface utilisateur de saisie de temps sont enregistrées localement. Si cette option est désélectionnée (false), les préférences sont enregistrées sur le serveur.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, les listes déroulantes Location seront liées à l&apos;objet Emplacement du projet au lieu des listes de sélection d&apos;emplacement sur l&apos;interface utilisateur TC.</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>Valeur par défaut du jour de début de semaine utilisée lorsqu&apos;une ressource n&apos;a pas de calendrier professionnel ou dispose d&apos;un calendrier professionnel sans jour de début de semaine.</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Config est utilisé pour contrôler la soumission de la carte de pointage avec zéro heure. Si c&apos;est vrai, les cartes de pointage avec zéro peuvent être soumises, sinon l&apos;avertissement sera affiché sur l&apos;interface utilisateur.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

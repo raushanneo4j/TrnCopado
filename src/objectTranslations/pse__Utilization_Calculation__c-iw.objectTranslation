@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>חישוב ניצול</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>חישובי ניצול</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Batch Id Unheld Calc --></label>
+        <name>pse__Batch_Id_Unheld_Calc__c</name>
+    </fields>
+    <fields>
+        <help>שדה פנימי המשמש את PSE - לא מיועד לתצוגה למשתמשים.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>האם לחשב ניצול היסטורי מרשומות כרטיסי הזמן.</help>
+        <label><!-- Calculate Historical Utilization --></label>
+        <name>pse__Calculate_Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>האם לחשב שימוש צופה פני עתיד ממשימות מתוזמנות.</help>
+        <label><!-- Calculate Scheduled Utilization --></label>
+        <name>pse__Calculate_Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Prior Calculation --></label>
+        <name>pse__Delete_Prior_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted Date --></label>
+        <name>pse__Deleted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>pse__Error_Details__c</name>
+    </fields>
+    <fields>
+        <help>בחר את התפקידים שאינם מחייבים ליצור רשומות סיכום ניצול.</help>
+        <label><!-- Excluded Roles --></label>
+        <name>pse__Excluded_Roles__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>אדריכל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation>מנתח עסקי</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Manager</masterLabel>
+            <translation>מנהל לקוח</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>יועץ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation>קבלן</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation>מנהל</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>מנהל פרוייקט</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior Consultant</masterLabel>
+            <translation>יועץ בכיר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>מאמן</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בחר בערך שמתאר מתי חישובי השימוש ההיסטוריים צריכים להיפסק. זה בדרך כלל היום האחרון בשבוע בו כל כרטיסיות הזמן הוזנו.</help>
+        <label><!-- Historical Utilization Cut-Off Date --></label>
+        <name>pse__Historical_Utilization_Cut_Off_Date__c</name>
+        <picklistValues>
+            <masterLabel>End of Last Week</masterLabel>
+            <translation>סוף השבוע האחרון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End of This Week</masterLabel>
+            <translation>סוף השבוע הזה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation>היום</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization End Date --></label>
+        <name>pse__Historical_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Start Date --></label>
+        <name>pse__Historical_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>האם לחשב ניצול לכל רמות המשנה של האזור, התרגול או הקבוצה הנבחרים. מתעלמים משדה זה אם השימוש מחושב רק עבור משאב.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Sublevels in Subtotals --></label>
+        <name>pse__Include_Sublevels_in_Subtotals__c</name>
+    </fields>
+    <fields>
+        <help>האם חישוב זה הוא חישוב האב לשילוב של אזור / תרגול / קבוצה / משאב ותקופת זמן.</help>
+        <label><!-- Is Report Master --></label>
+        <name>pse__Is_Report_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization End Date --></label>
+        <name>pse__Scheduled_Utilization_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Start Date --></label>
+        <name>pse__Scheduled_Utilization_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>שלם</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error Occurred</masterLabel>
+            <translation>אירעה שגיאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>בתהליך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>לא התחיל</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Group --></label>
+        <name>pse__Subtotal_by_Group__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Practice --></label>
+        <name>pse__Subtotal_by_Practice__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal By Practice) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal by Region --></label>
+        <name>pse__Subtotal_by_Region__c</name>
+        <relationshipLabel><!-- Utilization Calculations (Subtotal by Region) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>סוגי פרקי הזמן לחישוב השימוש בהם.</help>
+        <label><!-- Time Period Types --></label>
+        <name>pse__Time_Period_Types__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>חודש</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>רובע</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>שבוע</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>שנה</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>בחר פרק זמן לחישוב השימוש בו. התאריכים יותאמו עבורך באופן אוטומטי לאחר הבחירה.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Utilization Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>בחר סוג שמתאר חישוב זה.</help>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Month and Last Month</masterLabel>
+            <translation>החודש הנוכחי והחודש האחרון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Month and Next Month</masterLabel>
+            <translation>החודש הנוכחי והחודש הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Last Quarter</masterLabel>
+            <translation>הרבעון הנוכחי והרבעון האחרון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Quarter and Next Quarter</masterLabel>
+            <translation>הרובע הנוכחי והרבע הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Last Week</masterLabel>
+            <translation>השבוע הנוכחי והשבוע האחרון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Week and Next Week</masterLabel>
+            <translation>השבוע הנוכחי והשבוע הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Last Year</masterLabel>
+            <translation>השנה הנוכחית והשנה שעברה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Year and Next Year</masterLabel>
+            <translation>השנה הנוכחית והשנה הבאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Month</masterLabel>
+            <translation>חודש שעבר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Quarter</masterLabel>
+            <translation>רבע אחרון</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Week</masterLabel>
+            <translation>שבוע שעבר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Year</masterLabel>
+            <translation>שנה שעברה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Month</masterLabel>
+            <translation>החודש האחרון, הנוכחי והחודש הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Quarter</masterLabel>
+            <translation>הרבעון האחרון, הנוכחי וה הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Week</masterLabel>
+            <translation>השבוע האחרון, הנוכחי וה הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last, Current and Next Year</masterLabel>
+            <translation>שנה אחרונה, נוכחית ושנה הבאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month Forecast</masterLabel>
+            <translation>תחזית חודש</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month to Date</masterLabel>
+            <translation>חודש לתאריך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Month</masterLabel>
+            <translation>חודש הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Quarter</masterLabel>
+            <translation>הרובע הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Week</masterLabel>
+            <translation>שבוע הבא</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Year</masterLabel>
+            <translation>שנה הבאה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter Forecast</masterLabel>
+            <translation>תחזית רבעונית</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter to Date</masterLabel>
+            <translation>רבעון עדכני</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week Forecast</masterLabel>
+            <translation>תחזית שבוע</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week to Date</masterLabel>
+            <translation>שבוע לתאריך</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year Forecast</masterLabel>
+            <translation>תחזית השנה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year to Date</masterLabel>
+            <translation>מתחילת השנה ועד היום</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Utilization Calculation Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>תאריכים</label>
+            <section>Dates</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם חישוב ניצול</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Batch ID is required --></errorMessage>
+        <name>pse__batch_id_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_historical_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date is prior to the start date --></errorMessage>
+        <name>pse__check_scheduled_end_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization start date must immediately follow the historical utilization end date. --></errorMessage>
+        <name>pse__continuous_dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical utilization calculation for future dates is not allowed --></errorMessage>
+        <name>pse__disallow_historical_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled utilization calculation for past dates is not allowed --></errorMessage>
+        <name>pse__disallow_scheduled_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Historical Start and End Date are required --></errorMessage>
+        <name>pse__historical_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one of Region, Practice, Group, or Resource may be specified. --></errorMessage>
+        <name>pse__only_one_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one value may be specified: Subtotal by Region, Practice or Group. --></errorMessage>
+        <name>pse__only_one_subtotal_source_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Start and End Date are required --></errorMessage>
+        <name>pse__scheduled_dates_requried_if_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- One of Region, Practice, Group, or Resource is required --></errorMessage>
+        <name>pse__source_required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrôle d&apos;autorisation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contrôles d&apos;autorisation</value>
+    </caseValues>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à générer et à valider des événements de facturation pour les projets appartenant à des régions / pratiques / groupes spécifiés et à modifier les champs liés à la facturation (case à cocher facturée et élément d&apos;événement de facturation) pour les enregistrements professionnels des ressources.</help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help>Si vous cochez cette case pour les contrôles d&apos;autorisation associés à une hiérarchie (par exemple, région, pratique ou groupe), la permission s&apos;applique également à (ressources appartenant à) tous les nœuds inférieurs dans la hiérarchie, en plus du nœud spécifié.</help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help>Autorise l&apos;utilisateur à comparer les versions du projet.</help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Autorise l&apos;utilisateur à créer des versions de projet.</help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Autorise l&apos;utilisateur à supprimer les versions du projet.</help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Indique si l&apos;utilisateur sélectionné peut utiliser le projet Gantt du projet en mode édition s&apos;il n&apos;est pas le chef de projet du projet sélectionné.</help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à saisir / modifier les rapports de dépenses et de dépenses pour les ressources autres que les leurs.</help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à modifier les rapports de dépenses et de dépenses relatifs aux ressources après leur approbation, mais avant leur facturation.</help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Autorisé à effectuer des modifications sur la page Prévisions pour la région / la pratique / le groupe</help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Autorisé à afficher la page Prévisions pour la région / la pratique / le groupe</help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help>Il s&apos;agit du groupe contenant les ressources qui sont la cible de l&apos;action spécifiée (par exemple, l&apos;entrée de la carte de visite déléguée au nom des ressources de ce groupe).</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à modifier les champs liés à la facturation (case à cocher facturée, date de facturation, numéro de facture) pour les enregistrements commerciaux du projet.</help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help>Il s&apos;agit de la pratique contenant des ressources qui sont la cible de l&apos;action spécifiée - par exemple, l&apos;entrée de la carte de visite déléguée au nom des ressources dans cette pratique.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il s&apos;agit du projet contenant des affectations pour les ressources qui sont la cible de l&apos;action spécifiée - par exemple, l&apos;entrée de la carte de pointage déléguée au nom des ressources dans ce projet, uniquement en relation avec le projet.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>C&apos;est la région contenant les ressources qui sont la cible de l&apos;action spécifiée - par exemple, l&apos;entrée de la carte de pointage déléguée au nom des ressources dans cette région.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à saisir / modifier des demandes de ressources pour des régions / pratiques / groupes spécifiques.</help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Il s’agit de la ressource qui est la cible de l’action ou des actions spécifiées - par exemple, entrée de la carte de pointage déléguée au nom de cette ressource.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à doter les ressources des régions / pratiques / groupes spécifiés.</help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, autorise l&apos;utilisateur à créer une équipe.</help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help>Autorise l&apos;utilisateur à modifier l&apos;équipe indiquée si l&apos;utilisateur n&apos;est pas le propriétaire de l&apos;équipe.</help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Autorise l&apos;utilisateur à afficher l&apos;équipe indiquée en mode lecture seule si l&apos;utilisateur n&apos;est pas le propriétaire de l&apos;équipe.</help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help>C&apos;est l&apos;équipe qui est la cible des actions spécifiées - par exemple Team View pour le compte de cet utilisateur.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à entrer / modifier des cartes de pointage pour des ressources autres que les leurs.</help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Cette case à cocher régit la capacité de l&apos;utilisateur à modifier les cartes de pointage pour les ressources après leur approbation, mais avant leur facturation.</help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique si l&apos;utilisateur sélectionné peut utiliser Gantt de tâche de projet en mode lecture seule s&apos;il n&apos;est pas le chef de projet du projet sélectionné.</help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Autorisations</label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label>Résumé</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du contrôle d&apos;autorisation</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Ressource --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Planer - Ressource --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Ressource --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Ressource --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Planer - Ressource --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird bestimmt, ob Urlaubsplanausnahmesätze hinzugefügt werden, wenn die Zuordnungszeiträume angepasst werden und der neue Datumsbereich in einen Feiertag fällt.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die zusätzlichen Felder, die im Abschnitt &quot;Zusätzliche Felder&quot; des Dialogfelds &quot;Zuordnung erstellen&quot; im Ressourcenplaner angezeigt werden sollen.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Felds in einer Zuweisung, die die Zuweisungsfarbbalken im Ressourcenplaner steuert.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert den API-Namen eines Felds zum Zuordnen von Zuordnungen und optional die Richtung (ASC oder DESC). Zuweisungen erscheinen immer oberhalb der gehaltenen Ressourcenanforderungen.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, welche Zuordnungsfelder mit dem Textsuchfeld im Ressourcenplaner gesucht werden.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die als QuickInfos für Zuordnungen im Ressourcenplaner angezeigt werden sollen. Der Feldsatz muss im Zuweisungsobjekt vorhanden sein.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Stellen, die beim Anzeigen eines prozentualen Verfügbarkeitswerts in der Verfügbarkeitsspalte im Ressourcenplaner rechts neben dem Dezimaltrennzeichen angezeigt werden. Der Wert ist eine ganze Zahl. Der Standardwert ist Null.</help>
+        <label><!-- Availability Decimal Precision --></label>
+        <name>pse__Availability_Percentage_Precision__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Spalten enthält, die im Ressourcenplaner angezeigt werden sollen. Der Feldsatz muss im Kontaktobjekt vorhanden sein.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die Anzahl der zukünftigen Tage ab dem heutigen Tag, für die der erweiterte Ressourcenplaner Zuordnungen anzeigen soll. Geben Sie beispielsweise 30 ein, um Zuordnungen anzuzeigen, die innerhalb von 30 Tagen von heute beginnen oder enden.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die Anzahl der Tage vor dem Tag, für die der erweiterte Ressourcenplaner Zuordnungen anzeigen soll. Geben Sie beispielsweise 30 ein, um Zuordnungen anzuzeigen, die in den vorausgehenden 30 Tagen beginnen oder enden.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definiert eine URL (absolut oder relativ), die auf das Standardbild verweist, das für Ressourcen ohne Profilfoto verwendet werden soll. Bilddateien mit 22 Pixel im Quadrat funktionieren am besten.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Anzahl der Tage fest, die nach dem Enddatum der Ressourcenanforderung im Bereich Ressourcenanforderung des Ressourcenplaners zu den eingeschlossenen Daten hinzugefügt werden sollen.</help>
+        <label><!-- Add Included Dates After RR End Date --></label>
+        <name>pse__Default_URR_End_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Legt die Anzahl der Tage fest, die vor dem Startdatum der Ressourcenanforderung im Bereich Ressourcenanforderung des Ressourcenplaners zu den eingeschlossenen Daten hinzugefügt werden sollen.</help>
+        <label><!-- Add Included Dates Before RR Start Date --></label>
+        <name>pse__Default_URR_Start_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Felder, die im Ressourcenplaner für die Filterung verwendet werden. Der Wert ist ein Feld, das Felder angibt, nach denen gefiltert werden kann.</help>
+        <label><!-- Resource Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden die Felder für die Kostenrate im Dialogfeld &quot;Zuweisung erstellen&quot; für alle Benutzer ausgeblendet.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Verwenden Sie stattdessen Resource_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden die Start- und Enddaten im Dialogfeld Zuweisungen erstellen automatisch von den Start- und Enddaten des Projekts ausgefüllt.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird die Ressourcenrolle im Dialogfeld Zuweisungen erstellen automatisch aus dem Kontaktdatensatz ausgefüllt.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Verwenden Sie stattdessen Resource_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den API-Namen der Zuweisung an, die im Ressourcenplaner angezeigt werden soll. Wenn dieses Feld leer ist, zeigt der Ressourcenplaner standardmäßig den Namen der Zuweisung an.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Gibt den API-Namen der Ressourcenanforderung an, die im Ressourcenplaner angezeigt werden soll. Wenn dieses Feld leer ist, zeigt der Ressourcenplaner standardmäßig den Namen der Ressourcenanforderung an.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert die maximale Anzahl der Ressourcen, die beim Anzeigen einer großen Anzahl von Datensätzen im Hintergrund geladen werden. Die Eingabe eines höheren Werts führt zu weniger Ladeunterbrechungen, benötigt jedoch mehr Speicher.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die als Tooltips für Ressourcenanforderungen im Ressourcenplaner angezeigt werden sollen. Der Feldsatz muss im Ressourcenanforderungsobjekt vorhanden sein.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, welche Ressourcenanforderungsfelder mit dem Textsuchfeld im Ressourcenplaner gesucht werden.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Felds in einer Ressourcenanforderung, die die Ressourcenanforderungsfarbbalken im Ressourcenplaner steuert.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung definiert den API-Namen eines Felds zum Sortieren angehaltener Ressourcenanforderungen und optional der Richtung (ASC oder DESC). Gehaltene Ressourcenanforderungen erscheinen immer unter Zuweisungen.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, welche Ressourcenfelder mit dem Textsuchfeld im Ressourcenplaner gesucht werden.</help>
+        <label><!-- Search Fieldset Name --></label>
+        <name>pse__Resource_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des Feldsatzes, der die Felder enthält, die als QuickInfos für Ressourcen im Ressourcenplaner angezeigt werden sollen. Der Feldsatz muss im Kontaktobjekt vorhanden sein.</help>
+        <label><!-- Resource Tooltip Field Set --></label>
+        <name>pse__Resource_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie keine Zuordnung mit dem Anfangsdatum in der Vergangenheit erstellen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie die Zuordnung von Ressourcenplanern nicht bearbeiten und die Stunden in der Vergangenheit nicht planen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, können Sie die Ressource für eine Zuweisung nicht mit einem in der Vergangenheit festgelegten Startdatum austauschen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Anpassungen an Breite, Reihenfolge und Sichtbarkeit der Spalten im Ressourcenplaner für jeden Benutzer gespeichert.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, ist die Verfügbarkeitsspalte im Ressourcenplaner sichtbar. Diese Einstellung ist standardmäßig ausgewählt.</help>
+        <label><!-- Show Availability Column --></label>
+        <name>pse__Show_Availability_Column__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Beige für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Light Blue für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Hellgrün für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Light Red für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Light Yellow für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Rosa für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Lila für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Verwenden Sie Türkis für Zellen im Ressourcenplaner. Standard = Falsch</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung legt fest, ob Ihre Benutzer den erweiterten (neuen) oder klassischen Ressourcenplaner sehen.</help>
+        <label><!-- DEPRECATED:Use New Resource Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Gibt die Anzahl der Ressourcen an, für die untergeordnete Daten (Zuordnungen und Ressourcenanforderungen) pro Anforderung geladen werden. Sie sollten die Aufzeichnungsgrenze nicht anpassen, ohne zuvor den Kundendienst zu konsultieren.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__record_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung legt fest, ob Ihre Benutzer ein Berechtigungssteuerelement benötigen und ob das Kontrollkästchen Staffing aktiviert sein muss, bevor sie Zeitpläne für den erweiterten Ressourcenplaner bearbeiten können.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Revenue_Custom_Model__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Displays all opportunity touchpoints by their Marketing Channel.</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_OPP_CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_YEAR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Marketing_Channel__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bz-Revenue By Channel</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$bizible2__Bizible_Attribution_Touchpoint__c@bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

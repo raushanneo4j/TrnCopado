@@ -1,0 +1,2858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>시간 카드</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Timecard Left Header Row Editable --></label>
+        <name>Timecard_Left_Header_Row_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fri Easy Entry Fields --></label>
+        <name>pse__Fri_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mon Easy Entry Fields --></label>
+        <name>pse__Mon_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sat Easy Entry Fields --></label>
+        <name>pse__Sat_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sun Easy Entry Fields --></label>
+        <name>pse__Sun_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCFriHourTooltip --></label>
+        <name>pse__TCFriHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCMonHourTooltip --></label>
+        <name>pse__TCMonHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCSatHourTooltip --></label>
+        <name>pse__TCSatHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCSunHourTooltip --></label>
+        <name>pse__TCSunHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCThuHourTooltip --></label>
+        <name>pse__TCThuHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCTueHourTooltip --></label>
+        <name>pse__TCTueHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TCWedHourTooltip --></label>
+        <name>pse__TCWedHourTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Thu Easy Entry Fields --></label>
+        <name>pse__Thu_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Approval Columns --></label>
+        <name>pse__TimeCardApprovalColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Header Row Editable --></label>
+        <name>pse__TimeCard_Header_Row_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Header Row Readonly --></label>
+        <name>pse__TimeCard_Header_Row_Readonly</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Notes Field Editable --></label>
+        <name>pse__TimeCard_Notes_Field_Editable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Timecard Notes Field Readonly --></label>
+        <name>pse__TimeCard_Notes_Field_Readonly</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tue Easy Entry Fields --></label>
+        <name>pse__Tue_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Wed Easy Entry Fields --></label>
+        <name>pse__Wed_Easy_Entry_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- PSR Total Billable Hours --></label>
+        <name>ProjectStatusReport_Total_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>비슷한 행에 대한 TCEntry UI의 집계 된 타임 카드 메모가 255자를 초과하면 집계 된 메모가 저장됩니다.</help>
+        <label><!-- Additional Notes --></label>
+        <name>pse__Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 관리자가 Timecard의 Project, Resource, Currency 또는 Date에 대한 편집을 포함하여 Timecard에 &apos;전역 포함&apos;변경 사항을 포함 할 수 있습니다 (재무 포함 포함). 구성 요구 사항 : 실제 계산 모드는 &apos;예약 됨&apos;으로 설정되어야합니다.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>이 확인란은 일반적으로 상태 필드를 기반으로 시간 카드가 승인되면 선택해야합니다.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>감사 메모 기록을 저장합니다. 사용자가 Timecard UI를 사용하여 프로젝트 또는 할당을 변경하고 감사 노트가 255자를 초과하면 이전 감사 노트가 여기에 이동되고 추가됩니다.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Timecard Bill Rate가 초기에 마일스톤 (할당이 아닌)에서 기본값으로 설정되었음을 나타냅니다.</help>
+        <label><!-- Bill Rate Defaulted from Milestone --></label>
+        <name>pse__Bill_Rate_Defaulted_from_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate --></label>
+        <name>pse__Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Amount --></label>
+        <name>pse__Cost_Rate_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate Currency Code --></label>
+        <name>pse__Cost_Rate_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>타임 코드 종료일에 계산 된 기업 통화 대비 원가 환율</help>
+        <label><!-- Cost Rate Exchange Rate --></label>
+        <name>pse__Cost_Rate_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate --></label>
+        <name>pse__Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Rate is Daily Rate --></label>
+        <name>pse__Daily_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Rate is Daily Rate --></label>
+        <name>pse__Daily_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>일수 계산을 재정의하는 기능 제공</help>
+        <label><!-- Days Worked Override --></label>
+        <name>pse__Days_Worked_Override__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Timecard에 대한 승인을 위해 PSA 트리거 기반 자동 제출이 비활성화됩니다.</help>
+        <label><!-- Disable Approval Auto Submit --></label>
+        <name>pse__Disable_Approval_Auto_Submit__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 청구서 수신과 동일한 효과를 가지지 만 청구 생성에서 영구적 인 제외 사항을 반영하기위한 자식 시간표 분할의 청구에서 제외 확인란을 선택해야합니다.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <help>리소스에 대해 하루에 입력 할 수있는 max-resource-hours-per-day 구성 옵션에 설정된 최대 시간 수에서 시간 카드를 제외할지 여부를 나타냅니다. &quot;max-resource-hours-per-day&quot;를 참조하십시오.</help>
+        <label><!-- Exclude from Daily Maximum --></label>
+        <name>pse__Exclude_from_Daily_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Notes --></label>
+        <name>pse__Friday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours To Days Rule (Assignment) --></label>
+        <name>pse__Hours_To_Days_Rule_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours To Days Rule (Project) --></label>
+        <name>pse__Hours_To_Days_Rule_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location - Fri --></label>
+        <name>pse__Location_Fri__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Mon --></label>
+        <name>pse__Location_Mon__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sat --></label>
+        <name>pse__Location_Sat__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Sun --></label>
+        <name>pse__Location_Sun__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Thu --></label>
+        <name>pse__Location_Thu__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Tue --></label>
+        <name>pse__Location_Tue__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location - Wed --></label>
+        <name>pse__Location_Wed__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Notes --></label>
+        <name>pse__Monday_Notes__c</name>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 나 자원이 다른 그룹에 있더라도 시간 코드 머리글의 원가 트랜잭션이 그룹 실체로 롤업되는 그룹을 재정의합니다.</help>
+        <label><!-- Override Cost Group --></label>
+        <name>pse__Override_Cost_Group__c</name>
+        <relationshipLabel><!-- Override Cost Group For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 사례에 있더라도 Timecard Header &apos;s Cost Transactions가 Practice Actuals에 롤업되는 Practice보다 우선합니다.</help>
+        <label><!-- Override Cost Practice --></label>
+        <name>pse__Override_Cost_Practice__c</name>
+        <relationshipLabel><!-- Override Cost Practice For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 또는 자원이 다른 지역에 있더라도 Timecard 머리글 비용 트랜잭션이 지역 실제에 대해 롤업되는 지역을 대체합니다.</help>
+        <label><!-- Override Cost Region --></label>
+        <name>pse__Override_Cost_Region__c</name>
+        <relationshipLabel><!-- Override Cost Region For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 나 자원이 다른 그룹에 속하더라도 타임 카드 머리글의 수익 거래가 그룹 실제에 대해 롤업되는 그룹을 재정의합니다.</help>
+        <label><!-- Override Revenue Group --></label>
+        <name>pse__Override_Revenue_Group__c</name>
+        <relationshipLabel><!-- Override Revenue Group For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우, 프로젝트 나 자원이 다른 연습에 있더라도 Timecard Header의 수익 거래가 실무 실제로 롤업되는 실습을 덮어 씁니다.</help>
+        <label><!-- Override Revenue Practice --></label>
+        <name>pse__Override_Revenue_Practice__c</name>
+        <relationshipLabel><!-- Override Revenue Practice For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>설정된 경우 프로젝트 나 자원이 다른 지역에 있더라도 Timecard 헤더의 수익 트랜잭션이 지역 실제로 롤업되는 지역을 대체합니다.</help>
+        <label><!-- Override Revenue Region --></label>
+        <name>pse__Override_Revenue_Region__c</name>
+        <relationshipLabel><!-- Override Revenue Region For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Location --></label>
+        <name>pse__Primary_Location__c</name>
+        <picklistValues>
+            <masterLabel>ALABAMA</masterLabel>
+            <translation>알라바마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALASKA</masterLabel>
+            <translation>알래스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMERICAN SAMOA</masterLabel>
+            <translation>아메리칸 사모아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANZAC</masterLabel>
+            <translation>ANZAC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARIZONA</masterLabel>
+            <translation>아리조나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARKANSAS</masterLabel>
+            <translation>알칸 사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation>아시아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALIFORNIA</masterLabel>
+            <translation>캘리포니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADA</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLORADO</masterLabel>
+            <translation>콜로라도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONNECTICUT</masterLabel>
+            <translation>코네티컷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELAWARE</masterLabel>
+            <translation>델라웨어</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DISTRICT OF COLUMBIA</masterLabel>
+            <translation>콜롬비아 지구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation>EMEA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDERATED STATES OF MICRONESIA</masterLabel>
+            <translation>미크로네시아 연방 국가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLORIDA</masterLabel>
+            <translation>플로리다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEORGIA</masterLabel>
+            <translation>그루지야</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUAM</masterLabel>
+            <translation>괌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAWAII</masterLabel>
+            <translation>하와이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDAHO</masterLabel>
+            <translation>아이다 호</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILLINOIS</masterLabel>
+            <translation>일리노이</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDIANA</masterLabel>
+            <translation>인디애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOWA</masterLabel>
+            <translation>IOWA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KANSAS</masterLabel>
+            <translation>캔자스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KENTUCKY</masterLabel>
+            <translation>켄터키</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LATIN AMERICA</masterLabel>
+            <translation>라틴 아메리카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOUISIANA</masterLabel>
+            <translation>루이지애나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAINE</masterLabel>
+            <translation>MAINE</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARSHALL ISLANDS</masterLabel>
+            <translation>마샬 제도</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MARYLAND</masterLabel>
+            <translation>메릴랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MASSACHUSETTS</masterLabel>
+            <translation>매사추세츠 주</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEXICO</masterLabel>
+            <translation>멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICHIGAN</masterLabel>
+            <translation>미시간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINNESOTA</masterLabel>
+            <translation>미네소타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSISSIPPI</masterLabel>
+            <translation>미시시피</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISSOURI</masterLabel>
+            <translation>미주리</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MONTANA</masterLabel>
+            <translation>몬타나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEBRASKA</masterLabel>
+            <translation>네브라스카</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEVADA</masterLabel>
+            <translation>네바다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW HAMPSHIRE</masterLabel>
+            <translation>뉴햄프셔</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW JERSEY</masterLabel>
+            <translation>뉴저지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW MEXICO</masterLabel>
+            <translation>뉴 멕시코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW YORK</masterLabel>
+            <translation>뉴욕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH CAROLINA</masterLabel>
+            <translation>노스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTH DAKOTA</masterLabel>
+            <translation>노스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NORTHERN MARIANA ISLANDS</masterLabel>
+            <translation>북부 마리나 섬</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OHIO</masterLabel>
+            <translation>OHIO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OKLAHOMA</masterLabel>
+            <translation>오클라호마</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OREGON</masterLabel>
+            <translation>오레곤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation>다른</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PALAU</masterLabel>
+            <translation>팔라우</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PENNSYLVANIA</masterLabel>
+            <translation>펜실베니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUERTO RICO</masterLabel>
+            <translation>푸에르토 리코</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHODE ISLAND</masterLabel>
+            <translation>로드 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH CAROLINA</masterLabel>
+            <translation>사우스 캐롤라이나</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOUTH DAKOTA</masterLabel>
+            <translation>사우스 다코타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENNESSEE</masterLabel>
+            <translation>테네시</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXAS</masterLabel>
+            <translation>텍사스</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTAH</masterLabel>
+            <translation>유타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VERMONT</masterLabel>
+            <translation>버몬트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGIN ISLANDS</masterLabel>
+            <translation>버진 아일랜드</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIRGINIA</masterLabel>
+            <translation>여자 이름</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WASHINGTON</masterLabel>
+            <translation>워싱턴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEST VIRGINIA</masterLabel>
+            <translation>웨스트 버지니아</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISCONSIN</masterLabel>
+            <translation>위컨신</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WYOMING</masterLabel>
+            <translation>와 이밍</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Project Location --></label>
+        <name>pse__Primary_Project_Location__c</name>
+        <relationshipLabel><!-- Primary Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>프로젝트 (Bill Rate) 기업 통화 대비 환율, 타임 카드 종료일 계산</help>
+        <label><!-- Project Exchange Rate --></label>
+        <name>pse__Project_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Fri --></label>
+        <name>pse__Project_Location_Fri__c</name>
+        <relationshipLabel><!-- Friday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Mon --></label>
+        <name>pse__Project_Location_Mon__c</name>
+        <relationshipLabel><!-- Monday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Sat --></label>
+        <name>pse__Project_Location_Sat__c</name>
+        <relationshipLabel><!-- Saturday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Sun --></label>
+        <name>pse__Project_Location_Sun__c</name>
+        <relationshipLabel><!-- Sunday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Thu --></label>
+        <name>pse__Project_Location_Thu__c</name>
+        <relationshipLabel><!-- Thursday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Tue --></label>
+        <name>pse__Project_Location_Tue__c</name>
+        <relationshipLabel><!-- Tuesday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location - Wed --></label>
+        <name>pse__Project_Location_Wed__c</name>
+        <relationshipLabel><!-- Wednesday Location For Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology_Object__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <picklistValues>
+            <masterLabel>Methodology Step 1</masterLabel>
+            <translation>방법론 1 단계</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Methodology Step 2</masterLabel>
+            <translation>방법론 2 단계</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Methodology Step 3</masterLabel>
+            <translation>방법론 3 단계</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase_Object__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Deployment</masterLabel>
+            <translation>전개</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation>디자인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation>개발</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation>유지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation>계획</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirements</masterLabel>
+            <translation>요구 사항</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategy</masterLabel>
+            <translation>계략</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation>지원하다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation>테스트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation>훈련</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이 시간차의 프로젝트 작업에 연결된 총 시간입니다.</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Notes --></label>
+        <name>pse__Saturday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>승인 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>거부 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation>저장 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>제출 됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Notes --></label>
+        <name>pse__Sunday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Notes --></label>
+        <name>pse__Thursday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Credited --></label>
+        <name>pse__Time_Credited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Excluded --></label>
+        <name>pse__Time_Excluded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Notes --></label>
+        <name>pse__Timecard_Notes__c</name>
+    </fields>
+    <fields>
+        <help>관리자 만 사용할 수 있습니다. 완료를 사용하여 Timecard UI에서 생성 된 경우 선택됩니다. Timecard UI에서 저장 또는 제출을 사용할 때 선택되지 않습니다.</help>
+        <label><!-- Timecard UI Save/Submit Needed --></label>
+        <name>pse__Timecard_UI_Save_Submit_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>pse__Total_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>pse__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked Advanced --></label>
+        <name>pse__Total_Days_Worked_Advanced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Worked --></label>
+        <name>pse__Total_Days_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Fri --></label>
+        <name>pse__Travel_Fri__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Mon --></label>
+        <name>pse__Travel_Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sat --></label>
+        <name>pse__Travel_Sat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Sun --></label>
+        <name>pse__Travel_Sun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Thu --></label>
+        <name>pse__Travel_Thu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Tue --></label>
+        <name>pse__Travel_Tue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel - Wed --></label>
+        <name>pse__Travel_Wed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Week --></label>
+        <name>pse__Travel_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Notes --></label>
+        <name>pse__Tuesday_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Notes --></label>
+        <name>pse__Wednesday_Notes__c</name>
+    </fields>
+    <layouts>
+        <layout>Timecard Header Layout - BP</layout>
+        <sections>
+            <label><!-- Audit Information --></label>
+            <section>Audit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Estimated Totals (may not be accurate in multi-currency orgs) --></label>
+            <section>Estimated Totals (may not be accurate in multi-currency orgs)</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Data --></label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label><!-- Hours and Notes --></label>
+            <section>Hours and Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Timecard Attributes --></label>
+            <section>Timecard Attributes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Timecard Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>예상 합계 (복수 통화 조직에서 정확하지 않을 수 있음)</label>
+            <section>Estimated Totals (may not be accurate in multi-currency orgs)</section>
+        </sections>
+        <sections>
+            <label>재무 데이터</label>
+            <section>Financial Data</section>
+        </sections>
+        <sections>
+            <label>시간 및 메모</label>
+            <section>Hours and Notes</section>
+        </sections>
+        <sections>
+            <label>위치 및 여행</label>
+            <section>Location and Travel</section>
+        </sections>
+        <sections>
+            <label>프로젝트 단계, 위치 및 방법론</label>
+            <section>Project Phase, Location and Methodology</section>
+        </sections>
+        <sections>
+            <label>지역 / 실습 / 그룹 재정의</label>
+            <section>Region/Practice/Group Overrides</section>
+        </sections>
+        <sections>
+            <label>데이터 스케줄링</label>
+            <section>Scheduling Data</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>타임 카드 ID</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- No individual day for a single line can be less than zero hours --></errorMessage>
+        <name>pse__A_Day_Can_Not_Be_Less_Then_Zero_Hrs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No individual day for a single line can be more than 24 hours --></errorMessage>
+        <name>pse__A_Day_Can_Not_Be_More_Then_24_Hrs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You entered more time than scheduled --></errorMessage>
+        <name>pse__Assignment_Hours</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may only be marked as &quot;Time Credited&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Timecards_may_not_be_Credited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may only be marked as &quot;Time Excluded&quot; if they are Non-Billable. --></errorMessage>
+        <name>pse__Billable_Timecards_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards may not be marked as &quot;Time Excluded&quot; if they are also marked as &quot;Time Credited&quot;. --></errorMessage>
+        <name>pse__Credited_Timecards_may_not_be_Excluded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Timecard to be marked as Approved, it must also be marked as Submitted. --></errorMessage>
+        <name>pse__Timecard_Approval_Requires_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Project must match Assignment Project. --></errorMessage>
+        <name>pse__Timecard_Assignment_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Resource must match Assignment Resource. --></errorMessage>
+        <name>pse__Timecard_Assignment_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Header&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Header_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard Header&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Timecard_Header_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Header must span 1 week (7 days inclusive). --></errorMessage>
+        <name>pse__Timecard_Header_must_be_1_week_long</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Timecard may only be marked as Billable if its Project is Billable and its Assignment, if any, is Billable. --></errorMessage>
+        <name>pse__Timecard_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the methodology with this timecard. The methodology must belong to the same project as the timecard. Select a methodology that belongs to the same project as the timecard. --></errorMessage>
+        <name>pse__Timecard_Methodology_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecard Project must match Milestone Project. --></errorMessage>
+        <name>pse__Timecard_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the phase with this timecard. The phase must belong to the same project as the timecard. Select a phase that belongs to the same project as the timecard. --></errorMessage>
+        <name>pse__Timecard_Phase_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Timecards for this Project and/or Resource require an Assignment. --></errorMessage>
+        <name>pse__Timecard_Requires_Assignment</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_A_Timecard --></label>
+        <name>pse__Log_A_Timecard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_a_Timecard_New_UI --></label>
+        <name>pse__Log_a_Timecard_New_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_a_Timecard_with_Task_Time --></label>
+        <name>pse__Log_a_Timecard_with_Task_Time</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Time_Entry --></label>
+        <name>pse__Time_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- edit_in_time_entry --></label>
+        <name>pse__edit_in_time_entry</name>
+    </webLinks>
+</CustomObjectTranslation>

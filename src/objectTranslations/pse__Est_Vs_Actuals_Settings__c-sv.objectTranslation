@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Est Vs Actuals Settings --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Est Vs Actuals Settings --></value>
+    </caseValues>
+    <fields>
+        <help>Huruvida Est Vs Actuals-fälten härledda från schemat (t.ex. Beräknade timmar) ska uppdateras för Est Vs Actuals-poster som har ett slutdatum före början av veckan.</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Ta bort Est vs Actuals-poster även om de har aktuella satser för poster som inte längre finns inom ett modifierat schemas datumintervall. OBS: Skivor utan aktuella ändringar kommer alltid att raderas.</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Kommaseparerad lista över tidsperiodstyper för att generera EVA-poster</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>Vare sig att skapa Est Vs Actuals-poster per månad</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Vare sig att skapa Est Vs Actuals-poster per kvartal</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Vare sig att generera est vs aktuella per vecka</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Skapa Est Vs Aktuella poster för tidskort som har timmar utanför uppdragets start- och slutdatum. Est Vs Actuals-poster kommer att ha nollvärden för uppskattningar på dessa poster.</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Den kommaseparerade listan över fältvärden för tidskortstatus som ska användas vid bestämning av om tidskortet ska användas vid beräkningen av beräkningar mot aktualiteter</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definierar den batchstorlek som används vid uppdatering av projekthanteringsfältet från Project. Standard är 2000. Rådfråga FinancialForce Support innan du ändrar inställningen.</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Om den är markerad, orsakar den här inställningen uppdateringar till fältet Projekthanterare som återspeglas i alla Est Vs Actuals-poster för det projektet.</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>Definierar antalet Est Vs Actuals-poster för att bearbeta synkront när uppdatering av projekthanteringsfältet från Project. Rekord som överstiger detta värde behandlas i en sats. Standard är 9000. Kontakta support innan du ändrar inställningen.</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>När det är korrekt genereras inte varje vecka Estimates vs Actuals automatiskt om du har definierade anpassade tidsperioder för en veckotyp som överlappar en given uppgift. Standardvärdet är false.</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

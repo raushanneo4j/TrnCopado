@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Spese</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Spese</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment PDF --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPDF</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment Page --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Editable Columns --></label>
+        <name>pse__ExpenseHeaderRowEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Read Only Columns --></label>
+        <name>pse__ExpenseHeaderRowReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Editable Columns --></label>
+        <name>pse__ExpenseNotesFieldsEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Read Only Columns --></label>
+        <name>pse__ExpenseNotesFieldsReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobile Expenses: Additional Fields in New and Edit Mode --></label>
+        <name>pse__Mobile_Expenses_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <help>Se selezionato, consente all&apos;amministratore di apportare modifiche &quot;globali&quot; alle spese, incluse le modifiche al progetto, alla risorsa, alla valuta o alla data del rimborso spese, anche se l&apos;opzione Includi in dati finanziari è selezionata. Requisiti di configurazione: la modalità di calcolo degli effettivi deve essere impostata su &quot;Pianificata&quot;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Bill --></label>
+        <name>pse__Amount_To_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Reimburse --></label>
+        <name>pse__Amount_To_Reimburse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Il campo manterrà il tasso di spesa applicato in spesa.</help>
+        <label><!-- Applied Expense Rate --></label>
+        <name>pse__Applied_Expense_Rate__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Questa casella di controllo deve essere verificata quando viene approvata la Spesa, che deve essere basata sull&apos;approvazione del Rapporto spese genitore (se presente).</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Controllato automaticamente dalla configurazione per indicare se gli allegati di spesa sono stati spostati dalla linea di spesa al report spese.</help>
+        <label><!-- Attachments moved to ER --></label>
+        <name>pse__Attachments_moved_to_ER__c</name>
+    </fields>
+    <fields>
+        <help>Archivia la cronologia delle note di controllo. Quando un utente modifica un progetto o un&apos;assegnazione utilizzando l&apos;interfaccia utente di Timecard e le note di controllo superano i 255 caratteri, le note di controllo precedenti vengono spostate e aggiunte qui.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Questa formula equivale a Importo (meno Importo Incremento non fatturabile e Eventuale imposta) per le Spese fatturabili e zero per Spese non fatturabili: tutto nella valuta sostenuta.</help>
+        <label><!-- Billable Amount --></label>
+        <name>pse__Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Tariffa forfettaria nella valuta del progetto con cui aumentare l&apos;importo fatturabile della spesa, inadempiente dal progetto. Il calcolo applicherà qualsiasi commissione di spesa percentuale * prima * dell&apos;importo della commissione forfettaria.</help>
+        <label><!-- Billable Fee Flat Amount --></label>
+        <name>pse__Billable_Fee_Flat_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Formula di testo che mostra una commissione forfettaria nella valuta del progetto con cui aumentare l&apos;importo fatturabile della spesa, inadempiente dal progetto insieme alla valuta del progetto. Il calcolo applicherà qualsiasi commissione di spesa percentuale * prima * dell&apos;importo della commissione forfettaria.</help>
+        <label><!-- Billable Fee Flat --></label>
+        <name>pse__Billable_Fee_Flat__c</name>
+    </fields>
+    <fields>
+        <help>Percentuale di tariffa con cui aumentare l&apos;importo fatturabile della spesa, inadempiente dal progetto. 0% significa nessun aumento (predefinito), mentre 100% significa doppio. Il calcolo applicherà la commissione di spesa percentuale * prima * di ogni spesa forfettaria.</help>
+        <label><!-- Billable Fee Percentage --></label>
+        <name>pse__Billable_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount (Pre-Fee Subtotal) --></label>
+        <name>pse__Billing_Amount_Pre_Fee_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount --></label>
+        <name>pse__Billing_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>pse__Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Distanza percorsa per il rimborso automatico del chilometraggio.</help>
+        <label><!-- Distance --></label>
+        <name>pse__Distance__c</name>
+    </fields>
+    <fields>
+        <help>Indica che Expense si trova in uno stato idoneo per la generazione di eventi di fatturazione (non incluso il contrassegno Approvato per la fatturazione, che può anche essere richiesto per configurazione globale).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Billing Currency) --></label>
+        <name>pse__Exchange_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Incurred Currency) --></label>
+        <name>pse__Exchange_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Reimbursement Currency) --></label>
+        <name>pse__Exchange_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <help>Quando impostato, questo campo imposta il tasso di cambio * relativo * tra Tasso incorso e Tasso di rimborso che è sperimentato dalla Risorsa che ha inciso sulla Spesa.</help>
+        <label><!-- Exchange Rate (Resource-Defined) --></label>
+        <name>pse__Exchange_Rate_Resource_Defined__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non fatturare mai questo record aziendale. Stesso effetto di Billing Hold, ma inteso a riflettere un&apos;esclusione permanente da Billing Generation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Date --></label>
+        <name>pse__Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>pse__Expense_Report__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Split Parent --></label>
+        <name>pse__Expense_Split_Parent__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <help>Se è stata selezionata una spesa fatturabile, ciò significa che la parte dell&apos;importo spesa specificata nel campo Imposte incassate non è fatturabile. (Questo è separato da e in aggiunta a qualsiasi importo nel campo Importo non fatturabile non fatturato).</help>
+        <label><!-- Incurred Tax Non-Billable --></label>
+        <name>pse__Incurred_Tax_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ammontare delle tasse sostenute</help>
+        <label><!-- Incurred Tax --></label>
+        <name>pse__Incurred_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <help>Questo campo è visibile sull&apos;interfaccia utente se l&apos;utente richiede l&apos;allegato sulle linee di spesa se viene inviato il rapporto spese. Se questo campo è impostato su true, l&apos;utente non ha bisogno di aggiungere allegati sebbene la configurazione sia impostata su true.</help>
+        <label><!-- Lost Receipt --></label>
+        <name>pse__Lost_Receipt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Expense Reference ID --></label>
+        <name>pse__Mobile_Expense_Reference_ID__c</name>
+    </fields>
+    <fields>
+        <help>Questa formula equivale a Importo per le Spese non fatturabili e Importo e imposta incassati non fatturabili (da zero a Importo di spesa) per le spese fatturabili: tutte nella valuta sostenuta.</help>
+        <label><!-- Non-Billable Amount --></label>
+        <name>pse__Non_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Se previsto per una spesa fatturabile, questo viene sottratto dall&apos;Importo di spesa (valuta utilizzata) per calcolare l&apos;importo fatturabile della spesa. Min. valore zero, max. valore Importo della spesa. Valore predefinito: zero o null. Nessun effetto sulle spese non fatturabili.</help>
+        <label><!-- Non-Billable Incurred Amount --></label>
+        <name>pse__Non_Billable_Incurred_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Questa formula aggiunge eventuali imposte incassabili non fatturabili (solo se è stata verificata l&apos;imposta incondizionata non fatturabile) a qualsiasi importo aggiuntivo non fatturabile incorso per ottenere un totale parziale non fatturabile, con un minimo di 0,00 e un massimo dell&apos;importo di spesa.</help>
+        <label><!-- Non-Billable Incurred Subtotal --></label>
+        <name>pse__Non_Billable_Incurred_Subtotal__c</name>
+    </fields>
+    <fields>
+        <help>Se questa casella è selezionata, l&apos;importo del rimborso per la spesa sarà pari a zero indipendentemente dall&apos;importo sostenuto.</help>
+        <label><!-- Non-Reimbursable --></label>
+        <name>pse__Non_Reimbursible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Group Currency Code --></label>
+        <name>pse__Override_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Sostituisce il Gruppo in cui le Transazioni di spesa verranno implementate per le Actual di gruppo, anche se il Progetto si trova in un Gruppo diverso. In genere le Transazioni di una spesa si arrotolano al gruppo del proprio progetto o risorsa in base alle regole &quot;segue&quot;.</help>
+        <label><!-- Override Group --></label>
+        <name>pse__Override_Group__c</name>
+        <relationshipLabel><!-- Override Group For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Practice Currency Code --></label>
+        <name>pse__Override_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Ignora la pratica a cui le Transazioni di spesa si accumulano per le Pratiche effettive, anche se il Progetto è in una pratica diversa. In genere, le Transazioni di una spesa si arrotolano alle Prove del Progetto o della Risorsa basate sulle regole &quot;segue&quot;.</help>
+        <label><!-- Override Practice --></label>
+        <name>pse__Override_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Billing Currency) --></label>
+        <name>pse__Override_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Incurred Currency) --></label>
+        <name>pse__Override_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Reimbursement Currency) --></label>
+        <name>pse__Override_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Region Currency Code --></label>
+        <name>pse__Override_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Sostituisce la Regione in cui verranno eseguite le Transazioni di spesa per gli Actual regionali, anche se il Progetto si trova in una Regione diversa. In genere, le Transazioni di una spesa si arrotolano alla regione del proprio progetto o della risorsa in base alle regole &quot;segue&quot;.</help>
+        <label><!-- Override Region --></label>
+        <name>pse__Override_Region__c</name>
+        <relationshipLabel><!-- Override Region For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ricerca su metodologia di progetto</help>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ricerca alla fase del progetto</help>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>Chilometro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>Miglio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Il metodo di riconoscimento da applicare a questo record per la previsione delle entrate.</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <help>Questo campo memorizza un valore numerico per l&apos;importo del rimborso convertito nella valuta del progetto (fatturazione) utilizzando le tariffe del sistema (non sovrascritte), per un uso successivo nella fatturazione del fornitore.</help>
+        <label><!-- Reimbursement Amount In Project Currency --></label>
+        <name>pse__Reimbursement_Amount_In_Project_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Amount --></label>
+        <name>pse__Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Currency --></label>
+        <name>pse__Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Expense --></label>
+        <name>pse__Split_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Notes --></label>
+        <name>pse__Split_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Bozza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Respinto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Inserito</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Questa casella di controllo è per l&apos;utilizzo del sistema. È inteso per essere verificato insieme a qualsiasi inserimento / aggiornamento di Timecard Split eseguito all&apos;interno di un metodo futuro e quindi assicurerà che non vengano chiamati metodi futuri downstream.</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <help>Un tipo facoltativo di imposta che è stato incluso nella spesa</help>
+        <label><!-- Tax Type --></label>
+        <name>pse__Tax_Type__c</name>
+        <picklistValues>
+            <masterLabel>GST</masterLabel>
+            <translation>GST</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 1</masterLabel>
+            <translation>IVA 1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 2</masterLabel>
+            <translation>IVA 2</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>L&apos;ID di spesa dall&apos;applicazione Spese di terze parti.</help>
+        <label><!-- Third-Party Expenses App Expense ID --></label>
+        <name>pse__Third_Party_Expenses_App_Expense_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>Tariffa aerea</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>Chilometraggio automatico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>Pasti aziendali</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>Noleggio auto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>Relazioni con i dipendenti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>Gasolio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>Spese generali e amministrative</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>Apparecchiature e servizi informatici</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>Alloggio (camera e tasse)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>Miscellaneo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>Forniture e servizi per l&apos;ufficio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>Pasti personali</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Telefono</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>Spedizione e spedizione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>Reclutamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>Metropolitana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>Taxi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Expense Admin Layout</layout>
+        <sections>
+            <label>revisione</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Informazioni di fatturazione</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Distanza</label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label>Informazioni di progetto</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Stato</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Sommario</label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label>Informazioni di sistema</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazioni di progetto</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Stato</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Sommario</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Distance --></label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label><!-- Expense Tax Information --></label>
+            <section>Expense Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numero di spesa</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Assignment Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment Resource must match Expense Resource. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Project must match Expense Report Project. --></errorMessage>
+        <name>pse__Expense_ER_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Resource must match Expense Report Resource. --></errorMessage>
+        <name>pse__Expense_ER_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Expense_Line_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Expense_Line_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense Line may not be submitted or included in financials unless it belongs to an Expense Report. --></errorMessage>
+        <name>pse__Expense_Line_Needs_Parent_For_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Project field value may not be updated once set (unless parent Expense Report is changed, Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Expense Report may not be changed if it is submitted or included in financials. --></errorMessage>
+        <name>pse__Expense_Line_Report_Fixed_If_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense may only be marked as Billable if its Project is Billable and its Expense Report and Assignment, if any, are Billable. --></errorMessage>
+        <name>pse__Expense_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Report is required --></errorMessage>
+        <name>pse__Expense_Requires_Expense_Report</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the incurred tax amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Incurred_Tax_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the non-billable incurred amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Incurred_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The non-billable incurred subtotal for an Expense (any non-billable amount plus any non-billable tax) must not be greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Subtotal_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate can only be set if Incurred and Resource currencies are different.  If the currencies are the same, a relative rate of 1.0 is implied. --></errorMessage>
+        <name>pse__Res_Defined_Rate_Diff_Currencies_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate must either be greater than 0.0 (zero) or null/empty. --></errorMessage>
+        <name>pse__Res_Defined_Rate_may_not_be_Negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice cannot change once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Expenses --></label>
+        <name>pse__Edit_Expenses</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_Expense_Entry_UI --></label>
+        <name>pse__Multiple_Expense_Entry_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ready_to_Submit --></label>
+        <name>pse__Ready_to_Submit</name>
+    </webLinks>
+</CustomObjectTranslation>

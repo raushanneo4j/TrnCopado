@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Berechnung der Abrechnungsprognose</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Abrechnungsprognose-Berechnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Berechnung der Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Berechnungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Berechnung der Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Berechnungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Berechnung der Abrechnungsprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Abrechnungsprognose-Berechnungen --></value>
+    </caseValues>
+    <fields>
+        <help>Eine Suche nach der zugehörigen Rückstandsberechnung.</help>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Chargen-ID für den Prognoseberechnungsprozess.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Der Batch-Prozess, der von dieser Prognoseberechnung verwendet wird.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zeigt an, dass die Abrechnungsprognose festgeschrieben wurde und Überschreibungen nicht mehr angewendet werden können.</help>
+        <label><!-- Committed --></label>
+        <name>pse__Committed__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, dass diese Abrechnungsprognoseberechnung die aktuellste für dieses Rollenspiel und diesen Zeitraum ist.</help>
+        <label><!-- Current --></label>
+        <name>pse__Current__c</name>
+    </fields>
+    <fields>
+        <help>Ein Lookup zu den in dieser Prognoseberechnung verwendeten Prognose-Setup-Werten.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Gruppe für diese Prognoseberechnung.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Praxis für diese Prognoseberechnung.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Region für diese Prognoseberechnung.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der Prognoseberechnungsstatus</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>Der Zeitraum für diese Prognoseberechnung.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Gesamtzahl der Protokolle, die aufgrund von Fehlern während des Prognoseberechnungsvorgangs erstellt wurden.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Calculation Layout</layout>
+        <sections>
+            <label>Stapel</label>
+            <section>Batch</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Berechnungsname der Abrechnungsprognose</nameFieldLabel>
+    <webLinks>
+        <label><!-- View_Forecast --></label>
+        <name>pse__View_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

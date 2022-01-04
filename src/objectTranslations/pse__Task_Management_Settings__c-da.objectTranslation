@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Opgavestyringsindstillinger --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Opgavestyringsindstillinger --></value>
+    </caseValues>
+    <fields>
+        <help>Når det er sandt, ignoreres fejl ved oprettelse af opgaver eller overdragelsesmilestre, og det vil medføre, at der oprettes projektopgaveopgaver. Denne mulighed ignoreres, medmindre automatisk oprettelse af opgaveopgaver er sandt.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om du automatisk tildeler uopdelte projektopgaver, der tilhører samme milepæl som opgaven, når du tildeler en ressource til et projekt eller opretter en ny opgavemilestone record. Standardværdien er falsk.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sandt, ignoreres fejl ved sletning af opgaver eller overdragelsesmilestre, og det vil medføre sletning af projektopgaveopgaver. Denne indstilling ignoreres, medmindre det automatisk er fjernet opgaveopgaver.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om projektopgaveopgaver automatisk fjernes, når ressource eller milepæl fjernes, eller milepælen er ikke længere forbundet med denne opgave. Standardværdien er falsk.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Kontrollerer standardbestilling af opgaver i task management-grænsefladen ved indledende belastning og efter forfriskning. Dette skal være gyldigt efter en SOQL ORDER BY-klausul.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Navn på feltæt i projektopgaveopgaveobjektet, der indeholder en liste over felter, der vil blive begrænset til redigering, når posten ikke er låst.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Navn på feltæt i Projektopgaveafhængighedsobjektet, der indeholder en liste over felter, der vil blive begrænset til redigering, når posten ikke er låst.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Navn på feltæt i projektopgaveobjektet, der indeholder en liste over felter, der vil blive begrænset til redigering, når posten ikke er låst.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antal projekter, der skal indlæses for valg i Task Management UI</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, begrænser du dig fra at gemme ændringer til Opgavens slutdato, når den er større end Milestone Target-datoen.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Hvis du vælger, begrænser du dig fra at gemme ændringer til Opgavens sluttidspunkt, når den er uden for rækkevidde af projektets start- og slutdato.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>Hvis du vælger, begrænser du dig fra at gemme ændringer til Opgavens sluttidspunkt, når den er uden for rækkevidden af ​​projektopgaverne.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er valgt, begrænser du dig fra at gemme ændringer til Opgavens sluttidspunkt, når den er uden for rækkevidden af ​​projektopgavens timer.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, begrænser du dig fra at gemme ændringer til Opgavens startdato, når den er større end Milestone Target-datoen.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, begrænser du dig fra at gemme ændringer til Opgavens startdato, når den er uden for rækkevidde af Projekt Start og Slutdato.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

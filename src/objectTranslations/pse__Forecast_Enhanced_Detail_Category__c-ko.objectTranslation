@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>청구 예측 세부 사항 카테고리</value>
+    </caseValues>
+    <fields>
+        <help>실제 값은 청구서 : 지출, 청구 : 마일스톤, 청구 : 기타 조정 및 청구 : 시간표의 합계입니다.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 세부 사항 카테고리의 청구 예측 페이지에 표시되는 값을 나타내는 공식 필드입니다.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <help>비용 청구.</help>
+        <label><!-- Billings: Expenses --></label>
+        <name>pse__Billings_Expenses__c</name>
+    </fields>
+    <fields>
+        <help>이정표에 대한 청구.</help>
+        <label><!-- Billings: Milestones --></label>
+        <name>pse__Billings_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>기타 조정에 대한 청구.</help>
+        <label><!-- Billings: Misc Adjustments --></label>
+        <name>pse__Billings_Misc_Adjustments__c</name>
+    </fields>
+    <fields>
+        <help>타임 카드 청구.</help>
+        <label><!-- Billings: Timecards --></label>
+        <name>pse__Billings_Timecards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Detail --></label>
+        <name>pse__Forecast_Enhanced_Detail__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 청구 예측 세부 사항 카테고리에 적용된 현재 활성 청구 예측 대체를 찾아보십시오.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>현재 청구 예측 세부 사항 카테고리에 적용된 현재 청구 예측 대체를 작성한 사용자를 찾습니다.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Detail Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 청구 예측 세부 사항 범주에 적용된 현재 활성 청구 예측 대체의 작성 날짜 및 시간입니다.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>현재 청구 예측 세부 사항 카테고리에 적용된 현재 청구 예측 대체에 대한 참고 사항.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 세부 사항 카테고리에 적용된 현재 활성 청구 예측 대체의 값입니다.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>예정된 과제.</help>
+        <label><!-- Scheduled: Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>예약 된 백 로그 값은 예약 : 할당, 예약 : 보류 RR, 예약 : 보류 RR 및 예약 : 마일스톤의 합계입니다.</help>
+        <label><!-- Scheduled Backlog --></label>
+        <name>pse__Scheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <help>예정된 리소스 요청입니다.</help>
+        <label><!-- Scheduled: Held RRs --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>예정된 이정표.</help>
+        <label><!-- Scheduled: Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>예약되지 않은 리소스 요청입니다.</help>
+        <label><!-- Scheduled: Unheld RRs --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>영구 기간 (모든 기간)의 맥락에서 잠재적 인 백 로그.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Detail Category Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>청구 예측 세부 사항 카테고리 이름</nameFieldLabel>
+</CustomObjectTranslation>

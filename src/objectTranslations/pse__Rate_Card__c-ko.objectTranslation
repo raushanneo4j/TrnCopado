@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>요율표</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Rate Card Fields For Rate Card Set --></label>
+        <name>pse__Rate_Card_Fields_For_Rate_Card_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate --></label>
+        <name>pse__Average_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cascading Role --></label>
+        <name>pse__Cascading_Role__c</name>
+    </fields>
+    <fields>
+        <help>요율표는 여기에 입력 한 날짜 이후 더 이상 적용되지 않습니다. 종료 날짜를 입력하는 경우 시작 날짜도 입력해야합니다. 시작일과 종료일이없는 경우 요율표가 적용됩니다.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>건축가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>컨설턴트</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation><!-- DevOps Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>프로젝트 매니저</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>훈련자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation><!-- UI Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>요율표는 여기에 입력 한 날짜에 적용됩니다.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate --></label>
+        <name>pse__Suggested_Bill_Rate__c</name>
+    </fields>
+    <layouts>
+        <layout>Rate Card Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>개요</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>요율표 번호</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Rate Card must not reference more than one of the following: Account, Region, Practice, Group. --></errorMessage>
+        <name>pse__Rate_Card_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The start date must be before the end date. --></errorMessage>
+        <name>pse__Start_Date_must_be_before_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

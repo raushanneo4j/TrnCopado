@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Partner_Involved_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Partner_Involved_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Partner_Involved_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Partner_Involved_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Opportunity_Stage__c</fields>
+        <label>Partner Involved Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>https://neo4j--organizer.na122.visual.force.com/a7z3s0000004SJSAA2 nicknameis: ORE Phase 2 (John Broad&apos;s ORE requirements)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountIdAccountName__c</fullName>
+        <description>Concatenated as a formula we can roll this up and perform both href id and label direction in reports.</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Partner_Involved_Account__c )+ Partner_Involved_Account__r.Name</formula>
+        <inlineHelpText>Concat&apos;d as a formula lets us rollup more, enabling cleaner href/labels in reports that use the opptys Partner Involved Involved fields which are summaries of Partner Involved relTo Opportunities.  The DLRS process that rollups up SysDLRS* fields this.</inlineHelpText>
+        <label>Account ID Account Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_ID__c</fullName>
+        <description>This field exists, because without it,  a process builder that listens for account name changes and edits partner involved children was unable to filter which children it updates.  This solves that. Which lets the update happen, which lets us write realtime account name as text to partner involved which lets us workaround the sfdcga limit and dlrs limit of not being able to rollup formula fields.</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Partner_Involved_Account__r.Id)</formula>
+        <inlineHelpText>This field exists, because without it,  a process builder that listens for account name changes and edits partner involved children was unable to filter which children it updates.  This solves that. Which lets the update happen, which lets us write realti</inlineHelpText>
+        <label>Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name_derivedForRollups__c</fullName>
+        <description>As of writing this is 
+Hidden from layouts &amp; Maintained by update logic &amp; Exists as text field because DLRS and SFDC GA Limitations cannot rollup formula fields</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As of writing this is 
+Hidden from layouts &amp; Maintained by update logic &amp; Exists as text field because DLRS and SFDC GA Limitations cannot rollup formula fields</inlineHelpText>
+        <label>Account Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Administrative_Influence__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Administrative Influence</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Business_Influence__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Business Influence</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactIDContactFullName__c</fullName>
+        <description>Concat&apos;d as a formula lets us rollup more, enabling cleaner href/labels in reports that use the opptys Partner Involved Involved fields which are summaries of Partner Involved relTo Opportunities. The DLRS process that rollups up SysDLRS* fields this.</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Partner_Contact__c)+  Partner_Contact__r.FirstName + &apos; &apos; + Partner_Contact__r.LastName</formula>
+        <inlineHelpText>Concat&apos;d as a formula lets us rollup more, enabling cleaner href/labels in reports that use the opptys Partner Involved Involved fields which are summaries of Partner Involved relTo Opportunities. The DLRS process that rollups up SysDLRS* fields this.</inlineHelpText>
+        <label>Contact ID Contact Name Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L1_L2_Support_Responsibility__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes whether the Partner Involved Reseller or Neo4j will be providing support to the end-customer.</inlineHelpText>
+        <label>L1/L2 Support Responsibility?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>Neo4j</fullName>
+                    <default>false</default>
+                    <label>Neo4j</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Rich Text Field. Max length: 32768 characters</inlineHelpText>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity_IsClosed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.IsClosed</formula>
+        <label>Opp IsClosed?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <label>Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage_and_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;[&apos;+TEXT(Opportunity__r.StageName)+&apos;] &apos;+ HYPERLINK( &apos;/&apos;+Opportunity__c , Opportunity__r.Name)</formula>
+        <label>Opportunity Stage and Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Opportunity_Related_Entities</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Partner_Alignment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Alignment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ORE_Alignment_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Partner Contact options are filtered by the affiliated PI Account.  Before providing Partner Contact please ensure that PI Account is populated and that the contact resides in the PI Account.</inlineHelpText>
+        <label>Partner Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Partner_Involved_Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Partners Involved</relationshipLabel>
+        <relationshipName>Partners_Involved2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Involved_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter all entities associated with an opportunity whether a partner, prospective partner or neither: services provider, advisory firm, reseller, solutions provider or management consultant.</inlineHelpText>
+        <label>Partner Involved (Account)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Partner Involved Opportunities</relationshipLabel>
+        <relationshipName>Partners_Involved2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ORE_Role</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements))</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The partner Neo4j is working with and promoting whether there is a formal agreement in place. This Partner Involved may or may not be the partner that originated the lead/opportunity.</inlineHelpText>
+        <label>Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Percentage__c</fullName>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the relevant percentage agreed per the relevant Neo4j partner agreement and/or Deal Registration Form</inlineHelpText>
+        <label>Referral Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Term_in_Months__c</fullName>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of months entered should correspond to the initial term being paid, which is usually 12 months.  In the case of multi-year prepaid transactions, the amount entered could correspond to the applicable multi-year term.</inlineHelpText>
+        <label>Referral Term in Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reseller_Percentage__c</fullName>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the relevant percentage discount off list price for the applicable partner in the region/segment/verticle.</inlineHelpText>
+        <label>Reseller Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Reseller_Term_in_Months__c</fullName>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of months should correspond to the initial term of the opportunity.</inlineHelpText>
+        <label>Reseller Term in Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Can be selected in the case of a win or loss for as many OREs as applicable</inlineHelpText>
+        <label>Selected</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Teaming_or_Pursuit_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>the partner Neo4j is working with and promoting and there is a formal agreement in place consummating this teaming, which may have obligations to adhere to
+Note: standard teaming permits Neo4j to support other bidders’ activities that are specifying Neo4j in their respective bids
+this may or may note be the partner that originated the opp/lead
+Logic: Primary flag would have to be selected for this to be available</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check to indicate formal agreement in place between Partner Involved &amp; Neo4j, which may have obligations (If checked, sync w/AE or Partner Team)
+Note: standard teaming permits Neo4j to support other respondents specifying Neo4j in their respective bid</inlineHelpText>
+        <label>Teaming/Pursuit Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Influence__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Technical Influence</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UniqueCombokey_fulfillmentAcctId_OppId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field is derived by system workflow, and unique so that we prevent duplicate fulfillment partner involved entries (here duplicate means &quot;more than 1 per opp/partnerinvolved record&quot;)</description>
+        <externalId>false</externalId>
+        <label>UniqueCombokey_fulfillmentAcctId_OppId</label>
+        <length>36</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>is_OppsAccount_a_Customer_OfThis_Partner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This flag denotes whether the Opportunity Account is an existing customer of the Partner Involved - past or present.</inlineHelpText>
+        <label>Existing Customer?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Partner Involved</label>
+    <listViews>
+        <fullName>All_OREs</fullName>
+        <columns>Partner_Involved_Account__c</columns>
+        <columns>is_OppsAccount_a_Customer_OfThis_Partner__c</columns>
+        <columns>Partner_Role__c</columns>
+        <columns>Partner_Alignment_Status__c</columns>
+        <columns>Primary__c</columns>
+        <columns>Teaming_or_Pursuit_Agreement__c</columns>
+        <columns>Business_Influence__c</columns>
+        <columns>Technical_Influence__c</columns>
+        <columns>Administrative_Influence__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>All OREs</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PI-{0000}</displayFormat>
+        <label>Partner Involved AutoNumber</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Partners Involved</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Referral_req_percent</fullName>
+        <active>true</active>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt;. OFF UNTIL DATA MIGRATION OF PROJECT IS DONE (1b).</description>
+        <errorConditionFormula>if( AND(
+TEXT(Partner_Role__c)==&apos;Referral&apos;,
+ISBLANK( Referral_Percentage__c )
+) ,true,false)</errorConditionFormula>
+        <errorDisplayField>Referral_Percentage__c</errorDisplayField>
+        <errorMessage>This field is required for Referral partner roles.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Referral_req_referralTermInMonths</fullName>
+        <active>true</active>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt; OFF UNTIL DATA MIGRATION OF PROJECT IS DONE (1b).</description>
+        <errorConditionFormula>if( AND(
+TEXT(Partner_Role__c)==&apos;Referral&apos;,
+ISBLANK(  Referral_Term_in_Months__c )
+) ,true,false)</errorConditionFormula>
+        <errorDisplayField>Referral_Term_in_Months__c</errorDisplayField>
+        <errorMessage>This field is required for Referral partner roles.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reseller_req_percent</fullName>
+        <active>true</active>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt; OFF UNTIL DATA MIGRATION OF PROJECT IS DONE (1b).</description>
+        <errorConditionFormula>if( AND(
+TEXT(Partner_Role__c)==&apos;Reseller&apos;,
+ISBLANK( Reseller_Percentage__c )
+) ,true,false)</errorConditionFormula>
+        <errorDisplayField>Reseller_Percentage__c</errorDisplayField>
+        <errorMessage>This field is required for Reseller partner roles.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reseller_req_referralTermInMonths</fullName>
+        <active>true</active>
+        <description>added in a7z3s0000004SJSAA2(Project Name ORE Phase 2 (John Broad&apos;s ORE requirements)) per requirement &lt;Term Fields (two of them) for Reseller % and Referral % fields, with option for perpetuity&gt; OFF UNTIL DATA MIGRATION OF PROJECT IS DONE (1b).</description>
+        <errorConditionFormula>if( AND(
+TEXT(Partner_Role__c)==&apos;Reseller&apos;,
+ISBLANK(  Reseller_Term_in_Months__c )
+) ,true,false)</errorConditionFormula>
+        <errorDisplayField>Reseller_Term_in_Months__c</errorDisplayField>
+        <errorMessage>This field is required for Reseller partner roles.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>料金表</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Rate Card Fields For Rate Card Set --></label>
+        <name>pse__Rate_Card_Fields_For_Rate_Card_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Cost Rate --></label>
+        <name>pse__Average_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cascading Role --></label>
+        <name>pse__Cascading_Role__c</name>
+    </fields>
+    <fields>
+        <help>料金表は、ここに入力した日付以降は適用されなくなります。終了日を入力した場合は、開始日も入力する必要があります。開始日と終了日がない場合は、料金表が適用されます。</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Rate Cards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>建築家</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>コンサルタント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation><!-- DevOps Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>プロジェクトマネージャ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>トレーナー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation><!-- UI Developer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>料金表は、ここに入力した日付に有効になります。</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Bill Rate --></label>
+        <name>pse__Suggested_Bill_Rate__c</name>
+    </fields>
+    <layouts>
+        <layout>Rate Card Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>概要</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>レートカード番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Rate Card must not reference more than one of the following: Account, Region, Practice, Group. --></errorMessage>
+        <name>pse__Rate_Card_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The start date must be before the end date. --></errorMessage>
+        <name>pse__Start_Date_must_be_before_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

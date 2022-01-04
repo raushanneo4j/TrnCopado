@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Proyecto Tarea Configuración de Gantt --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Proyecto Tarea Configuración de Gantt --></value>
+    </caseValues>
+    <fields>
+        <help>Cuando un proyecto está bloqueado para su edición, esta configuración determina si los usuarios (que tienen permiso para editar tareas en Project Task Gantt) tienen la opción de romper el bloqueo y forzar al otro usuario al modo de solo lectura.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Define el nombre de API del conjunto de campos, en el objeto de tarea del proyecto, que contiene las columnas personalizadas para mostrar en Project Task Gantt. Cuando la configuración está en blanco, se usa el conjunto de campos Columnas personalizadas de Gantt.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, los registros en Project Task Gantt no se cargan en un búfer. El valor predeterminado no está seleccionado. Esta configuración solo se debe cambiar después de consultar al servicio de atención al cliente de FinancialForce.com.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, el botón de dependencia de resolución se desactiva cuando las dependencias de tareas del proyecto están sincronizadas. Si no se selecciona, el botón permanece activo cuando las dependencias de tareas del proyecto no necesitan sincronizarse. El valor predeterminado no está seleccionado.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Determina el número de filas para representar encima de la vista actual en Project Task Gantt. El valor predeterminado es 20. Esta configuración solo se debe cambiar después de consultar al servicio de atención al cliente de FinancialForce.com.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado para mostrar una información sobre herramientas personalizada para Hitos. Si se define, esta configuración reemplaza a la información sobre herramientas predeterminada de Milestone.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado para mostrar una información sobre herramientas personalizada para las asignaciones de tareas del proyecto. Si se define, esta configuración reemplaza la sugerencia de herramienta de asignación de tareas del proyecto predeterminada.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Determina los niveles de acceso de edición de Gantt para Project Manager. Los valores son &quot;Completo&quot; (predeterminado): puede editar proyectos creados, &quot;Leer&quot; - solo tiene acceso de solo lectura, o &quot;Ninguno&quot; - acceso determinado por Controles de Permiso.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de la API de un conjunto de campo utilizado para mostrar una información sobre herramientas personalizada para Proyectos. Si se define, esta configuración reemplaza a la información sobre herramientas predeterminada del Proyecto.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>El nombre de API de un campo establecido en una tarea de proyecto que contiene campos que no son editables en Project Task Gantt.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las personalizaciones de ancho, orden y visibilidad de las columnas en Project Task Gantt serán recordadas por usuario.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, el botón Crear demanda de recursos se muestra en la barra de herramientas de Project Task Gantt. Úselo para dotar de personal al plan del proyecto a través del botón Crear demanda de recursos de la página Asignaciones de tareas del proyecto.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Determina si el porcentaje de horas completas se muestra en la barra de tareas en el panel Programar. Esta configuración no controla la visualización del botón% Hrs en el panel Programar.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Determina si el porcentaje de puntos completos se muestra en la barra de tareas en el panel Programar. Esta configuración está seleccionada por defecto. Esta configuración no controla la visualización del botón% Pts en el panel Programar.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado para mostrar una información sobre herramientas personalizada para las Tareas del proyecto. Si se define, esta configuración reemplaza la información sobre herramientas de la tarea del proyecto predeterminada.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Determina el número de filas para representar debajo de la vista actual en Project Task Gantt. El valor predeterminado es 10. Esta configuración solo debe cambiarse después de consultar al servicio de atención al cliente de FinancialForce.com.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

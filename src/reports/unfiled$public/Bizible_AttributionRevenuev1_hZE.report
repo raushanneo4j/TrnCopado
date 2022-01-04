@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Revenue_Lead_Conversion__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Marketing_Channel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Content Syndication</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Revenue_First_Touch__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>USD 1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Revenue_Custom_Model__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Revenue_First_Touch__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bizible Attribution+Revenue-v1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$bizible2__Bizible_Attribution_Touchpoint__c@bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>bizible2__Bizible_Attribution_Touchpoint__c.bizible2__Touchpoint_Date__c</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

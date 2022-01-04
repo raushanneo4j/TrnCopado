@@ -1,0 +1,17 @@
+{!Opportunity.Account} was closed-won on {!Opportunity.CloseDate} 
+
+Opportunity: {!Opportunity.Link} 
+
+Marketing Obligations: {!Opportunity.Marketing_Obligations__c} 
+
+Product Type: {!OpportunityLineItem.Name} {!Product2.Name} 
+
+Invoice Instructions: {!Opportunity.Invoicing_Instructions__c}
+
+Ship to Country: {!Account.ShippingCountry}
+
+Ship to State: {!Account.ShippingState} {!Opportunity.Account}
+
+Billing Country: {!Account.BillingCountry}
+
+Billing State: {!Account.BillingState}

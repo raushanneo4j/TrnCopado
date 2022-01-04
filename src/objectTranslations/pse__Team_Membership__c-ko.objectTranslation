@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>팀 멤버쉽</value>
+    </caseValues>
+    <fields>
+        <label><!-- Team Member Initials --></label>
+        <name>pse__Team_Member_Initials__c</name>
+    </fields>
+    <fields>
+        <help>팀에 배정 된 팀원.</help>
+        <label><!-- Team Member --></label>
+        <name>pse__Team_Member__c</name>
+        <relationshipLabel><!-- Team Memberships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team Scheduler Permission --></label>
+        <name>pse__Team_Scheduler_Permission__c</name>
+    </fields>
+    <fields>
+        <help>팀원이 배정 된 팀.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Memberships --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Membership Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>팀 회원 이름</nameFieldLabel>
+</CustomObjectTranslation>

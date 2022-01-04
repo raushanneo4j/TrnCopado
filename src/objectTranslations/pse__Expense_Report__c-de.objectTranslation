@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Spesenabrechnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Kostenberichte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Spesenabrechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Kostenberichte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Spesenabrechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Kostenberichte --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Spesenabrechnung --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Kostenberichte --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ExpenseReportApprovalColumns --></label>
+        <name>pse__ExpenseReportApprovalColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Report Editable Columns --></label>
+        <name>pse__ExpenseReportEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Report Read Only Columns --></label>
+        <name>pse__ExpenseReportReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Report Grid --></label>
+        <name>pse__ExpenseRptGridFieldSet</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Action: Update Include In Financials --></label>
+        <name>pse__Action_Check_Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, kann der Administrator &quot;globale&quot; Änderungen am Ausgabenbericht vornehmen, einschließlich Änderungen am Projekt, der Ressource, der Währung oder dem Datum des ER, auch wenn die Option &quot;In Finanzen einschließen&quot; aktiviert ist. Konfigurationsanforderung: Actuals Calculation Mode muss auf &quot;Geplant&quot; eingestellt sein.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Kontrollkästchen sollte aktiviert sein, wenn der Ausgabenbericht genehmigt wird - normalerweise basierend auf dem Statusfeld.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Speichert den Verlauf der Audit-Notizen. Wenn ein Benutzer ein Projekt oder eine Zuordnung auf einer Spesenabrechnung ändert und die Audit-Notizen 255 Zeichen überschreiten, werden ältere Audit-Notizen verschoben und hier angehängt.</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lines Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, sollte dies alle auf PSA-Trigger basierenden automatischen Übermittlungen zur Genehmigung für den Ausgabenbericht deaktivieren.</help>
+        <label><!-- Disable Approval Auto Submit --></label>
+        <name>pse__Disable_Approval_Auto_Submit__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, wird standardmäßig das Kontrollkästchen &quot;Aus Faktura ausschließen&quot; aktiviert, was den gleichen Effekt wie &quot;Fakturierung&quot; hat, jedoch einen permanenten Ausschluss von der Rechnungsgenerierung widerspiegelt.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report Reference --></label>
+        <name>pse__Expense_Report_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Expense Date --></label>
+        <name>pse__First_Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lines Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Expense Date --></label>
+        <name>pse__Last_Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Überschreibt die Gruppe, auf die die untergeordneten Ausgabentransaktionen für Gruppenaktualisierungen aufgerollt werden, auch wenn das Projekt in einer anderen Gruppe ist. In der Regel rollen die Expense-Transaktionen auf Basis von &quot;following&quot; -Regeln auf die Projekt- oder Ressourcengruppe auf.</help>
+        <label><!-- Override Group --></label>
+        <name>pse__Override_Group__c</name>
+        <relationshipLabel><!-- Override Group For Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Überschreibt die Praxis, in der die untergeordneten Ausgabentransaktionen für Praxis-Istwerte aufrollen, selbst wenn das Projekt in einer anderen Praxis ist. In der Regel werden die Transaktionen eines Aufwands auf Grundlage der folgenden Regeln auf die Praxis des Projekts oder der Ressource aufgerollt.</help>
+        <label><!-- Override Practice --></label>
+        <name>pse__Override_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Überschreibt die Region, in der die untergeordneten Ausgabentransaktionen für regionale Istwerte aufrollen, auch wenn sich das Projekt in einer anderen Region befindet. In der Regel rollen die Transaktionen eines Aufwands auf der Basis von &quot;following&quot; -Regeln auf die Region des Projekts oder der Ressource auf.</help>
+        <label><!-- Override Region --></label>
+        <name>pse__Override_Region__c</name>
+        <relationshipLabel><!-- Override Region For Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Expense Notes --></label>
+        <name>pse__Project_Expense_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Suche nach Projektmethodik</help>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Nachschlagen in der Projektphase</help>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dieses Feld zeigt den dreistelligen Währungscode für die Ressource, die erstattet wird.</help>
+        <label><!-- Reimbursement Currency --></label>
+        <name>pse__Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Expense Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Eingereicht</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Die ID des Spesenberichts aus dem Spesenantrag für Dritte.</help>
+        <label><!-- Third-Party Expenses App Report ID --></label>
+        <name>pse__Third_Party_Expenses_App_Report_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Billable Amount --></label>
+        <name>pse__Total_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Non-Billable Amount --></label>
+        <name>pse__Total_Non_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Diese Nummer zeigt den gesamten Erstattungsbetrag in der Währung der Ressource an.</help>
+        <label><!-- Total Reimbursement Amount --></label>
+        <name>pse__Total_Reimbursement_Amount__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Expense Report Admin Layout</layout>
+        <sections>
+            <label>Auditing</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Projekt Information</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Status</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Zusammenfassung</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Report Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Projekt Information</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>Status</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Zusammenfassung</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Report Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Ausgabenbericht-Name</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Assignment Project must match Expense Report Project. --></errorMessage>
+        <name>pse__ExpenseReport_Asgnmt_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment Resource must match Expense Report Resource. --></errorMessage>
+        <name>pse__ExpenseReport_Asgnmt_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Expense Report Project. --></errorMessage>
+        <name>pse__ExpenseReport_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the methodology with this expense report. The methodology must belong to the same project as the expense report. Select a methodology that belongs to the same project as the expense report. --></errorMessage>
+        <name>pse__ExpenseRpt_Methodology_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate the phase with this expense report. The phase must belong to the same project as the expense report. Select a phase that belongs to the same project as the expense report. --></errorMessage>
+        <name>pse__ExpenseRpt_Phase_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Report to be marked as Approved, it must also be marked as Submitted. --></errorMessage>
+        <name>pse__Expense_Report_Approval_Requires_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense Report may only be marked as Billable if its Project is Billable and its Assignment, if any, is Billable. --></errorMessage>
+        <name>pse__Expense_Report_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Report&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Report_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Report&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Report_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Reports for this Project require an Assignment. --></errorMessage>
+        <name>pse__Project_Requires_Exp_Report_Assignment</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Combine_Attachments --></label>
+        <name>pse__Combine_Attachments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_Expense_Entry_UI --></label>
+        <name>pse__Multiple_Expense_Entry_UI</name>
+    </webLinks>
+</CustomObjectTranslation>

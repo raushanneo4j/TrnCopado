@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <decisions>
+        <description>Checks for existence of a form URL</description>
+        <name>Check_for_Form_URL</name>
+        <label>Check for Form URL</label>
+        <locationX>168</locationX>
+        <locationY>284</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Form_URL_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormURL</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Offer_URL_Record</targetReference>
+            </connector>
+            <label>Form URL Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks for existence of an offer campaign.</description>
+        <name>Check_for_Offer_Campaign</name>
+        <label>Check for Offer Campaign</label>
+        <locationX>551</locationX>
+        <locationY>275</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Offer_Campaign_Is_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OfferCampaignID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Touchpoint_or_Attribution_Touchpoint</targetReference>
+            </connector>
+            <label>Offer Campaign Is Present</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether the record triggering the flow was a touchpoint or an attribution touchpoint.</description>
+        <name>Touchpoint_or_Attribution_Touchpoint</name>
+        <label>Touchpoint or Attribution Touchpoint?</label>
+        <locationX>739</locationX>
+        <locationY>270</locationY>
+        <defaultConnector>
+            <targetReference>Update_Touchpoint</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Attribution_Touchpoint</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsAttributionTouchpoint</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Attribution_Touchpoint</targetReference>
+            </connector>
+            <label>Is Attribution Touchpoint</label>
+        </rules>
+    </decisions>
+    <description>Update the offer campaign field on the touchpoint or attribution touchpoint by looking up the form URL in a custom object used for mapping the form URL to a campaign.</description>
+    <interviewLabel>TOUCHPOINT: Update Offer Campaign {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TOUCHPOINT: Update Offer Campaign</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Finds the matching form URL record based on the form URL variable from the touchpoint.</description>
+        <name>Lookup_Offer_URL_Record</name>
+        <label>Lookup Offer URL Record</label>
+        <locationX>384</locationX>
+        <locationY>272</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_Offer_Campaign</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Offer_URL__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>FormURL</elementReference>
+            </value>
+        </filters>
+        <object>Offer_URL__c</object>
+        <outputAssignments>
+            <assignToReference>OfferCampaignID</assignToReference>
+            <field>Offer_Campaign__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the attribution touchpoint record that triggered the flow with the offer campaign ID.</description>
+        <name>Update_Attribution_Touchpoint</name>
+        <label>Update Attribution Touchpoint</label>
+        <locationX>1002</locationX>
+        <locationY>238</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TouchpointID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Offer_Campaign__c</field>
+            <value>
+                <elementReference>OfferCampaignID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>bizible2__Bizible_Attribution_Touchpoint__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the touchpoint record that triggered the flow with the offer campaign ID.</description>
+        <name>Update_Touchpoint</name>
+        <label>Update Touchpoint</label>
+        <locationX>907</locationX>
+        <locationY>456</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TouchpointID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Offer_Campaign__c</field>
+            <value>
+                <elementReference>OfferCampaignID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>bizible2__Bizible_Touchpoint__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>53</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Check_for_Form_URL</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>URL of the form from the touchpoint or attribution touchpoint that triggered the flow.</description>
+        <name>FormURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Indicates whether the record that triggered the flow is a touchpoint or an attribution touchpoint. Used in a decision to determine which type of record to update.</description>
+        <name>IsAttributionTouchpoint</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The ID of the offer campaign.</description>
+        <name>OfferCampaignID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The ID of the touchpoint that triggered the flow.</description>
+        <name>TouchpointID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>הגדרת תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>הגדרת תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>הזן את מספר הימים שקדמו לתאריך הנוכחי עד אליו יש לכלול עובדות. הזן 0 לשימוש היום כתאריך הניתוק. השאר ריק כדי להשתמש בתאריך המנותק המוגדר כברירת מחדל, שהוא סוף השבוע האחרון.</help>
+        <label><!-- Actuals Cutoff Offset --></label>
+        <name>pse__Actuals_Cutoff_Offset__c</name>
+    </fields>
+    <fields>
+        <help>עקומת תחזית החיוב חלה על הזדמנות במהלך חישוב תחזית חיוב, אם לא להזדמנות הוקצה עקומה.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Opportunity Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>עקומת תחזית החיוב המיושמת על פרויקט במהלך חישוב תחזית חיוב אם לפרויקט לא הוקצה עקומה.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Default Project Curve --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>מציין את רשומת ההתקנה אשר תשמש לחישובי תחזית חיוב חדשים.</help>
+        <label><!-- Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>אם תבחר במוצר הזדמנות, כלולים רק מוצרי הזדמנות שבודקים את IsServicesProductLine. אם תבחר במוצר, כלולים רק מוצרי הזדמנות שיש להם IsServicesProduct בדוק על המוצר עצמו.</help>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity Product</masterLabel>
+            <translation>מוצר הזדמנות</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>מוצר</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>אם מוגדר לאמת, עקומת ההזדמנויות מיושמת תמיד בעת הפעלת חישוב תחזית חיוב.</help>
+        <label><!-- Use Opportunity Curve for Products --></label>
+        <name>pse__Use_Opportunity_Curve_For_Products__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Setup Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם הגדרת תחזית חיוב</nameFieldLabel>
+</CustomObjectTranslation>

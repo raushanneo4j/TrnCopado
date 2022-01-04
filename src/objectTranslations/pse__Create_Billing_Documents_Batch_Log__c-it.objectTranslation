@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Crea registro batch documenti di fatturazione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Crea registri batch documenti di fatturazione</value>
+    </caseValues>
+    <fields>
+        <help>Collegamento principale-dettaglio al record di creazione di documenti di fatturazione correlati.</help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica il tipo di registro (errore, informazione, interruzione, esterno).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>abortire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Esterno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Informazione</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Il testo del messaggio</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Crea ID del registro dei batch dei docum</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

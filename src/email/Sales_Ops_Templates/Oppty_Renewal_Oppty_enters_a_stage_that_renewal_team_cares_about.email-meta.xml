@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>added in a7z3s0000004SNtAAM (Oppty Notifications (Renewals))</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Oppty: Renewal Oppty enters a stage that renewal team cares about</name>
+    <style>freeForm</style>
+    <subject>[auto-notice] Oppty {!Opportunity.Id} changed to {!Opportunity.StageName}</subject>
+    <textOnly>Opportunity Id: {!Opportunity.Id}
+SFDC Link: {!Opportunity.Link}
+
+These notifications will be intercepted, parsed, and integrated with other Renewals automation processes.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

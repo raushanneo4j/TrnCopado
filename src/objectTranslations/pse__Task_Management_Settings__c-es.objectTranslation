@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Configuración de administración de tareas --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Configuración de administración de tareas --></value>
+    </caseValues>
+    <fields>
+        <help>Cuando es verdadero, los errores se ignoran al crear asignaciones o hitos de asignación y eso ocasionará que se creen registros de asignación de tareas del proyecto. Esta opción se ignora a menos que Crear asignaciones de tareas automáticamente sea verdadera.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Indica si se asignan automáticamente tareas de proyecto no asignadas que pertenecen al mismo hito que la asignación al asignar un recurso a un proyecto o al crear un nuevo registro de hito de asignación. El valor predeterminado es falso.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero, los errores se ignoran al eliminar asignaciones o hitos de asignación y eso ocasionará la eliminación de los registros de asignación de tareas del proyecto. Esta opción se ignora a menos que se eliminen automáticamente las asignaciones de tareas.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Indica si se eliminan automáticamente las asignaciones de tareas del proyecto cuando se elimina el recurso o hito o si el hito ya no está asociado con esa asignación. El valor predeterminado es falso.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Controla el orden predeterminado de las tareas en la interfaz de administración de tareas en la carga inicial y después de la actualización. Esto debe ser válido después de una cláusula SOQL ORDER BY.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de fieldset en el objeto Project Task Assignment que contiene una lista de campos que se restringirán para su edición cuando el registro no esté bloqueado.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Nombre del fieldset en el objeto Project Task Dependency que contiene una lista de campos que se restringirán para su edición cuando el registro no esté bloqueado.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Nombre del fieldset en el objeto Project Task que contiene una lista de campos que se restringirán para su edición cuando el registro no esté bloqueado.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Número máximo de proyectos para cargar para su selección en la IU de administración de tareas</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de finalización de la tarea cuando es mayor que la Fecha objetivo de hito.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de finalización de la tarea cuando está fuera del alcance de las fechas de Inicio y Fin del proyecto.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de finalización de la tarea cuando está fuera del alcance de las fechas de Asignación de tareas del proyecto.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de finalización de la tarea cuando está fuera del alcance de las horas de Asignación de tareas del proyecto.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de inicio de la tarea cuando es mayor que la Fecha objetivo de hito.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, le impide guardar los cambios en la Fecha de inicio de la tarea cuando está fuera del alcance de las fechas de Inicio y Fin del proyecto.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

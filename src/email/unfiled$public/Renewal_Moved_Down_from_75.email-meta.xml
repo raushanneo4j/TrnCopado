@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Renewa Moved Down from 75%</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Renewal Moved Down from 75%</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name} Has Moved Down From Renewal 75%</subject>
+    <textOnly>Please provide details of why the account is at risk in the opportunity description field, we want to understand why they are at risk {Risk Reason} and what we are doing to save the account, {Action}.
+
+Please use the following format:  {Risk Reason}: (I.E.): Customer is having financial issues  {Action} (I.E.): Provide customer with several financial options to review.
+
+
+Account: {!Account.Name}
+Opportunity: {!Opportunity.Name}
+Sales Stage: {!Opportunity.StageName}
+Opportunity Owner: {!Opportunity.OwnerFullName} 
+Opportunity Amount:{!Opportunity.Amount} 
+Opportunity ARR:{!Opportunity.ARR__c} 
+Expected Close Date:{!Opportunity.CloseDate}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

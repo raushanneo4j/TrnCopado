@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>סוג חריץ לוח הקבוצות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>סוגי חריצי לוח זמנים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Blocking --></label>
+        <name>pse__Is_Blocking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Holiday --></label>
+        <name>pse__Is_Holiday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Weekend --></label>
+        <name>pse__Is_Weekend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Holiday, Blocking</masterLabel>
+            <translation>חג, חסימה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday, Non-Blocking</masterLabel>
+            <translation>חג, לא חוסם</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekday, Blocking</masterLabel>
+            <translation>יום חול, חסימה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekday, Non-blocking</masterLabel>
+            <translation>יום חול, לא חוסם</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend, Blocking</masterLabel>
+            <translation>סוף שבוע, חסימה</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend, Non-blocking</masterLabel>
+            <translation>סוף שבוע, לא חוסם</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Slot Type Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם חריץ לוח הזמנים של הצוות</nameFieldLabel>
+</CustomObjectTranslation>

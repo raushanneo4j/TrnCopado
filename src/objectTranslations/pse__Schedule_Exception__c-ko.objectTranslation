@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>일정 예외</value>
+    </caseValues>
+    <fields>
+        <help>예외 날짜 범위의 시작 날짜를 입력하십시오.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>예외 기간의 종료일</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>개별 날짜에 값을 제공하지 않을 경우 사용할 기본 시간 수를 입력하십시오. 예를 들어이 값이 2이고 Monday Hours 값이 제공되지 않으면 월요일의 시간 수는 2로 처리됩니다.</help>
+        <label><!-- Default Exception Hours Per Day --></label>
+        <name>pse__Exception_Hours__c</name>
+    </fields>
+    <fields>
+        <help>금요일 종료 시간은 지정된 날짜의 예정된 종료 시간입니다.</help>
+        <label><!-- Friday End Time --></label>
+        <name>pse__Friday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Hours --></label>
+        <name>pse__Friday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>금요일 시작 시간은 지정된 날짜의 예정된 시작 시간입니다.</help>
+        <label><!-- Friday Start Time --></label>
+        <name>pse__Friday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>월요일 종료 시간은 지정된 요일의 예정된 종료 시간입니다.</help>
+        <label><!-- Monday End Time --></label>
+        <name>pse__Monday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Hours --></label>
+        <name>pse__Monday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Monday Start Time은 지정된 요일에 예정된 시작 시간입니다.</help>
+        <label><!-- Monday Start Time --></label>
+        <name>pse__Monday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>토요일 종료 시간은 지정된 요일의 예정된 종료 시간입니다.</help>
+        <label><!-- Saturday End Time --></label>
+        <name>pse__Saturday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Hours --></label>
+        <name>pse__Saturday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>토요일 시작 시간은 지정된 날의 예정된 시작 시간입니다.</help>
+        <label><!-- Saturday Start Time --></label>
+        <name>pse__Saturday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>pse__Schedule__c</name>
+        <relationshipLabel><!-- Schedule Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>일요일 종료 시간은 지정된 날짜의 예정된 종료 시간입니다.</help>
+        <label><!-- Sunday End Time --></label>
+        <name>pse__Sunday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Hours --></label>
+        <name>pse__Sunday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>일요일 시작 시간은 지정된 날의 예정된 시작 시간입니다.</help>
+        <label><!-- Sunday Start Time --></label>
+        <name>pse__Sunday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>목요일 종료 시간은 지정된 요일의 예정된 종료 시간입니다.</help>
+        <label><!-- Thursday End Time --></label>
+        <name>pse__Thursday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Hours --></label>
+        <name>pse__Thursday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>목요일 시작 시간은 지정된 날의 예정된 시작 시간입니다.</help>
+        <label><!-- Thursday Start Time --></label>
+        <name>pse__Thursday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>화요일 종료 시간은 지정된 요일의 예정된 종료 시간입니다.</help>
+        <label><!-- Tuesday End Time --></label>
+        <name>pse__Tuesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Hours --></label>
+        <name>pse__Tuesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>화요일 시작 시간은 지정된 요일에 예정된 시작 시간입니다.</help>
+        <label><!-- Tuesday Start Time --></label>
+        <name>pse__Tuesday_Start_Time__c</name>
+    </fields>
+    <fields>
+        <help>수요일 종료 시간은 지정된 날짜의 예정된 종료 시간입니다.</help>
+        <label><!-- Wednesday End Time --></label>
+        <name>pse__Wednesday_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Hours --></label>
+        <name>pse__Wednesday_Hours__c</name>
+    </fields>
+    <fields>
+        <help>수요일 시작 시간은 지정된 날의 예정된 시작 시간입니다.</help>
+        <label><!-- Wednesday Start Time --></label>
+        <name>pse__Wednesday_Start_Time__c</name>
+    </fields>
+    <layouts>
+        <layout>Schedule Exception Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>시간</label>
+            <section>Hours</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>일정 예외 이름</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start and/or End Date does not fall within the start and end dates of the schedule. --></errorMessage>
+        <name>pse__Check_Date_Range</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date cannot occur before start date --></errorMessage>
+        <name>pse__check_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

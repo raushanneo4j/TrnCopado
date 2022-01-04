@@ -1,0 +1,56 @@
+Hi {!Opportunity.OwnerFirstName},
+<br><br>
+
+This email is to confirm that the '{!Opportunity.Name}' has been successfully submitted to your manager for approval.
+<br>
+
+<div>
+
+<p><strong>OPPORTUNITY DETAILS</strong></p>
+
+<p>
+<ul>
+<li>Opportunity Link: {!Opportunity.Link}</li>
+<li>Sales Stage:</b> {!Opportunity.StageName}</li>
+<li>Opportunity Source:</b> {!Opportunity.Opportunity_Source__c}</li>
+<li>Account: <a href="{!Account.Link}">{!Opportunity.Account}</a></li>
+</ul>
+</p>
+
+<p><strong>HOW THIS WORKS</strong></p>
+
+<p><strong>Eligibility Criteria:</strong></p>
+
+<p>
+<ul>
+<li>Only the SDR who is the current Opportunity owner can submit the record for approval.</li>
+<li>Opportunity 'Stage' field must be set to 'Qualification SDR' (1%).</li>
+<li>'Opportunity Source' field must contain one of the following values:</li>
+<ul>
+<li>SDR - Inbound Lead</li>
+<li>SDR - Outbound Efforts</li>
+<li>SDR + Channel / Indirect Partner</li>
+<li>SDR + Cloud / Tech Partner</li>
+</ul>
+<li>No other 1% Opportunity for the same Account has been submitted by the SDR in the last 6 months.</li>
+<li>A Meeting record (Task) exists on the Opportunity with the value of 'Held' in the 'Status' field.</li>
+<li>‘Assigned To' field on the Meeting record is populated with the name of the SDR. </li>
+<li> ‘Sales Rep’ field on the meeting record is populated with the name of the AE. </li>
+<li>Meeting Note(s) are attached to the meeting record and capture the meeting details.</li>
+<li>No other notes or information exists on the Opportunity or any related records indicating that either the meeting didn't take place, the AE did not attend the meeting together with the SDR or that the SDR didn't source the Opportunity.</li>
+ </ul>
+</p>
+
+<p><strong>Approval Steps:</strong></p>
+
+<p>
+<ul>
+<li>The Opportunity record is locked while in review, but if you want to provide additional details that your manager might need in order to approve your request, navigate to the Opportunity and click the 'Recall' button, so you can edit the record. Once done, click 'Submit for Approval'.</li>
+
+<li>If your approval request is rejected, you will receive an email notification with your manager's notes. Depending on the reason, you might be able to edit the record and resubmit it for approval. </li>
+
+<li>If your request is approved, the record will remain locked as it moves on to the final approval step -- approval by the Director of Sales Development, Stephen Depaoli.</li>
+<li>If approved by Stephen, you will again be notified, but no further action will be required on your part. You will be compensated for the 1% Opportunity. 
+<li>However, if rejected, depending on the reason, you and your manager will get notified and have the option of supplying additional details and resubmitting the record for approval. </li>
+</ul>
+</p>

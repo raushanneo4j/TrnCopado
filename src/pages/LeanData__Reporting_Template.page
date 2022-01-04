@@ -1,0 +1,1014 @@
+<apex:page sideBar="false" standardStylesheets="false" docType="html-5.0">
+    <script type="text/javascript">
+    Visualforce.remoting.timeout = 120000; // Set timeout at page level
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__bootstrap_v3_3_4, 'css/bootstrap.css')}" />
+    <!-- Custom CSS -->
+    <apex:stylesheet value="{!URLFOR($Resource.LeanData__bootstrap_v3_3_4, 'css/bootstrap-multiselect.css')}" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            src: url("{!URLFOR($Resource.Libraries, 'fonts/OpenSans-Regular.ttf')}") format('truetype')
+        }
+
+        <!-- Begin CSS used on Template Only --> 
+        .bs {
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+            display: table;
+            width: 100%;
+        }
+        
+        .bs .loadingParent {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+        }
+        
+        .bs .page-content {
+            width: 100%;
+            padding: 0px 0px;
+            float: left;
+        }
+        
+        .bs .fix-header {
+            position: fixed;
+            top: 0;
+            opacity: 0.9;
+            z-index: 9999;
+        }
+                
+        .bs .logo {
+            display: block;
+            float: left;
+            margin-left: 40px;
+            margin-top: 15.5px;
+        }        
+        
+        .bs .left-sidebar-button {
+            width: 100%;
+            color: white;
+            height: 37.5px;
+            line-height: 37.5px;
+            font-size: 13px;
+            padding-left: 30px;
+            background: #70797b;
+            cursor: pointer;
+        }
+        
+        .bs .left-sidebar-button:hover {
+            background: #828a8c;
+        }
+        
+        .bs .left-sidebar-subnav {
+            color: white;
+            font-size: 13px;
+            padding-left: 80px;
+            padding-bottom: 10px;
+            color: #65d2bd;
+            margin-top: 5px;
+            line-height: 16px;
+        }
+
+        .bs .dg_main-button {
+            display:block;
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+            font-weight: 200;
+            font-family: 'Open Sans';
+            width: max-content;
+            width: intrinsic;
+            width: -moz-max-content;
+            padding: 0px 20px;
+            line-height: 37.5px;
+            border-radius: 3px;
+            background: #1b527f;
+        }
+
+        .bs .no-hover-underline {
+            text-decoration: none !important;
+        }
+        
+        .bs .dg_details-table-pagination {
+            float: right;
+            margin-top: 20px;
+        }
+        
+        .bs .dg_details-table-pagination-page {
+            font-size: 12.5px;
+            color: #555555;
+            font-weight: 200;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .bs .dg_details-table-pagination-page-active {
+            color: black;
+            font-weight: 400;
+        }
+        
+        <!-- End CSS used on Template Only --> <!-- Begin CSS used in all Pages --> <!-- Begin CSS used for Page Structure --> .bs .dg_outer-wrapper {
+            background: white;
+            border: 1px solid var(--lt-grey-2);
+            border-radius: 7.5px;
+            float: left;
+            margin: 20px;
+            width: 1050px;
+        }
+        
+        .bs .dg_outer-wrapper-header {
+            width: 100%;
+            height: 50px;
+            font-size: 19px;
+            color: #000000;
+            text-align: center;
+            line-height: 50px;
+            border-bottom: 1px solid #9da8bf;
+            display: inline-block;
+        }
+        
+        .bs .dg_outer-wrapper-content {
+            padding-top: 20px;
+        }
+        
+        .bs .dg_inner-wrapper-header {
+            width: 100%;
+            height: 50px;
+            font-size: 19px;
+            color: #000000;
+            text-align: center;
+            line-height: 50px;
+            border-bottom: 1px solid #9da8bf;
+        }
+        
+        .bs .dg_inner-wrapper-content {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .bs .dg_inner-wrapper-content:not(:last-child) {
+            border-bottom: 1px solid var(--lt-grey-2);
+        }
+        
+        .bs .dg_inner-wrapper-content:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .bs .dg_floated-item {
+            float: left;
+            margin-right: 20px
+        }
+        
+        .bs .dg_item-title {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+        
+        <!-- End CSS used for Page Structure --> 
+        .highcharts-tooltip {
+            z-index: 1;
+            opacity: 0.9 !important;
+        }
+        
+        
+        .dg_inner-wrapper-content h5 {
+            font-size: 16px;
+            line-height:45px;
+        }
+        
+        .dg_inner-wrapper-content h6 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height:25px;
+        }
+        
+        .dg_inner-wrapper-content p {
+            font-size: 12px;
+            margin-bottom: 27.5px;
+            color: var(--dk-grey-2);
+            line-height:20px;
+        }
+        
+        
+        .bs .btn {
+            font-weight: 200;
+        }
+        
+        .bs a.main-button:hover,
+        a.main-button:active,
+        a.main-button:visited,
+        a.main-button:focus {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .bs .headerSortUp {
+            background: #f0f8ff url("{!URLFOR($Resource.Reporting_Images, 'Up_Arrow_Icon.png')}") no-repeat 99%;
+            background-size: 9.5px 5.5px;
+        }
+        
+        .bs .headerSortDown {
+            background: #f0f8ff url("{!URLFOR($Resource.Reporting_Images, 'Down_Arrow_Icon.png')}") no-repeat 99%;
+            background-size: 9.5px 5.5px;
+        }
+        
+        .bs .dg_bubble-div {
+            width: 465px;
+            z-index:1;
+            background: aliceblue;
+            border: 1px #8da8bf solid;
+            border-radius: 2px;
+            padding: 10px 15px 15px 10px;
+            overflow:hidden;
+            
+        }
+        
+        .bs .dg_bubble-header {
+            font-size: 12px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .bs .dg_bubble-left-content {
+            display:inline-block;
+            width:225px;
+            
+        }
+        
+        .bs .dg_bubble-right-content {
+            display:inline-block;
+            width:160px;
+        }
+        
+        .bs .dg_details-table-div {
+            width: 930px;
+            margin: 0 auto;
+        }
+        
+        .bs .dg_details-table-innerdiv {
+            max-height: 230px;
+            height: 230px;
+            overflow: auto;
+        }
+        
+        .bs .dg_inner-wrapper-content::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+        
+        .bs .dg_inner-wrapper-content::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, .5);
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+        
+        
+        .dg_details-table-innerdiv::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+        
+        .dg_details-table-innerdiv::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, .5);
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+        
+        .dg_details-table-div table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .dg_details-table-div th {
+            font-weight: 400;
+            height: 62.5px;
+            vertical-align: middle;
+            text-align: left;
+            background: #f0f8ff;
+            padding: 5px;
+        }
+        
+        .dg_details-table-div th a {
+            cursor: pointer !important;
+        }
+        
+        .dg_details-table-div th a:hover {
+            text-decoration: none !important;
+        }
+        
+        .dg_details-table-div td {
+            vertical-align: middle;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px 5px;
+        }
+        
+        .bs .dg_large-option-wrapper {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: auto 1.5em;
+            display: block;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .bs .dg_large-option-button {
+            display: inline-block;
+            text-align: center;
+            width: 217.5px;
+            height: 47.5px;
+            background: #dddddd;
+            color: white;
+            font-size: 13px;
+            line-height: 47.5px;
+            border-radius: 2.5px;
+            cursor: pointer;
+        }
+        
+        .bs .dg_large-option-button:hover {
+            opacity: .5;
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Tab_Arrow_Icon.png')}") #1abc9c no-repeat center 40px !important;
+            background-size: 9.5px 8px !important;
+        }
+        
+        .bs .dg_large-option-button-active {
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Tab_Arrow_Icon.png')}") #1abc9c no-repeat center 40px !important;
+            background-size: 9.5px 8px !important;
+            cursor: default;
+        }
+        
+        .bs .dg_large-option-button-active:hover {
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Tab_Arrow_Icon.png')}") #1abc9c no-repeat center 40px !important;
+            background-size: 9.5px 8px !important;
+            cursor: default;
+            opacity: 1.0 !important;
+        }
+        
+        .dg_axis-choices-div {
+            position: absolute;
+            margin-left: 270px;
+        }
+        
+        .dg_y-axis-choice {
+            z-index: 100;
+        }
+        
+        .dg_x-axis-choice {
+            z-index: 100;
+        }
+        
+        .bs .dg_highchart {
+            width: 850px;
+            height: 530px;
+            margin: 35px auto 20px auto;
+        }
+        
+        <!-- End CSS used in all Pages - --> .bs .dg_saveclose-nav {
+            margin: 12.5px 20px 37.5px 0;
+            clear: both;
+            float: right;
+        }
+        
+        .noSidebarCell {
+            padding: 0;
+        }
+        
+        .bs .customHeaderContent-right {
+            float: right;
+            margin: 12.5px 37.5px 0 0;
+        }
+        
+        .bs .customHeaderContent-right-information {
+            height: 18px;
+            width: 18px;
+        }
+        
+        .bs .customHeaderContent-right-wizard {
+            height: 28.5px;
+            width: 165px;
+            margin-right: 37.5px;
+        }
+        
+        .bs .settingsLink {
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+            width: max-content;
+        }
+        
+        .bs .settingsLinkIcon {
+            position: relative;
+            top: -2px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .bs .settingsLinkLabel {
+            margin-left: 5px;
+            font-size: 11px;
+            color: #5e7178;
+            font-weight: 400;
+        }
+        
+        .bs .settingsLinkLabel:hover {
+            text-decoration: underline;
+        }
+        
+        .bs .settingsLinkStatus {
+            margin-left: 5px;
+            display: block;
+        }
+        
+        .bs .selectList {
+            border-radius: 0px !important;
+            background: white !important;
+            padding: 5px 10px !important;
+            color: #5e7178 !important;
+        }
+        
+        .bs .settings-nav {
+            margin-top: 55px;
+        }
+        
+        .bs .main-button {
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+            padding-left: 10px;
+            width: 210px;
+            height: 37.5px;
+            line-height: 37.5px;
+            text-align: left;
+            border-radius: 3px;
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Line_Arrow_Button.png')}") #1b527f no-repeat right !important;
+            background-size: 40px 38px !important;
+        }
+        
+        .bs select {
+            border-radius: 0px;
+            padding: 5px 8px;
+            box-shadow: none;
+            -webkit-appearance: menulist;
+        }
+        
+        .bs .dg_picklist,
+        .multiselect {
+            font-size: 12px !important;
+            width: 250px;
+            height: 30px !important;
+            border-radius: 0px;
+        }
+        
+        .bs .main-button:hover {
+            opacity: .5;
+        }
+        
+        .bs .darkBlueBG {
+            background: #1b527f;
+        }
+        
+        .bs .yellowBG {
+            background: #ffc708;
+        }
+        
+        .bs .blueBG {
+            background: #45b7e6;
+        }
+        
+        .bs .open-sans-light {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        @font-face {
+            font-family: open-sans-light;
+            src: url("{!URLFOR($Resource.OpenSansLight)}");
+        }
+        
+        .funnelBG {
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Funnel_1.png')}") no-repeat;
+            background-size: 100%;
+        }
+        
+        <!-- Begin MODAL Styles--> .bs .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            background-color: #000;
+        }
+        
+        .bs .modal-backdrop.fade {
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+        
+        .bs .modal-backdrop.in {
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+        
+        .bs .modal-header {
+            border-bottom: none;
+        }
+        
+        .bs .close {
+            background: none;
+            border: none;
+            opacity: 1;
+            color: #6ab4c9;
+            font-size: 32px;
+            margin-top: -10px !important;
+        }
+        
+         button:focus {outline:0;}
+        
+        .bs .close:active {
+            border:none;
+        }
+        
+        .bs .lean {
+            font-size: 14px !important;
+        }
+        
+        .bs .modal-body h2 { 
+            color: #005980;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            font-weight: 200;
+            margin-top: -10px;
+            margin-bottom: 32px;
+        }
+        
+        .bs .modal-body p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666666;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 20px;
+            margin-bottom: 28px
+        }
+        
+        .bs .modal-dialog {
+            margin: 100px auto;
+        }
+        
+        .bs .modal-backdrop {
+            opacity: 0.34 !important;
+        }
+        
+        <!-- End Modal --> .bs .dg_styled-select select {
+            background: transparent;
+            width: 100%;
+            padding: 0px 25px 0px 5px;
+            line-height: 14px;
+            font-size: 13px;
+            border: 0;
+            border-radius: 0;
+            height: 44px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        
+        .bs .dg_styled-select {
+            width: 280px;
+            background: url("{!URLFOR($Resource.Reporting_Images, 'Down_Arrow_Icon.png')}") no-repeat right #fff;
+            background-size: 9.5px 5.5px;
+            border: 1px solid var(--lt-grey-2);
+            background-position: right 10px top 12px;
+            line-height: 12px;
+        }
+        
+        .bs .dg_campaign-type-choice-div{
+            visibility:hidden;
+        }
+        
+        .bs .dropdown-toggle {
+            width: 100%;
+            border: none;
+            background: transparent;
+            text-align: left;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        
+        .bs .dropdown-toggle:hover {
+            background: transparent;
+        }
+        
+        .bs .dropdown-toggle:focus {
+            background: transparent;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        
+        .bs .btn-group {
+            width: 100%;
+        }
+        
+        .bs .btn-group > .btn:first-child:active {
+            background: transparent;
+        }
+        
+        .bs .dropdown-menu {
+            width: 100%;
+        }
+        
+        .dropdown-toggle .caret {
+            display: none;
+        }
+        
+        .bs ul li,
+        ol li {
+            margin-left: 0px;
+        }
+    </style>
+    <div class="bs">
+        <apex:form >
+            <apex:pageMessages id="pm" />
+            <div class="page-content">
+                <!-- .header -->
+                <div class="header">
+                    <div class="logo">
+                        <img width="119.5" height="24" src="{!URLFOR($Resource.Reporting_Images, 'LD_logo.png')}" alt="Logo" />
+                    </div>
+                    <div class="header-title open-sans-light">
+                        Clarity
+                    </div>
+                    <apex:insert name="customHeaderContent" />
+                </div>
+                <apex:outputPanel layout="block" styleClass="main-content">
+                    <div class="mainContentAfterLoading" style="display:none">
+                        <apex:insert name="mainContent" />
+                    </div>
+                </apex:outputPanel>
+                <!--
+                <apex:outputPanel layout="block" styleClass="main-content" rendered="{!!isReporting_On}">
+                    Demand Gen module is not enabled. Please contact Leandata to inquire.
+                </apex:outputPanel>-->
+            </div>
+            <!---- End page-container --->
+        </apex:form>
+        
+        <div class="modal fade myModal" id="settingsSavedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">                       
+                        <p>Your settings have been successfully saved.</p>
+                        <p class="lean">The LeanData Team</p>
+                    </div>
+                    <!-- .modal-body -->
+                </div>
+                <!-- .modal-content -->
+            </div>
+            <!-- .modal-dialog -->
+        </div>
+    </div>
+    <!-- jQuery Version 3.5.1 -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-3.5.1.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'jquery-ui-1.12.1.min.js')}" />
+    <!-- Bootstrap Core JavaScript -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'bootstrap-4.5.3.min.js')}" />
+    <!-- JavaScript -->
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'bootstrap-multiselect.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'highcharts-8.2.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.LeanData__Libraries, 'highcharts-more-8.2.2.js')}" />
+    <!-- Autonumeric -->
+    <apex:includeScript value="{!$Resource.LeanData__autonumeric_min}"/>
+    
+    <script>
+      
+        grouping_category = 'By Type';
+        campaign_type = '';
+        time_frame = '';
+        x_axis = '';
+        y_axis = '';
+        x_axis_label = '';
+        y_axis_label = '';
+        x_axis_suffix = '';
+        y_axis_suffix = '';
+        x_axis_prefix = '';
+        y_axis_prefix = '';
+        x_axis_scale = '';
+        y_axis_scale = '';
+        x_axis_max = null;
+        y_axis_max = null;
+        x_axis_min = null;
+        y_axis_min = null;
+        
+        //colorsArray = ['rgb(217, 30, 25)', '#703e94', '#70797b', '#1b527f', '#45b7e6', '#ffc708', '#1abc9c'];
+        colorsArray = ['#1b527f'];
+        j$ = jQuery.noConflict();
+
+        j$(document).ready(function() {
+            j$(".mainContentAfterLoading").css('display','block');
+            resizeSideBar();
+            
+        });
+
+        function hideMainHeader() {
+            j$(".mainHeader").hide();
+        }
+
+        function hideSideBar() {
+            j$(".left-sidebar").hide();
+        }
+
+        function resizeSideBar() {
+            var header = j$(".header");
+            var elementOffset = j$('.main-content').offset().top;
+            var elementHeight = j$('.main-content').outerHeight(true);
+            var headerHeight = header.height();
+            var scrollTop = j$(window).scrollTop();
+
+            var dynamicHeight = elementHeight - scrollTop + elementOffset - headerHeight;
+            dynamicHeight = dynamicHeight > elementHeight ? elementHeight : dynamicHeight;
+            //console.log('Set height: ' + dynamicHeight + ' Header height: ' + headerHeight + ' El height: ' + elementHeight + ' El ofset: ' + elementOffset + ' scrollTop: ' + scrollTop + ' Diff: ' + (elementOffset - scrollTop));
+
+            if (dynamicHeight < 320) {
+                dynamicHeight -= 265;
+                j$(".left-sidebar").css("top", dynamicHeight);
+                j$(".left-sidebar").css("height", "320px");
+            } else {
+                j$(".left-sidebar").css("top", "55px");
+                j$(".left-sidebar").css("height", dynamicHeight);
+            }
+        }
+
+        function setPageTitle(title) {
+            j$(".header-title").text(title);
+        }
+
+        function setGroupingCategory(val) {
+            if (val == 'By Campaign') {
+                j$('.dg_large-option-button-campaign').addClass('dg_large-option-button-active');
+                j$('.dg_large-option-button-type').removeClass('dg_large-option-button-active');
+                j$('.dg_large-option-button-campaign').off('click');
+                j$('.dg_large-option-button-type').on('click');
+                j$('.dg_campaign-type-choice-div').css('visibility', 'visible');
+            } else {
+                j$('.dg_large-option-button-campaign').removeClass('dg_large-option-button-active');
+                j$('.dg_large-option-button-type').addClass('dg_large-option-button-active');
+                j$('.dg_large-option-button-campaign').on('click');
+                j$('.dg_large-option-button-type').off('click');
+                j$('.dg_campaign-type-choice-div').css('visibility', 'hidden');
+            }
+
+            grouping_category = val;
+            buildReport();
+        }
+
+        var header = j$(".header");
+        var headerOffset = header.offset().top;
+        j$(document).on("scroll", function(e) {
+            // Adjust size of sidebar
+            resizeSideBar();
+
+            // Make footer/sidebar sticky
+            var wrap = j$(".bs");
+            var navBar = j$(".left-sidebar");
+            var scrollTop = j$(window).scrollTop();
+
+            header.css('left', -j$(document).scrollLeft() + 10);
+            navBar.css('left', -j$(document).scrollLeft() + 10);
+            var scrollTopVal = j$(document).scrollTop();
+            if (scrollTopVal >= headerOffset) {
+                var width = header.width();
+                var height = header.height();
+                header.css("width", width);
+                navBar.css("position", "fixed");
+                header.addClass("fix-header");
+                wrap.css("margin-top", height);
+            } else if (scrollTopVal < headerOffset) {
+                header.removeClass("fix-header");
+                header.css("width", "100%");
+                wrap.css("margin-top", 0);
+                navBar.css("position", "");
+                navBar.css("top", "");
+                navBar.css('left', 0);
+            }
+        });
+
+
+        j$(window).resize(function() {
+            header.css("width", header.parent().width());
+        });
+
+
+        
+
+
+        // HELPER METHODS
+        function formatFieldByType(val, displayType) {
+            if (val == undefined || val == 'undefined')
+                return '';
+
+            if (displayType == 'String') {
+                return val;
+            } else if (displayType == 'Currency') {
+                //console.log( ' Original Currency ' + val );
+                return (val < 0 ? '-' : '') + '$' + scaleField(Math.abs(val));
+            } else if (displayType == 'Integer') {
+                return val;
+            } else if (displayType == 'Decimal' || displayType == 'Double') {
+                return scaleField(val);
+            } else if (displayType == 'Percentage') {
+                return scaleField(val) + '%';
+            }
+        }
+
+        function getArrayVals(objArray, key) {
+            return objArray.map(function(obj) {
+                return obj[key];
+            });
+        }
+
+        function getNumericalArrayVals(objArray, key, divisor) {
+            return objArray.map(function(obj) {
+                return Math.round((obj[key] / divisor)*Math.pow(10,2))/Math.pow(10,2);
+            });
+        }
+
+        function getFieldByString(o, s) {
+            s = s.replace(/__r/g, '__c');
+            s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+            s = s.replace(/^\./, ''); // strip a leading dot
+            var a = s.split('.');
+            for (var i = 0, n = a.length; i < n; ++i) {
+                var k = a[i];
+                if (k in o) {
+                    o = o[k];
+                } else {
+                    return;
+                }
+            }
+            return o;
+        }
+
+        Array.prototype.sum = function(prop) {
+                var total = 0;
+                for (var i = 0, _len = this.length; i < _len; i++) {
+                    total += this[i][prop];
+                }
+                return total;
+            }
+            
+        function roundToTwo(num) {    
+            return +(Math.round(num + "e+2")  + "e-2");
+        }
+            //----------------- Formatting Methods
+
+        function isNumericField(val, displayFieldsMap) {
+            if (displayFieldsMap[val].fieldType == 'Currency' || displayFieldsMap[val].fieldType == 'Integer' || displayFieldsMap[val].fieldType == 'Double' || displayFieldsMap[val].fieldType == 'Percentage') {
+                return true;
+            } else
+                return false;
+        }
+
+        function getDivisor(val) {
+            if (Math.abs(val / 1000000000) >= 0.99) {
+                return 1000000000;
+            } else if (Math.abs(val / 1000000) >= 0.99) {
+                return 1000000;
+            } else if (Math.abs(val / 1000) > 0.99) {
+                return 1000;
+            } else {
+                return 1;
+            }
+        }
+
+        function getDivisorChar(val) {
+            if (Math.abs(val / 1000000000) >= 0.99) {
+                return 'B';
+            } else if (Math.abs(val / 1000000) >= 0.99) {
+                return 'M';
+            } else if (Math.abs(val / 1000) > 0.99) {
+                return 'K';
+            } else {
+                return '';
+            }
+        }
+        
+        function getDivisorWord(val) {
+            if (val == 1000000000) {
+                return 'Billions';
+            } else if ( val == 1000000) {
+                return 'Millions';
+            } else if ( val == 1000) {
+                return 'Thousands';
+            } else {
+                return '';
+            }
+        }
+        
+        function formatField(val, displayType) {
+            if (val == undefined || val == 'undefined')
+                return '';
+            if (displayType == 'String') {
+                return val;
+            } else if (displayType == 'Currency' || displayType == 'Integer' || displayType == 'Percentage' || displayType == 'Double') {
+                return scaleField(val);
+            }
+        }
+
+        function formatFieldForDisplay(val, displayFieldsMap, fieldName) {
+            if (val == undefined || val == 'undefined')
+                return '';
+
+            var displayType = displayFieldsMap[fieldName].fieldType;
+            if (displayType == 'String') {
+                return val;
+            }
+            if (displayType == 'Currency') {
+                return (val < 0 ? '-' : '') + '$' + scaleField(Math.abs(val));
+            } else if (displayType == 'Integer') {
+                return val;
+            } else if (displayType == 'Decimal' || displayType == 'Double') {
+                return scaleField(val);
+            } else if (displayType == 'Percentage') {
+                return scaleField(val) + '%';
+            }
+        }
+
+        
+        function scaleField(number) {
+            //console.log( ' Sytart Scale ' + number );
+            number = number * 1.0;
+
+            if (Math.abs(number / 1000000000) >= 0.99) {
+
+                number = number / 1000000000;
+                number = number.toFixed(2);
+                number += 'B';
+            } else if (Math.abs(number / 1000000) >= 0.99) {
+                number = number / 1000000;
+                number = number.toFixed(2);
+                number += 'M';
+            } else if (Math.abs(number / 1000) >= 0.99) {
+                number = number / 1000;
+                number = number.toFixed(2);
+                number += 'K';
+            } else {
+                number = number.toFixed(2);
+            }
+
+            //console.log(' End Scale ' + number );
+            return number;
+        }
+              
+        function getAvg(arr) {
+            if (arr.length == 0)
+                return 0;
+            return arr.reduce(function(p, c) {
+                return p + c;
+            }) / arr.length;
+        }
+        
+        function openWindow(url) {
+            newWin=window.open(url, 'Popup');
+            if (window.focus) {
+                newWin.focus();
+            }    
+        }
+        
+        function closeSubpage() {
+            if (null!=newWin) {
+               newWin.close();
+            }  
+        }
+        
+        function CloseWindow() {
+            var winMain=window.opener;
+            if (null==winMain) {
+                winMain=window.parent.opener;
+            }
+            winMain.closeSubpage();
+            
+            return false;
+        }
+        
+        j$('#settingsSavedModal').on('hidden.bs.modal', function (e) {
+            CloseWindow();
+        });
+    </script>
+</apex:page>

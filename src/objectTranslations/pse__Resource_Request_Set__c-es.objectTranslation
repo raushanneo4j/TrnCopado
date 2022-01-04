@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conjunto de solicitud de recursos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conjuntos de solicitud de recursos</value>
+    </caseValues>
+    <fields>
+        <help>Búsqueda en la cuenta Esto se copia de la solicitud de recursos de origen.</help>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Busque la solicitud de recursos que se va a copiar al crear un conjunto de solicitudes de recursos.</help>
+        <label><!-- Master Resource Request --></label>
+        <name>pse__Master_Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Request Sets (Master Resource Request) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Busque la oportunidad. Esto se copia de la solicitud de recursos de origen.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Búsqueda para el proyecto Esto se copia de la solicitud de recursos de origen.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Resource Request Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fecha y hora en que se atendió una solicitud de recursos perteneciente al mismo conjunto de solicitudes de recursos.</help>
+        <label><!-- Staffed On --></label>
+        <name>pse__Staffed_On__c</name>
+    </fields>
+    <fields>
+        <help>Búsqueda de la solicitud de recursos. Esto se completa con la solicitud final de recursos de personal que pertenece a este conjunto de solicitudes de recursos.</help>
+        <label><!-- Staffed Resource Request --></label>
+        <name>pse__Staffed_Resource_Request__c</name>
+        <relationshipLabel><!-- Staffed for Resource Request Set --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre del conjunto de solicitud de recu</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+</CustomObjectTranslation>

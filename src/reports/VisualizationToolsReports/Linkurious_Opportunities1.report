@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_36923804</developerName>
+        <masterLabel>Product Buckets</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Partnership</sourceValue>
+            </sourceValues>
+            <value>Partnership</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>POC - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - PS - Consulting</sourceValue>
+            </sourceValues>
+            <value>POCs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Professional Services - Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Dedicated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - OEM</sourceValue>
+            </sourceValues>
+            <value>PS &amp; Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subscription - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Bloom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Business Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Discovery Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Kerberos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Linkurious</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (License)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Startup</sourceValue>
+            </sourceValues>
+            <value>Subscriptions</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>UNIT_PRICE.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>STAGE_NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>QUANTITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.ARR__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Subscription - Linkurious</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New,Up-Sell,Cross-Sell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Global_Territory__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Linkurious Opportunities</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CLOSE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

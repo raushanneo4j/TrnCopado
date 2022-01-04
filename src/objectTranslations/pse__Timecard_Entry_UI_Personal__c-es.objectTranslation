@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Entrada de tarjeta de tiempo IU Personal --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Entrada de tarjeta de tiempo IU Personal --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, en la página Entrada de tiempo, cuando los usuarios hacen clic o salen de las celdas de tiempo de tarea o ingresan cero manualmente, el valor de proyecto / asignación se actualiza a cero. El valor predeterminado es falso. El modo de entrada de tiempo de tarea debe establecerse en Calculado.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el proyecto o la asignación se pueden cambiar siempre que el estado de la tarjeta de tiempo sea uno de los valores &quot;timecard-edit-status-values ​​/ Timecard_edit_status_values__c&quot;.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>Los campos para usar como información sobre herramientas para las asignaciones. Totalmente calificado (con espacio de nombres si corresponde), se requieren nombres de campo que distingan entre mayúsculas y minúsculas</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Facturable está configurado para mostrarse, determina si se debe mostrar a la izquierda o a la derecha de Horas en la línea del encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Indica si las tarjetas de tiempo con exactamente la misma combinación de semana, proyecto, asignación, recurso, facturable, proyecto, metodología, ubicación, viaje se combinan en la página de entrada de la tarjeta de registro.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Si selecciona Campos adicionales, se copiarán de las tarjetas de horas de la semana anterior.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcado, el campo ETC se copiará de las tarjetas de tiempo de la semana anterior</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcada, los campos Hora como Horario del lunes, Horario del martes, etc. se copiarán de las tarjetas de tiempo de la semana anterior</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si marcó los campos de información de ubicación como Location Mon, etc., se copiarán de las tarjetas de tiempo de la semana anterior.</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Metodología marcada se copiará de las tarjetas de tiempo de la semana anterior</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcado, los hitos se copiarán de las tarjetas de tiempo de la semana anterior</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si está marcado, las notas se copiarán de las tarjetas de la semana anterior</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si se marca el campo Fase, se copiará de las tarjetas de tiempo de la semana anterior</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si se establece en verdadero, la funcionalidad Copiar de la programación rellena los campos de Notas para cada día en la Tarjeta de tiempo si encuentra registros secundarios de Asignación de notas diarias en la Asignación para ese día. (predeterminado falso)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se selecciona, las horas de la tarea se copian de la tarjeta de tiempo de la semana anterior.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se selecciona, la información de la tarea se copia de la tarjeta de tiempo de la semana anterior.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si se marcan los campos de Información de viaje como Travel Week, Travel Mon etc. se copiará de las tarjetas de la semana anterior.</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero y la ventana emergente de búsqueda de recursos en la nueva tarjeta de tiempo, la IU solo arroja un resultado, la ventana emergente de búsqueda de recursos se cierra automáticamente y el campo de recursos se configura como recurso devuelto.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el campo desplegable que se puede facturar en la tarjeta de tiempo ui se mostrará como deshabilitado, es decir, no editable por el usuario.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI almacena en caché todas las asignaciones / proyectos asignados junto con los hitos mientras se carga. Esto puede llevar al límite del estado de visualización de la fuerza de ventas, si el usuario tiene muchas asignaciones / proyectos. Establecer este valor de configuración en verdadero minimizará este caché.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Estas muchas líneas de tarjeta de tiempo vacías se agregarán, cuando se haga clic en el botón Agregar líneas.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>Este es el número mínimo de líneas que estarán siempre disponibles para la nueva entrada de tarjeta de tiempo.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Indica si la columna facturable en la página Entrada de la tarjeta de tiempo está oculta. Cuando es verdadero, la columna está oculta y la casilla de verificación facturable está predeterminada. El valor predeterminado es falso.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el botón Copiar desde la semana anterior en la nueva IU de la tarjeta de tiempo está oculto. El valor predeterminado es falso.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Esta configuración es un duplicado y puede eliminarse en una versión futura. Edite en su lugar la configuración &quot;Ocultar copia del botón de la semana anterior&quot;.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el botón Copiar horarios en la nueva IU de la tarjeta de tiempo está oculto. El valor predeterminado es falso.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero, el enlace Expand Tareas o Contraer tareas está oculto en la página Entrada de tiempo. El valor predeterminado es falso.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero, la columna de notas que normalmente aparece en la página de entrada de la tarjeta de tiempo está oculta. El valor predeterminado es falso.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el botón Guardar en la nueva IU de la tarjeta de tiempo está oculto. El valor predeterminado es falso.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero, los botones &quot;Todas las tareas&quot; y &quot;Mis tareas&quot; están ocultos en la ventana emergente Agregar tareas en la página Entrada de hora. El valor predeterminado es falso.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el botón Enviar en la nueva IU de la tarjeta de tiempo está oculto. El valor predeterminado es falso.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona y el Modo de entrada de tiempo de tarea se establece en Calculado, solo se muestra una fila de horas de tarea. El valor predeterminado de la casilla de verificación es claro.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero y el Modo de entrada de tiempo de tarea es Actual, los enlaces Ver o Editar detalles que se muestran al pasar el ratón sobre una línea de tarjeta de tiempo están ocultos. Si es verdadero y el Modo de entrada de tiempo de tarea no es Actual, la pestaña Notas está oculta en los enlaces. El valor predeterminado es falso</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>El campo / config dado se usa para codificar por colores el encabezado de fecha y columna para una vacación de calendario de trabajo para el recurso seleccionado en la IU de la tarjeta de tiempo.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Determina el ancho de píxeles de las celdas de horas de la tarjeta de tiempo en la página de entrada de la tarjeta Timecard V15.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Número máximo de horas que un recurso puede ingresar en un solo día de tarjeta de tiempo. Si el número total de horas para un recurso excede esta cantidad en un solo día de tarjeta de tiempo, se muestra un mensaje de error.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Número máximo de horas que puede ingresar un recurso para una semana de tarjeta de tiempo. Si se excede, se muestra un mensaje de error. Ingrese un valor de porcentaje y un símbolo, ej. 90%, para especificar un porcentaje máximo de horas calendario de trabajo.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Metodología está configurado para mostrarse, determina si se debe mostrar a la izquierda o a la derecha de Horas en la línea de encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Esta bandera de configuración determina si el campo de metodología debe mostrarse en notas emergentes o en la página frontal.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Milestone está configurado para mostrarse, determina si se debe mostrar a la izquierda o a la derecha de Horas en la línea de encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Esta bandera de configuración determina si el campo de hito debe mostrarse en notas emergentes o en la página frontal.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Número mínimo de horas que puede ingresar un recurso para una semana de tarjeta de tiempo. Si las horas semanales son inferiores a esta cantidad, se muestra un mensaje de error. Ingrese un valor de porcentaje y un símbolo, ej. 30%, para especificar un porcentaje mínimo de horas de trabajo.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el apodo de asignación es editable, de lo contrario no.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el campo de ubicación se mostrará en el diálogo emergente de la nota de entrada de timacard</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el menú desplegable de Ubicación principal se mostrará en la interfaz de usuario TC.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Fase está configurado para mostrarse, determina si se debe mostrar a la izquierda o a la derecha de Horas en la línea de encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Este indicador de configuración determina si el campo de fase se debe mostrar en las notas emergentes o en la página frontal.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las tareas se completan previamente para el usuario y el proyecto seleccionados. El valor predeterminado de la casilla de verificación es claro.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Si el campo Ubicación principal está configurado para visualizarse, determina si se debe mostrar a la izquierda o a la derecha de Horas en la línea del encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Cuando la ubicación principal de Note permitida se establece en verdadero, determina si el campo Ubicación principal aparece en la sección Notas o en la línea de la tarjeta de tiempo.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>proyecto de tarjeta de tiempo / valor desplegable de cuenta de asignación</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>Los campos en este conjunto de campos definen los campos que se muestran en la información sobre herramientas para la línea de Tarea del proyecto en el Registro de una tarjeta de tiempo con la IU de tiempo de la tarea.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>El &quot;Proyecto de asignación editable después de guardar&quot; le da acceso al usuario para cambiar el proyecto / asignación de las tarjetas de tiempo guardadas, pero esto requiere que se establezca una nota de auditoría para la tarjeta de tiempo. Las notas de auditoría se pueden establecer con esta configuración.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Lista de campos de proyectos que se mostrarán como información sobre herramientas en la entrada de la tarjeta de registro ui.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se selecciona, las tareas que se rellenan previamente se basan en la asignación seleccionada. El campo &quot;Limitar a tareas con asignación de correspondencia&quot; en la ventana emergente Seleccionar tareas se marca de manera predeterminada. Restringir tarea basada en la asignación no está seleccionada por defecto.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se selecciona, las tareas que se rellenan previamente se basan en el hito seleccionado. El campo &quot;Limitar a tareas con hito coincidente&quot; en la ventana emergente Seleccionar tareas se marca de manera predeterminada. Restringir tarea basada en hito está desactivada por defecto.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las personalizaciones para el ancho, el orden y la visibilidad de las columnas en la tarjeta Sencha se recordarán por usuario.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Nombres de la API de los campos de asignación que se mostrarán al pasar el puntero del icono de la información sobre herramientas en la sección Programar de una tarjeta de tiempo.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>Los nombres de API de los campos de proyecto que se mostrarán al pasar el puntero del icono de información sobre herramientas en la sección Programar de una tarjeta de tiempo.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>La configuración dada se usa para mostrar la alerta si se ingresó un valor distinto de cero en la sección de tarjeta de tiempo para el día marcado como feriado (que tiene cero horas) en el calendario de trabajo del recurso seleccionado.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>La configuración dada se usa para mostrar la alerta si se ingresó un valor distinto de cero en la sección de cuadrícula de programación para el día que tiene cero horas en el patrón de días de calendario de trabajo de Recursos seleccionado.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, las horas facturables no facturables se mostrarán mediante un texto emergente sobre cada total en la fila de totales para todas las columnas diarias y la columna de suma en la tarjeta de tiempo en Entrada de tiempo.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Indica si la ventana emergente de entrada fácil aparece en la página Entrada de hora al hacer doble clic en una celda de hora editable en una fila de tarjeta de tiempo o presionar la tecla FLECHA ABAJO mientras se selecciona esa celda.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Contiene un campo cuyo valor se mostrará en la lista desplegable de hitos TC UI. Si estos faltan / null, la interfaz de usuario TC simplemente continúa mostrando los campos de nombre Milestone de los Hitos disponibles en la lista desplegable. Ninguna búsqueda __r referencias son supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config se utiliza para controlar el enlace de visualización de visualización en cada tarjeta de tiempo enviada. Al hacer clic en él, se abrirá una superposición de recuerdo, donde tenemos que ingresar el comentario y recuperar la solicitud de aprobación para la tarjeta de tiempo.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Controlado, significa que la cuadrícula de programación se mostrará expandida en la entrada de tarjeta de tiempo de forma predeterminada.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Indica si se mostrarán las casillas de verificación de Viajes en la nueva IU de la tarjeta de tiempo. El valor por defecto es verdadero.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, la sección de la grilla de cronograma se mostrará en la tarjeta de tiempo ui de lo contrario no</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Si se establece en verdadero, muestra el icono de información sobre herramientas junto al nombre de la tarea en la sección Programación de TC UI.Por defecto falso (comportamiento existente, sin columna de información sobre herramientas)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config para mostrar u ocultar el campo etc.</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el campo de metodología de tarjeta de tiempo se mostrará en la IU de tarjeta de tiempo.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config para mostrar u ocultar la lista de selección de hito</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero, el campo Fase de tarjeta de tiempo se mostrará en la IU de tarjeta de tiempo.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es falso, la columna Estado / recuperación se mostrará inmediatamente a la derecha de la columna de Notas. Cuando es verdadero, Status / recall se mostrará a la derecha de cualquier campo adicional.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado por el objeto Timecard. Los campos de este conjunto de campos definen los campos editables que se muestran a la izquierda de Horas en la línea de encabezado de la tarjeta de tiempo de la IU de la tarjeta de tiempo.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado por el objeto Timecard. Los campos en este conjunto de campo definen los campos editables en la línea de encabezado de la tarjeta de tiempo en la IU de la tarjeta de tiempo.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado por el objeto Timecard. Los campos de este campo definen campos de solo lectura en la línea de encabezado de la tarjeta de tiempo en la IU de la tarjeta de tiempo</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV para especificar los campos del encabezado de la tarjeta de tiempo para copiar de la programación. Solo estos campos de hora son válidos para esta configuración &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado por el objeto Timecard. Los campos de este campo definen campos editables en la sección de Notas en líneas de tiempo en la IU de la tarjeta de tiempo.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un conjunto de campos utilizado por el objeto Timecard. Los campos de este campo definen campos de solo lectura en la sección Notas en líneas de tiempo en la IU de la tarjeta de tiempo.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>El campo se usa para mantener coma (,) lista separada de valores de estado de tarjeta de tiempo que se ocultarán en la interfaz de usuario TC.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Especifica las tareas que se ocultan cuando se rellena previamente en Timecards a menos que tengan un registro de tiempo asociado. El valor es una lista de estados separados por comas.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el recurso solo puede seleccionar las tareas para las que tienen una asignación al ingresar el tiempo en comparación con las tareas del proyecto. Cuando esta opción no está seleccionada, los usuarios pueden habilitar esta característica en la página Entrada de tiempo.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Define el comportamiento de filtrado en las fechas de las tareas al elegir las tareas para ingresar el tiempo en contra. Establézcalo en Ninguno o Superposición. Si no es así, no se filtra. Si se superponen, las tareas se enumeran solo cuando la hoja de tiempo y las tareas seleccionables tienen cierta superposición en las fechas.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>El modo de entrada de tiempo para usar al ingresar el tiempo de la tarea para una fila de tarjeta de tiempo. Puede elegir uno de estos valores: Ajustar arriba, Actual, Calculado o Forma libre. El valor predeterminado es Actual.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Número de asignaciones superiores que se cargarán para mostrar en la superposición Proyecto / asignación</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Cantidad de semanas para las que se cargaron las asignaciones / proyectos principales para mostrar en la superposición de proyecto / asignación</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Número de proyectos principales que se cargarán para mostrar en la superposición Proyecto / asignación</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Le permite cambiar su método preferido de administración de campos visibles en la página Entrada de tarjeta de tiempo. Si es False, PSA usará opciones de configuración o configuraciones personalizadas para configurar la UI. Si es True, PSA usará conjuntos de campos para configurar la IU.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Indica si se debe usar una ID de asignación mientras se muestran las asignaciones en la página de la tarjeta de tiempo</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Given field / config se utiliza para codificar con colores el encabezado de fecha y columna para días programados de 0 horas según el patrón de programación (no festivos) en el calendario de trabajo del recurso seleccionado.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Controla el ancho de píxel para el menú desplegable Milestone en la IU de entrada de la tarjeta de registro. Por favor, especifique un número entero para este valor, ya que irá directamente al ancho.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Controla el ancho de píxel para el menú desplegable Proyecto / Asignación en la IU de entrada de la tarjeta de registro. Por favor, especifique un número entero para este valor, ya que irá directamente al ancho. Por ejemplo, un valor 300 configurará el ancho desplegable a 300 px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

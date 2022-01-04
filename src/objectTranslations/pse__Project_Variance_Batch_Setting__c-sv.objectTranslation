@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Batchinställningar för projektvariant --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Batchinställningar för projektvariant --></value>
+    </caseValues>
+    <fields>
+        <help>Om det väljs skickas meddelanden från processvariationer via Chatter till mottagare som listas i inställningen Meddelande mottagare. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs skickas meddelanden från processvariationer via e-post till mottagare som anges i inställningsmeddelanden mottagare. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Anger anmälningsmottagare för parti-varningar för Project Variance skickat via Chatter eller e-post. Värdet är en lista med e-postadresser separerade av semikolon (;). Den här inställningen är som standard null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs skickas meddelanden från processvariationer av processvariationer via uppgifter. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>Antalet poster som ska behandlas i en enda sats. Värdet är 5 som standard.</help>
+        <label><!-- Project Variance Batch Size --></label>
+        <name>pse__ProjectVariance_Batch_Size__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

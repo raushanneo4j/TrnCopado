@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>里程碑</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Milestone Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyMilestoneFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Milestones Columns --></label>
+        <name>pse__CreateProjFromTemplateMilestoneColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Link Assignment Milestone Columns --></label>
+        <name>pse__LinkAssignmentMilestoneColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- % Complete (Hours) --></label>
+        <name>Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Days Remaining --></label>
+        <name>ProjectStatusReport_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- PSR Sort --></label>
+        <name>ProjectStatusReport_Sort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Milestone Late --></label>
+        <name>psaws__Milestone_Is_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Is Active --></label>
+        <name>psaws__Project_Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>如果选中保存，则从与该里程碑相关的费用中重新计算信息。</help>
+        <label><!-- Action: Refresh Expense Roll-Ups --></label>
+        <name>pse__Action_Refresh_Expense_Rollups__c</name>
+    </fields>
+    <fields>
+        <help>如果选中保存，则从与里程碑关联的时间卡中重新计算信息。</help>
+        <label><!-- Action: Refresh Timecard Roll-Ups --></label>
+        <name>pse__Action_Refresh_Timecard_Rollups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Date --></label>
+        <name>pse__Actual_Date__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则允许管理员对里程碑进行“全局”更改，包括对里程碑项目，资源，货币或日期的编辑，即使选中“包括在财务中”也是如此。配置要求：实际计算模式必须设置为“已计划”。</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，并且default-timecard-bill-rate-from-milestone config设置为true，则默认帐单费率将默认为任何子时间卡。</help>
+        <label><!-- Apply Default Bill Rate to Timecard --></label>
+        <name>pse__Apply_Default_Bill_Rate_to_Timecard__c</name>
+    </fields>
+    <fields>
+        <help>批准里程碑时应检查此复选框 - 通常基于“状态”字段。</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount In Financials --></label>
+        <name>pse__Billable_Amount_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Amount Submitted --></label>
+        <name>pse__Billable_Amount_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days In Financials --></label>
+        <name>pse__Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Days Submitted --></label>
+        <name>pse__Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses In Financials --></label>
+        <name>pse__Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Expenses Submitted --></label>
+        <name>pse__Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours In Financials --></label>
+        <name>pse__Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours Submitted --></label>
+        <name>pse__Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Expense Entry --></label>
+        <name>pse__Closed_for_Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>如果已配置，此里程碑的时间卡将继承此帐单费率。默认为且必须始终与Project相同。</help>
+        <label><!-- Default Bill Rate --></label>
+        <name>pse__Default_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则表示默认帐单费率值表示每天的费率而不是每小时的费率。</help>
+        <label><!-- Default Bill Rate is Daily Rate --></label>
+        <name>pse__Default_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>确定是否在里程碑上汇总项目任务小时数。默认值为false。</help>
+        <label><!-- Disable Project Task Hours Roll Up --></label>
+        <name>pse__Disable_Project_Task_Hours_Roll_Up__c</name>
+    </fields>
+    <fields>
+        <help>表示里程碑处于符合结算事件生成条件的状态（不包括已批准的结算标记，每个全局配置也可能需要）。</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time To Completion --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则永远不会记录此业务记录。与账单保留相同，但旨在反映账单生成的永久排除。</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Milestone (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Milestone Cost As External --></label>
+        <name>pse__Log_Milestone_Cost_As_External__c</name>
+    </fields>
+    <fields>
+        <help>与里程碑本身相关的可结算金额（不包括来自子时间卡/费用的可结算金额）。这主要用于固定费用项目。默认为且必须始终与Project相同。</help>
+        <label><!-- Milestone Amount --></label>
+        <name>pse__Milestone_Amount__c</name>
+    </fields>
+    <fields>
+        <help>与里程碑相关的外部固定费用，不包括与儿童时间卡和费用相关的任何费用。默认为且必须始终与Project相同。</help>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days In Financials --></label>
+        <name>pse__Non_Billable_Days_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Days Submitted --></label>
+        <name>pse__Non_Billable_Days_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses In Financials --></label>
+        <name>pse__Non_Billable_Expenses_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Expenses Submitted --></label>
+        <name>pse__Non_Billable_Expenses_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours In Financials --></label>
+        <name>pse__Non_Billable_Hours_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours Submitted --></label>
+        <name>pse__Non_Billable_Hours_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，它将覆盖里程碑事务将为“组实际值”汇总的组，即使其项目位于其他组中也是如此。通常，Milestone的交易汇总到其项目组。</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，它将覆盖里程碑事务将为实际实际值汇总的实践，即使其项目位于不同的实践中。通常情况下，Milestone的交易汇总到其项目实践。</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>如果设置了此字段，则它将覆盖里程碑事务将为区域实际值汇总的区域，即使其项目位于其他区域中也是如此。通常情况下，Milestone的交易汇总到其项目区域。</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>使用“完成百分比”识别方法进行收入预测的完成小时数百分比。该值是（批准的考勤卡小时总数/“计划的小时数”字段中的值）乘以100。</help>
+        <label><!-- % Hours Completed for Recognition --></label>
+        <name>pse__Percent_Hours_Completed_For_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>此里程碑的所有资源的总小时数</help>
+        <label><!-- Planned Hours --></label>
+        <name>pse__Planned_Hours__c</name>
+    </fields>
+    <fields>
+        <help>项目（账单费率）汇率，相对于公司货币，根据里程碑的实际或目标日期计算。</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help>针对此分配为时间卡输入的项目任务小时总数。不要手动编辑此字段。</help>
+        <label><!-- Project Task Hours --></label>
+        <name>pse__Project_Task_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>适用于此记录的收入预测的识别方法。</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Customer Sign-off --></label>
+        <name>pse__Requires_Customer_Sign_off__c</name>
+    </fields>
+    <fields>
+        <help>此里程碑的开始日期。</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>批准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>取消</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>打开</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>计划</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>pse__Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs In Financials --></label>
+        <name>pse__Timecard_External_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard External Costs Submitted --></label>
+        <name>pse__Timecard_External_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs In Financials --></label>
+        <name>pse__Timecard_Internal_Costs_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timecard Internal Costs Submitted --></label>
+        <name>pse__Timecard_Internal_Costs_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Completed Points from Tasks --></label>
+        <name>pse__Total_Completed_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Completed Tasks --></label>
+        <name>pse__Total_Number_of_Completed_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Tasks --></label>
+        <name>pse__Total_Number_of_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Points from Tasks --></label>
+        <name>pse__Total_Points_from_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Milestone --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>用于供应商发票的供应商帐户</help>
+        <label><!-- Vendor Account --></label>
+        <name>pse__Vendor_Account__c</name>
+        <relationshipLabel><!-- Vendor Milestones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Milestones --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Milestone - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Billing &amp; Cost --></label>
+            <section>Billing &amp; Cost</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Milestone Totals --></label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Milestone Layout</layout>
+        <sections>
+            <label>审计</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>信息</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>里程碑总计</label>
+            <section>Milestone Totals</section>
+        </sections>
+        <sections>
+            <label>状态</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>系统信息</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>里程碑名称</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Billed, it must also be marked as Included In Financials and Approved. --></errorMessage>
+        <name>pse__Milestone_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Milestone to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Milestone_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Milestone&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Milestone_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Vendor Invoice Item cannot be changed --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_Assignments --></label>
+        <name>pse__Link_to_Assignments</name>
+    </webLinks>
+</CustomObjectTranslation>

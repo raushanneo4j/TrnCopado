@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Impostazione previsione entrate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Impostazione previsione entrate</value>
+    </caseValues>
+    <fields>
+        <help>Indica il record di impostazione della previsione delle entrate utilizzato per i calcoli della previsione delle entrate. Puoi avere solo un record di configurazione della previsione delle entrate attivo.</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le opportunità sono escluse dai lavori pianificati per la previsione delle entrate.</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Selezionare per escludere le entrate relative alle richieste di risorse trattenute su progetti e pietre miliari.</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>Numero di record da elaborare contemporaneamente, come schede e spese.</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Numero di opportunità ed elementi pubblicitari opportunità da elaborare contemporaneamente.</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Numero di progetti da elaborare contemporaneamente.</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Immettere il nome API del campo sull’oggetto Opportunità che si desidera utilizzare come data di fine prevista del progetto.</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Immettere il nome API del campo sull’oggetto Opportunità che si desidera utilizzare come data di inizio prevista del progetto.</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Selezionare il nome API del campo sull’oggetto Progetto che si desidera utilizzare per calcolare il valore nel campo% ore completate per riconoscimento. Se necessario, è possibile creare il proprio campo e aggiungerlo all’elenco di selezione.</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Impostazioni batch previsioni</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>Impostazioni opportunità</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>Impostazioni del progetto</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>Dettagli di installazione</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome impostazione previsione entrate</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

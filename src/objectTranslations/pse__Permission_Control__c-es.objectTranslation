@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Control de permisos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Control de permisos</value>
+    </caseValues>
+    <fields>
+        <help>Esta casilla rige la capacidad del Usuario para generar y liberar Eventos de Facturación para Proyectos que pertenecen a Regiones / Prácticas / Grupos especificados, y para editar los campos relacionados con Facturación (casilla de verificación Facturado y Elemento de Facturación) para los registros comerciales de Recursos.</help>
+        <label><!-- Billing --></label>
+        <name>pse__Billing__c</name>
+    </fields>
+    <fields>
+        <help>Al marcar esta casilla para Controles de permisos asociados con una jerarquía (por ejemplo, Región, Práctica o Grupo), significa que el Permiso también se aplica a (Recursos pertenecientes a) todos los nodos inferiores en la jerarquía, además del nodo especificado.</help>
+        <label><!-- Cascading Permission --></label>
+        <name>pse__Cascading_Permission__c</name>
+    </fields>
+    <fields>
+        <help>Otorga permiso al usuario para comparar versiones de proyectos.</help>
+        <label><!-- Project Version Compare --></label>
+        <name>pse__Compare_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Otorga permiso al usuario para crear versiones de proyectos.</help>
+        <label><!-- Project Version Create --></label>
+        <name>pse__Create_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Otorga permiso al usuario para eliminar versiones del proyecto.</help>
+        <label><!-- Project Version Delete --></label>
+        <name>pse__Delete_Project_Version__c</name>
+    </fields>
+    <fields>
+        <help>Indica si el usuario seleccionado puede usar Project Task Gantt en modo de edición si no es el administrador del proyecto seleccionado.</help>
+        <label><!-- Project Task Gantt Edit --></label>
+        <name>pse__Edit_Task_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del Usuario para ingresar / editar los Gastos e Informes de Gastos de Recursos que no sean los suyos propios.</help>
+        <label><!-- Expense Entry --></label>
+        <name>pse__Expense_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Esta casilla rige la capacidad del Usuario para editar los Gastos y los Informes de Gastos de los Recursos después de que hayan sido aprobados, pero antes de que se hayan facturado.</help>
+        <label><!-- Expense Ops Edit --></label>
+        <name>pse__Expense_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Permitido realizar la edición en la página de pronósticos para la región / práctica / grupo</help>
+        <label><!-- Forecast Edit --></label>
+        <name>pse__Forecast_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Permitido para ver la página de pronósticos para la región / práctica / grupo</help>
+        <label><!-- Forecast View --></label>
+        <name>pse__Forecast_View__c</name>
+    </fields>
+    <fields>
+        <help>Este es el grupo que contiene los recursos que son el objetivo de la (s) acción (es) especificada (s), por ejemplo, la inscripción de la tarjeta de tiempo delegada en nombre de los recursos de este grupo.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del Usuario para editar los campos relacionados con la Facturación (casilla Facturada, Fecha de Factura, Número de Factura) para los registros comerciales de Project.</help>
+        <label><!-- Invoicing --></label>
+        <name>pse__Invoicing__c</name>
+    </fields>
+    <fields>
+        <help>Esta es la práctica que contiene los recursos que son el objetivo de la (s) acción (es) especificada (s), por ejemplo, la inscripción de la tarjeta de tiempo delegada en nombre de los recursos en esta práctica.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Este es el Proyecto que contiene Asignaciones para Recursos que son el objetivo de la (s) acción (es) especificada (s) - por ejemplo, la Entrada de Tarjeta de Tiempo delegada en nombre de los Recursos en este Proyecto, solo en relación con el Proyecto.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esta es la Región que contiene los recursos que son el objetivo de la (s) acción (es) especificada (s), por ejemplo, la inscripción de la tarjeta de tiempo delegada en nombre de los recursos en esta región.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del Usuario para ingresar / editar Solicitudes de Recursos para Regiones / Prácticas / Grupos especificados.</help>
+        <label><!-- Resource Request Entry --></label>
+        <name>pse__Resource_Request_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Este es el recurso que es el objetivo de la (s) acción (es) especificada (s), por ejemplo, la entrada de la tarjeta de tiempo delegada en nombre de este recurso.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications Entry --></label>
+        <name>pse__Skills_And_Certifications_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills And Certifications View --></label>
+        <name>pse__Skills_And_Certifications_View__c</name>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del usuario de recursos del personal de regiones / prácticas / grupos especificados.</help>
+        <label><!-- Staffing --></label>
+        <name>pse__Staffing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, concede permiso al usuario para crear un equipo.</help>
+        <label><!-- Team Create --></label>
+        <name>pse__Team_Create__c</name>
+    </fields>
+    <fields>
+        <help>Otorga permiso para que el usuario edite el equipo indicado si el usuario no es el propietario del equipo.</help>
+        <label><!-- Team Edit --></label>
+        <name>pse__Team_Edit__c</name>
+    </fields>
+    <fields>
+        <help>Otorga permiso para que el usuario vea al equipo indicado en modo de solo lectura si el usuario no es el propietario del equipo.</help>
+        <label><!-- Team View --></label>
+        <name>pse__Team_View__c</name>
+    </fields>
+    <fields>
+        <help>Este es el Equipo que es el objetivo de la (s) acción (es) especificada (es), por ejemplo, la Vista de equipo en nombre de este Usuario.</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del usuario para ingresar / editar tarjetas de tiempo para recursos que no sean los suyos propios.</help>
+        <label><!-- Timecard Entry --></label>
+        <name>pse__Timecard_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Esta casilla de verificación rige la capacidad del usuario para editar las tarjetas de tiempo para los recursos después de que hayan sido aprobados, pero antes de que se hayan facturado.</help>
+        <label><!-- Timecard Ops Edit --></label>
+        <name>pse__Timecard_Ops_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Permission Controls --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indica si el usuario seleccionado puede usar Project Task Gantt en modo de solo lectura si no es el administrador del proyecto seleccionado.</help>
+        <label><!-- Project Task Gantt View --></label>
+        <name>pse__View_Task_Manager__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Copy of Permission Control Layout (NEW)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other PSA Permissions --></label>
+            <section>Other PSA Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Billing / Accounting Permissions --></label>
+            <section>PSA Billing / Accounting Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Staffing Permissions --></label>
+            <section>PSA Staffing Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- PSA Time &amp; Expense Approvers / Ops Edit Permissions --></label>
+            <section>PSA Time &amp; Expense Approvers / Ops Edit Permissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Permission Control Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Permisos</label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label>Resumen</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de control de permisos</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Should not have Casscading Permission checked when assigning Team --></errorMessage>
+        <name>pse__Perm_Ctrl_CasscadeCheck_Not_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Controls must specify a User. --></errorMessage>
+        <name>pse__Permission_Control_User_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must not reference more than one of the following: Resource, Region, Practice, Group, Project or Team --></errorMessage>
+        <name>pse__Permission_May_Not_Have_Multiple_Targets</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Resource or a Region/Practice/Group or a Project or Team --></errorMessage>
+        <name>pse__Permission_Must_Have_Target_Entity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Permission Control Start Date may not be later than the End Date. --></errorMessage>
+        <name>pse__Start_Date_may_not_be_After_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Permission Control must reference either a Region/Practice/Group or a Project when assigning Project Version permissions. --></errorMessage>
+        <name>pse__Version_Perm_Support_No_Team_Or_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

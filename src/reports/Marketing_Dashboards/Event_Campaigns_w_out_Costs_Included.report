@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_35969795</developerName>
+        <masterLabel>Campaign Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CAMPAIGN_TYPE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Content Syndication</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>List Acquisition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PPC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-Targeting</sourceValue>
+            </sourceValues>
+            <value>Digital Campaigns</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>External Events</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neo4j Events</sourceValue>
+            </sourceValues>
+            <value>Live Events</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nurture</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Online Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Website</sourceValue>
+            </sourceValues>
+            <value>No Cost Needed</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_32749623</developerName>
+        <masterLabel>Has Actual Cost</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>ACTUAL_COST</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>NO</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+            </sourceValues>
+            <value>YES</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_6864330</developerName>
+        <masterLabel>Has Budgeted Cost</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>BUDGETED_COST</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>NO</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+            </sourceValues>
+            <value>YES</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_31710950</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CAMPAIGN_PARENT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>NAM GraphTalks 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM GraphTour 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM GraphTour 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM Live Events 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM Live Events 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM Tradeshows 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NAM Tradeshows 2018</sourceValue>
+            </sourceValues>
+            <value>NAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA GraphDays 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA GraphTalks 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA GraphTalks 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA GraphTour 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA GraphTour 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Industry Events 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Live Events 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Live Events 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA MeetUps/User Groups 2018</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA MeetUps/User Groups 2019</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Tradeshows 2018</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_TYPE</field>
+    </columns>
+    <columns>
+        <field>BUDGETED_COST</field>
+    </columns>
+    <columns>
+        <field>ACTUAL_COST</field>
+    </columns>
+    <columns>
+        <field>BucketField_35969795</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_NAME</field>
+    </columns>
+    <columns>
+        <field>TOTAL_ACTUAL_COST</field>
+    </columns>
+    <columns>
+        <field>TOTAL_BUDGETED_COST</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>LE 18,TS 18,LE 19,TS 19</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>training</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_31710950</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Event Campaigns w/out Costs Included</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignList</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>BucketField_35969795</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>

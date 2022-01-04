@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>プロジェクト差異バッチ</value>
+    </caseValues>
+    <fields>
+        <help>現在のApex一括処理ジョブの一意の識別子。</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>バッチ処理レコードを検索します。プロセスが正常に完了すると、バッチプロセスレコードは自動的に削除されます。</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>プロセスが完了したときに送信される通知の種類。成功、失敗、または混在。</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>バッチジョブの現在のステータス： &quot;処理中&quot;、 &quot;完了&quot;、または &quot;エラー&quot;。</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>コンプリート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>処理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ログタイプが中止されたログの数。</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>ログタイプがエラーのログの数。</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>ログタイプが外部のログの数。</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>ログの総数</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>プロジェクト差異ロットID</nameFieldLabel>
+</CustomObjectTranslation>

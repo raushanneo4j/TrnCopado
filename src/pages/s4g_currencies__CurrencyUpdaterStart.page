@@ -1,0 +1,699 @@
+<apex:page showHeader="true" sidebar="false" title="S4G Help" controller="s4g_currencies.CurrencyUpdaterStartController" tabStyle="CurrencyUpdaterStartTab__tab" action="{!saveSettings}" applyBodyTag="false" applyHtmlTag="true" docType="html-5.0" >
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<apex:slds />
+    <!--<apex:outputPanel id="All">
+    <apex:stylesheet value="{!URLFOR($Resource.CurrencyUpdaterStyleSheet)}" />-->
+
+<apex:stylesheet value="{!URLFOR($Resource.s4g_currencies__CUSetup, 'style.css')}" />
+    
+<div class="slds-scope">
+ <div class="slds-grid">
+    <div style="width: 70px; border-bottom: 2px solid #0b2c39;">
+        <div class="slds-align--absolute-center slds-m-vertical--x-small" style="cursor: pointer;" onclick="window.open('http://s4g.es/currency-updater/', '_blank', null);">
+            <img src="{!$Resource.logoCurrencySmall}" style="width:45px; height:45px;" />
+        </div>
+    </div>
+    <div class="slds-col" style="border-bottom: 2px solid #0b2c39; background: #0b2c39;">
+        <div class="slds-m-vertical--small slds-p-top--xx-small slds-p-left--large slds-text-color--inverse">
+            <h1 class="slds-text-heading--large slds-text-title--inverse">{!$Label.SETUP_TITLE}</h1>
+        </div>
+    </div>
+    <div class="slds-col--bump-left" style="border-bottom:2px solid #19bc9c; width:90px; background: #19bc9c;">
+        <div class="slds-m-vertical--small slds-p-top--xx-small slds-align--absolute-center slds-text-color--inverse" style="cursor: pointer;" onclick="window.open('http://s4g.es/currency-updater/help-faq/', '_blank', null);">
+            <h2 class="slds-text-heading--large slds-text-title--inverse">{!$Label.HELP}</h2>
+        </div>
+    </div>
+</div>
+<div class="slds-grid" style="display: none;"><!--TODO: Colocar y escoger logo + sección noticias-->
+    <div class="slds-container--small" style="background: #f8f8f8;">
+        <div style="width:320px;"><apex:image id="logo" value="{!$Resource.s4g_currencies__logo_tab}" /></div>
+    </div>
+    <div style="background: #f8f8f8;">
+        Noticias
+    </div>
+</div>
+<!-- CONSIDERATION -->
+<div id="consideration" class="mainBar">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c; border-top: 1px solid #19bc9c;">
+        <div class="slds-grid slds-grid--align-spread">
+            <div class="slds-col">
+              <h3 class="slds-page-header__title slds-truncate"><apex:outputText value="{!$Label.s4g_currencies__considerations}" /></h3>
+          </div>
+          <div class="slds-col toggleIcon">
+              <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem; cursor: pointer;">
+                <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+              </svg>
+          </span>                  
+      </div>
+  </div>
+</div>
+<div class="slds-text-body--regular slds-m-around--medium content">
+    <apex:outputText escape="false" value="{!$Label.s4g_currencies__considerations_text}" />&nbsp;
+    <apex:outputLink value="http://s4g.es/currency-updater/" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
+</div>
+</div>
+
+<apex:form id="formCurrencyHelp">
+<!-- SETUP -->
+<div id="setup" class="mainBar">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c;">
+        <div class="slds-grid slds-grid--align-spread">
+          <div class="slds-col">
+            <h3 class="slds-page-header__title slds-truncate">{!$Label.SETUP}</h3>
+        </div>
+        <div class="slds-col toggleIcon">
+            <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem;">
+              <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+            </svg>
+        </span>
+    </div>
+</div>
+</div> 
+
+<apex:outputPanel layout="block" styleClass="content slds-text-body--regular slds-m-around--medium " id="setupDiv">
+
+<!-- Messagge-->
+<apex:pageMessages id="messages"/>
+
+<div class="slds-notify slds-notify--alert slds-theme--alert-texture slds-banner slds-hide" id="alertMessage"><h2></h2></div>
+<!-- End Messagge -->
+
+<div class="slds-tabs--default" id="tabs">
+  <ul class="slds-tabs--default__nav cuItemUpdate" role="tablist">
+    <li class="slds-tabs--default__item slds-active" id="liOAuth" title="{!$Label.AUTHORIZE}" role="presentation">
+        <a class="slds-tabs--default__link slds-page-header__title slds-truncate" href="javascript:void(0);" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-default-1" id="tab-default-1__item">{!$Label.AUTHORIZE}</a>
+    </li>
+    <li class="slds-tabs--default__item " title="{!$Label.CURRENCY_TYPE}" id="liCurrencyType" role="presentation">
+        <a class="slds-tabs--default__link slds-page-header__title slds-truncate" href="javascript:void(0);" role="tab" tabindex="2" aria-selected="true" aria-controls="tab-default-2" id="tab-default-2__item">{!$Label.CURRENCY_TYPE}</a>
+    </li>
+    <li class="slds-tabs--default__item" title="{!$Label.ORIGIN}" id="liOrigin" role="presentation">
+        <a class="slds-tabs--default__link slds-page-header__title slds-truncate" href="javascript:void(0);" role="tab" tabindex="3" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">{!$Label.ORIGIN}</a>
+    </li>
+    <li class="slds-tabs--default__item" title="{!$Label.s4g_currencies__schedule}" id="liSchedule" role="presentation">
+        <a class="slds-tabs--default__link slds-page-header__title slds-truncate" href="javascript:void(0);" role="tab" tabindex="4" aria-selected="false" aria-controls="tab-default-4" id="tab-default-4__item">{!$Label.s4g_currencies__schedule}</a>
+    </li>
+</ul>
+
+
+<apex:actionFunction action="{!clearStatefulMessages}" immediate="true" name="clearMsgs" reRender="messages"/>
+
+<!--- TAB 1 -->
+<div id="tab-default-1" class="slds-tabs--default__content slds-hide slds-show" role="tabpanel" aria-labelledby="tab-default-1__item" style="background: #f8f8f8;">
+  <div class="slds-grid slds-wrap slds-grid--pull-padded slds-grid--align-center">
+      <div class="slds-p-horizontal--small slds-size--2-of-3 slds-medium-size--5-of-6 slds-large-size--3-of-6">
+          <div class="slds-text-body--regular slds-m-around--large">
+              <div class="slds-grid slds-grid--align-center slds-grid--align-space">
+                <div class="slds-col">
+                  <p><b>{!IF(okAuthorization, $Label.AUTHORIZE_TEXT_OK, $Label.AUTHORIZE_TEXT)}</b></p>                  
+                </div>
+                <div class="slds-col">
+                  <apex:commandButton styleClass="slds-button slds-button--neutral {!IF(okAuthorization,'slds-button--success','slds-button--destructive')}" action="{!loginSFOAuth}" value="{!$Label.s4g_currencies__authorize_button}" />
+
+                </div>
+                <div class="slds-col">
+                  
+
+                  <apex:outputPanel rendered="{!okAuthorization}">
+                    <span class="slds-icon_container" title="{!$Label.AUTHORIZE_OK}">
+                      <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true" style="fill:#119a7f;">
+                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#check')}"></use>
+                      </svg>
+                      <span class="slds-assistive-text">{!$Label.AUTHORIZE_OK}</span>
+                    </span>
+                  </apex:outputPanel>
+
+                  <apex:outputPanel rendered="{!!okAuthorization}">
+                    <span class="slds-icon_container" title="{!$Label.AUTHORIZE_KO}">
+                      <svg class="slds-icon slds-icon--small slds-icon-text-default" aria-hidden="true" style="fill:#d71c1f;">
+                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                      </svg>
+                      <span class="slds-assistive-text">{!$Label.AUTHORIZE_KO}</span>
+                    </span>
+                  </apex:outputPanel>
+
+                  
+                </div>
+                <div class="slds-col">
+                  <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#why-do-i-have-to-authorize-currency-updater', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--- TAB 2 -->
+<div id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item" style="background: #f8f8f8;">
+    <div class="slds-grid slds-wrap slds-grid--pull-padded slds-grid--align-center">
+      <div class="slds-p-horizontal--small slds-size--1-of-1 slds-small-size--6-of-6 slds-medium-size--6-of-6 slds-large-size--4-of-6">
+          <div class="slds-text-body--regular slds-m-around--large">
+              <div class="slds-grid  slds-grid--align-center slds-grid--align-space">
+                <div class="slds-col">
+                  <p>
+                    <input type="radio" name="currencyOpt" id="coBC" value="coBC"/><label for="coBC"><b>{!$Label.BASIC_CURRENCY}</b></label>
+                  </p>
+
+              </div>
+              <div class="slds-col">
+                  <p>
+                    <input type="radio" name="currencyOpt" id="coAC" value="coAC"/><label for="coAC"><b>{!$Label.ADVANCE_CURRENCY}</b></label>
+                  </p>
+              </div>
+              <div class="slds-col">
+                  <p>
+                    <input type="radio" name="currencyOpt" id="coBB" value="coBB"/><label for="coBB"><b>{!$Label.BOTH_CURRENCY}</b></label>
+                  </p>
+              </div>
+              <div class="slds-col">
+                  <p>                    
+                    <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#currency-types', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+<!-- TAB 3 -->
+<div id="tab-default-3" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item" style="background: #f8f8f8;">
+ <div class="slds-grid slds-wrap slds-grid--pull-padded slds-grid--align-center">
+  <div class="slds-p-horizontal--small slds-size--1-of-1 slds-small-size--6-of-6 slds-medium-size--6-of-6 slds-large-size--5-of-6">
+      <div class="slds-text-body--regular slds-m-around--large">
+          <div class="slds-grid  slds-grid--align-center slds-grid--align-space">
+            <!--<div class="slds-col">
+              <p>
+                <input type="radio" name="originOpt" id="oYf" value="oYf"/><label for="oYf"><b>{!$Label.YAHOO_FINANCE}</b></label>
+                <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-yahoo', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+              </p>
+          </div>-->
+          <div class="slds-col">
+             <p>
+              <input type="radio" name="originOpt" id="oG" value="oG"/><label for="oG"><b>{!$Label.GOOGLE}</b></label> 
+              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-google', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+            </p>
+         </div>
+         <div class="slds-col">
+          <p>
+            <input type="radio" name="originOpt" id="oECB" value="oECB" /><label for="oECB"><b>{!$Label.EUROPEAN_CENTRAL_BANK}</b></label>
+            <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-european-central-bank', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+          </p>
+        </div>
+        <div class="slds-col">
+             <p>
+              <input type="radio" name="originOpt" id="oB" value="oB"/><label for="oB"><b>{!$Label.BLOOMBERG}</b></label> 
+              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-bloomberg', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+            </p>
+        </div>
+        <div class="slds-col">
+             <p>
+              <input type="radio" name="originOpt" id="oCL" value="oCL"/><label for="oCL"><b>{!$Label.CURRENCY_LAYER}</b></label> 
+              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-currencylayer', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+            </p>
+        </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- tab 4 -->
+<apex:outputPanel id="schedulePanel">
+<div id="tab-default-4" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-4__item" style="background: #f8f8f8;">
+  <div class="slds-grid slds-wrap slds-grid--pull-padded slds-grid--align-center">
+      <div class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--6-of-6 slds-large-size--4-of-5">
+          <div class="slds-text-body--regular slds-m-around--large">
+
+            <div class="slds-grid">
+                <div class="slds-notify slds-notify--alert slds-theme--alert-texture alertSchedule {!IF((lastExecution == '' && nextDateCurrencyUpdaterRun == ''), 'slds-hide', '')}" role="alert" style="width: 100%; margin-bottom: 15px;">
+                                <apex:outputPanel layout="block" id="scheduleInfo">
+
+                                  <span class="slds-assistive-text">Info</span>
+                                  <!--h2>{!$Label.LAST_EXECUTION} {!lastExecution} - {!$Label.NEXT_EXECUTION} {!nextDateCurrencyUpdaterRun}  {!netHourCurrencyUpdaterRun}:{!nextMinuteCurrencyUpdaterRun}</h2-->
+                                  <h2>{!$Label.NEXT_EXECUTION}: {!nextDateCurrencyUpdaterRun}  {!netHourCurrencyUpdaterRun}:{!nextMinuteCurrencyUpdaterRun}</h2>
+                                </apex:outputPanel>
+                            </div>
+                        </div>
+
+                        <div class="slds-grid">
+                            <div class="slds-col slds-align--absolute-center"><b> {!$Label.s4g_currencies__frequency} </b></div>
+                            <div class="slds-col slds-align--absolute-center">
+                                <apex:selectList styleClass="slds-select" value="{!settings.s4g_currencies__Frecuency__c}" size="1">
+                                    <apex:selectOptions value="{!frecuencySelectedList}"/>
+                                </apex:selectList>
+                            </div>
+                            <div class="slds-col slds-align--absolute-center"><b> {!$Label.s4g_currencies__when} </b></div>
+                            <div class="slds-col slds-align--absolute-center">
+                                <apex:selectList styleClass="slds-select" value="{!settings.s4g_currencies__Start_Hour__c}" size="1">
+                                    <apex:selectOptions value="{!hourSelectedList}"/>
+                                </apex:selectList>
+                            </div>
+
+                            <div class="slds-col slds-align--absolute-center"><b> {!$Label.s4g_currencies__when_date} </b></div>
+                            <div class="slds-col slds-align--absolute-center">
+                                <apex:inputField value="{!settings.s4g_currencies__Start_Date__c}" showDatePicker="true"/>
+                            </div>
+
+                            <div class="slds-col slds-align--absolute-center">
+                               <apex:commandbutton styleclass="slds-button slds-button--neutral greenButton slds-hide schedule" action="{!scheduleBatch}" oncomplete="overridePageMessages();" value="{!$Label.s4g_currencies__schedule}" rerender="messages,scheduleInfo" />
+                               <apex:commandbutton styleclass="slds-button slds-button--neutral greenButton slds-hide runSchedule" action="{!runAndScheduleBatch}" oncomplete="overridePageMessages();" value="{!$Label.s4g_currencies__run_schedule}" rerender="messages,scheduleInfo"/>
+                               <div>
+                                
+                                    <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#scheduler', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </apex:outputPanel>
+
+</div>
+<div class="slds-grid navigatorTab" style="background: #f8f8f8;">
+    <div class="slds-p-horizontal--small slds-size--1-of-2 slds-medium-size--3-of-6 slds-large-size--8-of-12"></div>
+    <div class="slds-p-horizontal--small slds-size--1-of-2 slds-medium-size--3-of-6 slds-large-size--4-of-12 slds-m-around--large slds-text-align--right">
+        <button class="slds-button slds-button--neutral back" >&laquo; {!$Label.BACK}</button>
+        <button class="slds-button slds-button--neutral next" >{!$Label.NEXT} &raquo;</button>
+        <button class="slds-button slds-button--neutral sche slds-hide" onClick="schedule()">{!$Label.s4g_currencies__schedule}</button>
+        <button class="slds-button slds-button--neutral scheRun slds-hide" onClick="scheduleRun()">{!$Label.s4g_currencies__run_schedule}</button>
+    </div>
+</div>
+
+</apex:outputPanel>
+</div>
+
+<!-- ADVANCED SETUP -->
+<div id="advanced" class="mainBar">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c; border-top: 1px solid #19bc9c;">
+        <div class="slds-grid slds-grid--align-spread">
+            <div class="slds-col">
+                <h3 class="slds-page-header__title slds-truncate"><apex:outputText value="{!$Label.s4g_currencies__advanced_setup}" /></h3>
+            </div>
+            <div class="slds-col toggleIcon">
+                <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem; cursor: pointer;">
+                    <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#up')}"></use>
+                    </svg>
+                </span>                  
+            </div>
+        </div>
+    </div>
+    <div class="slds-text-body--regular slds-m-around--medium content slds-hide">
+        <apex:outputText escape="false" value="{!$Label.s4g_currencies__advanced_setup_text}"/>
+
+        <div class="slds-grid" style="margin-top: 30px;">
+            <div class="slds-col slds-align--absolute-center"></div>
+            <div class="slds-col slds-align--absolute-center"></div>
+            <div class="slds-col slds-align--absolute-center"></div>
+            <div class="slds-col slds-align--absolute-center"><b>{!$Label.RETRY_WINDOW}</b></div>
+            <div class="slds-col slds-align--absolute-center">
+                <apex:selectList styleClass="slds-select" value="{!settings.s4g_currencies__Retry_Window_Duration__c}" size="1">
+                    <apex:selectOptions value="{!retryWindowSelectedList}"/>
+                </apex:selectList>
+            </div>
+            <div class="slds-col slds-align--absolute-center"></div>
+            <div class="slds-col slds-align--absolute-center"></div>
+            <div class="slds-col slds-align--absolute-center"></div>
+        </div>
+    </div>
+</div>
+</apex:form>
+
+<!-- LOG -->
+<div id="log" class="mainBar">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c;">
+        <div class="slds-grid slds-grid--align-spread">
+          <div class="slds-col">
+            <h3 class="slds-page-header__title slds-truncate">{!$Label.LOG}</h3>
+        </div>
+        <div class="slds-col toggleIcon">
+            <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem;">
+              <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+            </svg>
+        </span>
+    </div>
+</div>
+</div>
+<div class="slds-text-body--regular slds-m-around--medium content">
+    <p>
+      <apex:outputText escape="false" value="{!$Label.s4g_currencies__log_text}" />&nbsp;
+      <apex:outputLink value="http://s4g.es/currency-updater/help-faq/#log" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
+      <br />
+      <br />
+  </p>
+  <div class="slds-align--absolute-center">
+    <apex:image value="{!$Resource.s4g_currencies__log_tab}"/>
+</div>
+</div>
+</div>
+
+</div>
+
+<apex:includeScript value="{!URLFOR($Resource.s4g_currencies__CUSetup, 'libs/jquery/dist/jquery.min.js')}" />
+
+<script>
+      $(function() {
+
+          overridePageMessages();
+          
+          var firstConfiguration = '{!firstConfiguration}';
+          var okOAuthBooleanString = '{!okAuthorization}';
+          var disabledButton = {!disabledButtons};
+          var disableDatedConversionRate = {!!isActiveDatedConversionRate};
+          var disabledOrigin = ('{!corporateCurrency}' != 'EUR');
+
+          $('button').prop('disabled', disabledButton);
+          
+          $('#coAC, #coBB').prop('disabled', disableDatedConversionRate);
+
+          $('#oECB').prop('disabled', disabledOrigin);
+
+          if (okOAuthBooleanString == 'true'){
+              $('.navigatorTab button.next').prop("disabled",false);
+              getCurrencyTypeSF();
+              getOriginSF();
+          }else{
+              $('.navigatorTab button.next').prop("disabled",true);
+          }
+
+          if(firstConfiguration == 'false'){
+            $('.navigatorTab button.next').addClass('slds-hide');
+            $('.navigatorTab button.back').addClass('slds-hide');
+        }else{
+            $('#tabs .slds-tabs--default__item').addClass('mouseNoSelect');
+            $('.navigatorTab button.back').addClass('slds-hide');
+        }
+
+        $('.toggleIcon').on('click', function(){
+            //hide Content
+            $(this).closest('.mainBar').find('.content').toggleClass('slds-hide');
+            //change icon
+            var icon = $(this).find('use').attr('xlink:href').split("#");
+            if(icon[1] == 'down'){
+              $(this).find('use').attr('xlink:href', icon[0]+'#up');
+          }else{
+              $(this).find('use').attr('xlink:href', icon[0]+'#down');
+          }        
+      });
+
+        $('#tabs .slds-tabs--default__item a').on('click', function(){
+            if(firstConfiguration == 'false'){
+              if (okOAuthBooleanString == 'true'){
+                $('#tabs .slds-tabs--default__item').removeClass('slds-active');
+                $(this).closest('li').addClass('slds-active');
+
+                var idTab = $(this).attr('aria-controls');
+
+                $('.slds-tabs--default__content').removeClass('slds-show');
+                $('#'+idTab).addClass('slds-show');
+
+                //button control
+                $('.navigatorTab button.sche').addClass('slds-hide');
+                $('.navigatorTab button.scheRun').addClass('slds-hide');
+                $('.navigatorTab button.next').removeClass('slds-hide');
+                $('.navigatorTab button.back').removeClass('slds-hide'); 
+
+                if('#'+idTab == '#tab-default-1'){
+                  $('.navigatorTab button.sche').addClass('slds-hide');
+                  $('.navigatorTab button.scheRun').addClass('slds-hide');
+                  $('.navigatorTab button.back').addClass('slds-hide');
+                  $('.navigatorTab button.next').addClass('slds-hide'); 
+                  //$('.navigatorTab button.next').html('{!$Label.NEXT} &raquo;');
+              }
+              if('#'+idTab == '#tab-default-2'){
+                  $('.navigatorTab button.sche').addClass('slds-hide');
+                  $('.navigatorTab button.scheRun').addClass('slds-hide');
+                  $('.navigatorTab button.back').addClass('slds-hide');
+                  $('.navigatorTab button.next').html('{!$Label.SAVE}');
+              }
+              if('#'+idTab == '#tab-default-3'){
+                  $('.navigatorTab button.sche').addClass('slds-hide');
+                  $('.navigatorTab button.scheRun').addClass('slds-hide');
+                  $('.navigatorTab button.back').addClass('slds-hide');
+                  $('.navigatorTab button.next').html('{!$Label.SAVE}');
+              }
+              if('#'+idTab == '#tab-default-4'){
+                  $('.navigatorTab button.next').addClass('slds-hide');
+                  $('.navigatorTab button.back').addClass('slds-hide');
+                  $('.navigatorTab button.sche').removeClass('slds-hide');
+                  $('.navigatorTab button.scheRun').removeClass('slds-hide');
+              }
+                //step-completed
+            }
+        }
+
+    });
+
+        $('.alertScheduleIcon').on('click', function(){
+            event.preventDefault();
+            $('.alertSchedule').addClass('slds-hide');
+        })
+
+        $('.navigatorTab button').on('click', function(){
+            event.preventDefault();
+            var current = $('#tabs .slds-tabs--default__item.slds-active a').attr('tabindex');
+            var active = 0;
+
+            if(current == undefined){
+                current = 1;
+            }
+            
+            if($(this).hasClass('next')){
+            if(current == 1){//step-completed
+              active = parseInt(current)+1;
+              if(firstConfiguration != 'false'){
+                  $('.navigatorTab button.sche').addClass('slds-hide');
+                  $('.navigatorTab button.scheRun').addClass('slds-hide');
+                  $('.navigatorTab button.next').removeClass('slds-hide');
+                  $('.navigatorTab button.back').removeClass('slds-hide');
+              }else{
+                  return;
+              }
+              //$('.navigatorTab button.next').html('{!$Label.NEXT}');
+              
+          }else if(current == 2){
+              active = parseInt(current)+1;
+
+                  //$('.navigatorTab button.next').html('{!$Label.NEXT}');
+                  var checkedValue = $('input[name=currencyOpt]').filter(':checked').val();
+
+                  setCurrencyTypeSF(checkedValue);
+                  if(firstConfiguration != 'false'){
+                    $('.navigatorTab button.sche').addClass('slds-hide');
+                    $('.navigatorTab button.scheRun').addClass('slds-hide');
+                    $('.navigatorTab button.next').removeClass('slds-hide');
+                    $('.navigatorTab button.back').removeClass('slds-hide');
+                }else{
+                    return;
+                }
+
+            }else if(current == 3){
+              active = 4;
+                  //$('.navigatorTab button.next').addClass('slds-hide');
+                  var checkedValue = $('input[name=originOpt]').filter(':checked').val();
+                  setOriginSF(checkedValue);
+                  if(firstConfiguration != 'false'){
+                    $('.navigatorTab button.sche').removeClass('slds-hide');
+                    $('.navigatorTab button.scheRun').removeClass('slds-hide');
+                    $('.navigatorTab button.next').addClass('slds-hide');
+                }else{
+                  return;
+              }
+
+            }else{ //only in first Configuration
+              //open Modal
+              /*$('.slds-backdrop').addClass('slds-backdrop--open');
+              $('.slds-modal').addClass('slds-fade-in-open');*/
+
+              //reset mode configuration
+              firstConfiguration = 'false';
+              $('#tabs .slds-tabs--default__item').removeClass('mouseNoSelect');
+              $('#tabs .slds-tabs--default__item').removeClass('step-completed');
+              $('.navigatorTab button.sche').addClass('slds-hide');
+              $('.navigatorTab button.scheRun').addClass('slds-hide');
+              $('.navigatorTab button.next').addClass('slds-hide');
+              $('.navigatorTab button.back').addClass('slds-hide');
+              active = 4;
+              return;
+          }
+      }else if($(this).hasClass('back')){
+        if(current >= 3){
+          active = parseInt(current)-1;
+          $('.navigatorTab button.sche').addClass('slds-hide');
+          $('.navigatorTab button.scheRun').addClass('slds-hide');
+          $('.navigatorTab button.next').removeClass('slds-hide');
+          $('.navigatorTab button.back').removeClass('slds-hide'); 
+      }else{
+          active = 1;
+              //hide back
+              $('.navigatorTab button.sche').addClass('slds-hide');
+              $('.navigatorTab button.scheRun').addClass('slds-hide');
+              $('.navigatorTab button.back').addClass('slds-hide');
+              $('.navigatorTab button.next').html('{!$Label.NEXT} &raquo;');
+          }
+      }else if($(this).hasClass('sche') || $(this).hasClass('scheRun')){
+        active = 4;
+        if(firstConfiguration != 'false'){
+          //Open Modal if First Configuration
+          /*$('.slds-backdrop').addClass('slds-backdrop--open');
+          $('.slds-modal').addClass('slds-fade-in-open');*/
+      }
+  }
+
+          //Change Active Tab
+          $('#tabs .slds-tabs--default__item').removeClass('slds-active');
+          $('#tabs .slds-tabs--default__item').find('a[tabindex='+active+']').parent().addClass('slds-active');
+
+          if(firstConfiguration != 'false'){
+            $('#tabs .slds-tabs--default__item').find('a[tabindex='+(active-1)+']').parent().addClass('step-completed');
+        }
+
+          //Change Tab
+          $('.slds-tabs--default__content').removeClass('slds-show');
+          $('#tab-default-'+active).addClass('slds-show');
+
+      });
+
+});
+
+/*function closeModal(){
+        //Close Modal
+        $('.slds-backdrop').removeClass('slds-backdrop--open');
+        $('.slds-modal').removeClass('slds-fade-in-open');
+    }*/
+      function setCurrencyTypeSF(checkedValue){
+
+        clearMsgs();
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CurrencyUpdaterStartController.setCurrencyTypeCustomSetting}',
+            checkedValue, 
+            function(result, event){
+              //if result == false -> something goes wrong
+               getMessenger(result);
+          }, 
+          {escape: true}
+          );
+    }
+
+    function getCurrencyTypeSF(){
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CurrencyUpdaterStartController.getCurrencyTypeCustomSetting}',
+            function(result, event){
+              if (result == "coBC"){
+                  $("input[name=currencyOpt][value='coBC']").prop("checked",true);
+              }
+              if (result == "coAC"){
+                  $("input[name=currencyOpt][value='coAC']").prop("checked",true);
+              }
+              if (result == "coBB"){
+                  $("input[name=currencyOpt][value='coBB']").prop("checked",true);
+              }
+          }, 
+          {escape: true}
+          );
+    }
+
+    function setOriginSF(checkedValue){
+
+        clearMsgs();
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CurrencyUpdaterStartController.setOriginSetting}',
+            checkedValue, 
+            function(result, event){
+              getMessenger(result);
+              //if result == false -> something goes wrong
+          }, 
+          {escape: true}
+          );
+    }
+
+    function getOriginSF(){
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CurrencyUpdaterStartController.getOriginSetting}',
+            function(result, event){
+              if (result == "oYf"){
+                  $("input[name=originOpt][value='oYf']").prop("checked",true);
+              }
+              if (result == "oG"){
+                  $("input[name=originOpt][value='oG']").prop("checked",true);
+              }
+              if (result == "oECB"){
+                  $("input[name=originOpt][value='oECB']").prop("checked",true);
+              }
+              if (result == "oB"){
+                  $("input[name=originOpt][value='oB']").prop("checked",true);
+              }
+              if (result == "oCL"){
+                  $("input[name=originOpt][value='oCL']").prop("checked",true);
+              }
+          }, 
+          {escape: true}
+          );
+    }
+
+    function getMessenger(obj){
+      //Remove All options
+      $('#alertMessage').removeClass('slds-theme--error');
+      $('#alertMessage').removeClass('slds-theme--warning');
+      $('#alertMessage').removeClass('slds-theme--success');
+
+      //Check type severity
+      if(obj.severity == "Success"){ //Success Status
+        $('#alertMessage').addClass('slds-theme--success');
+      }else if(obj.severity == "Fatal"){ //Error Status
+        $('#alertMessage').addClass('slds-theme--error');
+      }else if(obj.severity == "Warning"){ //Warning Status
+        $('#alertMessage').addClass('slds-theme--warning');
+      }else{ //Text Status
+        $('#alertMessage').addClass('slds-theme--toast');
+      }
+      
+      //Agregate text to content - Rewrite Text current if exist
+      $('#alertMessage h2').html(obj.text);
+
+      //Show alertMessage
+      if(obj.text == ''){
+         $('#alertMessage').addClass('slds-hide');
+      }else{
+        $('#alertMessage').removeClass('slds-hide');
+      }
+    }
+
+    function schedule(){
+
+        $('#alertMessage').addClass('slds-hide');
+        event.preventDefault();
+        //Click in CommandButton for schedule Action 
+        $('.schedule').click();
+    }
+    function scheduleRun(){
+        $('#alertMessage').addClass('slds-hide');
+        event.preventDefault();
+        //Click in CommandButton for Run Schedule Action
+        $('.runSchedule').click();
+    }
+
+    function overridePageMessages(){    
+        
+        var textureEffect = 'slds-theme--alert-texture';
+                     
+        $('.warningM3').addClass('slds-notify slds-notify--toast slds-theme--warning customMessage '+textureEffect);          
+        $('.confirmM3').addClass('slds-notify slds-notify--alert slds-theme--success  customMessage '+textureEffect);    
+        $('.errorM3').addClass('slds-notify slds-notify--alert slds-theme--error customMessage '+textureEffect);                  
+        $('.infoM3').addClass('slds-notify slds-notify--toast customMessage '+textureEffect);    
+                         
+        $('.errorM3').removeClass('errorM3'); 
+        $('.confirmM3').removeClass('confirmM3'); 
+        $('.infoM3').removeClass('infoM3');   
+        $('.warningM3').removeClass('warningM3');  
+    }
+</script>
+</html>
+</apex:page>

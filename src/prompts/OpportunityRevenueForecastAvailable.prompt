@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Opportunity Revenue Forecast Available</masterLabel>
+    <promptVersions>
+        <body>The Forecasts tab shows your own or your team&apos;s forecast. Check it out for yourself and/or ask Rik how he and his team have been using this feature!</body>
+        <customApplication>standard__LightningSales</customApplication>
+        <delayDays>2</delayDays>
+        <dismissButtonLabel>Got it!</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2022-01-05</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Opportunity Revenue Forecast Available</masterLabel>
+        <publishedDate>2021-11-20</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-11-19</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>10</timesToDisplay>
+        <title>Opportunity Revenue Forecast</title>
+        <uiFormulaRule>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo40 - sales manager</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - partner</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - sales</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>custom_neo4j - executive</rightValue>
+            </criteria>
+        </uiFormulaRule>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>SpecificProfiles</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

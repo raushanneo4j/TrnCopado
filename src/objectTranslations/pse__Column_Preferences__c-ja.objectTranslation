@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>列の設定</value>
+    </caseValues>
+    <fields>
+        <help>設定を適用する機能を定義します。値は、0（プロジェクト計画者用）、1（リソース計画者用）、2（プロジェクトタスクガント用）、3（タイムカード用）、4（タイムカード承認用）、または5（タイムカードタスク時間用）です。</help>
+        <label><!-- Feature --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>0</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>この列の基になるクロスオブジェクトフィールドを含む、フィールドの1つ以上のAPI名を含みます。これはシステム生成フィールドです。このフィールドを手動で編集しないでください。</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <help>左から右への順序は、指定された機能の列に表示されます。</help>
+        <label><!-- Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>設定が割り当てられているユーザー。</help>
+        <label><!-- User --></label>
+        <name>pse__User__c</name>
+        <relationshipLabel><!-- Column Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>それぞれのフィールドの保存値</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、列はユーザーのUIに表示されます。</help>
+        <label><!-- Visible --></label>
+        <name>pse__Visible__c</name>
+    </fields>
+    <fields>
+        <help>列の幅（ピクセル単位）。</help>
+        <label><!-- Width --></label>
+        <name>pse__Width__c</name>
+    </fields>
+    <nameFieldLabel>列設定名</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Customer Account Name Changes</name>
+    <style>none</style>
+    <subject>Customer Account Name Has Changed</subject>
+    <textOnly>Former Account Name: {!Account.Prior_Account_Name__c}
+New Account Name: {!Account.Name}
+Modified By: {!Account.LastModifiedBy}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

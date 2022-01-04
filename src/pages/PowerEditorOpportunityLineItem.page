@@ -1,0 +1,141 @@
+<!--
+/////////////////////// SalesOps Power Editor   ///////////////////////////////////////////////////////////////////////////////
+
+Summary/Usecase:
+    *A visualforcepage app for letting "bypassable_opportunityLineItem_fields1 granted user(s)"  edit (granted fields) on opps and not trigger "Validation Rules"
+    *This code was written to respect "with sharing" as well as FLS via "accessibility" and "updateable" checks)
+    **Due to the power of this page,  access is granted by salesforce@neo4j.com, salesops@neo4j.com, and approved by leadership/operations.
+
+Admin/README:
+    * The page accepts a single URL Parameter,  "?opportunityLineItemId" 
+    * "bypassable_opportunityLineItem_fields1" setting,  which is a "Hierarchy Custom Setting" defined by admins at user-level, or Profile Level, or Org-wide Level.
+    ** PowerEditor.page ui is controlled Hierarchy Custom Setting(s)
+    
+    **@admins, architecture rule of thumbs implied here:
+        1. Its encouraged to excuse neo4j_apexBypass_context__c=true in each Validation Rule,    
+            or if its unwise explicitly comment why in the Validation Rule  (analyze all meta that references neo4j_apexBypass_context__c to know).
+    
+        
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<apex:page controller="PowerEditorOpportunityLineItemCTLR">
+  <apex:sectionHeader title="Welcome to /apex/powereditor for (Opp) Product Lines" subtitle="This tool obeys security but bypasses (most) Validation/save layers." help="mailto:salesforce@neo4j.com"/>
+<b>Usage:</b> Use by opening <a href="{!$Site.BaseUrl}/apex/PowerEditor?opportunityLineItemId=pasteYourOpportunityLineItemIdHere"><b>{!$Site.BaseUrl}/apex/PowerEditor?opportunityLineItemId=pasteYourOpportunityLineItemIdHere</b>.</a> 
+<br/>Make edits, save, and follow any messages/prompts/guidance.
+
+<div id="Admin Panel" rendered="{!$Profile.Name=='System Administrator'}">
+    <apex:outputLabel ><b>Hello, @Admin:</b> access to this tool is granted by a permission set (page access), and custom setting entries (per user, per field), found here:</apex:outputLabel>
+       <apex:outputLink value="/{!manageUrl_for_bypassable_opportunityLineItem_fields1_Setting}" >
+        Click to visit the Custom Setting portion to define up to 255 characters of comma separated fields per user for this page (~10 field api names)
+        </apex:outputLink>
+</div>
+
+
+<style type="text/css">
+        .PowerEditorCTLRH1 { font-size: 20px; }
+    </style>
+
+<script>
+  function colorPageBlock(pageblock, color) {
+  if (pageblock != null) pageblock.firstChild.style.cssText = "background-color: " + color + ";";
+
+  }
+</script>
+
+
+<style>
+  #col1,#col2{width:49%;display:inline-block;}
+  
+  div.n4jsfdcTooltip.tooltip {
+  /*Commented this line, because in other applications this was showing 3 times when i specified width: 20px;*/
+  float: right;
+  display:inline;
+  }
+
+  div.n4jsfdcTooltip.tooltip span {
+  display: none;
+  font-weight:normal;
+  text-align:left;
+  padding: 3px 5px;
+  margin-left: 8px;
+  width: 250px;
+  }
+
+  div.n4jsfdcTooltip.tooltip:hover span {
+  display: inline;
+  position: absolute;
+  border: 1px solid #cccccc;
+  background: #FFC;
+  color: #000000;
+  z-index:10000;
+  }
+  </style>
+
+
+<apex:form id="formId" >
+    <div style="text-align:center;font-size: 25px;">
+      <!--apex:outputText value="By design ..." rendered="true"/--> 
+    </div>
+    <!--c:guide></c:guide-->
+
+    <apex:pageblock id="pbActionButtonId">
+    <apex:pageMessages id="PowerEditorPageMsgId" ></apex:pageMessages>
+                <apex:dynamicComponent componentValue="{!DynamicForm}" rendered="{!opportunityLineItem!=null}"/> <!-- we want this to only load if the controller successfully loaded the param into a valid opportunityLineItem variable-->
+                
+                <apex:pageBlockSection >
+                  <div class="helpOrb n4jsfdcTooltip tooltip" style="position:relative;left:10px">
+                      <span>Optionally provide up to 255 characters of context explaining why you are performing this save operation!
+                          This reasoning is logged and read by admins to reduce the need for us to ask you.</span>
+                      <apex:pageBlockSectionItem > <!--  helpText attribute wasnt working in Classic so well use our own css and div/span-->
+                          <apex:inputText id="powereditorusage_optionalreason_ID" value="{!powerEditorUsage_optionalReason}"><apex:outputLabel >(optional) why are you using PowerEditor's save button?: </apex:outputLabel></apex:inputText> <!-- using inputText because this is a text string not a text field. -->
+                    </apex:pageBlockSectionItem>
+                  </div>
+                </apex:pageBlockSection>
+
+                <apex:commandButton value="Cancel (go back)" immediate="true" action="{!doCancel}" html-formnovalidate="formnovalidate" onclick="return confirm('Are you sure you want to cancel?');"/><!--html-formnovalidate is needed else the cancel action is prevented by required fields, credit: salesforce.stackexchange.com/questions/31938/required-fields-do-not-allow-cancel , immediate true is needed else the action after the prompt is prevented by the required fields, see -->
+      <apex:actionStatus id="mySaveStatus1">
+          <apex:facet name="stop">
+              <!-- commented this line because the rerender caused saves to break (show white screen, with js error) due to redirect(true) when redirecting with param logic, as explained in https://salesforce.stackexchange.com/a/217677
+                but we dont really need to redirect to powereditor with same params, its better to return null so that page messages (success confirmations, and potential errors) are seen by user.
+                rerendering to show dependent pickilsts is not supported in PowerEditor 1.0.0.
+              --><!--apex:commandButton value="Save" action="{!save}" rerender="dummy,thePageMsgId,formId" status="mySaveStatus1"/-->
+              <apex:commandButton value="Save" action="{!save}" status="mySaveStatus1"/>
+          </apex:facet>
+          <apex:facet name="start">
+              <apex:outputPanel >
+                <apex:image value="/img/loading32.gif" style="height: 15px;"/>
+                <apex:commandButton value="Processing..." status="mySaveStatus1" disabled="true"/>
+              </apex:outputPanel>
+          </apex:facet>
+      </apex:actionStatus>
+    </apex:pageblock>
+
+
+      <div style="text-align:center;font-size: 25px;">
+        <apex:outputText value="Access to this page must include ?opportunityLineItemId param. Please try again." rendered="{!opportunityLineItemId==null}"/> 
+      </div>
+</apex:form>
+
+    
+    <script> 
+    //TODO check server side for errors and handle disable and enable on front end based on backend fact of error or not, https://salesforce.stackexchange.com/questions/194830/how-to-stop-firing-oncomplete-if-save-action-has-errors
+        /*function disableButtons() {
+          //if(document.getElementById("thePageMsgId}")​.textContent!=null){
+            toggleButtons("{!$Component.formId.dynPageBlockId.saveBtnId}", true);
+          //}
+            
+        }*/
+        /*function enableButtons() {
+            toggleButtons("{!$Component.formId.dynPageBlockId.saveBtnId}", false);
+            toggleButtons("{!$Component.formId.dynPageBlockId.saveBtnEnablerId}", false);
+        }*/
+
+        /*function toggleButtons(elementId, disableButton) {
+
+            document.getElementById(elementId).disabled = disableButton;
+            document.getElementById(elementId).className = 
+                disableButton == true ? "btnDisabled" : "btn";
+        }*/
+    </script> <!-- end credit https://salesforce.stackexchange.com/questions/159154/other-save-button-not-disabled-when-clicked -->
+
+</apex:page>

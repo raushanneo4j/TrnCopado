@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Risico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Risico&apos;s</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>pse__Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>pse__Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>pse__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contingency --></label>
+        <name>pse__Contingency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Raised --></label>
+        <name>pse__Date_Raised__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impact --></label>
+        <name>pse__Impact__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het probleem dat verband houdt met het risico.</help>
+        <label><!-- Issue --></label>
+        <name>pse__Issue__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Likelihood --></label>
+        <name>pse__Likelihood__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mitigation Plan --></label>
+        <name>pse__Mitigation_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Task --></label>
+        <name>pse__Project_Task__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Risk Description --></label>
+        <name>pse__Risk_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Name --></label>
+        <name>pse__Risk_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Owner --></label>
+        <name>pse__Risk_Owner__c</name>
+        <relationshipLabel><!-- Risks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>pse__Severity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Gesloten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Open</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Risk Layout</layout>
+        <sections>
+            <label>Audit</label>
+            <section>Audit</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Detail</label>
+            <section>Detail</section>
+        </sections>
+        <sections>
+            <label>Staat</label>
+            <section>Status</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Risiconummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Closed date must be blank if status is set to Open --></errorMessage>
+        <name>pse__Clear_closed_date_with_open_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed date for the risk must be after the date it was raised. --></errorMessage>
+        <name>pse__Closed_date_greater_than_created_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed date can not be blank if status set to closed. --></errorMessage>
+        <name>pse__Closed_date_mandatory_with_closed_status</name>
+    </validationRules>
+</CustomObjectTranslation>

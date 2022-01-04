@@ -1,0 +1,47 @@
+<apex:page standardController="Lead" extensions="Dialpad.DialpadCallExtension" action="{!pageAction}">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+ 
+ <apex:slds />  
+ 
+ <div class="cuf-scroller-content">
+<div class="cuf-scroller-outside">
+<div class="demo-only slds-grid" style="height:845px;max-width:100%;">
+  <div class="slds-panel slds-grid slds-grid_vertical slds-nowrap">
+    <div class="slds-form slds-form_stacked slds-grow slds-scrollable_y">
+      <div class="slds-page-header">
+      <div class="slds-media">
+        <div class="slds-media__figure">
+           <svg aria-hidden="true" class="slds-icon slds-icon-standard-account">
+          <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"></use>
+        </svg>
+        </div>
+        <div class="slds-media__body">
+        <p class="slds-text-heading--label slds-line-height--reset">LEAD</p>
+          <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-middle" title="">{!leadData.Name}</h1>
+          
+        </div>
+      </div>
+     </div>
+      <div class="slds-panel">
+        <apex:repeat value="{!objphonevalues}" var="wpv">
+        <ul>
+         
+          <li class="slds-form-element slds-hint-parent slds-border_bottom" style="padding: 0.5rem;border-bottom: 1px solid #d8dde6;">
+            <p class="slds-text-heading--label-normal slds-m-bottom--xx-small slds-truncate" style="font-size:0.875rem;color: rgb(84, 105, 141);">{!wpv.phoneLabel}</p>
+            <div class="slds-form-element__control">
+              <a href="dialpad://{!wpv.phoneValue}?sfObject=Lead&sfWhoId={!leadData.Id}" target="_blank" > <span class="uiOutputPhone" style="font-size:1rem">{!wpv.phoneValue}</span></a>
+            </div>
+          </li>
+        </ul>
+        </apex:repeat>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ 
+ </html>
+ 
+</apex:page>

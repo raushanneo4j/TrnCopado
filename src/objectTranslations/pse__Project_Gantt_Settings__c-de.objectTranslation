@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Projektaufgabe Gantt-Einstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Projektaufgabe Gantt-Einstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Projektaufgabe Gantt-Einstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Projektaufgabe Gantt-Einstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Projektaufgabe Gantt-Einstellungen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Wenn ein Projekt für die Bearbeitung gesperrt ist, legt diese Einstellung fest, ob Benutzer (die zum Bearbeiten von Aufgaben im Projektaufgaben-Gantt berechtigt sind) die Option erhalten, die Sperre aufzuheben und den anderen Benutzer in den schreibgeschützten Modus zu versetzen.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den API-Namen des Feldsatzes im Projektaufgabenobjekt, der die benutzerdefinierten Spalten enthält, die im Projektaufgaben-Gantt angezeigt werden sollen. Wenn die Einstellung leer ist, wird das Feld Gantt Custom Columns verwendet.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Datensätze in Project Task Gantt nicht in einen Puffer geladen. Der Standardwert ist deaktiviert. Diese Einstellung sollte nur nach Rücksprache mit dem Kundendienst von FinancialForce.com geändert werden.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Wenn ausgewählt, wird die Schaltfläche Abhängigkeiten auflösen deaktiviert, wenn die Abhängigkeiten der Projektaufgaben synchronisiert werden. Wenn diese Option deaktiviert ist, bleibt die Schaltfläche aktiv, wenn Abhängigkeiten von Projektaufgaben nicht synchronisiert werden müssen. Der Standardwert ist deaktiviert.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Anzahl der zu rendernden Zeilen über der aktuellen Ansicht in Project Task Gantt. Der Standardwert ist 20. Diese Einstellung sollte nur nach Rücksprache mit dem Kundendienst von FinancialForce.com geändert werden.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der zum Anzeigen eines benutzerdefinierten Tooltips für Meilensteine ​​verwendet wird. Wenn diese Einstellung definiert ist, ersetzt sie die standardmäßige QuickInfo von Milestone.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der zum Anzeigen eines benutzerdefinierten Tooltips für Projektaufgabenzuweisungen verwendet wird. Wenn diese Einstellung definiert ist, ersetzt sie die standardmäßige QuickInfo für die Projektaufgabenzuweisung.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Ebenen des Gantt-Bearbeitungszugriffs für den Projektmanager. Die Werte sind &quot;Full&quot; (Standard) - können erstellte Projekte bearbeiten, &quot;Read&quot; - hat nur Lesezugriff oder &quot;None&quot; - Zugriff durch Berechtigungskontrollen bestimmt.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der zum Anzeigen einer benutzerdefinierten QuickInfo für Projekte verwendet wird. Wenn diese Einstellung definiert ist, ersetzt sie die standardmäßige Projekt-QuickInfo.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name eines Felds, das für eine Projektaufgabe festgelegt wurde und Felder enthält, die in Project Task Gantt nicht bearbeitet werden können.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Anpassungen an Breite, Reihenfolge und Sichtbarkeit von Spalten im Projektaufgaben-Gantt pro Benutzer gespeichert.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird die Schaltfläche Ressourcenbedarf erstellen in der Symbolleiste Projektaufgaben-Gantt angezeigt. Verwenden Sie diese Option, um den Projektplan über die Schaltfläche Ressourcenbedarf erstellen auf der Seite Projektaufgabenzuweisungen zu verwalten.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, ob der Prozentsatz der Stundenanzahl in der Taskleistenanzeige im Bereich &quot;Zeitplan&quot; angezeigt wird. Diese Einstellung steuert nicht die Anzeige der% Hrs-Schaltfläche im Bereich &quot;Zeitplan&quot;.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt, ob der Prozentwert für die abgeschlossenen Punkte in der Taskleistenanzeige im Bereich &quot;Zeitplan&quot; angezeigt wird. Diese Einstellung ist standardmäßig ausgewählt. Diese Einstellung steuert nicht die Anzeige der Schaltfläche &quot;% Pts&quot; im Bereich &quot;Zeitplan&quot;.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der zum Anzeigen einer benutzerdefinierten QuickInfo für Projektaufgaben verwendet wird. Wenn diese Einstellung definiert ist, ersetzt sie die standardmäßige QuickInfo für Projektaufgaben.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Anzahl der zu rendernden Zeilen unterhalb der aktuellen Ansicht in Project Task Gantt. Der Standardwert ist 10. Diese Einstellung sollte nur nach Rücksprache mit dem Financial Support Customer Support geändert werden.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

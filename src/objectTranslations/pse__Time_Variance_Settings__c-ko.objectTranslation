@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 시간 차이 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>시간 변동 계산에 포함시킬 예정 근무 시간에 대한 시간 변동을 지정합니다.</help>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <help>시간 변동 계산에 포함시킬 예정 근무 시간의 시간 차이를 지정합니다.</help>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 시간 차이 계산시 청구 가능 시간이 무시됩니다.</help>
+        <label><!-- Exclude Billable Hours --></label>
+        <name>pse__Exclude_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 시간 차이 계산시 대변 기록 시간이 무시됩니다.</help>
+        <label><!-- Exclude Credited Hours --></label>
+        <name>pse__Exclude_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 시간 차이 계산시 제외 된 시간이 무시됩니다.</help>
+        <label><!-- Exclude Excluded Hours --></label>
+        <name>pse__Exclude_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <help>시간 분산 계산에 허용 된 분산 범위를 벗어나 표시하지 않는 자원을 포함하여 모든 자원에 대한 세부 정보가 포함되도록 지정합니다.</help>
+        <label><!-- Report All --></label>
+        <name>pse__Report_All__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 허용 된 분산 오버 및 허용 된 분산 언더 설정의 값은 시간 분산의 백분율입니다. false 인 경우 Allowed Variance Over 및 Allowed Variance Under 설정의 값은 몇 시간입니다. 이 설정은 기본적으로 true입니다.</help>
+        <label><!-- Use Percentage --></label>
+        <name>pse__Use_Percentage__c</name>
+    </fields>
+</CustomObjectTranslation>

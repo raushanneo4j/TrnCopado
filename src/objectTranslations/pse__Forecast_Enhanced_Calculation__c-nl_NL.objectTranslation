@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Concept factuur prognose berekening</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Concept factuur prognose berekeningen</value>
+    </caseValues>
+    <fields>
+        <help>Een opzoeking naar de gerelateerde backlog-berekening.</help>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De batch-ID voor het calculatieproces.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Het batchproces dat door deze prognoseberekening wordt gebruikt.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geeft aan dat de factuurprognose is vastgelegd en dat overschrijvingen niet langer kunnen worden toegepast.</help>
+        <label><!-- Committed --></label>
+        <name>pse__Committed__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan dat deze berekening van de factuurprognose de meest recente is voor deze RAG en periode.</help>
+        <label><!-- Current --></label>
+        <name>pse__Current__c</name>
+    </fields>
+    <fields>
+        <help>Een opzoeking naar de waarden voor de prognose-instellingen die in deze prognoseberekening zijn gebruikt.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De groep voor deze voorspellingsberekening.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De praktijk voor deze prognoseberekening.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De regio voor deze voorspellingsberekening.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>De voorspellingsberekeningsstatus.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>De tijdsperiode voor deze prognoseberekening.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het totale aantal logboeken dat is gemaakt als gevolg van fouten die optreden tijdens het berekeningsproces voor de prognose.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Calculation Layout</layout>
+        <sections>
+            <label>Partij</label>
+            <section>Batch</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Concept factuur prognose berekening naam</nameFieldLabel>
+    <webLinks>
+        <label><!-- View_Forecast --></label>
+        <name>pse__View_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>费用</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment PDF --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPDF</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Columns For Combine Attachment Page --></label>
+        <name>pse__ExpenseColumnsForCombineAttachmentPage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Editable Columns --></label>
+        <name>pse__ExpenseHeaderRowEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Header Row Read Only Columns --></label>
+        <name>pse__ExpenseHeaderRowReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Editable Columns --></label>
+        <name>pse__ExpenseNotesFieldsEditableColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expense Notes Fields Read Only Columns --></label>
+        <name>pse__ExpenseNotesFieldsReadOnlyColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobile Expenses: Additional Fields in New and Edit Mode --></label>
+        <name>pse__Mobile_Expenses_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <help>如果选中，则允许管理员对费用进行“全局”更改，包括对费用项目，资源，货币或日期的编辑，即使选中“包含在财务中”也是如此。配置要求：实际计算模式必须设置为“已计划”。</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Bill --></label>
+        <name>pse__Amount_To_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount To Reimburse --></label>
+        <name>pse__Amount_To_Reimburse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>字段将保留应用于费用的费用率。</help>
+        <label><!-- Applied Expense Rate --></label>
+        <name>pse__Applied_Expense_Rate__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>在批准费用时应检查此复选框，该费用应基于其父费用报告（如果有）是否获得批准。</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Vendor Payment --></label>
+        <name>pse__Approved_for_Vendor_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>按配置自动检查以指示费用附件是否已从费用行移至费用报表。</help>
+        <label><!-- Attachments moved to ER --></label>
+        <name>pse__Attachments_moved_to_ER__c</name>
+    </fields>
+    <fields>
+        <help>存储审计记录历史记录。当用户使用时间卡UI更改项目或作业并且审核注释超过255个字符时，将移动旧的审核注释并将其附加到此处。</help>
+        <label><!-- Audit Notes History --></label>
+        <name>pse__Audit_Notes_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Transaction --></label>
+        <name>pse__Bill_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Bill Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>此公式等于可结算费用的金额（减去非可结算发生金额和税金（如有））和非可结算费用零：所有金额均为已产生的货币。</help>
+        <label><!-- Billable Amount --></label>
+        <name>pse__Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>项目货币的固定费用，用于增加费用的可计费金额，默认为项目。计算将在*此固定费用金额之前应用任何百分比费用*。</help>
+        <label><!-- Billable Fee Flat Amount --></label>
+        <name>pse__Billable_Fee_Flat_Amount__c</name>
+    </fields>
+    <fields>
+        <help>文本公式显示项目货币的固定费用，用于增加费用的可计费金额，默认项目和项目货币。计算将在*此固定费用金额之前应用任何百分比费用*。</help>
+        <label><!-- Billable Fee Flat --></label>
+        <name>pse__Billable_Fee_Flat__c</name>
+    </fields>
+    <fields>
+        <help>增加费用的可计费金额的费用百分比，默认为项目。 0％表示没有增加（默认），而100％表示双倍。计算将适用*任何固定费用之前的费用百分比*。</help>
+        <label><!-- Billable Fee Percentage --></label>
+        <name>pse__Billable_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount (Pre-Fee Subtotal) --></label>
+        <name>pse__Billing_Amount_Pre_Fee_Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Amount --></label>
+        <name>pse__Billing_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>pse__Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Transaction --></label>
+        <name>pse__Cost_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Cost Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <help>自动里程报销的距离。</help>
+        <label><!-- Distance --></label>
+        <name>pse__Distance__c</name>
+    </fields>
+    <fields>
+        <help>表示费用处于符合计费事件生成条件的状态（不包括已批准的开票标记，每个全局配置也可能需要）。</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Billing Currency) --></label>
+        <name>pse__Exchange_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Incurred Currency) --></label>
+        <name>pse__Exchange_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Reimbursement Currency) --></label>
+        <name>pse__Exchange_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <help>设置时，此字段设置发生费用的资源所经历的发生率和偿还率之间的*相对*汇率。</help>
+        <label><!-- Exchange Rate (Resource-Defined) --></label>
+        <name>pse__Exchange_Rate_Resource_Defined__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则永远不会记录此业务记录。与账单保留相同，但旨在反映账单生成的永久排除。</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Date --></label>
+        <name>pse__Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Report --></label>
+        <name>pse__Expense_Report__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Split Parent --></label>
+        <name>pse__Expense_Split_Parent__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <help>如果检查可开票费用，则表示“发生的税”字段中指定的费用金额部分不可计费。 （这与“非可结算发生金额”字段中的任何金额分开，并且除此之外。</help>
+        <label><!-- Incurred Tax Non-Billable --></label>
+        <name>pse__Incurred_Tax_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help>所产生的税额</help>
+        <label><!-- Incurred Tax --></label>
+        <name>pse__Incurred_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Transaction --></label>
+        <name>pse__Invoice_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Invoice Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <help>如果在提交费用报表时用户需要在费用行上附加，则此字段在UI上可见。如果此字段设置为true，则虽然config配置为true，但用户不需要添加附件。</help>
+        <label><!-- Lost Receipt --></label>
+        <name>pse__Lost_Receipt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Expense Reference ID --></label>
+        <name>pse__Mobile_Expense_Reference_ID__c</name>
+    </fields>
+    <fields>
+        <help>此公式等于可结算费用的非可结算费用和不可计费发生金额和税额（从零到费用金额）的金额：全部采用已产生的货币。</help>
+        <label><!-- Non-Billable Amount --></label>
+        <name>pse__Non_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>如果提供可结算费用，则从费用金额（已发生货币）中扣除，以计算费用的可结算金额。闵。零值，最大值价值费用金额。默认值：零或null。对不可计费的费用没有影响。</help>
+        <label><!-- Non-Billable Incurred Amount --></label>
+        <name>pse__Non_Billable_Incurred_Amount__c</name>
+    </fields>
+    <fields>
+        <help>此公式将任何非可结算发生的税（仅在检查了已发生的非计费税时）添加到任何其他非计费发生金额，以获得不可计费发生的小计，最低为0.00且最高为费用金额。</help>
+        <label><!-- Non-Billable Incurred Subtotal --></label>
+        <name>pse__Non_Billable_Incurred_Subtotal__c</name>
+    </fields>
+    <fields>
+        <help>如果选中此复选框，则无论产生的金额如何，费用的报销金额将为零。</help>
+        <label><!-- Non-Reimbursable --></label>
+        <name>pse__Non_Reimbursible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Group Currency Code --></label>
+        <name>pse__Override_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>覆盖费用交易将为Group Actuals汇总的组，即使项目位于不同的组中。通常，费用的交易根据“跟随”规则汇总到其项目或资源组。</help>
+        <label><!-- Override Group --></label>
+        <name>pse__Override_Group__c</name>
+        <relationshipLabel><!-- Override Group For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Practice Currency Code --></label>
+        <name>pse__Override_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>覆盖费用交易将为实际实际汇总的实践，即使项目处于不同的实践中。通常，费用的交易根据“跟随”规则汇总到其项目或资源的实践。</help>
+        <label><!-- Override Practice --></label>
+        <name>pse__Override_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Billing Currency) --></label>
+        <name>pse__Override_Rate_Billing_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Incurred Currency) --></label>
+        <name>pse__Override_Rate_Incurred_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Rate (Reimbursement Currency) --></label>
+        <name>pse__Override_Rate_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Region Currency Code --></label>
+        <name>pse__Override_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>覆盖费用交易将为区域实际汇总的区域，即使项目位于不同的区域。通常，费用的交易根据“跟随”规则汇总到其项目或资源的区域。</help>
+        <label><!-- Override Region --></label>
+        <name>pse__Override_Region__c</name>
+        <relationshipLabel><!-- Override Region For Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>查找项目方法论</help>
+        <label><!-- Project Methodology --></label>
+        <name>pse__Project_Methodology__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>查找项目阶段</help>
+        <label><!-- Project Phase --></label>
+        <name>pse__Project_Phase__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Unit --></label>
+        <name>pse__Rate_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Kilometer</masterLabel>
+            <translation>公里</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mile</masterLabel>
+            <translation>英里</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>适用于此记录的收入预测的识别方法。</help>
+        <label><!-- Recognition Method --></label>
+        <name>pse__Recognition_Method__c</name>
+    </fields>
+    <fields>
+        <help>此字段存储使用系统（未覆盖）费率转换为项目（开票）货币的偿还金额的数值，以供稍后用于供应商发票。</help>
+        <label><!-- Reimbursement Amount In Project Currency --></label>
+        <name>pse__Reimbursement_Amount_In_Project_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Amount --></label>
+        <name>pse__Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Currency --></label>
+        <name>pse__Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revenue Transaction --></label>
+        <name>pse__Revenue_Transaction__c</name>
+        <relationshipLabel><!-- Expense (Revenue Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Split Expense --></label>
+        <name>pse__Split_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Notes --></label>
+        <name>pse__Split_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>批准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>草案</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>被拒绝</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>提交</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>此复选框供系统使用。它旨在与未来方法中执行的Timecard Split的任何插入/更新一起进行检查，然后确保不会调用下游的未来方法。</help>
+        <label><!-- Synchronous Update Required --></label>
+        <name>pse__Synchronous_Update_Required__c</name>
+    </fields>
+    <fields>
+        <help>费用中包含的可选税种</help>
+        <label><!-- Tax Type --></label>
+        <name>pse__Tax_Type__c</name>
+        <picklistValues>
+            <masterLabel>GST</masterLabel>
+            <translation>GST</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 1</masterLabel>
+            <translation>增值税1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT 2</masterLabel>
+            <translation>增值税2</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>第三方费用申请中的费用ID。</help>
+        <label><!-- Third-Party Expenses App Expense ID --></label>
+        <name>pse__Third_Party_Expenses_App_Expense_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Airfare</masterLabel>
+            <translation>机票</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Mileage</masterLabel>
+            <translation>自动里程</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Meals</masterLabel>
+            <translation>商务餐</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car Rental</masterLabel>
+            <translation>汽车出租</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Relations</masterLabel>
+            <translation>职员之间的关系</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation>汽油</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General and Admin Expenses</masterLabel>
+            <translation>一般和管理费用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT Equipment and Services</masterLabel>
+            <translation>IT设备和服务</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lodging (Room and Tax)</masterLabel>
+            <translation>住宿（房间和税）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation>杂</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Supplies and Services</masterLabel>
+            <translation>办公用品和服务</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Meals</masterLabel>
+            <translation>个人用餐</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>电话</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postage and Shipping</masterLabel>
+            <translation>邮费和运费</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation>招聘</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subway</masterLabel>
+            <translation>地铁</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation>出租车</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Invoice Item --></label>
+        <name>pse__Vendor_Invoice_Item__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Expense Admin Layout</layout>
+        <sections>
+            <label>审计</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>账单信息</label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>距离</label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label>项目信息</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>状态</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>摘要</label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label>系统信息</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>项目信息</label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label>状态</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>摘要</label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Expense Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Distance --></label>
+            <section>Distance</section>
+        </sections>
+        <sections>
+            <label><!-- Expense Tax Information --></label>
+            <section>Expense Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>费用号码</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Assignment Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Assignment Resource must match Expense Resource. --></errorMessage>
+        <name>pse__Expense_Asgnmt_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Project must match Expense Report Project. --></errorMessage>
+        <name>pse__Expense_ER_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Line Resource must match Expense Report Resource. --></errorMessage>
+        <name>pse__Expense_ER_Resource_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Billed, it must also be marked as Included in Financials and Approved. --></errorMessage>
+        <name>pse__Expense_Line_Billing_Requires_Inclusion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For an Expense Line to be marked as Invoiced, it must also be marked as Billed. --></errorMessage>
+        <name>pse__Expense_Line_Invoicing_Requires_Billing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense Line may not be submitted or included in financials unless it belongs to an Expense Report. --></errorMessage>
+        <name>pse__Expense_Line_Needs_Parent_For_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Project field value may not be updated once set (unless parent Expense Report is changed, Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Expense Report may not be changed if it is submitted or included in financials. --></errorMessage>
+        <name>pse__Expense_Line_Report_Fixed_If_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Expense Line&apos;s Resource field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Expense_Line_Resource_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Expense may only be marked as Billable if its Project is Billable and its Expense Report and Assignment, if any, are Billable. --></errorMessage>
+        <name>pse__Expense_May_Not_Be_Billable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Expense Project. --></errorMessage>
+        <name>pse__Expense_Milestone_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expense Report is required --></errorMessage>
+        <name>pse__Expense_Requires_Expense_Report</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the incurred tax amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Incurred_Tax_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invoice Number or Date is not allowed on record unless it is invoiced --></errorMessage>
+        <name>pse__Invoiced</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If provided, the non-billable incurred amount for an Expense must not be less than zero or greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Incurred_Amount_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The non-billable incurred subtotal for an Expense (any non-billable amount plus any non-billable tax) must not be greater than the Expense amount itself. --></errorMessage>
+        <name>pse__Non_Billable_Subtotal_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate can only be set if Incurred and Resource currencies are different.  If the currencies are the same, a relative rate of 1.0 is implied. --></errorMessage>
+        <name>pse__Res_Defined_Rate_Diff_Currencies_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource-defined Exchange Rate must either be greater than 0.0 (zero) or null/empty. --></errorMessage>
+        <name>pse__Res_Defined_Rate_may_not_be_Negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The vendor invoice cannot change once set. --></errorMessage>
+        <name>pse__Vendor_Invoice_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Admin_Edit --></label>
+        <name>pse__Admin_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Expenses --></label>
+        <name>pse__Edit_Expenses</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_Expense_Entry_UI --></label>
+        <name>pse__Multiple_Expense_Entry_UI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ready_to_Submit --></label>
+        <name>pse__Ready_to_Submit</name>
+    </webLinks>
+</CustomObjectTranslation>

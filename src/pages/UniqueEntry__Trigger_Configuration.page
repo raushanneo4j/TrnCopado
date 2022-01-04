@@ -1,0 +1,227 @@
+<apex:page standardStylesheets="true" controller="UniqueEntry.ringleadConfigurationController" sideBar="true">
+    <head>
+        <style>
+            h1{
+                font-size: 35px !important;
+                font-weight: 400
+            }
+            h3{
+                font-size: 25px !important;
+                font-weight: 400
+            }
+            .settings{
+                margin-top: 25px;
+                box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+                padding: 30px;
+            }
+            .settings_fields{
+                margin-top: 25px;
+                font-size: 15px;
+            }
+            #settings_batch_size {
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #settings_re_process_count {
+                padding: 10px;
+                border-radius: 10px;
+                text-align: right;
+            }
+            .batch_size{
+                margin-left: 15px;
+            }
+            .save_section{
+                text-align: center;
+                margin-top: 25px;
+            }
+            .force_sync_section{
+                margin-top: 25px;
+                font-size: 17px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .force_sync_section button{
+                margin-left: 25px;
+            }
+            .save_button{
+                padding: 10px;
+                background: #0C6DBC !important;
+                min-width: 64px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .licensing_table {
+                border-collapse: separate;
+                box-shadow: inset 0 1px 0 #fff;
+                font-size: 17px;
+                line-height: 24px;
+                margin: 30px auto;
+                text-align: left;
+                width: 50%;
+            }
+
+            .licensing_table th {
+                background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#1D6DBC, #1D6DBC);
+                box-shadow: inset 0 1px 0 #999;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 15px;
+                position: relative;
+                text-shadow: 0 1px 0 #000;
+                text-align: center;
+            }
+
+            .licensing_table th:after {
+                background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+                content: '';
+                display: block;
+                height: 25%;
+                left: 0;
+                margin: 1px 0 0 0;
+                position: absolute;
+                top: 25%;
+                width: 100%;
+            }
+
+            .licensing_table th:first-child {
+                border-left: 1px solid #777;
+                box-shadow: inset 1px 1px 0 #999;
+            }
+
+            .licensing_table th:last-child {
+                box-shadow: inset -1px 1px 0 #999;
+            }
+
+            .licensing_table td {
+                border-right: 1px solid #fff;
+                border-left: 1px solid #e8e8e8;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #e8e8e8;
+                padding: 10px 15px;
+                position: relative;
+                transition: all 300ms;
+                text-align: center;
+            }
+
+            .licensing_table td:first-child {
+                box-shadow: inset 1px 0 0 #fff;
+            }
+
+            .licensing_table td:last-child {
+                border-right: 1px solid #e8e8e8;
+                box-shadow: inset -1px 0 0 #fff;
+            }
+        </style>
+    </head>
+    <body>
+    <apex:form >
+        <div>
+            <apex:image value="{!$Resource.UniqueEntry__ringlead_logo}" width="40" height="50"/>
+            <h1>RingLead Trigger</h1>
+        </div>
+        <div class="settings">
+            <h3> Batch Trigger Settings</h3>
+            <div class="settings_fields">
+                <label for="settings_batch_size" class="batch_size">
+                    <strong>Trigger Batch Size:</strong>
+                    <input type="number" id="settings_batch_size" max="999999" min="1"/>
+                </label>
+                <label for="settings_re_process_count" class="batch_size">
+                    <strong>Re Process Record:</strong>
+                    <input type="number" id="settings_re_process_count" max="999999" min="1"/>
+                </label>
+                <div class="save_section">
+                    <button onclick="jsSaveSettings()" class="save_button"> Save </button>
+                </div>
+            </div>
+            <h3> Force Sync Options</h3>
+            <div class="force_sync_section">
+                <button onclick="forceSyncRecords()" class="save_button"> Force Sync Now </button>
+                <button onclick="restartSyncCycle()" class="save_button"> Restart Sync Cycle </button>
+                <button onclick="stopSyncCycle()" class="save_button"> Stop Sync Cycle </button>
+            </div>
+            <h3> Licensing Information</h3><br/>
+            <table class="licensing_table">
+                <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Expiration Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="license_status"><strong></strong></td>
+                        <td id="expiration_date"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="save_section">
+                <button onclick="jsRefreshLicenseStatus()" class="save_button"> Refresh License </button>
+            </div>
+
+            <h3>Migration</h3><br/>
+
+                <apex:pagemessages />
+                <apex:pageBlock >
+                    <apex:pageBlockSection columns="4">
+                        <apex:inputFile value="{!csvFileBody}"  filename="{!csvAsString}"/>
+                        <apex:commandButton value="Import Rules" action="{!oneTimeMigrations}"/>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+            </div>
+            </apex:form>
+
+        <script type="text/javascript">
+
+            function init(){
+                let settings = {!settings_str};
+                let batch_size = document.getElementById('settings_batch_size');
+                let re_process_count = document.getElementById('settings_re_process_count');
+                let license_status = document.getElementById('license_status');
+                let expiration_date = document.getElementById('expiration_date');
+                let final_date = "";
+                if(expiration_date){
+                    let date_split = settings.triggerExpiration.split(" ");
+                    final_date = date_split[0];
+                }
+                batch_size.value = settings.batch_size;
+                re_process_count.value = settings.re_process_count;
+                license_status.innerText = settings.triggerStatus;
+                expiration_date.innerText = final_date;
+            }
+
+            function jsSaveSettings(){
+                let batch_size = document.getElementById('settings_batch_size');
+                let re_process_count = document.getElementById('settings_re_process_count');
+                let new_batch_size = batch_size.value;
+                let new_re_process_count = re_process_count.value;
+                let new_data = new_batch_size +';'+new_re_process_count
+                if(new_batch_size!== null || new_batch_size !== '')
+                    UniqueEntry.ringleadConfigurationController.saveSettings(new_data, afterSaveSettings)
+            }
+
+            function jsRefreshLicenseStatus(){
+                UniqueEntry.ringleadConfigurationController.RefreshLicenseStatus(null, afterSaveSettings);
+            }
+
+            function afterSaveSettings(result){
+                window.location.reload();
+            }
+
+            function forceSyncRecords(){
+                UniqueEntry.ringleadConfigurationController.forceSyncRecords(null, afterSaveSettings);
+            }
+
+            function restartSyncCycle(){
+                UniqueEntry.ringleadConfigurationController.restartSyncCycle(null, afterSaveSettings);
+            }
+
+            function stopSyncCycle(){
+                UniqueEntry.ringleadConfigurationController.stopSyncCycle(null, afterSaveSettings)
+            }
+
+            init()
+        </script>
+    </body>
+</apex:page>

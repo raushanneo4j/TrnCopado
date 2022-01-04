@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>99 Onboarding Download License</name>
+    <style>none</style>
+    <subject>Neo4j Enterprise License</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+I want to take this opportunity to thank you again for choosing to partner with Neo4j. Please know that our entire company is committed to making your implementation of Neo4j a resounding success.
+
+To get you on-boarded as a new customer, we first need to ensure you have the latest Neo4j Enterprise product downloads available. Please use the following links to download the appropriate packages:
+
+Linux/Mac: http://www.neo4j.com/customer/download/neo4j-enterprise-3.5.12-unix.tar.gz
+Windows: http://www.neo4j.com/customer/download/neo4j-enterprise-3.5.12-windows.zip
+
+Note: There is no license key. There is an acknowledgement of the license agreement that you will be asked to click through during the installation, which you can now freely do.
+
+We also want to make sure you have access to Neo4j Customer Support as soon as possible. Please provide us with a list of names and email addresses for folks who will need Support Portal access. Once we have that, our support team will set those up right away.
+
+As a next step, you can expect an email in the next few days introducing your Customer Success team, and information about your New Customer Onboarding journey.
+
+Please reach out with any questions or issues accessing the software.
+
+Sincerely,
+{!Opportunity.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

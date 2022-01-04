@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_52202576</developerName>
+        <masterLabel>Market Size</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead.neo_account_revenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise ($1 billion+)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <value>Mid-market ($10M-$1 Billion)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <value>Startup ($0-10M)</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStackedTo100</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CAMPAIGN_NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_52202576</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>LEAD_OWNER</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>COMPANY_ACCT</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>CONVERTED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>GraphTour</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>GraphTour DC,San Francisco,Toronto,Boston,Seattle,Chicago,New York,Dallas,Santa Monica,Mexico City</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52202576</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RF GraphTour NA Leads by Ann Rev</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignLeadLifetime</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

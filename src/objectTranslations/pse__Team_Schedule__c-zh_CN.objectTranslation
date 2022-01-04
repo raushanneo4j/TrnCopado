@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>团队日程</value>
+    </caseValues>
+    <fields>
+        <help>计划开始的日期。</help>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>团队日程安排备注。</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>发送通知</help>
+        <label><!-- Send Notifications --></label>
+        <name>pse__Send_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>团队日程安排的状态。</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation>分配</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>有待</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>查找团队日程表模板。</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>与计划相关的团队。</help>
+        <label><!-- Team --></label>
+        <name>pse__Team__c</name>
+        <relationshipLabel><!-- Team Schedules --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Schedule Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>团队日程表名称</nameFieldLabel>
+</CustomObjectTranslation>

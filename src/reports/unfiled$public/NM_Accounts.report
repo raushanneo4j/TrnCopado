@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_58507816</developerName>
+        <masterLabel>Revenue</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>SALES</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>500,000</to>
+            </sourceValues>
+            <value>over 500k</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>500,000</from>
+            </sourceValues>
+            <value>under 500k</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>BucketField_58507816</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>NM Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>BucketField_58507816</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-12-01</startDate>
+    </timeFrameFilter>
+</Report>

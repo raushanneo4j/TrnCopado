@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Région</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Les régions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action: Update Current Time Period --></label>
+        <name>pse__Action_Update_Current_Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actuals: Last Update Date --></label>
+        <name>pse__Actuals_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actuals: Last Updated By --></label>
+        <name>pse__Actuals_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Regions (Actuals: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog: Last Update Date --></label>
+        <name>pse__Backlog_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backlog: Last Updated By --></label>
+        <name>pse__Backlog_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Regions (Backlog: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours (External) --></label>
+        <name>pse__Billable_External_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Hours (Internal) --></label>
+        <name>pse__Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credited Hours --></label>
+        <name>pse__Credited_Non_Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Time Period End Date --></label>
+        <name>pse__Current_Time_Period_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Time Period --></label>
+        <name>pse__Current_Time_Period__c</name>
+        <relationshipLabel><!-- Current Time Period For Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Work Calendar --></label>
+        <name>pse__Default_Work_Calendar__c</name>
+        <relationshipLabel><!-- Default Work Calendar for Regions: --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Lorsqu’elle est sélectionnée, les données de cette région et de ses sous-régions sont exclues des calculs d’utilisation lorsqu’un calcul est exécuté sur un parent de cette région.</help>
+        <label><!-- Exclude from Utilization --></label>
+        <name>pse__Exclude_From_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excluded Hours --></label>
+        <name>pse__Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Budget --></label>
+        <name>pse__Expense_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Costs --></label>
+        <name>pse__Expense_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Costs --></label>
+        <name>pse__External_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Headquarters Region --></label>
+        <name>pse__Headquarters_Region__c</name>
+        <relationshipLabel><!-- Headquarters Region For Regions: --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Billable Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Credited Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Excluded Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Held Hours --></label>
+        <name>pse__Hist_Sch_Utilization_Held_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hist Sch Utilization Non Billable Hrs --></label>
+        <name>pse__Hist_Sch_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Billable Hours --></label>
+        <name>pse__Historical_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Calendar Hours --></label>
+        <name>pse__Historical_Utilization_Calendar_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Credited Hours --></label>
+        <name>pse__Historical_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Excluded Hours --></label>
+        <name>pse__Historical_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Non Billable Hrs --></label>
+        <name>pse__Historical_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target Attainment --></label>
+        <name>pse__Historical_Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target Hours --></label>
+        <name>pse__Historical_Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization Target --></label>
+        <name>pse__Historical_Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Utilization --></label>
+        <name>pse__Historical_Utilization__c</name>
+    </fields>
+    <fields>
+        <help>Le montant du carnet de commandes (réservations - facturations) devenu inactif lorsqu&apos;un projet contenu (y compris les projets de sous-régions) est devenu inactif. Pour les régions parentes, il s&apos;agit d&apos;une valeur cumulative. REMARQUE: ce champ est uniquement destiné à être mis à jour par PSE.</help>
+        <label><!-- Inactive Project Backlog --></label>
+        <name>pse__Inactive_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Forecasting --></label>
+        <name>pse__Include_In_Forecasting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Budget --></label>
+        <name>pse__Internal_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Costs --></label>
+        <name>pse__Internal_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>pse__Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours (External) --></label>
+        <name>pse__Non_Billable_External_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Billable Hours (Internal) --></label>
+        <name>pse__Non_Billable_Internal_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Costs --></label>
+        <name>pse__Other_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Region --></label>
+        <name>pse__Parent_Region__c</name>
+        <relationshipLabel><!-- Immediate Sub-Regions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pass-Through Billings --></label>
+        <name>pse__Pass_Through_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan: Last Update Date --></label>
+        <name>pse__Plan_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan: Last Updated By --></label>
+        <name>pse__Plan_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Regions (Plan: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Planned Billings --></label>
+        <name>pse__Planned_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Bookings --></label>
+        <name>pse__Planned_Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned External Costs --></label>
+        <name>pse__Planned_External_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Internal Costs --></label>
+        <name>pse__Planned_Internal_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Margin --></label>
+        <name>pse__Planned_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Revenue --></label>
+        <name>pse__Planned_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Utilization --></label>
+        <name>pse__Planned_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Billed --></label>
+        <name>pse__Pre_Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Owner --></label>
+        <name>pse__Region_Head__c</name>
+        <relationshipLabel><!-- Regions Owned --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region ID Chain --></label>
+        <name>pse__Region_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Name Chain --></label>
+        <name>pse__Region_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue --></label>
+        <name>pse__Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Backlog Calculated Date --></label>
+        <name>pse__Scheduled_Backlog_Calculated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Backlog End Date --></label>
+        <name>pse__Scheduled_Backlog_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Milestone --></label>
+        <name>pse__Scheduled_Milestone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Time --></label>
+        <name>pse__Scheduled_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Billable Hours --></label>
+        <name>pse__Scheduled_Utilization_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Calendar Hours --></label>
+        <name>pse__Scheduled_Utilization_Calendar_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Credited Hours --></label>
+        <name>pse__Scheduled_Utilization_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Excluded Hours --></label>
+        <name>pse__Scheduled_Utilization_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Held Hours --></label>
+        <name>pse__Scheduled_Utilization_Held_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Non Billable Hrs --></label>
+        <name>pse__Scheduled_Utilization_Non_Billable_Hrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target Attainment --></label>
+        <name>pse__Scheduled_Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target Hours --></label>
+        <name>pse__Scheduled_Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization Target --></label>
+        <name>pse__Scheduled_Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Utilization --></label>
+        <name>pse__Scheduled_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs --></label>
+        <name>pse__Total_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Period Hours --></label>
+        <name>pse__Total_Time_Period_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization --></label>
+        <name>pse__Total_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Calculation Date --></label>
+        <name>pse__Utilization_Calculation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Elapsed Hours --></label>
+        <name>pse__Utilization_Elapsed_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Last Calculation Date --></label>
+        <name>pse__Utilization_Last_Calculation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Last Update Date --></label>
+        <name>pse__Utilization_Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Last Updated By --></label>
+        <name>pse__Utilization_Last_Updated_By__c</name>
+        <relationshipLabel><!-- Regions (Utilization: Last Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Utilization: Over Full Time Period --></label>
+        <name>pse__Utilization_Over_Full_Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Period End Date --></label>
+        <name>pse__Utilization_Period_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Period Start Date --></label>
+        <name>pse__Utilization_Period_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target Attainment --></label>
+        <name>pse__Utilization_Target_Attainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target Hours --></label>
+        <name>pse__Utilization_Target_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Target --></label>
+        <name>pse__Utilization_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization --></label>
+        <name>pse__Utilization__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Region - BP</layout>
+        <sections>
+            <label><!-- Actuals --></label>
+            <section>Actuals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Region Hierarchy --></label>
+            <section>Region Hierarchy</section>
+        </sections>
+        <sections>
+            <label><!-- Selected Time Period --></label>
+            <section>Selected Time Period</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Region Layout</layout>
+        <sections>
+            <label>Période sélectionnée</label>
+            <section>Actuals</section>
+        </sections>
+        <sections>
+            <label>Arriéré</label>
+            <section>Backlog</section>
+        </sections>
+        <sections>
+            <label>Hiérarchie des régions</label>
+            <section>Current Period Plan</section>
+        </sections>
+        <sections>
+            <label>Information</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Utilisation</label>
+            <section>Region Hierarchy</section>
+        </sections>
+        <sections>
+            <label>Arriéré</label>
+            <section>Selected Time Period</section>
+        </sections>
+        <sections>
+            <label>Plan de la période en cours</label>
+            <section>Time Actuals</section>
+        </sections>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Utilization</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la région</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- A Region&apos;s Currency field value may not be updated once set. --></errorMessage>
+        <name>pse__Region_Currency_is_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calculate_Backlog --></label>
+        <name>pse__Calculate_Backlog</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Backlog_old --></label>
+        <name>pse__Calculate_Backlog_old</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Forecast --></label>
+        <name>pse__Calculate_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Missing_Timecard --></label>
+        <name>pse__Calculate_Missing_Timecard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Time_Variance --></label>
+        <name>pse__Calculate_Time_Variance</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Calculate_Utilization --></label>
+        <name>pse__Calculate_Utilization</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Utilization --></label>
+        <name>pse__Update_Utilization</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Hierarchy --></label>
+        <name>pse__View_Hierarchy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Transactions --></label>
+        <name>pse__View_Transactions</name>
+    </webLinks>
+</CustomObjectTranslation>

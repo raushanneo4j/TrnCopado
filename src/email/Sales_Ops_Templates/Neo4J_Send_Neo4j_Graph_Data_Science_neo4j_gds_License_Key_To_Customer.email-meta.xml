@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template used for sending Neo4j Graph Data Science (neo4j-gds) License Keys to customer. Added in SFDC-0257.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Neo4J Send Neo4j Graph Data Science (neo4j-gds) License Key To Customer</name>
+    <style>formalLetter</style>
+    <subject>Activation key for {!License_Key__c.Feature__c}</subject>
+    <textOnly>Dear {!License_Key__c.Registrant_First_Name__c},
+Thank you for choosing the Neo4j graph database platform!
+
+Your activation key for {!License_Key__c.Feature__c} is attached to this email. This key is set to expire on {!License_Key__c.X_Expiration_Date_Formatted__c}.
+
+If installing for the first time, please download the latest Graph Data Science Library release from https://neo4j.com/download-center/#algorithms and activate GDS enterprise using this key. Please refer to the Graph Data Science Library documentation at https://neo4j.com/docs/graph-data-science/current/installation/ for detailed instructions.
+
+If you have any questions, please reach out to {!License_Key__c.Sales_Rep_Name__c} at {!License_Key__c.Sales_Rep_Email__c}.
+Cheers,
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

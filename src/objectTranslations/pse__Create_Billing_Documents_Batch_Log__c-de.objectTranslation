@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Chargenprotokoll für Abrechnungsbelege erstellen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Erstellen Sie Chargenprotokolle für Abrechnungsbelege</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Chargenprotokoll für Abrechnungsbelege erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Chargenprotokolle für Abrechnungsbelege --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Chargenprotokoll für Abrechnungsbelege erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Chargenprotokolle für Abrechnungsbelege --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Chargenprotokoll für Abrechnungsbelege erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Chargenprotokolle für Abrechnungsbelege --></value>
+    </caseValues>
+    <fields>
+        <help>Master-Detail-Link zum zugehörigen Abrechnungsbeleg-Chargenprotokoll.</help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gibt den Protokolltyp an (Fehler, Informationen, Abbruch, Extern).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Abbrechen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Externe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Information</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der Text der Nachricht.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Chargenprotokoll-ID für Abrechnungsbeleg</nameFieldLabel>
+</CustomObjectTranslation>

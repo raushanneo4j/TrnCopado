@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Tid Datum</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Tid Datum</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Det datum för vilket förälderens tidskort innehåller det angivna antalet timmar.</help>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>Visar etiketten som motsvarar veckodagen för fältet Datum.</help>
+        <label><!-- Day Of Week --></label>
+        <name>pse__Day_Of_Week__c</name>
+    </fields>
+    <fields>
+        <help>Antalet timmar som förälder Timecard innehåller för det angivna datumet.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help>Föräldra Timecard, för vilken den här tidsdatumsposten representerar ett enda timmarsvärde för ett av dess sju inlagda datum.</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Time Dates --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Time Date Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tid Datum Namn</nameFieldLabel>
+</CustomObjectTranslation>

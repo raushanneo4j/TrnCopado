@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>COMPANY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Moderna Therapeutics,Becton,Dickinson and Company,Johnson &amp; Johnson,BJ&apos;s Wholesale Club,Sanofi Pasteur Inc,Alexion Pharmaceuticals,Keurig,Stanley Black &amp; Decker,Fresenius,Novartis U.S.,PFIZER INC.,Regeneron Pharmaceuticals Inc,Sanofi-Aventis US Inc,Philips Healthcare- Philips Lifeline,Merck &amp; Co.,GlaxoSmithKline US,Bristol-Myers Squibb,Otsuka - US,Novo Nordisk U.S. Inc.,Bayer,Shire,AstraZeneca Pharmaceuticals U.S.,Impax Laboratories,Teva Pharmaceuticals USA Inc,Boehringer Ingelheim Corporation,Staples,The Janssen Pharmaceutical Companies,Genzyme,Amneal Pharmaceuticals,Vertex Pharmaceuticals Incorporated,Dr Pepper Snapple Group,Celgene,Mylan,Takeda Pharmaceuticals USA,INTEGRA LIFESCIENCES HOLDINGS CORPORATION</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL_OPT_OUT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Brendon Peak,Jeff Klein</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CA,US</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LEAD_ID</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Jeff Brendon Unassigned Leads</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

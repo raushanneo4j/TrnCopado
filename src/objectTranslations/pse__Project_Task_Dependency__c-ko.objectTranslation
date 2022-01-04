@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>프로젝트 작업 종속성</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>두 작업 간의이 링크가 두 프로젝트에 걸쳐 있는지 여부를 나타냅니다.</help>
+        <label><!-- Cross Project --></label>
+        <name>pse__Cross_Project__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업에 사용되는 시간 단위를 지정합니다. 유효한 값은 시간 또는 일입니다. 기본값은 일입니다.</help>
+        <label><!-- Dependency Display Units --></label>
+        <name>pse__Dependency_Display_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date &amp; Time --></label>
+        <name>pse__Dependent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task End Date --></label>
+        <name>pse__Dependent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date &amp; Time --></label>
+        <name>pse__Dependent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Task Start Date --></label>
+        <name>pse__Dependent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 마스터 - 세부 조회는이 관계의 종속 타스크 인 프로젝트 타스크를 참조합니다.</help>
+        <label><!-- Dependent Task --></label>
+        <name>pse__Dependent_Task__c</name>
+        <relationshipLabel><!-- Preceding Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lag Time --></label>
+        <name>pse__Lag_Time_Hours__c</name>
+    </fields>
+    <fields>
+        <help>지연 단위 유형을 시간 또는 일로 표시합니다.</help>
+        <label><!-- Lag Units --></label>
+        <name>pse__Lag_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Dependency Record --></label>
+        <name>pse__New_Dependency_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date &amp; Time --></label>
+        <name>pse__Preceding_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task End Date --></label>
+        <name>pse__Preceding_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date &amp; Time --></label>
+        <name>pse__Preceding_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preceding Task Start Date --></label>
+        <name>pse__Preceding_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 조회는이 관계에서 이전 태스크 인 프로젝트 태스크를 참조합니다.</help>
+        <label><!-- Preceding Task --></label>
+        <name>pse__Preceding_Task__c</name>
+        <relationshipLabel><!-- Dependent Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Finish to Finish (FF)</masterLabel>
+            <translation>마침에서 마침 (FF)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish to Start (FS)</masterLabel>
+            <translation>시작 (FS) 시작</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Finish (SF)</masterLabel>
+            <translation>마침을 시작하십시오 (SF)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Start (SS)</masterLabel>
+            <translation>시작 시작 (SS)</translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Task Relation Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>종속성 정보</label>
+            <section>Dependency Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>프로젝트 작업 종속성 번호</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- The lag unit of a dependency can&apos;t be in hours when the duration of the successor task is in day units. Change the lag unit of the dependency, or change the duration unit of the successor task. --></errorMessage>
+        <name>pse__Validate_Lag_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

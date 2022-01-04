@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prosjektoppgaveoppgave</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prosjektoppgaveoppdrag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project from Template Copy PTA Fields --></label>
+        <name>pse__CreateProjectFromTemplateCopyPTAFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mass Link UI Display Fields --></label>
+        <name>pse__MassLinkUIDisplayFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MassReassignTaskAssignmentColumns --></label>
+        <name>pse__MassReassignTaskAssignmentColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Is Running User&apos;s Record --></label>
+        <name>Is_Running_User_s_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>psa_report__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours per PTA --></label>
+        <name>psa_report__Estimated_Hours_per_PTA__c</name>
+    </fields>
+    <fields>
+        <help>Antall timer som er avsatt til en ressurs til en prosjektoppgave.</help>
+        <label><!-- Allocation Hours --></label>
+        <name>pse__Allocation_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Prosentandelen ressurs og / eller rolleallokering av oppgavens estimerte timer.</help>
+        <label><!-- Allocation Percentage --></label>
+        <name>pse__Allocation_Percentage__c</name>
+    </fields>
+    <fields>
+        <help>En referanse til prosjektoppgaven.</help>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Project Task Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>En ikke-PSE-ressurs som er tildelt prosjektoppgaven</help>
+        <label><!-- External Resource --></label>
+        <name>pse__External_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Antall planlagte timer fra en relatert oppgave (hvis en eksisterer) eller, hvis en relatert ressurs eksisterer, enten antall timer som er knyttet til relatert ressurs foretrukne plan eller det forespurte antall timer.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project ID --></label>
+        <name>pse__Project_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Task End Date --></label>
+        <name>pse__Project_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Task Start Date --></label>
+        <name>pse__Project_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Prosjektoppgave som ressursen er tilknyttet</help>
+        <label><!-- Project Task --></label>
+        <name>pse__Project_Task__c</name>
+        <relationshipLabel><!-- Project Task Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+    </fields>
+    <fields>
+        <help>En referanse til prosjektressursforespørselen.</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Project Task Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>pse__Resource_Role__c</name>
+        <picklistValues>
+            <masterLabel>Architect</masterLabel>
+            <translation>Arkitekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Konsulent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration Engineer</masterLabel>
+            <translation><!-- Data Integration Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevOps Engineer</masterLabel>
+            <translation>Klientleder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovations Lab Lead</masterLabel>
+            <translation><!-- Innovations Lab Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Engineer</masterLabel>
+            <translation><!-- Partner Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation>Prosjektleder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Architect</masterLabel>
+            <translation><!-- Solutions Architect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions Engineer</masterLabel>
+            <translation><!-- Solutions Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer</masterLabel>
+            <translation>Trener</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UI Developer</masterLabel>
+            <translation>Bedriftsanalytiker</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Ressurs knyttet til prosjektoppgaven</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Project Task Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schedule Type --></label>
+        <name>pse__Schedule_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Task Assignment Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Prosjektoppgave-oppdragsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- A resource request will be created automatically with the new project task assignment. Please clear the Resource Request field and try again. --></errorMessage>
+        <name>pse__Cannot_Associate_RR_On_PTA_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot apply both Allocation Hours and Allocation Percentage --></errorMessage>
+        <name>pse__Cannot_Specify_Hours_And_Percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot specify both Resource and External Resource --></errorMessage>
+        <name>pse__Cannot_Specify_Res_And_Ext_Res</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- We cannot associate a project task assignment with the resource request because they do not belong to the same project. Enter a different resource request and try again. --></errorMessage>
+        <name>pse__PTA_RR_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- We can&apos;t save a project task assignment without a Resource, External Resource or Resource Role. --></errorMessage>
+        <name>pse__Resc_OR_Ext_Resc_OR_Resc_Role_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource or External Resource is required --></errorMessage>
+        <name>pse__Resource_OR_External_Resource_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

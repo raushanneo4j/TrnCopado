@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 時差設定 --></value>
+    </caseValues>
+    <fields>
+        <help>時間差異の計算に含める、スケジュールされた作業時間に対する時間差異を指定します。</help>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <help>時間差異の計算に含める、スケジュールされた勤務時間内の時間差異を指定します。</help>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合は、時差を計算するときに請求可能時間が無視されます。</help>
+        <label><!-- Exclude Billable Hours --></label>
+        <name>pse__Exclude_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、時差を計算するときに貸方時間は無視されます。</help>
+        <label><!-- Exclude Credited Hours --></label>
+        <name>pse__Exclude_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、時差を計算するときに除外時間は無視されます。</help>
+        <label><!-- Exclude Excluded Hours --></label>
+        <name>pse__Exclude_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <help>時間差異の計算に、許容される差異の範囲外に表示されないリソースを含む、すべてのリソースに関する詳細が含まれるように指定します。</help>
+        <label><!-- Report All --></label>
+        <name>pse__Report_All__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、[Allowed Variance Over]および[Allowed Variance Under]設定の値は時間分散のパーセンテージです。 falseの場合、Allowed Variance OverおよびAllowed Variance Underの設定の値は時間です。この設定はデフォルトではtrueです。</help>
+        <label><!-- Use Percentage --></label>
+        <name>pse__Use_Percentage__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bilancio</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>I bilanci</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Opp And Template Budget Columns --></label>
+        <name>pse__CreateProjectFromOppAndTempBudgetColumns</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>pse__Account__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Se selezionato, consente all&apos;amministratore di apportare modifiche &quot;globali&quot; al budget, incluse le modifiche apportate al progetto, alla risorsa, alla valuta o alla data del budget, anche se l&apos;opzione Includi in dati finanziari è selezionata. Requisiti di configurazione: la modalità di calcolo degli effettivi deve essere impostata su &quot;Pianificata&quot;.</help>
+        <label><!-- Admin Global Edit --></label>
+        <name>pse__Admin_Global_Edit__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;importo monetario per il budget, escluso qualsiasi importo immesso separatamente nel campo Importo di spesa. Il valore predefinito e deve essere sempre la stessa valuta del Progetto.</help>
+        <label><!-- Amount --></label>
+        <name>pse__Amount__c</name>
+    </fields>
+    <fields>
+        <help>Questa casella di controllo deve essere selezionata quando il Budget è approvato, in genere in base al campo Stato.</help>
+        <label><!-- Approved --></label>
+        <name>pse__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved for Billing --></label>
+        <name>pse__Approved_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>pse__Approver__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Audit Notes --></label>
+        <name>pse__Audit_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Date --></label>
+        <name>pse__Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>pse__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed --></label>
+        <name>pse__Billed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Invoiced --></label>
+        <name>pse__Billing_Event_Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Item --></label>
+        <name>pse__Billing_Event_Item__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Released --></label>
+        <name>pse__Billing_Event_Released__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event Status --></label>
+        <name>pse__Billing_Event_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Event --></label>
+        <name>pse__Billing_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Hold --></label>
+        <name>pse__Billing_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Header --></label>
+        <name>pse__Budget_Header__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>pse__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help>Indica che il budget è in uno stato idoneo per la generazione di eventi di fatturazione (escluso il contrassegno Approvato per fatturazione, che può anche essere richiesto per configurazione globale).</help>
+        <label><!-- Eligible for Billing --></label>
+        <name>pse__Eligible_for_Billing__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non fatturare mai questo record aziendale. Stesso effetto di Billing Hold, ma inteso a riflettere un&apos;esclusione permanente da Billing Generation.</help>
+        <label><!-- Exclude from Billing --></label>
+        <name>pse__Exclude_from_Billing__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;importo monetario (se esiste) esplicitamente riservato alle spese nel budget. Questo è separato e in aggiunta al campo Importo del budget. Il valore predefinito e deve essere sempre la stessa valuta del Progetto.</help>
+        <label><!-- Expense Amount --></label>
+        <name>pse__Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Transaction --></label>
+        <name>pse__Expense_Transaction__c</name>
+        <relationshipLabel><!-- Budget (Expense Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include In Financials --></label>
+        <name>pse__Include_In_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>pse__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Number --></label>
+        <name>pse__Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoiced --></label>
+        <name>pse__Invoiced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Group Currency Code --></label>
+        <name>pse__Override_Project_Group_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sostituisce il gruppo in cui verranno eseguite le transazioni di un budget per i gruppi effettivi, anche se il suo progetto si trova in un gruppo diverso. In genere, le transazioni di un budget si arrotolano al gruppo del progetto.</help>
+        <label><!-- Override Project Group --></label>
+        <name>pse__Override_Project_Group__c</name>
+        <relationshipLabel><!-- Override Group For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Practice Currency Code --></label>
+        <name>pse__Override_Project_Practice_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sostituisce la pratica in cui verranno eseguite le transazioni del budget per gli effettivi di pratica, anche se il suo progetto si trova in una pratica diversa. In genere, le Transazioni di un budget si arrotolano alla pratica del progetto.</help>
+        <label><!-- Override Project Practice --></label>
+        <name>pse__Override_Project_Practice__c</name>
+        <relationshipLabel><!-- Override Practice For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Project Region Currency Code --></label>
+        <name>pse__Override_Project_Region_Currency_Code__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è impostato, sovrascrive la Regione in cui verranno eseguite le Transazioni del budget per gli Actual regionali, anche se il suo Progetto si trova in una Regione diversa. In genere le transazioni di un budget si arrotolano alla regione del progetto.</help>
+        <label><!-- Override Project Region --></label>
+        <name>pse__Override_Project_Region__c</name>
+        <relationshipLabel><!-- Override Region For Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La parte degli importi di budget / spesa combinati deve essere pre-fatturata. Il valore predefinito e deve essere sempre la stessa valuta del Progetto. Questo campo è stato sostituito dal nuovo campo Pre_Billed_Amount__c.</help>
+        <label><!-- DEPRECATED: Pre-Billed Amount --></label>
+        <name>pse__PreBilledAmount__c</name>
+    </fields>
+    <fields>
+        <help>La parte degli importi di budget / spesa combinati deve essere pre-fatturata. Il valore predefinito e deve essere sempre la stessa valuta del Progetto. Questo campo sostituisce il vecchio campo Pre-Billed Amount (PreBilledAmount__c) che non consentiva decimali non interi.</help>
+        <label><!-- Pre-Billed Amount --></label>
+        <name>pse__Pre_Billed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Billed Transaction --></label>
+        <name>pse__Pre_Billed_Transaction__c</name>
+        <relationshipLabel><!-- Budget (Pre-Billed Transaction) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Bozza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Aperto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Respinto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>pse__Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction --></label>
+        <name>pse__Transaction__c</name>
+        <relationshipLabel><!-- Budget --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order</masterLabel>
+            <translation>Ordine di acquisto del cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Purchase Order Change Request</masterLabel>
+            <translation>Richiesta di modifica ordine di acquisto cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget</masterLabel>
+            <translation>Budget interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Budget Change Request</masterLabel>
+            <translation>Richiesta di modifica del budget interno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order</masterLabel>
+            <translation>Ordine di acquisto del fornitore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Purchase Order Change Request</masterLabel>
+            <translation>Richiesta di modifica ordine di acquisto fornitore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order</masterLabel>
+            <translation>Ordine di lavoro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Order Change Request</masterLabel>
+            <translation>Richiesta di modifica ordine di lavoro</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Budget Layout</layout>
+        <sections>
+            <label>Revisione</label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazione</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>Stato</label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label>Informazioni di sistema</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Budget Layout - BP</layout>
+        <sections>
+            <label><!-- Auditing --></label>
+            <section>Auditing</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome del budget</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Approver Share --></label>
+        <name>pse__PSE_Approver_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s account must match the account on this budget --></errorMessage>
+        <name>pse__Budget_Header_Account_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s project does not match the project on this budget --></errorMessage>
+        <name>pse__Budget_Header_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The budget header&apos;s type must match the type on this budget --></errorMessage>
+        <name>pse__Budget_Header_Type_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Budget&apos;s Project field value may not be blank and may not be updated once set (unless Admin Global Edit is checked, Audit Notes are provided, and Actuals Calculation Mode is Scheduled). --></errorMessage>
+        <name>pse__Budget_Project_is_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount should be a positive value --></errorMessage>
+        <name>pse__Has_non_negative_budget_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pre Billed Amount should be a positive value --></errorMessage>
+        <name>pse__Has_non_negative_pre_billed_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Master Budget cannot be changed once set. --></errorMessage>
+        <name>pse__Master_Budget_is_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clear_Billing_Data --></label>
+        <name>pse__Clear_Billing_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_77309741</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OPP_OWNER_ROLE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive EMEA West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Director of Sales UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VP Sales EMEA West</sourceValue>
+            </sourceValues>
+            <value>Rik</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive EMEA East</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regional Director EMEA East</sourceValue>
+            </sourceValues>
+            <value>Dirk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive NA East</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Director of Sales NA East</sourceValue>
+            </sourceValues>
+            <value>Dave Mohr</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive NA West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Director of Sales NA West</sourceValue>
+            </sourceValues>
+            <value>Brock</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VP Strategic Alliances and Channels</sourceValue>
+            </sourceValues>
+            <value>John Broad</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive ROW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Director of Alliance and Channel</sourceValue>
+            </sourceValues>
+            <value>Erik</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sr. Director of Account Management</sourceValue>
+            </sourceValues>
+            <value>Ginger</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_77309741</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity.SFDC_Opp_ID__c</field>
+    </columns>
+    <columns>
+        <field>OPPORUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>field_key</field>
+    </columns>
+    <columns>
+        <field>OLDVAL</field>
+    </columns>
+    <columns>
+        <field>NEWVAL</field>
+    </columns>
+    <columns>
+        <field>OPP_ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>OPP_OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>jianna competente,kenny huang,andrew bates,lexi riggs,lance kaji</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>field engineer,invoice frequency,opportunity source,term end date,contract terms (months),partner,partner role,sales development rep,term start date</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>THIS_MONTH,LAST_MONTH</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_77309741</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Track Changes Opp Field History</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityFieldAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

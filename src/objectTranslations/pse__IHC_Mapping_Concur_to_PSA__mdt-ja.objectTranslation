@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- IHCマッピングがPSAと一致 --></value>
+    </caseValues>
+    <fields>
+        <help>Integration Hub Connectorで変換を作成する必要があるPSAオブジェクトのフィールド。</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorで変換を作成する必要があるPSAオブジェクト。</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorで変換を作成する必要があるサードパーティアプリケーションオブジェクトのフィールド。</help>
+        <label><!-- Third Party Application Field --></label>
+        <name>pse__Third_Party_Application_Field__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorでトランスフォーメーションを作成する必要があるサードパーティアプリケーションオブジェクト。</help>
+        <label><!-- Third Party Application Object --></label>
+        <name>pse__Third_Party_Application_Object__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorで変換を作成する必要があるサードパーティアプリケーション。</help>
+        <label><!-- Third Party Application --></label>
+        <name>pse__Third_Party_Application__c</name>
+        <picklistValues>
+            <masterLabel>Concur</masterLabel>
+            <translation>同意する</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorに仮想データリソースをキー入力します。</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>Integration Hub Connectorの仮想データリソースの名前。</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>IHC Mapping Concur to PSA Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Resource Skill Request</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Ressursfaglige forespørsler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Er dette den primære ferdigheten / sertifiseringen for forespørselen?</help>
+        <label><!-- Primary --></label>
+        <name>pse__Is_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match All --></label>
+        <name>pse__Match_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Rating --></label>
+        <name>pse__Minimum_Rating__c</name>
+        <picklistValues>
+            <masterLabel>1 - Limited Exposure</masterLabel>
+            <translation>1 - Begrenset eksponering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Some Familiarity</masterLabel>
+            <translation>2 - Noen kjennskap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Comfortable</masterLabel>
+            <translation>3 - Komfortabelt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strong</masterLabel>
+            <translation>4 - Sterk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Expert</masterLabel>
+            <translation>5 - Ekspert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Resource Skill Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Resource Skill Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Rekord typen av tilhørende ferdighet.</help>
+        <label><!-- Skill Record Type --></label>
+        <name>pse__Skill_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skill or Certification --></label>
+        <name>pse__Skill_or_Certification__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Resource Skill Request Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Ressursfrekvensforespørselsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Minimum rating is required for skill requests. --></errorMessage>
+        <name>pse__Rating_Required_For_Skill</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource request is required --></errorMessage>
+        <name>pse__Resource_Request_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

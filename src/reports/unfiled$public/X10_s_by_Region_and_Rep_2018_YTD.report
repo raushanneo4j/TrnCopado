@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61252548</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Steve Turek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Wilcox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Fredrickson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tim Lewis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Lopez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Landeros</sourceValue>
+            </sourceValues>
+            <value>West-Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Rice</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bob Anthony</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Mohr</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Richard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Zagalsky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Caito</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neeraj Gupta</sourceValue>
+            </sourceValues>
+            <value>East-Federal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Peter Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cédric Fauvet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fredrik Johansson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonny Cheetham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Samaan</sourceValue>
+            </sourceValues>
+            <value>EU-UK</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_61252548</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>FULL_NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>10%&apos;s by Region and Rep 2018 YTD</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opp_Count_1__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND ((3 AND 4) OR (5 AND 6))</booleanFilter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Cross-Sell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Subscription</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CA,US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>CA,US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>500 Million - 1 Billion,1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_61252548</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Opportunity.Qualification_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>10%&apos;s by Region and Rep 2018 YTD</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Opportunity.Opp_Count_1__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Qualification_Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

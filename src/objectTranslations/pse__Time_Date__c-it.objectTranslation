@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ora dell&apos;appuntamento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Date del tempo</value>
+    </caseValues>
+    <fields>
+        <help>La data in cui il Timecard padre contiene il numero di ore specificato.</help>
+        <label><!-- Date --></label>
+        <name>pse__Date__c</name>
+    </fields>
+    <fields>
+        <help>Visualizza l&apos;etichetta corrispondente al giorno della settimana per il valore del campo Data.</help>
+        <label><!-- Day Of Week --></label>
+        <name>pse__Day_Of_Week__c</name>
+    </fields>
+    <fields>
+        <help>Il numero di ore che contiene il Timecard padre per la data specificata.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help>Timecard padre per il quale questo record Data ora rappresenta un valore di un&apos;ora per una delle sette date contenute.</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Time Dates --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Date Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Data Data Nome</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

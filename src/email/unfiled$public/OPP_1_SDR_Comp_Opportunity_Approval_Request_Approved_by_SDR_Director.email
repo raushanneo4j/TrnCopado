@@ -1,0 +1,29 @@
+Hi {!Opportunity.OwnerFirstName},
+<br><br>
+
+The SDR Director has approved your request to approve the 1% '{!Opportunity.Name}' for compensation.
+<br>
+
+<div>
+
+<p><strong>OPPORTUNITY DETAILS</strong></p>
+
+<p>
+<ul>
+<li>Opportunity Link: {!Opportunity.Link}</li>
+<li>Sales Stage:</b> {!Opportunity.StageName}</li>
+<li>Opportunity Source:</b> {!Opportunity.Opportunity_Source__c}</li>
+<li>Account: <a href="{!Account.Link}">{!Opportunity.Account}</a></li>
+</ul>
+</p>
+
+<p><strong>WHAT'S NEXT?</strong></p>
+
+<p>
+<ul>
+
+<li>The Opportunity record has been unlocked.</li>
+<li>You can click on the Opportunity link to view the Approval History related list on the record page and read any decision notes your manager or SDR Director may have left.</li>
+<li>If you accept this decision as final, no further action is required on your part. SDR Director's approval means that you will be compensated for sourcing this Opportunity.</li>
+</ul>
+</p>

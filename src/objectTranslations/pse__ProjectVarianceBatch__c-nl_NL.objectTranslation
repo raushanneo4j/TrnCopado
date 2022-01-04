@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Projectvariantie Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projectvariantiebatches</value>
+    </caseValues>
+    <fields>
+        <help>Unieke identificeerder voor de huidige Apex-taak.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de batchprocesrecord. Het batchprocesrecord wordt automatisch verwijderd als het proces succesvol is voltooid.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het type melding dat wordt verzonden wanneer het proces is voltooid: succesvol, mislukt of gemengd.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>De huidige status van de batchtaak: &quot;Verwerken&quot;, &quot;Voltooien&quot; of &quot;Fout&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Compleet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Verwerken</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is afgebroken.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is Fout.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is Externe.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>Het totale aantal logboeken.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Projectvariantie Batch-ID</nameFieldLabel>
+</CustomObjectTranslation>

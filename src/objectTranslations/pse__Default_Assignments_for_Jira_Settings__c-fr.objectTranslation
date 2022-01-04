@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Assignations par défaut pour les paramètres Jira --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Assignations par défaut pour les paramètres Jira --></value>
+    </caseValues>
+    <fields>
+        <help>Nombre d&apos;enregistrements à traiter dans un seul lot. La valeur est 1 par défaut.</help>
+        <label><!-- Default Assignments for Jira Batch Size --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie les destinataires des notifications pour les assignations par défaut pour les notifications par lot Jira envoyées via Chatter, un courrier électronique ou des tâches. La valeur est une liste d&apos;adresses électroniques séparées par des points-virgules (;). Si laissé vide, l&apos;utilisateur qui a démarré le processus en est averti.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notification_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications des assignations par défaut pour les processus par lots Jira sont envoyées via Chatter aux destinataires répertoriés dans le champ Destinataires de la notification. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_by_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications des assignations par défaut pour les traitements par lots Jira sont envoyées par courrier électronique aux destinataires répertoriés dans le champ Destinataires de la notification. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_by_Email__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications des assignations par défaut pour les traitements par lots Jira sont envoyées via des tâches aux destinataires répertoriés dans le champ Destinataires de la notification. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_by_Task__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

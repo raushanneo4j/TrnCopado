@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- מחבר רכזת אינטגרציה: ג’ירה - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- מחבר רכזת אינטגרציה: ג’ירה - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>כתובת דוא&quot;ל לקבלת התראות על שגיאה אם האינטגרציה עם ג’ירה נכשלה.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>כתובת האתר ליישום ג’ירה. משמש לאימות.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים את השדה Map PSA Projects to Jira Issues, קובע את הקטגוריה של סטטוסי נושא Jira המעדכנים את שדה הפרויקט הממופה עם הערך המוגדר בערך שדה PSA לעדכון פרוייקטים.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים בשדה אפשר פרויקטים של סינכרון עם סוגיות Jira, קובע את סוג הבעיות של Jira שמסונכרן עם פרויקטים של PSA. ערך זה הוא תלויי רישיות וסוג הבעיה חייב להתקיים ביישום Jira שלך.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם משאבי ה- PSA המסונכרנים לג’ירה מקבלים הודעת דוא&quot;ל עם שם המשתמש Jira וקישור להגדרת הסיסמה שלהם.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים, פרויקטים של PSA ממופים לנושאי ג’ירה, במקום לפרויקטים של ג’ירה. סוג גיליון הג’ירה נקבע על פי הערך של השדה סוג ג’ירה.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של ימי כרטיסי הזמן, החל מיום שני, ניתן לרשום את הזמן כנגד כל שבוע עבור משאב. אתה יכול להזין מספר שלם בין 1 ל- 7. לדוגמה, הזן 5 כדי לאפשר רישום זמן ליום שני עד שישי.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של שעות כרטיס הזמן שניתן לרשום בכל יום למשאב. אתה יכול להזין ערך בין 1 ל- 24.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים את השדה Map PSA Projects to Jira Issues, קובע את הערך עימו מתעדכן שדה הפרויקט הממופה כאשר גיליון Jira כולל את הסטטוס המוגדר בקטגוריית סטטוס של Jira Issue. ערך זה תלוי רישיות.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>שם השדה המותאם אישית של ג’ירה המשמש לקישור סוגיה לסוג נושא האב, לדוגמה, קישור אב. היחסים יכולים להיות בעלי מספר רב של רמות, אך סוג הבעיה המוגדר בסוג ההנפקה של Jira הוא הגבוה ביותר שנלקח בחשבון.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש לסנכרן את יומני העבודה של ג’ירה לכרטיסי ה- PSA. מאוכלס אוטומטית כאשר יומני סינכרון העבודה מג’ירה לכרטיסי זמן בזרימת עבודה של PSA מופעלים באמצעות מסוף התכונות.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש לסנכרן בין פרויקטים של PSA לנושאי ג’ירה. מאוכלס באופן אוטומטי כאשר פעולות הסינכרון מ- PSA לגיליונות בזרימת העבודה של Jira מופעלות באמצעות מסוף התכונות.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש לסנכרן פרויקטים של PSA לפרויקטים של Jira. מאוכלס אוטומטית כאשר פעולות סינכרון הפרויקטים מ- PSA לפרויקטים בזרימת העבודה של Jira מופעלות באמצעות מסוף התכונות.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש לסנכרן את משאבי ה- PSA למשתמשים בג’ירה. מאכלס אוטומטית כאשר פעילויות סינכרון המשאבים מ- PSA למשתמשים בזרימת העבודה של Jira מופעלות באמצעות מסוף התכונות.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס בו נוצרים כרטיסי זמן.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יש לעדכן את פרויקטים של PSA בהתבסס על סטטוס נושא Jira.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם יישום Jira המסופק בכתובת האתר של יישום Jira הוא גרסת Jira Cloud. השאר מחוץ לבחירה אם אתה משתמש ב- Jira Server.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

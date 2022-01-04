@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity moved from 99%</name>
+    <style>freeForm</style>
+    <subject>ACTION REQUIRED: ({!Opportunity.Name}) Has Moved Down From 99%</subject>
+    <textOnly>{!Opportunity.Name} has moved down from 99% because one or more fields are incorrect/incomplete.  Please review the Closed Won Checklist (hyperlink of our internal checklist sheet) to complete the appropriate fields in Salesforce before moving the Sales Stage to 99%.
+
+Link to Opportunity : {!Opportunity.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

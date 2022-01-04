@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_88243445</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER_MANAGER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brock Alston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles Fischer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Mohr</sourceValue>
+            </sourceValues>
+            <value>NAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lars Nordwall</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Nolten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93644453</developerName>
+        <masterLabel>Territory</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Isseks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Diggins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Vessie</sourceValue>
+            </sourceValues>
+            <value>Adam Isseks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeremy Bell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy McLaughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kym McIntosh</sourceValue>
+            </sourceValues>
+            <value>Jeremy Bell</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lewis Guess</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Coltart</sourceValue>
+            </sourceValues>
+            <value>Lewis Guess</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kevin McCarthy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Odonnell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Carey</sourceValue>
+            </sourceValues>
+            <value>Kevin McCarthy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ryan Sullivan</sourceValue>
+            </sourceValues>
+            <value>Ryan Sullivan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Han</sourceValue>
+            </sourceValues>
+            <value>Angela Han</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Julio Bayona</sourceValue>
+            </sourceValues>
+            <value>Julio Bayona</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sophean Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carl Eklund</sourceValue>
+            </sourceValues>
+            <value>Slim</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Yigit Acar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <value>Yigit Alcar</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Keoni Gaspar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mari Jansdotter</sourceValue>
+            </sourceValues>
+            <value>Keoni Gasper</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Candace Shin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Richard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Shaw</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Caito</sourceValue>
+            </sourceValues>
+            <value>East Territory Opp</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brendon Peak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeff Klein</sourceValue>
+            </sourceValues>
+            <value>Jeff Klein</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Austin Fischer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Welch</sourceValue>
+            </sourceValues>
+            <value>Austin Fischer</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.Opp_Count_1__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_93644453</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opp_Count_1__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Approval_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Qualification_Date__c</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Recorded_Opp__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Use_Case__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND (6 OR (7 AND 8))) AND 9</booleanFilter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Cross-Sell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Subscription - Aura Enterprise,GraphDataScience Bundle – “Large”,GraphDataScience Bundle – “Standard”,GraphDataScience Bundle – “Starter”,Subscription - OEM (Platform),Subscription - Enterprise,Subscription - Business Bundle,Subscription - Discovery Bundle,Subscription - Enterprise Bundle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Free Startup License,Free Education License,Prospecting,Qualification SDR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>UNIT_PRICE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>4/1/2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Qualification_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>4/1/2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_93644453</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adam Isseks,Angela Han,Austin Fischer,East Territory Opp,Jeff Klein,Jeremy Bell,Julio Bayona,Keoni Gasper,Kevin McCarthy,Lewis Guess,Ryan Sullivan,Slim,Yigit Alcar</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93644453</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SDR-NAM</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Manager_Approval_Date__c</dateColumn>
+        <interval>INTERVAL_CURRENTQ</interval>
+    </timeFrameFilter>
+</Report>

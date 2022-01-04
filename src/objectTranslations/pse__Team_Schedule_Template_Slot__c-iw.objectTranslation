@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>חריץ לתבנית צוות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>חריצי תבנית צוות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>השעה שבה מסתיים משבצת לוח הזמנים.</help>
+        <label><!-- End Time --></label>
+        <name>pse__End_Time__c</name>
+    </fields>
+    <fields>
+        <help>מספר השעות הנדרש למשאב בחריץ לוח הזמנים.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help>מספר המשאבים הדרושים לחריץ לוח הזמנים.</help>
+        <label><!-- Resources Required --></label>
+        <name>pse__Resources_Required__c</name>
+    </fields>
+    <fields>
+        <help>השעה שבה מתחיל משבצת לוח הזמנים.</help>
+        <label><!-- Start Time --></label>
+        <name>pse__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Schedule Slot Type --></label>
+        <name>pse__Team_Schedule_Slot_Type__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>תבנית לוח הזמנים של הצוות המשויכת לחריץ לוח הזמנים הזה.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Template Slot Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם חריץ תבנית לוח הקבוצות</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Hours should be non-negative values in increments of 0.25. --></errorMessage>
+        <name>pse__Hours_Must_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Number of Resources should be between 1 to 99. --></errorMessage>
+        <name>pse__Resource_Should_Be_In_Range</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jira Werklogboek</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jira-werklogboeken</value>
+    </caseValues>
+    <fields>
+        <help>Omschrijving van het werklogboek van Jira.</help>
+        <label><!-- Comment --></label>
+        <name>pse__Comment__c</name>
+    </fields>
+    <fields>
+        <help>Werklogboek gestarttedatum werklogboek van Jira.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>De hoeveelheid tijd wat gelogd is in Jira, weergegeven in een gebruiksvriendelijk formaat.</help>
+        <label><!-- Time Spent (Formatted) --></label>
+        <name>pse__Time_Spent_Formatted__c</name>
+    </fields>
+    <fields>
+        <help>De hoeveelheid tijd wat gelogd is in Jira, in seconden</help>
+        <label><!-- Time Spent (Seconds) --></label>
+        <name>pse__Time_Spent_Seconds__c</name>
+    </fields>
+    <fields>
+        <help>Tijdkaart waarin dit werklogboek is opgenomen.</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Jira Work Logs --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Werklogboek-ID</nameFieldLabel>
+</CustomObjectTranslation>

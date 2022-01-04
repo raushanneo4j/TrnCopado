@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Generische Batch-Aufgabe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Generische Batch-Aufgaben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Generische Batch-Aufgabe --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Generische Batch-Aufgaben --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Generische Batch-Aufgabe --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Generische Batch-Aufgaben --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Generische Batch-Aufgabe --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Generische Batch-Aufgaben --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- GenericBatchTasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Wird bearbeitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Identifier --></label>
+        <name>pse__UniqueIdentifier__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Generic Batch Task Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Felder</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Generische Batch-Aufgabe</nameFieldLabel>
+</CustomObjectTranslation>

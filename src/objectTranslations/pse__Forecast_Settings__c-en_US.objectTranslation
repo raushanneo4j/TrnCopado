@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the number of days prior to the current date to use as the cutoff date for actual vs scheduled items.   Use 0 for today.   Leave blank for to automatically use  &quot;the end of last week&quot; --></help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of records to process in a single batch. The value is 200 by default. --></help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 1. --></help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 2. --></help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 3. --></help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 4. --></help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 5. --></help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 6. --></help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label assigned to the weighted forecast amount for Category 7. --></help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The forecast curve applied when there is no curve set on an opportunity. An error message is displayed if no curve is set on an opportunity and no default opportunity curve is defined. --></help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help><!-- The forecast curve applied when there is no curve set on a project. An error message is displayed if no curve is set on a project and no default project curve is defined. --></help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, notifications from Forecast batch processes are sent via Chatter to recipients listed in the Notification Recipients setting. This is deselected by default. --></help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, notifications from Forecast batch processes are sent via email to recipients listed in the Notification Recipients setting. This is deselected by default. --></help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the notification recipients for Forecast batch notifications sent via Chatter or email. The value is a list of email addresses separated by semicolons (;). This setting is null by default. --></help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, notifications from Forecast batch processes are sent via tasks. This is deselected by default. --></help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 1 for Opportunity Forecasts. --></help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 2 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 3 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 4 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 5 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 6 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 7 for Opportunity Forecasts. For best practice, each multiplier should be higher than the previous Category value. --></help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 1 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 2 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 3 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 4 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 5 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 6 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The multipliers used to calculate Category 7 for Project Forecasts. This multiplies, in order, the metrics for:Billings, Pass Through Billings, Scheduled Time, Held Resource Requests, Unheld Resource Requests, Scheduled,Milestones and Unscheduled Backlog. --></help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 1 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 2 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 3 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 4 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 5 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 6 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to determine if Category 7 is included in the Forecast calculation. --></help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+</CustomObjectTranslation>

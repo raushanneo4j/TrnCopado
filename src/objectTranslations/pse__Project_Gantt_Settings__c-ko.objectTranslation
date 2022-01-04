@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 프로젝트 작업 갠트 설정 --></value>
+    </caseValues>
+    <fields>
+        <help>프로젝트가 편집을 위해 잠겨 있으면이 설정은 프로젝트 작업 갠트에서 작업을 편집 할 권한이있는 사용자에게 잠금을 해제하고 다른 사용자를 읽기 전용 모드로 강제 할 수있는 옵션이 있는지 여부를 결정합니다.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Gantt에 표시 할 사용자 지정 열을 포함하는 프로젝트 작업 개체의 필드 집합의 API 이름을 정의합니다. 설정이 비어 있으면 Gantt 편집 가능한 사용자 정의 열 필드 세트가 사용됩니다.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Project Task Gantt의 레코드가 버퍼에로드되지 않습니다. 기본값은 선택 취소되어 있습니다. 이 설정은 FinancialForce.com 고객 지원부에 문의 한 후에 변경해야합니다.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 프로젝트 작업 종속성이 동기화 될 때 종속성 해결 단추가 비활성화됩니다. 이 옵션을 선택하지 않으면 프로젝트 작업 종속성을 동기화 할 필요가 없을 때 버튼이 활성 상태로 유지됩니다. 기본값은 선택 취소되어 있습니다.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Gantt에서 현재보기 위에 렌더링 할 행 수를 결정합니다. 기본값은 20입니다.이 설정은 FinancialForce.com 고객 지원 부서에 문의 한 후에 변경해야합니다.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>Milestones에 대한 사용자 정의 툴팁을 표시하는 데 사용되는 필드 집합의 API 이름입니다. 정의 된 경우이 설정은 기본 마일스톤 툴팁을 대체합니다.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업 할당에 대한 사용자 정의 툴팁을 표시하는 데 사용되는 필드 집합의 API 이름입니다. 정의 된 경우이 설정은 기본 프로젝트 작업 할당 도구 설명을 대체합니다.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Project Manager에 대한 Gantt 편집 액세스 수준을 결정합니다. 값은 &quot;전체&quot;(기본값)입니다. - 만든 프로젝트를 편집 할 수 있습니다. &quot;읽기&quot;- 읽기 전용 권한 만 있거나 &quot;권한 없음&quot;액세스 권한이 권한 제어에 의해 결정됩니다.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트에 대한 사용자 정의 툴팁을 표시하는 데 사용되는 필드 집합의 API 이름입니다. 정의 된 경우이 설정은 기본 프로젝트 툴팁을 대체합니다.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업 Gantt에서 편집 할 수없는 필드가 포함 된 프로젝트 작업에 설정된 필드의 API 이름입니다.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Project Task Gantt에서 열의 너비, 순서 및 표시 여부에 대한 사용자 지정 내용이 사용자별로 기억됩니다.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Project Task Gantt 도구 모음에 Create Resource Demand 버튼이 표시됩니다. Project Task Assignments (프로젝트 작업 할당) 페이지에서 Create Resource Demand (자원 수요 생성) 버튼을 통해 프로젝트 계획을 세우십시오.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>작업 표시 줄에 일정 완료율을 표시할지 여부를 결정합니다. 이 설정은 일정 창에서 % Hrs 단추 표시를 제어하지 않습니다.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>포인트 창에 표시되는 작업 표시 줄의 백분율 완료율을 결정합니다. 이 설정은 기본적으로 선택됩니다. 이 설정은 [일정] 창에서 % Pts 단추의 표시를 제어하지 않습니다.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트 작업에 대한 사용자 정의 툴팁을 표시하는 데 사용되는 필드 집합의 API 이름입니다. 정의 된 경우이 설정은 기본 프로젝트 작업 툴팁을 대체합니다.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Gantt에서 현재보기 아래에 렌더링 할 행 수를 결정합니다. 기본값은 10입니다.이 설정은 FinancialForce.com 고객 지원 부서에 문의 한 후에 변경해야합니다.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+</CustomObjectTranslation>

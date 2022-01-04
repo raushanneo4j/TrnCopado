@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- IHC Mapeo de Jira a PSA --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Asignaciones IHC Jira a PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Campo de objeto Jira para el que se crea la asignación en el conector de Integration Hub.</help>
+        <label><!-- Jira Field --></label>
+        <name>pse__Jira_Field__c</name>
+    </fields>
+    <fields>
+        <help>Objeto Jira Cloud para el que se crea la asignación en Integration Hub Connector.</help>
+        <label><!-- Jira Cloud Object --></label>
+        <name>pse__Jira_Object__c</name>
+    </fields>
+    <fields>
+        <help>Objeto Jira On-Prem para el que se crea la asignación en Integration Hub Connector.</help>
+        <label><!-- Jira On-Prem Object --></label>
+        <name>pse__Jira_OnPrem_Object__c</name>
+    </fields>
+    <fields>
+        <help>Campo de objeto PSA para el que se crea la asignación en el conector de Integration Hub.</help>
+        <label><!-- PSA Field --></label>
+        <name>pse__PSA_Field__c</name>
+    </fields>
+    <fields>
+        <help>Objeto de PSA para el que se crea la asignación en el conector de Integration Hub.</help>
+        <label><!-- PSA Object --></label>
+        <name>pse__PSA_Object__c</name>
+    </fields>
+    <fields>
+        <help>Clave de recurso de datos virtuales utilizada para la asignación en el conector del conector de integración.</help>
+        <label><!-- VDR Key --></label>
+        <name>pse__VDR_Key__c</name>
+    </fields>
+    <fields>
+        <help>Nombre del recurso de datos virtuales en el conector de Integration Hub.</help>
+        <label><!-- VDR Name --></label>
+        <name>pse__VDR_Name__c</name>
+    </fields>
+    
+    <layouts>
+        <layout>IHC Mapping Jira to PSA Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Standardopgaver til Jira Batch</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Standardopgaver til Jira-batches</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Unik identifikator for det aktuelle Apex-job.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_ID__c</name>
+    </fields>
+    <fields>
+        <help>Opslag til batchprocessen. Batchprocesregistret slettes automatisk, hvis processen er fuldført.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Batch-postidentifikatoren.</help>
+        <label><!-- Default Assignments for Jira Batch ID --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_ID__c</name>
+    </fields>
+    <fields>
+        <help>Den type meddelelse, der blev sendt, når processen var afsluttet: vellykket, mislykket eller blandet.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>Den aktuelle status for batchjobbet: &quot;Processing&quot;, &quot;Complete&quot; eller &quot;Error&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fejl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Forarbejdning</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor logtypen er Abort.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor logtypen er en fejl.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af logfiler, hvor logtypen er ekstern.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_of_External__c</name>
+    </fields>
+    <fields>
+        <help>Det samlede antal logfiler.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_of_Logs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Standardopgaver til Jira Batch Name</nameFieldLabel>
+</CustomObjectTranslation>

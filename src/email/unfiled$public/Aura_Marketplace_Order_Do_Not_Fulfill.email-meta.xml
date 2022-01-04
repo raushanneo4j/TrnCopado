@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email goes out to Finance to let them know that this is an Aura marketplace order they do not need to fulfill.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Aura Marketplace Order - Do Not Fulfill</name>
+    <style>none</style>
+    <subject>This is an Aura {!Opportunity.Fulfillment_Partner_Involved_Account__c} Marketplace Order. Please Do NOT Fulfill.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

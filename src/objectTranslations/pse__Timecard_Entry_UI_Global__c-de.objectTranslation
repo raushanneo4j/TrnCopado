@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard-Eingabe-UI global --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Timecard-Eingabe-UI global --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard-Eingabe-UI global --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard-Eingabe-UI global --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard-Eingabe-UI global --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den Namen eines Feldsatzes, der Zuweisungsfelder enthält, die als Spalten in der Projekt- / Zuordnungssuche auf der Seite &quot;Timecard-Eintrag&quot; angezeigt werden.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Zuordnungen, die für die Zuordnung der Zeitkartenzuordnung geladen werden sollen</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Liste der API-Namen der Zuweisungsfelder, die als Spalten in der Projekt- / Zuordnungssuche auf der erweiterten Zeiteintragsseite angezeigt werden sollen. Fügen Sie das Präfix pse__ namespace nicht in den API-Namen eines Felds ein. Der Standardwert ist Name, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Beschränkung des Start- und Enddatums der Zuweisung beim Laden der Zuweisungen in der Timecard-Benutzeroberfläche. Wenn dies der Fall ist, werden nur Zuordnungen geladen, deren Anfangs- / Enddatum den Zeitkarten-Datumsbereich enthält oder mit diesem überlappt. Dies betrifft nur die Benutzeroberfläche und nicht die Admin-Bearbeitung.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Liste der Zuweisungsstatuswerte, die beim Laden der Zuweisungen aus db verwendet werden sollen.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird beim erstmaligen Laden der neuen Timecard-Benutzeroberfläche nach Zeitkarten der vorherigen Woche gesucht. Wenn für die letzte Woche keine Zeitkarten ausgefüllt wurden, zeigt die Benutzeroberfläche ein Bestätigungsfenster an, in dem der Benutzer aufgefordert wird, die vorherige oder aktuelle Woche zu laden. Wenn falsch, normal arbeiten.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Config, um den maximalen Stundenwert für die automatische Rücksetzung auf der neuen TC UI zu steuern.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>Config, um den minimalen Stundenwert für die automatische Rücksetzung auf der neuen TC UI zu steuern.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>Bei true werden alle Zeitkarten zur Genehmigung eingereicht. Bei false werden nur die vom Benutzer ausgewählten Zeitkarten übermittelt.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den Namen eines Feldsatzes mit Projektfeldern, die als Spalten in der Projekt- / Zuordnungssuche auf der Seite &quot;Timecard-Eintrag&quot; angezeigt werden.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Liste der API-Namen von Projektfeldern, die auf der Seite &quot;Erweiterte Zeiteinträge&quot; als Spalten in der Projekt- / Zuordnungssuche angezeigt werden sollen. Fügen Sie das Präfix pse__ namespace nicht in den API-Namen eines Felds ein. Der Standardwert ist Name, Account__.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Beschränkung des Projektbeginns und des Enddatums beim Laden des Projekts / der Zuweisungen aus db.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Definiert den Namen eines Feldsatzes, der Ressourcenfelder enthält, die als Spalten in der Ressourcensuche auf der Sencha-Timekard-Eintragsseite angezeigt werden.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Wenn der Konfigurationswert gleich &apos;all&apos; ist, bedeutet dies, dass alle Ressourcen zusammen mit den aktuellen Benutzerressourcen geladen werden. Anderenfalls, wenn der Wert gleich &apos;resource&apos; oder null ist, werden nur die aktuellen Benutzerressourcen geladen.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>Liste der Ressourcenfelder (vollständig qualifizierte API-Namen / Pfade), die in den Spalten für das Ressourcen-Nachschlagen-Popup in der neuen Timecard-Benutzeroberfläche angezeigt werden sollen. Empfehlen Sie höchstens 4 Felder / Spalten. Standardwert: Name, Region__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Größe der Anzahl der Zeitkarten, die in einer Stapelverarbeitung gespeichert / übergeben werden sollen.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Config wird verwendet, um das Speichern von Zeitkarten mit null Stunden zu steuern. Wenn es wahr ist, werden Zeitkarten mit Null gespeichert, sonst nicht gespeichert (Warnung wird auf ui angezeigt).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Zeitkartendatensätze, einschließlich der zugehörigen Datensätze, wird in einer einzigen Anfrage gespeichert.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Config für das Halten der Timecard sortiert nach Bestellfeldern API-Namen. Mehrere Koma-getrennte Felder können zum Sortieren eingegeben werden. Beispiel: CreatedDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV Liste der Statuswerte, für die die Timecard-Eintragszeilen bearbeitet werden können.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Wird verwendet, um festzulegen, welchen Status die Zeitkarten beim Klicken auf die Schaltfläche &quot;Speichern&quot; haben sollen</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Wird verwendet, um festzulegen, welchen Status die Zeitkarten beim Senden der Schaltfläche &quot;Senden&quot; haben sollen</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Wenn ausgewählt (true), werden die Benutzereinstellungen für die Zeiteintrags-UI lokal gespeichert. Wenn das Kontrollkästchen deaktiviert ist (false), werden die Einstellungen auf dem Server gespeichert.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, werden die Dropdown-Listen für den Standort an das Projektort-Objekt und nicht an die Standortauswahllisten in der TC-Benutzeroberfläche gebunden</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>Standardwert für Wochentag, der verwendet wird, wenn eine Ressource keinen Arbeitskalender hat oder einen Arbeitskalender ohne Wochentag hat</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Config wird verwendet, um die Übermittlung der Zeitkarte mit null Stunden zu steuern. Wenn es wahr ist, können Zeitkarten mit Null gesendet werden, sonst wird eine Warnung auf ui angezeigt.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

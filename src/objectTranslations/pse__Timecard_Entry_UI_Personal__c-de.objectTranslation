@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard Eingabe UI Persönlich --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Timecard Eingabe UI Persönlich --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard Eingabe UI Persönlich --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard Eingabe UI Persönlich --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Timecard Eingabe UI Persönlich --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Wenn auf der Seite &quot;Zeiteingabe&quot; ausgewählt wird, wenn Benutzer auf Zellen für die Aufgabenzeit klicken oder sie auslassen oder manuell Null eingeben, wird der Projekt- / Zuweisungswert auf Null aktualisiert. Der Standardwert ist false. Der Task-Zeit-Eingabemodus muss auf &quot;Errechnet&quot; eingestellt sein.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Wenn der Wert true ist, kann das Projekt oder die Zuweisung geändert werden, solange der Status der Zeitkarte einer der Werte &quot;timecard-edit-status-values ​​/ Timecard_edit_status_values__c&quot; ist.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>Die Felder, die als QuickInfo für Zuweisungen verwendet werden sollen. Vollständig qualifiziert (ggf. mit Namespace), Groß- und Kleinschreibung muss beachtet werden</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld &quot;Abrechenbar&quot; für die Anzeige konfiguriert ist, wird festgelegt, ob es in der Zeitkartenkopfzeile der Zeitkartenbenutzeroberfläche links oder rechts von Stunden angezeigt werden soll.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob Zeitkarten mit genau derselben Kombination aus Woche, Projekt, Zuordnung, Ressource, abrechenbar, Projekt, Methodik, Ort, Reise auf der Seite Zeitkarteneingabe kombiniert werden.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Wenn aktiviert, werden zusätzliche Felder aus früheren Zeitkarten kopiert.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieses Kontrollkästchen aktiviert ist, wird das ETC-Feld von den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, werden Stundenfelder wie Montag Stunden, Dienstag Stunden usw. von früheren Zeitkarten kopiert</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, werden Standortinformationsfelder wie Standort Mon usw. aus den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, wird das Methodologiefeld aus den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn aktiviert, werden die Meilensteine ​​von den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn aktiviert, werden Notizen von früheren Zeitkarten kopiert</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn aktiviert, wird das Phasenfeld von den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieser Wert auf &quot;true&quot; gesetzt ist, füllt die Funktion &quot;Aus Terminplan kopieren&quot; die Notes-Felder für jeden Tag auf der Timecard, wenn er in der Zuweisung für diesen Tag untergeordnete Datensätze für die Zuordnung täglicher Notizen findet. (Standard falsch)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden die Arbeitsstunden aus der Zeitkarte der vorherigen Woche kopiert.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Aufgabeninformationen von der Zeitkarte der vorherigen Woche kopiert.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, werden Reiseinformationsfelder wie Reisewoche, Reisemonat usw. aus den Zeitkarten der vorherigen Woche kopiert</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn &quot;Wahr&quot; und das Popup-Fenster &quot;Ressourcensuche&quot; auf der neuen UTC-UI nur ein Ergebnis zurückgibt, wird das Popup &quot;Ressourcensuche&quot; automatisch geschlossen und das Ressourcenfeld wird auf die zurückgegebene Ressource festgelegt.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Wenn &quot;Wahr&quot;, wird das abrechenbare Dropdown-Feld auf der Zeitkarte ui als deaktiviert angezeigt, dh nicht vom Benutzer editierbar.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI speichert alle zugewiesenen Zuweisungen / Projekte zusammen mit den Meilensteinen, während sie geladen werden. Dies kann dazu führen, dass das ViewState-Limit von Salesforce überschritten wird, wenn der Benutzer viele Zuweisungen / Projekte hat. Wenn Sie diesen Konfigurationswert auf &quot;true&quot; setzen, wird dieser Cache minimiert.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Diese vielen leeren Zeitkartenzeilen werden hinzugefügt, wenn auf die Schaltfläche zum Hinzufügen von Linien geklickt wird.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>Dies ist die Mindestanzahl von Zeilen, die immer für einen neuen Zeitkarteneintrag verfügbar sind.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die abrechenbare Spalte auf der Seite Zeitkarteneintrag ausgeblendet ist. Wenn dies der Fall ist, ist die Spalte ausgeblendet und das Kontrollkästchen &quot;Abrechenbar&quot; ist standardmäßig ausgewählt. Der Standardwert ist false.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Schaltfläche Aus vorheriger Woche kopieren auf der neuen Zeitkartenbenutzeroberfläche ausgeblendet ist. Der Standardwert ist false.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Diese Einstellung ist ein Duplikat und wird möglicherweise in einer zukünftigen Version entfernt. Bitte bearbeiten Sie stattdessen die Einstellung &quot;Kopie von vorheriger Woche ausblenden&quot;.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Schaltfläche Zeitpläne kopieren auf der neuen Zeitkartenbenutzeroberfläche ausgeblendet ist. Der Standardwert ist false.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, ist der Link Aufgaben erweitern oder Aufgaben schließen auf der Seite Zeiteingabe ausgeblendet. Der Standardwert ist false.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, ist die Notes-Spalte, die normalerweise auf der Timecard-Eintragsseite angezeigt wird, ausgeblendet. Der Standardwert ist false.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Schaltfläche Speichern auf der neuen Zeitkartenbenutzeroberfläche ausgeblendet ist. Der Standardwert ist false.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, sind die Schaltflächen &quot;Alle Aufgaben&quot; und &quot;Meine Aufgaben&quot; im Popup &quot;Aufgaben hinzufügen&quot; auf der Seite &quot;Zeiteingabe&quot; ausgeblendet. Der Standardwert ist false.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Schaltfläche Senden auf der neuen Zeitkartenbenutzeroberfläche ausgeblendet ist. Der Standardwert ist false.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist und der Zeitmodus für die Eingabezeit auf &quot;Berechnet&quot; eingestellt ist, wird nur eine Zeile mit den Aufgabenstunden angezeigt. Der Standardwert des Kontrollkästchens ist frei.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Wenn &quot;true&quot; und &quot;Task Time Entry Mode&quot; auf &quot;Current&quot; eingestellt ist, werden die Links &quot;View&quot; oder &quot;Edit Details&quot;, die angezeigt werden, wenn der Mauszeiger über eine Zeitkartenzeile bewegt wird, ausgeblendet. Wenn &quot;true&quot; und der Modus &quot;Zeit für die Aufgabenzeit&quot; nicht &quot;Aktuell&quot; lautet, wird die Registerkarte &quot;Notizen&quot; für die Links ausgeblendet. Der Standardwert ist false</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>Das angegebene Feld / config wird verwendet, um die Datumsspaltenüberschrift für einen Work Calendar Holiday für die ausgewählte Ressource auf der Timecard UI farblich zu kennzeichnen.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Bestimmt die Pixelbreite von Timecard-Stundenzellen auf der Seite Timecard V15 Entry.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl von Stunden, die eine Ressource an einem einzelnen Tag der Uhrzeit eingeben kann. Wenn die Gesamtanzahl an Stunden für eine Ressource diesen Betrag an einem einzelnen Tagestartentag überschreitet, wird eine Fehlermeldung angezeigt.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Maximale Anzahl an Stunden, die eine Ressource für eine Woche mit der Zeitkarte eingeben kann. Bei Überschreitung wird eine Fehlermeldung angezeigt. Geben Sie einen Prozentwert und ein Symbol ein, z. 90%, um einen maximalen Prozentsatz der Arbeitskalenderstunden anzugeben.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Methodologiefeld für die Anzeige konfiguriert ist, wird festgelegt, ob es in der Zeitkartenkopfzeile der Zeitkartenbenutzeroberfläche links oder rechts von Stunden angezeigt werden soll.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Konfigurations-Flag legt fest, ob das Methodologiefeld im Popup-Fenster für Notizen oder auf der ersten Seite angezeigt werden soll.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld Meilenstein so konfiguriert ist, dass es angezeigt wird, wird festgelegt, ob es in der Kopfzeile der Zeitkarte der Timecard-Benutzeroberfläche links oder rechts von Stunden angezeigt werden soll.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Konfigurationsflag bestimmt, ob das Meilensteinfeld im Popup-Fenster für Notizen oder auf der ersten Seite angezeigt werden soll.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Minimale Anzahl an Stunden, die eine Ressource für eine Kalenderwoche eingeben kann. Wenn die Wochenstunden unter diesem Betrag liegen, wird eine Fehlermeldung angezeigt. Geben Sie einen Prozentwert und ein Symbol ein, z. 30%, um einen Mindestprozentsatz der Arbeitskalenderstunden anzugeben.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, ist der Zuweisungs-Nickname editierbar, sonst nicht.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird das Ortsfeld im Popup-Fenster der Timarkardeintragsnotiz angezeigt</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird das Dropdown-Feld für den primären Standort auf der TC UI angezeigt.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld Phase für die Anzeige konfiguriert ist, wird festgelegt, ob es in der Zeitkartenkopfzeile der Timecard-UI links oder rechts von Stunden angezeigt werden soll.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Konfigurations-Flag legt fest, ob das Phasenfeld im Popup-Fenster für Notizen oder auf der ersten Seite angezeigt werden soll.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Aufgaben für den ausgewählten Benutzer und das ausgewählte Projekt vorab ausgefüllt. Der Standardwert des Kontrollkästchens ist frei.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Wenn das Feld &quot;Primärer Standort&quot; für die Anzeige konfiguriert ist, wird bestimmt, ob es in der Zeitkartenkopfzeile der Timecard-UI links oder rechts von Stunden angezeigt werden soll.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Wenn &quot;Primärer Hauptspeicher zulassen&quot; auf &quot;Wahr&quot; gesetzt ist, wird festgelegt, ob das Feld &quot;Primärer Standort&quot; im Abschnitt &quot;Notizen&quot; oder in der Zeitmarkenzeile angezeigt wird.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Timecard-Projekt / Zuordnungskonto-Dropdown-Anzeigewert</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>Felder in diesem Feld legen die Felder fest, die in der QuickInfo für die Projektaufgabe in der Benutzeroberfläche Zeitzone mit Aufgabenzeit protokollieren angezeigt werden.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Das &quot;Zuweisbare Projekt, das nach dem Speichern editiert werden kann, gibt dem Benutzer Zugriff, um das Projekt / die Zuweisung für die gespeicherten Zeitkarten zu ändern, aber dies erfordert, dass ein Audit-Hinweis für die Zeitkarte festgelegt wird. Audit-Notizen können über diese Konfiguration festgelegt werden.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Liste der Projektfelder, die als Tooltip auf dem Zeitkarteneintrag angezeigt werden sollen.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, basieren die vorab festgelegten Aufgaben auf der ausgewählten Zuweisung. Das Feld &quot;Auf Aufgaben mit übereinstimmender Zuordnung beschränken&quot; im Popup &quot;Aufgaben auswählen&quot; ist dann standardmäßig aktiviert. Aufgabe basierend auf Zuweisung einschränken ist standardmäßig deaktiviert.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, basieren die vorab festgelegten Aufgaben auf dem ausgewählten Meilenstein. Das Feld &quot;Auf Aufgaben begrenzen mit übereinstimmendem Meilenstein&quot; im Popup &quot;Aufgaben auswählen&quot; ist standardmäßig aktiviert. Aufgabe basierend auf Meilenstein einschränken ist standardmäßig deaktiviert.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Wenn ausgewählt, werden Anpassungen an Breite, Reihenfolge und Sichtbarkeit der Spalten in der Sencha-Zeitkarte für jeden Benutzer gespeichert.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>API-Namen von Zuweisungsfeldern, die angezeigt werden sollen, wenn Sie den Mauszeiger über das QuickInfo-Symbol im Bereich &quot;Zeitplan&quot; einer Zeitkarte bewegen.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>API-Namen von Projektfeldern, die beim Überfahren des Tooltip-Symbols im Bereich &quot;Zeitplan&quot; einer Zeitkarte angezeigt werden.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Given config wird verwendet, um eine Warnung anzuzeigen, wenn in dem Zeitkartenabschnitt für den Tag, der als Feiertag (mit null Stunden) markiert ist, in dem ausgewählten Arbeitskalender der Ressource ein Wert ungleich Null eingegeben wurde.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>Given config wird verwendet, um eine Warnung anzuzeigen, wenn in dem Zeitplanrasterabschnitt für den Tag mit null Stunden in dem ausgewählten Muster der Ressourcenkalendertage ein Wert ungleich null eingegeben wurde.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Wenn &quot;Wahr&quot;, werden abrechenbare, nicht abrechenbare Stunden über den Hover-Text für jede Summe in der Summenzeile für alle Tagesspalten und Summenspalten auf der Zeitkarte im Zeiteintrag angezeigt.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob das Popup für die einfache Eingabe auf der Seite Zeiteingabe angezeigt wird, wenn Sie auf eine bearbeitbare Stundenzelle in einer Zeitkartenzeile doppelklicken oder die NACH-UNTEN-Taste drücken, während diese Zelle ausgewählt ist.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Enthält ein Feld, dessen Wert in der Dropdown-Liste TC UI-Meilenstein angezeigt wird. Wenn diese fehlen / null sind, zeigt die TC UI einfach weiterhin die Milestone-Namensfelder der verfügbaren Meilensteine ​​in der Dropdown-Liste an. Keine Nachschlage-__r-Referenzen sind supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config wird verwendet, um den Anzeige-Rückruf-Link auf jeder übermittelten Zeitkarte zu steuern. Wenn Sie darauf klicken, wird ein Rückruf-Overlay geöffnet, in dem wir den Kommentar eingeben und die Genehmigungsanfrage für die Zeitkarte abrufen müssen.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Aktiviert bedeutet, dass das Zeitplanraster standardmäßig auf dem Timecard-Eintrag angezeigt wird.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Reise-Checkboxen auf der neuen Zeitkarten-Benutzeroberfläche angezeigt werden sollen. Der Standardwert ist wahr.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird der Zeitplanbereich auf der Zeitkarte angezeigt, sonst nicht</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dieser Wert auf &quot;true&quot; gesetzt ist, wird das Tooltip-Symbol neben dem Zuweisungsnamen im Abschnitt &quot;Zeitplan&quot; von TC UI angezeigt. Standard false (vorhandenes Verhalten, keine QuickInfo-Spalte)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config, um das Feld anzuzeigen oder zu verbergen</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Wenn dies der Fall ist, wird das Timecard Methodology Feld auf der Timecard UI angezeigt.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config zum Anzeigen oder Ausblenden der Meilenstein-Auswahlliste</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Wenn true, wird das Timecard Phase Feld auf der Timecard UI angezeigt.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Bei false wird die Spalte Status / Rückruf sofort rechts neben der Spalte Notizen angezeigt. Wenn dies der Fall ist, wird Status / Rückruf rechts neben allen zusätzlichen Feldern angezeigt.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der vom Timecard-Objekt verwendet wird. Felder in diesem Feld definieren die editierbaren Felder, die links von Stunden in der Zeitkartenkopfzeile der Zeitkartenbenutzeroberfläche angezeigt werden.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der vom Timecard-Objekt verwendet wird. Felder in diesem Feld definieren die editierbaren Felder in der Timecard-Kopfzeile der Timecard-UI.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der vom Timecard-Objekt verwendet wird. Felder in diesem Feld definieren schreibgeschützte Felder in der Timecard-Kopfzeile der Timecard-UI</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV zum Angeben von Timecenter Header-Feldern, die aus dem Zeitplan kopiert werden sollen. Nur diese Stundenfelder sind für diese Konfiguration gültig &quot;Montag_Stunden__c, Dienstag_Stunden__c, Mittwoch_Stunden__c, Donnerstag_Stunden__c, Freitag_Stunden__c, Samstag_Stunden__c, Sonntag_Stunden__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der vom Timecard-Objekt verwendet wird. Felder in diesem Feld definieren editierbare Felder im Abschnitt Notizen in Zeitkartenzeilen in der Timecard-UI.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-Name eines Feldsatzes, der vom Timecard-Objekt verwendet wird. Felder in diesem Feld definieren schreibgeschützte Felder im Abschnitt Notizen in Zeitkartenzeilen in der Timecard-Benutzerschnittstelle.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Feld wird verwendet, um eine Koma (,) getrennte Liste von Zeitkartenstatuswerten zu halten, die auf der TC UI verborgen werden.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Gibt Aufgaben an, die beim Vorauffüllen in Zeitkarten ausgeblendet werden sollen, sofern sie nicht mit der Zeitprotokollierung verknüpft sind. Der Wert ist eine durch Kommas getrennte Liste der Status.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob die Ressource nur Aufgaben auswählen kann, denen sie bei der Eingabe von Zeit für Projektaufgaben zugeordnet sind. Wenn diese Option nicht ausgewählt ist, können Benutzer diese Funktion auf der Seite Zeiteingabe aktivieren.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Definiert das Filterverhalten für Aufgabedaten bei der Auswahl von Aufgaben, für die Zeit eingegeben werden soll. Legen Sie auf Kein oder Überlappung fest. Wenn Keine, findet keine Filterung statt. Bei Überlappung werden Aufgaben nur aufgelistet, wenn sich die Zeitkarte und auswählbare Aufgaben bei Datumsangaben überschneiden.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Der Zeiteingabemodus, der beim Eingeben der Aufgabenzeit für eine Zeitkartenzeile verwendet werden soll. Sie können einen der folgenden Werte auswählen: Anpassen, Aktuell, Berechnet oder Freiform. Der Standardwert ist Aktuell.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Top-Zuordnungen, die geladen werden sollen, um sie im Projekt- / Zuweisungs-Overlay anzuzeigen</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Wochen, für die Top-Zuordnungen / Projekte geladen werden sollen, um sie im Projekt- / Aufgaben-Overlay anzuzeigen</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Top-Projekte, die geladen werden sollen, um sie im Projekt- / Zuweisungs-Overlay anzuzeigen</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Ermöglicht Ihnen, auf der Seite &quot;Timecard-Eintrag&quot; die bevorzugte Methode zum Verwalten sichtbarer Felder zu wechseln. Wenn False ist, verwendet PSA Konfigurationsoptionen oder benutzerdefinierte Einstellungen, um die Benutzeroberfläche zu konfigurieren. Wenn True, verwendet PSA Feldgruppen zum Konfigurieren der Benutzeroberfläche.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob eine Zuordnungs-ID verwendet werden soll, während Zuweisungen auf der Zeitkartenseite angezeigt werden</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Gegebenes Feld / config wird verwendet, um die Datumsspaltenüberschrift für geplante 0-Stunden-Tage gemäß dem Zeitplanmuster (nicht Feiertagen) für den Arbeitskalender der ausgewählten Ressource farbig zu codieren.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Steuert die Pixelbreite für das Dropdown-Menü &quot;Meilenstein&quot; auf der Timecard-Benutzeroberfläche. Bitte geben Sie eine ganze Zahl für diesen Wert an, da diese direkt in die Breite geht.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Steuert die Pixelbreite für das Dropdown-Menü Projekt / Zuweisung auf der Timecard-Benutzeroberfläche. Bitte geben Sie eine ganze Zahl für diesen Wert an, da diese direkt in die Breite geht. Bei einem Wert von 300 wird die Dropdown-Breite auf 300 Pixel gesetzt.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

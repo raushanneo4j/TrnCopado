@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>필터</value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Filter Arguments --></label>
+        <name>pse__Custom_Filter_Arguments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Filter Handler --></label>
+        <name>pse__Custom_Filter_Handler__c</name>
+    </fields>
+    <fields>
+        <help>이 필터가 작동하는 필드의 API 이름입니다.</help>
+        <label><!-- Field --></label>
+        <name>pse__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Set SObject --></label>
+        <name>pse__Filter_Set_SObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Set --></label>
+        <name>pse__Filter_Set__c</name>
+        <relationshipLabel><!-- Filters --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>false의 경우,이 필터는 평가되지 않습니다.</help>
+        <label><!-- Is Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>pse__Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation>~을 포함하다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>does not contain</masterLabel>
+            <translation>포함되어 있지 않다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation>같음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>excludes</masterLabel>
+            <translation>제외하다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equal</masterLabel>
+            <translation>크거나 같음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation>~보다 큰</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>includes</masterLabel>
+            <translation>포함하다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equal</masterLabel>
+            <translation>작거나 같음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation>미만</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equal to</masterLabel>
+            <translation>같지 않음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation>~로 시작하다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>within</masterLabel>
+            <translation>이내에</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>비교할 값을 나타내는 JSON 객체입니다.</help>
+        <label><!-- Value --></label>
+        <name>pse__Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Filter Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>필터 ID</nameFieldLabel>
+</CustomObjectTranslation>

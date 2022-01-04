@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Owner__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>( Contact.Contact_Account_Owner__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Acquisition_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+(   Contact.mkto71_Acquisition_Date__c   ),
+(   Lead.mkto71_Acquisition_Date__c   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Acquisition Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Acquisition_Program__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ ( Contact.mkto71_Acquisition_Program__c  ),
+ ( Lead.mkto71_Acquisition_Program__c ))</formula>
+        <label>Acquisition Program</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annual_Revenue_Range__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ TEXT( Contact.Account.Account_Revenue__c  ),
+ TEXT( Lead.neo_account_revenue__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Annual Revenue Range ($)</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aura_Billing_Channel__c</fullName>
+        <description>Added in https://sfdxspt-neoj4.atlassian.net/browse/SFDCSPT-354</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will hold text for the Aura Billing Channel, such as Direct, GCP and future channels. Contact Analytics with any questions.</inlineHelpText>
+        <label>Aura Billing Channel</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aura_DB_Count__c</fullName>
+        <description>Added in https://sfdxspt-neoj4.atlassian.net/browse/SFDCSPT-354</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field helps those in Analytics operate their ETL processes around the tracking of MRR at the Campaign Member level.</inlineHelpText>
+        <label>Aura DB Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aura_GB_Size__c</fullName>
+        <description>Added in https://sfdxspt-neoj4.atlassian.net/browse/SFDCSPT-354</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field helps those in Analytics operate their ETL processes around the tracking of MRR at the Campaign Member level.</inlineHelpText>
+        <label>Aura GB Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City</fullName>
+    </fields>
+    <fields>
+        <fullName>CompanyOrAccount</fullName>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Disqualified_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Disqualified_Date__c  ),
+( Lead.Disqualified_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Disqualified Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstName</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstRespondedDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Global_Territory__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+(  Contact.Global_Territory_Contact__c  ),
+(  Lead.Global_Territory__c  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Global Territory</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+    </fields>
+    <fields>
+        <fullName>HasResponded</fullName>
+    </fields>
+    <fields>
+        <fullName>In_Core_Country__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( ContactId )), ( Contact.In_Core_Country__c ), ( Lead.In_Core_Country__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>In Core Country</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK(ContactId)),
+TEXT(Contact.Account.Industry),
+TEXT(Lead.Industry))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Industry</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inquiry_Original_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ (Contact.Inquiry_Original_Date__c ),
+( Lead.Inquiry_Original_Date__c )
+)</formula>
+        <label>Inquiry Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Job_Function__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+TEXT(  Contact.Job_Function__c  ),
+TEXT( Lead.Job_Function__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Function</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Level__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 07/13/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+TEXT(  Contact.Job_Level__c  ),
+TEXT( Lead.Job_Level__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Level</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastName</fullName>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_Inquiry__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Last_Touch_Inquiry__c  ),
+( Lead.Last_Touch_Inquiry__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Touch Inquiry</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_MQL__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Last_Touch_MQL__c  ),
+( Lead.Last_Touch_MQL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Touch MQL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_SAL__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Last_Touch_SAL__c  ),
+( Lead.Last_Touch_SAL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Touch SAL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_SQL__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Last_Touch_SQL__c  ),
+( Lead.Last_Touch_SQL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Touch SQL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Contact_Owner__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ ( Contact.Contact_Account_Owner__c  ),
+ ( Lead.Owner:User.Username ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead/Contact Owner</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Contact_Status__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+TEXT(  Contact.Contact_Status__c  ),
+TEXT(  Lead.Status  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead/Contact Status</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Grade__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate the Lead Grade from either the Contact object or Lead object</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (ContactId)),
+TEXT(Contact.Lead_Grade__c ),
+TEXT(Lead.Lead_Grade__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate the Lead Grade from either the Contact object or Lead object</inlineHelpText>
+        <label>Lead Grade</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_Detail__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ ( Contact.Lead_Source_Detail__c  ),
+ ( Lead.Lead_Source_Detail__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Source Detail</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_Type__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+(  Contact.Lead_Source_Type__c  ),
+(  Lead.Lead_Source_Type__c  )
+)</formula>
+        <label>Lead Source Type</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ TEXT(  Contact.LeadSource   ),
+ TEXT(  Lead.LeadSource  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Source</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MQL_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.MQL_Date__c  ),
+( Lead.MQL_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MQL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MQL_Original_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.MQL_Original_Date__c  ),
+( Lead.MQL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MQL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MRR__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <description>CampaignMember.MMR__c design discussion tradeoffs were discussed here https://drive.google.com/drive/folders/1dz-MiVZi7yipgnd4XK-VQWUE5_7xpJIR?usp=sharing.   This field is used by the Analytics Team to support reporting needs around Head of Aura Self Service Growth. Karl B signed off on the design tradeoff risks in that same discussion.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is managed by the Analytics Team to support reporting for Head of Aura Self Service Growth</inlineHelpText>
+        <label>Aura MRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <securityClassification>Internal</securityClassification>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Qualified_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Marketing_Qualified_Date__c  ),
+( Lead.Marketing_Qualified_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Qualified Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Enterprise_Criteria__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ ( Contact.Meets_Enterprise_Criteria__c  ),
+ ( Lead.Meets_Enterprise_Criteria__c )
+)</formula>
+        <label>Meets Enterprise Criteria</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Mid_Market_Criteria__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( ContactId )), ( Contact.Meets_Mid_Market_Criteria__c), ( Lead.Meets_Mid_Market_Criteria__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Meets Mid-Market Criteria</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Offer_Discipline__c</fullName>
+        <description>Gets the Discipline from the campaign object</description>
+        <externalId>false</externalId>
+        <formula>TEXT (Campaign.Offer_Discipline__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the Discipline from the campaign object</inlineHelpText>
+        <label>Offer Discipline</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Name__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the campaign name from the Campaign Object.</description>
+        <externalId>false</externalId>
+        <formula>Campaign.Offer_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the campaign name from the Campaign Object.</inlineHelpText>
+        <label>Offer Name</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Persona__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the Persona value from the Campaign Object.</description>
+        <externalId>false</externalId>
+        <formula>TEXT (Campaign.Offer_Persona__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the Persona value from the Campaign Object.</inlineHelpText>
+        <label>Offer Persona</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Sub_Type__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the Offer Sub-Type from the Campaign Object.</description>
+        <externalId>false</externalId>
+        <formula>Campaign.Offer_Sub_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the Offer Sub-Type from the Campaign Object.</inlineHelpText>
+        <label>Offer Sub-Type</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Type__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the Offer Type from the Campaign Object.</description>
+        <externalId>false</externalId>
+        <formula>Campaign.Offer_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the Offer Type from the Campaign Object.</inlineHelpText>
+        <label>Offer Type</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>PostalCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Raw_Original_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Raw_Original_Date__c  ),
+( Lead.Raw_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Raw Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recycle_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.Recycle_Date__c  ),
+( Lead.Recycle_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Recycle Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Regional_Territory__c</fullName>
+        <description>Get Regional Territory from the Lead or Contact</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.RegionalTerritoryContact__c ),
+( Lead.RegionalTerritoryLead__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Get Regional Territory from the Lead or Contact</inlineHelpText>
+        <label>Regional Territory</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAL_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.SAL_Date__c  ),
+( Lead.SAL_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAL_Original_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.SAL_Original_Date__c  ),
+( Lead.SAL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAO_Date__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 07/13/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+(  Contact.SAO_Date__c  ),
+( Lead.SAO_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAO Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Campaign_Member_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>casesafeid(Id)</formula>
+        <label>SFDC Campaign Member ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Contact_ID_for_Campaign_Member__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.SFDC_Contact_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC Contact ID for Campaign Member</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Lead_ID_for_Campaign_Member__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.SFDC_Lead_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC Lead ID for Campaign Member</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Score__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>Mirroring Lead or Contact data to Campaign Member object</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+ TEXT( Contact.mkto71_Lead_Score__c  ),
+ TEXT( Lead.mkto71_Lead_Score__c )
+)</formula>
+        <label>SFDC Score</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SQL_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.SQL_Date__c  ),
+( Lead.SQL_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SQL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SQL_Original_Date__c</fullName>
+        <businessOwnerUser>rod.allen@neo4j.com.trnprod</businessOwnerUser>
+        <businessStatus>Active</businessStatus>
+        <description>New field added to Campaign Member object to mirror existing fields that are heavily reported on from Leads and Contacts. Providing a way to report across these two objects in campaign reporting and give needed detailed reporting capabilities in order to effectively measure Marketing KPIs. 05/08/2020</description>
+        <externalId>false</externalId>
+        <formula>IF(
+NOT(ISBLANK( ContactId )),
+( Contact.SQL_Original_Date__c  ),
+( Lead.SQL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SQL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Salutation</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Street</fullName>
+    </fields>
+    <fields>
+        <fullName>Target_Industry__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( ContactId )), ( Contact.Target_Industry__c), ( Lead.Target_Industry__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Target Industry</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Target_Persona__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( ContactId )), ( Contact.Target_Persona__c ), ( Lead.Target_Persona__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Target Persona</label>
+        <securityClassification>Internal</securityClassification>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+    </fields>
+    <fields>
+        <fullName>bizible2__Bizible_Touchpoint_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom date used to set the Touchpoint Date for Bizible Attribution. If blank, Campaign Member Created Date or First Responded Date will be used depending on the logic selected.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Custom date used to set the Touchpoint Date for Bizible Attribution. If blank, Campaign Member Created Date or First Responded Date will be used depending on the logic selected.</inlineHelpText>
+        <label>Bizible Touchpoint Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>bizible2__Touchpoint_Status_Contact__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Touchpoint Status (Contact)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>bizible2__Touchpoint_Status_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Touchpoint Status Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>bizible2__Touchpoint_Status_Lead__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Touchpoint Status (Lead)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>bizible2__Touchpoint_Status_Opportunity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Touchpoint Status (Opportunity)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <sharingModel>ControlledByCampaign</sharingModel>
+</CustomObject>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>필터 세트</value>
+    </caseValues>
+    <fields>
+        <help>이 필터 세트가 옵션으로 표시되는 위치를 제한합니다. 현재 &quot;Resource Planner&quot;및 &quot;Project Planner&quot;만 지원됩니다.</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>프로젝트 플래너</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>리소스 플래너</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>필터 집합의 이름입니다.</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>저장된 필터 세트의 필터 속성 및 값을 보유합니다. JSON 객체로 저장됩니다.</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 필터 세트가 기본값임을 나타냅니다.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>true 인 경우 소유자 만이 필터를보고 사용할 수 있습니다. 그렇지 않으면 액세스를 공유하는 모든 사용자가 액세스 권한을 사용할 수 있습니다.</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>프로젝트와 같은 다른 객체와 연관 될 수있는 필터 세트.</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>이 필터 세트가 작동하는 SOBject의 API 이름입니다.</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>이름</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SALUTATION</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STREET</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>PHONE2</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3) AND (4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Anheuser Busch Inbev,Solvay,Colruyt,Ravago,D&apos;Ieteren,Proximus,UCB,Bekaert,Greenyard,Aleaxis,ETEX,Nyrstar,SCR-Sibelco,Umicore,AGFA-Gevaert,Telenet,BESIX,Jan De Nul,Lhoist,Ontex,Deme,Alcopa,Katoen Natie,Beaulieu Group,Puratos,Tessenderlo,De Persgroep,Vandemoortele,Thermote &amp; Vanhalst,TVH,Cobelfret,Carmeuse,Barco,VPK packaging,Recticel,ING Bank,BNP Paribas Fortis,KBC,Belfius,AXA Bank,Crelan,Argenta,Euroclear Bank,Record Bank,Bpost,Van Breda Bank,AG Insurance AXA,Ethias,P&amp;V,Allianz,Baloise,Fidea,NN,Nationale Nederlanden,ERGO,DKV,DAS,Generali,Federale,Foyer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Shell,Vitol,Unilever,LyondellBasell,Ahold Delhaize,Bol.com,Jumbo,Philips,GasTerra,SHV,SHV Energy,Makro,Mammoet,Eriks,Nutreco,ONE-Dyas,NPM Capital,ESSO NL,KPN,Heineken,TNT Express,Akzo Nobel,Randstad,DSM,BAM Group,KLM,Essent,VION,Elsevier,ebn,Sabic,Vattenfall N.V.,Nuon,Technische Unie,Corporate Express,Staples,Superunie,gwoon,Spar,Pon,FrieslandCampina,Eneco,VolkerWessels,DAF,SaraLee,Jacobs Douwe Egberts,POSTNL,ASML,Booking.com,Leaseplan,Leaseweb,Liander,Alliander,Liberty Global,Priceline,Vodafone,Ziggo,Wolters Kluwer,NXP,NS,VDL Group,ING,Rabobank,ABN Amro,BNG Bank,NWB Bank,de Volksbank,NIBC,NN Bank,Van Lanschot,Aegon Bank,Achmea Bank,Triodos Bank,Achmea,Centraal Beheer,Interpolis,Zilveren Kruis,FBTO,VGZ,Fortis,Delta Lloyd,CZ Groep,Menzis,Aegon,SNS Reaal,Allianz,ASR Nederland</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Ternium SA,ArcelorMittal Group,Tenaris,Aroundtown SA,Eurofins,SES,RTL Group,CPI Property GRP,Grand city Propoerties SA,INTELSAT SA,ADO Properties SA NPV,STABILUS SA INH,BEFESA SA,ORION ENGINEERED CARBONS SA,Post Luxembourg Group,CFL Group,Cactus Group,Goodyear Dunlop Tires Group,Amazon,Sodexo Luxembourg,Fondation Stëftung Hëllef Doheem,Deutsche Bank Luxembourg S.A.,CACEIS Bank Luxembourg,Banque et Caisse d&apos;Epargne de l&apos;Etat,BCEE,Société Générale Bank &amp; Trust,BGL BNP Parisbas,UniCredit Luxembourg S.A.,Banque Internationale à Luxembourg,ING Luxembourg S.A.,NORD/LB Luxembourg Covered Bond Bank,Banque de Luxembourg S.A.,Intesa Sanpaolo,Commerzbank International S.A.,Paypal Europe,Nordea Bank S.A.,State Street Bank Luxembourg,Clearstream banking,Picket &amp; Cie,UBS S.A.,KBL European Private Bankers,J.P. Morgan Bank Luxembourg,Dekabank Deutches Girozentrale Luxembourg,RBC Investor Services Bank,Banque Degroof Petercam Luxembourg,CA Indosuez Wealth,Nomura Bank S.A.,Banque Raiffeisen,Banque Privé</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Herman Roelandts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Elliot Sands</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Benelux Target Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

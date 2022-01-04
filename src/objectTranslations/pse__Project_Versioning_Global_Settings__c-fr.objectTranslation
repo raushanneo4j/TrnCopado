@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Paramètres globaux du contrôle de version du projet --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Paramètres globaux du contrôle de version du projet --></value>
+    </caseValues>
+    <fields>
+        <help><!-- This field is reserved for future development. Do not use. --></help>
+        <label><!-- DEPRECATED:Capturing Version Config Name --></label>
+        <name>pse__Capturing_Version_Config_Name__c</name>
+    </fields>
+    <fields>
+        <help>Définit la taille du lot lors de la création de versions de projet. La valeur par défaut est 500.</help>
+        <label><!-- Create Version Batch Size --></label>
+        <name>pse__Create_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Définit la taille du lot lors de la suppression des versions du projet. La valeur par défaut est 500.</help>
+        <label><!-- Delete Version Batch Size --></label>
+        <name>pse__Delete_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nom de la ressource statique (avec préfixe d&apos;espace de noms) à utiliser pour personnaliser le langage et les graphiques dans l&apos;introduction Aide rapide pour les versions de comparaison. Laissez vide pour utiliser la ressource par défaut.</help>
+        <label><!-- View Project Version Quick Help Resource --></label>
+        <name>pse__VPV_Quick_Help_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nombre d&apos;enregistrements chargés dans la vue détaillée des versions du projet View. L&apos;augmentation de la valeur peut améliorer les temps de chargement mais peut rencontrer des limites de plate-forme. La valeur par défaut est 500. Si vous entrez 0 comme valeur pour ce champ, aucun enregistrement n&apos;est chargé.</help>
+        <label><!-- View Project Version Records Loaded --></label>
+        <name>pse__VPV_Records_loaded_per_call__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

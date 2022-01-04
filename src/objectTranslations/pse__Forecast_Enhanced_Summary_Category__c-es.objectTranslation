@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Categoría de resumen de pronóstico de facturación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Categorías de resumen de pronóstico de facturación</value>
+    </caseValues>
+    <fields>
+        <help>Campo de fórmula que representa el valor que se muestra en la página Pronóstico de facturación para esta categoría de resumen de pronóstico de facturación.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <help>Busque la anulación del pronóstico de facturación actualmente activa aplicada a esta categoría de resumen de pronóstico de facturación.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Summary --></label>
+        <name>pse__Forecast_Enhanced_Summary__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Opportunities Value --></label>
+        <name>pse__Forecast_Opportunities_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Projects Value --></label>
+        <name>pse__Forecast_Projects_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Sublevels Value --></label>
+        <name>pse__Forecast_Sublevels_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>Busque el usuario que creó la anulación del pronóstico de facturación actualmente activa aplicada a esta categoría de resumen de pronóstico de facturación.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fecha y hora creadas de la anulación del pronóstico de facturación actualmente activa aplicada a esta categoría de resumen de pronóstico de facturación.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>Las notas sobre la anulación del pronóstico de facturación actualmente activa se aplican a esta categoría de resumen del pronóstico de facturación.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Suma de las variaciones acumulativas para todas las categorías de resumen debajo de esta categoría de resumen en la jerarquía de RPG, incluidas las anulaciones en las categorías de detalle de pronóstico de facturación relacionadas.</help>
+        <label><!-- Override Roll-Up Variance --></label>
+        <name>pse__Override_Rollup_Variance__c</name>
+    </fields>
+    <fields>
+        <help>El valor de la anulación del pronóstico de facturación actualmente activo aplicado a esta categoría de resumen de pronóstico de facturación.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Summary Category Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Resumen de pronóstico de facturación Nom</nameFieldLabel>
+</CustomObjectTranslation>

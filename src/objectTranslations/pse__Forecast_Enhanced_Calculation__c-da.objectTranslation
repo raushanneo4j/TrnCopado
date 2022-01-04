@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Beregning af faktureringsprognose</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognoseberegninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Et kig på den relaterede efterløbsberegning.</help>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Batch ID for prognose beregningsproces.</help>
+        <label><!-- Batch Id --></label>
+        <name>pse__Batch_Id__c</name>
+    </fields>
+    <fields>
+        <help>Batchprocessen anvendt ved denne prognoseberegning.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angiver, at faktureringsprognosen er begået, og tilsidesættelser kan ikke længere anvendes.</help>
+        <label><!-- Committed --></label>
+        <name>pse__Committed__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, at denne faktureringsberegning er den seneste for denne RPG og tidsperiode.</help>
+        <label><!-- Current --></label>
+        <name>pse__Current__c</name>
+    </fields>
+    <fields>
+        <help>Et opslag til de prognoseopsætningsværdier, der anvendes i denne prognoseberegning.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gruppen til denne prognoseberegning.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Praksis for denne prognoseberegning.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regionen for denne prognoseberegning.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Den forventede beregningsstatus.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+    </fields>
+    <fields>
+        <help>Tidsperioden for denne prognoseberegning.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Billing Forecast Calculations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Det samlede antal logfiler, der er oprettet som følge af fejl, der opstår under prognoseberegningen.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Calculation Layout</layout>
+        <sections>
+            <label>Parti</label>
+            <section>Batch</section>
+        </sections>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognose Beregningsnavn</nameFieldLabel>
+    <webLinks>
+        <label><!-- View_Forecast --></label>
+        <name>pse__View_Forecast</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Customer Success and others when an Opportunity is moved to 99% (Finance Review) and at least one Neo4j - Aura Product is attached to the Opportunity. JIRA: SFDCSPT-253; SFDCSPT-610</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Customer Success Onboarding Notification 99% Neo4j - Aura</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name} Onboarding</subject>
+    <textOnly>Dear {!Opportunity.OwnerFirstName},
+
+Congratulations on closing Aura Enterprise with {!Opportunity.Name} with {!Opportunity.Account}. It is critical to get the customer onboarded as soon as possible.  The assigned Customer Success Manager (CSM) will email the customer contact, as per the Order Form, a confirmation that their environment has been provisioned.
+
+We need you to:
+
+Introduce the assigned CSM to the customer. You can use this email template or write your own, using the same key points as the template.
+Review the Internal Debrief document and participate in the Internal Debrief meeting that the CSM will schedule in the next week..
+Attend the Onboarding meeting, which will be coordinated by the CSM.
+
+After you introduce the CSM, he/she will coordinate the onboarding communication with the customer. We will invite you and the SE to the Onboarding call to ensure a smooth transition to the customer’s post-sale journey with Neo4j.
+
+The Internal Debrief is a critical, brief meeting that prepares the CSM with the proper background and intel that they will need to represent Neo4j in advising and advocating for this new customer. Please be prepared to address the following topics:
+
+Key stakeholders - Project Team, Project/Initiative Owner, Business Sponsor, Champion(s), etc.
+Customer level of knowledge/skills
+Use case, challenges, success criteria, milestones, etc.
+Deal content confirmation, including any Professional Services
+
+Prior to the Internal Debrief, the CSM will review the Opportunity and linked Opportunity Doc  - please ensure that the CSM has access to that document.
+
+Thank you.
+
+
+Salesforce Info:
+
+{!Opportunity.Account} has a deal that has moved to 99%, please begin coordinating the customer on-boarding.
+
+- Opportunity Link: {!Opportunity.Link}
+
+- Field Engineer: {!Opportunity.Field_Engineer__c}
+
+- Account Name: {!Opportunity.Account}
+
+- Account ID: {!Opportunity.AccountId}
+
+- Account Location: {!Account.ShippingCountry}
+
+- Use Case: {!Opportunity.Use_Case__c}, {!Opportunity.Use_Case_Sub__c}
+
+- Partner: {!Opportunity.Partner__c}
+
+- Partner Role: {!Opportunity.Partner_Role__c}
+
+- Revenue: {!Account.Account_Revenue__c}
+
+- Support Level: {!Opportunity.Opp_Support_Level__c}
+
+- Deal Size: {!Opportunity.ARR__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>כרטיס זמן חסר</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>חסרים כרטיסי זמן</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- User Missing TC workspace --></label>
+        <name>User_Missing_TC_workspace__c</name>
+    </fields>
+    <fields>
+        <help>התאריך והשעה שבהם הוזן כרטיס הזמן</help>
+        <label><!-- Date Timecard Entered --></label>
+        <name>pse__Date_Timecard_Entered__c</name>
+    </fields>
+    <fields>
+        <help>תאריך הסיום בשבוע בו נבדקות כרטיסי הזמן החסרים.</help>
+        <label><!-- Week End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>האם לחשב את כרטיס הזמן החסר עבור כל רמות המשנה של האזור, התרגול או הקבוצה שנבחרו. מתעלמים משדה זה אם TImecard חסר מחושב רק עבור משאב.</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Timecard Calculation --></label>
+        <name>pse__Missing_Timecard_Calculation__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>תחילת השבוע שמתאימה לתאריך הסיום.</help>
+        <label><!-- Week Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Missing Timecard Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם כרטיס הזמן חסר</nameFieldLabel>
+    <webLinks>
+        <label><!-- Schedule_Missing_Timecard --></label>
+        <name>pse__Schedule_Missing_Timecard</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- タスク管理設定 --></value>
+    </caseValues>
+    <fields>
+        <help>trueの場合、割り当てまたは割り当てマイルストーンの作成時にエラーは無視され、プロジェクトタスク割り当てレコードが作成されます。 [タスク割り当てを自動的に作成する]がtrueでない限り、このオプションは無視されます。</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトにリソースを割り当てるとき、または新しい割り当てマイルストーンレコードを作成するときに、割り当てと同じマイルストーンに属する未割り当てのプロジェクトタスクを自動的に割り当てるかどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、割り当てまたは割り当てマイルストーンを削除するときにエラーが無視され、プロジェクトタスク割り当てレコードが削除されます。 [タスク割り当てを自動的に削除する]がtrueでない限り、このオプションは無視されます。</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>リソースまたはマイルストーンが削除されたとき、またはマイルストーンがその割り当てに関連付けられなくなったときに、プロジェクトタスク割り当てを自動的に削除するかどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>初期ロード時およびリフレッシュ後のタスク管理インターフェース上のタスクのデフォルトの順序付けを制御します。これはSOQL ORDER BY句の後で有効でなければなりません。</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>レコードがロックされていないときに編集が制限されるフィールドのリストを含むプロジェクトタスク割り当てオブジェクトのフィールドセットの名前。</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>レコードがロックされていないときに編集が制限されるフィールドのリストを含むプロジェクトタスク依存関係オブジェクトのフィールドセットの名前。</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>レコードがロックされていないときに編集が制限されるフィールドのリストを含むプロジェクトタスクオブジェクトのフィールドセットの名前。</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>タスク管理UIで選択のためにロードするプロジェクトの最大数</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、マイルストーン目標日よりも長い場合、タスク終了日への変更の保存が制限されます。</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクトの開始日と終了日の範囲外になったタスクの終了日への変更の保存を制限します。</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、プロジェクト終了日がプロジェクトタスク割り当て日の範囲外になったときに、変更をタスク終了日に保存できなくなります。</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクト終了日がプロジェクトタスク割り当て時間の範囲外になったときに、変更をタスク終了日に保存できません。</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、マイルストーン目標日よりも長い場合、タスク開始日への変更の保存が制限されます。</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、プロジェクトの開始日と終了日の範囲外である場合は、変更をタスクの開始日に保存できません。</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+</CustomObjectTranslation>

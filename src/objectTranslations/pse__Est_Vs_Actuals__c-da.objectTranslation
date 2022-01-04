@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Billings --></label>
+        <name>psa_report__Actual_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvA Variance --></label>
+        <name>psa_report__EvA_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Billings --></label>
+        <name>psa_report__Scheduled_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Is Last Sunday --></label>
+        <name>psaws__End_Date_Is_Last_Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Hours Percent Variance --></label>
+        <name>psaws__High_Hours_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>Faktisk fakturerbart beløb divideret med faktiske timer eller faktiske dage efter behov</help>
+        <label><!-- Actual Average Bill Rate --></label>
+        <name>pse__Actual_Average_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Den fakturerbare mængde tidskort timer</help>
+        <label><!-- Actual Billable Amount --></label>
+        <name>pse__Actual_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Faktisk antal dage arbejdet i tidsperioden baseret på aggregerede tidskort i ugen.</help>
+        <label><!-- Actual Days (Aggregated) --></label>
+        <name>pse__Actual_Days_Aggregated__c</name>
+    </fields>
+    <fields>
+        <help>Faktisk antal dage arbejdet i tidsperioden</help>
+        <label><!-- Actual Days --></label>
+        <name>pse__Actual_Days__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af timer, der er indtastet på tidskort</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Percent Variance --></label>
+        <name>pse__Days_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Variance --></label>
+        <name>pse__Days_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Slutdato for tidsperioden for denne post. Dette bør ikke forveksles med slutdatoen for den tilknyttede opgave eller tidskort.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af dage planlagt til arbejde i tidsperioden</help>
+        <label><!-- Estimated Days --></label>
+        <name>pse__Estimated_Days__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af planlagte timer</help>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Percent Variance --></label>
+        <name>pse__Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Projektkurs (vekselkurs) i forhold til virksomhedsvaluta, beregnet på slutdatoen for tidsplanen.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>pse__Project_Manager__c</name>
+        <relationshipLabel><!-- Est Vs Actuals (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Regningsbeløbet for den ønskede ressource.</help>
+        <label><!-- Resource Request Bill Rate --></label>
+        <name>pse__Resource_Request_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af anmodede dage planlagt til arbejdet med den holdt ressourceanmodning i tidsperioden.</help>
+        <label><!-- Resource Request Days --></label>
+        <name>pse__Resource_Request_Days__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af ønskede timer planlagt på den holdt ressourceanmodning.</help>
+        <label><!-- Resource Request Hours --></label>
+        <name>pse__Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Opslag til den holdte ressourceanmodning vedrørende denne Estimates Versus Actuals-post.</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Estimates Versus Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bill sats fra opgaven</help>
+        <label><!-- Scheduled Bill Rate --></label>
+        <name>pse__Scheduled_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Bill Rate is Daily Rate --></label>
+        <name>pse__Scheduled_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Startdato for tidsperioden for denne post. Dette bør ikke forveksles med startdatoen for den tilknyttede opgave eller tidskort.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Den type tidsperiode, dette tidsrum repræsenterer</help>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Måned</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Kvarter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Uge</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Den tilknyttede tidsperiode</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Er der tilknyttet tidskort indsendt?</help>
+        <label><!-- Timecards Submitted --></label>
+        <name>pse__Timecards_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Mængden af ​​variation i timer</help>
+        <label><!-- Hours Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Est Vs Actuals Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Est Vs Actuals Navn</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- The estimates versus actuals comparison record requires either an assignment or a resource request. --></errorMessage>
+        <name>pse__Assignment_required</name>
+    </validationRules>
+</CustomObjectTranslation>

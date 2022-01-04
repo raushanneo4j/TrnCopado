@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 계획자 - 자료 --></value>
+    </caseValues>
+    <fields>
+        <help>이 옵션을 선택하면 할당 날짜 범위가 조정되고 새 날짜 범위가 휴일 내에있는 경우 휴가 일정 예외 레코드를 추가할지 여부를 결정합니다.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 할당 작성 대화 상자의 &quot;추가 필드&quot;섹션에 표시 할 추가 필드를 결정합니다.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자에서 할당 색상 막대를 제어하는 할당에서 필드의 API 이름을 정의합니다.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 방향 지정 (ASC 또는 DESC)에 의한 지정을 선택적으로 지정하기 위해 필드의 API 이름을 정의합니다. 할당은 항상 보유 된 자원 요청 위에 나타납니다.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 텍스트 검색 상자를 사용하여 검색 할 할당 필드를 결정합니다.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 할당에 대한 툴팁으로 표시 할 필드가 들어있는 필드 세트의 API 이름입니다. 필드 집합은 할당 객체에 있어야합니다.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 가용성 열에 가용성 백분율 값을 표시 할 때 소수점 오른쪽에 표시 할 자릿수입니다. 값은 정수입니다. 기본값은 0입니다.</help>
+        <label><!-- Availability Decimal Precision --></label>
+        <name>pse__Availability_Percentage_Precision__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자에 표시 할 컬럼이 들어있는 필드 세트의 API 이름. 필드 집합은 Contact 객체에 있어야합니다.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 향상된 Resource Planner가 배정을 표시 할 오늘부터의 미래 일 수를 정의합니다. 예를 들어, 오늘부터 30 일 이내에 시작하거나 끝나는 지정을 표시하려면 30을 입력하십시오.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 향상된 Resource Planner가 배정을 표시하는 오늘까지의 일 수를 정의합니다. 예를 들어, 이전 30 일 동안 시작되거나 끝나는 할당을 표시하려면 30을 입력하십시오.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>프로필 사진없이 리소스에 사용할 기본 이미지를 가리키는 URL (절대 또는 상대)을 정의합니다. 22 픽셀 제곱의 이미지 파일이 가장 잘 작동합니다.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 자원 요청 패널에서 자원 요청 종료 날짜 이후 포함 된 날짜에 추가 할 일 수를 결정합니다.</help>
+        <label><!-- Add Included Dates After RR End Date --></label>
+        <name>pse__Default_URR_End_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 자원 요청 패널에서 자원 요청의 시작 날짜 이전에 포함 된 날짜에 추가 할 일 수를 결정합니다.</help>
+        <label><!-- Add Included Dates Before RR Start Date --></label>
+        <name>pse__Default_URR_Start_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자에서 필터링에 사용되는 필드를 결정합니다. 값은 필터링 할 수있는 필드를 지정하는 필드 세트입니다.</help>
+        <label><!-- Resource Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 할당 작성 대화 상자의 비용 비율 필드가 모든 사용자에게 표시되지 않습니다.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED : 대신 Resource_Planner_Preferences__c.Hide_Inline_Dialog__c를 사용하십시오.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 할당 만들기 대화 상자의 시작 날짜와 종료 날짜가 프로젝트 시작 날짜와 종료 날짜에서 자동으로 채워집니다.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 할당 생성 대화 상자의 자원 역할이 연락처 레코드에서 자동으로 채워집니다.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED : 대신 Resource_Planner_Preferences__c.Inline_Edit_Mode_THHC__c를 사용하십시오.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>자원 플래너에 표시 할 할당의 API 이름을 지정합니다. 이 필드가 비어 있으면 자원 계획자는 기본적으로 할당 이름을 표시합니다.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Resource planner에 표시 할 자원 요청의 API 이름을 지정합니다. 이 필드가 비어 있으면 자원 계획자는 기본적으로 자원 요청 이름을 표시합니다.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 대량의 레코드를 볼 때 백그라운드에서로드하는 최대 리소스 수를 정의합니다. 높은 값을 입력하면 로딩 중단이 줄어들지 만 더 많은 메모리가 사용됩니다.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>리소스 계획 자의 리소스 요청에 대한 툴팁으로 표시 할 필드가 들어있는 필드 집합의 API 이름입니다. 필드 집합은 자원 요청 개체에 있어야합니다.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 텍스트 검색 상자를 사용하여 검색 할 자원 요청 필드를 결정합니다.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 Resource Request 색상 막대를 제어하는 Resource Request에서 필드의 API 이름을 정의합니다.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 보유 자원 요청을 선택적으로 (ASC 또는 DESC) 방향으로 정렬 할 필드의 API 이름을 정의합니다. 보류 된 리소스 요청은 항상 할당 아래에 나타납니다.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 텍스트 검색 상자를 사용하여 검색 할 자원 필드를 결정합니다.</help>
+        <label><!-- Search Fieldset Name --></label>
+        <name>pse__Resource_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 자원에 대한 툴팁으로 표시 할 필드가 들어있는 필드 세트의 API 이름. 필드 집합은 Contact 객체에 있어야합니다.</help>
+        <label><!-- Resource Tooltip Field Set --></label>
+        <name>pse__Resource_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 과거 시작일을 사용하여 과제를 만들 수 없습니다. 기본값은 선택 취소되어 있습니다.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 자원 계획자 지정을 편집하고 과거 시간을 스케줄 할 수 없습니다. 기본값은 선택 취소되어 있습니다.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 이전에 설정된 시작 날짜로 할당시 자원을 바꿀 수 없습니다. 기본값은 선택 취소되어 있습니다.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 Resource Planner에서 열의 너비, 순서 및 가시성에 대한 사용자 정의가 사용자별로 기억됩니다.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>선택하면 가용성 계획표가 자원 계획자에 표시됩니다. 이 설정은 기본적으로 선택됩니다.</help>
+        <label><!-- Show Availability Column --></label>
+        <name>pse__Show_Availability_Column__c</name>
+    </fields>
+    <fields>
+        <help>자원 플래너의 셀에는 베이지를 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에는 연한 파란색을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에 밝은 녹색을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에 밝은 빨간색을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에 밝은 노란색을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>자원 계획자의 셀에는 분홍색을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에는 Purple을 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Resource Planner의 셀에는 Turquoise를 사용하십시오. 기본값 = 거짓</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 사용자가 향상된 (새) 또는 클래식 자원 계획자를 볼지 여부를 결정합니다.</help>
+        <label><!-- DEPRECATED:Use New Resource Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>요청 당 자식 데이터 (배정 및 자원 요청)가로드되는 자원 수를 지정합니다. 먼저 고객 지원부에 문의하지 않고 레코드로드 제한을 조정해서는 안됩니다.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__record_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>이 설정은 사용자가 향상된 Resource Planner에서 일정을 편집하기 전에 Staffing 확인란을 선택한 상태에서 권한 제어가 필요한지 여부를 결정합니다.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+</CustomObjectTranslation>

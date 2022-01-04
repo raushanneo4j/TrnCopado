@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This grants FLS to 1 field. Sometimes a partner tells neo4j when its qualified &amp; neo4j advances the stage; &quot;Manager Approved&quot; gates stage progression. A separate sharing rule grants John &amp; Matt edit access to partner related opportunities</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Manager_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity &gt; Manager Approved &gt; FLS Edit</label>
+</PermissionSet>

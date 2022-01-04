@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Standardoppgaver for Jira-innstillinger --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Standardoppgaver for Jira-innstillinger --></value>
+    </caseValues>
+    <fields>
+        <help>Antall poster som skal behandles i en enkelt batch. Verdien er som standard 1.</help>
+        <label><!-- Default Assignments for Jira Batch Size --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Spesifiserer varslingsmottakerne for standardoppgaver for Jira batchvarsler sendt via Chatter, e-post eller oppgaver. Verdien er en liste over e-postadresser atskilt med semikolon (;). Hvis det er tomt, blir brukeren som startet prosessen varslet.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notification_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette er valgt, blir varsler fra standardoppgaver for Jira-batch-prosesser sendt via Chatter til mottakere som er oppført i feltet Varslingsmottakere. Dette er ikke valgt som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_by_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette er valgt, blir varsler fra standardoppgaver for Jira batch-prosesser sendt via e-post til mottakere som er oppført i feltet Varslingsmottakere. Dette er ikke valgt som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_by_Email__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette er valgt, blir varsler fra standardoppgaver for Jira batch-prosesser sendt via oppgaver til mottakere som er oppført i feltet Varslingsmottakere. Dette er ikke valgt som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_by_Task__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

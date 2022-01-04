@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jira Work Log</value>
+    </caseValues>
+    <fields>
+        <help>Jiraからの作業ログの説明。</help>
+        <label><!-- Comment --></label>
+        <name>pse__Comment__c</name>
+    </fields>
+    <fields>
+        <help>Jiraからの作業ログ開始日。</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>ユーザーにわかりやすい形式で表示された、Jiraにログインした時間。</help>
+        <label><!-- Time Spent (Formatted) --></label>
+        <name>pse__Time_Spent_Formatted__c</name>
+    </fields>
+    <fields>
+        <help>Jiraにログインした時間（秒単位）。</help>
+        <label><!-- Time Spent (Seconds) --></label>
+        <name>pse__Time_Spent_Seconds__c</name>
+    </fields>
+    <fields>
+        <help>この作業ログが含まれるタイムカード。</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Jira Work Logs --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>作業ログID</nameFieldLabel>
+</CustomObjectTranslation>

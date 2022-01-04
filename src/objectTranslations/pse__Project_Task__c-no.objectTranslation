@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prosjektoppgave</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prosjektoppgaver</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Create Project From Template Alt Copy Project Task Fields --></label>
+        <name>pse__CreateProjFromTempAltCopyProjTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Create Project from Template Project Tasks Columns --></label>
+        <name>pse__CreateProjFromTemplateTasksColumns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Editable Custom Columns --></label>
+        <name>pse__Gantt_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Read Only Custom Columns --></label>
+        <name>pse__Gantt_Read_Only_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Require Lock For Editing --></label>
+        <name>pse__Require_Lock_For_Editing</name>
+    </fieldSets>
+    <fields>
+        <help>Dato og tidspunkt for når oppgaven faktisk ble avsluttet. Når den ferdige boksen ble merket av</help>
+        <label><!-- Actual End Date &amp; Time --></label>
+        <name>pse__Actual_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Dato for når oppgaven faktisk ble avsluttet. Når den ferdige boksen ble merket av</help>
+        <label><!-- Actual End Date --></label>
+        <name>pse__Actual_End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Timer brukt på denne oppgaven. Ruller opp fra oppgavetidsposter på tidskort. På foreldreoppgaver inkluderer timer fra barneoppgaver.</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Dato da oppgaven faktisk startet. Når den startede avkryssingsboksen ble sjekket</help>
+        <label><!-- Actual Start Date &amp; Time --></label>
+        <name>pse__Actual_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help>Dato da oppgaven faktisk startet. Når den startede avkryssingsboksen ble sjekket</help>
+        <label><!-- Actual Start Date --></label>
+        <name>pse__Actual_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resources (Long) --></label>
+        <name>pse__Assigned_Resources_Long__c</name>
+    </fields>
+    <fields>
+        <help>System generert liste over tildelte ressurser. Listen genereres fra prosjektoppgaveoppgave.</help>
+        <label><!-- Assigned Resources --></label>
+        <name>pse__Assigned_Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked --></label>
+        <name>pse__Blocked__c</name>
+    </fields>
+    <fields>
+        <help>Når det er merket, tillater ikke oppgavevalg på siden Tidsinngang å legge til ny oppgavetid mot denne prosjektoppgaven.</help>
+        <label><!-- Closed for Time Entry --></label>
+        <name>pse__Closed_for_Time_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Vil bli sjekket hvis oppgaven er fullført</help>
+        <label><!-- Completed --></label>
+        <name>pse__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>pse__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Auto Update Parents --></label>
+        <name>pse__Do_Not_Auto_Update_Parents__c</name>
+    </fields>
+    <fields>
+        <help>Enten å omgå automatiske oppdateringer av automatisk beregnede felt som datoer,% fullført, osv</help>
+        <label><!-- Do Not Auto Update This Task --></label>
+        <name>pse__Do_Not_Auto_Update_This_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Units --></label>
+        <name>pse__Duration_Unit__c</name>
+    </fields>
+    <fields>
+        <help>Datoen og tidspunktet for hvilket arbeid for denne oppgaven skal avsluttes. Tidskort kan fortsatt angis for en oppgave etter denne datoen så lenge den ikke er stengt for tidsinngang.</help>
+        <label><!-- End Date &amp; Time --></label>
+        <name>pse__End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Angir de estimerte timene for å fullføre oppgaven.</help>
+        <label><!-- Estimated Time To Completion (Task) --></label>
+        <name>pse__Estimated_Time_To_Completion__c</name>
+    </fields>
+    <fields>
+        <help>Eksternt oppgave-ID for integrasjon med ikke-Salesforce-oppgaverstyringssystemer eller -applikasjoner. Integrasjoner bør bruke dette feltet for det eksterne system-ID for å opprettholde integritet og tillate oppstart.</help>
+        <label><!-- External Task ID --></label>
+        <name>pse__External_Task_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Information --></label>
+        <name>pse__Flag_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - No Coverage --></label>
+        <name>pse__Flag_Task_Dates_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Dates - Partial Coverage --></label>
+        <name>pse__Flag_Task_Dates_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Milestone Bounds --></label>
+        <name>pse__Flag_Task_End_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task End - Project Bounds --></label>
+        <name>pse__Flag_Task_End_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - No Coverage --></label>
+        <name>pse__Flag_Task_Hours_No_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Hours - Partial Coverage --></label>
+        <name>pse__Flag_Task_Hours_Partial_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start - Milestone Bounds --></label>
+        <name>pse__Flag_Task_Start_Milestone_Bounds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag - Task Start  - Project Bounds --></label>
+        <name>pse__Flag_Task_Start_Project_Bounds__c</name>
+    </fields>
+    <fields>
+        <help>Systemfelt som viser antall foreldreoppgaver &apos;opp kjeden&apos; til øverste nivåoppgaveoppgave. Oppgaver på toppnivå har et hierarki Dybde på 0, deres umiddelbare barn Oppgaver har et hierarki Dybde på 1 og så videre.</help>
+        <label><!-- Hierarchy Depth --></label>
+        <name>pse__Hierarchy_Depth__c</name>
+    </fields>
+    <fields>
+        <help>Antall timer som gjenstår for å fullføre oppgaven som er oppnådd fra Estimert tid til ferdigstillelse (oppgave) når den er angitt. Beregnet ellers fra estimerte timer minus faktiske timer.</help>
+        <label><!-- Hours Remaining --></label>
+        <name>pse__Hours_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>pse__Long_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>Oppsummeringsfelt i opprullingsfelt, totalt antall prosjektoppgaveoppgaver</help>
+        <label><!-- Number of Assignments --></label>
+        <name>pse__Number_of_Assignments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peer Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date &amp; Time --></label>
+        <name>pse__Parent_Task_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task End Date --></label>
+        <name>pse__Parent_Task_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date &amp; Time --></label>
+        <name>pse__Parent_Task_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task Start Date --></label>
+        <name>pse__Parent_Task_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Dette oppslaget tar opp Oppgavehierarkier: Underoppgaver har oppsummeringsverdi for foreldreoppgave for neste høyere nivåoppgave i oppgavehierarkiet. Merk at dette er atskilt og forskjellig fra tidsmessige (avhengige / forgjenger) forhold mellom Oppgaver.</help>
+        <label><!-- Parent Task --></label>
+        <name>pse__Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Child Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Hours) --></label>
+        <name>pse__Percent_Complete_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Points) --></label>
+        <name>pse__Percent_Complete_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete (Tasks) --></label>
+        <name>pse__Percent_Complete_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Baseline --></label>
+        <name>pse__Points_Baseline__c</name>
+    </fields>
+    <fields>
+        <help>Antall poeng ferdig</help>
+        <label><!-- Points Complete --></label>
+        <name>pse__Points_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points Remaining --></label>
+        <name>pse__Points_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>pse__Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>pse__Priority__c</name>
+        <picklistValues>
+            <masterLabel>P1</masterLabel>
+            <translation>P1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2</masterLabel>
+            <translation>P2</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P3</masterLabel>
+            <translation>P3</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation>P4</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P5</masterLabel>
+            <translation>P5</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Du trenger ikke å definere prosjektfeltet når du oppretter en barnoppgave. Prosjektfeltet fyller automatisk fra overordnet oppgave og overskriver noen inntastet verdi.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Formel felt. Summen av faktiske timer og estimert tid til fullføring (oppgave). Når Estimert Tid til Fullføring (Oppgave) er tom, er Projiserte Timer Estimert Timer.</help>
+        <label><!-- Projected Hours --></label>
+        <name>pse__Projected_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Datoen og tidspunktet for hvilket arbeid for denne oppgaven skal begynne. Tidskort kan fortsatt angis for en oppgave før denne datoen så lenge den ikke er stengt for tidsinngang.</help>
+        <label><!-- Start Date &amp; Time --></label>
+        <name>pse__Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Vil bli sjekket hvis oppgaven er startet</help>
+        <label><!-- Started --></label>
+        <name>pse__Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Blocked</masterLabel>
+            <translation>Blokkert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Fullstendig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>Utsatt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Utkast</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>Planlagt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation>Startet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>pse__Summary__c</name>
+    </fields>
+    <fields>
+        <help>Når dette er valgt, blir den relaterte milepælmåldatoen og oppgavens sluttdato synkronisert når de endres i Gantt.</help>
+        <label><!-- Synchronize Milestone and Task --></label>
+        <name>pse__Synchronize_Milestone_And_Task__c</name>
+    </fields>
+    <fields>
+        <help>Systemfelt som viser den avgrensede listen over foreldreoppgave-ID-er &apos;opp kjeden&apos; til øverste nivåoppgaveoppgave.</help>
+        <label><!-- Task ID Chain --></label>
+        <name>pse__Task_ID_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key Chain --></label>
+        <name>pse__Task_Key_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Key --></label>
+        <name>pse__Task_Key__c</name>
+    </fields>
+    <fields>
+        <help>Dette er et nytt felt for å holde oppgavens navnkjede. Dette feltet har samme oppførsel som feltet &quot;Oppgavenavnkjede&quot;. Men den nye datatypen (lang tekstområde) vil tillate navnekjeden for større antall for prosjektoppgaver i et hierarki som sammenlignet med den gamle (255 tegn)</help>
+        <label><!-- Task Name Chain (Long) --></label>
+        <name>pse__Task_Name_Chain_Long__c</name>
+    </fields>
+    <fields>
+        <help>Systemfelt som viser den avgrensede listen over foreldreoppgavenavn &apos;opp kjeden&apos; til øverste nivåoppgaveoppgave.</help>
+        <label><!-- Task Name Chain --></label>
+        <name>pse__Task_Name_Chain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Number --></label>
+        <name>pse__Task_Number__c</name>
+    </fields>
+    <fields>
+        <help>Timer brukt på denne oppgaven. Ruller opp fra oppgavetidsposter på tidskort.</help>
+        <label><!-- Timecard Hours --></label>
+        <name>pse__Timecard_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Systemfelt som viser øverste nivå Parent Task (foreldreoppgave foreldres foreldre etc.) for gjeldende oppgave. Oppgaver på toppnivå har ingen foreldreoppgave eller øverste nivåoppgaveoppgave selv.</help>
+        <label><!-- Top-level Parent Task --></label>
+        <name>pse__Top_level_Parent_Task__c</name>
+        <relationshipLabel><!-- Project Tasks (Top-level Parent Task) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Arbeidsavbrudd Strukturelementnummer eller ID. Kan svare til eksternt oppgavehåndteringssystem.</help>
+        <label><!-- WBS Element Number --></label>
+        <name>pse__WBS_Element_Number__c</name>
+    </fields>
+    <fields>
+        <help>Arbeidskalenderen som ble brukt til å planlegge en prosjektoppgave.</help>
+        <label><!-- Work Calendar --></label>
+        <name>pse__Work_Calendar__c</name>
+        <relationshipLabel><!-- Project Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Mengden tid som trengs for å fullføre denne oppgaven</help>
+        <label><!-- Work Remaining --></label>
+        <name>pse__Work_Remaining__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Task Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beskrivelse</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Ressurser</label>
+            <section>Resources</section>
+        </sections>
+        <sections>
+            <label>Oppgave Hierarki</label>
+            <section>Task Hierarchy</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Prosjektoppgavenavn</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Actual Start Date &amp; Time must be before the Actual End Date &amp; Time --></errorMessage>
+        <name>pse__Actual_Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not mark as completed if not started --></errorMessage>
+        <name>pse__Can_not_complete_if_not_started</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Estimated Time To Completion cannot be negative. --></errorMessage>
+        <name>pse__No_Negative_ETC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Task Project must match Task Project. --></errorMessage>
+        <name>pse__Parent_Task_Project_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points Complete cannot exceed Points --></errorMessage>
+        <name>pse__Points_Complete_Cannot_Exceed_Points</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not be less then 0% --></errorMessage>
+        <name>pse__Points_complete_can_not_be_less_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Points percent complete can not exceed 100% --></errorMessage>
+        <name>pse__Points_complete_can_not_exceed_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Milestone Project must match Task Project. --></errorMessage>
+        <name>pse__Project_Milestone_Mismatch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date &amp; time must be before the end date &amp; time --></errorMessage>
+        <name>pse__Start_Must_Be_Before_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Task Key field cannot be changed --></errorMessage>
+        <name>pse__Task_Key_Constant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Task&apos;s Project field value may not be blank initially if it is a top-level Task (if child task, Project will be auto-set from parent) and may not be updated once set. --></errorMessage>
+        <name>pse__Task_Project_is_Required_and_Constant</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_project_Task_from_Template --></label>
+        <name>pse__Add_project_Task_from_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete --></label>
+        <name>pse__Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Complete_Tasks --></label>
+        <name>pse__Complete_Tasks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Assignments --></label>
+        <name>pse__Generate_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Held_Resource_Requests --></label>
+        <name>pse__Generate_Held_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Resource_Requests --></label>
+        <name>pse__Generate_Resource_Requests</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Link_Project_Task_Assignments --></label>
+        <name>pse__Mass_Link_Project_Task_Assignments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start --></label>
+        <name>pse__Start</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Tasks --></label>
+        <name>pse__Start_Tasks</name>
+    </webLinks>
+</CustomObjectTranslation>

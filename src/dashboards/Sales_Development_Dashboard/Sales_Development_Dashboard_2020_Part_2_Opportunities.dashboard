@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties/>
+            <header>10% Opps Created This Quarter</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/This_Quarter_10_Opps_Created_Q_date1</report>
+            <showPicturesOnTables>true</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+            <title>By Region</title>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>qualification date=this quarter</footer>
+            <groupingSortProperties/>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total SAOs Created</metricLabel>
+            <report>Sales_Development/This_Quarter_10_Opps_Created_Q_date1</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Column</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingSortProperties/>
+            <header>1% Opps Created This Quarter</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Sales_Development/X1_s_This_Quarter</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <useReportChart>false</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties/>
+            <header>10% Opps Approved This Quarter</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/X10_Opps_Management_Approved_This_Quarte</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <footer>management approval date=this quarter</footer>
+            <groupingSortProperties/>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Total SAOs Approved</metricLabel>
+            <report>Sales_Development/X10_Opps_Management_Approved_This_Quarte</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>management approval date=this quarter</footer>
+            <groupingSortProperties/>
+            <header>10% Opps Approved By Month (CQ)</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/X10_Opps_Approved_CQ_aby_Month</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowLabelDescending</sortBy>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties/>
+            <header>Management Approval Queue</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/Management_Approval_Pending</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Metric</componentType>
+            <displayUnits>Auto</displayUnits>
+            <groupingSortProperties/>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <metricLabel>Opps In Approval Queue</metricLabel>
+            <report>Sales_Development/Management_Approval_Pending</report>
+            <showRange>false</showRange>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <groupingSortProperties/>
+            <header>10% Opps Approved by SDR</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/X10_Opps_Management_Approved_by_SDR</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+    </rightSection>
+    <runningUser>stephen.depaoli@neo4j.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Sales Development Dashboard 2020 (Part 2: Opportunities)</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

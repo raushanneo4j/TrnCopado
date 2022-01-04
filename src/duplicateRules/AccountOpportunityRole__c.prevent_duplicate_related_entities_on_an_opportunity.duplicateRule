@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>The info you provided is duplicate (comparing 3 fields).  Please find &amp; use the existing record or enter unique info across these fields: [Cloud Platform for Project Deployment],  [ISV Integration used], [Tech Company the integration connects to]</alertText>
+    <description>https://neo4j.lightning.force.com/lightning/r/organizer__ViewNodeMember__c/a7z3s0000004SCsAAM/view</description>
+    <duplicateRuleFilter xsi:nil="true"/>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>AccountOpportunityRole__c</matchRuleSObjectType>
+        <matchingRule>prevent_some_relatedentity_dupes</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>prevent some relatedentity dupes DR</masterLabel>
+    <securityOption>BypassSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

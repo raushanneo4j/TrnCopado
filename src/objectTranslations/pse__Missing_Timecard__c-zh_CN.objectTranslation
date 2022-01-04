@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>缺少考勤卡</value>
+    </caseValues>
+    <fields>
+        <label><!-- User Missing TC workspace --></label>
+        <name>User_Missing_TC_workspace__c</name>
+    </fields>
+    <fields>
+        <help>输入考勤卡的日期和时间</help>
+        <label><!-- Date Timecard Entered --></label>
+        <name>pse__Date_Timecard_Entered__c</name>
+    </fields>
+    <fields>
+        <help>检查缺少时间卡的周结束日期。</help>
+        <label><!-- Week End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>是否为所选区域，练习或组的所有子级别计算缺失考勤卡。如果仅为资源计算缺失TImecard，则忽略此字段。</help>
+        <label><!-- Include Sublevels --></label>
+        <name>pse__Include_Sublevels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Timecard Calculation --></label>
+        <name>pse__Missing_Timecard_Calculation__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Missing Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>与结束日期对应的星期开始。</help>
+        <label><!-- Week Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Missing Timecard Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>缺少考勤卡名称</nameFieldLabel>
+    <webLinks>
+        <label><!-- Schedule_Missing_Timecard --></label>
+        <name>pse__Schedule_Missing_Timecard</name>
+    </webLinks>
+</CustomObjectTranslation>

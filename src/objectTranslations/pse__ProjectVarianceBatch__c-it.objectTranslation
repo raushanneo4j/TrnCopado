@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Variance Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Beni di varianza del progetto</value>
+    </caseValues>
+    <fields>
+        <help>Identificatore univoco per il lavoro Apex batch corrente.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>Cercare il record del processo batch. Il record del processo batch viene eliminato automaticamente se il processo viene completato correttamente.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Il tipo di notifica inviata al termine del processo: riuscita, non riuscita o mista.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>Lo stato corrente del processo batch: &quot;Elaborazione&quot;, &quot;Completa&quot; o &quot;Errore&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Errore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>in lavorazione</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Il numero di registri in cui il tipo di registro è stato interrotto.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>Il numero di registri in cui il tipo di registro è Errore.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>Il numero di registri in cui il tipo di registro è esterno.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>Il numero totale di log.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ID del lotto di varianza del progetto</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

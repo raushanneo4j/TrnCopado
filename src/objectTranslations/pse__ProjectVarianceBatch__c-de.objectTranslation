@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Projektabweichung Charge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Projektabweichungs-Chargen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Projektabweichung Charge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Projektabweichungs-Chargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Projektabweichung Charge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Projektabweichungs-Chargen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Projektabweichung Charge --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Projektabweichungs-Chargen --></value>
+    </caseValues>
+    <fields>
+        <help>Eindeutige Kennung für den aktuellen Batch-Apex-Job.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__ApexJobId__c</name>
+    </fields>
+    <fields>
+        <help>Suchen Sie nach dem Stapelverarbeitungssatz. Der Stapelverarbeitungssatz wird automatisch gelöscht, wenn der Prozess erfolgreich abgeschlossen wird.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__BatchProcess__c</name>
+        <relationshipLabel><!-- Project Variance Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Art der Benachrichtigung, die nach Abschluss des Vorgangs gesendet wird: Erfolgreich, Fehler oder Gemischt.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__NotificationType__c</name>
+    </fields>
+    <fields>
+        <help>Der aktuelle Status des Batch-Jobs: &quot;Bearbeitung&quot;, &quot;Abgeschlossen&quot; oder &quot;Fehler&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>wird bearbeitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Abbruch ist.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__TotalNumberOfAborts__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp &quot;Fehler&quot; lautet.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__TotalNumberOfErrors__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Extern ist.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__TotalNumberOfExternal__c</name>
+    </fields>
+    <fields>
+        <help>Die Gesamtzahl der Protokolle.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__TotalNumberOfLogs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Project Variance Batch Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Projektabweichungs-Chargen-ID</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Timecard Transmission</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Timecard Transmissions</value>
+    </caseValues>
+    <fields>
+        <help>Nombre maximum de ressources pour lesquelles nous pouvons envoyer des feuilles de temps en une seule réponse.</help>
+        <label><!-- Batch Limit --></label>
+        <name>pse__Batch_Limit__c</name>
+    </fields>
+    <fields>
+        <help>La date de fin contenue dans la requête POST.</help>
+        <label><!-- End Date --></label>
+        <name>pse__EndDate__c</name>
+    </fields>
+    <fields>
+        <help>Message renvoyé en cas d&apos;erreur.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de transmissions de ressources traitées avec un statut Complet.</help>
+        <label><!-- Records Processed --></label>
+        <name>pse__Records_Processed__c</name>
+    </fields>
+    <fields>
+        <help>La date de début contenue dans la demande POST.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__StartDate__c</name>
+    </fields>
+    <fields>
+        <help>Etat de la transmission de la carte de pointage.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failure</masterLabel>
+            <translation>Échec</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>En cours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation>Succès</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Timecard Transmission Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la transmission de la Timecard</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

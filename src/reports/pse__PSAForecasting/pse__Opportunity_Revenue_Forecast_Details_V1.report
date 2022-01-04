@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>pse__Revenue_Forecast__c.pse__Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_TYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>pse__Revenue_Forecast_Type__c.pse__Unscheduled_Revenue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Enables you to drill down into the revenue forecasts for opportunities.</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>pse__Revenue_Forecast__c.pse__Time_Period__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Opportunity.pse__Region__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity Revenue Forecast Details V1</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$pse__Revenue_Forecast__c$pse__Revenue_Forecast_Type__c@pse__Revenue_Forecast_Type__c.pse__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>pse__Revenue_Forecast__c.pse__Last_Updated__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

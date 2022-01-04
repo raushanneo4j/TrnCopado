@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Salesforce permissions, API Enabled  and API Only User.  Some installed packages require the integration user to have these.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>API Enabled and API Only User</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiUserOnly</name>
+    </userPermissions>
+</PermissionSet>

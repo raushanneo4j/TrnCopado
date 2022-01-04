@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Umsatzprognose</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ertragsprognosen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Umsatzprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Umsatzprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Umsatzprognose --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognosen --></value>
+    </caseValues>
+    <fields>
+        <help>Enthält den kombinierten Wert der Felder &quot;Bis Datum erfasster Umsatz&quot; und &quot;Ausstehende Umsatzrealisierung&quot;.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Datum und Uhrzeit der letzten Aktualisierung dieser Umsatzprognose.</help>
+        <label><!-- Last Updated --></label>
+        <name>pse__Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>Blick auf den Meilenstein, auf den sich diese Umsatzprognose bezieht.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Suche nach der Opportunity, auf die sich diese Umsatzprognose bezieht.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Suche nach dem Projekt, auf das sich diese Umsatzprognose bezieht.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Der Umsatz, der für diese Umsatzprognose zur Erfassung bereit ist.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>Der Umsatz, der bereits in dieser Umsatzprognose erfasst wurde.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>Der Umsatz, der in dieser Umsatzprognose erfasst werden soll.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Nachschlagen des in dieser Umsatzprognose festgelegten Zeitraums.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wenn es Monate gibt, in denen keine geplanten oder tatsächlichen Einnahmen enthalten sind, werden die außerplanmäßigen Einnahmen gleichmäßig auf diese Monate verteilt, mit Ausnahme der leeren Monate, die zwischen Monaten liegen, in denen geplante oder tatsächliche Einnahmen enthalten sind.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name der Ertragsprognose</nameFieldLabel>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast_Opportunity --></label>
+        <name>pse__Run_Revenue_Forecast_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Compétence / Certification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Compétences et certifications</value>
+    </caseValues>
+    <fields>
+        <help>La date à laquelle l&apos;évaluation a été réalisée.</help>
+        <label><!-- Date Achieved --></label>
+        <name>pse__Date_Achieved__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle l&apos;évaluation a été évaluée.</help>
+        <label><!-- Evaluation Date --></label>
+        <name>pse__Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle la qualification ou la certification expire.</help>
+        <label><!-- Expiration Date --></label>
+        <name>pse__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help>La date à laquelle la ressource a utilisé la compétence pour la dernière fois.</help>
+        <label><!-- Last Used Date --></label>
+        <name>pse__Last_Used_Date__c</name>
+    </fields>
+    <fields>
+        <help>Vous pouvez entrer des informations sur la compétence ou la certification.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numerical Rating --></label>
+        <name>pse__Numerical_Rating__c</name>
+    </fields>
+    <fields>
+        <help>Le niveau d&apos;exposition ou la capacité que la ressource possède pour la compétence ou la certification.</help>
+        <label><!-- Rating --></label>
+        <name>pse__Rating__c</name>
+        <picklistValues>
+            <masterLabel>1 - Limited Exposure</masterLabel>
+            <translation>1 - Exposition limitée</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Some Familiarity</masterLabel>
+            <translation>2 - Une certaine familiarité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Comfortable</masterLabel>
+            <translation>3 - Confortable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strong</masterLabel>
+            <translation>4 - Fort</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Expert</masterLabel>
+            <translation>5 - Expert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Aucun</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La ressource à laquelle la notation s&apos;applique.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Skill and Certification Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La compétence ou la certification à laquelle la notation s&apos;applique.</help>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Resource Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;années d&apos;expérience d&apos;une ressource dans une compétence.</help>
+        <label><!-- Years of Experience --></label>
+        <name>pse__Years_Experience__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Skill / Certification Rating Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ID de classement</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Resource lookup must be set to an Contact with Is Resource = true --></errorMessage>
+        <name>pse__Check_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

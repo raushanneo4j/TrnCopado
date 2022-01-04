@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 통합 허브 커넥터 : Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Jira와의 통합이 실패 할 경우 오류 알림을받을 이메일 주소입니다.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Jira 응용 프로그램의 URL입니다. 인증에 사용됩니다.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>PSA 프로젝트를 Jira 문제로 매핑 필드를 선택하면 프로젝트 업데이트를위한 PSA 필드 값에 정의 된 값으로 매핑 된 프로젝트 필드를 업데이트하는 Jira 문제 상태의 범주를 결정합니다.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>Jira 문제가있는 프로젝트 동기화 사용 필드가 선택되면 PSA 프로젝트가 동기화되는 Jira 문제의 유형이 결정됩니다. 이 값은 대소 문자를 구분하며 이슈 유형은 Jira 응용 프로그램에 존재해야합니다.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Jira에 동기화 된 PSA 리소스가 Jira 사용자 이름으로 이메일 통지를 받고 비밀번호를 설정하는 링크를 수신하는지 여부를 나타냅니다.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 PSA 프로젝트가 Jira 프로젝트 대신 Jira 문제에 매핑됩니다. Jira 문제 유형은 Jira Issue Type 필드의 값에 의해 결정됩니다.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>월요일부터 시작하여 자원의 각 주에 대해 시간을 기록 할 수 있습니다. 1-7 사이의 정수를 입력 할 수 있습니다. 예를 들어, 월요일부터 금요일까지의 시간 로깅을 사용 가능하게하려면 5를 입력하십시오.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>리소스에 대해 매일 기록 할 수있는 최대 시간 카드 수입니다. 1에서 24 사이의 값을 입력 할 수 있습니다.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>PSA 프로젝트를 Jira 문제로 매핑 필드를 선택하면 Jira 문제의 상태가 Jira Issue Status Category에 정의 된 경우 매핑 된 프로젝트 필드가 업데이트되는 값이 결정됩니다. 이 값은 대소 문자를 구분합니다.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>문제를 상위 문제 유형 (예 : 상위 링크)에 연결하는 데 사용되는 Jira 사용자 정의 필드의 이름입니다. 관계는 여러 수준을 가질 수 있지만 Jira Issue Type에 정의 된 문제 유형은 고려 된 가장 높은 문제 유형입니다.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Jira 작업 로그를 PSA 타임 카드와 동기화해야하는지 여부를 나타냅니다. 기능 콘솔을 사용하여 PSA 워크 플로우에서 Jira에서 타임 카드로 작업 로그 동기화가 활성화되면 자동으로 채워집니다.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>PSA 프로젝트를 Jira 문제와 동기화해야하는지 여부를 나타냅니다. 기능 콘솔을 사용하여 PSA에서 Jira 이슈로 이슈 동기화 프로젝트가 활성화되면 자동으로 채워집니다.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>PSA 프로젝트를 Jira 프로젝트와 동기화해야하는지 여부를 나타냅니다. 기능 콘솔을 사용하여 PSA에서 Jira로 프로젝트로 프로젝트 동기화 워크 플로우를 사용하도록 설정하면 자동으로 채워집니다.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>PSA 리소스를 Jira 사용자와 동기화해야하는지 여부를 나타냅니다. 기능 콘솔을 사용하여 PSA에서 Jira의 사용자에게 리소스 동기화 워크 플로가 활성화되면 자동으로 채워집니다.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>타임 카드가 생성되는 상태입니다.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Jira 문제 상태를 기반으로 PSA 프로젝트를 업데이트해야하는지 여부를 나타냅니다.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Jira 응용 프로그램 URL에 제공된 Jira 응용 프로그램이 Jira 클라우드 버전인지 여부를 나타냅니다. Jira Server를 사용한다면 선택을 해제하십시오.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+</CustomObjectTranslation>

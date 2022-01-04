@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Progress Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Progress Notes</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the date of the activities referenced in this Note --></help>
+        <label><!-- Activity Date --></label>
+        <name>Activity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a rich text field that supports links, images, etc., in addition to plain text. Note: only the first 999 characters will be displayed in a Salesforce report. The rest is visible directly on the record and in a downloaded report. --></help>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <help><!-- Related Opportunity against which the Sales Engineering Notes Field will be Populated --></help>
+        <label><!-- Related Opportunity --></label>
+        <name>Related_Opportunity__c</name>
+        <relationshipLabel><!-- Progress Notes --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Progress Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

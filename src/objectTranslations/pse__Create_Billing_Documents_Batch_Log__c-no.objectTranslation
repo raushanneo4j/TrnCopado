@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Opprett Faktura Dokumenter Batch Log</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Opprett Faktureringsdokumenter Batchlogger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Master-Detail-koblingen til den relaterte Opprett Faktura Dokumenter Batch-posten.</help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indikerer loggen (Feil, Informasjon, Avbryt, Ekstern).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Avbryte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Feil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Utvendig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Informasjon</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Teksten til meldingen.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label>Egendefinerte koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Opprett Faktura Dokumenter Batch Log ID</nameFieldLabel>
+</CustomObjectTranslation>

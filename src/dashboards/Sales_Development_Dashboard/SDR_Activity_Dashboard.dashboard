@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Medium</columnSize>
+    </leftSection>
+    <middleSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Color coding is for the weekly targets</footer>
+            <groupingSortProperties/>
+            <header>Calls-End of Week Achievement</header>
+            <indicatorBreakpoint1>100.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>125.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/End_of_Week_Activity_Report_Calls</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Color coding is for the weekly targets</footer>
+            <groupingSortProperties/>
+            <header>Emails-End of Week Achievement</header>
+            <indicatorBreakpoint1>200.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>250.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/End_of_Week_Activity_Report_Emails</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Goal 12 per day</footer>
+            <groupingSortProperties/>
+            <header>Calls-End of Week Achievement (Managers)</header>
+            <indicatorBreakpoint1>50.0</indicatorBreakpoint1>
+            <indicatorBreakpoint2>60.0</indicatorBreakpoint2>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>Sales_Development/End_of_Week_Managers_Report</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <sortBy>RowValueDescending</sortBy>
+        </components>
+    </rightSection>
+    <runningUser>stephen.depaoli@neo4j.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>SDR Activity Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

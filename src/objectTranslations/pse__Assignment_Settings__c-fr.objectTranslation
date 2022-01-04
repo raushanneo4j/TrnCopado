@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Paramètres d&apos;attribution --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Paramètres d&apos;attribution --></value>
+    </caseValues>
+    <fields>
+        <help>Si c&apos;est le cas, les horaires créés par &quot;Ajuster les heures par jour&quot; respecteront les jours fériés et créeront des exceptions pour eux et ajusteront les heures en répartissant les heures sur d&apos;autres jours.</help>
+        <label><!-- Adjust Hours Strategy Respects Holidays --></label>
+        <name>pse__Adjust_Hours_Strategy_Respects_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>Déconseillé - non utilisé</help>
+        <label><!-- Adjust Sched Date on Assignment Close --></label>
+        <name>pse__Adjust_Sched_Date_on_Assignment_Close__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, le code de devise du taux de coût d&apos;une affectation est défini pour utiliser le code de devise de la ressource.</help>
+        <label><!-- Allow Resource Currency Code on Assn --></label>
+        <name>pse__Allow_Resource_Currency_on_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes IsResource Active Lookup FIlter --></label>
+        <name>pse__AssigRes_IsResource_Active_Lookup_FIlter__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes Is Resource Lookup Filter --></label>
+        <name>pse__AssigRes_Is_Resource_Lookup_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup Columns --></label>
+        <name>pse__Assign_Resource_Custom_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup --></label>
+        <name>pse__Assign_Resource_Custom_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>Champ contenant les noms d&apos;api des champs de liste séparés par des virgules qui s&apos;afficheront sous forme de colonne dans la fenêtre contextuelle de recherche des jalons.</help>
+        <label><!-- Assign Resource Milestone Lookup Columns --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <help>Champ permettant de contrôler l&apos;affichage de la recherche de jalon personnalisée sur l&apos;interface utilisateur</help>
+        <label><!-- Assign Resource Milestone Lookup --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>Champ pour marquer un jalon personnalisé selon les besoins. Si c&apos;est vrai, ce sera nécessaire et non pas.</help>
+        <label><!-- Assign Resource Milestone Required --></label>
+        <name>pse__Assign_Resource_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>Déconseillé - non utilisé</help>
+        <label><!-- Assignment Closed Statuses --></label>
+        <name>pse__Assignment_Closed_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Configuration de la longueur maximale du nom du projet dans le nom d&apos;affectation généré automatiquement.</help>
+        <label><!-- Assignment Name Project Name Max Length --></label>
+        <name>pse__Assignment_Name_Project_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>Configuration de la longueur maximale du nom de ressource dans le nom d&apos;affectation généré automatiquement.</help>
+        <label><!-- Assignment Name Resource Name Max Length --></label>
+        <name>pse__Assignment_Name_Resource_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>Définit s&apos;il convient de partager une affectation et une planification avec l&apos;utilisateur Salesforce de la ressource lors de la création ou lors de la modification de la ressource. Vous pouvez définir la valeur à Lire ou Modifier pour définir le niveau de partage. Si aucune valeur n&apos;est définie, aucune action n&apos;est entreprise.</help>
+        <label><!-- Auto Share with New Resource --></label>
+        <name>pse__Auto_Share_with_New_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Définit si le partage existant de l&apos;affectation et de la planification avec l&apos;utilisateur Salesforce de la ressource est supprimé lorsque la ressource de l&apos;affectation est modifiée.</help>
+        <label><!-- Delete Share from Old Resource --></label>
+        <name>pse__Delete_Share_from_Old_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, PSA ne vérifie pas que les taux de facturation ont été appliqués.</help>
+        <label><!-- Disable Bill Rate Null Check in Trigger --></label>
+        <name>pse__Disable_Bill_Rate_Null_Check_in_Trigger__c</name>
+    </fields>
+    <fields>
+        <help>Désactive les valeurs par défaut pour les filtres Région, Cabinet, Groupe et Rôle de la page Affecter une ressource.</help>
+        <label><!-- Disable RPG and Role Filter Defaults --></label>
+        <name>pse__Disable_RPG_Role_Defaulting__c</name>
+    </fields>
+    <fields>
+        <help>Indique si le champ Taux de facture planifiée doit être affiché sur la page Mass Assign Resources.</help>
+        <label><!-- Display Planned Bill Rate --></label>
+        <name>pse__Display_Planned_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>La stratégie de planification par défaut pour la page Modifier la planification des affectations. Les valeurs possibles sont &quot;level&quot;, &quot;ignore&quot;, &quot;day&quot; et &quot;PercentAllocation&quot;</help>
+        <label><!-- Edit Schedule Default Strategy --></label>
+        <name>pse__Edit_Schedule_Default_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification Ajuster les heures par jour est masquée dans les pages Affecter une ressource à un projet, Modifier une planification d&apos;affectation et une feuille de travail de dotation.</help>
+        <label><!-- Hide Adjust Hours Scheduling Strategy --></label>
+        <name>pse__Hide_Adjust_Hours_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification personnalisée est masquée dans les pages Affecter une ressource à une feuille de calcul de projet et de personnel.</help>
+        <label><!-- Hide Custom Scheduling Strategy --></label>
+        <name>pse__Hide_Custom_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification Calculer la date de fin pour ignorer la disponibilité est masquée dans les pages Affecter une ressource à un projet, Modifier un calendrier d&apos;affectation et Feuille de travail.</help>
+        <label><!-- Hide Ignore Avail Scheduling Strategy --></label>
+        <name>pse__Hide_Ignore_Avail_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification Planification du niveau de date de fin est masquée dans les pages Affecter une ressource au projet, Modifier le calendrier d&apos;affectation et Feuille de calcul du personnel.</help>
+        <label><!-- Hide Level Schedule Scheduling Strategy --></label>
+        <name>pse__Hide_Level_Schedule_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification de l&apos;allocation de pourcentage est masquée dans les pages Affecter une ressource à un projet, Modifier un calendrier d&apos;affectation et un plan de travail.</help>
+        <label><!-- Hide Percent Alloc Scheduling Strategy --></label>
+        <name>pse__Hide_Percent_Alloc_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la stratégie de planification Planification heure zéro est masquée dans les pages Affecter une ressource à un projet, Modifier un calendrier d&apos;affectation et Feuille de travail.</help>
+        <label><!-- Hide Zero Hour Scheduling Strategy --></label>
+        <name>pse__Hide_Zero_Hour_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Liste délimitée par des virgules des noms d&apos;API des champs à répertorier lors du survol de l&apos;icône d&apos;info-bulle sur la page Assignation de lien aux jalons.</help>
+        <label><!-- Link Assignment Header Tooltip Fields --></label>
+        <name>pse__Link_Assignment_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Liste délimitée par des virgules des noms d&apos;API des champs à répertorier lorsque vous survolez l&apos;icône de l&apos;info-bulle sur la page Lien entre la méthodologie et les affectations.</help>
+        <label><!-- Link Methodology Header Tooltip Fields --></label>
+        <name>pse__Link_Methodology_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Liste délimitée par des virgules des noms d&apos;API des champs à répertorier lors du survol de l&apos;icône d&apos;info-bulle sur la page Lier le jalon à des affectations.</help>
+        <label><!-- Link Milestone Header Tooltip Fields --></label>
+        <name>pse__Link_Milestone_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Liste délimitée par des virgules des noms d&apos;API des champs à répertorier lors du survol de l&apos;icône d&apos;info-bulle sur la page Lier la phase aux affectations.</help>
+        <label><!-- Link Phase Header Tooltip Fields --></label>
+        <name>pse__Link_Phase_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque la valeur est définie sur true, le champ Jalon est affiché dans la section Mise à jour rapide et détail de l&apos;affectation de la page Affectation de ressources aux projets. Le champ est également affiché dans la page Assignation de projets à la ressource.</help>
+        <label><!-- Mass Assign Milestone Editable --></label>
+        <name>pse__Mass_Assign_Milestone_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque la valeur est définie sur true, le champ Jalon doit être rempli pour chaque affectation à créer sur la page Assignation de projets à la ressource et la page Assignation de ressources à un projet.</help>
+        <label><!-- Mass Assign Milestone Required --></label>
+        <name>pse__Mass_Assign_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>Contrôle le nombre de projets renvoyés dans les résultats lors de la recherche sur la page Assignation de projets à la ressource. Les valeurs supérieures à 2000 ne sont pas recommandées en raison du risque de dépassement de l&apos;état d&apos;affichage de la plate-forme. La valeur par défaut est 1000.</help>
+        <label><!-- Mass Assign Projects Load Limit --></label>
+        <name>pse__Mass_Assign_Projects_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre est obsolète et n&apos;est plus utilisé.</help>
+        <label><!-- Deprecated: Mass Assign Res. Load Limit --></label>
+        <name>pse__Mass_Assign_Resources_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si la case à cocher Ignorer les jours d&apos;affectation en masse est cochée par défaut.</help>
+        <label><!-- Mass Assignments Default Ignore Holidays --></label>
+        <name>pse__Mass_Assignments_Default_Ignore_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>Permet aux utilisateurs de créer un jeu de champs personnalisé sur l&apos;objet Assignation et d&apos;écrire le nom de l&apos;API du jeu de champs dans ce paramètre personnalisé. Les champs ajoutés à ce jeu de champs sont affichés sous forme de champs en lecture seule dans l&apos;assignation multi-affectée à l&apos;interface utilisateur Milestone.</help>
+        <label><!-- Multi Assign Assignment Fieldset Name --></label>
+        <name>pse__Multi_Assign_Assignment_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Permet aux utilisateurs de créer un jeu de champs personnalisé sur l&apos;objet Milestone et d&apos;écrire le nom de l&apos;API du jeu de champs dans ce paramètre personnalisé. Les champs ajoutés à ce jeu de champs sont affichés sous forme de champs en lecture seule dans l&apos;assignation multi-affectée à l&apos;interface utilisateur Milestone.</help>
+        <label><!-- Multi Assign Milestone Fieldset Name --></label>
+        <name>pse__Multi_Assign_Milestone_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque la valeur est true, les exceptions de planification sont conservées lors de la mise à jour dans l&apos;écran Modifier la planification des affectations. Lorsque false, les exceptions sont supprimées. La valeur par défaut est false.</help>
+        <label><!-- Retain schedule exceptions on update --></label>
+        <name>pse__Retain_schedule_exceptions_on_update__c</name>
+    </fields>
+    <fields>
+        <help>S&apos;il est défini sur true, le champ Liste de sélection des rôles est masqué dans la page Affecter les ressources aux projets. Si défini sur false, le comportement existant continue.Il fonctionnera uniquement lorsque la case à cocher &quot;Rôle requis à la création&quot; est définie sur false</help>
+        <label><!-- Role Hidden --></label>
+        <name>pse__Role_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Required On Creation --></label>
+        <name>pse__Role_Required_On_Creation__c</name>
+    </fields>
+    <fields>
+        <help>Liste délimitée par des virgules des valeurs du champ Statut de la carte de visite à utiliser lors des calculs de la carte de pointage pour la page Modifier la planification des affectations.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Détermine la taille du lot à utiliser lors du calcul des champs du Moniteur de projet.</help>
+        <label><!-- Update Project Monitor Fields Batch Size --></label>
+        <name>pse__Update_Project_Monitor_Fields_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nombre seuil d&apos;assignations pour le calcul immédiat des champs du Moniteur de projet. Si le nombre d&apos;affectations dépasse la valeur de ce paramètre, les champs du Moniteur de projet sont calculés à l&apos;aide d&apos;un traitement par lots.</help>
+        <label><!-- Update Project Monitor Fields Sync Limit --></label>
+        <name>pse__Update_Project_Monitor_Fields_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la valeur par défaut de la case à cocher Utiliser le coût par défaut est désactivée dans les pages Affecter une ressource au projet, Affecter des ressources aux projets et Affecter des projets aux ressources.</help>
+        <label><!-- Use Default Cost Rate Clear on Assigning --></label>
+        <name>pse__Use_Default_Cost_Rate_Clear_on_Assigning__c</name>
+    </fields>
+    <fields>
+        <help>Utilisez la valeur enregistrée dans le champ Jours planifiés des affectations pour les calculs dans le récapitulatif des coûts et des revenus du projet.</help>
+        <label><!-- Use Scheduled Days for Calculations --></label>
+        <name>pse__Use_Scheduled_Days__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

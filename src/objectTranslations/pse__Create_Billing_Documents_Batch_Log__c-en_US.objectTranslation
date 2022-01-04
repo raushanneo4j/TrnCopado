@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Master-Detail link to the related Create Billing Documents Batch record. --></help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates the type of log (Error, Information, Abort, External). --></help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation><!-- Abort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The text of the message. --></help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

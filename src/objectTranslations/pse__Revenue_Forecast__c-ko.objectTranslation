@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>수익 예측</value>
+    </caseValues>
+    <fields>
+        <help>날짜로 인식 된 매출 및 수익 보류 인식 필드의 결합 된 값을 포함합니다.</help>
+        <label><!-- Actuals --></label>
+        <name>pse__Actuals__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측이 마지막으로 업데이트 된 날짜 및 시간입니다.</help>
+        <label><!-- Last Updated --></label>
+        <name>pse__Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측과 관련된 이정표를 찾습니다.</help>
+        <label><!-- Milestone --></label>
+        <name>pse__Milestone__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측과 관련된 기회를 찾습니다.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측과 관련된 프로젝트를 찾습니다.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 수익 예측에서 인식 할 수있는 수익입니다.</help>
+        <label><!-- Revenue Pending Recognition --></label>
+        <name>pse__Revenue_Pending_Recognition__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측에서 이미 인식 된 수익입니다.</help>
+        <label><!-- Revenue Recognized to Date --></label>
+        <name>pse__Revenue_Recognized_To_Date__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측에 대한 인식이 예정된 수익입니다.</help>
+        <label><!-- Scheduled Revenue --></label>
+        <name>pse__Scheduled_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>이 수익 예측에 설정된 기간을 찾습니다.</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Revenue Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>예정된 수입 또는 실제 수입이 포함되지 않은 월이있는 경우 예정된 수입 또는 실제 수입이 포함 된 달 사이에 빈 달이있는 경우를 제외하고 예정되지 않은 수입은 해당 월에 고르게 분산됩니다.</help>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>수익 예측 이름</nameFieldLabel>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast --></label>
+        <name>pse__Run_Revenue_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Revenue_Forecast_Opportunity --></label>
+        <name>pse__Run_Revenue_Forecast_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

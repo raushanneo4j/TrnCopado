@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transmisión de recursos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transmisiones de recursos</value>
+    </caseValues>
+    <fields>
+        <help>La identificación del recurso.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Muestra Completado si se han devuelto todos los datos de la tarjeta de tiempo solicitados. De lo contrario, muestra Pendiente.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Completar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La identificación de transmisión de la tarjeta de tiempo.</help>
+        <label><!-- Timecard Transmission --></label>
+        <name>pse__Timecard_Transmission__c</name>
+        <relationshipLabel><!-- Resource Transmissions --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Resource Transmission Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de transmisión de recursos</nameFieldLabel>
+</CustomObjectTranslation>

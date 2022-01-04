@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- שימוש --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- שימוש --></value>
+    </caseValues>
+    <fields>
+        <help>מספר המטלות שעובדות בקבוצה יחידה בעת חישוב השימוש</help>
+        <label><!-- Assignment Batch Size --></label>
+        <name>pse__Assignment_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את המספר המרבי של רשומות ילדים שמעליהן משתמשים במחיקת אצווה במקום מחיקה מדורגת.</help>
+        <label><!-- Batch Deletion Cut-Off Point --></label>
+        <name>pse__Batch_Deletion_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>מאפשר חישוב של שילוב בין מוצרים בין אזור, תרגול וקבוצה. למשל אזור לפי עיסוק, או קבוצה לפי אזור</help>
+        <label><!-- Calculate Cross Products --></label>
+        <name>pse__Calculate_Cross_Products__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, חשב את משך הזמן המתוזמן לבקשות המשאבים המוחזקות (שלא הוקצו).</help>
+        <label><!-- Calculate Held Resource Request Time --></label>
+        <name>pse__Calculate_Held_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Summary By Role --></label>
+        <name>pse__Calculate_Summary_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Unheld Resource Request Time --></label>
+        <name>pse__Calculate_Unheld_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <help>שולט בשדות באובייקט בקשת המשאבים שיכללו לחישובי שימוש בבקשות המשאבים שלא ניתן להרחיקם. הגדרה זו מקבלת ערכי שדה מותאמים אישית וסטנדרטיים בשאילתות SOQL. אם לא מוגדר, חישובים משתמשים בקריטריונים המוגדרים כברירת מחדל.</help>
+        <label><!-- Custom Filters for Unheld RR Utilization --></label>
+        <name>pse__CustomFiltersforUnheldRRUtilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>כאשר מחק אצווה למחיקת חישובי שימוש קודמים, קבע את המספר המרבי של רשומות חישוב השימוש לעיבוד לכל אצווה.</help>
+        <label><!-- Deletion Batch Size --></label>
+        <name>pse__Deletion_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>כאשר מחק אצווה למחיקת חישובי שימוש קודמים, קבע את המספר המרבי של פרטי השימוש ורישומי הסיכום לעיבוד לכל אצווה.</help>
+        <label><!-- Deletion Child Record Batch Size --></label>
+        <name>pse__Deletion_Child_Record_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, ניצול היסטורי משתמש ביום ההתחלה על בסיס לוח השנה במקום במקום המשתמש.</help>
+        <label><!-- Historical UTE Work Cal Start Day --></label>
+        <name>pse__Historical_UTE_Work_Cal_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>מספר המשאבים שיש לעבד בקבוצה יחידה בעת חישוב השימוש</help>
+        <label><!-- Resource Batch Size --></label>
+        <name>pse__Resource_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request Batch Size --></label>
+        <name>pse__Resource_Request_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Utilization Approach --></label>
+        <name>pse__Target_Utilization_Approach__c</name>
+    </fields>
+    <fields>
+        <help>מספר כרטיסי הזמן שעובדים אצווה יחידה בעת חישוב השימוש</help>
+        <label><!-- Timecard Batch Size --></label>
+        <name>pse__Timecard_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>רשימה מופרדת בפסיק של ערכי מצב כרטיס הזמן המשמשים לקביעת כרטיסי הזמן המשמשים לחישובי השימוש.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>קובע אם הדגל &quot;האם דוח מאסטר&quot; מאופס על פי תקופת הזמן ואובייקט האב (מסומן) או על סמך שם חישוב השימוש (לא מסומן)</help>
+        <label><!-- Uncheck Master Based On Time/Parent --></label>
+        <name>pse__Uncheck_Master_Based_On_Time_Parent__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, פרטי השימוש אינם מחשבים מעבר לתאריך האחרון במשאב.</help>
+        <label><!-- Use Last Date on Resource --></label>
+        <name>pse__Use_Last_Date_on_Resource__c</name>
+    </fields>
+    <fields>
+        <help>אם נכון, מנוע השימוש משמש לחישוב השימוש באמצעות Shift Management. ברירת המחדל היא שקרית.</help>
+        <label><!-- Use Utilization Engine for Shift Mgmt --></label>
+        <name>pse__Use_Utilization_Engine_TOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Utilization Engine --></label>
+        <name>pse__Use_Utilization_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Engine Batch Size --></label>
+        <name>pse__Utilization_Engine_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>מציין את מספר הימים העתידיים לשמירה על נתוני השימוש בזמן אמת עבור ניהול Shift. ערך ברירת המחדל הוא 30.</help>
+        <label><!-- Utilization Eng Max Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Max_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של הימים העתידיים לשמירת נתוני השימוש בזמן אמת</help>
+        <label><!-- Utilization Engine Max Range --></label>
+        <name>pse__Utilization_Engine_Max_Range__c</name>
+    </fields>
+    <fields>
+        <help>מציין את מספר הימים שקדמו לתאריך הנוכחי לחישוב נתוני ניצול זמן אמת לניהול Shift. ערך ברירת המחדל הוא 5.</help>
+        <label><!-- Utilization Eng Start Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Start_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את מספר הימים שקדמו לתאריך הנוכחי לחישוב נתוני השימוש בזמן אמת. בחר ב- 0 כדי להתחיל בחישוב מהתאריך הנוכחי. ערך ברירת המחדל הוא 50.</help>
+        <label><!-- Utilization Engine Start Range --></label>
+        <name>pse__Utilization_Engine_Start_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

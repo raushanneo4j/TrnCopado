@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Jira Work Log</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Jira arbeidslogger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Beskrivelse av arbeidsloggen fra Jira.</help>
+        <label><!-- Comment --></label>
+        <name>pse__Comment__c</name>
+    </fields>
+    <fields>
+        <help>Arbeidsloggens startdato fra Jira.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Mengde tid logget på Jira, vises i et brukervennlig format.</help>
+        <label><!-- Time Spent (Formatted) --></label>
+        <name>pse__Time_Spent_Formatted__c</name>
+    </fields>
+    <fields>
+        <help>Mengde tid logget på Jira, i sekunder.</help>
+        <label><!-- Time Spent (Seconds) --></label>
+        <name>pse__Time_Spent_Seconds__c</name>
+    </fields>
+    <fields>
+        <help>Tidskort som denne arbeidsloggen er inkludert i.</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Jira Work Logs --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Arbeidslogg-ID</nameFieldLabel>
+</CustomObjectTranslation>

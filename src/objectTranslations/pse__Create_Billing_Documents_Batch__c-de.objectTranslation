@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Abrechnungsbelegstapel erstellen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Erstellen Sie Abrechnungsbelegstapel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsbelegstapel erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Abrechnungsbelegstapel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsbelegstapel erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Abrechnungsbelegstapel --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Abrechnungsbelegstapel erstellen --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Erstellen Sie Abrechnungsbelegstapel --></value>
+    </caseValues>
+    <fields>
+        <help>Eindeutiger Bezeichner für den aktuellen Batch-Apex-Job.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Suchen Sie nach dem Stapelverarbeitungsdatensatz. Der Stapelverarbeitungsdatensatz wird automatisch gelöscht, wenn der Vorgang erfolgreich abgeschlossen wurde.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die Art der Benachrichtigung, die nach Abschluss des Prozesses gesendet wurde: Erfolgreich, Fehlgeschlagen oder Gemischt.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>Der aktuelle Status des Stapeljobs: &quot;Verarbeitung&quot;, &quot;Abgeschlossen&quot; oder &quot;Fehler&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Komplett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>wird bearbeitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Abbruch lautet.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_Of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Fehler ist.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_Of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der Protokolle, bei denen der Protokolltyp Extern ist.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_Of_External__c</name>
+    </fields>
+    <fields>
+        <help>Die Gesamtzahl der Protokolle.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Erstellen Sie die Chargen-ID für Abrechn</nameFieldLabel>
+</CustomObjectTranslation>

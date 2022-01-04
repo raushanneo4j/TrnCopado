@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>过滤器组</value>
+    </caseValues>
+    <fields>
+        <help>限制此过滤器集将作为选项显示的位置。目前仅支持“资源规划师”和“项目规划师”。</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>项目策划人</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>资源规划师</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>过滤器集的名称。</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>在保存的过滤器集中保存过滤器属性和值。存储为JSON对象。</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>选中时，表示过滤器集是默认值。</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则只有所有者才能查看和使用此过滤器。否则，任何具有共享访问权限的用户都可以使用它。</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>可以与其他对象（例如项目）关联的筛选器集。</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>这组过滤器操作的SObject的API名称。</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>名称</nameFieldLabel>
+</CustomObjectTranslation>

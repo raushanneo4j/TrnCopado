@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_16479684</developerName>
+        <masterLabel>1. Recorded</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Recorded_Opp__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise</sourceValue>
+            </sourceValues>
+            <value>Hierarchy</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_47912168</developerName>
+        <masterLabel>Account Revenue Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Account_Revenue__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <value>Non-Enterprise</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.Opp_Count_1__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_47912168</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opp_Count_1__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1_SDR_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1SDRCompApprovalStatus__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1SDRCompApprovalStatusDate__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Approved__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.ARR__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE_CODE</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Use_Case__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Source__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>TEXT(YEAR(Opportunity.X1_SDR_Date__c)) + &quot; &quot; +
+&quot;Q&quot;+ 
+TEXT(CEILING(MONTH(Opportunity.X1_SDR_Date__c) /3 ))</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>SDR 1% Qtr</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>1% opportunities (=Meeting held with AE) generated by SDRs in current and last 4 quarters by account revenue segment (&quot;Other&quot; = No revenue data on account record)</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Use_Case__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Partnership</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Opportunity_Source__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SDR - Inbound Lead,SDR - Outbound Efforts,SDR + Channel / Indirect Partner,SDR + Cloud / Tech Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.X1_SDR_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_QUARTERS:4,THIS_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Fredrik,Tomas,Karl Sjoborg,Medina,Vivek,Elin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.RegionalTerritoryAccount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA - Nordics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Renewal</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_47912168</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Nordics SDR 1% CQ &amp; Last 4 Qtrs</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

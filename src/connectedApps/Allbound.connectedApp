@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>integrations@allbound.com</contactEmail>
+    <label>Allbound</label>
+    <oauthConfig>
+        <callbackUrl>https://api.allbound.com/v5/integrations/source-accounts/162/callback</callbackUrl>
+        <consumerKey>3MVG9ysJNY7CaIHnXtkJBm9UdfOxK3Fp93DeriuYJwPYeN6RhM2sH4bBVxoShKRPgyHJeJnDxbvxNFLQ0wOeP</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

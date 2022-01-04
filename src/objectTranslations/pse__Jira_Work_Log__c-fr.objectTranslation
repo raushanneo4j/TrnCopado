@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journal de travail Jira</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journaux de travail Jira</value>
+    </caseValues>
+    <fields>
+        <help>Description du journal de travail de Jira.</help>
+        <label><!-- Comment --></label>
+        <name>pse__Comment__c</name>
+    </fields>
+    <fields>
+        <help>Le journal de travail a commencé la date de Jira.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Durée d&apos;enregistrement dans Jira, affichée dans un format convivial.</help>
+        <label><!-- Time Spent (Formatted) --></label>
+        <name>pse__Time_Spent_Formatted__c</name>
+    </fields>
+    <fields>
+        <help>Durée de connexion à Jira, en secondes.</help>
+        <label><!-- Time Spent (Seconds) --></label>
+        <name>pse__Time_Spent_Seconds__c</name>
+    </fields>
+    <fields>
+        <help>Carte de pointage dans laquelle ce journal de travail est inclus.</help>
+        <label><!-- Timecard --></label>
+        <name>pse__Timecard__c</name>
+        <relationshipLabel><!-- Jira Work Logs --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID du journal de travail</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Creëer facturatiedocumenten batch log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Creëer facturatiedocumenten batch logs</value>
+    </caseValues>
+    <fields>
+        <help>Hoofd-onderliggende link naar de gerelateerde creër declarabele documenten batch record</help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Geeft het type logboek aan (Fout, Informatie, Afbreken, Extern).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Afbreken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>extern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Informatie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>De tekst van het bericht.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Creëer facturatiedocumenten batch log ID</nameFieldLabel>
+</CustomObjectTranslation>

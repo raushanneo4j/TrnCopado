@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Opportunity_Unlock_And_Edit_Certain_Fields</name>
+    </customPermissions>
+    <description>Grants CP for bypassing editing on won opptys.  Also grants Modify All on oppty for purpose of displaying unlock button to assignees (subject to their FLS)
+a7z3s0000004SGiAAM (98% Stage Project) Challenge: ideaView?id=08730000000i6X6AAI</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity_Unlock_And_Edit_Certain_Fields (for specific finance users)</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Creëer facturatiedocumenten batch instellingen --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Creëer facturatiedocumenten batch instellingen --></value>
+    </caseValues>
+    <fields>
+        <help>Het aantal records dat in één batch moet worden verwerkt. De waarde is standaard 3.</help>
+        <label><!-- Create Billing Documents Batch Size --></label>
+        <name>pse__Create_Billing_Documents_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van Maak Factuur Docutmenten batchprocessen via Chatter verzonden naar ontvangers die worden vermeld in de instelling voor berichtontvangers. Dit is standaard gedeselecteerd.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van Maak Factuur Docutmenten batchprocessen via e-mail verzonden naar ontvangers die worden vermeld in de instelling voor berichtontvangers. Dit is standaard geselecteerd.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Hiermee geeft u de ontvangers van de kennisgeving op voor batch-meldingen voor facturatiedocumenten die via Chatter of e-mail worden verzonden. De waarde is een lijst met e-mailadressen gescheiden door puntkomma&apos;s (;). Deze instelling is standaard nul.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van Maak Factuur Documenten batchprocessen via taken verzonden. Dit is standaard gedeselecteerd.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

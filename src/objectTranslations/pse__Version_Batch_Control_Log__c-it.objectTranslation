@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registro controllo versione batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registri di controllo batch di versione</value>
+    </caseValues>
+    <fields>
+        <help>Le informazioni o il messaggio di errore relativo all&apos;esecuzione del processo batch di Versioning.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Il record della versione relativo al processo batch di Versioning.</help>
+        <label><!-- Version --></label>
+        <name>pse__Version__c</name>
+        <relationshipLabel><!-- Version Batch Control Logs --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Batch Control Log Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome registro controllo versione batch</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

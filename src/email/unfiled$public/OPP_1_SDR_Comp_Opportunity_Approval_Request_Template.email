@@ -1,0 +1,24 @@
+Hi there,
+<br><br>
+
+{!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName} has requested your approval for the 1% '{!Opportunity.Name}' to be included in their compensation for the current month. 
+<br>
+
+<div>
+<p>
+To directly access the Opportunity record itself, click here {!Opportunity.Link}.
+<br>
+To navigate to the approval request, click here {!ApprovalRequest.Internal_URL}.
+</p>
+
+<p><strong>ADDITIONAL OPPORTUNITY DETAILS</strong></p>
+
+<p>
+<ul>
+<li>Approval step stage: {!ApprovalRequest.Process_Step_Name}</li>
+<li>Sales Stage:</b> {!Opportunity.StageName}</li>
+<li>Opportunity Source:</b> {!Opportunity.Opportunity_Source__c}</li>
+<li>Account: <a href="{!Account.Link}">{!Opportunity.Account}</a></li>
+<li>Requestor's Comments: {!ApprovalRequest.Comments}</li>
+</ul>
+</p>

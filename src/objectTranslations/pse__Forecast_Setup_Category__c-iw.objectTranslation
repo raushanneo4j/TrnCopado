@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>קטגוריית הגדרת תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>קטגוריות הגדרת תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>המכפיל חל על הסכום הניתן לחיוב בפועל בפרויקט. זה כולל כרטיסי זמן מחויבים, אבני דרך מחויבות והתאמות שונות.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל חל על ההוצאות על פרויקט. זה הסכום הניתן לחיוב.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>משתמשים בהגדרת תחזית החיוב בקטגוריית תחזית חיוב זו. עליך להגדיר לפחות קטגוריית תחזית חיוב אחת.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>התווית המוצגת בקטגוריית תחזית חיוב משוקללת, למשל, צפוי, המקרה הטוב ביותר, הגרוע ביותר.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל חל על הזדמנויות בקטגוריית תחזית חיוב משוקללת זו.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>הסדר לקטגוריות תחזית החיוב מוחל בחישוב תחזית החיוב. אתה יכול להזין ערכים מ -1 עד 3.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>שדה זה בוטל והוחלף על ידי Order__c</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל החל על ערך המטלות בפרויקט.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל שהוחל על שעות בקשת המשאבים בפרויקט, כאשר מסומן שדה החזקת משאבים.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל החל על ערך אבני הדרך המתוזמנות לפרויקט.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל החל על שעות בקשת המשאבים המתוכננות לפרויקט, כאשר לא מסומנים את שדה החזקת משאבים.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>המכפיל החל על ערך הצבר שלא מתוכנן בפרויקט, תוך שימוש בערך שנוצר על ידי חישוב הצבר.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם קטגוריית הגדרת תחזית חיוב</nameFieldLabel>
+</CustomObjectTranslation>

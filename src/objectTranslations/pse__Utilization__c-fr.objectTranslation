@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Utilisation --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Utilisation --></value>
+    </caseValues>
+    <fields>
+        <help>Nombre d&apos;affectations à traiter dans un lot unique lors du calcul de l&apos;utilisation</help>
+        <label><!-- Assignment Batch Size --></label>
+        <name>pse__Assignment_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nombre maximal d&apos;enregistrements enfants au-delà duquel une suppression par lot est utilisée au lieu d&apos;une suppression en cascade.</help>
+        <label><!-- Batch Deletion Cut-Off Point --></label>
+        <name>pse__Batch_Deletion_Cutoff__c</name>
+    </fields>
+    <fields>
+        <help>Permet le calcul de la combinaison de produits croisés de la région, de la pratique et du groupe. Comme la région par pratique ou le groupe par région</help>
+        <label><!-- Calculate Cross Products --></label>
+        <name>pse__Calculate_Cross_Products__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, calculez la quantité d&apos;heure planifiée pour les demandes de ressources en attente (non attribuées).</help>
+        <label><!-- Calculate Held Resource Request Time --></label>
+        <name>pse__Calculate_Held_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Summary By Role --></label>
+        <name>pse__Calculate_Summary_By_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate Unheld Resource Request Time --></label>
+        <name>pse__Calculate_Unheld_Resource_Request_Time__c</name>
+    </fields>
+    <fields>
+        <help>Contrôle les champs de l&apos;objet Demande de ressource à inclure pour les calculs d&apos;utilisation des demandes de ressources non tenues. Ce paramètre accepte les valeurs de champ personnalisées et standard dans les requêtes SOQL. Si non défini, les calculs utilisent des critères par défaut.</help>
+        <label><!-- Custom Filters for Unheld RR Utilization --></label>
+        <name>pse__CustomFiltersforUnheldRRUtilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Opportunity Probability --></label>
+        <name>pse__Default_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Lors de la suppression par lot des calculs d&apos;utilisation précédents, définit le nombre maximal d&apos;enregistrements de calcul d&apos;utilisation à traiter par lot.</help>
+        <label><!-- Deletion Batch Size --></label>
+        <name>pse__Deletion_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Lors de la suppression par lot des calculs d&apos;utilisation précédents, définit le nombre maximal d&apos;enregistrements de détail d&apos;utilisation et de résumé à traiter par lot.</help>
+        <label><!-- Deletion Child Record Batch Size --></label>
+        <name>pse__Deletion_Child_Record_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque la valeur est true, l&apos;utilisation historique utilise le jour de début basé sur le calendrier de travail plutôt que sur les paramètres régionaux de l&apos;utilisateur.</help>
+        <label><!-- Historical UTE Work Cal Start Day --></label>
+        <name>pse__Historical_UTE_Work_Cal_Start_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Opportunity Probability --></label>
+        <name>pse__Minimum_Opportunity_Probability__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de ressources à traiter dans un lot unique lors du calcul de l&apos;utilisation</help>
+        <label><!-- Resource Batch Size --></label>
+        <name>pse__Resource_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request Batch Size --></label>
+        <name>pse__Resource_Request_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Utilization Approach --></label>
+        <name>pse__Target_Utilization_Approach__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de fiches de temps à traiter dans un lot unique lors du calcul de l&apos;utilisation</help>
+        <label><!-- Timecard Batch Size --></label>
+        <name>pse__Timecard_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Une liste délimitée par des virgules des valeurs d&apos;état de la carte de pointage utilisées pour déterminer les cartes de temps utilisées pour les calculs d&apos;utilisation.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Détermine si l&apos;indicateur &quot;Is Report Master&quot; est réinitialisé en fonction de la période et de l&apos;objet parent (coché) ou en fonction du nom du calcul de l&apos;utilisation (non coché)</help>
+        <label><!-- Uncheck Master Based On Time/Parent --></label>
+        <name>pse__Uncheck_Master_Based_On_Time_Parent__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque la valeur est true, les détails d&apos;utilisation ne sont pas calculés au-delà de la date de fin de la ressource.</help>
+        <label><!-- Use Last Date on Resource --></label>
+        <name>pse__Use_Last_Date_on_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, Utilization Engine est utilisé pour calculer l&apos;utilisation avec Shift Management. Le défaut est faux.</help>
+        <label><!-- Use Utilization Engine for Shift Mgmt --></label>
+        <name>pse__Use_Utilization_Engine_TOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Utilization Engine --></label>
+        <name>pse__Use_Utilization_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Engine Batch Size --></label>
+        <name>pse__Utilization_Engine_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nombre de jours dans le futur pour gérer les données d&apos;utilisation en temps réel pour la gestion des équipes. La valeur par défaut est 30.</help>
+        <label><!-- Utilization Eng Max Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Max_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Nombre maximal de jours dans le futur pour lesquels conserver les données d&apos;utilisation en temps réel</help>
+        <label><!-- Utilization Engine Max Range --></label>
+        <name>pse__Utilization_Engine_Max_Range__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie le nombre de jours avant la date actuelle pour calculer les données d&apos;utilisation en temps réel pour la gestion des équipes. La valeur par défaut est 5.</help>
+        <label><!-- Utilization Eng Start Range Shift Mgmt --></label>
+        <name>pse__Utilization_Engine_Start_Range_TOD__c</name>
+    </fields>
+    <fields>
+        <help>Définit le nombre de jours avant la date actuelle pour calculer les données d&apos;utilisation en temps réel. Définissez sur 0 pour commencer le calcul à partir de la date actuelle. La valeur par défaut est 50.</help>
+        <label><!-- Utilization Engine Start Range --></label>
+        <name>pse__Utilization_Engine_Start_Range__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

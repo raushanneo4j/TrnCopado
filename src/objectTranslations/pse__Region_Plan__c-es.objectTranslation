@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan regional</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planes de la región</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Billings --></label>
+        <name>pse__Planned_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Bookings --></label>
+        <name>pse__Planned_Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned External Costs --></label>
+        <name>pse__Planned_External_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Internal Costs --></label>
+        <name>pse__Planned_Internal_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Margin --></label>
+        <name>pse__Planned_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Revenue --></label>
+        <name>pse__Planned_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Utilization --></label>
+        <name>pse__Planned_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Owner --></label>
+        <name>pse__Region_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Plan For --></label>
+        <name>pse__Region_Plan_For__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Region Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Region Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Campo de sistema único: concatenación de identificaciones de región y período de tiempo con un guión (&apos;-&apos;) en el medio</help>
+        <label><!-- Unique Name --></label>
+        <name>pse__Unique_Name__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Region Plan Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Plan</label>
+            <section>Plan</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número del plan regional</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- A Region Plan record must use the same currency as its parent Region. --></errorMessage>
+        <name>pse__Plan_must_have_same_currency_as_Region</name>
+    </validationRules>
+</CustomObjectTranslation>

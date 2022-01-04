@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Recursos de búsqueda globales --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Recursos de búsqueda globales --></value>
+    </caseValues>
+    <fields>
+        <help>Determina un conjunto de caracteres separados por comas para permitir en el campo de dirección.</help>
+        <label><!-- Allow Special Characters In Address --></label>
+        <name>pse__Allow_Special_Characters_In_Address__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un campo en el objeto de contacto que se mostrará en Recursos de búsqueda. Esta opción se ignora cuando la descripción del recurso de pantalla es verdadera.</help>
+        <label><!-- Contact Field 1 --></label>
+        <name>pse__Contact_Field_1__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un campo en el objeto de contacto que se mostrará en Recursos de búsqueda. Esta opción se ignora cuando la descripción del recurso de pantalla es verdadera.</help>
+        <label><!-- Contact Field 2 --></label>
+        <name>pse__Contact_Field_2__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de API de un campo en el objeto de contacto que se mostrará en Recursos de búsqueda. Esta opción se ignora cuando la descripción del recurso de pantalla es verdadera.</help>
+        <label><!-- Contact Field 3 --></label>
+        <name>pse__Contact_Field_3__c</name>
+    </fields>
+    <fields>
+        <help>Cuando es verdadero, solo se muestra la descripción del recurso. Cuando es falso, los campos de contacto 1 a 3 se muestran si contienen un nombre API válido de un campo en el objeto de contacto. El valor predeterminado es falso.</help>
+        <label><!-- Display Resource Description --></label>
+        <name>pse__Display_Resource_Description__c</name>
+    </fields>
+    <fields>
+        <help>Asignación de URL de servicio para usar al obtener latitud y longitud usando una dirección. Valor predeterminado: http://www.mapquestapi.com/geocoding/v1/address?key=Fmjtd%7Cluub2q6820%2Caa%3Do5-961xh0&amp;outFormat=json&amp;maxResults=1</help>
+        <label><!-- Geolocation Service URL --></label>
+        <name>pse__Geolocation_Service_URL__c</name>
+    </fields>
+    <fields>
+        <help>Determina que la longitud y la latitud no se actualizan cuando la dirección no es válida. Formato admitido: longitud, latitud, longitud, latitud.</help>
+        <label><!-- Invalid Longitude and Latitude --></label>
+        <name>pse__Invalid_Longitude_And_Latitude_Pairs__c</name>
+    </fields>
+    <fields>
+        <help>Define la URL del punto final de Mapquest utilizada para validar contra el punto final en la configuración del sitio remoto de Salesforce antes de utilizar la API de geolocalización de Mapquest. Esta URL debe ser un subconjunto de la URL del servicio de geolocalización.</help>
+        <label><!-- Mapquest Endpoint URL --></label>
+        <name>pse__Mapquest_Endpoint_URL__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

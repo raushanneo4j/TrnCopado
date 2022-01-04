@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>通用批处理任务日志</value>
+    </caseValues>
+    <fields>
+        <label><!-- Generic Batch Task Log --></label>
+        <name>pse__Generic_Batch_Task__c</name>
+        <relationshipLabel><!-- BatchProcessControlLogs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>退出</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>错误</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>外部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>信息</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <nameFieldLabel>通用批处理任务日志名称</nameFieldLabel>
+</CustomObjectTranslation>

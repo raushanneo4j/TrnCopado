@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Dépense UI Global --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Dépense UI Global --></value>
+    </caseValues>
+    <fields>
+        <help>Si la valeur est True, Expense permettra la saisie de données sur les dépenses déléguées dans l&apos;interface utilisateur des frais de modification.</help>
+        <label><!-- Allow Delegated Expense Report Entry --></label>
+        <name>pse__Allow_Delegated_Expense_Report_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Si c&apos;est le cas, autoriser la saisie des données du rapport de dépenses facturables et non facturables.</help>
+        <label><!-- Allow Mixed Billable Non Billable ER --></label>
+        <name>pse__Allow_Mixed_Billable_Non_Billable_ER__c</name>
+    </fields>
+    <fields>
+        <help>Si c&apos;est le cas, le montant de la limite de dépenses du projet sera toujours utilisé</help>
+        <label><!-- Always Use Project Expense Limit Amount --></label>
+        <name>pse__Always_Use_Project_Expense_Limit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, les mises à jour des lignes de dépenses ne seront synchrones que</help>
+        <label><!-- Expense Line Updates Synchronous Only --></label>
+        <name>pse__Expense_Line_Updates_Synchronous_Only__c</name>
+    </fields>
+    <fields>
+        <help>Si cela est vrai, les utilisateurs de dépenses seulement seraient soumis soumis à sauvegarder</help>
+        <label><!-- Expense Only Users Set Submitted On Save --></label>
+        <name>pse__Expense_Only_Users_Set_Submitted_On_Save__c</name>
+    </fields>
+    <fields>
+        <help>Nombre maximum de lignes de dépenses synchrones</help>
+        <label><!-- Max Synchronous Expense Lines --></label>
+        <name>pse__Max_Synchronous_Expense_Lines__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;affectations supérieures à afficher.</help>
+        <label><!-- Number of Top Assignments --></label>
+        <name>pse__Number_of_Top_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Spécifiez le nombre maximal de projets To à afficher.</help>
+        <label><!-- Number of Top Projects --></label>
+        <name>pse__Number_of_Top_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Il définira le nombre d&apos;enregistrements de dépenses à afficher sur la page</help>
+        <label><!-- Records Per Page Count --></label>
+        <name>pse__Records_Per_Page_Count__c</name>
+    </fields>
+    <fields>
+        <help>Limite maximale des ressources pouvant être chargées</help>
+        <label><!-- Resource Load Limit --></label>
+        <name>pse__Resource_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Si elle est définie sur true, le jalon de dépense par défaut sera défini comme jalon d’affectation.</help>
+        <label><!-- Set Default to Assignment Milestone --></label>
+        <name>pse__Set_Default_to_Assignment_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, le propriétaire est défini sur l&apos;utilisateur de force de vente de ressources</help>
+        <label><!-- Set Owner To Resource Salesforce User --></label>
+        <name>pse__Set_Owner_To_Resource_Salesforce_User__c</name>
+    </fields>
+    <fields>
+        <help>Si cette valeur est définie sur true, les taxes non facturables par défaut seront affichées dans l&apos;interface utilisateur Modifier les dépenses.</help>
+        <label><!-- Show Default Incurred Non-Billable Tax --></label>
+        <name>pse__Show_Default_Incurred_Non_Billable_Tax__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, le montant facturable des dépenses sera affiché dans l&apos;interface utilisateur de modification des dépenses.</help>
+        <label><!-- Show Expense Billable Amount --></label>
+        <name>pse__Show_Expense_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est vraie, le champ facturable sera affiché sur l&apos;interface de modification des dépenses.</help>
+        <label><!-- Show Expense Billable Field --></label>
+        <name>pse__Show_Expense_Billable_Field__c</name>
+    </fields>
+    <fields>
+        <help>Si elle est vraie, le montant des dépenses non facturables encourues apparaîtra sur l’interface utilisateur.</help>
+        <label><!-- Show Expense Non-Billable IncurredAmount --></label>
+        <name>pse__Show_Expense_Non_Billable_IncurredAmount__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, le champ de jalon des dépenses sera affiché sur l&apos;interface de modification des dépenses</help>
+        <label><!-- Show Expense milestone --></label>
+        <name>pse__Show_Expense_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, Taxe non facturable des dépenses sera affichée dans l&apos;interface utilisateur Modifier les dépenses.</help>
+        <label><!-- Show Incurred Non-Billable Tax --></label>
+        <name>pse__Show_Incurred_Non_Billable_Tax__c</name>
+    </fields>
+    <fields>
+        <help>Si c&apos;est le cas, le montant des dépenses non remboursables sera affiché dans l&apos;interface utilisateur des frais de modification.</help>
+        <label><!-- Show Non-Reimbursable Amount --></label>
+        <name>pse__Show_Non_Reimbursable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Chaîne à noter</help>
+        <label><!-- Submitted --></label>
+        <name>pse__Submitted__c</name>
+    </fields>
+    <fields>
+        <help>Si elle est vraie, le montant de la limite de dépenses la plus élevée sera utilisé</help>
+        <label><!-- Use Highest Expense Limit Amount --></label>
+        <name>pse__Use_Highest_Expense_Limit_Amount__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

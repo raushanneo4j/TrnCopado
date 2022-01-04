@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <available>true</available>
+    <description>SFDC-0488_AuraProvisioningEmailForLanceKajiV1. This field exists to workaround an unplanned salesforce 13+ year old SFDC GA limitation: https://trailblazer.salesforce.com/ideaView?id=08730000000BrUAAA0.  The accuracy of this field needs to be recalculated if product names ever change!   Rule of thumb:  retire products, dont rename them , technically-speaking.  This text field exists so that rollups can refer to it,  because rollups cannot refer to formula fields.  At time of writing we will do a one-time mass update into this field and maintain it with synchronous logic at the OpportunityLineItem level.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Pbe_Product_Aura_Ent_Provision_Email</name>
+    <style>none</style>
+    <subject>Aura Enterprise Deal reached &apos;SOPS Review&apos; Stage in Salesforce</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

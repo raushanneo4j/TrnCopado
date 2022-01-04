@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Account Revenue Has Changed</name>
+    <style>freeForm</style>
+    <subject>{!Account.Name} Customer Account Revenue Has Changed</subject>
+    <textOnly>{!Account.Name} Revenue Has Changed
+
+Old Revenue: {!Account.Prior_Account_Revenue__c}
+New Revenue: {!Account.Account_Revenue__c}
+Link to Account: {!Account.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

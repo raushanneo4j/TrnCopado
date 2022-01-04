@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Habilidad / Calificación de certificación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Calificaciones de Habilidad y Certificación</value>
+    </caseValues>
+    <fields>
+        <help>La fecha en que se logró la calificación.</help>
+        <label><!-- Date Achieved --></label>
+        <name>pse__Date_Achieved__c</name>
+    </fields>
+    <fields>
+        <help>Fecha en que se evaluó la calificación.</help>
+        <label><!-- Evaluation Date --></label>
+        <name>pse__Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <help>Fecha en que vence la habilitación o la certificación.</help>
+        <label><!-- Expiration Date --></label>
+        <name>pse__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help>La fecha en que el recurso utilizó por última vez la habilidad.</help>
+        <label><!-- Last Used Date --></label>
+        <name>pse__Last_Used_Date__c</name>
+    </fields>
+    <fields>
+        <help>Puede ingresar información sobre la habilidad o calificación de certificación.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numerical Rating --></label>
+        <name>pse__Numerical_Rating__c</name>
+    </fields>
+    <fields>
+        <help>El nivel de exposición o habilidad que tiene el recurso para la habilidad o certificación.</help>
+        <label><!-- Rating --></label>
+        <name>pse__Rating__c</name>
+        <picklistValues>
+            <masterLabel>1 - Limited Exposure</masterLabel>
+            <translation>1 - Nivel Principiante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Some Familiarity</masterLabel>
+            <translation>2 - Nivel Básico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Comfortable</masterLabel>
+            <translation>3 - Nivel Medio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Strong</masterLabel>
+            <translation>4 - Nivel Alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Expert</masterLabel>
+            <translation>5 - Nivel Experto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ninguna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El recurso al que se aplica la calificación.</help>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Skill and Certification Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La habilidad o certificación a la que se aplica la calificación.</help>
+        <label><!-- Skill / Certification --></label>
+        <name>pse__Skill_Certification__c</name>
+        <relationshipLabel><!-- Resource Ratings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>La cantidad de años de experiencia que tiene un recurso en una habilidad.</help>
+        <label><!-- Years of Experience --></label>
+        <name>pse__Years_Experience__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Skill / Certification Rating Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>ID de calificación</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Resource lookup must be set to an Contact with Is Resource = true --></errorMessage>
+        <name>pse__Check_Resource</name>
+    </validationRules>
+</CustomObjectTranslation>

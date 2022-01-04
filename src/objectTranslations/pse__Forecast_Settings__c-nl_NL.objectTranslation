@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Verouderd: prognose-instellingen --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Verouderd: prognose-instellingen --></value>
+    </caseValues>
+    <fields>
+        <help>Voer het aantal dagen voorafgaand aan de huidige datum in om als afsluitdatum te gebruiken voor actuele versus geplande items. Gebruik 0 voor vandaag. Laat blanco om automatisch &quot;aan het einde van de vorige week&quot; te gebruiken</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal records dat in één batch moet worden verwerkt. De waarde is standaard 200.</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 1.</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 2.</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 3.</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 4.</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 5.</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 6.</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>Het label dat is toegewezen aan het gewogen prognosebedrag voor categorie 7.</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>De voorspellingscurve die wordt toegepast wanneer er geen curve is ingesteld voor een opportunity. Er wordt een foutmelding weergegeven als er geen curve is ingesteld voor een opportunity en er geen standaard opportunitycurve is gedefinieerd.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>De voorspellingscurve die wordt toegepast wanneer er geen curve is ingesteld op een project. Er wordt een foutmelding weergegeven als er geen curve is ingesteld op een project en er geen standaardprojectcurve is gedefinieerd.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van prognosebatchprocessen via Chatter verzonden naar ontvangers die worden vermeld in de instelling voor berichtontvangers. Dit is standaard gedeselecteerd.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van prognosebatchprocessen via e-mail verzonden naar ontvangers die worden vermeld in de instelling voor berichtontvangers. Dit is standaard gedeselecteerd.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Geeft de ontvangers van meldingen aan voor Geprognosticeerde batchmeldingen verzonden via Chatter of e-mail. De waarde is een lijst met e-mailadressen gescheiden door puntkomma&apos;s (;). Deze instelling is standaard nul.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden meldingen van prognosebatchprocessen via taken verzonden. Dit is standaard gedeselecteerd.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 1 voor opportunityprognoses te berekenen.</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 2 voor Opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige Categoriewaarde.</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 3 voor Opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige Categoriewaarde.</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 4 voor Opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige Categoriewaarde.</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 5 voor Opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige Categoriewaarde.</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 6 voor opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige Categoriewaarde.</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 7 voor opportunityprognoses te berekenen. Voor optimale werkwijzen moet elke vermenigvuldigingsfactor hoger zijn dan de vorige categoriewaarde.</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 1 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 2 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 3 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 4 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 5 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 6 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled Milestones en Untededed Backlog.</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>De vermenigvuldigers die worden gebruikt om Categorie 7 voor projectprognoses te berekenen. Dit vermenigvuldigt, in volgorde, de statistieken voor: Billings, Pass Through Billings, Geplande tijd, Held Resource Requests, Unheld Resource Requests, Scheduled, Mijlpalen en Ongeplande Backlog.</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 1 deel uitmaakt van de Prognoseberekening.</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 2 deel uitmaakt van de Prognoseberekening.</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 3 is opgenomen in de berekening van de voorspelling.</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 4 is opgenomen in de berekening van de voorspelling.</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 5 is opgenomen in de berekening van de voorspelling.</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 6 is opgenomen in de berekening van de voorspelling.</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om te bepalen of Categorie 7 deel uitmaakt van de Prognoseberekening.</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

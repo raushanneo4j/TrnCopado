@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Personnel --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Personnel --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, dans la page Saisie de l&apos;heure, lorsque les utilisateurs cliquent ou suppriment les cellules de temps d&apos;une tâche ou entrent manuellement zéro, la valeur du projet / de l&apos;affectation est mise à jour à zéro. La valeur par défaut est false. Le mode de saisie de l&apos;heure de la tâche doit être défini sur Calculé.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Si true, le projet ou l&apos;affectation peut être modifié tant que le statut de la carte de pointage est l&apos;une des valeurs &quot;timecard-edit-status-values ​​/ Timecard_edit_status_values__c&quot;.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>Les champs à utiliser comme infobulle pour les affectations. Complètement qualifié (avec espace de noms, le cas échéant), les noms de champs sensibles à la casse sont requis</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Si le champ Facturable est configuré pour être affiché, détermine s&apos;il doit être affiché à gauche ou à droite des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les fiches de présence présentant exactement la même combinaison de semaine, de projet, d&apos;affectation, de ressource, de facturation, de projet, de méthodologie, d&apos;emplacement et de déplacement sont combinées sur la page Entrée de la fiche de présence.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, les champs supplémentaires seront copiés des feuilles de temps de la semaine précédente.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, le champ ETC sera copié à partir des fiches de présence de la semaine précédente</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, les champs de l&apos;heure tels que les heures de lundi, les heures de mardi, etc. seront copiés à partir des fiches de présence de la semaine précédente.</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, les champs Informations sur la localisation, par exemple Emplacement Mon, seront copiés à partir des feuilles de temps de la semaine précédente.</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, le champ Méthodologie sera copié à partir des fiches de présence de la semaine précédente</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, les jalons seront copiés à partir des fiches de présence de la semaine précédente</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, les notes seront copiées à partir des fiches de présence de la semaine précédente.</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si coché, le champ Phase sera copié à partir des fiches de présence de la semaine précédente.</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si elle est définie sur true, la fonctionnalité Copier à partir de la planification remplit les champs Notes pour chaque jour sur la carte de pointage si elle trouve des enregistrements enfants Assignment Daily Notes sur l&apos;affectation pour ce jour. (false par défaut)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, les heures de tâches sont copiées à partir de la feuille de temps de la semaine précédente.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, les informations sur la tâche sont copiées à partir de la carte de pointage de la semaine précédente.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si cette case est cochée, les champs d&apos;informations sur les voyages, tels que la semaine de voyage, le voyage, etc., seront copiés à partir des fiches de présence de la semaine précédente.</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque true et que la fenêtre contextuelle de recherche de ressources de la nouvelle interface de carte de pointage ne renvoie qu&apos;un seul résultat, la fenêtre contextuelle de recherche de ressources est automatiquement fermée et le champ de ressource est défini sur la ressource renvoyée.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, le champ déroulant facturable sur la carte de pointage sera affiché comme désactivé, c&apos;est-à-dire non modifiable par l&apos;utilisateur.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI met en cache toutes les assignations / projets assignés ainsi que les jalons pendant le chargement. Cela peut conduire à la limite d&apos;affichage de salesforce, si l&apos;utilisateur dispose de nombreuses affectations / projets. Définir cette valeur de configuration sur true minimisera ce cache.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Ces nombreuses lignes de timecard vides seront ajoutées, lorsque le bouton Ajouter des lignes sera cliqué.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>C&apos;est le nombre minimum de lignes qui seront toujours disponibles pour une nouvelle entrée de la carte de pointage.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la colonne facturable de la page Entrée de la carte de pointage est masquée. Lorsque la valeur est true, la colonne est masquée et la case à cocher facturable est sélectionnée par défaut. La valeur par défaut est false.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indique si le bouton Copier de la semaine précédente sur la nouvelle interface de carte de visite est masqué. La valeur par défaut est false.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Ce paramètre est un doublon et peut être supprimé dans une version ultérieure. Veuillez modifier le paramètre &quot;Masquer le bouton de la semaine précédente&quot; à la place.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Indique si le bouton Copier les planifications de la nouvelle interface de la carte de visite est masqué. La valeur par défaut est false.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque ce paramètre est défini sur true, le lien Développer les tâches ou Réduire les tâches est masqué dans la page Saisie de l&apos;heure. La valeur par défaut est false.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette valeur est définie sur true, la colonne Notes qui apparaît normalement sur la page Entrée de la carte de pointage est masquée. La valeur par défaut est false.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indique si le bouton Enregistrer de la nouvelle interface de carte de visite est masqué. La valeur par défaut est false.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est définie sur true, les boutons &quot;Toutes les tâches&quot; et &quot;Mes tâches&quot; sont masqués dans la fenêtre contextuelle Ajouter des tâches de la page Saisie de l&apos;heure. La valeur par défaut est false.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Indique si le bouton Envoyer de la nouvelle interface utilisateur de la carte de visite est masqué. La valeur par défaut est false.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée et que le mode de saisie de l&apos;heure de la tâche est défini sur Calculé, une seule ligne d&apos;heures de tâche est affichée. La valeur par défaut de la case à cocher est désactivée.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Si true et le mode de saisie de l&apos;heure de la tâche est Actuel, les liens Afficher ou Modifier les détails affichés lorsque vous survolez une ligne de la carte de pointage sont masqués. Si true et que le mode de saisie du temps de tâche n&apos;est pas à jour, l&apos;onglet Notes est masqué sur les liens. La valeur par défaut est false</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>Le champ / config donné est utilisé pour coder en couleur l&apos;en-tête de colonne de date d&apos;un congé de calendrier de travail pour la ressource sélectionnée dans l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Détermine la largeur en pixels des cellules des heures de la carte de pointage dans la page Entrée de la carte de visite V15.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Nombre maximal d&apos;heures pendant lesquelles une ressource peut entrer un jour de la carte de pointage unique. Si le nombre total d&apos;heures d&apos;une ressource dépasse ce montant un jour de la carte de pointage unique, un message d&apos;erreur s&apos;affiche.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Nombre maximal d&apos;heures qu&apos;une ressource peut entrer pour une semaine de carte de pointage. En cas de dépassement, un message d&apos;erreur s&apos;affiche. Entrez un pourcentage et un symbole, par exemple. 90%, pour spécifier un pourcentage maximum d&apos;heures calendaires de travail.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si le champ Méthodologie est configuré pour être affiché, détermine s&apos;il doit être affiché à gauche ou à droite des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Cet indicateur de configuration détermine si le champ de la méthodologie doit être affiché dans la fenêtre contextuelle des notes ou à la page d&apos;accueil.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Si le champ Jalon est configuré pour être affiché, détermine s&apos;il doit être affiché à gauche ou à droite des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface de la carte de pointage.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Cet indicateur de configuration détermine si le champ jalon doit être affiché dans la fenêtre contextuelle des notes ou à la page d&apos;accueil.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;heures minimum qu&apos;une ressource peut entrer pour une semaine de carte de pointage. Si les heures hebdomadaires sont inférieures à ce montant, un message d&apos;erreur s&apos;affiche. Entrez un pourcentage et un symbole, par exemple. 30%, pour spécifier un pourcentage minimum d&apos;heures de travail.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, le pseudonyme d&apos;affectation est éditable sinon pas.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, le champ d&apos;emplacement sera affiché dans la boîte de dialogue contextuelle</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, la liste déroulante de l&apos;emplacement principal sera affichée sur l&apos;interface utilisateur de TC.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Si le champ Phase est configuré pour être affiché, détermine s&apos;il doit être affiché à gauche ou à droite des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Cet indicateur de configuration détermine si le champ de phase doit être affiché dans la fenêtre contextuelle des notes ou à la page d&apos;accueil.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les tâches sont pré-renseignées pour l&apos;utilisateur et le projet sélectionnés. La valeur par défaut de la case à cocher est désactivée.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Si le champ Emplacement principal est configuré pour être affiché, détermine s&apos;il doit être affiché à gauche ou à droite des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque Remarque emplacement principal autorisé est défini sur true, détermine si le champ Emplacement principal apparaît dans la section Notes ou la ligne de carte de pointage.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>valeur d&apos;affichage du projet de carte de pointage / compte d&apos;affectation</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>Les champs de cet ensemble de champs définissent les champs affichés dans l&apos;info-bulle de la ligne de tâche de projet dans l&apos;interface utilisateur de Log a Timecard with Task Time.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Le &quot;Projet d&apos;affectation modifiable après enregistrement&quot; permet à l&apos;utilisateur de modifier le projet / l&apos;affectation pour les cartes de temps enregistrées, mais cela nécessite une note d&apos;audit pour la carte de pointage. Les notes d&apos;audit peuvent être définies par cette configuration.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Liste des champs de projet à afficher sous forme d&apos;info-bulle sur l&apos;entrée de la carte de pointage ui.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, les tâches pré-remplies sont basées sur l&apos;affectation sélectionnée. Le champ &quot;Limiter aux tâches avec affectation correspondante&quot; dans la fenêtre contextuelle Sélectionner des tâches est ensuite coché par défaut. Restreindre la tâche basée sur l&apos;affectation est désélectionnée par défaut.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Lorsque cette option est sélectionnée, les tâches pré-remplies sont basées sur le jalon sélectionné. Le champ &quot;Limiter aux tâches avec jalon correspondant&quot; de la fenêtre contextuelle Sélectionner des tâches est ensuite coché par défaut. Restreindre la tâche basée sur le jalon est désélectionné par défaut.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les personnalisations relatives à la largeur, à l’ordre et à la visibilité des colonnes dans la Sencha TImecard seront mémorisées par utilisateur.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Les noms d&apos;API des champs d&apos;affectation à afficher lors du survol de l&apos;icône d&apos;info-bulle dans la section Planification d&apos;une fiche de présence.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>Les noms API des champs de projet à afficher lors du survol de l&apos;icône d&apos;info-bulle dans la section Planification d&apos;une fiche de présence.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>La configuration donnée est utilisée pour afficher une alerte si une valeur non nulle est entrée dans la section de la fiche de présence pour le jour marqué comme jour férié (ayant zéro heure) dans le calendrier de travail de la ressource sélectionnée.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>La configuration donnée est utilisée pour afficher une alerte si une valeur autre que zéro est entrée dans la section de la grille de planification pour la journée ayant zéro heure dans le modèle de jours de calendrier de travail de la ressource sélectionné.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Si vrai, les heures facturables non facturables s&apos;affichent via le texte de survol sur chaque total de la ligne de totaux pour toutes les colonnes quotidiennes et la colonne de somme sur la feuille de saisie des temps.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la fenêtre contextuelle de saisie simple apparaît sur la page Saisie de l&apos;heure lorsque vous double-cliquez sur une cellule heure modifiable sur une ligne de la fiche de présence ou que vous appuyez sur la touche BAS pendant que cette cellule est sélectionnée.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Contient un champ dont la valeur sera affichée dans la liste déroulante des jalons de l&apos;interface utilisateur de TC. Si celles-ci sont manquantes / nulles, l&apos;interface utilisateur de TC continue à afficher les champs de nom de jalon des jalons disponibles dans la liste déroulante. Aucune recherche __r références ne sont supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config est utilisé pour contrôler le lien de rappel d&apos;affichage sur chaque feuille de temps soumise. En cliquant dessus, une superposition de rappel sera ouverte, où nous devons saisir le commentaire et rappeler la demande d&apos;approbation de la carte de pointage.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Coché, signifie que la grille de planification sera affichée par défaut sur l&apos;entrée Timard.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Indique si les cases à cocher Déplacement de la nouvelle interface de carte de pointage doivent être affichées. La valeur par défaut est true.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est vraie, la section de grille de programme montrera sur la carte de temps ui sinon</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est true, l&apos;icône de l&apos;info-bulle en regard du nom de l&apos;affectation s&apos;affiche dans la section Planification de TC UI.Default false (comportement existant, pas de colonne d&apos;info-bulle)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config pour afficher ou masquer le champ etc</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Si cela est vrai, le champ de méthodologie de la carte de pointage sera affiché sur l&apos;interface de la carte de pointage.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config pour afficher ou masquer la liste de sélection des jalons</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Si elle est vraie, le champ Phase de la carte de pointage sera affiché sur l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Si la valeur est false, la colonne État / rappel s&apos;affiche immédiatement à droite de la colonne Notes. Si vrai, le statut / rappel s&apos;affichera à droite des champs supplémentaires.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé par l&apos;objet Timecard. Les champs de cet ensemble de champs définissent les champs modifiables affichés à gauche des heures dans la ligne d&apos;en-tête de la carte de pointage de l&apos;interface utilisateur de la carte de pointage.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé par l&apos;objet Timecard. Les champs de cet ensemble de champs définissent les champs modifiables dans la ligne d&apos;en-tête de la fiche de présence dans l&apos;interface de la carte de pointage.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé par l&apos;objet Timecard. Les champs de cet ensemble de champs définissent des champs en lecture seule dans la ligne d&apos;en-tête de la fiche de présence dans l&apos;interface temporelle.</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV pour spécifier les champs d&apos;en-tête de la carte de pointage à copier depuis la planification. Seules ces heures sont valides pour cette config &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé par l&apos;objet Timecard. Les champs de ce champ définissent des champs modifiables dans la section Notes des lignes de la feuille de temps dans l&apos;interface de la carte de pointage.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nom de l&apos;API d&apos;un ensemble de champs utilisé par l&apos;objet Timecard. Les champs de ce champ définissent des champs en lecture seule dans la section Notes des lignes de la feuille de temps dans l&apos;interface de la carte de pointage.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Le champ est utilisé pour contenir la liste des valeurs d&apos;état de la carte de pointage séparées par un coma (,) qui seront masquées sur l&apos;interface utilisateur du TC.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie les tâches à masquer lors du pré-remplissage dans les cartes de temps, sauf si elles ont un temps associé associé. La valeur est une liste de statuts séparés par des virgules.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Indique si la ressource ne peut sélectionner que les tâches auxquelles elle est affectée lors de la saisie du temps par rapport aux tâches du projet. Lorsque cette option n&apos;est pas sélectionnée, les utilisateurs peuvent activer cette fonctionnalité sur la page de saisie des temps.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Définit le comportement de filtrage sur les dates de tâche lors de la sélection de tâches pour entrer du temps. Défini sur Aucun ou Chevauchement. Si aucun, aucun filtrage ne se produit. En cas de chevauchement, les tâches ne sont répertoriées que lorsque la carte de pointage et les tâches sélectionnables se chevauchent à certaines dates.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Le mode de saisie du temps à utiliser lors de la saisie du temps de la tâche pour une ligne de la fiche de présence. Vous pouvez choisir l&apos;une des valeurs suivantes: Ajuster, Actuel, Calculé ou Forme libre. La valeur par défaut est Current.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;affectations supérieures à charger pour afficher sur la superposition projet / affectation</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de semaines pendant lesquelles les principales affectations / projets à charger s&apos;affichent en superposition projet / affectation</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de projets supérieurs à charger pour afficher sur le projet / superposition d&apos;affectation</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Vous permet de changer votre méthode préférée de gestion des champs visibles sur la page Entrée de la carte de pointage. Si la valeur est False, PSA utilisera des options de configuration ou des paramètres personnalisés pour configurer l&apos;interface utilisateur. Si la valeur est True, PSA utilisera des ensembles de champs pour configurer l&apos;interface utilisateur.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Indique si un ID d&apos;affectation doit être utilisé lors de l&apos;affichage des affectations sur la page de fiche de présence</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Le champ / config donné est utilisé pour coder en couleur l&apos;en-tête de la colonne de date pour les jours programmés sur 0 heure conformément au modèle de planification (pas les jours fériés) dans le calendrier de travail de la ressource sélectionnée.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Contrôle la largeur de pixel de la liste déroulante Milestone dans l&apos;interface utilisateur de Timecard Entry. Veuillez spécifier un nombre entier pour cette valeur, car cela ira directement dans la largeur.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Contrôle la largeur de pixel pour la liste déroulante Projet / Affectation sur l&apos;interface utilisateur de la carte de visite. Veuillez spécifier un nombre entier pour cette valeur, car cela ira directement dans la largeur. Pour une valeur ex 300, la largeur de la liste déroulante sera réglée à 300px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

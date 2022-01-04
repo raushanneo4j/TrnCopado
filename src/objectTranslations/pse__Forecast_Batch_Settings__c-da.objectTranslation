@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Faktureringsprognose-batchindstillinger --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Faktureringsprognose-batchindstillinger --></value>
+    </caseValues>
+    <fields>
+        <help>Antallet af poster, der skal behandles i en enkelt batch. Værdien er 200 som standard.</help>
+        <label><!-- Billing Forecast Batch Size --></label>
+        <name>pse__Forecast_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Det maksimale antal prognoseberegninger, der kan køre på én gang. Forlad blank for at bruge anbefalet standard.</help>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via Chatter til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via e-mail til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Angiver meddelelsesmodtagerne for Prognose-batchmeddelelser sendt via Chatter eller e-mail. Værdien er en liste over e-mailadresser adskilt af semikolon (;). Denne indstilling er som standard null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via opgaver. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

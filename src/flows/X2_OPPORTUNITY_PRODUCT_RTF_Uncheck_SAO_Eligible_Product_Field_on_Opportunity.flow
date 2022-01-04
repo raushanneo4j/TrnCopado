@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Check whether the previous search returned any OLIs where the &apos;Eligible for SAO Credit&apos; field = TRUE.</description>
+        <name>Any_Eligible_Products_Left_Decision</name>
+        <label>Any Eligible Products Left?</label>
+        <locationX>168</locationX>
+        <locationY>627</locationY>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_All_SAO_Eligible_Opportunity_Products_Get.EligibleForSAOCredit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Parent_Opportunity_SAO_Credit_FALSE_Update</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Updates the &apos;Eligible for SAO Credit&apos; field on the parent to FALSE when an Opportunity Line Item (OLI) where the &apos;Eligible for SAO Credit&apos; field = TRUE is deleted and no other OLIs where this checkbox = TRUE exist on the Opportunity. JIRA: SFDCSPT-661</description>
+    <interviewLabel>OPPORTUNITY PRODUCT: ! 2 Uncheck ‘SAO Eligible Product&apos; Field on Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPPORTUNITY PRODUCT: ! 2 Uncheck ‘SAO Eligible Product&apos; Field on Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch all SAO credit eligible OLIs on the parent opportunity, if any exist.</description>
+        <name>Get_All_SAO_Eligible_Opportunity_Products_Get</name>
+        <label>Get All SAO Eligible Opportunity Products</label>
+        <locationX>174</locationX>
+        <locationY>472</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Any_Eligible_Products_Left_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EligibleForSAOCredit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OpportunityLineItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Uncheck &apos;Eligible for SAO Credit&apos; Field on Product that started this flow prior to moving to the next step.</description>
+        <name>Uncheck_Eligible_for_SAO_Credit_Field_on_Product_Update</name>
+        <label>Uncheck &apos;Eligible for SAO Credit&apos; Field on Product</label>
+        <locationX>175</locationX>
+        <locationY>306</locationY>
+        <connector>
+            <targetReference>Get_All_SAO_Eligible_Opportunity_Products_Get</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EligibleForSAOCredit__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Uncheck &apos;Eligible for SAO Credit&apos; field on the parent opportunity.</description>
+        <name>Update_Parent_Opportunity_SAO_Credit_FALSE_Update</name>
+        <label>Update Parent Opportunity SAO Credit = FALSE</label>
+        <locationX>361</locationX>
+        <locationY>627</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>EligibleforSAOCredit__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>49</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Uncheck_Eligible_for_SAO_Credit_Field_on_Product_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>EligibleForSAOCredit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>OpportunityLineItem</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

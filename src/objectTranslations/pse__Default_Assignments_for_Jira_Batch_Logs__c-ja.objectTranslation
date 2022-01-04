@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jiraバッチログのデフォルトの割り当て</value>
+    </caseValues>
+    <fields>
+        <help>ログレコード識別子。</help>
+        <label><!-- Default Assignments Jira Batch Log ID --></label>
+        <name>pse__Default_Assignments_Jira_Batch_Log_ID__c</name>
+    </fields>
+    <fields>
+        <help>Jira Batchレコードの関連するデフォルト割り当てへのマスター詳細リンク。</help>
+        <label><!-- Default Assignments for Jira Batch --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ログのタイプ（エラー、情報、中止、外部）を示します。</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>アボート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>エラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>外部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>情報</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>メッセージのテキスト。</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <nameFieldLabel>デフォルトの割り当てJira Batchログ名</nameFieldLabel>
+</CustomObjectTranslation>

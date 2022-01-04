@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_7912371</developerName>
+        <masterLabel>Annual Revenue Range</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Lead.neo_account_revenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <value>Non Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_4712146</developerName>
+        <masterLabel>Matched Account Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead.LeanData__Matched_Account_Type__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Free Startup License</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Past Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Past POC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Past Partner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Services</sourceValue>
+            </sourceValues>
+            <value>Populated</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_5824701</developerName>
+        <masterLabel>Matched Account Name Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead.LeanData__Matched_Account_Name__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <value>None</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>Lead.LeanData__Matched_Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Lead.LeanData__Matched_Account_Billing_Country__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Matched_Account_Shipping_Country__c</field>
+    </columns>
+    <columns>
+        <field>COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>Lead.neo_account_revenue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AT,BE,DK,FI,FR,DE,IE,IL,IT,LU,NL,NO,PT,ES,SE,CH,AE,UK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.neo_account_revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.LeanData__Matched_Account_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>EMEA Core Countries with Matched Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

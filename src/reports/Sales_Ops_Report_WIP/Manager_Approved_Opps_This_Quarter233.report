@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_56147248</developerName>
+        <masterLabel>Territory</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cédric Fauvet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fredrik Johansson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonny Cheetham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vanessa Moultson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gordon Carrick</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Erik Nolten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <value>ROW</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Rice</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Macdonald</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bob Anthony</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Mohr</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Landeros</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Zagalsky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Broad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Caito</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Van Gundy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Fredrickson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Richards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neeraj Gupta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Briant</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Wilcox</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sam Magnus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherman Urrutia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lewis Guess</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julio Bayona</sourceValue>
+            </sourceValues>
+            <value>North America</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Opp_Count_1__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Line_Item_ID__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SFDC_Opp_ID__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Sales_Development_Rep__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Qualification_Date__c</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Use_Case__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Manager_Approval_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PartnerInvolvedAccountAsync__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Source__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5) OR (1 AND 2 AND 3 AND 6 AND 7) OR (1 AND 2 AND 10 AND 4 AND 9) OR (1 AND 2 AND 6 AND 10 AND 8))</booleanFilter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Cross-Sell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Subscription - OEM (Platform),Subscription - Enterprise,Subscription - Business Bundle,Subscription - Discovery Bundle,Subscription - Enterprise Bundle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>United States,Canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>United States,Canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>100 - 500 Million,500 Million - 1 Billion,1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0 - 10 Million,10 - 25 Million,25 - 100 Million</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0 - 10 Million,10 - 25 Million,25 - 100 Million,100 - 500 Million,500 Million - 1 Billion</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Qualification_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Recorded_Opp__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Rep_Geo__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>1.All Opportunities Created This Quarter</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Account_Revenue__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Manager_Approval_Date__c</dateColumn>
+        <interval>INTERVAL_PREV1</interval>
+    </timeFrameFilter>
+</Report>

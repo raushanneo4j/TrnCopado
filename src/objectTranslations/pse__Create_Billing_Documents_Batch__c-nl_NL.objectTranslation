@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Creëer facturatiedocumenten batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Creëer facturatiedocumenten batches</value>
+    </caseValues>
+    <fields>
+        <help>Unieke identificeerder voor de huidige Apex-taak.</help>
+        <label><!-- Apex Job ID --></label>
+        <name>pse__Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help>Link naar de batchprocesrecord. Het batchprocesrecord wordt automatisch verwijderd als het proces succesvol is voltooid.</help>
+        <label><!-- Batch Process --></label>
+        <name>pse__Batch_Process__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het type melding dat wordt verzonden wanneer het proces is voltooid: succesvol, mislukt of gemengd.</help>
+        <label><!-- Notification Type --></label>
+        <name>pse__Notification_Type__c</name>
+    </fields>
+    <fields>
+        <help>De huidige status van de batchtaak: &quot;Verwerken&quot;, &quot;Voltooien&quot; of &quot;Fout&quot;.</help>
+        <label><!-- Status --></label>
+        <name>pse__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Compleet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fout</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Verwerken</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is afgebroken.</help>
+        <label><!-- Total Number of Aborts --></label>
+        <name>pse__Total_Number_Of_Aborts__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is Fout.</help>
+        <label><!-- Total Number of Errors --></label>
+        <name>pse__Total_Number_Of_Errors__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal logboeken waarbij het logboektype is Externe.</help>
+        <label><!-- Total Number of External --></label>
+        <name>pse__Total_Number_Of_External__c</name>
+    </fields>
+    <fields>
+        <help>Het totale aantal logboeken.</help>
+        <label><!-- Total Number of Logs --></label>
+        <name>pse__Total_Number_Of_Logs__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Layout</layout>
+        <sections>
+            <label>Aangepaste links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Creëer facturatiedocumenten batch ID</nameFieldLabel>
+</CustomObjectTranslation>

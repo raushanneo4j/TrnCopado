@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Est Vs Aktuals Settings --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Est Vs Aktuals Settings --></value>
+    </caseValues>
+    <fields>
+        <help>Hvorvidt Est Vs Actuals-felterne afledt af skemaet (f.eks. Estimerede Timer) skal opdateres for Est Vs Actuals-poster, der har en slutdato forud for starten af ​​denne uge.</help>
+        <label><!-- Adjust Past Est on Records with Actuals --></label>
+        <name>pse__Adjust_Past_Est_on_Records_with_Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Est Vs Actuals Batch Size --></label>
+        <name>pse__Delete_Est_Vs_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Slet Est vs Actuals-poster, selvom de har aktualer indstillet til poster, der ikke længere er inden for en ændret tidsplans datoperiode. BEMÆRK: Optegnelser uden aktualer vil altid blive slettet.</help>
+        <label><!-- Delete Out of Range Records With Actuals --></label>
+        <name>pse__Delete_Out_of_Range_Records_With_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Kommasepareret liste over tidsperiodetyper, for hvilke der skal genereres EVA-poster</help>
+        <label><!-- Generate Custom Time Period Records --></label>
+        <name>pse__Generate_Custom_Time_Period_Records__c</name>
+    </fields>
+    <fields>
+        <help>Uanset om du vil generere Est Vs Actuals poster efter måned</help>
+        <label><!-- Generate Monthly Records --></label>
+        <name>pse__Generate_Monthly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Uanset om der skal genereres Est Vs Actuals-poster pr. Kvartal</help>
+        <label><!-- Generate Quarterly Records --></label>
+        <name>pse__Generate_Quarterly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Uanset om du vil generere est vs aktualer i ugen</help>
+        <label><!-- Generate Weekly Records --></label>
+        <name>pse__Generate_Weekly_Records__c</name>
+    </fields>
+    <fields>
+        <help>Opret Est Vs Actuals poster for tidskort, der har timer uden for opgavens start- og slutdato. Est Vs Actuals-optegnelserne har nulværdier for estimater på disse poster.</help>
+        <label><!-- Process Out Of Range Timecards --></label>
+        <name>pse__Process_Out_Of_Range_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Den kommaseparerede liste over de Timecard-statusfeltværdier, der skal bruges til at bestemme, om tidskortet skal bruges til beregning af Estimater vs Actuals</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Actuals Batch Size --></label>
+        <name>pse__Update_Actuals_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Estimates Batch Size --></label>
+        <name>pse__Update_Estimates_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definerer den anvendte batchstørrelse ved opdatering af projektlederfeltet fra Project. Standardværdien er 2000. Kontakt FinansForce Support før du ændrer denne indstilling.</help>
+        <label><!-- Update Project Manager Field Batch Size --></label>
+        <name>pse__Update_Project_Manager_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Hvis markeret, forårsager denne indstilling opdateringer til projektlederfeltet, der afspejles i alle Est Vs Actuals-poster for det pågældende projekt.</help>
+        <label><!-- Update Project Manager From Project --></label>
+        <name>pse__Update_Project_Manager_From_Project__c</name>
+    </fields>
+    <fields>
+        <help>Definerer antallet af Est Vs Actuals-poster for at behandle synkront ved opdatering af projektlederfeltet fra Project. Records over denne værdi behandles i en batch. Standardindstillingen er 9000. Kontakt med support, inden du ændrer denne indstilling.</help>
+        <label><!-- Update Project Manager Field Sync Limit --></label>
+        <name>pse__Update_Project_Manager_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Når det er sandt, bliver ugentlige estimater vs aktualer ikke automatisk genereret, hvis du har defineret brugerdefinerede tidsperioder af en uges type, der overlapper en given opgave. Standardindstillingen er falsk.</help>
+        <label><!-- Disable Automatic Weekly Time Periods --></label>
+        <name>pse__Use_Week_Time_Periods_If_In_Range__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

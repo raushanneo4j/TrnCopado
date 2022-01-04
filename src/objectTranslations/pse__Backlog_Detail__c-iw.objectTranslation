@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>פירוט הצבר</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>פרטי הצבר</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Time Period Type --></label>
+        <name>psa_report__Time_Period_Type__c</name>
+    </fields>
+    <fields>
+        <help>הקצאה קשורה - חלה רק אם מוגדר גם משאב</help>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Backlog Calculation --></label>
+        <name>pse__Backlog_Calculation__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>סכום חיובים המשמש לחישוב הכנסות שלא מתוכננות</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings__c</name>
+    </fields>
+    <fields>
+        <help>סכום ההזמנות המשמש לחישוב סכום ההכנסה שלא מתוכנן</help>
+        <label><!-- Bookings --></label>
+        <name>pse__Bookings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Time Cost --></label>
+        <name>pse__External_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request External Cost --></label>
+        <name>pse__Held_Resource_Request_External_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Hours --></label>
+        <name>pse__Held_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Internal Cost --></label>
+        <name>pse__Held_Resource_Request_Internal_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Held Resource Request Revenue --></label>
+        <name>pse__Held_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Project Backlog --></label>
+        <name>pse__Inactive_Project_Backlog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Time Cost --></label>
+        <name>pse__Internal_Time_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reusable --></label>
+        <name>pse__Is_Reusable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Cost --></label>
+        <name>pse__Milestone_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone Revenue --></label>
+        <name>pse__Milestone_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>המספר הכולל של הימים שנקבעו על פי לוחות זמנים להקצאה וחריגים של לוח הזמנים. לדוגמה, אם למשימה יש לוח זמנים של 4 שעות מגה-וואט ותקופת החישוב היא תקופה כלולה של שבועיים, הערך יהיה 6 ימים (3 ימים / שבוע * 2)</help>
+        <label><!-- Scheduled Days --></label>
+        <name>pse__Scheduled_Days__c</name>
+    </fields>
+    <fields>
+        <help>מספר השעות שנקבעו על בסיס לוחות זמנים להקצאה וחריגים מתוזמנים בטווח זמן החישוב.</help>
+        <label><!-- Scheduled Hours --></label>
+        <name>pse__Scheduled_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Backlog Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>הכנסות הניתנות לחיוב ממשימות מתוזמנות. עבור הקצאות לפי שעה, זהו מספר השעות המתוזמנות * שיעור החיוב. למטלות עם שיעור חיוב יומי, זהו מספר הימים שנקבעו * שער החיוב.</help>
+        <label><!-- Time Revenue --></label>
+        <name>pse__Time_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Cost --></label>
+        <name>pse__Unheld_Resource_Request_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Hours --></label>
+        <name>pse__Unheld_Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unheld Resource Request Revenue --></label>
+        <name>pse__Unheld_Resource_Request_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unscheduled Revenue --></label>
+        <name>pse__Unscheduled_Revenue__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Backlog Detail Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>הכנסות</label>
+            <section>Revenue</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מזהה פרטי צבר</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- プロジェクトタスクガント設定 --></value>
+    </caseValues>
+    <fields>
+        <help>選択した場合、タスクの日付がマイルストーンの目標日付の範囲外になると、警告グラフィックとツールチップメッセージが表示されます。</help>
+        <label><!-- Alerts - Task dates - Milestone --></label>
+        <name>pse__Alert_Task_Dates_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、タスク日がプロジェクトタスク割り当て日の範囲外になると、アラートグラフィックとツールチップメッセージが表示されます。</help>
+        <label><!-- Alerts - Task dates - PTA dates --></label>
+        <name>pse__Alert_Task_Dates_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、タスクの日付がプロジェクトの開始日と終了日の範囲外になると、警告グラフィックとツールチップが表示されます。</help>
+        <label><!-- Alerts - Task dates - Project --></label>
+        <name>pse__Alert_Task_Dates_Project__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、タスク時間がプロジェクトタスク割り当て時間の範囲外になると、アラートグラフィックとツールチップメッセージが表示されます。</help>
+        <label><!-- Alerts - Task hours - PTA hours --></label>
+        <name>pse__Alert_Task_Hours_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、Project Task GanttはDay Detailズームレベルを提供し、スケジュールされた時間を拡張された日表示で表示します。デフォルトはfalseです。</help>
+        <label><!-- Enable Day Detail --></label>
+        <name>pse__Enable_Day_Detail__c</name>
+    </fields>
+    <fields>
+        <help>[保存]をクリックするたびにダイアログボックスを表示するかどうかを決定します。これにより、組織内の実際のレコードにコミットする前に、プロジェクトタスクに対して提案された変更を確認できます。この設定はデフォルトでは選択されていません。</help>
+        <label><!-- Hide Preview and Confirmation on Save --></label>
+        <name>pse__Hide_Save_Preview__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Ganttの[Create Resource Demand]ボタンをクリックしたときのデフォルトのリソース需要タイプを指定します。値は、「リソース要求」、「保留リソース要求」、または「割り当て」です。デフォルト値は「リソース要求」です。</help>
+        <label><!-- Resource Demand Default --></label>
+        <name>pse__Resource_Demand_Default__c</name>
+    </fields>
+    <fields>
+        <help>ガントでタスクノートを表示する</help>
+        <label><!-- Show Task Notes --></label>
+        <name>pse__Show_Task_Notes__c</name>
+    </fields>
+    <fields>
+        <help>既定の[プロジェクト作業ガント]作業ウィンドウの選択動作をダブルクリックからシングルクリックに変更できます。この設定はデフォルトでは選択されていません。</help>
+        <label><!-- Single Click Task Selection --></label>
+        <name>pse__Single_Click_Task_Selection__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、新しいプロジェクトタスク割り当てが既存の割り当てまたはリソース要求にリンクされないように、プロジェクトタスクガントのデフォルトの動作を変更できます。この設定はデフォルトでは選択されていません。</help>
+        <label><!-- Suppress Auto Link Assignment --></label>
+        <name>pse__Suppress_Auto_Link_PTA__c</name>
+    </fields>
+    <fields>
+        <help>タイムラインのデフォルトのズームレベルを指定します。有効な値は次のとおりです。四半期、月、週、日、または日の詳細。この設定は、デフォルトでは週に設定されています。</help>
+        <label><!-- Zoom Level --></label>
+        <name>pse__Zoom_Level__c</name>
+    </fields>
+</CustomObjectTranslation>

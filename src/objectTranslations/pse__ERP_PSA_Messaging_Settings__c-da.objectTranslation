@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Grundlæggende indstillinger for PSA-meddelelser --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Grundlæggende indstillinger for PSA-meddelelser --></value>
+    </caseValues>
+    <fields>
+        <help>ERP-nøgle navn til brug for filtrering af fraværsforespørgselsmeddelelser.</help>
+        <label><!-- Absence Filter Field Key --></label>
+        <name>pse__Absence_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-meddelelsesnøgleværdier, der bruges til at filtrere fraværsforespørgselsmeddelelser. Tekst- og Picklist-felter understøtter flere, semikolon-afgrænsede værdier.</help>
+        <label><!-- Absence Filter Values --></label>
+        <name>pse__Absence_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>Salesforce-post-id&apos;et for projektet, der skal bruges, når der oprettes time-out-opgaver via ERP.</help>
+        <label><!-- Absence Request Project --></label>
+        <name>pse__Absence_Request_Project__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, godkender PSA automatisk tidsskrifter, der oprettes via PSA Assignment API, når der findes en relevant godkendelsesproces på Timecard-objektet.</help>
+        <label><!-- Automatically Approve API Timecards --></label>
+        <name>pse__Automatically_Approve_API_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er valgt, opretter PSA aktive ressourceregistre, når API Resource Correlation ID er befolket. API Resource Correlation ID er altid befolket, når detaljer indtastes via API.</help>
+        <label><!-- Create Records as Active Resources --></label>
+        <name>pse__Create_Records_as_Active_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt og API Resource Correlation ID er befolket, starter PSA-opdateringsdatoen eller sidste dato, når en ressources ansættelsesstatus bliver aktiv eller afsluttet. API Resource Correlation ID er altid befolket, når detaljer indtastes via API.</help>
+        <label><!-- Update Resource Employment Dates --></label>
+        <name>pse__Update_Resource_Employment_Dates__c</name>
+    </fields>
+    <fields>
+        <help>ERP-nøglenavn til brug for filtrering af medarbejdermeddelelser til oprettelse af personkonti.</help>
+        <label><!-- Worker Account Filter Field Key --></label>
+        <name>pse__Worker_Account_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-meddelelsesnøgleværdier, der bruges til at filtrere medarbejdermeddelelser til oprettelse af personkonti. Tekst- og Picklist-felter understøtter flere, semikolon-afgrænsede værdier.</help>
+        <label><!-- Worker Account Filter Values --></label>
+        <name>pse__Worker_Account_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>ERP-nøgle navn til brug for filtrering af medarbejdermeddelelser.</help>
+        <label><!-- Worker Filter Field Key --></label>
+        <name>pse__Worker_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>ERP-meddelelsesnøgleværdier, der bruges til at filtrere medarbejdermeddelelser til oprettelse af kontakter. Tekst- og Picklist-felter understøtter flere, semikolon-afgrænsede værdier.</help>
+        <label><!-- Worker Filter Values --></label>
+        <name>pse__Worker_Filter_Values__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

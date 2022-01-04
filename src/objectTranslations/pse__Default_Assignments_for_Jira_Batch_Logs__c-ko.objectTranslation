@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jira 배치 로그의 기본 할당</value>
+    </caseValues>
+    <fields>
+        <help>로그 레코드 식별자</help>
+        <label><!-- Default Assignments Jira Batch Log ID --></label>
+        <name>pse__Default_Assignments_Jira_Batch_Log_ID__c</name>
+    </fields>
+    <fields>
+        <help>Jira Batch 레코드에 대한 관련 기본 할당에 대한 마스터-디테일 링크.</help>
+        <label><!-- Default Assignments for Jira Batch --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch__c</name>
+        <relationshipLabel><!-- Default Assignments for Jira Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>로그 유형 (오류, 정보, 중단, 외부)을 나타냅니다.</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>중단</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>오류</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>외부</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>정보</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>메시지의 텍스트</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <nameFieldLabel>기본 할당 Jira 배치 로그 이름</nameFieldLabel>
+</CustomObjectTranslation>

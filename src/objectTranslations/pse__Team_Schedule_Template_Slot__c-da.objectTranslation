@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Team Schedule Template Slot</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Team Schedule Template Slots</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Den tid, hvor tidsplanens slot slutter.</help>
+        <label><!-- End Time --></label>
+        <name>pse__End_Time__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af timer, der kræves pr. Ressource i tidsplanens slot.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af ressourcer, der kræves til tidsplanens slot.</help>
+        <label><!-- Resources Required --></label>
+        <name>pse__Resources_Required__c</name>
+    </fields>
+    <fields>
+        <help>Den tid, hvor tidsplanens slot begynder.</help>
+        <label><!-- Start Time --></label>
+        <name>pse__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Schedule Slot Type --></label>
+        <name>pse__Team_Schedule_Slot_Type__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Holdplanskabelonen er forbundet med denne tidsplan.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Team Schedule Template Slot Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Team Schedule Template Slot Name</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Hours should be non-negative values in increments of 0.25. --></errorMessage>
+        <name>pse__Hours_Must_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Number of Resources should be between 1 to 99. --></errorMessage>
+        <name>pse__Resource_Should_Be_In_Range</name>
+    </validationRules>
+</CustomObjectTranslation>

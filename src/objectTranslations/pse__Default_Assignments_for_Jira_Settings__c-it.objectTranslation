@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Assegnazioni predefinite per le impostazioni di Jira --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Assegnazioni predefinite per le impostazioni di Jira --></value>
+    </caseValues>
+    <fields>
+        <help>Il numero di record da elaborare in un singolo batch. Il valore è 1 per impostazione predefinita.</help>
+        <label><!-- Default Assignments for Jira Batch Size --></label>
+        <name>pse__Default_Assignments_for_Jira_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Specifica i destinatari della notifica per le assegnazioni predefinite per le notifiche batch Jira inviate tramite Chatter, e-mail o attività. Il valore è un elenco di indirizzi e-mail separati da punti e virgola (;). Se lasciato vuoto, viene notificato all&apos;utente che ha avviato il processo.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notification_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le notifiche dalle assegnazioni predefinite per i processi batch Jira vengono inviate tramite Chatter ai destinatari elencati nel campo Destinatari delle notifiche. Questo è deselezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_by_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le notifiche dalle assegnazioni predefinite per i processi batch Jira vengono inviate via e-mail ai destinatari elencati nel campo Destinatari delle notifiche. Questo è deselezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_by_Email__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le notifiche dalle assegnazioni predefinite per i processi batch Jira vengono inviate tramite le attività ai destinatari elencati nel campo Destinatari delle notifiche. Questo è deselezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_by_Task__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

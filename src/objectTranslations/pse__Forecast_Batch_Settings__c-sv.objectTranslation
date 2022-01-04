@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Faktureringsprognosgruppsinställningar --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Faktureringsprognosgruppsinställningar --></value>
+    </caseValues>
+    <fields>
+        <help>Antalet poster som ska behandlas i en enda sats. Värdet är 200 som standard.</help>
+        <label><!-- Billing Forecast Batch Size --></label>
+        <name>pse__Forecast_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Det maximala antalet prognosberäkningar som kan köras samtidigt. Lämna tomma för att använda rekommenderad standard.</help>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs skickas meddelanden från prognosbatchprocesser via Chatter till mottagare som listas i inställningsmeddelanden Mottagare. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs skickas meddelanden från prognostiserade satsprocesser via e-post till mottagare som anges i inställningsmeddelanden Mottagare. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Anger anmälningsmottagarna för prognosmeddelanden som skickas via Chatter eller e-post. Värdet är en lista med e-postadresser separerade av semikolon (;). Den här inställningen är som standard null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs skickas meddelanden från prognosbatchprocesser via uppgifter. Detta är avmarkerat som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Projektversion av globala inställningar --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Projektversion av globala inställningar --></value>
+    </caseValues>
+    <fields>
+        <help><!-- This field is reserved for future development. Do not use. --></help>
+        <label><!-- DEPRECATED:Capturing Version Config Name --></label>
+        <name>pse__Capturing_Version_Config_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definierar batchstorleken när du skapar Projekt Versioner. Standardvärdet är 500.</help>
+        <label><!-- Create Version Batch Size --></label>
+        <name>pse__Create_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definierar batchstorleken när du tar bort projektversioner. Standardvärdet är 500.</help>
+        <label><!-- Delete Version Batch Size --></label>
+        <name>pse__Delete_Version_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definierar namnet på den statiska resursen (med namnpace prefix) som används för att anpassa språk och grafik i introduktionen Quick Help for Compare Versions. Lämna tomt för att använda standardresursen.</help>
+        <label><!-- View Project Version Quick Help Resource --></label>
+        <name>pse__VPV_Quick_Help_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Definierar antalet poster som är laddade i detaljvy av Visa projektversioner. Att öka värdet kan förbättra belastningstider men kan stöta på plattformsgränser. Standardvärdet är 500. Att ange 0 som ett värde för detta fält resulterar i att inga poster laddas.</help>
+        <label><!-- View Project Version Records Loaded --></label>
+        <name>pse__VPV_Records_loaded_per_call__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

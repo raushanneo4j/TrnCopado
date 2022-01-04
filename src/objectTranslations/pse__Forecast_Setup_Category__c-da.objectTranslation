@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Opsætningskategori for faktureringsprognose</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Opsætningskategorier for faktureringsprognose</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>Multiplikatoren anvendte til det faktiske fakturerbare beløb på et projekt. Dette inkluderer Billed Timecards, Billed Milestones og Diverse Justeringer.</help>
+        <label><!-- Billings --></label>
+        <name>pse__Billings_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte udgifterne til et projekt. Dette er det fakturerbare beløb for udgifterne.</help>
+        <label><!-- Expenses --></label>
+        <name>pse__Expense_Actuals__c</name>
+    </fields>
+    <fields>
+        <help>Prognosen opsætningen denne prognose kategori bruges sammen med. Du skal konfigurere mindst en prognose kategori.</help>
+        <label><!-- Billing Forecast Setup --></label>
+        <name>pse__Forecast_Setup__c</name>
+        <relationshipLabel><!-- Billing Forecast Setup Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Mærket vises for en vægtet prognose kategori, for eksempel Forventet, Bedste sag, værste tilfælde.</help>
+        <label><!-- Label --></label>
+        <name>pse__Label__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte muligheder for denne vejede prognose kategori.</help>
+        <label><!-- Opportunities --></label>
+        <name>pse__Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Den rækkefølge, som prognose kategorierne anvendes i prognosen beregning. Du kan indtaste værdier fra 1 til 3.</help>
+        <label><!-- Category Order --></label>
+        <name>pse__Order__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt er blevet udskrevet og blevet erstattet af Order__c</help>
+        <label><!-- zDeprecated:Category Order --></label>
+        <name>pse__Ordinal__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte værdien af ​​opgaverne på et projekt.</help>
+        <label><!-- Scheduled Assignments --></label>
+        <name>pse__Scheduled_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren blev anvendt til ressourceanmodningstimerne på et projekt, når feltet Resource Held er markeret.</help>
+        <label><!-- Held Resource Requests --></label>
+        <name>pse__Scheduled_Held_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte værdien af ​​de planlagte milepæle for et projekt.</help>
+        <label><!-- Scheduled Milestones --></label>
+        <name>pse__Scheduled_Milestones__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte til de planlagte ressourceanmodningstimer for et projekt, når feltet Ressourcehelt ikke er markeret.</help>
+        <label><!-- Unheld Resource Requests --></label>
+        <name>pse__Scheduled_Unheld_Resource_Requests__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatoren anvendte værdien af ​​den uplanlagte baglog på et projekt ved hjælp af den værdi, der genereres af baggrundsberegningen.</help>
+        <label><!-- Unscheduled Backlog --></label>
+        <name>pse__Unscheduled_Backlog__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Setup Category Layout</layout>
+        <sections>
+            <label>Brugerdefinerede links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognoseopsætningskategorina</nameFieldLabel>
+</CustomObjectTranslation>

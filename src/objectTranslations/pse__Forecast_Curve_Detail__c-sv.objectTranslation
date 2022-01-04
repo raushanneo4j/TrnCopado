@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognoskurvdetalj</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognoskurvan</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>En uppslag till prognoskurvobjektet.</help>
+        <label><!-- Billing Forecast Curve --></label>
+        <name>pse__Forecast_Curve__c</name>
+        <relationshipLabel><!-- Billing Forecast Curve Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Procentandelen av det totala prognostiserade beloppet som förväntas per kurvpunkt i kvart.</help>
+        <label><!-- Percent Burndown --></label>
+        <name>pse__Percent_Burndown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period --></label>
+        <name>pse__Period__c</name>
+    </fields>
+    <fields>
+        <help>Kontrollerar den ordning i vilken prognoskurvan specificeras på prognoskurvan. Varje prognoskurvdetaljpost på en kurva måste ha ett annat tal i detta fält för att indikera dess plats på kurvan.</help>
+        <label><!-- Sequence --></label>
+        <name>pse__Sequence__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Curve Detail Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognoskurvsdetaljnamn</nameFieldLabel>
+</CustomObjectTranslation>

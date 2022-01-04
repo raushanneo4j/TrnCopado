@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Tidsvariasjon</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Tidsavvik</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Allowed Variance Over --></label>
+        <name>pse__Allowed_Variance_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allowed Variance Under --></label>
+        <name>pse__Allowed_Variance_Under__c</name>
+    </fields>
+    <fields>
+        <help>Antall innsendte timer som kan faktureres.</help>
+        <label><!-- Billable Hours --></label>
+        <name>pse__Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Antall innsendte timer som krediteres.</help>
+        <label><!-- Credited Hours --></label>
+        <name>pse__Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Angir at fakturerbare timer ble ekskludert når denne tidsvarianten ble beregnet.</help>
+        <label><!-- Exclude Billable Hours --></label>
+        <name>pse__Exclude_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Angir at krediterte timer ble ekskludert når denne tidsvarianten ble beregnet.</help>
+        <label><!-- Exclude Credited Hours --></label>
+        <name>pse__Exclude_Credited_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Angir at ekskluderte timer ble ekskludert når denne tidsvarianten ble beregnet.</help>
+        <label><!-- Exclude Excluded Hours --></label>
+        <name>pse__Exclude_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Antall innsatte timer som er utelukket.</help>
+        <label><!-- Excluded Hours --></label>
+        <name>pse__Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Antall innsendte timer som ikke kan faktureres.</help>
+        <label><!-- Non-billable Hours --></label>
+        <name>pse__Nonbillable_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Time Variances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Time Variance Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Variance Calculation --></label>
+        <name>pse__Time_Variance_Calculation__c</name>
+        <relationshipLabel><!-- Time Variance Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Hours Submitted --></label>
+        <name>pse__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <fields>
+        <help>Antall timer fra ressursens arbeidskalender.</help>
+        <label><!-- Work Calendar Hours --></label>
+        <name>pse__Work_Calendar_Hours__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Variance Layout</layout>
+        <sections>
+            <label>Tilpassede koblinger</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Tidsvariantnavn</nameFieldLabel>
+</CustomObjectTranslation>

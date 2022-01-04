@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 請求予測のバッチ設定 --></value>
+    </caseValues>
+    <fields>
+        <help>単一バッチで処理するレコードの数デフォルト値は200です。</help>
+        <label><!-- Billing Forecast Batch Size --></label>
+        <name>pse__Forecast_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>一度に実行できる請求予測計算の最大数。推奨されるデフォルトを使用するには、空白のままにします。</help>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、請求予測バッチプロセスからの通知は、Chatterを介して通知受信者設定にリストされている受信者に送信されます。これはデフォルトでは選択解除されています。</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Billing Forecastバッチプロセスからの通知が、[通知の受信者]設定にリストされている受信者にメールで送信されます。これはデフォルトで選択されています。</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Chatterまたは電子メール経由で送信されるBilling Forecastバッチ通知の通知受信者を指定します。値は、セミコロン（;）で区切られた電子メールアドレスのリストです。この設定はデフォルトではヌルです。</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Billing Forecastバッチプロセスからの通知がタスク経由で送信されます。これはデフォルトでは選択解除されています。</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+</CustomObjectTranslation>

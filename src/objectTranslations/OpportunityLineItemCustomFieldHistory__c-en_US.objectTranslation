@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OpportunityLineItemCustomFieldHistory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OpportunityLineItemCustomFieldHistories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Modified By --></label>
+        <name>Modified_By__c</name>
+        <relationshipLabel><!-- OpportunityLineItemCustomFieldHistories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Edited on --></label>
+        <name>Modified_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityId --></label>
+        <name>OpportunityId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OLI/PLI Id --></label>
+        <name>OpportunityLineItem_Record_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Not required, but history tracked.  By design What to do if the lookup record is deleted?	is set to Clear the value of this field. --></help>
+        <label><!-- OpportunityLkup --></label>
+        <name>OpportunityLookup__c</name>
+        <relationshipLabel><!-- OpportunityLineItemCustomFieldHistories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- new value --></label>
+        <name>current_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- developer note --></label>
+        <name>developer_note__c</name>
+    </fields>
+    <fields>
+        <help><!-- field name (only tracks ARR__c) --></help>
+        <label><!-- field name --></label>
+        <name>field_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject API --></label>
+        <name>object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- previous value --></label>
+        <name>previous_value__c</name>
+    </fields>
+    <layouts>
+        <layout>OpportunityLineItemCustomHistory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

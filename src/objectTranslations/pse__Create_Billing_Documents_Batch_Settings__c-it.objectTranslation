@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Crea impostazioni batch documenti di fatturazione --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Crea impostazioni batch documenti di fatturazione --></value>
+    </caseValues>
+    <fields>
+        <help>Il numero di record da elaborare in un singolo batch. Il valore è 3 per impostazione predefinita.</help>
+        <label><!-- Create Billing Documents Batch Size --></label>
+        <name>pse__Create_Billing_Documents_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le notifiche dai processi batch Crea documenti di fatturazione vengono inviate tramite Chatter ai destinatari elencati nell&apos;impostazione Destinatari notifica. Questo è deselezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Se questa opzione è selezionata, le notifiche dei processi batch Crea documenti di fatturazione vengono inviate tramite e-mail ai destinatari elencati nell&apos;impostazione Destinatari notifica. Questo è selezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Specifica i destinatari della notifica per le notifiche batch Crea documenti di fatturazione inviati tramite Chatter o e-mail. Il valore è un elenco di indirizzi email separati da punto e virgola (;). Questa impostazione è null per impostazione predefinita.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le notifiche dai processi batch Crea documenti di fatturazione vengono inviate tramite le attività. Questo è deselezionato per impostazione predefinita.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

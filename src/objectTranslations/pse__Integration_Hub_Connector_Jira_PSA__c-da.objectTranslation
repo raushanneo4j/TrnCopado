@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Integration Hub Connector: Jira - PSA --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Integration Hub Connector: Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>E-mail-adresse for modtagelse af fejlmeddelelser, hvis integrationen med Jira fejler.</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>Webadressen til Jira-applikationen. Bruges til godkendelse.</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>Når feltet PSA-projekter til Jira-emner er valgt, bestemmes kategorien af Jira-problemstatus, der opdaterer det kortlagte projektfelt med den værdi, der er defineret i PSA-feltværdi til opdatering af projekter.</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>Når feltet Aktiver synkroniseringsprojekter med Jira Issues-feltet er valgt, bestemmer typen af Jira-problemer. PSA-projekter synkroniseres med. Denne værdi er hovedtekstmæssig, og udstedelsestypen skal findes i din Jira-applikation.</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om PSA-ressourcer synkroniseret til Jira modtager en email-besked med deres Jira-brugernavn og et link til at angive deres adgangskode.</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Når det vælges, kortlægges PSA-projekter til Jira-spørgsmål i stedet for til Jira-projekter. Typen af Jira-udgave bestemmes af værdien af feltet Jira-emnetype.</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antal tidskortdage, der begynder med mandag, kan tiden logges mod hver uge for en ressource. Du kan indtaste et helt tal mellem 1 og 7. For eksempel skal du indtaste 5 for at aktivere time logging for mandag til fredag.</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Maksimalt antal timekort timer, der kan logges hver dag for en ressource. Du kan indtaste en værdi mellem 1 og 24.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Når feltet PSA-projekter til Jira-emner er valgt, bestemmes den værdi, som det kortlagte projektfelt opdateres med, når et Jira-emne har status defineret i Jira-emne-statuskategori. Denne værdi er store og små bogstaver.</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Navn på Jira-brugerdefineret felt, der bruges til at forbinde et problem med en overordnet udstedelsestype, for eksempel Forældre Link. Forholdet kan have flere niveauer, men den type, der er defineret i Jira Issue Type, er den højeste, der tages i betragtning.</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om Jira-arbejdslogfiler skal synkroniseres med PSA-tidskort. Udfyldes automatisk, når Sync Work Logs fra Jira til Timecards i PSA-workflow er aktiveret ved hjælp af Feature Console.</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om PSA-projekter skal synkroniseres med Jira-spørgsmål. Udfyldes automatisk, når synkroniseringsprojekter fra PSA til problemer i Jira-arbejdsgang er aktiveret ved hjælp af funktionskonsollen.</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om PSA-projekter skal synkroniseres med Jira-projekter. Udfyldes automatisk, når synkroniseringsprojekter fra PSA til projekter i Jira-arbejdsgang er aktiveret ved hjælp af funktionskonsollen.</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om PSA-ressourcer skal synkroniseres med Jira-brugere. Udfyldes automatisk, når synkroniseringsressourcer fra PSA til brugere i Jira-arbejdsgang er aktiveret ved hjælp af funktionskonsollen.</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>Status, hvor tidskort oprettes.</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om PSA-projekter skal opdateres baseret på Jira-udstedelsesstatus.</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>Angiver, om Jira-applikationen, der er angivet i Jira-applikationsadressen, er en Jira Cloud-version. Forlad afvælgelse, hvis du bruger Jira Server.</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

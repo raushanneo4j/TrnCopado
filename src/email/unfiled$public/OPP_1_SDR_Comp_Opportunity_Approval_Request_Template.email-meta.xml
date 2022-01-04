@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is used for all designated approvers for the 1% SDR Comp Opportunity Approval Process . JIRA: SFDCSPT-481</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OPP: 1% SDR Comp Opportunity Approval Request Template</name>
+    <style>none</style>
+    <subject>&apos;{!Opportunity.Name}&apos; 1% Opportunity approval request for SDR comp requires your attention</subject>
+    <textOnly>Hi there,
+
+{!Opportunity.OwnerFirstName} {!Opportunity.OwnerLastName} has requested your approval for the 1% &apos;{!Opportunity.Name}&apos; to be included in their compensation for the current month.
+
+To directly access the Opportunity record itself, click here {!Opportunity.Link}.
+To navigate to the approval request, click here {!ApprovalRequest.Internal_URL}.
+
+ADDITIONAL OPPORTUNITY DETAILS
+
+
+Approval step stage: {!ApprovalRequest.Process_Step_Name}
+Sales Stage: {!Opportunity.StageName}
+Opportunity Source: {!Opportunity.Opportunity_Source__c}
+Account: {!Opportunity.Account}
+Requestor&apos;s Comments: {!ApprovalRequest.Comments}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

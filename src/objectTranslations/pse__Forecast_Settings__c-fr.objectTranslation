@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Obsolète: Paramètres de prévision --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Obsolète: Paramètres de prévision --></value>
+    </caseValues>
+    <fields>
+        <help>Entrez le nombre de jours avant la date actuelle à utiliser comme date limite pour les éléments réels et programmés. Utilisez 0 pour aujourd&apos;hui. Laissez vide pour utiliser automatiquement &quot;la fin de la semaine dernière&quot;</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;enregistrements à traiter en un seul lot. La valeur est 200 par défaut.</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 1.</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 2.</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 3.</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 4.</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 5.</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 6.</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;étiquette attribuée au montant de la prévision pondérée pour la catégorie 7.</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>La courbe de prévision appliquée lorsque aucune courbe n&apos;est définie pour une opportunité. Un message d&apos;erreur s&apos;affiche si aucune courbe n&apos;est définie pour une opportunité et qu&apos;aucune courbe d&apos;opportunité par défaut n&apos;est définie.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>La courbe de prévision appliquée lorsqu&apos;il n&apos;y a pas de courbe définie pour un projet. Un message d&apos;erreur s&apos;affiche si aucune courbe n&apos;est définie sur un projet et qu&apos;aucune courbe de projet par défaut n&apos;est définie.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications provenant des processus de traitement par lots de Prévisions sont envoyées via Chatter aux destinataires répertoriés dans le paramètre Destinataires de notifications. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications provenant des processus de traitement par lots de Forecast sont envoyées par courrier électronique aux destinataires répertoriés dans le paramètre Destinataires des notifications. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Spécifie les destinataires des notifications pour les notifications par lots de prévisions envoyées via Chatter ou par courrier électronique. La valeur est une liste d&apos;adresses électroniques séparées par des points-virgules (;). Ce paramètre est nul par défaut.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Si cette option est sélectionnée, les notifications des processus de traitement par lots de Forecast sont envoyées via des tâches. Ceci est désélectionné par défaut.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 1 pour les prévisions d&apos;opportunité.</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 2 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 3 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 4 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 5 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 6 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 7 pour les prévisions d&apos;opportunité. Pour une meilleure pratique, chaque multiplicateur doit être supérieur à la valeur de la catégorie précédente.</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 1 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 2 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 3 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 4 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 5 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 6 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, les jalons planifiés et les retards imprévus.</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Les multiplicateurs utilisés pour calculer la catégorie 7 pour les prévisions de projet. Cela multiplie, dans l&apos;ordre, les mesures pour les facturations, les factures de transfert, les heures planifiées, les demandes de ressources en attente, les demandes de ressources non placées, programmées, les jalons et les retards imprévus.</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez pour déterminer si la catégorie 1 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette option pour déterminer si la catégorie 2 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette option pour déterminer si la catégorie 3 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez cette option pour déterminer si la catégorie 4 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez pour déterminer si la catégorie 5 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez pour déterminer si la catégorie 6 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>Sélectionnez pour déterminer si la catégorie 7 est incluse dans le calcul de la prévision.</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

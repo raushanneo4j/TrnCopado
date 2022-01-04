@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_45193305</developerName>
+        <masterLabel>Customer Size</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Account_Revenue__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>500 Million - 1 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>100 - 500 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>25 - 100 Million</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>10 - 25 Million</sourceValue>
+            </sourceValues>
+            <value>Corporate</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>0 - 10 Million</sourceValue>
+            </sourceValues>
+            <value>Startup</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_54126704</developerName>
+        <masterLabel>Purchased 100k or Not of Services</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>UNIT_PRICE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>100,000</to>
+            </sourceValues>
+            <value>Less or equal to 100k</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>100,000</from>
+            </sourceValues>
+            <value>More than 100k</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Term_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Term_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Term_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Global_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Term_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Procurement,Sales Ops Review,Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Subscription - PS Consulting,POC - PS - Consulting,Professional Services - BootCamp,Professional Services - Consulting,Professional Services - Innovation,Lab Professional Services - Staff augmentation/Expert services,Professional Services - Training</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>UNIT_PRICE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_54126704</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>FISCAL_YEAR</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PRODUCT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>James Customers with PS since 2017</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2021-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

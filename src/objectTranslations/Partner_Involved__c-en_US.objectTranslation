@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Involved</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partners Involved</value>
+    </caseValues>
+    <fields>
+        <help><!-- Concat&apos;d as a formula lets us rollup more, enabling cleaner href/labels in reports that use the opptys Partner Involved Involved fields which are summaries of Partner Involved relTo Opportunities.  The DLRS process that rollups up SysDLRS* fields this. --></help>
+        <label><!-- Account ID Account Name Formula --></label>
+        <name>AccountIdAccountName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field exists, because without it,  a process builder that listens for account name changes and edits partner involved children was unable to filter which children it updates.  This solves that. Which lets the update happen, which lets us write realti --></help>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- As of writing this is 
+Hidden from layouts &amp; Maintained by update logic &amp; Exists as text field because DLRS and SFDC GA Limitations cannot rollup formula fields --></help>
+        <label><!-- Account Name --></label>
+        <name>Account_Name_derivedForRollups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrative Influence --></label>
+        <name>Administrative_Influence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Influence --></label>
+        <name>Business_Influence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Concat&apos;d as a formula lets us rollup more, enabling cleaner href/labels in reports that use the opptys Partner Involved Involved fields which are summaries of Partner Involved relTo Opportunities. The DLRS process that rollups up SysDLRS* fields this. --></help>
+        <label><!-- Contact ID Contact Name Formula --></label>
+        <name>ContactIDContactFullName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes whether the Partner Involved Reseller or Neo4j will be providing support to the end-customer. --></help>
+        <label><!-- L1/L2 Support Responsibility? --></label>
+        <name>L1_L2_Support_Responsibility__c</name>
+        <picklistValues>
+            <masterLabel>Neo4j</masterLabel>
+            <translation><!-- Neo4j --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Rich Text Field. Max length: 32768 characters --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp IsClosed? --></label>
+        <name>Opportunity_IsClosed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage --></label>
+        <name>Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage and Name --></label>
+        <name>Opportunity_Stage_and_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Partners Involved --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Alignment Status --></label>
+        <name>Partner_Alignment_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Partner Contact options are filtered by the affiliated PI Account.  Before providing Partner Contact please ensure that PI Account is populated and that the contact resides in the PI Account. --></help>
+        <label><!-- Partner Contact --></label>
+        <name>Partner_Contact__c</name>
+        <relationshipLabel><!-- Partners Involved --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter all entities associated with an opportunity whether a partner, prospective partner or neither: services provider, advisory firm, reseller, solutions provider or management consultant. --></help>
+        <label><!-- Partner Involved (Account) --></label>
+        <name>Partner_Involved_Account__c</name>
+        <relationshipLabel><!-- Partner Involved Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Role --></label>
+        <name>Partner_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- The partner Neo4j is working with and promoting whether there is a formal agreement in place. This Partner Involved may or may not be the partner that originated the lead/opportunity. --></help>
+        <label><!-- Primary --></label>
+        <name>Primary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the relevant percentage agreed per the relevant Neo4j partner agreement and/or Deal Registration Form --></help>
+        <label><!-- Referral Percentage --></label>
+        <name>Referral_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of months entered should correspond to the initial term being paid, which is usually 12 months.  In the case of multi-year prepaid transactions, the amount entered could correspond to the applicable multi-year term. --></help>
+        <label><!-- Referral Term in Months --></label>
+        <name>Referral_Term_in_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the relevant percentage discount off list price for the applicable partner in the region/segment/verticle. --></help>
+        <label><!-- Reseller Percentage --></label>
+        <name>Reseller_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of months should correspond to the initial term of the opportunity. --></help>
+        <label><!-- Reseller Term in Months --></label>
+        <name>Reseller_Term_in_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Can be selected in the case of a win or loss for as many OREs as applicable --></help>
+        <label><!-- Selected --></label>
+        <name>Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to indicate formal agreement in place between Partner Involved &amp; Neo4j, which may have obligations (If checked, sync w/AE or Partner Team)
+Note: standard teaming permits Neo4j to support other respondents specifying Neo4j in their respective bid --></help>
+        <label><!-- Teaming/Pursuit Agreement --></label>
+        <name>Teaming_or_Pursuit_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Influence --></label>
+        <name>Technical_Influence__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueCombokey_fulfillmentAcctId_OppId --></label>
+        <name>UniqueCombokey_fulfillmentAcctId_OppId__c</name>
+    </fields>
+    <fields>
+        <help><!-- This flag denotes whether the Opportunity Account is an existing customer of the Partner Involved - past or present. --></help>
+        <label><!-- Existing Customer? --></label>
+        <name>is_OppsAccount_a_Customer_OfThis_Partner__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Related Entity Layout</layout>
+        <sections>
+            <label><!-- Additional Detail --></label>
+            <section>Additional Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This field is required for Referral partner roles. --></errorMessage>
+        <name>Referral_req_percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required for Referral partner roles. --></errorMessage>
+        <name>Referral_req_referralTermInMonths</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required for Reseller partner roles. --></errorMessage>
+        <name>Reseller_req_percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required for Reseller partner roles. --></errorMessage>
+        <name>Reseller_req_referralTermInMonths</name>
+    </validationRules>
+</CustomObjectTranslation>

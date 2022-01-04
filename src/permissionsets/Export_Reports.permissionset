@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows users to export reports out of Salesforce in XLS and CSV file formats. JIRA: SFDCSPT-247</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Export Reports</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ExportReport</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunReports</name>
+    </userPermissions>
+</PermissionSet>

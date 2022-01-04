@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- タイムカード入力UIパーソナル --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、[時間入力]ページで、ユーザーがタスクの時間セルをクリックまたはタブアウトするか、手動でゼロを入力すると、プロジェクト/割り当ての値がゼロに更新されます。デフォルト値はfalseです。タスクタイム入力モードは計算に設定する必要があります。</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、タイムカードのステータスが &quot;timecard-edit-status-values / Timecard_edit_status_values__c&quot;の値の1つである限り、プロジェクトまたは割り当てを変更できます。</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>割り当てのツールチップとして使用するフィールド。完全修飾（該当する場合は名前空間付き）、大文字と小文字を区別するフィールド名が必要です</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>[請求可能]フィールドが表示されるように設定されている場合は、タイムカードUIのタイムカードヘッダー行の時間の左側または右側のどちらに表示するかを決定します。</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>週、プロジェクト、課題、リソース、請求対象、プロジェクト、方法論、場所、旅行の組み合わせがまったく同じタイムカードをタイムカード入力ページで組み合わせるかどうかを示します。</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>チェックした場合、追加フィールドは前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>チェックされている場合、ETCフィールドは前の週のタイムカードからコピーされます</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>月曜日、火曜日などの時間フィールドをチェックすると、前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>チェックを入れるとLocation MonなどのLocation Informationフィールドが前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>[Methodology]フィールドをチェックすると、前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>チェックした場合、マイルストーンは前週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>チェックした場合、ノートは前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>チェックした場合、フェーズフィールドは前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>trueに設定されている場合、スケジュールからコピー機能は、その日のAssignmentにAssignment Daily Notes子レコードが見つかると、タイムカードの各日のNotesフィールドに入力します。 （デフォルトはfalse）</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、タスク時間が前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、タスク情報が前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Travel Week、Travel MonなどのTravel Informationフィールドをチェックすると、前の週のタイムカードからコピーされます。</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>trueで、新しいタイムカードUIのResource Lookupポップアップが1つの結果のみを返す場合、Resource Lookupポップアップは自動的に閉じられ、リソースフィールドは返されたリソースに設定されます。</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、タイムカードuiの請求可能なドロップダウンフィールドは無効、つまりユーザーによる編集不可として表示されます。</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UIは、ロード中に、割り当てられたすべての割り当て/プロジェクトとマイルストーンをキャッシュします。ユーザに割り当て/プロジェクトが多数ある場合、これはSalesforceのビューステートの制限につながる可能性があります。この設定値をtrueに設定すると、このキャッシュが最小化されます。</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>行追加ボタンがクリックされると、これらの空のタイムカード行が追加されます。</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>これは、新しいタイムカードの入力に常に使用可能になる最小行数です。</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード入力ページの請求可能列が非表示かどうかを示します。 trueの場合、列は非表示になり、請求可能チェックボックスはデフォルトで選択された状態になります。デフォルト値はfalseです。</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIの[前の週からコピー]ボタンが非表示かどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>この設定は重複しており、将来のリリースで削除される可能性があります。代わりに「前の週のコピーを隠すボタン」設定を編集してください。</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIの[スケジュールのコピー]ボタンが非表示かどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、[時間入力]ページに[仕事の展開]または[仕事の折りたたみ]リンクが非表示になります。デフォルト値はfalseです。</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、通常[タイムカード入力]ページに表示される[メモ]列は非表示になります。デフォルト値はfalseです。</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIの[保存]ボタンが非表示かどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、[時間入力]ページの[仕事の追加]ポップアップに[すべての仕事]ボタンと[自分の仕事]ボタンが非表示になります。デフォルト値はfalseです。</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIの[送信]ボタンが非表示になっているかどうかを示します。デフォルト値はfalseです。</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>選択し、[勤務時間入力モード]が[計算済み]に設定されている場合は、1行の勤務時間のみが表示されます。チェックボックスのデフォルト値はクリアです。</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>trueでタスクタイム入力モードが現在の場合、タイムカードラインの上に移動したときに表示される[詳細の表示]または[詳細の編集]リンクは非表示になります。 trueでタスクタイム入力モードが最新ではない場合、[メモ]タブはリンク上に表示されません。デフォルト値はfalseです</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>指定されたフィールド/ configは、タイムカードUIで選択したリソースの就業日の休日の日付列見出しを色分けするために使用されます。</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Timecard V15 Entryページのtimecard hoursセルの幅をピクセル単位で決定します。</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>1つのタイムカード日にリソースが入力できる最大時間数。リソースの合計時間数が1つのタイムカード日にこの量を超えると、エラーメッセージが表示されます。</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードの週にリソースが入力できる最大時間数。超えていると、エラーメッセージが表示されます。パーセント値と記号を入力してください。作業カレンダー時間の最大パーセンテージを指定するための90％。</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Methodologyフィールドが表示されるように設定されている場合は、Timecard UIのタイムカードヘッダー行のHoursの左側または右側のどちらに表示するかを決定します。</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>この設定フラグは、メソドロジフィールドをノートポップアップまたはフロントページのどちらに表示するかを決定します。</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>マイルストーンフィールドが表示されるように設定されている場合は、タイムカードUIのタイムカードヘッダー行の時間の左側または右側のどちらに表示するかを決定します。</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>この設定フラグは、マイルストーンフィールドをノートポップアップまたはフロントページのどちらに表示するかを決定します。</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードの週にリソースが入力できる最小時間数。毎週の時間がこの量より少ない場合は、エラーメッセージが表示されます。パーセント値と記号を入力してください。 30％。就業暦時間の最小割合を指定します。</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、割り当てニックネームは編集可能です。</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、locationフィールドはtimacard entry noteポップアップダイアログに表示されます</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、プライマリLocationドロップダウンはTC UIに表示されます。</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Phaseフィールドが表示されるように設定されている場合は、Timecard UIのタイムカードヘッダー行のHoursの左側または右側のどちらに表示するかを決定します。</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>この設定フラグは、フェーズフィールドをノートポップアップに表示するかフロントページに表示するかを決定します。</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>選択した場合、選択したユーザーとプロジェクトに対してタスクが事前に入力されます。チェックボックスのデフォルト値はクリアです。</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>[Primary Location]フィールドが表示されるように設定されている場合は、タイムカードUIのタイムカードヘッダー行の時間の左側または右側のどちらに表示するかを決定します。</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>[ノートの最初の場所を許可]がtrueに設定されている場合、[ノートの場所]フィールドを[ノート]セクションに表示するかタイムカード行に表示するかを決定します。</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードプロジェクト/割当勘定科目ドロップダウン表示値</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドセットのフィールドは、[タスクタイム付きタイムカードの記録] UIの[プロジェクトタスク]行のツールチップに表示されるフィールドを定義します。</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>[保存後に編集可能な割り当てプロジェクト]を選択すると、保存したタイムカードのプロジェクト/割り当てを変更することができますが、監査記録をタイムカードに設定する必要があります。監査ノートはこの設定で設定できます。</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード入力uiのツールチップとして表示されるプロジェクトフィールドのリスト。</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、事前入力されているタスクは選択した割り当てに基づきます。 [タスクの選択]ポップアップの[一致する割り当てのあるタスクに制限]フィールドがデフォルトでオンになっています。割り当てに基づいてタスクを制限するは、デフォルトで選択解除されています。</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、事前入力されているタスクは選択したマイルストーンに基づきます。 [タスクの選択]ポップアップの[一致するマイルストーンを持つタスクに制限]フィールドがデフォルトでオンになっています。マイルストーンに基づいてタスクを制限するは、デフォルトで選択解除されています。</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、Time Entryの列の幅、順序、および表示設定のカスタマイズがユーザーごとに記憶されます。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードの[スケジュール]セクションのツールチップアイコンの上にマウスを移動したときに表示される割り当てフィールドのAPI名。</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードの[スケジュール]セクションのツールチップアイコンの上にマウスを移動したときに表示されるプロジェクトフィールドのAPI名。</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>指定された構成は、選択されたリソース作業カレンダーで休日（ゼロ時間）とマークされた日のタイムカードセクションにゼロ以外の値が入力された場合にアラートを表示するために使用されます。</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>指定された構成は、選択されたリソース作業カレンダー日数パターンの時間がゼロの日のスケジュールグリッドセクションにゼロ以外の値が入力された場合にアラートを表示するために使用されます。</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、請求対象の非請求対象時間は、Time Entryの日単位のすべての列の合計行および合計の列の各合計にホバーテキストで表示されます。</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード行の編集可能な時間セルをダブルクリックしたとき、またはそのセルが選択されているときに↓キーを押したときに、時間入力ページに簡易入力ポップアップが表示されるかどうかを示します。</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>TC UIマイルストーンドロップダウンリストに値が表示されるフィールドを含みます。これらが存在しないかnullの場合、TC UIはドロップダウンリストに使用可能なマイルストーンのマイルストーン名フィールドを表示し続けるだけです。ルックアップ__r参照は想定されていません</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Configは、送信された各タイムカードのディスプレイリコールリンクを制御するために使用されます。それをクリックすると、リコールオーバーレイが開き、そこでコメントを入力してタイムカードの承認リクエストをリコールする必要があります。</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>チェックすると、スケジュール・グリッドがデフォルトでタイムカード入力に展開されて表示されます。</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>新しいタイムカードUIの[旅行]チェックボックスを表示するかどうかを示します。デフォルト値はtrueです。</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、スケジュールグリッドセクションはタイムカードに表示されます。</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>trueに設定すると、TC UIのScheduleセクションで割り当て名の横にツールチップアイコンが表示されます。デフォルトはfalse（既存の動作、ツールチップ列はありません）</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>etcフィールドを表示または非表示にする設定</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、タイムカードメソドロジフィールドはタイムカードUIに表示されます。</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>マイルストーン選択リストを表示または非表示にする設定</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、タイムカードフェーズフィールドはタイムカードUIに表示されます。</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>falseの場合、Status / recall列はNotes列のすぐ右側に表示されます。 trueの場合、Status / recallは追加のフィールドの右側に表示されます。</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Timecardオブジェクトによって使用されるフィールドセットのAPI名。このフィールドセットのフィールドは、タイムカードUIのタイムカードヘッダー行の時間の左側に表示される編集可能なフィールドを定義します。</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecardオブジェクトによって使用されるフィールドセットのAPI名。このフィールドセットのフィールドは、タイムカードUIのタイムカードヘッダー行の編集可能なフィールドを定義します。</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecardオブジェクトによって使用されるフィールドセットのAPI名。このフィールドセットのフィールドは、タイムカードUIのタイムカードヘッダー行の読み取り専用フィールドを定義します。</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>スケジュールからコピーするタイムカードヘッダーフィールドを指定するためのCSV。この設定に有効なのは、これらの時間フィールドだけです。</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Timecardオブジェクトによって使用されるフィールドセットのAPI名。このフィールドセットのフィールドは、[タイムカード] UIのタイムカード行にある[メモ]セクションの編集可能なフィールドを定義します。</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecardオブジェクトによって使用されるフィールドセットのAPI名。このフィールドセットのフィールドは、タイムカードUIのタイムカード行にあるNotesセクションの読み取り専用フィールドを定義します。</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>このフィールドは、TC UIで非表示になるタイムカードステータス値のカンマ（、）区切りのリストを保持するために使用されます。</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>ログに記録された時間に関連付けられていない限り、タイムカードに事前入力するときに非表示にするタスクを指定します。値は、コンマ区切りの状況リストです。</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクトタスクに対して時間を入力するときに、リソースが割り当てられているタスクしか選択できないかどうかを示します。このオプションが選択されていない場合、ユーザーは[Time Entry]ページでこの機能を有効にできます。</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>時間を入力するタスクを選択するときのタスク日のフィルタリング動作を定義します。なしまたは重複に設定します。 Noneの場合、フィルタリングは行われません。重複している場合は、タイムカードと選択可能なタスクの日付が重複している場合にのみタスクが一覧表示されます。</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード行のタスク時間を入力するときに使用する時間入力モード。次のいずれかの値を選択できます：調整、現在、計算、またはフリーフォーム。デフォルト値はCurrentです。</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト/課題オーバーレイに表示するためにロードされるトップ課題の数</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト/課題オーバーレイに表示するためにトップ課題/プロジェクトをロードする週数</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>プロジェクト/課題オーバーレイに表示するためにロードするトッププロジェクトの数</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード入力ページで表示されているフィールドを管理する方法を切り替えることができます。 Falseの場合、PSAは設定オプションまたはカスタム設定を使用してUIを設定します。 Trueの場合、PSAはUIを設定するためにフィールドセットを使用します。</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードページに課題を表示するときに課題IDを使用するかどうかを示します</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>与えられたフィールド/ configは、選択されたリソースの就業予定表のスケジュールパターン（祝日ではない）に従って、スケジュールされた0時間日の日付列見出しを色分けするために使用されます。</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード入力UIの[マイルストーン]ドロップダウンのピクセル幅を制御します。これは直接幅に入るので、この値には整数を指定してください。</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>タイムカード入力UIのProject / Assignmentドロップダウンのピクセル幅を制御します。これは直接幅に入るので、この値には整数を指定してください。例えば値300はドロップダウン幅を300pxに設定します。</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+</CustomObjectTranslation>

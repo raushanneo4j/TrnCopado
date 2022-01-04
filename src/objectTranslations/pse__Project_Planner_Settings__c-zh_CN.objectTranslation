@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 规划师 - 项目 --></value>
+    </caseValues>
+    <fields>
+        <help>如果选中，则确定在调整分配日期范围且新日期范围是否在假期内时是否添加假期计划例外记录。</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>如果选择此选项，则此设置允许用户将分配栏拖动到项目规划器中的批量移动分配。默认情况下取消选择此设置。</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>确定要在“项目计划程序”的“创建分配”对话框的“其他字段”部分中显示的其他字段。</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>在Assignment上定义字段的API名称，该名称控制Project Planner中的分配颜色条。</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>此设置定义字段的API名称，以按顺序（ASC或DESC）排序分配。分配始终显示在保留的资源请求之上。</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>确定使用项目计划器上的文本搜索框搜索哪些分配字段。</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>字段集的API名称，其中包含要在项目计划程序中显示为工时提示的工具提示的字段。字段集必须存在于Assignment对象中。</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>字段集的API名称，其中包含要在项目计划程序中显示的列。字段集必须存在于Project对象中。</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>此设置定义从今天开始的未来天数，增强型项目计划员将显示分配。例如，输入30以显示在今天30天内开始或结束的分配。</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>此设置定义增强型项目计划程序将显示分配的今天之前的天数。例如，输入30以显示在前30天内开始或结束的分配。</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>定义指向默认图像的URL（绝对或相对），以用于没有配置文件照片的资源。 22像素正方形的图像文件效果最佳。</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>确定用于在Project Planner中过滤的字段。该值是一个字段集，指定可用于过滤的字段。</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>选中后，将为所有用户隐藏“创建分配”对话框中的“成本费率”字段。</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>弃用：改为使用Project_Planner_Preferences__c.Hide_Inline_Dialog__c。</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则“创建分配”对话框中的开始日期和结束日期将从项目开始日期和结束日期自动填充。</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则“创建分配”对话框中的资源角色将从“联系人”记录中自动填充。</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>已弃用：请改用Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c。</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>指定要在Project planner中显示的分配的API名称。如果此字段为空，则项目计划程序默认显示“分配”名称。</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>指定要在Project planner中显示的资源请求的API名称。如果此字段为空，则项目计划程序默认显示资源请求名称。</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>此设置定义在查看大量记录时在后台加载的最大项目数。输入更高的值会导致更少的加载中断，但会占用更多内存。</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>使用项目计划器上的文本搜索框确定要搜索的项目字段。</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>定义控制“项目摘要”颜色的项目上的字段的API名称。</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>字段集的API名称，其中包含要在项目计划程序中显示为项目工具提示的字段。字段集必须存在于Project对象中。</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>指定每个请求加载子数据（分配和资源请求）的项目数。在未事先咨询客户支持的情况下，您不应调整记录负载限制。</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>字段集的API名称，其中包含要在项目计划程序中显示为资源请求的工具提示的字段。字段集必须存在于Resource Request对象中。</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>确定使用项目计划器上的文本搜索框搜索哪些资源请求字段。</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>在资源请求上定义字段的API名称，该名称控制项目计划程序中的资源请求颜色条。</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>此设置定义字段的API名称，以按顺序（ASC或DESC）对所保留的资源请求进行排序。持有的资源请求始终显示在分配下方。</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则无法创建过去具有开始日期的作业。取消选择默认值。</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则无法编辑项目计划员分配和过去的工作时间。取消选择默认值。</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则无法使用过去设置的开始日期交换分配上的资源。取消选择默认值。</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将按用户记住项目计划程序中列的宽度，顺序和可见性的自定义。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中使用Beige作为单元格。默认= False</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中为单元格使用浅蓝色。默认= False</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>在项目规划器中为单元格使用浅绿色。默认= False</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中为单元格使用Light Red。默认= False</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中使用浅黄色单元格。默认= False</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中将粉红色用于单元格。默认= False</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中使用Purple作为单元格。默认= False</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>在Project Planner中使用Turquoise作为单元格。默认= False</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>此设置确定您的用户是否看到增强（新）或经典项目计划程序。</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>此设置确定在用户可以编辑增强型项目计划程序上的计划之前，是否需要选择“人员配置”复选框，用户是否需要权限控制。</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+</CustomObjectTranslation>

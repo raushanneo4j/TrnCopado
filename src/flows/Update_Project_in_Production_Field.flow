@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Will update account in production field</description>
+    <interviewLabel>Update Project in Production Field {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Project in Production Field</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Project_in_Production_Field</name>
+        <label>Update Project in Production Field</label>
+        <locationX>365</locationX>
+        <locationY>178</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varaccountid</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_in_Production__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Project_in_Production__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Update_Project_in_Production_Field</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Account ID from CPP</description>
+        <name>varaccountid</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

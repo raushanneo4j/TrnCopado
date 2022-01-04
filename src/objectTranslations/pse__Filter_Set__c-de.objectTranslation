@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Filtersatz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Filtersätze</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Filtersatz --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Filtersätze --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Filtersatz --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Filtersätze --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Filtersatz --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Filtersätze --></value>
+    </caseValues>
+    <fields>
+        <help>Schränkt ein, wo dieser Filtersatz als Option angezeigt wird. Derzeit werden nur &quot;Resource Planner&quot; und &quot;Project Planner&quot; unterstützt.</help>
+        <label><!-- Available In --></label>
+        <name>pse__Feature__c</name>
+        <picklistValues>
+            <masterLabel>Project Planner</masterLabel>
+            <translation>Projektplaner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Planner</masterLabel>
+            <translation>Ressourcenplaner</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der Name des Filtersatzes.</help>
+        <label><!-- Filter Set Name --></label>
+        <name>pse__Filter_Set_Name__c</name>
+    </fields>
+    <fields>
+        <help>Enthält die Filterattribute und -werte in einem gespeicherten Filtersatz. Gespeichert als JSON-Objekt.</help>
+        <label><!-- Filters --></label>
+        <name>pse__Filters__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, bedeutet dies, dass der Filtersatz der Standard ist.</help>
+        <label><!-- Is Default --></label>
+        <name>pse__IsDefault__c</name>
+    </fields>
+    <fields>
+        <help>Wenn true, kann nur der Eigentümer diesen Filter anzeigen und verwenden. Andernfalls kann jeder Benutzer, der Zugriff hat, darauf zugreifen.</help>
+        <label><!-- Is Private --></label>
+        <name>pse__Is_Private__c</name>
+    </fields>
+    <fields>
+        <help>Filtersätze, die anderen Objekten zugeordnet werden können, z. B. Projekten.</help>
+        <label><!-- Related SObject --></label>
+        <name>pse__Related_SObject_ID__c</name>
+    </fields>
+    <fields>
+        <help>Der API-Name des SObject, auf das dieser Filtersatz angewendet wird.</help>
+        <label><!-- SObject --></label>
+        <name>pse__SObject__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Filter Set Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name</nameFieldLabel>
+</CustomObjectTranslation>

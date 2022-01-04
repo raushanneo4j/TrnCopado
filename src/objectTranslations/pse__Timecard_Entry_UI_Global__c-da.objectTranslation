@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Global --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow timecard with negative hours --></label>
+        <name>pse__Allow_timecard_with_negative_hours__c</name>
+    </fields>
+    <fields>
+        <help>Definerer navnet på et felt sæt, der indeholder opgavefelter, der skal vises som kolonner i opslagsprojektet Project / Assignment på Timecard Entry-siden.</help>
+        <label><!-- Assignment Lookup Fieldset Name --></label>
+        <name>pse__Assignment_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Antal opgaver, der skal indlæses til tidskortet tildeling, falder ned</help>
+        <label><!-- Assignment load limit --></label>
+        <name>pse__Assignment_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Liste over API-navne på tildelingsfelter, der skal vises som kolonner på projekt- / opgaveopslaget på den forbedrede Time Entry-side. Indsæt ikke pse__ namespace-præfikset i API-navnet på et felt. Standardværdien er Navn, Nick_Name__c.</help>
+        <label><!-- Assignment lookup columns --></label>
+        <name>pse__Assignment_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Opgavens start og slutdato begrænsning under indlæsning af Opgaver i Timecard UI. Hvis det er sandt, er der kun indlæst opgaver, hvis start- / slutdatoer enten indeholder eller overlapper med tidskortets datoperiode. Dette påvirker kun brugergrænsefladen, ikke administrationsredigering.</help>
+        <label><!-- Assignments load date restriction --></label>
+        <name>pse__Assignments_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Liste over opgavestatusværdier, der skal bruges, når du læser opgaverne fra db.</help>
+        <label><!-- Assignments load status values --></label>
+        <name>pse__Assignments_load_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, vil det ved første indlæsning af det nye timecard-brugerinterface kontrolleres for timekort i forrige uge. Hvis der ikke er fyldt tidskort fyldt i den foregående uge, viser brugergrænsefladen bekræftelsesvindue, der beder brugeren indlæse forrige uge eller nuværende uge. Hvis det er falsk, skal du arbejde som normalt.</help>
+        <label><!-- Check For Previous Week Timecards --></label>
+        <name>pse__Check_For_Previous_Week_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Konfigér for at styre max automatisk tilbagekald timeværdien på den nye TC-brugergrænseflade.</help>
+        <label><!-- Day hour auto revert ceiling --></label>
+        <name>pse__Day_hour_auto_revert_ceiling__c</name>
+    </fields>
+    <fields>
+        <help>Konfigér for at styre min automatisk tilbagekald timeværdien på den nye TC-brugergrænseflade.</help>
+        <label><!-- Day hour auto revert floor --></label>
+        <name>pse__Day_hour_auto_revert_floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display account on resource lookup --></label>
+        <name>pse__Display_account_on_resource_lookup__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, sendes alle tidskort til godkendelse. Hvis det er fejlagtigt, sendes kun tidskort, som brugeren vælger.</help>
+        <label><!-- Enforce Submit All Timecards --></label>
+        <name>pse__Enforce_submit_all_timecards__c</name>
+    </fields>
+    <fields>
+        <help>Definerer navnet på et felt sæt, der indeholder projektfelter, der skal vises som kolonner i opslagsprojektet Project / Assignment på Timecard Entry-siden.</help>
+        <label><!-- Project Lookup Fieldset Name --></label>
+        <name>pse__Project_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Liste over API navne på projektfelter for at vise som kolonner på projekt / opgaveopslag på den forbedrede Time Entry-side. Indsæt ikke pse__ namespace-præfikset i API-navnet på et felt. Standardværdien er Navn, Account__r.Name.</help>
+        <label><!-- Project lookup columns --></label>
+        <name>pse__Project_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Projektbegyndelse og slutdato begrænsning under indlæsning af projektet / opgaver fra db.</help>
+        <label><!-- Projects load date restriction --></label>
+        <name>pse__Projects_load_date_restriction__c</name>
+    </fields>
+    <fields>
+        <help>Definerer navnet på et felt sæt, der indeholder ressourcefelter, der skal vises som kolonner i Ressourceopslaget på Sencha Timecard Entry-siden.</help>
+        <label><!-- Resource Lookup Fieldset Name --></label>
+        <name>pse__Resource_Lookup_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Hvis config-værdien er lig med &apos;alle&apos;, betyder alle ressourcer sammen med aktuelle brugerressourcer indlæst. Ellers, hvis værdi svarer til &apos;ressource&apos; eller null, vil kun aktuelle brugerressourcer blive indlæst.</help>
+        <label><!-- Resource access --></label>
+        <name>pse__Resource_access__c</name>
+    </fields>
+    <fields>
+        <help>Liste over ressourcefelter (fuldt kvalificerede API-navne / stier), der vises i kolonner til popup-vinduet Ressourceopslag i det nye timecard-brugerinterface. Anbefal højst 4 felter / kolonner. Standardværdi: Navn, Region__r.Name, Practice__r.Name, Group__r.Name</help>
+        <label><!-- Resource lookup columns --></label>
+        <name>pse__Resource_lookup_columns__c</name>
+    </fields>
+    <fields>
+        <help>Størrelse på antal tidskort, der skal gemmes / indsendes i en batch-udførelse.</help>
+        <label><!-- Save submit batch size --></label>
+        <name>pse__Save_submit_batch_size__c</name>
+    </fields>
+    <fields>
+        <help>Config bruges til at styre tidskortets opbevaring med nul timer. Hvis det er rigtigt, gemmes tidskort med nul ellers ikke gemt (advarsel vises på ui).</help>
+        <label><!-- Save timecard with zero hours --></label>
+        <name>pse__Save_timecard_with_zero_hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule editable --></label>
+        <name>pse__Schedule_editable__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af tidskortregistre, ikke inklusive relaterede poster, gemt i en enkelt anmodning.</help>
+        <label><!-- Time Entry UI Save Batch Size --></label>
+        <name>pse__TC_Entry_Save_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Config for at holde tidskortet sorteret efter ordrefelter API-navne. Flere coma-adskilte felter kan indtastes til sortering. Eks: CreatedDate, Project__r.Name</help>
+        <label><!-- TC Sorted By Order --></label>
+        <name>pse__TC_Sorted_By_Order__c</name>
+    </fields>
+    <fields>
+        <help>CSV Liste over statusværdier, for hvilke tidsrapporteringsraderne kan redigeres.</help>
+        <label><!-- Timecard edit status values --></label>
+        <name>pse__Timecard_edit_status_values__c</name>
+    </fields>
+    <fields>
+        <help>Bruges til at bestemme hvilken status tidskortene vil blive indstillet til på knappen Gem knappen</help>
+        <label><!-- Timecard save button action --></label>
+        <name>pse__Timecard_save_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Bruges til at bestemme hvilken status tidskortene skal indstilles til på indsende knap klik</help>
+        <label><!-- Timecard submit button action --></label>
+        <name>pse__Timecard_submit_button_action__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er valgt (sandt), gemmes kolonnepræferencer for Time Entry-brugergrænsefladen lokalt. Hvis deselected (false), gemmes præferencerne på serveren.</help>
+        <label><!-- Use Local Storage For Column Preferences --></label>
+        <name>pse__Use_Local_Storage_For_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Hvis det er sandt, binder placeringstildelingerne sig til Project Location-objektet i stedet for placeringsvalg på TC-brugergrænsefladen</help>
+        <label><!-- Use Project Location Records --></label>
+        <name>pse__Use_Project_Location_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Methodology Records --></label>
+        <name>pse__Use_Project_Methodology_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Project Phase Records --></label>
+        <name>pse__Use_Project_Phase_Records__c</name>
+    </fields>
+    <fields>
+        <help>Standard uge start dag værdi, der bruges, når en ressource ikke har en arbejdskalender eller har en arbejdskalender uden en uges startdag.</help>
+        <label><!-- Week start day --></label>
+        <name>pse__Week_start_day__c</name>
+    </fields>
+    <fields>
+        <help>Config bruges til at kontrollere indleveringen af ​​tidskort med nul timer. Hvis det er sandt, kan tidskort med nul indsendes, ellers vil advarslen blive vist på ui.</help>
+        <label><!-- Submit timecard with zero hours --></label>
+        <name>pse__submit_timecard_with_zero_hours__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

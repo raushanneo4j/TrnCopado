@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Confirmation of successful submission of the 1% Opportunity by the SDR to their Manager for approval. JIRA: SFDCSPT-481</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OPP: 1% SDR Comp Opportunity Approval Request Submitted to SDR Manager</name>
+    <style>none</style>
+    <subject>&apos;{!Opportunity.Name}&apos; 1% Opportunity has been successfully submitted to your manager for approval</subject>
+    <textOnly>Hi {!Opportunity.OwnerFirstName},
+
+This email is to confirm that the &apos;{!Opportunity.Name}&apos; has been successfully submitted to your manager for approval.
+
+OPPORTUNITY DETAILS
+
+
+Opportunity Link: {!Opportunity.Link}
+Sales Stage: {!Opportunity.StageName}
+Opportunity Source: {!Opportunity.Opportunity_Source__c}
+Account: {!Opportunity.Account}
+
+
+HOW THIS WORKS
+
+Eligibility Criteria:
+
+
+Only the SDR who is the current Opportunity owner can submit the record for approval.
+Opportunity &apos;Stage&apos; field must be set to &apos;Qualification SDR&apos; (1%).
+&apos;Opportunity Source&apos; field must contain one of the following values:
+
+SDR - Inbound Lead
+SDR - Outbound Efforts
+SDR + Channel / Indirect Partner
+SDR + Cloud / Tech Partner
+
+No other 1% Opportunity for the same Account has been submitted by the SDR in the last 6 months.
+A Meeting record (Task) exists on the Opportunity with the value of &apos;Held&apos; in the &apos;Status&apos; field.
+‘Assigned To&apos; field on the Meeting record is populated with the name of the SDR.
+‘Sales Rep’ field on the meeting record is populated with the name of the AE.
+Meeting Note(s) are attached to the meeting record and capture the meeting details.
+No other notes or information exists on the Opportunity or any related records indicating that either the meeting didn&apos;t take place, the AE did not attend the meeting together with the SDR or that the SDR didn&apos;t source the Opportunity.
+
+
+Approval Steps:
+
+
+The Opportunity record is locked while in review, but if you want to provide additional details that your manager might need in order to approve your request, navigate to the Opportunity and click the &apos;Recall&apos; button, so you can edit the record. Once done, click &apos;Submit for Approval&apos;.
+If your approval request is rejected, you will receive an email notification with your manager&apos;s notes. Depending on the reason, you might be able to edit the record and resubmit it for approval.
+If your request is approved, the record will remain locked as it moves on to the final approval step -- approval by the Director of Sales Development, Stephen Depaoli.
+If approved by Stephen, you will again be notified, but no further action will be required on your part. You will be compensated for the 1% Opportunity.
+However, if rejected, depending on the reason, you and your manager will get notified and have the option of supplying additional details and resubmitting the record for approval.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Uppdragsinställningar --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Uppdragsinställningar --></value>
+    </caseValues>
+    <fields>
+        <help>Om det är sant, kommer scheman som skapats av &quot;Justera timmar per dag&quot; att respektera helgdagar och skapa undantag för dem och justera timmar genom att sprida timmar över andra dagar.</help>
+        <label><!-- Adjust Hours Strategy Respects Holidays --></label>
+        <name>pse__Adjust_Hours_Strategy_Respects_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>Utskriven - används inte</help>
+        <label><!-- Adjust Sched Date on Assignment Close --></label>
+        <name>pse__Adjust_Sched_Date_on_Assignment_Close__c</name>
+    </fields>
+    <fields>
+        <help>Om den är vald, är valutakoden för kostnadskurs på ett uppdrag inställd för att använda resursvalutakoden.</help>
+        <label><!-- Allow Resource Currency Code on Assn --></label>
+        <name>pse__Allow_Resource_Currency_on_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes IsResource Active Lookup FIlter --></label>
+        <name>pse__AssigRes_IsResource_Active_Lookup_FIlter__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssigRes Is Resource Lookup Filter --></label>
+        <name>pse__AssigRes_Is_Resource_Lookup_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup Columns --></label>
+        <name>pse__Assign_Resource_Custom_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Resource Custom Lookup --></label>
+        <name>pse__Assign_Resource_Custom_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>Fält för att hålla fältet separerade fält med api-namn som visas som kolumn i popup-milstolpe.</help>
+        <label><!-- Assign Resource Milestone Lookup Columns --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup_Columns__c</name>
+    </fields>
+    <fields>
+        <help>Fält för att styra visning av anpassad milstolpeuppslag på användargränssnitt</help>
+        <label><!-- Assign Resource Milestone Lookup --></label>
+        <name>pse__Assign_Resource_Milestone_Lookup__c</name>
+    </fields>
+    <fields>
+        <help>Fält för att markera anpassad milstolpe som krävs eller ej. Om det är sant krävs det och annars inte.</help>
+        <label><!-- Assign Resource Milestone Required --></label>
+        <name>pse__Assign_Resource_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>Utskriven - används inte</help>
+        <label><!-- Assignment Closed Statuses --></label>
+        <name>pse__Assignment_Closed_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Konfiguration av projektets maximala längd i automatisk genererad uppdragsnamn.</help>
+        <label><!-- Assignment Name Project Name Max Length --></label>
+        <name>pse__Assignment_Name_Project_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>Konfiguration av maxlängd av resursnamn i automatisk genererad uppdragsnamn.</help>
+        <label><!-- Assignment Name Resource Name Max Length --></label>
+        <name>pse__Assignment_Name_Resource_Name_Max_Length__c</name>
+    </fields>
+    <fields>
+        <help>Definierar om du vill dela upp en uppgift och schemalägga med resursens Salesforce-användare vid skapandet eller när resursen ändras. Du kan ange värdet till Läs eller Redigera för att definiera nivån för delning. Om inget värde är inställt tas ingen åtgärd.</help>
+        <label><!-- Auto Share with New Resource --></label>
+        <name>pse__Auto_Share_with_New_Resource__c</name>
+    </fields>
+    <fields>
+        <help>Definierar om den befintliga delen av uppdraget och schemat med resursens Salesforce-användare raderas när resursen på uppgiften ändras.</help>
+        <label><!-- Delete Share from Old Resource --></label>
+        <name>pse__Delete_Share_from_Old_Resource__c</name>
+    </fields>
+    <fields>
+        <help>När det väljs kontrollerar PSA inte att räkningen har tillämpats.</help>
+        <label><!-- Disable Bill Rate Null Check in Trigger --></label>
+        <name>pse__Disable_Bill_Rate_Null_Check_in_Trigger__c</name>
+    </fields>
+    <fields>
+        <help>Inaktiverar standardvärdena för filter för region, öva, grupp och roll på sidan Tilldela resurs.</help>
+        <label><!-- Disable RPG and Role Filter Defaults --></label>
+        <name>pse__Disable_RPG_Role_Defaulting__c</name>
+    </fields>
+    <fields>
+        <help>Om du vill visa fältet Planned Bill Rate på sidan Mass Assign Resources.</help>
+        <label><!-- Display Planned Bill Rate --></label>
+        <name>pse__Display_Planned_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Standardplaneringsstrategin för sidan Redigera uppdragsplan. Möjliga värden är &quot;nivå&quot;, &quot;ignorera&quot;, &quot;dag&quot; och &quot;&quot; procentuell placering &quot;</help>
+        <label><!-- Edit Schedule Default Strategy --></label>
+        <name>pse__Edit_Schedule_Default_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Anger om planeringsstrategin för justeringstimmar per dag är gömd på sidorna Tilldela resurs till Projekt, Redigera uppdragsplaner och Staffer Worksheet.</help>
+        <label><!-- Hide Adjust Hours Scheduling Strategy --></label>
+        <name>pse__Hide_Adjust_Hours_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indikerar huruvida den anpassade planeringsstrategin är gömd på sidorna Tilldela resurs till projekt och personal.</help>
+        <label><!-- Hide Custom Scheduling Strategy --></label>
+        <name>pse__Hide_Custom_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indikerar om beräkna slutdatum ignorerar planeringsstrategin för tillgänglighet är dold på sidorna Tilldela resurs till Projekt, Redigera Uppdragsplan och Personals arbetsblad.</help>
+        <label><!-- Hide Ignore Avail Scheduling Strategy --></label>
+        <name>pse__Hide_Ignore_Avail_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indikerar huruvida planeringsstrategin för beräkning av slutdatumsplaner är gömd på sidorna Tilldela resurs till Projekt, Redigera uppdragsplan och Personals arbetsblad.</help>
+        <label><!-- Hide Level Schedule Scheduling Strategy --></label>
+        <name>pse__Hide_Level_Schedule_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indikerar huruvida planeringsstrategin för procentandel är dold på sidorna Assign Resource to Project, Edit Assignment Schedule och Staffer Worksheet.</help>
+        <label><!-- Hide Percent Alloc Scheduling Strategy --></label>
+        <name>pse__Hide_Percent_Alloc_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Indikerar om planeringsstrategin för Zero Hour Schema är dold på sidorna Assign Resource to Project, Edit Assignment Schedule och Staffer Worksheet.</help>
+        <label><!-- Hide Zero Hour Scheduling Strategy --></label>
+        <name>pse__Hide_Zero_Hour_Scheduling_Strategy__c</name>
+    </fields>
+    <fields>
+        <help>Comma-avgränsad lista över API-namn på fält som ska listas när du svävar över verktygstipsikonen på sidan Länkuppdrag till milstolpar.</help>
+        <label><!-- Link Assignment Header Tooltip Fields --></label>
+        <name>pse__Link_Assignment_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Comma-avgränsad lista över API-namn på fält som ska listas när du svävar över verktygstipsikonen på länkmetodiken till uppdragssidan.</help>
+        <label><!-- Link Methodology Header Tooltip Fields --></label>
+        <name>pse__Link_Methodology_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Comma-avgränsad lista över API-namn på fält som ska listas när du svävar över verktygstipsikonen på sidan Link Milestone to Assignments.</help>
+        <label><!-- Link Milestone Header Tooltip Fields --></label>
+        <name>pse__Link_Milestone_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Comma-avgränsad lista över API-namn på fält som ska listas när du svävar över verktygstipsikonen på länkfasen till uppdragssidan.</help>
+        <label><!-- Link Phase Header Tooltip Fields --></label>
+        <name>pse__Link_Phase_Header_Tooltip_Fields__c</name>
+    </fields>
+    <fields>
+        <help>När det är sant visas Milestone-fältet i avsnittet Snabbuppdatering och tilldelningsdetaljer på sidan Mass Assign Resources to Project. Fältet visas också på Mass Assign Projects to Resource-sidan.</help>
+        <label><!-- Mass Assign Milestone Editable --></label>
+        <name>pse__Mass_Assign_Milestone_Editable__c</name>
+    </fields>
+    <fields>
+        <help>När det är sant måste Milestone-fältet fyllas i för varje uppgift som ska skapas på Mass Assign Projects to Resource-sidan och Mass Assign Resources to Project-sidan.</help>
+        <label><!-- Mass Assign Milestone Required --></label>
+        <name>pse__Mass_Assign_Milestone_Required__c</name>
+    </fields>
+    <fields>
+        <help>Kontrollerar hur många projekt som returneras i resultaten när du söker på Mass Assign Projects To Resource-sidan. Värden som är högre än 2000 rekommenderas inte på grund av risk för överskridande av plattformsutsiktstillstånd. Standardvärdet är 1000.</help>
+        <label><!-- Mass Assign Projects Load Limit --></label>
+        <name>pse__Mass_Assign_Projects_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen har avlägsnats och används inte längre.</help>
+        <label><!-- Deprecated: Mass Assign Res. Load Limit --></label>
+        <name>pse__Mass_Assign_Resources_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer om kryssrutan Mass Assignment Ignore Holidays är markerad som standard.</help>
+        <label><!-- Mass Assignments Default Ignore Holidays --></label>
+        <name>pse__Mass_Assignments_Default_Ignore_Holidays__c</name>
+    </fields>
+    <fields>
+        <help>Tillåter att användare skapar en anpassad fältuppsättning på uppdragsobjektet och skriver fältets API-namn till den här anpassade inställningen. Fält som läggs till i den här fältet visas som skrivskyddade fält på den flera tilldelade uppgiften till Milestone UI.</help>
+        <label><!-- Multi Assign Assignment Fieldset Name --></label>
+        <name>pse__Multi_Assign_Assignment_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Tillåter att användare skapar en anpassad fältuppsättning på Milestone-objektet och skriver fältets API-namn till den här anpassade inställningen. Fält som läggs till i den här fältet visas som skrivskyddade fält på den flera tilldelade uppgiften till Milestone UI.</help>
+        <label><!-- Multi Assign Milestone Fieldset Name --></label>
+        <name>pse__Multi_Assign_Milestone_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>När så är fallet behålls schemaundantag vid uppdatering på skärmen Redigera uppdragsplaner. När felaktigt tas bort undantag. Standardvärdet är false.</help>
+        <label><!-- Retain schedule exceptions on update --></label>
+        <name>pse__Retain_schedule_exceptions_on_update__c</name>
+    </fields>
+    <fields>
+        <help>Om den är satt till sannolikt, är fältet Vallista välj bort från Assign Resource (s) till Project-sidan. Om den är inställd på falsk, fortsätter det befintliga beteendet. Det fungerar bara när kryssrutan &quot;Roll krävs på skapande&quot; är inställd på falskt</help>
+        <label><!-- Role Hidden --></label>
+        <name>pse__Role_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Required On Creation --></label>
+        <name>pse__Role_Required_On_Creation__c</name>
+    </fields>
+    <fields>
+        <help>Den kommaseparerade listan över fältvärden för tidskortstatus som ska användas när du utför tidskalkylberäkningar för sidan Redigera uppdragsplan.</help>
+        <label><!-- Timecard Statuses --></label>
+        <name>pse__Timecard_Statuses__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer batchstorleken som ska användas vid beräkning av fältet Project Monitor.</help>
+        <label><!-- Update Project Monitor Fields Batch Size --></label>
+        <name>pse__Update_Project_Monitor_Fields_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Definierar tröskelnummeret för uppdrag för att omedelbart beräkna fältet Project Monitor. Om antalet uppdrag överstiger värdet för denna inställning, beräknas fältet Project Monitor med en satsprocess.</help>
+        <label><!-- Update Project Monitor Fields Sync Limit --></label>
+        <name>pse__Update_Project_Monitor_Fields_Sync_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Anger om standardvärdet för kryssrutan Använd standardkostnadsfrekvens är avmarkerad i Tilldela resurs till projekt, Massa tilldela resurser till projekt och Massa tilldela projekt till resurssidor.</help>
+        <label><!-- Use Default Cost Rate Clear on Assigning --></label>
+        <name>pse__Use_Default_Cost_Rate_Clear_on_Assigning__c</name>
+    </fields>
+    <fields>
+        <help>Använd värdet som är inspelat i fältet Schemalagda dagar på uppdrag för beräkningar på projektkostnads- och intäktsöversikten.</help>
+        <label><!-- Use Scheduled Days for Calculations --></label>
+        <name>pse__Use_Scheduled_Days__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הגדרות גנט משימות פרויקט --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הגדרות גנט משימות פרויקט --></value>
+    </caseValues>
+    <fields>
+        <help>כאשר פרויקט נעול לעריכה, הגדרה זו קובעת אם למשתמשים (שיש להם הרשאה לערוך משימות בגאנט משימות הפרויקט) ניתנת האפשרות לשבור את המנעול ולאלץ את המשתמש האחר למצב לקריאה בלבד.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם ה- API של ערכת השדה, על אובייקט משימת הפרויקט, המכיל את העמודות המותאמות אישית המוצגות ב- Project Task Gantt. כאשר ההגדרה ריקה, משתמשים בשורת השדות של Gantt Editable Custom Columes.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, הרשומות ב Project Task Gantt לא נטענות במאגר. ברירת המחדל אינה מסומנת. יש לשנות הגדרה זו רק לאחר התייעצות עם תמיכת הלקוחות של FinancialForce.com.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר הלחצן ’תלות בפתרון’ מבוטל כאשר סנכרון תלות המשימות בפרויקט. אם הוא לא מסומן, הכפתור נשאר פעיל כאשר אין צורך לסנכרן את תלות המשימות בפרוייקט. ערך ברירת המחדל אינו מסומן.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>קובע את מספר השורות שיוצגו מעל התצוגה הנוכחית בגאנט פרוייקט. ברירת המחדל היא 20. יש לשנות הגדרה זו רק לאחר התייעצות עם תמיכת הלקוחות של FinancialForce.com.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת להצגת הסבר כלים מותאם אישית עבור אבני דרך. אם מוגדרת, הגדרה זו מחליפה את הסבר הכלים המוגדר כברירת מחדל.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת להצגת הסבר כלים מותאם אישית עבור משימות פרויקט. אם היא מוגדרת, הגדרה זו מחליפה את הסבר הכלים המוגדר כברירת מחדל להקצאת פרויקט.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>קובע רמות גישה של עריכת גאנט עבור מנהל הפרוייקט. הערכים הם &quot;מלאים&quot; (ברירת מחדל) - יכולים לערוך פרויקטים שנוצרו, &quot;לקרוא&quot; - יש גישה לקריאה בלבד, או &quot;ללא&quot; - גישה הנקבעת על ידי בקרות הרשאה.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת להצגת הסבר כלים מותאם אישית עבור פרוייקטים. אם מוגדרת, הגדרה זו מחליפה את הסבר הכללי לברירת המחדל של Project.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>שם ה- API של שדה שנקבע במשימת פרוייקט המכיל שדות שאינם ניתנים לעריכה בגאנט פרוייקט.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, התאמות לרוחב, סדר ונראות של עמודות במשימת פרויקט גאנט ייזכרו למשתמש.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, לחצן יצירת דרישת משאבים מוצג בסרגל הכלים Project Task Gantt. השתמש בכדי להצוות את תוכנית הפרויקט דרך הלחצן צור דרישת משאבים מהדף משימות פרויקט.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>קובע אם אחוז השעות המלא מופיע בתצוגת שורת המשימות בחלונית לוח הזמנים. הגדרה זו אינה שולטת בתצוגה של כפתור% Hrs בחלונית לוח הזמנים.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>קובע אם האחוזים השלמים מציגים בתצוגת שורת המשימות בחלונית לוח הזמנים. הגדרה זו נבחרת כברירת מחדל. הגדרה זו אינה שולטת בתצוגה של כפתור% Pts בחלונית לוח הזמנים.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>שם API של מערכת שדה המשמשת להצגת הסבר כלים מותאם אישית למשימות פרויקט. אם מוגדרת, הגדרה זו מחליפה את הסבר הכללי המוגדר כברירת מחדל עבור פרוייקט.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>קובע את מספר השורות שיוצגו מתחת לתצוגה הנוכחית בגאנט פרוייקט. ברירת המחדל היא 10. יש לשנות הגדרה זו רק לאחר התייעצות עם תמיכת הלקוחות של FinancialForce.com.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

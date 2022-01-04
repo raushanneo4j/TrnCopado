@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Added in https://sfdxspt-neoj4.atlassian.net/browse/SFDCSPT-354</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Aura_UserID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Aura_UserID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Lead and Contact &gt; FLS Edit on Lead.Aura UserID to support Aura MRR population</label>
+</PermissionSet>

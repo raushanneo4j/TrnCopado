@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Créer un journal de lot de documents de facturation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Créer des journaux de lot de documents de facturation</value>
+    </caseValues>
+    <fields>
+        <help>Lien Master-Detail avec l&apos;enregistrement de lot de création de factures associé.</help>
+        <label><!-- Create Billing Documents Batch --></label>
+        <name>pse__Create_Billing_Documents_Batch__c</name>
+        <relationshipLabel><!-- Create Billing Documents Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indique le type de journal (Erreur, Information, Abandonner, Externe).</help>
+        <label><!-- Log Type --></label>
+        <name>pse__Log_Type__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Avorter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Erreur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Externe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Information</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le texte du message.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Create Billing Documents Batch Log Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Créer un ID de journal de lot de documen</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

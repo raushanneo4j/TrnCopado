@@ -1,0 +1,30 @@
+Hi {!Opportunity.OwnerFirstName},
+<br><br>
+
+Unfortunately, your manager has rejected your request to approve the 1% '{!Opportunity.Name}' for compensation.
+<br>
+
+<div>
+
+<p><strong>OPPORTUNITY DETAILS</strong></p>
+
+<p>
+<ul>
+<li>Opportunity Link: {!Opportunity.Link}</li>
+<li>Sales Stage:</b> {!Opportunity.StageName}</li>
+<li>Opportunity Source:</b> {!Opportunity.Opportunity_Source__c}</li>
+<li>Account: <a href="{!Account.Link}">{!Opportunity.Account}</a></li>
+</ul>
+</p>
+
+<p><strong>WHAT'S NEXT?</strong></p>
+
+<p>
+<ul>
+
+<li>The Opportunity record has been unlocked.</li>
+<li>Click on the link to the record, find the Approval History related list on the record page and check the decision note from your manager explaining the reason your request was rejected.</li>
+<li>Depending on the rejection reason, you might have the option of supplying additional details and resubmitting the record for approval.</li>
+<li>If you accept this decision as final, no further action is required on your part.</li>
+</ul>
+</p>

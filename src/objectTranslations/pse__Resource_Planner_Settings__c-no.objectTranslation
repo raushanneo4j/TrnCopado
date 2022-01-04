@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Planners - Ressurs --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Planners - Ressurs --></value>
+    </caseValues>
+    <fields>
+        <help>Hvis det er valgt, avgjøre om ferieplanleggings unntaksregister legges til dersom tildelingsdatahyper justeres og det nye datoperioden faller innenfor en ferie.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer de ekstra feltene som skal vises i delen &quot;Tilleggsfelt&quot; i dialogboksen Opprett oppgave i Ressurplanlegger.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definerer API-navnet til feltet på en oppgave som kontrollerer tildelingsfargelinjene i ressursplanleggeren.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen definerer API-navnet til et felt for å bestille oppgaver av og, eventuelt retningen (ASC eller DESC). Oppdrag vises alltid over holdte ressursforespørsler.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer hvilke oppdragsfelt som søktes med tekstsøkeboksen på ressursplanleggeren.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-navnet til feltsettet som inneholder feltene som skal vises som verktøytips for oppgaver i ressursplanleggeren. Feltsettet må eksistere i oppgaveobjektet.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Antall siffer som skal vises til høyre for desimaltegnet når du viser en tilgjengelighetsprosentverdi i kolonnen Tilgjengelighet i Ressursplanleggeren. Verdien er et heltall. Standard er null.</help>
+        <label><!-- Availability Decimal Precision --></label>
+        <name>pse__Availability_Percentage_Precision__c</name>
+    </fields>
+    <fields>
+        <help>API-navnet til feltsettet som inneholder kolonnene som skal vises på ressursplanleggeren. Feltsettet må eksistere i kontaktobjektet.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen definerer antall fremtidige dager, fra i dag, for hvilken den utvidede ressursplanleggeren viser oppdrag. For eksempel, skriv inn 30 for å vise oppdrag som starter eller slutter innen 30 dager i dag.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen definerer antall dager før i dag, hvor den utvidede ressursplanleggeren viser oppgaver. For eksempel, skriv inn 30 for å vise oppgaver som starter eller slutter i de foregående 30 dagene.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definerer en URL (absolutt eller relativ) som peker på standardbildet som skal brukes til ressurser uten et profilbilde. Bildefiler på 22 piksler firkant fungerer best.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer antall dager som skal legges til de inkluderte datoene etter sluttdatoen for ressursforespørselen i Resource Request-panelet i Ressursplanleggeren.</help>
+        <label><!-- Add Included Dates After RR End Date --></label>
+        <name>pse__Default_URR_End_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer antall dager som skal legges til de inkluderte datoene før startdatoen for ressursforespørselen i Resource Request-panelet i Ressursplanleggeren.</help>
+        <label><!-- Add Included Dates Before RR Start Date --></label>
+        <name>pse__Default_URR_Start_Date_Buffer__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer feltene som brukes til filtrering i ressursplanleggeren. Verdien er et feltsett som angir felt som er tilgjengelige for å filtrere på.</help>
+        <label><!-- Resource Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Når valgt, vil kostnadskursfeltene i dialogboksen Opprett oppgave være gjemt for alle brukere.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Bruk Resource_Planner_Preferences__c.Hide_Inline_Dialog__c i stedet.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, blir start- og sluttdatoene i dialogboksen Opprett oppgaver automatisk fylt ut fra prosjektets start- og sluttdato.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, blir ressursrollen i dialogboksen Opprett oppgaver automatisk fylt ut fra Kontakter-posten.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Bruk Resource_Planner_Preferences__c.Inline_Edit_Mode_THHC__c i stedet.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Angir API-navnet på oppdraget som skal vises i Ressursplanleggeren. Hvis dette feltet er tomt, viser ressursplanleggeren oppgavens navn som standard.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Angir API-navnet på ressursforespørselen som skal vises i Ressursplanleggeren. Hvis dette feltet er tomt, viser ressursplanleggeren navnet på ressursforespørselen som standard.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen definerer maksimalt antall ressurser som lastes i bakgrunnen når du ser stort antall poster. Hvis du legger inn en høyere verdi, blir færre belastningsavbrudd, men bruker mer minne.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>API-navnet til feltsettet som inneholder feltene som skal vises som verktøytips for ressursforespørsler på ressursplanleggeren. Feltsettet må eksistere i ressursforespørselsobjektet.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer hvilke ressursforespørselsfelt som søktes med tekstsøkeboksen på ressursplanleggeren.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definerer API-navnet til feltet på en ressursforespørsel som styrer fargestangene for ressursforespørsel i ressursplanleggeren.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen definerer API-navnet til et felt for å bestille ressursforespørsler av og, eventuelt, retningen (ASC eller DESC). Held ressursforespørsler vises alltid under oppdrag.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Bestemmer hvilke ressursfelt som søkes med tekstsøkboksen på ressursplanleggeren.</help>
+        <label><!-- Search Fieldset Name --></label>
+        <name>pse__Resource_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-navnet til feltsettet som inneholder feltene som skal vises som verktøytips for ressurser på ressursplanleggeren. Feltsettet må eksistere i kontaktobjektet.</help>
+        <label><!-- Resource Tooltip Field Set --></label>
+        <name>pse__Resource_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, kan du ikke opprette et oppdrag med startdato tidligere. Standardverdien er ikke valgt.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, kan du ikke redigere ressursplanleggeroppgave og planlegge timer tidligere. Standardverdien er ikke valgt.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, kan du ikke bytte ressursen på et oppdrag med en startdato som er angitt tidligere. Standardverdien er ikke valgt.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, vil tilpasninger til bredde, rekkefølge og synlighet av kolonner i ressursplanleggeren bli husket per bruker.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, er tilgjengelighets kolonnen synlig på ressursplanleggeren. Denne innstillingen er valgt som standard.</help>
+        <label><!-- Show Availability Column --></label>
+        <name>pse__Show_Availability_Column__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Beige for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Lyseblå for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Lysegrønn for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Lysrød for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Lys Gul for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Pink for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Bruk Lilla for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Bruk turkis for celler i Ressursplanleggeren. Standard = Falsk</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen avgjør om brukerne ser den utvidede (nye) eller klassiske ressursplanleggeren.</help>
+        <label><!-- DEPRECATED:Use New Resource Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Angir antall ressurser for hvilke barnedata (oppdrag og ressursforespørsler) lastes per forespørsel. Du bør ikke justere registreringsbelastningsgrensen uten først å konsultere kundestøtte.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__record_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Denne innstillingen avgjør om brukerne vil kreve en tillatskontroll, med avmerkingsboksen Bemanning, før de kan redigere tidsplaner på den utvidede ressursplanleggeren.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

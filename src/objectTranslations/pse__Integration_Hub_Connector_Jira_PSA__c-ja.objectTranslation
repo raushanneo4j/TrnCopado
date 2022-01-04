@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 統合ハブコネクタ：Jira - PSA --></value>
+    </caseValues>
+    <fields>
+        <help>Jiraとの統合に失敗した場合にエラー通知を受け取るための電子メールアドレス。</help>
+        <label><!-- Email --></label>
+        <name>pse__Email__c</name>
+    </fields>
+    <fields>
+        <help>JiraアプリケーションへのURL。認証に使用されます。</help>
+        <label><!-- Jira Application URL --></label>
+        <name>pse__Jira_Application_URL__c</name>
+    </fields>
+    <fields>
+        <help>[PSAプロジェクトをJira issueにマップする]フィールドが選択されている場合、マップされたプロジェクトフィールドを[プロジェクトを更新するためのPSAフィールド値]で定義された値で更新するJira issueステータスのカテゴリを決定します。</help>
+        <label><!-- Jira Issue Status Category --></label>
+        <name>pse__Jira_Issue_Status_Category__c</name>
+    </fields>
+    <fields>
+        <help>[プロジェクトとJira課題との同期を有効にする]フィールドが選択されている場合、PSAプロジェクトを同期するJira課題の種類を決定します。この値では大文字と小文字が区別され、課題タイプはJiraアプリケーションに存在する必要があります。</help>
+        <label><!-- Jira Issue Type --></label>
+        <name>pse__Jira_Issue_Type__c</name>
+    </fields>
+    <fields>
+        <help>Jiraと同期したPSAリソースが、Jiraのユーザー名とパスワードを設定するためのリンクを含む電子メール通知を受信するかどうかを示します。</help>
+        <label><!-- Jira Welcome Email for Synced Resources --></label>
+        <name>pse__Jira_Welcome_Email_for_Synced_Resources__c</name>
+    </fields>
+    <fields>
+        <help>選択すると、PSAプロジェクトはJiraプロジェクトではなくJira問題にマップされます。 Jira issueのタイプは、Jira Issue Typeフィールドの値によって決まります。</help>
+        <label><!-- Map PSA Projects to Jira Issues --></label>
+        <name>pse__Map_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>月曜日から始まるタイムカードの最大日数で、リソースに対して週ごとに記録できます。 1から7までの整数を入力できます。たとえば、月曜日から金曜日までのタイムロギングを有効にするには、5を入力します。</help>
+        <label><!-- Max Resource Days Per Week --></label>
+        <name>pse__Max_Resource_Days_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>リソースについて毎日記録できるタイムカードの最大時間数。 1から24までの値を入力できます。</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>［PSAプロジェクトをJira問題にマップする］フィールドが選択されている場合、Jira問題のステータスが［Jira問題ステータスカテゴリ］で定義されているときにマップされたプロジェクトフィールドを更新する値を決定します。この値では大文字と小文字が区別されます。</help>
+        <label><!-- PSA Field Value for Updating Projects --></label>
+        <name>pse__PSA_Field_Value_for_Updating_Projects__c</name>
+    </fields>
+    <fields>
+        <help>issueを親issueタイプにリンクするために使用されるJiraカスタム項目の名前（Parent Linkなど）。関係は複数のレベルを持つことができますが、Jira Issue Typeで定義されている課題タイプが考慮される最も高いものです。</help>
+        <label><!-- Parent Issue Field --></label>
+        <name>pse__Parent_Issue_Field__c</name>
+    </fields>
+    <fields>
+        <help>Jira作業ログをPSAタイムカードと同期する必要があるかどうかを示します。機能コンソールを使用して、PSAワークフローのJiraからタイムカードへの作業ログの同期が有効になっている場合、自動的に入力されます。</help>
+        <label><!-- Sync Jira Work Logs to PSA Timecards --></label>
+        <name>pse__Sync_Jira_Work_Logs_to_PSA_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>PSAプロジェクトをJiraの問題に同期する必要があるかどうかを示します。機能コンソールを使用して、PSAからJiraワークフローの課題へのプロジェクトの同期が有効になると、自動的に入力されます。</help>
+        <label><!-- Sync PSA Projects to Jira Issues --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Issues__c</name>
+    </fields>
+    <fields>
+        <help>PSAプロジェクトをJiraプロジェクトと同期する必要があるかどうかを示します。機能コンソールを使用して、PSAからJiraのプロジェクトへのプロジェクトの同期ワークフローを有効にすると、自動的に入力されます。</help>
+        <label><!-- Sync PSA Projects to Jira Projects --></label>
+        <name>pse__Sync_PSA_Projects_to_Jira_Projects__c</name>
+    </fields>
+    <fields>
+        <help>PSAリソースをJiraユーザーと同期する必要があるかどうかを示します。機能コンソールを使用して、PSAからJiraワークフローのユーザーへのリソースの同期が有効になると、自動的に入力されます。</help>
+        <label><!-- Sync PSA Resources to Jira Users --></label>
+        <name>pse__Sync_PSA_Resources_to_Jira_Users__c</name>
+    </fields>
+    <fields>
+        <help>タイムカードが作成されたステータス。</help>
+        <label><!-- Timecard Status --></label>
+        <name>pse__Timecard_Status__c</name>
+    </fields>
+    <fields>
+        <help>PSAプロジェクトをJiraの問題ステータスに基づいて更新する必要があるかどうかを示します。</help>
+        <label><!-- Update Projects Based on Issue Status --></label>
+        <name>pse__Update_Projects_Based_on_Issue_Status__c</name>
+    </fields>
+    <fields>
+        <help>JiraアプリケーションURLで提供されているJiraアプリケーションがJira Cloudバージョンかどうかを示します。 Jiraサーバーを使用している場合は選択しないでください。</help>
+        <label><!-- Use Jira Cloud --></label>
+        <name>pse__Use_Jira_Cloud__c</name>
+    </fields>
+</CustomObjectTranslation>

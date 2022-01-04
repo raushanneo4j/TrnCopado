@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ertragsprognose-Setup</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ertragsprognose-Setup</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Ertragsprognose-Setup --></value>
+    </caseValues>
+    <fields>
+        <help>Gibt den Einrichtungsdatensatz für die Umsatzprognose an, der für die Berechnungen der Umsatzprognose verwendet wird. Sie können nur einen aktiven Einrichtungsdatensatz für die Umsatzprognose haben.</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, werden Opportunities von den geplanten Jobs für die Umsatzprognose ausgeschlossen.</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie diese Option aus, um Einnahmen im Zusammenhang mit angehaltenen Ressourcenanforderungen für Projekte und Meilensteine auszuschließen.</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der gleichzeitig zu verarbeitenden Datensätze, z. B. Zeitkarten und Ausgaben.</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Opportunities und Opportunity-Werbebuchungen, die gleichzeitig verarbeitet werden sollen.</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der gleichzeitig zu bearbeitenden Projekte.</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den API-Namen des Felds im Opportunity-Objekt ein, das Sie als voraussichtliches Projektenddatum verwenden möchten.</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Geben Sie den API-Namen des Felds im Opportunity-Objekt ein, das Sie als voraussichtliches Projektstartdatum verwenden möchten.</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den API-Namen des Felds im Projektobjekt aus, das Sie zur Berechnung des Werts im Feld &quot;% Stunden für die Erkennung abgeschlossen&quot; verwenden möchten. Bei Bedarf können Sie ein eigenes Feld erstellen und zur Auswahlliste hinzufügen.</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>Benutzerdefinierte Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Prognose-Batch-Einstellungen</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>Opportunity-Einstellungen</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>Projekt Einstellungen</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>Einrichtungsdetails</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Name des Umsatzprognose-Setups</nameFieldLabel>
+</CustomObjectTranslation>

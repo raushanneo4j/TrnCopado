@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$D_B_Location_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account$Id</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$CreatedBy.Profile</field>
+    </columns>
+    <columns>
+        <field>Account$CreatedBy.UserRole</field>
+    </columns>
+    <columns>
+        <field>Account$DNBoptimizer__DNB_D_U_N_S_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCity</field>
+    </columns>
+    <columns>
+        <field>Account$D_B_Business_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account$Account_Revenue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows Accounts created by Sales and SDRs in the last 12 months.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$CreatedBy.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Neo4j - Sales,Neo4j - SDR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accts Creat by Sales/SDRs Last 12 Months</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Admin_Report_Type__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$BillingCity</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <endDate>2021-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-05-01</startDate>
+    </timeFrameFilter>
+</Report>

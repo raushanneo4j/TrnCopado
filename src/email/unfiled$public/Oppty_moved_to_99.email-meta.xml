@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oppty moved to 99%</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Name} Has Been Moved to 99%</subject>
+    <textOnly>{!Opportunity.Name} has been moved to 99% on {!Opportunity.LastModifiedDate} Link to Opportunity : {!Opportunity.Link}
+Account: {!Opportunity.Account} Old Sales Stage: (Past Sales Stage Value) New Sales Stage: (New Sales Stage Value) Date Modified: (Date Modified) Modified By: (Modified User&apos;s ID) Modified By: (Modified User&apos;s Name) has been moved to 99% on (Date Modified)</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

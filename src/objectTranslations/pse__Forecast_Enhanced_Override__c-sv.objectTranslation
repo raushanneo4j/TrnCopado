@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognos åsidosättande</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognos åsidosätter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>En uppslagning till faktureringsprognosberäkningen som denna åsidosättning gäller.</help>
+        <label><!-- Billing Forecast Calculation --></label>
+        <name>pse__Forecast_Enhanced_Calculation__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>En uppslagning till den kategori för faktureringsprognos som denna åsidosättning gäller för.</help>
+        <label><!-- Billing Forecast Detail Category --></label>
+        <name>pse__Forecast_Enhanced_Detail_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>En uppslagning till den sammanfattningskategori för faktureringsprognoser som denna åsidosättning gäller.</help>
+        <label><!-- Billing Forecast Summary Category --></label>
+        <name>pse__Forecast_Enhanced_Summary_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>En uppslag till gruppen gäller denna överstyrning gäller.</help>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bestämmer om den här överstyrningen är den aktuella aktiva åsidosättningen för den sammanfattande kategori eller detaljkategori den appliceras på.</help>
+        <label><!-- Is Active --></label>
+        <name>pse__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help>Ytterligare information för att förklara varför överskridandet tillämpades.</help>
+        <label><!-- Notes --></label>
+        <name>pse__Notes__c</name>
+    </fields>
+    <fields>
+        <help>En uppfattning om den möjlighet som denna överstyrning gäller för.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Värdet som anges för faktureringsprognosen åsidosätter.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <fields>
+        <help>En uppfattning om den övning som denna överstyrning gäller för.</help>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ett uppslag till projektet gäller denna överstyrning gäller.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ett uppslag till regionen gäller denna överstyrning gäller.</help>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Overrides --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Override Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Faktureringsprognos åsidosätta namn</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Projektuppgift Gantt-inställningar --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Projektuppgift Gantt-inställningar --></value>
+    </caseValues>
+    <fields>
+        <help>När ett projekt är låst för redigering, bestämmer den här inställningen om användare (som har behörighet att redigera uppgifter i projektuppgiften Gantt) får möjlighet att bryta låset och tvinga den andra användaren till läsningsläge.</help>
+        <label><!-- Always Allow Breaking Locks --></label>
+        <name>pse__Break_Current_Locks__c</name>
+    </fields>
+    <fields>
+        <help>Definierar API-namnet på fältuppsättningen, i projektuppgiftsobjektet, som innehåller de anpassade kolumnerna som ska visas på Projektuppgift Gantt. När inställningen är tom används fältuppsättningen Gantt Custom Columns.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Om det är valt laddas inte poster i Project Task Gantt i en buffert. Standardvärdet är avmarkerat. Den här inställningen bör bara ändras efter att ha hört FinancialForce.com kundsupport.</help>
+        <label><!-- Disable Buffered Rendering --></label>
+        <name>pse__Disable_Buffered_Rendering__c</name>
+    </fields>
+    <fields>
+        <help>Om den är vald, avaktiveras lösenberoende knappen när projektuppgiftsberoende är synkroniserad. Om avmarkerad är knappen aktiv när projektuppgiftsberoende inte behöver synkroniseras. Standardvärdet är avmarkerat.</help>
+        <label><!-- Disable Resolve Dependency Btn on Sync --></label>
+        <name>pse__Disable_Resolve_Dependency_Btn_On_Sync__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer antalet rader som ska visas över den aktuella vyn i projektuppgift Gantt. Standardvärdet är 20. Denna inställning bör bara ändras efter att ha hört FinancialForce.com kundsupport.</help>
+        <label><!-- Leading Buffer Zone --></label>
+        <name>pse__Leading_Buffer_Zone__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på en fältuppsättning används för att visa ett anpassat verktygstips för milstolpar. Om den definieras ersätter den här inställningen standard milstolpeverktygstips.</help>
+        <label><!-- Milestone Tooltip Field Set --></label>
+        <name>pse__Milestone_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på en fältuppsättning används för att visa ett anpassat verktygstips för projektuppdragsuppdrag. Om den är definierad ersätter den här inställningen standardverktyget för projektuppgift.</help>
+        <label><!-- PTA Tooltip Field Set --></label>
+        <name>pse__PTA_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer nivåer av Gantt-redigeringstillgång för projektledaren. Värdena är &quot;Full&quot; (standard) - kan redigera skapade projekt, &quot;Läs&quot; - har endast skrivskyddad åtkomst, eller &quot;Ingen&quot; - åtkomst bestämd av Tillståndskontroller.</help>
+        <label><!-- Project Manager Access --></label>
+        <name>pse__Project_Manager_Access__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på ett fältuppsättning används för att visa ett anpassat verktygstips för Projekt. Om den definieras ersätter denna inställning standardprojektverktygstipset.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på ett fält som anges i en projektuppgift som innehåller fält som inte kan redigeras i projektuppgift Gantt.</help>
+        <label><!-- Read Only Field Set --></label>
+        <name>pse__Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs kommer anpassningar till bredd, ordning och synlighet av kolumner i projektuppgiften Gantt att komma ihåg per användare.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Om den är markerad visas knappen Skapa resursfråga på Gantt-verktygsfältet. Använd för att bemanna projektplanen via knappen Skapa resursbehov på sidan Project Task Assignments.</help>
+        <label><!-- Show &quot;Create Resource Demand&quot; button --></label>
+        <name>pse__Show_Generate_RRs__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer om timmarna fullständig procentandel visas i aktivitetsfältet i rutan Schema. Denna inställning reglerar inte visningen av% Hrs-knappen i schemanfönstret.</help>
+        <label><!-- Show Hours Completion % in Task Bar --></label>
+        <name>pse__Show_Hours_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer om punkterna fullständig procentandel visas i aktivitetsfältet i rutan Schema. Den här inställningen är som standard vald. Den här inställningen reglerar inte visningen av knappen% Pts i schemanfönstret.</help>
+        <label><!-- Show Points Completion % in Task Bar --></label>
+        <name>pse__Show_Points_Completion_Percent_Bar__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på ett fältuppsättning används för att visa ett anpassat verktygstips för projektuppgifter. Om den är definierad ersätter den här inställningen standardverktyget för projektuppgift.</help>
+        <label><!-- Task Tooltip Field Set --></label>
+        <name>pse__Task_Tooltip__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer antalet rader som ska visas under den aktuella vyn i projektuppgift Gantt. Standardinställningen är 10. Denna inställning bör bara ändras efter att ha hört FinancialForce.com kundsupport.</help>
+        <label><!-- Trailing Buffer Zone --></label>
+        <name>pse__Trailing_Buffer_Zone__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

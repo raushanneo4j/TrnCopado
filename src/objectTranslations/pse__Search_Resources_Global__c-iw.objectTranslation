@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- משאבי חיפוש גלובליים --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- משאבי חיפוש גלובליים --></value>
+    </caseValues>
+    <fields>
+        <help>קובע קבוצה של תווים מופרדים בפסיק כדי לאפשר בשדה הכתובות.</help>
+        <label><!-- Allow Special Characters In Address --></label>
+        <name>pse__Allow_Special_Characters_In_Address__c</name>
+    </fields>
+    <fields>
+        <help>שם API של שדה באובייקט הקשר שיוצג במשאבי חיפוש. אפשרות זו מתעלמת כאשר תיאור משאב התצוגה נכון.</help>
+        <label><!-- Contact Field 1 --></label>
+        <name>pse__Contact_Field_1__c</name>
+    </fields>
+    <fields>
+        <help>שם API של שדה באובייקט הקשר שיוצג במשאבי חיפוש. אפשרות זו מתעלמת כאשר תיאור משאב התצוגה נכון.</help>
+        <label><!-- Contact Field 2 --></label>
+        <name>pse__Contact_Field_2__c</name>
+    </fields>
+    <fields>
+        <help>שם API של שדה באובייקט הקשר שיוצג במשאבי חיפוש. אפשרות זו מתעלמת כאשר תיאור משאב התצוגה נכון.</help>
+        <label><!-- Contact Field 3 --></label>
+        <name>pse__Contact_Field_3__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, רק תיאור המשאב מוצג. כאשר הם שגויים, שדות אנשי קשר 1 עד 3 מוצגים אם הם מכילים שם API תקף של שדה באובייקט הקשר. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Display Resource Description --></label>
+        <name>pse__Display_Resource_Description__c</name>
+    </fields>
+    <fields>
+        <help>מיפוי כתובת אתר של שירות לשימוש בעת קבלת קו רוחב ואורך באמצעות כתובת. ערך ברירת מחדל: http://www.mapquestapi.com/geocoding/v1/address?key=Fmjtd%7Cluub2q6820%2Caa%3Do5-961xh0&amp;outFormat=json&amp;maxResults=1</help>
+        <label><!-- Geolocation Service URL --></label>
+        <name>pse__Geolocation_Service_URL__c</name>
+    </fields>
+    <fields>
+        <help>קובע כי קו הרוחב והרוחב אינם מתעדכנים כאשר הכתובת אינה חוקית. פורמט נתמך: קו אורך, קו רוחב; קו אורך, קו רוחב.</help>
+        <label><!-- Invalid Longitude and Latitude --></label>
+        <name>pse__Invalid_Longitude_And_Latitude_Pairs__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את כתובת האתר של נקודת הקצה של Mapquest המשמשת לאימות כנגד נקודת הקצה בהגדרות האתר המרוחק של Salesforce לפני השימוש בממשק ה- API של Mapquest Geolocation. כתובת אתר זו צריכה להיות תת-קבוצה של כתובת האתר של שירות המיקום הגיאוגרפי.</help>
+        <label><!-- Mapquest Endpoint URL --></label>
+        <name>pse__Mapquest_Endpoint_URL__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

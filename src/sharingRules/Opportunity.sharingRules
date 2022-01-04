@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Account_Mgrs_Edit_Renewals</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>grant edit abilities of renewal opps to account managers/renewals team</description>
+        <label>Account Mgrs Edit Renewals</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Account_Management</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Renewal</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Partner_Edits</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Director of Channel can edit all opps excluding closed won/lost.
+
+;Revised in https://neo4j--organizer.na122.visual.force.com/a7z3s0000004SJSAA2 nicknameis: ORE Phase 2 (John Broad&amp;#39;s ORE requirements)  by removing criteria of partner fields on opportunity because we retired those and replaced it with a child object.</description>
+        <label>Partner Edits</label>
+        <sharedTo>
+            <role>Director_of_Alliance_and_Channel</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Won</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Regional_Director_EMEA_East_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Regional Director EMEA East Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Sales_EMEA_South</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Qualification,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SDR_Team_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Scott and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
+        <label>SDR Team Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>Director_of_Sales_Development</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 or (2 and 3)</booleanFilter>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Qualification</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sales_Team_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>VP Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
+        <label>Sales Team Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Sales</roleAndSubordinates>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Qualification,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VP_EMEA_West_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>VP Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
+        <label>VP EMEA West Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Sales_EMEA_North</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Qualification,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VP_Global_Cloud_Sales_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>VP Global Cloud Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
+        <label>VP Global Cloud Sales Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Global_Cloud_Sales</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Qualification,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VP_NA_Alliance_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Revised in https://neo4j--organizer.na122.visual.force.com/a7z3s0000004SJSAA2 nicknameis: ORE Phase 2 (John Broad&amp;#39;s ORE requirements)  by removing criteria of partner fields on opportunity because we retired those and replaced it with a child object.</description>
+        <label>VP NA Alliance Access</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Strategic_Alliances_and_Channels</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Won</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>VP_Sales_APAC_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>VP Sales APAC and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
+        <label>VP Sales APAC Edit</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Sales_APAC</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>StageName</field>
+            <operation>equals</operation>
+            <value>Free Education License,Prospecting,Qualification SDR,Qualification,Free Startup License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Manager_Approved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>CSM_Edit_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Customer Success manager and team ability to edit all opps to link CPPs on opps</description>
+        <label>CSM Edit Access</label>
+        <sharedTo>
+            <roleAndSubordinates>Customer_Success_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Edit_Opportunities</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows users that belong to to the &quot;Edit Opportunities&quot; public group edit Opportunity records that they don&apos;t own.</description>
+        <label>Edit Opportunities</label>
+        <sharedTo>
+            <group>Edit_Opportunities</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Editing_Ops_for_Lead_Source_Clean_up</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Editing opps access for lead source clean up, remove when complete.</description>
+        <label>Editing Ops for Lead Source Clean up</label>
+        <sharedTo>
+            <role>Marketing_Operations_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Finance_Edit_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows Finance to edit opps owned by other users (other validation rules and profile field level security settings restrict Finance from editing anything but the invoice field)</description>
+        <label>Finance Edit All</label>
+        <sharedTo>
+            <role>Controller</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Partner_Deal_Reg_team_can_Edit_all_opps</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Established 2021-01-14, logan smith (on fawads team) wants logan &amp; 3 peers (also on fawads team) to have edit access on all pipeline opps, so that they can avoid &quot;insufficient access rights on object id&quot; when editing info on pipeline opps.    Since we have public read OWD on opps id like to add a sharing rule for them,    granting edit access on all open-staged opps</description>
+        <label>Partner Deal Reg team can Edit all opps</label>
+        <sharedTo>
+            <group>Partner_Deal_Reg_team</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Pre_sales_Opp_Edit_Rights</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>- Sharing setting allows field to edit opportunities
+- All fields on opp have been made read only except the field engineering fields
+- Validation rules prevent field engineers from updating critical fields such as stage, date, owner.</description>
+        <label>Pre-sales Opp Edit Rights</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_of_Field_Engineering</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sales_Ops_Edits</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Members that report to Lance can edit opportunities</description>
+        <label>Sales Ops Edits</label>
+        <sharedTo>
+            <role>Sales_Operations</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_All_with_sombat_southivorarat_neotechnology_com_for_Job_Duty</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sombat&apos;s manager needs Sombat to &apos;edit&apos; 2 fields on all opportunities. FLS handled separately.</description>
+        <label>Share All with sombat.southivorarat@neotechnology.com for Job Duty</label>
+        <sharedTo>
+            <group>Access_for_Sombat_Southivorarat</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Steve_Turek_Can_Edit_Steve_Coltart_s_Opps</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This is a one-off scenario where Steve Turek acts as a mentor for Steve Coltart and needs edit access to his Opportunities.</description>
+        <label>Steve Turek Can Edit Steve Coltart&apos;s Opps</label>
+        <sharedTo>
+            <group>Steve_Turek_SFDCSPT_143</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Stephen_Coltart_JIRA_SFDCSPT_143</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

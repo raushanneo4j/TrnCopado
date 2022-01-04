@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Granted to Maria to manage subfolders in:  (Professional Services, PSA Dashboard Reports, PSA Smart Start Reports) bc GALimits create subfolder inside  folder if ur not the owner of the parent folder, even if you have &quot;Manage&quot; perm on  the parent folder</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Create Report Folders</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateCustomizeReports</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateReportFolders</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunReports</name>
+    </userPermissions>
+</PermissionSet>

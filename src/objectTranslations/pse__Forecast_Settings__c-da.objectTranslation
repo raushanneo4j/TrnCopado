@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Uddateret: Prognoseindstillinger --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Uddateret: Prognoseindstillinger --></value>
+    </caseValues>
+    <fields>
+        <help>Indtast antal dage før den aktuelle dato, der skal bruges som cutoff-dato for faktiske vs planlagte poster. Brug 0 til i dag. Forlad automatisk for at bruge &quot;sidste uge&quot;</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af poster, der skal behandles i en enkelt batch. Værdien er 200 som standard.</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 1.</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 2.</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 3.</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 4.</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 5.</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 6.</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>Mærket tildelt den vejede prognose for kategori 7.</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>Prognose kurven anvendes, når der ikke er nogen kurve indstillet på en mulighed. En fejlmeddelelse vises, hvis der ikke er angivet en kurve på en mulighed, og der er ikke defineret en standard mulighedskurve.</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>Prognosekurven anvendes, når der ikke er nogen kurve på et projekt. En fejlmeddelelse vises, hvis der ikke er angivet en kurve på et projekt, og der er ikke defineret en standardprojektkurve.</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via Chatter til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via e-mail til modtagere, der er angivet i indstillingen Meddelelsesmodtagere. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>Angiver meddelelsesmodtagerne for Prognose-batchmeddelelser sendt via Chatter eller e-mail. Værdien er en liste over e-mailadresser adskilt af semikolon (;). Denne indstilling er som standard null.</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>Hvis valgt, sendes meddelelser fra Prognose-batchprocesser via opgaver. Dette er deaktiveret som standard.</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 1 for Opportunity Forecasts.</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 2 for muligheden for prognoser. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 3 for muligheden for prognoser. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 4 for Opportunity Forecasts. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 5 for muligheden for prognoser. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 6 for muligheden for prognoser. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 7 for Opportunity Forecasts. For bedste praksis skal hver multiplikator være højere end den foregående kategoriværdi.</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 1 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 2 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 3 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 4 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 5 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 6 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Multiplikatorerne brugte til at beregne kategori 7 for projektprognoser. Dette multiplicerer i rækkefølge metrics for: Billings, Pass Through Billings, Planlagt Tid, Held Ressourceforespørgsler, Utilbageholdte Ressourceanmodninger, Planlagte, Milepæle og Uplanlagt Backlog.</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 1 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 2 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 3 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 4 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 5 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 6 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>Vælg for at bestemme, om kategori 7 er inkluderet i prognosen beregning.</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

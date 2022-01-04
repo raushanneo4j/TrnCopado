@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Billings --></label>
+        <name>psa_report__Actual_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvA Variance --></label>
+        <name>psa_report__EvA_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Billings --></label>
+        <name>psa_report__Scheduled_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Is Last Sunday --></label>
+        <name>psaws__End_Date_Is_Last_Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Hours Percent Variance --></label>
+        <name>psaws__High_Hours_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>实际可结算金额除以实际小时数或实际天数</help>
+        <label><!-- Actual Average Bill Rate --></label>
+        <name>pse__Actual_Average_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>可计费的时间卡小时数</help>
+        <label><!-- Actual Billable Amount --></label>
+        <name>pse__Actual_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>基于按星期汇总的时间卡，在该时间段内工作的实际天数。</help>
+        <label><!-- Actual Days (Aggregated) --></label>
+        <name>pse__Actual_Days_Aggregated__c</name>
+    </fields>
+    <fields>
+        <help>该时间段内的实际工作天数</help>
+        <label><!-- Actual Days --></label>
+        <name>pse__Actual_Days__c</name>
+    </fields>
+    <fields>
+        <help>在时间卡上输入的小时数</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Percent Variance --></label>
+        <name>pse__Days_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Variance --></label>
+        <name>pse__Days_Variance__c</name>
+    </fields>
+    <fields>
+        <help>此记录的时间段的结束日期。这不应与相关作业或时间卡的结束日期相混淆。</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>在此期间计划工作的天数</help>
+        <label><!-- Estimated Days --></label>
+        <name>pse__Estimated_Days__c</name>
+    </fields>
+    <fields>
+        <help>预定的小时数</help>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Percent Variance --></label>
+        <name>pse__Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <help>项目（账单费率）汇率，相对于公司货币，在时间表的结束日期计算。</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>pse__Project_Manager__c</name>
+        <relationshipLabel><!-- Est Vs Actuals (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>请求资源的帐单费率金额。</help>
+        <label><!-- Resource Request Bill Rate --></label>
+        <name>pse__Resource_Request_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>在该时间段内为保留的资源请求计划工作的请求天数。</help>
+        <label><!-- Resource Request Days --></label>
+        <name>pse__Resource_Request_Days__c</name>
+    </fields>
+    <fields>
+        <help>在保留的资源请求上计划的请求小时数。</help>
+        <label><!-- Resource Request Hours --></label>
+        <name>pse__Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <help>查找与此Estimates Versus Actuals记录相关的持有资源请求。</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Estimates Versus Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>来自作业的比率</help>
+        <label><!-- Scheduled Bill Rate --></label>
+        <name>pse__Scheduled_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Bill Rate is Daily Rate --></label>
+        <name>pse__Scheduled_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <help>此记录的时间段的开始日期。这不应与相关作业或时间卡的开始日期相混淆。</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>此时间跨度表示的时间段类型</help>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>25美分硬币</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>周</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>相关的时间段</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>是否提交了相关的考勤卡？</help>
+        <label><!-- Timecards Submitted --></label>
+        <name>pse__Timecards_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>以小时计的差异量</help>
+        <label><!-- Hours Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <layouts>
+        <layout>Est Vs Actuals Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Est Vs实际名称</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- The estimates versus actuals comparison record requires either an assignment or a resource request. --></errorMessage>
+        <name>pse__Assignment_required</name>
+    </validationRules>
+</CustomObjectTranslation>

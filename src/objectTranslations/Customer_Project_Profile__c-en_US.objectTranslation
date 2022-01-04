@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Project Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Project Profiles</value>
+    </caseValues>
+    <fields>
+        <label><!-- APIs in Use --></label>
+        <name>APIs_in_Use__c</name>
+        <picklistValues>
+            <masterLabel>HTTP API</masterLabel>
+            <translation><!-- HTTP API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDN OGM/SDN RX</masterLabel>
+            <translation><!-- SDN OGM/SDN RX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stored Procedures</masterLabel>
+            <translation><!-- Stored Procedures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmanaged Extensions</masterLabel>
+            <translation><!-- Unmanaged Extensions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Customer Segment --></label>
+        <name>Account_Customer_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Global Territory --></label>
+        <name>Account_Global_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Customer Project Profiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account US Territory --></label>
+        <name>Account_US_Territory__c</name>
+    </fields>
+    <fields>
+        <help><!-- List any additional technologies used alongside Neo4j. Commonly seen technologies, mainly DBs and BI tools. --></help>
+        <label><!-- Additional 3rd-Party Technologies --></label>
+        <name>Additional_3rd_Party_Technologies__c</name>
+        <picklistValues>
+            <masterLabel>Cassandra</masterLabel>
+            <translation><!-- Cassandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Db2</masterLabel>
+            <translation><!-- Db2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elasticsearch</masterLabel>
+            <translation><!-- Elasticsearch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft SQL Server</masterLabel>
+            <translation><!-- Microsoft SQL Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microstrategy</masterLabel>
+            <translation><!-- Microstrategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MongoDB</masterLabel>
+            <translation><!-- MongoDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL</masterLabel>
+            <translation><!-- MySQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle</masterLabel>
+            <translation><!-- Oracle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PostgreSQL</masterLabel>
+            <translation><!-- PostgreSQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PowerBI</masterLabel>
+            <translation><!-- PowerBI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qlik</masterLabel>
+            <translation><!-- Qlik --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis</masterLabel>
+            <translation><!-- Redis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spark</masterLabel>
+            <translation><!-- Spark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tableau</masterLabel>
+            <translation><!-- Tableau --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Method of user authentication configured to Neo4j. --></help>
+        <label><!-- Authentication &amp; Authorization --></label>
+        <name>Authentication_Authorization__c</name>
+        <picklistValues>
+            <masterLabel>Kerberos</masterLabel>
+            <translation><!-- Kerberos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LDAP/AD</masterLabel>
+            <translation><!-- LDAP/AD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed</masterLabel>
+            <translation><!-- Mixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native</masterLabel>
+            <translation><!-- Native --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_Avg # of Props/Node --></label>
+        <name>Avg_of_Props_Node__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Avg # of Props/Rel --></label>
+        <name>Avg_of_Props_Rel__c</name>
+    </fields>
+    <fields>
+        <help><!-- How is the customer backing up the database and how often? --></help>
+        <label><!-- Backup Strategy &amp; Frequency --></label>
+        <name>Backup_Strategy_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- What tools does this customer use to manage configuration and deployment? --></help>
+        <label><!-- Build &amp; Config --></label>
+        <name>Build_Config__c</name>
+        <picklistValues>
+            <masterLabel>Ansible</masterLabel>
+            <translation><!-- Ansible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chef</masterLabel>
+            <translation><!-- Chef --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenkins</masterLabel>
+            <translation><!-- Jenkins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puppet</masterLabel>
+            <translation><!-- Puppet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this a Cloud Managed Service (CMS) customer? --></help>
+        <label><!-- CMS Customer --></label>
+        <name>CMS_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPP Status --></label>
+        <name>CPP_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELA Master</masterLabel>
+            <translation><!-- ELA Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part of ELA</masterLabel>
+            <translation><!-- Part of ELA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoC</masterLabel>
+            <translation><!-- PoC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Sales</masterLabel>
+            <translation><!-- Pre-Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CPUs --></label>
+        <name>CPUs__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSA Assigned --></label>
+        <name>CSA_Assigned__c</name>
+    </fields>
+    <fields>
+        <help><!-- CSM stands for Customer Success Manager. Indicate whether a CSM has been assigned to this project by checking this box. --></help>
+        <label><!-- CSM Assigned --></label>
+        <name>CSM_Assigned__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the primary Cloud provider (or On Prem)? --></help>
+        <label><!-- Cloud Platform --></label>
+        <name>Cloud_Platform__c</name>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alibaba Cloud</masterLabel>
+            <translation><!-- Alibaba Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azure</masterLabel>
+            <translation><!-- Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCP</masterLabel>
+            <translation><!-- GCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Prem</masterLabel>
+            <translation><!-- On Prem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenStack</masterLabel>
+            <translation><!-- OpenStack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Cloud Foundry</masterLabel>
+            <translation><!-- Pivotal Cloud Foundry --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does query have more than 3 filters? --></help>
+        <label><!-- z_Complex Query Filters --></label>
+        <name>Complex_Query_Filters__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_Complex Query Notes --></label>
+        <name>Complex_Query_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Complex Query Score --></label>
+        <name>Complex_Query_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field cannot be edited as it pulls its data from the master field by the same name on the Account. The master field is used by the Customer Success Team to indicate whether an Account is covered by a CSM and/or CSA. Changes should only be made by CS management. --></help>
+        <label><!-- Customer Success Top Account --></label>
+        <name>CustomerSuccessTopAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Google Drive Location --></label>
+        <name>Customer_Google_Drive_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- CSM stands for Customer Success Manager. Select the name of the CSM assigned to this project. 
+. --></help>
+        <label><!-- CSM --></label>
+        <name>Customer_Success_Account_Manager__c</name>
+        <relationshipLabel><!-- Customer Project Profiles (CSM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- CSA stands for Customer Success Architect. Select the name of the CSA assigned to this project. --></help>
+        <label><!-- CSA --></label>
+        <name>Customer_Success_Architect__c</name>
+        <relationshipLabel><!-- Customer Project Profiles (CSA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- z_Customer Success Plan: --></label>
+        <name>Customer_Success_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Success Trello: --></label>
+        <name>Customer_Success_Trello__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Customer Temperature --></label>
+        <name>Customer_Temperature__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_DR/Multi-DC required --></label>
+        <name>DR_Multi_DC_required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deployment Mode --></label>
+        <name>Deployment_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Embedded</masterLabel>
+            <translation><!-- Embedded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed</masterLabel>
+            <translation><!-- Mixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Server</masterLabel>
+            <translation><!-- Server --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate what type of disks are used for production server storage. --></help>
+        <label><!-- Disks --></label>
+        <name>Disks__c</name>
+        <picklistValues>
+            <masterLabel>HDD</masterLabel>
+            <translation><!-- HDD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NVMe</masterLabel>
+            <translation><!-- NVMe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAN</masterLabel>
+            <translation><!-- SAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSD</masterLabel>
+            <translation><!-- SSD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate which driver(s) the customer uses, if any. --></help>
+        <label><!-- Drivers --></label>
+        <name>Drivers__c</name>
+        <picklistValues>
+            <masterLabel>.Net</masterLabel>
+            <translation><!-- .Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go</masterLabel>
+            <translation><!-- Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JDBC</masterLabel>
+            <translation><!-- JDBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java</masterLabel>
+            <translation><!-- Java --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JavaScript</masterLabel>
+            <translation><!-- JavaScript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHP</masterLabel>
+            <translation><!-- PHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Python</masterLabel>
+            <translation><!-- Python --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ruby</masterLabel>
+            <translation><!-- Ruby --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If encryption is in use, how has it been configured? --></help>
+        <label><!-- Encryption --></label>
+        <name>Encryption__c</name>
+        <picklistValues>
+            <masterLabel>Encryption at rest</masterLabel>
+            <translation><!-- Encryption at rest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encryption for external connections</masterLabel>
+            <translation><!-- Encryption for external connections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intra-cluster encryption</masterLabel>
+            <translation><!-- Intra-cluster encryption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No encryption</masterLabel>
+            <translation><!-- No encryption --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide a general description of the environment, including topology and technology stack. --></help>
+        <label><!-- Environment Description --></label>
+        <name>Environment_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Evolving Schema Notes --></label>
+        <name>Evolving_Schema_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Evolving Schema Score --></label>
+        <name>Evolving_Schema_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- What type of methodology are you using for this project? Will the release cycles be more than 3 months? --></help>
+        <label><!-- z_Evolving Schema --></label>
+        <name>Evolving_Schema__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Failover Required --></label>
+        <name>Failover_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is automatically populated by Gainsight. --></help>
+        <label><!-- Account Health Score --></label>
+        <name>GainsighAccountHealthScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is automatically populated by Gainsight. --></help>
+        <label><!-- Account Health Score Label --></label>
+        <name>GainsightAccountHealthScoreLabel__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is automatically populated by Gainsight. --></help>
+        <label><!-- Gainsight Company ID --></label>
+        <name>Gainsight_Company_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If unknown, please input 01/01/1900 --></help>
+        <label><!-- Go Live Date --></label>
+        <name>Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Example: r5.xlarge or hardware, if On Prem. --></help>
+        <label><!-- Instance Type --></label>
+        <name>Instance_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instances in Production --></label>
+        <name>Instances_in_Production__c</name>
+    </fields>
+    <fields>
+        <label><!-- Java Development Kit --></label>
+        <name>Java_Development_Kit__c</name>
+        <picklistValues>
+            <masterLabel>Amazon Corretto</masterLabel>
+            <translation><!-- Amazon Corretto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IBM</masterLabel>
+            <translation><!-- IBM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenJDK</masterLabel>
+            <translation><!-- OpenJDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle</masterLabel>
+            <translation><!-- Oracle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RedHat OpenJDK</masterLabel>
+            <translation><!-- RedHat OpenJDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZuluJDK</masterLabel>
+            <translation><!-- ZuluJDK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Java Version --></label>
+        <name>Java_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kickoff Call Notes --></label>
+        <name>KICKOFF_CALL_NOTES__c</name>
+    </fields>
+    <fields>
+        <label><!-- KickoffCallNotes(deprecated use newer v) --></label>
+        <name>Kickoff_Call_Notes_dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Meeting Date --></label>
+        <name>Last_Meeting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Last Neo4j Visit Date --></label>
+        <name>Last_Neo4j_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the purpose for which this subscription is licensed. --></help>
+        <label><!-- License Info --></label>
+        <name>License_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- How is the customer monitoring their Neo4j environment? What tools are in use? --></help>
+        <label><!-- Monitoring --></label>
+        <name>Monitoring__c</name>
+        <picklistValues>
+            <masterLabel>Appdynamics</masterLabel>
+            <translation><!-- Appdynamics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSV Metrics</masterLabel>
+            <translation><!-- CSV Metrics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Watch</masterLabel>
+            <translation><!-- Cloud Watch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datadog</masterLabel>
+            <translation><!-- Datadog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grafana</masterLabel>
+            <translation><!-- Grafana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graphite</masterLabel>
+            <translation><!-- Graphite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HTTP endpoints</masterLabel>
+            <translation><!-- HTTP endpoints --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Halin</masterLabel>
+            <translation><!-- Halin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JMX</masterLabel>
+            <translation><!-- JMX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Relic</masterLabel>
+            <translation><!-- New Relic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prometheus</masterLabel>
+            <translation><!-- Prometheus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_Neo4j-Graph Expertise --></label>
+        <name>Neo4j_Graph_Expertise__c</name>
+        <picklistValues>
+            <masterLabel>Expert</masterLabel>
+            <translation><!-- Expert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediate</masterLabel>
+            <translation><!-- Intermediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novice</masterLabel>
+            <translation><!-- Novice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Neo4j Version --></label>
+        <name>Neo4j_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Next Check-in Quarter --></label>
+        <name>Next_Check_in_Quarter__c</name>
+        <picklistValues>
+            <masterLabel>2019 - Q3</masterLabel>
+            <translation><!-- 2019 - Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019 - Q4</masterLabel>
+            <translation><!-- 2019 - Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020 - Q1</masterLabel>
+            <translation><!-- 2020 - Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020 - Q2</masterLabel>
+            <translation><!-- 2020 - Q2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Nodes --></label>
+        <name>Nodes__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many clusters exist in the production environment? Typically, there&apos;s one cluster. --></help>
+        <label><!-- # of Clusters in Production --></label>
+        <name>Number_of_Clusters_in_Production__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many databases are running in the production environment (1 prior to 4.0)? --></help>
+        <label><!-- # of Databases --></label>
+        <name>Number_of_Databases__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of datacenters or regions across which cluster(s) are deployed. --></help>
+        <label><!-- # of Datacenters/Regions --></label>
+        <name>Number_of_Datacenters_Regions__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the total count of properties in the graph? --></help>
+        <label><!-- # of Properties --></label>
+        <name>Number_of_Properties__c</name>
+    </fields>
+    <fields>
+        <help><!-- What&apos;s the total number of Replicas deployed in the production environment? --></help>
+        <label><!-- # of Read Replicas in Production --></label>
+        <name>Number_of_Read_Replicas_in_Production__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS --></label>
+        <name>OS__c</name>
+        <picklistValues>
+            <masterLabel>Amazon Linux</masterLabel>
+            <translation><!-- Amazon Linux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CentOS</masterLabel>
+            <translation><!-- CentOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debian</masterLabel>
+            <translation><!-- Debian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other: Unix/Linux type</masterLabel>
+            <translation><!-- Other: Unix/Linux type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red Hat</masterLabel>
+            <translation><!-- Red Hat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SuSE</masterLabel>
+            <translation><!-- SuSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubuntu</masterLabel>
+            <translation><!-- Ubuntu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows</masterLabel>
+            <translation><!-- Windows --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the customer has container orchestration, what technology do they use? --></help>
+        <label><!-- Orchestration --></label>
+        <name>Orchestration__c</name>
+        <picklistValues>
+            <masterLabel>Apache Mesos</masterLabel>
+            <translation><!-- Apache Mesos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docker</masterLabel>
+            <translation><!-- Docker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kubernetes</masterLabel>
+            <translation><!-- Kubernetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Openshift</masterLabel>
+            <translation><!-- Openshift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- From metrics, usually reported during a Health Check. --></help>
+        <label><!-- Peak Transactions --></label>
+        <name>Peak_Transactions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which of these plugins, if any, does the customer use in the production environment? --></help>
+        <label><!-- Plugins &amp; Tools --></label>
+        <name>Plugins_Tools__c</name>
+        <picklistValues>
+            <masterLabel>APOC</masterLabel>
+            <translation><!-- APOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BI Connector</masterLabel>
+            <translation><!-- BI Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bloom</masterLabel>
+            <translation><!-- Bloom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GRAND Stack</masterLabel>
+            <translation><!-- GRAND Stack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graph Data Science Library</masterLabel>
+            <translation><!-- Graph Data Science Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GraphQL</masterLabel>
+            <translation><!-- GraphQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kettle</masterLabel>
+            <translation><!-- Kettle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linkurious</masterLabel>
+            <translation><!-- Linkurious --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j Streams / Kafka</masterLabel>
+            <translation><!-- Neo4j Streams / Kafka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Production Architecture --></label>
+        <name>Production_Architecture__c</name>
+        <picklistValues>
+            <masterLabel>Causal</masterLabel>
+            <translation><!-- Causal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Causal - Multi-DC</masterLabel>
+            <translation><!-- Causal - Multi-DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HA</masterLabel>
+            <translation><!-- HA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Health Score Label --></label>
+        <name>Project_Health_Score_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Health Score --></label>
+        <name>Project_Health_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAM (GB) --></label>
+        <name>RAM_GB__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Roll Out Plan --></label>
+        <name>ROLL_OUT_PLAN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide a description of the read throughput requirements. --></help>
+        <label><!-- Read Throughput --></label>
+        <name>Read_Throughput__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Real Time Info? --></label>
+        <name>Real_Time_Info__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- z_Real-Time Score --></label>
+        <name>Real_Time_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Real-Time Notes --></label>
+        <name>Real_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll-out Plan (deprecated use newer ver) --></label>
+        <name>Roll_out_Plan_dep__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC CPP ID --></label>
+        <name>SFDC_CPP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Handling Instructions --></label>
+        <name>SPECIAL_HANDLING_INSTRUCTIONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Scale Out Reads Required --></label>
+        <name>Scale_Out_Reads_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Handling(deprecated use newer v) --></label>
+        <name>Special_Handling_Instructions_dep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other Databases in Architecture (Polyglot) --></help>
+        <label><!-- z_Supplementary Databases --></label>
+        <name>Supplementary_Databases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Store Size (GB) --></label>
+        <name>Total_Store_Size_GB__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Total Trec Score --></label>
+        <name>Total_Trec_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Transactional Notes --></label>
+        <name>Transactional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Transactional Score --></label>
+        <name>Transactional_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- How often will the data in DB be updated? (hourly? monthly?) --></help>
+        <label><!-- z_Transactional - Update Frequency --></label>
+        <name>Transactional_Update_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Case Description --></label>
+        <name>USE_CASE_DESCRIPTION__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains notes regarding the customer&apos;s current upgrade status. The field populated by the Customer Success Team in Gainsight and then automatically populated/updated by Gainsight in Salesforce. --></help>
+        <label><!-- Upgrade Status Notes --></label>
+        <name>UpgradeStatusNotes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the current upgrade status of the customer. The field populated by the Customer Success Team in Gainsight and then automatically populated/updated by Gainsight in Salesforce. --></help>
+        <label><!-- Upgrade Status --></label>
+        <name>UpgradeStatus__c</name>
+        <picklistValues>
+            <masterLabel>Already Upgraded</masterLabel>
+            <translation><!-- Already Upgraded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluded - Planning to Upgrade</masterLabel>
+            <translation><!-- Excluded - Planning to Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Planning to Upgrade</masterLabel>
+            <translation><!-- Not Planning to Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plans Unknown</masterLabel>
+            <translation><!-- Plans Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade Completed</masterLabel>
+            <translation><!-- Upgrade Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use Case Descrip(deprecated use newer v) --></label>
+        <name>Use_Case_Description_dep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Transactional (OLTP), Analytical/Batch (OLAP) or Mixed (HTAP)? --></help>
+        <label><!-- Workload Type --></label>
+        <name>Workload_Type__c</name>
+        <picklistValues>
+            <masterLabel>HTAP (Mixed)</masterLabel>
+            <translation><!-- HTAP (Mixed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLAP</masterLabel>
+            <translation><!-- OLAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLTP</masterLabel>
+            <translation><!-- OLTP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide a description of the write throughput requirements. --></help>
+        <label><!-- Write Throughput --></label>
+        <name>Write_Throughput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zendesk Org ID --></label>
+        <name>Zendesk_Org_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Rels --></label>
+        <name>of_Rels__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are they in production? If so, is it a full-scale production or only an inital, limited scale? --></help>
+        <label><!-- Production Status --></label>
+        <name>production_status__c</name>
+        <picklistValues>
+            <masterLabel>Full Production</masterLabel>
+            <translation><!-- Full Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Production</masterLabel>
+            <translation><!-- Limited Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Customer Project Profile Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Neo4j Deployment Details --></label>
+            <section>Neo4j Deployment Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

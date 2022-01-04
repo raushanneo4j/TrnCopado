@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registro batch previsioni entrate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registri batch di previsione entrate</value>
+    </caseValues>
+    <fields>
+        <help>Il messaggio è stato registrato per la previsione delle entrate correlate.</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>Cerca l’opportunità per cui questo registro è stato generato.</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Una ricerca per il progetto per cui è stato generato questo registro.</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Una ricerca nel batch di previsione delle entrate per cui è stato generato questo registro.</help>
+        <label><!-- Revenue Forecast Batch --></label>
+        <name>pse__Revenue_Forecast_Batch__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Batch Log Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome registro batch previsione entrate</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

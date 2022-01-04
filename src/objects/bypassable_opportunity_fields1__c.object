@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>HCS Cache allows for maximum of 255 characters in settings. 
+Helps specified users bypass validation rules when editing/updating specified fields on the &quot;Power Editor&quot; page only. NEO4J PATTERN: bypass_SOBJECT_fieldsN__c.
+
+A neo4j utility page for power users, analytics, finance, and users that need to edit otherwise locked records.
+                &quot;input fields on PowerEditor are controlled by salesops@neo4j.com and salesforce@neo4j.com, controlled by the HCS--&gt;bypassable_*_fields&quot;.
+                &quot;If you need to edit more locked fields, send a  screenshot to salesforce@neo4j.com explaining what/ how frequently / why</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>comma_separated_fields__c</fullName>
+        <externalId>false</externalId>
+        <label>comma_separated_fields</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>bypassable opportunity fields1</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>comma_separated_fields__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

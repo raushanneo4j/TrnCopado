@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 任务管理设置 --></value>
+    </caseValues>
+    <fields>
+        <help>如果为true，则在创建分配或分配里程碑时会忽略错误，这将导致创建项目任务分配记录。除非自动创建任务分配为真，否则将忽略此选项。</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>指示在将资源分配给项目或创建新的分配里程碑记录时，是否自动分配属于与分配相同的里程碑的未分配项目任务。默认值为false。</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则在删除分配或分配里程碑时会忽略错误，这将导致删除项目任务分配记录。除非自动删除任务分配为真，否则将忽略此选项。</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>指示在删除资源或里程碑或里程碑不再与该分配关联时是否自动删除项目任务分配。默认值为false。</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>在初始加载和刷新后控制任务管理界面上任务的默认顺序。这在SOQL ORDER BY子句之后必须有效。</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>“项目任务分配”对象上的字段集名称，其中包含在未锁定记录时将限制进行编辑的字段列表。</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Project Task Dependency对象上的fieldset名称，其中包含在未锁定记录时将被限制进行编辑的字段列表。</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>“项目任务”对象上的字段集名称，其中包含在未锁定记录时将限制进行编辑的字段列表。</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>要在“任务管理”UI中加载以供选择的最大项目数</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>如果选择此选项，则会限制您在更改为“里程碑目标”日期时将更改保存到“任务结束日期”。</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>如果选择此选项，则会限制您在项目开始日期和结束日期超出范围时将更改保存到任务结束日期。</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则限制您在项目任务分配日期超出范围时将更改保存到任务结束日期。</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则限制您在项目任务分配时间超出范围时将更改保存到任务结束日期。</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>如果选择此选项，则会限制您在更改为“里程碑目标”日期时将更改保存到“任务开始日期”。</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>如果选择此选项，则会限制您在项目开始日期和结束日期超出范围时将更改保存到任务开始日期。</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+</CustomObjectTranslation>

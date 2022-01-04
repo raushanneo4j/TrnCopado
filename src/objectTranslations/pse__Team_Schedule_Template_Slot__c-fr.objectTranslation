@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Emplacement de modèle de calendrier d&apos;équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Emplacements des modèles de planification d&apos;équipe</value>
+    </caseValues>
+    <fields>
+        <help>L&apos;heure à laquelle se termine le créneau horaire</help>
+        <label><!-- End Time --></label>
+        <name>pse__End_Time__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;heures requises par ressource dans l&apos;emplacement de planification.</help>
+        <label><!-- Hours --></label>
+        <name>pse__Hours__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de ressources nécessaires pour le logement de planification.</help>
+        <label><!-- Resources Required --></label>
+        <name>pse__Resources_Required__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;heure à laquelle commence le créneau horaire</help>
+        <label><!-- Start Time --></label>
+        <name>pse__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Schedule Slot Type --></label>
+        <name>pse__Team_Schedule_Slot_Type__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le modèle de planning d&apos;équipe associé à cet emplacement de planning.</help>
+        <label><!-- Team Schedule Template --></label>
+        <name>pse__Team_Schedule_Template__c</name>
+        <relationshipLabel><!-- Team Schedule Template Slots --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Team Schedule Template Slot Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du logement de modèle de planificati</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Hours should be non-negative values in increments of 0.25. --></errorMessage>
+        <name>pse__Hours_Must_Positive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Number of Resources should be between 1 to 99. --></errorMessage>
+        <name>pse__Resource_Should_Be_In_Range</name>
+    </validationRules>
+</CustomObjectTranslation>

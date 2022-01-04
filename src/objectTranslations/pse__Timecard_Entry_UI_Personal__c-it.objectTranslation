@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Timecard Entry UI Personal --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Timecard Entry UI Personal --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, nella pagina Immissione orario, quando gli utenti fanno clic o escludono le celle del tempo di attività o immettono manualmente zero, il valore del progetto / assegnazione viene aggiornato a zero. Il valore predefinito è falso. La modalità di immissione del tempo di attività deve essere impostata su Calcolato.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Se true, il progetto o l&apos;assegnazione possono essere modificati fintanto che lo stato del segnaposto è uno dei valori &quot;timecard-edit-status-values ​​/ Timecard_edit_status_values__c&quot;.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>I campi da utilizzare come suggerimento per i compiti. Completamente qualificato (con spazio dei nomi se applicabile), sono richiesti i nomi dei campi sensibili al maiuscolo / minuscolo</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo Fatturabile è configurato per la visualizzazione, determina se deve essere visualizzato a sinistra o a destra di Ore nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente di Timecard.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Indica se i timecards con la stessa combinazione di settimana, progetto, assegnazione, risorsa, fatturabile, progetto, metodologia, posizione, viaggio sono combinati sulla pagina Timecard Entry.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, i campi aggiuntivi verranno copiati dai timecardi della settimana precedente.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo ETC selezionato verrà copiato dai timecards della settimana precedente</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se spuntato I campi orari come lunedì, martedì ecc. Verranno copiati dai cartellini delle settimane precedenti</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, i campi di informazioni sulla posizione come Location Mon etc verranno copiati dai timecards della settimana precedente</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, il campo Metodologia verrà copiato dai timecards della settimana precedente</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato Milestones verrà copiato dai timecards della settimana precedente</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le note verranno copiate dai timecardi della settimana precedente</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, il campo Fase verrà copiato dai timecard della settimana precedente</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se impostato su true, la funzionalità Copia da pianificazione inserisce i campi di Notes per ogni giorno sul Timecard se trova i record figlio di Assegnazione giornaliera note sull&apos;assegnazione per quel giorno. (predefinito falso)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le ore di attività vengono copiate dalla scheda della settimana precedente.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le informazioni sull&apos;attività vengono copiate dal cartellino della settimana precedente.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se i campi Informazioni di viaggio come Travel Week, Travel Mon etc vengono copiati dai timecards della settimana precedente</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Quando true e il popup di ricerca delle risorse nella nuova UI timecard restituisce solo un risultato, la finestra di ricerca delle risorse viene chiusa automaticamente e il campo della risorsa viene impostato sulla risorsa restituita.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Se true, il campo a discesa fatturabile sul time code ui verrà visualizzato come disabilitato ovvero non modificabile dall&apos;utente.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI memorizza nella cache tutti gli assegnamenti / progetti assegnati insieme alle pietre miliari durante il caricamento. Questo può portare al limite del livello di visualizzazione della forza vendita, se l&apos;utente ha molti incarichi / progetti. L&apos;impostazione di questo valore di configurazione su true ridurrà al minimo questa cache.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Queste linee vuote di timecard verranno aggiunte quando verrà fatto clic sul pulsante Aggiungi linee.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>Questo è il numero minimo di linee che saranno sempre disponibili per la nuova voce di timecard.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Indica se la colonna fatturabile sulla pagina Timecard Entry è nascosta. Quando è true, la colonna è nascosta e la casella di controllo fatturabile viene impostata come predefinita. Il valore predefinito è falso.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indica se il pulsante Copia da settimana precedente sulla nuova UI timecard è nascosto. Il valore predefinito è falso.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione è un duplicato e potrebbe essere rimossa in una versione futura. Modifica invece l&apos;impostazione &quot;Nascondi copia da pulsante della settimana precedente&quot;.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Indica se il pulsante Copia pianificazioni sulla nuova UI timecard è nascosto. Il valore predefinito è falso.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Quando è true, il collegamento Espandi attività o Comprimi attività è nascosto nella pagina Immissione ora. Il valore predefinito è falso.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Quando è true, la colonna Note che appare normalmente sulla pagina Timecard Entry è nascosta. Il valore predefinito è falso.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Indica se il pulsante Salva sulla nuova UI timecard è nascosto. Il valore predefinito è falso.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Quando è vero, i pulsanti &quot;Tutte le attività&quot; e &quot;I miei compiti&quot; sono nascosti nel popup Aggiungi attività nella pagina Immissione orario. Il valore predefinito è falso.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Indica se il pulsante Invia sulla nuova UI timecard è nascosto. Il valore predefinito è falso.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionata e la Modalità di immissione del tempo di attività è impostata su Calcolato, viene visualizzata solo una riga di ore di attività. Il valore predefinito della casella di controllo è chiaro.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Se la modalità di immissione del tempo reale e dell&apos;attività è Corrente, i collegamenti Visualizza o Modifica dettagli mostrati quando si passa con il mouse su una linea del cartellino sono nascosti. Se la modalità di immissione dell&apos;ora di attività e vera non è attuale, la scheda Note è nascosta sui collegamenti. Il valore predefinito è falso</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>Il campo / config specificato viene utilizzato per codificare con colori l&apos;intestazione della colonna della data per una festività del calendario di lavoro per la risorsa selezionata nell&apos;interfaccia utente del cruscotto.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Determina la larghezza in pixel delle celle delle ore dei biglietti da visita nella pagina Timecard V15 Entry.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Numero massimo di ore in cui una risorsa può entrare in un singolo giorno di timecard. Se il numero totale di ore per una risorsa supera tale importo in un singolo giorno di timecard, viene visualizzato un messaggio di errore.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Numero massimo di ore in cui una risorsa può entrare per una settimana di timecard. Se superato, viene visualizzato un messaggio di errore. Immettere un valore percentuale e un simbolo, ad es. 90%, per specificare una percentuale massima di ore di calendario del lavoro.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo Metodologia è configurato per essere visualizzato, determina se deve essere visualizzato a sinistra o a destra di Ore nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente di Timecard.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Questo flag di configurazione determina se il campo della metodologia deve essere visualizzato sul popup delle note o in prima pagina.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo Milestone è configurato per la visualizzazione, determina se deve essere visualizzato a sinistra o a destra di Hours nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente di Timecard.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Questo flag di configurazione determina se il campo milestone deve essere visualizzato sul popup delle note o in prima pagina.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Numero minimo di ore in cui una risorsa può entrare per una settimana di timecard. Se le ore settimanali sono inferiori a questo importo, viene visualizzato un messaggio di errore. Immettere un valore percentuale e un simbolo, ad es. 30%, per specificare una percentuale minima di ore di calendario del lavoro.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Se true, il nickname di assegnazione è modificabile altrimenti.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Se vero, il campo posizione verrà mostrato nella finestra di dialogo popup delle note di entrata timecard</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Se è true, l&apos;elenco a discesa Località principale verrà visualizzato sull&apos;interfaccia utente di TC.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo Phase è configurato per essere visualizzato, determina se deve essere visualizzato a sinistra o a destra di Hours nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente di Timecard.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Questo flag di configurazione determina se il campo di fase deve essere visualizzato sul popup delle note o sulla prima pagina.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le attività sono pre-compilate per l&apos;utente e il progetto selezionati. Il valore predefinito della casella di controllo è chiaro.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Se il campo Posizione primaria è configurato per la visualizzazione, determina se deve essere visualizzato a sinistra o a destra di Ore nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente di Timecard.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Quando la posizione primaria Nota consentita è impostata su true, determina se il campo Posizione primaria viene visualizzato nella sezione Note o nella linea del segnatempo.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>valore di visualizzazione del conto alla rovescia progetto / conto di assegnazione</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>I campi in questo set di campi definiscono i campi visualizzati nella descrizione comando per la riga Attività progetto nel registro di un orario con UI tempo di attività.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Il &quot;Progetto di assegnazione modificabile dopo il salvataggio&quot; consente all&apos;utente di modificare il progetto / l&apos;assegnazione per i timecard salvati, ma ciò richiede che la nota di revisione sia impostata per la scheda. Le note di controllo possono essere impostate da questa configurazione.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Elenco dei campi del progetto da mostrare come suggerimento sulla voce del segnatempo ui.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le attività che sono pre-compilate sono basate sull&apos;assegnazione selezionata. Il campo &quot;Limita alle attività con assegnazione corrispondente&quot; nel popup Seleziona attività viene quindi verificato per impostazione predefinita. Limita attività in base a Assegnazione è deselezionata per impostazione predefinita.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le attività che sono pre-compilate sono basate sulla pietra miliare selezionata. Il campo &quot;Limita alle attività con risultati intermedi corrispondenti&quot; nel popup Seleziona attività viene quindi controllato per impostazione predefinita. Limita attività in base a Milestone è deselezionato per impostazione predefinita.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le personalizzazioni di larghezza, ordine e visibilità delle colonne in Sencha TImecard verranno memorizzate per utente.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>Nomi API dei campi di assegnazione da visualizzare quando si passa con il mouse sopra l&apos;icona del suggerimento nella sezione Pianificazione di un cartellino.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>Nomi API dei campi del progetto da visualizzare quando si passa con il mouse sopra l&apos;icona del suggerimento nella sezione Pianificazione di un cartellino.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>La configurazione fornita viene utilizzata per mostrare un avviso se il valore diverso da zero è inserito nella sezione del cartellino del giorno contrassegnato come festivo (con zero ore) nel calendario di lavoro Risorsa selezionato.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>La configurazione fornita viene utilizzata per mostrare un avviso se il valore diverso da zero è immesso nella sezione della griglia di pianificazione per il giorno che ha zero ore nel modello di giorni del calendario di lavoro risorsa selezionato.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Se true, le ore fatturabili non fatturabili verranno visualizzate tramite il testo al passaggio del mouse su ciascun totale nella riga dei totali per tutte le colonne giornaliere e la colonna della somma sul timecard in Voce.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Indica se il popup di inserimento facile viene visualizzato nella pagina Time Entry quando si fa doppio clic su una cella delle ore modificabile su una riga del segnaposto o si preme il tasto freccia GIÙ mentre quella cella è selezionata.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Contiene i campi il cui valore verrà visualizzato nell&apos;elenco a discesa dei milestone TC UI. Se questi sono mancanti / nulli, l&apos;interfaccia utente TC continua a mostrare i campi dei nomi dei Milestone dei Milestones disponibili nell&apos;elenco a discesa. Nessuna ricerca __r riferimenti sono supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config è usato per controllare il link di richiamo del display su ogni timecard inviato. Facendo clic su di esso, verrà visualizzato un overlay di richiamo, in cui è necessario inserire il commento e richiamare la richiesta di approvazione per il cartellino.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Selezionato, significa che la griglia di pianificazione verrà mostrata espansa sulla voce Timecard per impostazione predefinita.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Indica se devono essere visualizzate le caselle di controllo Travel sulla nuova interfaccia utente del biglietto da visita. Il valore predefinito è true.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Se è vero, la sezione della griglia di pianificazione verrà mostrata sul biglietto da visita, altrimenti no</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Se impostato su true, mostra l&apos;icona tooltip accanto al nome del compito nella sezione Schedule di TC UI.Default false (comportamento esistente, nessuna colonna tooltip)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config per mostrare o nascondere il campo ecc</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Se vero, il campo della metodologia dei timecard verrà mostrato sull&apos;interfaccia utente del timecard.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config per mostrare o nascondere l&apos;elenco di selezione delle pietre miliari</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Se vero, il campo Fase timecard verrà visualizzato sull&apos;interfaccia utente del timecard.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Se false, la colonna Stato / richiamo verrà visualizzata immediatamente a destra della colonna Note. Quando è true, Status / recall viene visualizzato a destra di eventuali campi aggiuntivi.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato dall&apos;oggetto Timecard. I campi in questo set di campi definiscono i campi modificabili mostrati alla sinistra delle Ore nella riga dell&apos;intestazione del timecard dell&apos;interfaccia utente del biglietto da visita.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato dall&apos;oggetto Timecard. I campi in questo set di campi definiscono i campi modificabili nella riga dell&apos;intestazione del timecard nell&apos;interfaccia utente.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato dall&apos;oggetto Timecard. I campi in questo set di campi definiscono i campi di sola lettura nella riga dell&apos;intestazione del timecard nell&apos;interfaccia utente di Timecard</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV per specificare i campi Intestazione del segnaposto per copiare dalla pianificazione. Solo questi campi ora sono validi per questa configurazione &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato dall&apos;oggetto Timecard. I campi in questo set di campi definiscono i campi modificabili nella sezione Note nelle linee dei segnapunti nell&apos;interfaccia utente dei segnapunti.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Nome API di un set di campi utilizzato dall&apos;oggetto Timecard. I campi in questo set di campi definiscono i campi di sola lettura nella sezione Note nelle linee dei segnapunti nell&apos;interfaccia utente dei segnapunti.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Il campo viene utilizzato per contenere l&apos;elenco separato da virgola (,) dei valori dello stato del biglietto da visita che verranno nascosti nell&apos;interfaccia utente TC.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Specifica le attività da nascondere durante la precompilazione nei Timecard a meno che non abbiano registrato il tempo associato. Il valore è un elenco di stati separati da virgole.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Indica se la risorsa può selezionare solo le attività alle quali è assegnata un&apos;assegnazione quando si immette il tempo rispetto alle attività del progetto. Quando questa opzione non è selezionata, gli utenti possono abilitare questa funzione nella pagina Time Entry.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il comportamento del filtro nelle date delle attività quando si scelgono le attività per inserire l&apos;ora. Impostare su Nessuno o Sovrapponi. Se None, non si verifica alcun filtraggio. Se Sovrapponi, le attività sono elencate solo quando il timecard e le attività selezionabili si sovrappongono alle date.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>La modalità di immissione dell&apos;ora da utilizzare quando si immette il tempo di attività per una riga del segnatempo. È possibile scegliere uno di questi valori: Regola, Corrente, Calcolata o Forma libera. Il valore predefinito è Current.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Numero di incarichi principali da caricare per mostrare su Sovrapposizione progetto / assegnazione</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Numero di settimane per le quali i principali incarichi / progetti da caricare vengono visualizzati sull&apos;overlay di progetto / assegnazione</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Numero di progetti principali da caricare per mostrare l&apos;overlay di progetto / assegnazione</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Ti permette di cambiare il tuo metodo preferito di gestione dei campi visibili sulla pagina Timecard Entry. Se False, PSA utilizzerà le opzioni di configurazione o le impostazioni personalizzate per configurare l&apos;interfaccia utente. Se True, PSA utilizzerà i set di campi per configurare l&apos;interfaccia utente.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Indica se è necessario utilizzare un ID di incarico durante la visualizzazione dei compiti sulla pagina della carta di tempo</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Dato campo / config viene utilizzato per colorare il codice dell&apos;intestazione della colonna della data per i giorni di 0 ore programmati come per il modello di pianificazione (non festivo) sul calendario di lavoro della risorsa selezionata.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Controlla la larghezza del pixel per il menu a discesa Milestone sull&apos;interfaccia utente di Timecard. Si prega di specificare un numero intero per questo valore, in quanto questo andrà direttamente in larghezza.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Controlla la larghezza del pixel per il menu a discesa Progetto / Assegnazione sull&apos;interfaccia utente del biglietto. Si prega di specificare un numero intero per questo valore, in quanto questo andrà direttamente in larghezza. Ad esempio un valore 300 imposterà la larghezza del dropdown a 300px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

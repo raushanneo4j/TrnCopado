@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Impostazioni di gestione delle attività --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Impostazioni di gestione delle attività --></value>
+    </caseValues>
+    <fields>
+        <help>Quando è true, gli errori vengono ignorati durante la creazione di assegnazioni o pietre miliari dell&apos;assegnazione e ciò causerà la creazione di record di assegnazione dell&apos;attività del progetto. Questa opzione viene ignorata, a meno che l&apos;opzione Crea automaticamente attività sia vera.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Indica se assegnare automaticamente attività di progetto non assegnate che appartengono alla stessa pietra miliare dell&apos;assegnazione quando si assegna una risorsa a un progetto o si crea un nuovo record di milestone di assegnazione. Il valore predefinito è falso.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Quando è vero, gli errori vengono ignorati quando si eliminano i compiti o le pietre miliari dell&apos;assegnazione e ciò causerà la cancellazione dei record di assegnazione delle attività del progetto. Questa opzione viene ignorata a meno che la rimozione automatica delle assegnazioni delle attività sia vera.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>Indica se rimuovere automaticamente le assegnazioni delle attività di progetto quando vengono rimosse risorse o milestone o se il milestone non è più associato a tale assegnazione. Il valore predefinito è falso.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Controlla l&apos;ordinamento predefinito delle attività nell&apos;interfaccia di gestione delle attività al caricamento iniziale e dopo l&apos;aggiornamento. Questo deve essere valido dopo una clausola ORDER BY SOQL.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Nome del fieldset nell&apos;oggetto Assegnazione attività progetto che contiene un elenco di campi che saranno limitati per la modifica quando il record non è bloccato.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Nome del fieldset sull&apos;oggetto Dipendenza dell&apos;attività del progetto che contiene un elenco di campi che verranno ristretti per la modifica quando il record non è bloccato.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Nome del fieldset sull&apos;oggetto Task del progetto che contiene un elenco di campi che saranno limitati per la modifica quando il record non è bloccato.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Numero massimo di progetti da caricare per la selezione nell&apos;interfaccia utente di Gestione attività</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di fine del task quando è maggiore della data del Milestone Target.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di fine attività quando è fuori intervallo delle date di inizio e fine del progetto.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di fine attività quando è fuori intervallo delle date di Assegnazione attività progetto.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di fine attività quando è fuori intervallo delle ore di Assegnazione attività progetto.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di inizio dell&apos;attività quando è maggiore della data del Milestone target.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, limita il salvataggio delle modifiche alla Data di inizio dell&apos;attività quando è fuori intervallo delle date di inizio e fine del progetto.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

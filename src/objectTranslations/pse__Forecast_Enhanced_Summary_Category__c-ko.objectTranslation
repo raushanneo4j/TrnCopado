@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>청구 예측 요약 카테고리</value>
+    </caseValues>
+    <fields>
+        <help>이 청구 예측 요약 범주의 청구 예측 페이지에 표시되는 값을 나타내는 수식 필드입니다.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 요약 범주에 적용된 현재 활성 청구 예측 재정의를 찾습니다.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Summary --></label>
+        <name>pse__Forecast_Enhanced_Summary__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Opportunities Value --></label>
+        <name>pse__Forecast_Opportunities_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Projects Value --></label>
+        <name>pse__Forecast_Projects_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Sublevels Value --></label>
+        <name>pse__Forecast_Sublevels_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 요약 요약 카테고리에 적용된 현재 활성 청구 예측 대체를 작성한 사용자를 찾습니다.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 청구 예측 요약 범주에 적용된 현재 활성 청구 예측 대체의 작성 날짜 및 시간입니다.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>현재 활성화 된 청구 예측 재정의에 대한 메모가이 청구 예측 요약 범주에 적용됩니다.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>관련 청구 예측 세부 사항 범주에 대한 대체를 포함하여 RPG 계층 구조에서이 요약 범주 아래의 모든 요약 범주에 대한 롤업 차이의 합계입니다.</help>
+        <label><!-- Override Roll-Up Variance --></label>
+        <name>pse__Override_Rollup_Variance__c</name>
+    </fields>
+    <fields>
+        <help>이 청구 예측 요약 범주에 적용된 현재 활성 청구 예측 대체의 값입니다.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Forecast Summary Category Layout</layout>
+        <sections>
+            <label>맞춤 링크</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>청구 예측 요약 카테고리 이름</nameFieldLabel>
+</CustomObjectTranslation>

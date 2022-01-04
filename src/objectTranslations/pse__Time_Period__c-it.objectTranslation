@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Periodo di tempo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Periodi di tempo</value>
+    </caseValues>
+    <fields>
+        <help>Selezionare per contrassegnare questo periodo di tempo come chiuso per Previsione entrate.</help>
+        <label><!-- Closed for Forecasting --></label>
+        <name>pse__Closed_For_Forecasting__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>pse__Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Mese</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perpetual</masterLabel>
+            <translation>Perpetuo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SemiMonthly</masterLabel>
+            <translation>Semimonthly</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Settimana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Anno</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Time Period Layout</layout>
+        <sections>
+            <label>Link personalizzati</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informazione</label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>Informazioni di sistema</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome periodo temporale</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Time Period may not end before it starts --></errorMessage>
+        <name>pse__Time_Period_may_not_end_before_it_starts</name>
+    </validationRules>
+</CustomObjectTranslation>

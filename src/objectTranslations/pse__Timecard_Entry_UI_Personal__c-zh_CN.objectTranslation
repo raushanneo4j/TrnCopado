@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 时间卡输入UI个人 --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则在“时间输入”页面中，当用户单击或跳出任务时间单元格或手动输入零时，项目/分配值将更新为零。默认值为false。任务时间输入模式必须设置为计算。</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则只要时间卡的状态是“timecard-edit-status-values / Timecard_edit_status_values__c”值之一，就可以更改项目或分配。</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>用作分配工具提示的字段。完全限定（如果适用，使用名称空间），需要区分大小写的字段名称</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>如果将Billable字段配置为显示，则确定是否应将其显示在Timecard UI的时间卡标题行中的Hours的左侧或右侧。</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>指示在“时间卡输入”页面上是否将具有完全相同的星期，项目，分配，资源，可计费，项目，方法，位置，旅行组合的时间卡组合在一起。</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则会从上周的时间卡中复制其他字段。</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将从上周的时间卡复制ETC字段</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中小时字段，如星期一小时，星期二小时等，将从上周的时间卡复制</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中位置信息字段，如位置星等，将从上周的时间卡复制</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将从上周的时间卡复制Methodology字段</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则会从上周的时间卡中复制里程碑</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，Notes将从上周的时间卡中复制</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将从上周的时间卡复制“相位”字段</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果设置为true，则如果在当天的“分配”中找到“分配每日备注”子记录，则“从计划复制”功能将填充时间卡上每天的“备注”字段。 （默认为false）</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>选中后，将从上一周的时间卡复制任务时间。</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>选择后，将从上周的时间卡复制任务信息。</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果选中Travel Travel，Travel Monle等旅行信息字段将从上周的时间卡中复制</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果为true且新时间卡UI上的资源查找弹出窗口仅返回一个结果，则资源查找弹出窗口将自动关闭，资源字段将设置为返回的资源。</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则timecard ui上的可计费下拉字段将显示为已禁用，即用户不可编辑。</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI在加载时缓存所有已分配的任务/项目以及里程碑。如果用户有许多任务/项目，这可能会导致salesforce的viewstate限制。将此配置值设置为true将最小化此缓存。</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>当点击添加行按钮时，将添加这些许多空的考勤卡行。</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>这是新的时间卡输入始终可用的最小行数。</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>指示是否隐藏Timecard Entry页面上的可计费列。如果为true，则隐藏列，并且可计费复选框默认为已选中。默认值为false。</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>指示是否隐藏新时间卡UI上的“从上一周复制”按钮。默认值为false。</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>此设置是重复的，可能会在将来的版本中删除。请改为编辑“隐藏上一周按钮复制”设置。</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>指示是否隐藏新时间卡UI上的“复制计划”按钮。默认值为false。</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则“扩展任务”或“折叠任务”链接将隐藏在“时间条目”页面中。默认值为false。</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则隐藏通常显示在“时间卡条目”页面上的“注释”列。默认值为false。</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>指示是否隐藏新时间卡UI上的“保存”按钮。默认值为false。</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则“时间输入”页面中的“添加任务”弹出窗口中将隐藏“所有任务”和“我的任务”按钮。默认值为false。</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>指示是否隐藏新时间卡UI上的“提交”按钮。默认值为false。</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>如果选择并且“任务时间输入模式”设置为“计算”，则仅显示一行任务小时。复选框的默认值是清除的。</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>如果为true且任务时间输入模式为“当前”，则将鼠标悬停在时间卡行上时显示的“查看”或“编辑详细信息”链接将被隐藏。如果为true且任务时间输入模式不是“当前”，则“选项”选项卡将隐藏在链接上。默认值为false</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>给定的字段/配置用于对时间卡UI上所选资源的工作日历假日的日期列标题进行颜色编码。</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>确定Timecard V15 Entry页面中的时间卡小时单元格的像素宽度。</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>资源可以在单个考勤卡日输入的最大小时数。如果资源的总小时数在单个考勤卡日超过此金额，则会显示错误消息。</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>资源可以为时间卡周输入的最大小时数。如果超出，则显示错误消息。输入百分比值和符号，例如。 90％，指定工作日历小时的最大百分比。</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果将Methodology字段配置为显示，则确定是否应将其显示在Timecard UI的timecard标题行中的Hours的左侧或右侧。</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>此配置标志确定是否应在弹出的注释或首页上显示方法字段。</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>如果将里程碑字段配置为显示，则确定是否应将其显示在时间卡UI的时间卡标题行中的小时的左侧或右侧。</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>此配置标志确定里程碑字段是否应显示在备注弹出窗口或首页上。</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>资源可以为时间卡周输入的最小小时数。如果每周小时数低于此数量，则会显示错误消息。输入百分比值和符号，例如。 30％，指定工作日历小时的最小百分比。</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则分配昵称可编辑，否则不可编辑。</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则位置字段将显示在timacard entry note弹出对话框中</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则TC UI上将显示主要位置下拉列表。</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>如果将Phase字段配置为显示，则确定是否应将其显示在Timecard UI的timecard标题行中的Hours的左侧或右侧。</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>此配置标志确定是否应在弹出备注或首页上显示相位字段。</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则会为选定的用户和项目预先填充任务。复选框的默认值是清除的。</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>如果将“主要位置”字段配置为显示，则确定是否应将其显示在时间卡UI的时间卡标题行中的“小时”的左侧或右侧。</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>当Note primary location allowed设置为true时，确定Primary Location字段是出现在Notes部分还是时间卡行中。</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>时间卡项目/分配帐户下拉显示值</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>此字段集中的字段定义“使用任务时间UI记录时间卡”中“项目任务”行的工具提示中显示的字段。</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>“保存后可编辑的分配项目”使用户可以更改已保存时间卡的项目/分配，但这需要为时间卡设置审计注释。可以通过此配置设置审核注释。</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>在时间卡输入ui上显示为工具提示的项目字段列表。</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>选中后，预先填充的任务将基于所选分配。然后，默认情况下会选中“选择任务”弹出窗口中的“限制到具有匹配分配的任务”字段。默认情况下取消选择“基于分配限制任务”。</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>选择后，预先填充的任务将基于选定的里程碑。然后，默认情况下会选中“选择任务”弹出窗口中的“限制到具有匹配里程碑的任务”字段。默认情况下取消选择基于里程碑的限制任务。</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，将按用户记住对时间条目中列的宽度，顺序和可见性的自定义。</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>将鼠标悬停在时间卡的“计划”部分中的工具提示图标上时要显示的分配字段的API名称。</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>将鼠标悬停在时间卡的“计划”部分中的工具提示图标上时要显示的项目字段的API名称。</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>如果在所选资源工作日历中标记为假日（具有零小时）的日期在时间卡部分输入非零值，则给定配置用于显示警报。</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>如果在所选资源工作日历天模式中具有零小时的那天的日程表网格部分输入非零值，则给定配置用于显示警报。</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则可计费的不可计费小时数将通过悬停文本显示总计行中每个总计上的所有每日列和时间卡中时间卡上的总和列。</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>指示当您双击时间卡行上的可编辑小时单元格或在选中该单元格时按向下箭头键时，“时间条目”页面上是否显示简单条目弹出窗口。</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>包含其值将显示在TC UI里程碑下拉列表中的字段。如果缺少这些/ null，则TC UI将继续在下拉列表中显示可用里程碑的里程碑名称字段。没有查找__r引用</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config用于控制每个提交的考勤卡上的显示召回链接。单击它时，将打开一个调用覆盖图，我们需要输入注释并调用时间卡的批准请求。</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>选中，表示默认情况下，计划网格将在时间卡条目上展开。</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>指示是否要显示新时间卡UI上的“旅行”复选框。默认值是true。</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则计划网格部分将在时间卡上显示，否则不显示</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>如果设置为true，则在TC UI的“计划”部分的分配名称旁边显示工具提示图标。默认为false（现有行为，无工具提示列）</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>配置显示或隐藏等字段</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则timecard方法字段将显示在考勤卡UI上。</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config用于显示或隐藏里程碑选择列表</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>如果为true，则timecard Phase字段将显示在考勤卡UI上。</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>如果为false，则Status / recall列将立即显示在Notes列的右侧。如果为true，则状态/调用将显示在任何其他字段的右侧。</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>Timecard对象使用的字段集的API名称。此字段集中的字段定义Timecard UI的时间卡标题行中显示在小时左侧的可编辑字段。</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard对象使用的字段集的API名称。此字段集中的字段定义时间卡UI中时间卡标题行中的可编辑字段。</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard对象使用的字段集的API名称。此字段集中的字段定义时间卡UI中时间卡标题行中的只读字段</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV以指定要从计划中复制的Timecard标头字段。只有这些小时字段对此配置有效“Monday_Hours__c，Tuesday_Hours__c，Wednesday_Hours__c，Thursday_Hours__c，Friday_Hours__c，Saturday_Hours__c，Sunday_Hours__c”</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>Timecard对象使用的字段集的API名称。此字段集中的字段在时间卡UI中的时间卡行中的“注释”部分中定义可编辑字段。</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Timecard对象使用的字段集的API名称。此字段集中的字段在时间卡UI中的时间卡行中定义Notes部分中的只读字段。</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>字段用于保存coma（，）分隔的时间卡状态值列表，这些值将隐藏在TC UI上。</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>指定在预填充时间卡时要隐藏的任务，除非它们已记录关联时间。该值是以逗号分隔的状态列表。</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>指示资源是否只能在针对项目任务输入时间时选择他们具有分配的任务。如果未选择此选项，用户可以在“时间输入”页面上启用此功能。</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>在选择要输入时间的任务时，定义任务日期的过滤行为。设置为无或重叠。如果为None，则不进行过滤。如果重叠，则仅当时间卡和可选任务在日期上有一些重叠时才列出任务。</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>输入时间卡行的任务时间时使用的时间输入模式。您可以选择以下值之一：调整，当前，计算或自由形式。默认值为Current。</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>要加载以在项目/分配覆盖上显示的顶部分配数</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>要加载以在项目/分配覆盖上显示的顶级分配/项目的周数</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>要加载以在项目/分配覆盖上显示的顶级项目数</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>允许您在“时间卡输入”页面上切换管理可见字段的首选方法。如果为False，PSA将使用配置选项或自定义设置来配置UI。如果为True，PSA将使用字段集来配置UI。</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>指示在时间卡页面上显示分配时是否应使用分配ID</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>给定字段/配置用于根据所选资源的工作日历上的计划模式（而不是假期）对计划的0小时日期的日期列标题进行颜色编码。</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>控制时间卡条目UI上的里程碑下拉列表的像素宽度。请为此值指定一个整数，因为这将直接进入宽度。</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>控制Timecard Entry UI上Project / Assignment下拉列表的像素宽度。请为此值指定一个整数，因为这将直接进入宽度。对于ex，值300将下拉宽度设置为300px。</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Tijdkaart invoer UI Persoonlijk --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Tijdkaart invoer UI Persoonlijk --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Fields --></label>
+        <name>pse__Additional_Fields__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, op de pagina Tijdinvoer, wanneer gebruikers klikken of tabelen uit taaktijdcellen of handmatig nul invoeren, wordt de project / toewijzingswaarde bijgewerkt naar nul. De standaardwaarde is false. Taak Tijd Invoermodus moet worden ingesteld op Berekend.</help>
+        <label><!-- Allow Zero Entry --></label>
+        <name>pse__Allow_Zero_Entry__c</name>
+    </fields>
+    <fields>
+        <help>Indien waar, kan het project of de toewijzing worden gewijzigd zolang de tijdkaartstatus één van de waarden &quot;timecard-bewerking-status-waarden / Timecard_edit_status_waarden__c&quot; is.</help>
+        <label><!-- Assignment project editable after save --></label>
+        <name>pse__Assignment_project_editable_after_save__c</name>
+    </fields>
+    <fields>
+        <help>De velden die moeten worden gebruikt als tooltip voor opdrachten. Volledig gekwalificeerd (met naamruimte indien van toepassing), hoofdlettergevoelige veldnamen zijn vereist</help>
+        <label><!-- Assignment tooltip fields --></label>
+        <name>pse__Assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Als het veld Factureerbaar is geconfigureerd om te worden weergegeven, bepaalt u of het moet worden weergegeven aan de linker- of rechterkant van uren in de tijdlijnkopregel van de Timecard-gebruikersinterface.</help>
+        <label><!-- Billable Header Field Position Is Left --></label>
+        <name>pse__Billable_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of tijdkaarten met exact dezelfde combinatie van week, project, toewijzing, resource, factureerbaar, project, methodologie, locatie, reizen worden gecombineerd op de pagina Timecard-invoer.</help>
+        <label><!-- Combine Similar Timecards --></label>
+        <name>pse__Combine_Similar_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingeschakeld, worden extra velden gekopieerd van de tijdskaarten van de vorige week.</help>
+        <label><!-- Copy AdditionalFields From Previous Week --></label>
+        <name>pse__Copy_AdditionalFields_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Indien gecontroleerd, wordt het ETC-veld gekopieerd van de timecards van de vorige week</help>
+        <label><!-- Copy ETC From Previous Week --></label>
+        <name>pse__Copy_ETC_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als dit wordt aangevinkt, worden uurvelden zoals maandaguren, dinsdaguren enz. Gekopieerd van de tijdskaarten van de vorige week</help>
+        <label><!-- Copy Hours From Previous Week --></label>
+        <name>pse__Copy_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als aangevinkte locatievelden zoals Location Mon etc worden gekopieerd van de timecards van de vorige week</help>
+        <label><!-- Copy Locations From Previous Week --></label>
+        <name>pse__Copy_Locations_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als het veld Gecontroleerde methode wordt gekopieerd van de tijdskaarten van de vorige week</help>
+        <label><!-- Copy Methodology From Previous Week --></label>
+        <name>pse__Copy_Methodology_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt worden mijlpalen gekopieerd van de tijdskaarten van de vorige week</help>
+        <label><!-- Copy Milestone From Previous Week --></label>
+        <name>pse__Copy_Milestone_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingeschakeld, worden notities gekopieerd van de timecards van de vorige week</help>
+        <label><!-- Copy Notes From Previous Week --></label>
+        <name>pse__Copy_Notes_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Indien gecontroleerd, wordt het faseveld gekopieerd van de tijdskaarten van de vorige week</help>
+        <label><!-- Copy Phase From Previous Week --></label>
+        <name>pse__Copy_Phase_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als dit is ingesteld op true, vult de functie Copy from Schedule de Notes-velden voor elke dag op de Timecard in als deze de toewijzingen van dagelijkse aantekeningen van kindgegevens op de toewijzing voor die dag aantreft. (standaard false)</help>
+        <label><!-- Copy Schedule Assignment Daily Notes --></label>
+        <name>pse__Copy_Schedule_Assignment_Daily_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer geselecteerd, worden taakuren gekopieerd van de tijdkaart van de vorige week.</help>
+        <label><!-- Copy Task Hours From Previous Week --></label>
+        <name>pse__Copy_Task_Hours_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer geselecteerd, wordt taakinformatie gekopieerd van de tijdkaart van de vorige week.</help>
+        <label><!-- Copy Tasks From Previous Week --></label>
+        <name>pse__Copy_Tasks_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingecheckte Reisinformatie-velden zoals Reisweek, Reismaand enz. Worden gekopieerd van de tijdskaarten van de vorige week</help>
+        <label><!-- Copy Travel From Previous Week --></label>
+        <name>pse__Copy_Travel_From_Previous_Week__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer true en de Resource Lookup-pop-up op de nieuwe tijdkaart-gebruikersinterface geeft maar één resultaat, wordt de Resource Lookup-pop-up automatisch gesloten en wordt het resourceveld ingesteld op geretourneerde resource.</help>
+        <label><!-- Default Single Resource Search Result --></label>
+        <name>pse__Default_Single_Resource_Search_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Week Offset --></label>
+        <name>pse__Default_Week_Offset__c</name>
+    </fields>
+    <fields>
+        <help>Als dit het geval is, wordt het factureerbare vervolgkeuzeveld op de tijdkaart ui weergegeven als uitgeschakeld, dwz niet-bewerkbaar door de gebruiker.</help>
+        <label><!-- Default billable --></label>
+        <name>pse__Default_billable__c</name>
+    </fields>
+    <fields>
+        <help>TC UI cache de alle toegewezen toewijzingen / projecten samen met de mijlpalen terwijl deze wordt geladen. Dit kan leiden tot de status limiet van Salesforce als de gebruiker veel opdrachten / projecten heeft. Als u deze config-waarde instelt op true, wordt deze cache geminimaliseerd.</help>
+        <label><!-- Disable cache --></label>
+        <name>pse__Disable_cache__c</name>
+    </fields>
+    <fields>
+        <help>Deze vele lege tijdkaartlijnen zullen worden toegevoegd, wanneer de regel voor het toevoegen van lijnen zal worden aangeklikt.</help>
+        <label><!-- Empty lines to append on add lines --></label>
+        <name>pse__Empty_lines_to_append_on_add_lines__c</name>
+    </fields>
+    <fields>
+        <help>Dit is het minimum aantal regels dat altijd beschikbaar is voor het invoeren van nieuwe tijdkaarten.</help>
+        <label><!-- Empty timecard lines to append by def --></label>
+        <name>pse__Empty_timecard_lines_to_append_by_def__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de factureerbare kolom op de pagina Timecard-invoer verborgen is. Wanneer waar, is de kolom verborgen en is het keuzeformulier standaard geselecteerd. De standaardwaarde is false.</help>
+        <label><!-- Hide Billable Column --></label>
+        <name>pse__Hide_Billable_Column__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de knop Kopiëren van Vorige week in de gebruikersinterface van de nieuwe tijdkaart verborgen is. De standaardwaarde is false.</help>
+        <label><!-- Hide Copy From Previous Week Button --></label>
+        <name>pse__Hide_Copy_From_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Deze instelling is een duplicaat en kan in een toekomstige versie worden verwijderd. Bewerk in plaats daarvan de knop &apos;Kopiëren van vorige week verbergen&apos;.</help>
+        <label><!-- Hide Copy Previous Week Button --></label>
+        <name>pse__Hide_Copy_Previous_Week_Button__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de knop Copy Schedules in de gebruikersinterface van de nieuwe tijdkaart verborgen is. De standaardwaarde is false.</help>
+        <label><!-- Hide Copy Schedules Button --></label>
+        <name>pse__Hide_Copy_Schedules_Button__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, wordt de link Taken uitvouwen of Taken samenvouwen verborgen op de pagina Tijdinvoer. De standaardwaarde is false.</help>
+        <label><!-- Hide Expand Tasks --></label>
+        <name>pse__Hide_Expand_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, is de kolom Notities die normaal op de pagina Timecard-invoer wordt weergegeven, verborgen. De standaardwaarde is false.</help>
+        <label><!-- Hide Notes Column --></label>
+        <name>pse__Hide_Notes_Column__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de knop Opslaan in de gebruikersinterface van de nieuwe tijdkaart verborgen is. De standaardwaarde is false.</help>
+        <label><!-- Hide Save Button --></label>
+        <name>pse__Hide_Save_Button__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer dit waar is, worden de knoppen &apos;Alle taken&apos; en &apos;Mijn taken&apos; verborgen in het pop-upvenster Taken toevoegen op de pagina Tijd invoer. De standaardwaarde is false.</help>
+        <label><!-- Hide Show All Tasks/My Tasks --></label>
+        <name>pse__Hide_Show_All_Tasks_My_Tasks__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de knop Verzenden in de gebruikersinterface van de nieuwe tijdkaart verborgen is. De standaardwaarde is false.</help>
+        <label><!-- Hide Submit Button --></label>
+        <name>pse__Hide_Submit_Button__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd en de Task Time Entry Mode is ingesteld op Berekend, wordt slechts één rij taakuren weergegeven. De standaardwaarde van het selectievakje is duidelijk.</help>
+        <label><!-- Hide Timecard Hours in Calculated Mode --></label>
+        <name>pse__Hide_Timecard_Hours_in_Calculated_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Als true en Task Time Entry Mode Current zijn, zijn de koppelingen Details weergeven of Gegevens bewerken die worden weergegeven wanneer ze over een tijdlijn staan, verborgen. Als true en Task Time Entry Mode niet Current zijn, is het tabblad Notes verborgen op de koppelingen. De standaardwaarde is false</help>
+        <label><!-- Hide View Edit Details Link --></label>
+        <name>pse__Hide_View_Edit_Details_Link__c</name>
+    </fields>
+    <fields>
+        <help>Het opgegeven veld / config wordt gebruikt om de datumkolomkop voor een werkkalender vakantie in kleur te coderen voor de geselecteerde resource in de gebruikersinterface van de tijdkaart.</help>
+        <label><!-- Holiday Color Code --></label>
+        <name>pse__Holiday_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de pixelbreedte van cellen van de uren van de klok op de tijdlijn van de Timecard V15.</help>
+        <label><!-- Hours Cell Pixel Width --></label>
+        <name>pse__Hours_cell_pixel_width__c</name>
+    </fields>
+    <fields>
+        <help>Maximum aantal uren dat een resource op een enkele timecard-dag kan binnenkomen. Als het totale aantal uren voor een resource dit aantal op een enkele timecard-dag overschrijdt, wordt een foutmelding weergegeven.</help>
+        <label><!-- Max Resource Hours Per Day --></label>
+        <name>pse__Max_Resource_Hours_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help>Maximumaantal uren dat een resource kan worden ingevoerd voor een tijdkaartweek. Bij overschrijding wordt een foutmelding weergegeven. Voer een percentage en symbool in, bijv. 90%, om een ​​maximum percentage werkkalenderuren op te geven.</help>
+        <label><!-- Maximum Resource Hours Per Week --></label>
+        <name>pse__Maximum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als het veld Methodologie is geconfigureerd om te worden weergegeven, bepaalt het of het links of rechts van uren in de tijdlijnkopregel van de Timecard-gebruikersinterface moet worden weergegeven.</help>
+        <label><!-- Methodology HeaderField Position Is Left --></label>
+        <name>pse__Methodology_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Deze configuratievlag bepaalt of het methodologieveld in pop-upnotities of op de voorpagina moet worden weergegeven.</help>
+        <label><!-- Methodology field position is popup --></label>
+        <name>pse__Methodology_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Als het veld Milestone is geconfigureerd om te worden weergegeven, bepaalt het of het links of rechts van Hours in de tijdlijnkopregel van de Timecard UI moet worden weergegeven.</help>
+        <label><!-- Milestone Header Field Position Is Left --></label>
+        <name>pse__Milestone_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Deze configuratievlag bepaalt of het mijlpaalveld moet worden weergegeven in de pop-up Notities of op de voorpagina.</help>
+        <label><!-- Milestone field position is popup --></label>
+        <name>pse__Milestone_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Minimaal aantal uren dat een resource kan worden ingevoerd voor een weekkaartweek. Als de wekelijkse uren lager zijn dan dit bedrag, wordt een foutmelding weergegeven. Voer een percentage en symbool in, bijv. 30%, om een ​​minimumpercentage werkkalenderuren op te geven.</help>
+        <label><!-- Minimum Resource Hours Per Week --></label>
+        <name>pse__Minimum_Resource_Hours_Per_Week__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, is de bijnaam van de bewerking bewerkbaar, anders niet.</help>
+        <label><!-- Nickname Editable --></label>
+        <name>pse__Nickname_Editable__c</name>
+    </fields>
+    <fields>
+        <help>Als dit het geval is, wordt het locatieveld weergegeven in het pop-upvenster van de tijdbalk</help>
+        <label><!-- Note location allowed --></label>
+        <name>pse__Note_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, wordt de primaire vervolgkeuzelijst Locatie weergegeven in TC UI.</help>
+        <label><!-- Note primary location allowed --></label>
+        <name>pse__Note_primary_location_allowed__c</name>
+    </fields>
+    <fields>
+        <help>Als het Phase-veld is geconfigureerd om te worden weergegeven, bepaalt het of het links of rechts van uren in de tijdlijnkopregel van de Timecard-gebruikersinterface moet worden weergegeven.</help>
+        <label><!-- Phase Header Field Position Is Left --></label>
+        <name>pse__Phase_Header_Field_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Deze configuratievlag bepaalt of het faseveld moet worden weergegeven in de pop-up Notities of op de voorpagina.</help>
+        <label><!-- Phase field position is popup --></label>
+        <name>pse__Phase_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden taken vooraf ingevuld voor de geselecteerde gebruiker en project. De standaardwaarde van het selectievakje is duidelijk.</help>
+        <label><!-- Pre Populate Task --></label>
+        <name>pse__Pre_Populate_Task__c</name>
+    </fields>
+    <fields>
+        <help>Als het veld Primaire locatie is geconfigureerd om te worden weergegeven, bepaalt het of het links of rechts van uren in de tijdlijnkopregel van de Timecard-gebruikersinterface moet worden weergegeven.</help>
+        <label><!-- Primary Loc HeaderField Position Is Left --></label>
+        <name>pse__Primary_Loc_HeaderField_Position_Is_Left__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer Opmerking primaire locatie toegestaan ​​is ingesteld op waar, wordt bepaald of het veld Primaire locatie wordt weergegeven in de sectie Notities of de tijdlijn.</help>
+        <label><!-- Primary Location field position is popup --></label>
+        <name>pse__Primary_Location_field_position_is_popup__c</name>
+    </fields>
+    <fields>
+        <help>timecard-project / Afsluitwaarde weergave-opdrachtrekening</help>
+        <label><!-- Proj assig dropdown account custom field --></label>
+        <name>pse__Proj_assig_dropdown_account_custom_field__c</name>
+    </fields>
+    <fields>
+        <help>Velden in deze veldset definiëren de velden die worden weergegeven in de tooltip voor de regel Projecttaak in de tijdlijn voor het ondertekenen van een tijdkaart met taaktijd.</help>
+        <label><!-- Project Task Tooltip Fieldset Name --></label>
+        <name>pse__Project_Task_Tooltip_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Het &quot;Opdrachtproject dat na opslaan kan worden bewerkt&quot; geeft de gebruiker toegang om het project / de toewijzing voor de opgeslagen tijdkaarten te wijzigen, maar dit vereist een auditbrief voor de tijdkaart. Audit notities kunnen worden ingesteld door deze config.</help>
+        <label><!-- Project editable after save audit Notes --></label>
+        <name>pse__Project_editable_after_save_audit_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Lijst van projectvelden die getoond moeten worden als tooltip op tijdkaartinvoer ui.</help>
+        <label><!-- Project tooltip fields --></label>
+        <name>pse__Project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, zijn de taken die vooraf zijn ingevuld gebaseerd op de geselecteerde toewijzing. Het veld &quot;Te beperken tot taken met bijbehorende toewijzing&quot; in het pop-upvenster Select Tasks wordt vervolgens standaard gecontroleerd. Taak op basis van toewijzing beperken Toewijzing is standaard uitgeschakeld.</help>
+        <label><!-- Restrict Task Based On Assignment --></label>
+        <name>pse__Restrict_Task_Based_On_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Na selectie zijn de taken die vooraf zijn ingevuld gebaseerd op de geselecteerde mijlpaal. Het veld &quot;Beperken tot taken met overeenkomende mijlpaal&quot; in het pop-upvenster Select Tasks wordt standaard gecontroleerd. Beperking taak gebaseerd op Mijlpaal is standaard gedeselecteerd.</help>
+        <label><!-- Restrict Task Based On Milestone --></label>
+        <name>pse__Restrict_Task_Based_On_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>Indien geselecteerd, worden aanpassingen aan de breedte, volgorde en zichtbaarheid van kolommen in de Sencha TImecard onthouden per gebruiker.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Preferences__c</name>
+    </fields>
+    <fields>
+        <help>API-namen van toewijzingsvelden die moeten worden weergegeven wanneer u de muisaanwijzer op het pictogram met de tooltip in het Schedule-gedeelte van een tijdkaart plaatst.</help>
+        <label><!-- Schedule Assignment Tooltip Fields --></label>
+        <name>pse__Schedule_assignment_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule grid weekend delta --></label>
+        <name>pse__Schedule_grid_weekend_delta__c</name>
+    </fields>
+    <fields>
+        <help>API-namen van projectvelden die moeten worden getoond wanneer het zweeft over het pictogram van de knopinfo in het Schedule-gedeelte van een tijdkaart.</help>
+        <label><!-- Schedule Project Tooltip Fields --></label>
+        <name>pse__Schedule_project_tooltip_fields__c</name>
+    </fields>
+    <fields>
+        <help>Given config wordt gebruikt om de waarschuwing weer te geven als niet-nulwaarde is ingevoerd in het tijdkaartgedeelte voor de dag gemarkeerd als vakantie (met nul uur) in de geselecteerde werkagenda voor bronnen.</help>
+        <label><!-- Show Alert For NonZero HolidayHours --></label>
+        <name>pse__Show_Alert_For_NonZero_HolidayHours__c</name>
+    </fields>
+    <fields>
+        <help>Given config wordt gebruikt om een ​​waarschuwing weer te geven als een niet-nulwaarde is ingevoerd in het rooster van het rooster voor de dag met nul uur in het geselecteerde patroon van de kadedagen van het resourcewerk.</help>
+        <label><!-- Show Alert For NonZero WeekendHours --></label>
+        <name>pse__Show_Alert_For_NonZero_WeekendHours__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, worden factureerbare niet-factureerbare uren weergegeven via zweeftekst op elk totaal in de totalenrij voor alle dagelijkse kolommen en somkolom op tijdkaart bij Tijdinvoer.</help>
+        <label><!-- Show Billable NonBillable Hours --></label>
+        <name>pse__Show_Billable_NonBillable_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de pop-up met gemakkelijke invoer wordt weergegeven op de pagina Tijdinvoer wanneer u dubbelklikt op een bewerkbare celuur in een tijdkaartrij of op de PIJL OMLAAG drukt terwijl die cel is geselecteerd.</help>
+        <label><!-- Show Easy Entry Popup --></label>
+        <name>pse__Show_Easy_Entry_Popup__c</name>
+    </fields>
+    <fields>
+        <help>Bevat een veld waarvan de waarde wordt weergegeven in de vervolgkeuzelijst TC UI-mijlpaal. Als deze ontbreken / nul zijn, blijft de TC UI gewoon de velden voor de mijlpaalnaam van de beschikbare mijlpalen in de vervolgkeuzelijst weergeven. Geen opzoek __r referenties zijn supp</help>
+        <label><!-- Show Milestone As Field --></label>
+        <name>pse__Show_Milestone_As_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show ProjectName Assignment Dropdown --></label>
+        <name>pse__Show_ProjectName_Assignment_Dropdown__c</name>
+    </fields>
+    <fields>
+        <help>Config wordt gebruikt om de display recall-link op elke verzonden tijdkaart te beheren. Als u erop klikt, is er een recall-overlay geopend, waarbij we de opmerking moeten invoeren en het goedkeuringsverzoek voor timecard moeten ophalen.</help>
+        <label><!-- Show Recall On Timecards --></label>
+        <name>pse__Show_Recall_On_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Gecontroleerd, betekent dat het planningsraster standaard wordt getoond in de Timecard-invoer.</help>
+        <label><!-- Show Schedule Grid Expanded By Default --></label>
+        <name>pse__Show_Schedule_Grid_Expanded_By_Default__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de selectievakjes Reizen in de nieuwe gebruikersinterface van de tijdkaart moeten worden weergegeven. De standaardwaarde is waar.</help>
+        <label><!-- Show Travel --></label>
+        <name>pse__Show_Travel__c</name>
+    </fields>
+    <fields>
+        <help>Als dit waar is, wordt de roostergedeelte van het rooster weergegeven op de tijdkaart, anders niet</help>
+        <label><!-- Show schedule grid --></label>
+        <name>pse__Show_schedule_grid__c</name>
+    </fields>
+    <fields>
+        <help>Indien ingesteld op &apos;waar&apos;, wordt het pictogram van de knopinfo weergegeven naast de naam van de toewijzing in de sectie Schedule van TC UI.Default false (bestaand gedrag, geen kolominfo)</help>
+        <label><!-- Show Schedule Tooltips --></label>
+        <name>pse__Show_schedule_tooltips__c</name>
+    </fields>
+    <fields>
+        <help>config om het veld etc te tonen of te verbergen</help>
+        <label><!-- Show timecard etc --></label>
+        <name>pse__Show_timecard_etc__c</name>
+    </fields>
+    <fields>
+        <help>Als dit klopt, wordt het tijdkaartmethodologieveld weergegeven in de gebruikersinterface van de klokkaart.</help>
+        <label><!-- Show timecard methodology --></label>
+        <name>pse__Show_timecard_methodology__c</name>
+    </fields>
+    <fields>
+        <help>config om mijlenselectielijst te tonen of te verbergen</help>
+        <label><!-- Show timecard milestone --></label>
+        <name>pse__Show_timecard_milestone__c</name>
+    </fields>
+    <fields>
+        <help>Als dit het geval is, wordt het tijdveld van de tijdkaart weergegeven op de UI van de tijdkaart.</help>
+        <label><!-- Show timecard phase --></label>
+        <name>pse__Show_timecard_phase__c</name>
+    </fields>
+    <fields>
+        <help>Wanneer false is, wordt de kolom Status / recall direct rechts van de kolom Notities weergegeven. Wanneer true, wordt Status / terugroepen rechts van eventuele extra velden weergegeven.</help>
+        <label><!-- Status/Recall Column Not Fixed --></label>
+        <name>pse__Status_Recall_Column_Not_Fixed__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die door het object Timecard wordt gebruikt. Velden in deze veldset definiëren de bewerkbare velden links van uren in de tijdlijnkopregel van de Timecard-gebruikersinterface.</help>
+        <label><!-- TC HeaderRow Left Editable Fieldset Name --></label>
+        <name>pse__TC_HeaderRow_Left_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die door het object Timecard wordt gebruikt. Velden in deze veldset definiëren de bewerkbare velden in de tijdlijnkopregel in de Timecard-gebruikersinterface.</help>
+        <label><!-- TC Header Row Editable Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die door het object Timecard wordt gebruikt. Velden in dit veld stellen de alleen-lezen velden in de tijdlijn van de tijdkaart in de gebruikersinterface van Timecard in</help>
+        <label><!-- TC Header Row Readonly Fieldset Name --></label>
+        <name>pse__TC_Header_Row_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>CSV om de velden van de Timecard-koptekst te specificeren die vanuit het schema moeten worden gekopieerd. Alleen deze urenvelden zijn geldig voor deze configuratie &quot;Monday_Hours__c, Tuesday_Hours__c, Wednesday_Hours__c, Thursday_Hours__c, Friday_Hours__c, Saturday_Hours__c, Sunday_Hours__c&quot;</help>
+        <label><!-- TC Hour Fields To Copy From Schedule --></label>
+        <name>pse__TC_Hour_Fields_To_Copy_From_Schedule__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die door het object Timecard wordt gebruikt. Velden in deze veldset definiëren bewerkbare velden in het gedeelte Opmerkingen in tijdlijnlijnen in de gebruikersinterface van Timecard.</help>
+        <label><!-- TC Notes Field Editable Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Editable_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-naam van een veldset die door het object Timecard wordt gebruikt. Velden in dit veld stellen het definiëren van alleen-lezen velden in het gedeelte Opmerkingen in tijdlijnlijnen in de gebruikersinterface van Timecard in.</help>
+        <label><!-- TC Notes Field Readonly Fieldset Name --></label>
+        <name>pse__TC_Notes_Field_Readonly_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Veld wordt gebruikt om een ​​coma (,) gescheiden lijst met waarden van de tijdkaartstatus te verbergen die op de TC UI verborgen zal zijn.</help>
+        <label><!-- TC Status To Hide --></label>
+        <name>pse__TC_Status_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Specificeert taken die moeten worden verborgen wanneer ze vooraf worden ingevuld in tijdkaarten, tenzij ze de bijbehorende tijd hebben vastgelegd. De waarde is een door komma&apos;s gescheiden lijst met statussen.</help>
+        <label><!-- Task Statuses To Hide --></label>
+        <name>pse__Task_Statuses_To_Hide__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of de resource alleen taken kan selecteren waarvoor ze een toewijzing hebben voor het invoeren van tijd tegen projecttaken. Wanneer deze optie niet is geselecteerd, kunnen gebruikers deze functie inschakelen op de pagina Tijdinvoer.</help>
+        <label><!-- Task Time: Only show assigned tasks. --></label>
+        <name>pse__Task_Time_Entry_Assignment_Filter__c</name>
+    </fields>
+    <fields>
+        <help>Definieert het filtergedrag op taakdatums bij het kiezen van taken om tijd in te voeren. Stel in op Geen of Overlap. Als Geen, vindt er geen filtering plaats. Bij overlapping worden taken alleen vermeld als de tijdkaart en selecteerbare taken enige overlap hebben op datums.</help>
+        <label><!-- Task Time: Filter task dates --></label>
+        <name>pse__Task_Time_Entry_Date_Filter__c</name>
+    </fields>
+    <fields>
+        <help>De tijdinvoermodus die moet worden gebruikt bij het invoeren van de taaktijd voor een tijdkaartrij. U kunt een van deze waarden kiezen: Aanpassen, Huidig, Berekend of Vrijevorm. De standaardwaarde is Huidig.</help>
+        <label><!-- Task Time Entry Mode --></label>
+        <name>pse__Task_Time_Entry_Mode__c</name>
+    </fields>
+    <fields>
+        <help>Aantal topopdrachten dat moet worden geladen om te laten zien op Overlay project / opdracht</help>
+        <label><!-- Top assignment to show count --></label>
+        <name>pse__Top_assignment_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Aantal weken waarvoor topopdrachten / projecten moeten worden geladen om te worden weergegeven bij project- / toewijzingsoverlay</help>
+        <label><!-- Top_assignment_week_load_limit --></label>
+        <name>pse__Top_assignment_week_load_limit__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal topprojecten dat moet worden geladen om te laten zien in de project- / toewijzingsoverlay</help>
+        <label><!-- Top project to show count --></label>
+        <name>pse__Top_project_to_show_count__c</name>
+    </fields>
+    <fields>
+        <help>Hiermee kunt u uw voorkeursmethode voor het beheren van zichtbare velden wijzigen op de pagina Timecard-invoer. Als False, gebruikt PSA configuratie-opties of aangepaste instellingen om de gebruikersinterface te configureren. Als True True is, gebruikt PSA veldsets om de gebruikersinterface te configureren.</help>
+        <label><!-- Use Field Set for Timecard UI --></label>
+        <name>pse__Use_Field_Set_for_Timecard_UI__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of een toewijzings-id moet worden gebruikt terwijl er toewijzingen worden weergegeven op de tijdkaartpagina</help>
+        <label><!-- Use assignment id --></label>
+        <name>pse__Use_assignment_id__c</name>
+    </fields>
+    <fields>
+        <help>Gegeven veld / config wordt gebruikt om de datumkolomkop voor geplande 0-urendagen volgens het Schedule-patroon (niet Holidays) in de werkagenda van de geselecteerde resource in te kleuren.</help>
+        <label><!-- Weekend Color Code --></label>
+        <name>pse__Weekend_Color_Code__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de pixelbreedte voor de vervolgkeuzelijst Milestone in de gebruikersinterface van de Timecard-invoer. Geef een geheel getal op voor deze waarde, omdat deze direct in de breedte wordt ingevoerd.</help>
+        <label><!-- Width_px_for_milestone_drop_down --></label>
+        <name>pse__Width_px_for_milestone_drop_down__c</name>
+    </fields>
+    <fields>
+        <help>Hiermee bepaalt u de pixelbreedte voor de vervolgkeuzelijst Project / opdracht in de gebruikersinterface van de Timecard-invoer. Geef een geheel getal op voor deze waarde, omdat deze direct in de breedte wordt ingevoerd. Voor ex stelt een waarde 300 de dropdown-breedte in op 300px.</help>
+        <label><!-- Width px for project assig drop down --></label>
+        <name>pse__Width_px_for_project_assig_drop_down__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

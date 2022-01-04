@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LEAD_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>COMPANY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Mount Sinai Health System,Amtrust Financial,HORIZON HEALTHCARE SERVICES,ICBC - New York,AMPHENOL CORPORATION,PUBLIC SERVICE ENTERPRISE GROUP INCORPORATED,WR Berkley,W. R. Berkley Corporation,XYLEM INC.,Nasdaq,People&apos;s United Financial,FRONTIER COMMUNICATIONS CORPORATION,RALPH LAUREN CORPORATION,The New York Times Company,Xerox Corporation,TIFFANY &amp; CO.,Tufts Health Plan,Idexx Laboratories,Nielsen Corporation,ABM INDUSTRIES INCORPORATED,S&amp;P Global,Radian Group,McGraw Hill Financial Inc.,Pvh Corp.,Campbell Soup Company,Quest Diagnostics,Tripadvisor,Realogy Holdings Corp.,The Blackstone Group,TUFTS MEDICAL CENTER PARENT,M&amp;T Bank Corporation,Montefiore Health System,Conduent,Horizon Blue Cross Blue Shield of New Jersey,The Mount Sinai Hospital,Altice USA,Hubbell Incorporated,Harvard Pilgrim Health Care,EmblemHealth,Church &amp; Dwight Co.,American Tower,Foot Locker,Univision Holdings,Selective Insurance Group Inc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Kristin De Stefano,Josh Robert</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,CA,US</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Josh Kristin Unassigned Leads Master</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates whether the Product qualifies for SAO credit. Only subscription products that can be sold on a stand-alone basis for new projects qualify. New projects are defined as either new customers or cross-sell opportunities with existing customers. --></help>
+        <label><!-- Eligible for SAO Credit --></label>
+        <name>EligibleForSAOCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is part of of Traction tool implementation. Not to be confused with the standard &quot;Product Code&quot; field. Designed to group Products into distinct categories to display category icons in the Traction Account hierarchy views on the Account records. --></help>
+        <label><!-- Product Group (Traction) --></label>
+        <name>Product_Group_Traction__c</name>
+        <picklistValues>
+            <masterLabel>POC/Perpetual</masterLabel>
+            <translation><!-- POC/Perpetual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Services</masterLabel>
+            <translation><!-- Professional Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscription</masterLabel>
+            <translation><!-- Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Id --></label>
+        <name>Product_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Services --></label>
+        <name>Professional_Services__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the Product requires that Customer Success onboard the customer. --></help>
+        <label><!-- Requires Onboarding --></label>
+        <name>Requires_Onboarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Product --></label>
+        <name>Subscription_Product__c</name>
+    </fields>
+    <fields>
+        <help><!-- Visible to admins only. Populated only on a named/small set of records in sandboxes to help relationally-reconstruct specific data in partial copy environments (This fields helps admins combat the random sampling nature of partial copy environments) --></help>
+        <label><!-- external id for n4jSFDC sandbox use only --></label>
+        <name>external_id_for_n4jSFDC_sandbox_use_only__c</name>
+    </fields>
+    <fields>
+        <help>Le statut fiscal de ce produit pour les sociétés SUT.</help>
+        <label><!-- Sales Tax Status --></label>
+        <name>fferpcore__SalesTaxStatus__c</name>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation>Exempter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt for Qualifying Accounts</masterLabel>
+            <translation>Exempt pour les comptes admissibles</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable</masterLabel>
+            <translation>Imposable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Le code de taxe à utiliser lors du calcul de la taxe dans une société TVA ou GST.</help>
+        <label><!-- Output VAT/GST Code --></label>
+        <name>fferpcore__TaxCode__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Forecast Curve --></label>
+        <name>pse__Forecast_Curve__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsServicesProduct --></label>
+        <name>pse__IsServicesProduct__c</name>
+    </fields>
+    <layouts>
+        <layout>Product Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

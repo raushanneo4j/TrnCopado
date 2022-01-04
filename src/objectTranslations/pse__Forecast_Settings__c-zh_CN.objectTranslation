@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- 不推荐使用：预测设置 --></value>
+    </caseValues>
+    <fields>
+        <help>输入当前日期之前的天数，以用作实际与预定项目的截止日期。今天使用0。留空以自动使用“上周末”</help>
+        <label><!-- Actuals Cutoff Date --></label>
+        <name>pse__Actuals_Cutoff_Date__c</name>
+    </fields>
+    <fields>
+        <help>要在单个批处理中处理的记录数。默认值为200。</help>
+        <label><!-- Forecast Batch Size --></label>
+        <name>pse__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>分配给第1类加权预测金额的标签。</help>
+        <label><!-- Category1 Label --></label>
+        <name>pse__Category1_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第2类加权预测金额的标签。</help>
+        <label><!-- Category2 Label --></label>
+        <name>pse__Category2_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第3类加权预测金额的标签。</help>
+        <label><!-- Category3 Label --></label>
+        <name>pse__Category3_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第4类加权预测金额的标签。</help>
+        <label><!-- Category4 Label --></label>
+        <name>pse__Category4_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第5类加权预测金额的标签。</help>
+        <label><!-- Category5 Label --></label>
+        <name>pse__Category5_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第6类加权预测金额的标签。</help>
+        <label><!-- Category6 Label --></label>
+        <name>pse__Category6_Label__c</name>
+    </fields>
+    <fields>
+        <help>分配给第7类加权预测金额的标签。</help>
+        <label><!-- Category7 Label --></label>
+        <name>pse__Category7_Label__c</name>
+    </fields>
+    <fields>
+        <help>当机会上没有设置曲线时应用的预测曲线。如果未在机会上设置曲线且未定义默认机会曲线，则会显示错误消息。</help>
+        <label><!-- Default Opportunity Curve --></label>
+        <name>pse__Default_Opportunity_Curve__c</name>
+    </fields>
+    <fields>
+        <help>在项目上没有设置曲线时应用的预测曲线。如果未在项目上设置曲线且未定义默认项目曲线，则会显示错误消息。</help>
+        <label><!-- Default Project Curve --></label>
+        <name>pse__Default_Project_Curve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Queue Size --></label>
+        <name>pse__Maximum_Queue_Size__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则预测批处理过程中的通知将通过Chatter发送到“通知收件人”设置中列出的收件人。默认情况下取消选择此选项。</help>
+        <label><!-- Notifications by Chatter --></label>
+        <name>pse__Notifications_Chatter__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则预测批处理过程中的通知将通过电子邮件发送到“通知收件人”设置中列出的收件人。默认情况下取消选择此选项。</help>
+        <label><!-- Notifications by Email --></label>
+        <name>pse__Notifications_Email__c</name>
+    </fields>
+    <fields>
+        <help>指定通过Chatter或电子邮件发送的预测批量通知的通知收件人。该值是以分号（;）分隔的电子邮件地址列表。默认情况下，此设置为null。</help>
+        <label><!-- Notification Recipients --></label>
+        <name>pse__Notifications_Recipients__c</name>
+    </fields>
+    <fields>
+        <help>如果选中，则通过任务发送预测批处理过程的通知。默认情况下取消选择此选项。</help>
+        <label><!-- Notifications by Task --></label>
+        <name>pse__Notifications_Task__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别1。</help>
+        <label><!-- Opportunity Category1 Calculation --></label>
+        <name>pse__Opportunity_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别2。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category2 Calculation --></label>
+        <name>pse__Opportunity_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别3。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category3 Calculation --></label>
+        <name>pse__Opportunity_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别4。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category4 Calculation --></label>
+        <name>pse__Opportunity_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别5。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category5 Calculation --></label>
+        <name>pse__Opportunity_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别6。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category6 Calculation --></label>
+        <name>pse__Opportunity_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算机会预测的类别7。为获得最佳实践，每个乘数应高于先前的类别值。</help>
+        <label><!-- Opportunity Category7 Calculation --></label>
+        <name>pse__Opportunity_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>用于计算项目预测的类别1的乘数。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category1 Calculation --></label>
+        <name>pse__Project_Category1_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>用于计算项目预测的类别2的乘数。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category2 Calculation --></label>
+        <name>pse__Project_Category2_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算项目预测的类别3。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category3 Calculation --></label>
+        <name>pse__Project_Category3_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>乘数用于计算项目预测的类别4。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category4 Calculation --></label>
+        <name>pse__Project_Category4_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>用于计算项目预测的类别5的乘数。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category5 Calculation --></label>
+        <name>pse__Project_Category5_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>用于计算项目预测的类别6的乘数。这将按顺序乘以以下指标：比特数，通过比特数，预定时间，持有资源请求，未保留资源请求，预定里程碑和未安排的积压。</help>
+        <label><!-- Project Category6 Calculation --></label>
+        <name>pse__Project_Category6_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>用于计算项目预测的类别7的乘数。这将按顺序乘以以下指标：比特数，通过比特数，计划时间，持有资源请求，未保留资源请求，计划，里程碑和未安排的待办事项。</help>
+        <label><!-- Project Category7 Calculation --></label>
+        <name>pse__Project_Category7_Calculation__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别1。</help>
+        <label><!-- Use Category1 --></label>
+        <name>pse__Use_Category1__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别2。</help>
+        <label><!-- Use Category2 --></label>
+        <name>pse__Use_Category2__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别3。</help>
+        <label><!-- Use Category3 --></label>
+        <name>pse__Use_Category3__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别4。</help>
+        <label><!-- Use Category4 --></label>
+        <name>pse__Use_Category4__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别5。</help>
+        <label><!-- Use Category5 --></label>
+        <name>pse__Use_Category5__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别6。</help>
+        <label><!-- Use Category6 --></label>
+        <name>pse__Use_Category6__c</name>
+    </fields>
+    <fields>
+        <help>选择以确定预测计算中是否包含类别7。</help>
+        <label><!-- Use Category7 --></label>
+        <name>pse__Use_Category7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Is Services Product On Opp Product --></label>
+        <name>pse__Use_Is_Services_Product_On_Opp_Product__c</name>
+    </fields>
+</CustomObjectTranslation>

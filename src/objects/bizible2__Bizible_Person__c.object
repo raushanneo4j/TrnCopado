@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_Owner__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets Account Owner from the Contact Object</description>
+        <externalId>false</externalId>
+        <formula>(bizible2__Contact__r.Contact_Account_Owner__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets Account Owner from the Contact Object</inlineHelpText>
+        <label>Account Owner</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Acquisition_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets Acquisition Date from the Contact Object or the Lead Object</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c)), (bizible2__Contact__r.mkto71_Acquisition_Date__c),(bizible2__Lead__r.mkto71_Acquisition_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets Acquisition Date from the Contact Object or the Lead Object</inlineHelpText>
+        <label>Acquisition Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Acquisition_Program__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets Acquisition Program from the Contact Object or the Lead Object</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.mkto71_Acquisition_Program__c ),
+(bizible2__Lead__r.mkto71_Acquisition_Program__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets Acquisition Program from the Contact Object or the Lead Object</inlineHelpText>
+        <label>Acquisition Program</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annual_Revenue_Range__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets Annual Revenue Range from the Contact Object or the Lead Object</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Account.Account_Revenue__c ),
+TEXT(bizible2__Lead__r.neo_account_revenue__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets Annual Revenue Range ($) from the Contact Object or the Lead Object</inlineHelpText>
+        <label>Annual Revenue Range ($)</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closed_Lost_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets Closed Lost Date from the Contact Object or the Lead Object</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Closed_Lost_Date__c),(bizible2__Lead__r.Closed_Lost_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets Closed Lost Date from the Contact Object or the Lead Object</inlineHelpText>
+        <label>Closed Lost Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Lost__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Closed Lost Date value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Closed_Lost_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Closed Lost Date value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Closed Lost</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Closed Won Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Closed_Won_Date__c),(bizible2__Lead__r.Closed_Won_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Closed Won Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Closed Won Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Closed_Won__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Closed Won value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Closed_Won_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Closed Won value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Closed Won</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Discipline__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Discipline value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Discipline__c ),
+TEXT(bizible2__Lead__r.Discipline__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Discipline value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Discipline</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disqualified_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Disqualified Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Disqualified_Date__c),(bizible2__Lead__r.Disqualified_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Disqualified Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Disqualified Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Disqualified__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Disqualified value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Disqualified_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Disqualified value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Disqualified</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fast_Tracked__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Fast-Tracked value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Fast_Track__c ),
+(bizible2__Lead__r.Fast_Track__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Fast-Tracked value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Fast-Tracked</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Global_Territory__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Global Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Global_Territory_Contact__c ),
+(bizible2__Lead__r.Global_Territory__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Global Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Global Territory</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_Core_Country__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c)), (bizible2__Contact__r.In_Core_Country__c),(bizible2__Lead__r.In_Core_Country__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>In Core Country</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Industry value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Account.Industry ),
+TEXT(bizible2__Lead__r.Industry ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Industry value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Industry</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inquiry_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Inquiry Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Inquiry_Original_Date__c),(bizible2__Lead__r.Inquiry_Original_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Inquiry Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Inquiry Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inquiry_Original_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Inquiry Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Inquiry_Original_Date__c ),
+(bizible2__Lead__r.Inquiry_Original_Date__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Inquiry Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Inquiry Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inquiry__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Inquiry value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Inquiry_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Inquiry value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Inquiry</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Job_Function__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Job Function value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Job_Function__c ),
+TEXT(bizible2__Lead__r.Job_Function__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Job Function value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Job Function</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Level__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Job Level value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Job_Level__c ),
+TEXT(bizible2__Lead__r.Job_Level__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Job Level value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Job Level</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Job Title value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c )), (bizible2__Contact__r.Title),(bizible2__Lead__r.Title) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Job Title value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Job Title</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_Inquiry__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Last Touch Inquiry value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Last_Touch_Inquiry__c ),
+(bizible2__Lead__r.Last_Touch_Inquiry__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Last Touch Inquiry value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Last Touch Inquiry</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_MQL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Last Touch MQL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Last_Touch_MQL__c ),
+(bizible2__Lead__r.Last_Touch_MQL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Last Touch MQL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Last Touch MQL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_SAL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Last Touch SAL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Last_Touch_SAL__c ),
+(bizible2__Lead__r.Last_Touch_SAL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Last Touch SAL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Last Touch SAL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_SQL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Last Touch SQL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Last_Touch_SQL__c ),
+(bizible2__Lead__r.Last_Touch_SQL__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Last Touch SQL value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Last Touch SQL</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Late_Stage_Opportunity_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Late Stage Opportunity Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Late_Stage_Opportunity_Date__c),(bizible2__Lead__r.Late_Stage_Opportunity_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Late Stage Opportunity Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Late Stage Opportunity Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Late_Stage_Opportunity__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Late Stage Opportunity value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Late_Stage_Opportunity_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Late Stage Opportunity value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Late Stage Opportunity</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Contact_Owner__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Lead/Contact Owner value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Contact_Account_Owner__c ),
+(bizible2__Lead__r.Owner:User.Username ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Lead/Contact Owner value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Lead/Contact Owner</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Contact_Status__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Lead/Contact Status value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Contact_Status__c ),
+TEXT(bizible2__Lead__r.Status )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Lead/Contact Status value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Lead/Contact Status</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Grade__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate the Lead Grade from either the Contact object or Lead object</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Lead_Grade__c ),
+TEXT(bizible2__Lead__r.Lead_Grade__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate the Lead Grade from either the Contact object or Lead object</inlineHelpText>
+        <label>Lead Grade</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_Detail__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Lead Source Detail value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Lead_Source_Detail__c ),
+(bizible2__Lead__r.Lead_Source_Detail__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Lead Source Detail value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Lead Source Detail</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_Type__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Lead Source Type value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Lead_Source_Type__c ),
+(bizible2__Lead__r.Lead_Source_Type__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Lead Source Type value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Lead Source Type</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Source__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Lead Source value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.LeadSource ),
+TEXT(bizible2__Lead__r.LeadSource )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Lead Source value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Lead Source</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MQL_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a MQL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.MQL_Date__c),(bizible2__Lead__r.MQL_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a MQL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>MQL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MQL_Original_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a MQL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.MQL_Original_Date__c ),
+(bizible2__Lead__r.MQL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a MQL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>MQL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MQL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a MQL value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (MQL_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a MQL value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>MQL</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Qualified_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Marketing Qualified Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Marketing_Qualified_Date__c ),
+(bizible2__Lead__r.Marketing_Qualified_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Marketing Qualified Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Marketing Qualified Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Enterprise_Criteria__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Meets Enterprise Criteria value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Meets_Enterprise_Criteria__c ),
+(bizible2__Lead__r.Meets_Enterprise_Criteria__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Meets Enterprise Criteria value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Meets Enterprise Criteria</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meets_Mid_Market_Criteria__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c)), (bizible2__Contact__r.Meets_Mid_Market_Criteria__c),(bizible2__Lead__r.Meets_Mid_Market_Criteria__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Meets Mid-Market Criteria</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Persona__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Persona value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.Persona__c ),
+TEXT(bizible2__Lead__r.Persona__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Persona value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Persona</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Raw_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Raw Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Raw_Original_Date__c),(bizible2__Lead__r.Raw_Original_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Raw Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Raw Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Raw_Original_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Raw Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.Raw_Original_Date__c ),
+(bizible2__Lead__r.Raw_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Raw Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Raw Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recycle_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Recycle Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.Recycle_Date__c),(bizible2__Lead__r.Recycle_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Recycle Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Recycle Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Recycle__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Recycle value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (Recycle_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Recycle value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>Recycle</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Regional_Territory__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Regional Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.RegionalTerritoryContact__c	 ),
+(bizible2__Lead__r.RegionalTerritoryLead__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Regional Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>Regional Territory</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAL_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SAL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.SAL_Date__c),(bizible2__Lead__r.SAL_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SAL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SAL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAL_Original_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SAL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.SAL_Original_Date__c ),
+(bizible2__Lead__r.SAL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SAL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SAL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SAL value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (SAL_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SAL value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>SAL</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SAO_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SAO Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.SAO_Date__c),(bizible2__Lead__r.SAO_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SAO Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SAO Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAO__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SAO value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (SAO_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SAO value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>SAO</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Contact_ID_for_Bizible_Person__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the value for SFDC Contact ID from the the Contact Object.</description>
+        <externalId>false</externalId>
+        <formula>bizible2__Contact__r.SFDC_Contact_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the value for SFDC Contact ID from the the Contact Object.</inlineHelpText>
+        <label>SFDC Contact ID for Bizible Person</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Created_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Date the person was created in Salesforce</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.CreatedDate ),
+(bizible2__Lead__r.CreatedDate )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date the person was created in Salesforce</inlineHelpText>
+        <label>SFDC Created Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Lead_ID_for_Bizible_Person__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Gets the value for SFDC Lead ID from the the Lead Object.</description>
+        <externalId>false</externalId>
+        <formula>bizible2__Lead__r.SFDC_Lead_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Gets the value for SFDC Lead ID from the the Lead Object.</inlineHelpText>
+        <label>SFDC Lead ID for Bizible Person</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Score__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a Score value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+TEXT(bizible2__Contact__r.mkto71_Lead_Score__c ),
+TEXT(bizible2__Lead__r.mkto71_Lead_Score__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a Score value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SFDC Score</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SQL_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SQL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK ( bizible2__Contact__c )), (bizible2__Contact__r.SQL_Date__c),(bizible2__Lead__r.SQL_Date__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SQL Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SQL Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SQL_Original_Date__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SQL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.SQL_Original_Date__c ),
+(bizible2__Lead__r.SQL_Original_Date__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SQL Original Date value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>SQL Original Date</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SQL__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a SQL Date value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>NOT ( ISBLANK (SQL_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a SQL Date value from the corresponding field on the Contact Object and marks this field as TRUE it if it exists.</inlineHelpText>
+        <label>SQL</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Target_Industry__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c)), (bizible2__Contact__r.Target_Industry__c),(bizible2__Lead__r.Target_Industry__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Target Industry</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Target_Persona__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Will populate true if either the related Contact object or Lead object field is marked true</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK (bizible2__Contact__c)), (bizible2__Contact__r.Target_Persona__c),(bizible2__Lead__r.Target_Persona__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Will populate true if either the related Contact object or Lead object field is marked true</inlineHelpText>
+        <label>Target Persona</label>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>US_Territory__c</fullName>
+        <businessOwnerGroup>Marketing_Operations</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Checks whether there is a US Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</description>
+        <externalId>false</externalId>
+        <formula>IF
+(NOT(ISBLANK (bizible2__Contact__c )),
+(bizible2__Contact__r.US_Territory_Contact__c ),
+(bizible2__Lead__r.US_Territory_Lead__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks whether there is a US Territory value from the corresponding field on either the Contact Object or the Lead Object and copies it if it exists.</inlineHelpText>
+        <label>US Territory</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>bizible2__Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>Bizible_Parents</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>bizible2__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Bizible_Customers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>bizible2__Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipName>Bizible_Customers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>bizible2__UniqueId__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>UniqueId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Bizible Person</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Person Id</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Bizible Persons</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

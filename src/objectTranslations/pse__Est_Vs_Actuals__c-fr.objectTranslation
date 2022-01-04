@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Est Vs Actuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Billings --></label>
+        <name>psa_report__Actual_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvA Variance --></label>
+        <name>psa_report__EvA_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Billings --></label>
+        <name>psa_report__Scheduled_Billings__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Is Last Sunday --></label>
+        <name>psaws__End_Date_Is_Last_Sunday__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Hours Percent Variance --></label>
+        <name>psaws__High_Hours_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Is Current User --></label>
+        <name>psaws__Project_Manager_Is_Current_User__c</name>
+    </fields>
+    <fields>
+        <help>Montant facturable réel divisé par les heures réelles ou les jours réels, selon le cas</help>
+        <label><!-- Actual Average Bill Rate --></label>
+        <name>pse__Actual_Average_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Le montant facturable des heures de la carte de pointage</help>
+        <label><!-- Actual Billable Amount --></label>
+        <name>pse__Actual_Billable_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Nombre réel de jours travaillés dans la période sur la base de fiches de présence agrégées par semaine.</help>
+        <label><!-- Actual Days (Aggregated) --></label>
+        <name>pse__Actual_Days_Aggregated__c</name>
+    </fields>
+    <fields>
+        <help>Nombre réel de jours travaillés dans la période</help>
+        <label><!-- Actual Days --></label>
+        <name>pse__Actual_Days__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;heures entrées sur les feuilles de temps</help>
+        <label><!-- Actual Hours --></label>
+        <name>pse__Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment --></label>
+        <name>pse__Assignment__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Days Percent Variance --></label>
+        <name>pse__Days_Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Variance --></label>
+        <name>pse__Days_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Date de fin de la période pour cet enregistrement. Cela ne doit pas être confondu avec la date de fin de l&apos;assignation ou des fiches de présence associées.</help>
+        <label><!-- End Date --></label>
+        <name>pse__End_Date__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de jours prévus pour le travail pendant la période</help>
+        <label><!-- Estimated Days --></label>
+        <name>pse__Estimated_Days__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;heures prévu</help>
+        <label><!-- Estimated Hours --></label>
+        <name>pse__Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Percent Variance --></label>
+        <name>pse__Percent_Variance__c</name>
+    </fields>
+    <fields>
+        <help>Taux de change du projet (taux de facture), par rapport à la devise de la société, calculé à la date de fin du calendrier.</help>
+        <label><!-- Project Currency Exchange Rate --></label>
+        <name>pse__Project_Currency_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager --></label>
+        <name>pse__Project_Manager__c</name>
+        <relationshipLabel><!-- Est Vs Actuals (Project Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Le montant de la facture pour la ressource demandée.</help>
+        <label><!-- Resource Request Bill Rate --></label>
+        <name>pse__Resource_Request_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de jours demandés prévus pour le travail sur la demande de ressource suspendue au cours de la période.</help>
+        <label><!-- Resource Request Days --></label>
+        <name>pse__Resource_Request_Days__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;heures demandées planifiées sur la demande de ressource suspendue.</help>
+        <label><!-- Resource Request Hours --></label>
+        <name>pse__Resource_Request_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Recherche dans la demande de ressource mise en attente relative à cet enregistrement Estimations par rapport aux données réelles.</help>
+        <label><!-- Resource Request --></label>
+        <name>pse__Resource_Request__c</name>
+        <relationshipLabel><!-- Estimates Versus Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>pse__Resource__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Taux de facturation de l&apos;affectation</help>
+        <label><!-- Scheduled Bill Rate --></label>
+        <name>pse__Scheduled_Bill_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Bill Rate is Daily Rate --></label>
+        <name>pse__Scheduled_Bill_Rate_is_Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <help>Date de début de la période pour cet enregistrement. Cela ne doit pas être confondu avec la date de début de l&apos;assignation ou des fiches de présence associées.</help>
+        <label><!-- Start Date --></label>
+        <name>pse__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help>Le type de période que représente cette période</help>
+        <label><!-- Time Period Type --></label>
+        <name>pse__Time_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Mois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation>Trimestre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>La semaine</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>La période de temps associée</help>
+        <label><!-- Time Period --></label>
+        <name>pse__Time_Period__c</name>
+        <relationshipLabel><!-- Est Vs Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Est-ce qu&apos;une fiche de présence associée a été envoyée?</help>
+        <label><!-- Timecards Submitted --></label>
+        <name>pse__Timecards_Submitted__c</name>
+    </fields>
+    <fields>
+        <help>La quantité de variation en heures</help>
+        <label><!-- Hours Variance --></label>
+        <name>pse__Variance__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Est Vs Actuals Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Est Vs Nom réel</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- PSE Member Share --></label>
+        <name>pse__PSE_Member_Share</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- PSE PM Share --></label>
+        <name>pse__PSE_PM_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The estimates versus actuals comparison record requires either an assignment or a resource request. --></errorMessage>
+        <name>pse__Assignment_required</name>
+    </validationRules>
+</CustomObjectTranslation>

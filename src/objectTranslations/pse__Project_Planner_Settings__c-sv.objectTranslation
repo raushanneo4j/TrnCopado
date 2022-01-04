@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Planerare - Projekt --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Planerare - Projekt --></value>
+    </caseValues>
+    <fields>
+        <help>Om det är valt, bestämmer du om undantagslistor för semesterschema läggs till om tilldelningsdatumsintervall justeras och det nya datumintervallet faller inom en semester.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Om vald, tillåter den här inställningen användarna att dra uppdragsfältet till massrörelseuppdrag i projektplaneraren. Den här inställningen är avmarkerad som standard.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer de ytterligare fälten som ska visas i avsnittet &quot;Ytterligare fält&quot; i dialogrutan Skapa uppdrag i projektplaneraren.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definierar fältets API-namn på ett uppdrag som styr uppdragsfältet i projektplaneraren.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen definierar ett fältets API-namn för att beställa uppdrag av och, valfritt, riktningen (ASC eller DESC). Uppdrag visas alltid över hushållsförfrågningar.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer vilka uppdragsfält som söks med textsökrutan på projektplaneraren.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på fältuppsättningen som innehåller fälten som ska visas som verktygstips för uppdrag i projektplaneraren. Fältuppsättningen måste existera i uppdragsobjektet.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på fältuppsättningen som innehåller kolumnerna som ska visas på projektplaneraren. Fältuppsättningen måste existera i projektobjektet.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen definierar antalet framtida dagar från och med idag, för vilken den förbättrade projektplaneraren visar uppdrag. Ange till exempel 30 för att visa uppdrag som börjar eller slutar inom 30 dagar från idag.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen definierar antalet dagar före idag för vilken den förbättrade projektplaneraren ska visa uppdrag. Ange till exempel 30 för att visa uppdrag som börjar eller slutar under de föregående 30 dagarna.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definierar en URL (absolut eller relativ) som pekar på standardbilden som ska användas för resurser utan ett profilfoto. Bildfiler på 22 pixlar kvadrat fungerar bäst.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer de fält som används för filtrering i projektplaneraren. Värdet är ett fältuppsättning som anger fält som är tillgängliga för att filtrera på.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>När det väljs kommer fälten Kostnadsfrekvens i dialogrutan Skapa uppdrag att döljas för alla användare.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Använd Project_Planner_Preferences__c.Hide_Inline_Dialog__c istället.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Om det är valt, fylls start- och slutdatumet i dialogrutan Skapa uppdrag automatiskt från projektets start- och slutdatum.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Om det är valt, fylls resursrollen i dialogrutan Skapa uppdrag automatiskt i Kontakter-posten.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: Använd Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c istället.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Anger API-namnet på uppdraget som ska visas i Projektplaneraren. Om det här fältet är tomt visar projektplaneraren uppdragsnamnet som standard.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Anger API-namnet på resursbegäran som ska visas i Projektplaneraren. Om det här fältet är tomt visar projektplaneraren namnet Resursförfrågan som standard.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen definierar det maximala antalet projekt som laddas i bakgrunden när man tittar på ett stort antal poster. Att ange ett högre värde resulterar i färre belastningsavbrott, men använder mer minne.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer vilka projektfält som sökes med textsökrutan på projektplaneraren.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Definierar API-namnet på fältet i ett projekt som kontrollerar projektsammanfattningens färger.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på fältuppsättningen som innehåller fälten som ska visas som verktygstips för projekt på projektplaneraren. Fältuppsättningen måste existera i projektobjektet.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Anger antal projekt för vilka barndata (uppdrag och resursförfrågningar) laddas per förfrågan. Du bör inte justera registreringsbelastningsgränsen utan att först konsultera kundsupport.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>API-namnet på fältuppsättningen som innehåller fälten som ska visas som verktygstips för resursförfrågningar i projektplaneraren. Fältuppsättningen måste existera i objektet Resursförfrågan.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Bestämmer vilka Fältförfrågningsfält som sökes med textsökrutan i projektplaneraren.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definierar fältets API-namn på en resursförfrågan som styr färgfälten för resursförfrågan i projektplaneraren.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Denna inställning definierar API-namnet på ett fält för att beställa behållningsresursförfrågningar av och, eventuellt riktningen (ASC eller DESC). Halda resursförfrågningar visas alltid under uppdrag.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Om du valt, kan du inte skapa ett uppdrag med startdatum tidigare. Standardvärdet är avmarkerat.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Om du har valt, kan du inte redigera projektplaneringsuppdrag och schemalägga timmar tidigare. Standardvärdet är avmarkerat.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Om det är valt kan du inte byta resursen på ett uppdrag med ett startdatum som anges tidigare. Standardvärdet är avmarkerat.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Om det väljs kommer anpassningar till bredd, ordning och synlighet av kolumner i projektplaneraren att komma ihåg per användare.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Använd Beige för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Använd Light Blue för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Använd Light Green för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Använd Light Red för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Använd Light Yellow för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Använd Pink för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Använd Lila för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Använd Turkos för celler i Project Planner. Standard = Falsk</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen avgör om dina användare ser den förbättrade (nya) eller klassiska projektplaneraren.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Den här inställningen avgör huruvida användarna behöver en behörighetskontroll eller inte, med kryssrutan Anställningar markerad, innan de kan redigera scheman på den förbättrade projektplaneraren.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

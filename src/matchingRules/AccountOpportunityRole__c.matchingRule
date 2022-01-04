@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <matchingRules>
+        <fullName>prevent_some_relatedentity_dupes</fullName>
+        <description>For duplicate prevention. This is a concatenated value from both master lookups, and other data values.  Worksaround salesforce limitation &quot;Error: A matching rule can have only one lookup relationship field&quot; (ideaView?id=08730000000Dl8OAAS)</description>
+        <label>prevent some relatedentity dupes</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Compound_Key__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+</MatchingRules>

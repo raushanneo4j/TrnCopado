@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Pianificatori - Progetto --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Pianificatori - Progetto --></value>
+    </caseValues>
+    <fields>
+        <help>Se selezionato, determina se i record delle eccezioni dei giorni festivi vengono aggiunti se gli intervalli di date di assegnazione vengono regolati e il nuovo intervallo di date cade in una festività.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionata, questa impostazione consente agli utenti di trascinare la barra delle assegnazioni per le assegnazioni di spostamento di massa nel Pianificatore progetti. Questa impostazione è deselezionata per impostazione predefinita.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>Determina i campi aggiuntivi da visualizzare nella sezione &quot;Campi aggiuntivi&quot; della finestra di dialogo Crea assegnazione in Pianificatore progetti.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome dell&apos;API del campo in un&apos;Assegnazione che controlla le barre dei colori di assegnazione in Pianificatore progetto.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione definisce il nome API di un campo per ordinare le assegnazioni di e, opzionalmente, la direzione (ASC o DESC). Le assegnazioni appaiono sempre sopra le richieste di risorse detenute.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Determina quali campi di assegnazione vengono cercati con la casella di ricerca testo sul pianificatore del progetto.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Il nome dell&apos;API dell&apos;insieme di campi che contiene i campi da mostrare come suggerimenti per le assegnazioni sul pianificatore del progetto. Il set di campi deve esistere nell&apos;oggetto Assignment.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Il nome dell&apos;API dell&apos;insieme di campi che contiene le colonne da mostrare nel pianificatore del progetto. Il set di campi deve esistere nell&apos;oggetto Project.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione definisce il numero di giorni futuri, da oggi, per i quali il Project Planner avanzato mostrerà i compiti. Ad esempio, immettere 30 per visualizzare i compiti che iniziano o terminano entro 30 giorni da oggi.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione definisce il numero di giorni prima di oggi per il quale il Project Planner avanzato mostrerà i compiti. Ad esempio, immettere 30 per visualizzare i compiti che iniziano o terminano nei 30 giorni precedenti.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>Definisce un URL (assoluto o relativo) che punta all&apos;immagine predefinita da utilizzare per le risorse senza una foto del profilo. I file di immagine di 22 pixel quadrati funzionano meglio.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>Determina i campi utilizzati per il filtraggio nel Project Planner. Il valore è un set di campi che specifica i campi disponibili per il filtro.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, i campi Tasso costo nella finestra di dialogo Crea assegnazione saranno nascosti per tutti gli utenti.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: utilizzare invece Project_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le date di inizio e fine nella finestra di dialogo Crea assegnazioni vengono compilate automaticamente dalle date di inizio e fine del progetto.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, il ruolo delle risorse nella finestra di dialogo Crea assegnazioni viene compilato automaticamente dal record Contatti.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>DEPRECATED: utilizzare invece Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>Specifica il nome dell&apos;API dell&apos;assegnazione da visualizzare nel pianificatore del progetto. Se questo campo è vuoto, il pianificatore del progetto visualizza il nome di assegnazione per impostazione predefinita.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Specifica il nome dell&apos;API della richiesta di risorse da visualizzare nel pianificatore del progetto. Se questo campo è vuoto, il pianificatore del progetto visualizza il nome della richiesta di risorsa per impostazione predefinita.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione definisce il numero massimo di progetti che vengono caricati in background quando si visualizza un numero elevato di record. L&apos;immissione di un valore più alto comporta meno interruzioni di caricamento, ma utilizza più memoria.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Determina quali campi del progetto vengono cercati con la casella di ricerca testo sul pianificatore del progetto.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome API del campo in un progetto che controlla i colori di riepilogo progetto.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Il nome dell&apos;API dell&apos;insieme di campi che contiene i campi da mostrare come suggerimenti per i progetti sul pianificatore del progetto. Il set di campi deve esistere nell&apos;oggetto Project.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Specifica il numero di progetti per i quali vengono caricati i dati figlio (assegnazioni e richieste di risorse) per richiesta. Non è necessario regolare il limite di carico della registrazione senza prima consultare l&apos;assistenza clienti.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>Il nome dell&apos;API dell&apos;insieme di campi che contiene i campi da mostrare come suggerimenti per le richieste di risorse sul pianificatore del progetto. Il set di campi deve esistere nell&apos;oggetto Richiesta di risorsa.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>Determina quali campi di richiesta di risorse vengono cercati con la casella di ricerca testo sul pianificatore del progetto.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>Definisce il nome dell&apos;API del campo in una richiesta di risorsa che controlla le barre dei colori di richiesta di risorsa in Pianificatore progetto.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione definisce il nome dell&apos;API di un campo per ordinare le richieste di risorse trattenute da e, opzionalmente, la direzione (ASC o DESC). Le richieste di risorse trattenute appaiono sempre sotto i compiti.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non è possibile creare un compito con data di inizio nel passato. Il valore predefinito è deselezionato.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non è possibile modificare l&apos;assegnazione del pianificatore di progetto e le ore di pianificazione nel passato. Il valore predefinito è deselezionato.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, non è possibile scambiare la risorsa su un compito con una data di inizio impostata nel passato. Il valore predefinito è deselezionato.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Se selezionato, le personalizzazioni per la larghezza, l&apos;ordine e la visibilità delle colonne nel Pianificatore progetto verranno memorizzate per ciascun utente.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>Usa Beige per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>Usa la luce blu per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzare Verde chiaro per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzare Luce rossa per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzare Giallo chiaro per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>Usa Rosa per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>Usa Viola per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>Utilizzare Turchese per le celle in Project Planner. Impostazione predefinita = Falso</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione determina se i tuoi utenti vedono il Project Planner avanzato (nuovo) o classico.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>Questa impostazione determina se gli utenti necessiteranno o meno di un controllo di autorizzazione, con la casella di controllo Staffing selezionata, prima che possano modificare le pianificazioni sul Project Planner avanzato.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+    
+</CustomObjectTranslation>

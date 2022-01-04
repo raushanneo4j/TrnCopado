@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- グローバル検索リソース --></value>
+    </caseValues>
+    <fields>
+        <help>アドレスフィールドで許可する一連のカンマ区切り文字を決定します。</help>
+        <label><!-- Allow Special Characters In Address --></label>
+        <name>pse__Allow_Special_Characters_In_Address__c</name>
+    </fields>
+    <fields>
+        <help>検索リソースに表示される連絡先オブジェクト内のフィールドのAPI名。 Display Resource Descriptionがtrueの場合、このオプションは無視されます。</help>
+        <label><!-- Contact Field 1 --></label>
+        <name>pse__Contact_Field_1__c</name>
+    </fields>
+    <fields>
+        <help>検索リソースに表示される連絡先オブジェクト内のフィールドのAPI名。 Display Resource Descriptionがtrueの場合、このオプションは無視されます。</help>
+        <label><!-- Contact Field 2 --></label>
+        <name>pse__Contact_Field_2__c</name>
+    </fields>
+    <fields>
+        <help>検索リソースに表示される連絡先オブジェクト内のフィールドのAPI名。 Display Resource Descriptionがtrueの場合、このオプションは無視されます。</help>
+        <label><!-- Contact Field 3 --></label>
+        <name>pse__Contact_Field_3__c</name>
+    </fields>
+    <fields>
+        <help>trueの場合、リソースの説明だけが表示されます。 falseの場合、連絡先オブジェクトのフィールドの有効なAPI名が含まれている場合、連絡先フィールド1〜3が表示されます。デフォルト値はfalseです。</help>
+        <label><!-- Display Resource Description --></label>
+        <name>pse__Display_Resource_Description__c</name>
+    </fields>
+    <fields>
+        <help>住所を使用して緯度と経度を取得するときに使用するマッピングサービスのURL。デフォルト値：http://www.mapquestapi.com/geocoding/v1/address?key=Fmjtd%7Cluub2q6820%2Caa%3Do5-961xh0&amp;outFormat=json&amp;maxResults=1</help>
+        <label><!-- Geolocation Service URL --></label>
+        <name>pse__Geolocation_Service_URL__c</name>
+    </fields>
+    <fields>
+        <help>住所が無効な場合、経度と緯度は更新されないことを決定します。サポートされているフォーマット：経度、緯度、経度、緯度。</help>
+        <label><!-- Invalid Longitude and Latitude --></label>
+        <name>pse__Invalid_Longitude_And_Latitude_Pairs__c</name>
+    </fields>
+    <fields>
+        <help>Mapquest地理位置情報APIを使用する前に、Salesforceリモートサイト設定のエンドポイントに対して検証するために使用されるMapquestエンドポイントURLを定義します。このURLは、地理位置情報サービスのURLのサブセットにする必要があります。</help>
+        <label><!-- Mapquest Endpoint URL --></label>
+        <name>pse__Mapquest_Endpoint_URL__c</name>
+    </fields>
+</CustomObjectTranslation>

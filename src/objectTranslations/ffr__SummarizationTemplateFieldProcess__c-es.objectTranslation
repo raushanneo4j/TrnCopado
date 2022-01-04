@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Proceso de campo de la plantilla de resumen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Procesos de campo de la plantilla de resumen</value>
+    </caseValues>
+    <fields>
+        <label><!-- FieldName --></label>
+        <name>ffr__FieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summarization Method --></label>
+        <name>ffr__Process__c</name>
+        <picklistValues>
+            <masterLabel>Group By</masterLabel>
+            <translation>Agrupar por</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUM</masterLabel>
+            <translation>SUMA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summarization Template --></label>
+        <name>ffr__SummarizationTemplate__c</name>
+        <relationshipLabel><!-- SummarizationTemplateFieldProcesses --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre de proceso de campo de plantilla </nameFieldLabel>
+</CustomObjectTranslation>

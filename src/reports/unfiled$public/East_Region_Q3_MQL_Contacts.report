@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_11707353</developerName>
+        <masterLabel>Lead Source Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Contacts$Lead_Source_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Add On</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Country Opt-In</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Manage Subscriptions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zendesk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Generated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Documentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hardware Calculator</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Legacy Neo4j Event</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neo4j Certification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Program</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GraphDay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GraphTalk</sourceValue>
+            </sourceValues>
+            <value>GraphTour</value>
+        </values>
+        <values>
+            <value>Whitepaper</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Conference</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>External Event</sourceValue>
+            </sourceValues>
+            <value>Trade Show</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Online Training</sourceValue>
+            </sourceValues>
+            <value>Training</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Neo4j Desktop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neo4j Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neo4j Enterprise Startup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neo4j Sandbox</sourceValue>
+            </sourceValues>
+            <value>Product Download</value>
+        </values>
+        <values>
+            <value>Webinar</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Whitepaper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>White Paper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Website</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On-Demand Webinar</sourceValue>
+            </sourceValues>
+            <value>Digital</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_680605</developerName>
+        <masterLabel>Lead Source Type*</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Contacts$Lead_Source_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Add On</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Us</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Country Opt-In</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Documentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hardware Calculator</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Manage Subscriptions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zendesk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner Program</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_11707353</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Contacts$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MQL_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Contact_Account_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Lead_Source_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account$Owner.Rep_Geo__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingCountryCode</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingStateCode</field>
+    </columns>
+    <columns>
+        <field>Account$Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_680605</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mike Carey,Michael Shaw,Dan McGary,Bob Anthony,Keoni Gaspar,Bob Liebowitz,David Richard,John Caito,Joe Odonnell,Darryl Salas,Candace Shin,Tim Anderson,Jason Zagalsky,Mark Lewis</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_11707353</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contacts$mkto71_Acquisition_Program__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>East Region Q3 MQL Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Contacts$LeadSource</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts$MQL_Date__c</dateColumn>
+        <interval>INTERVAL_PREV1</interval>
+    </timeFrameFilter>
+</Report>

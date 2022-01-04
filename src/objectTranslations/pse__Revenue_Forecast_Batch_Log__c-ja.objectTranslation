@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>収益予測バッチログ</value>
+    </caseValues>
+    <fields>
+        <help>関連する収益予測について記録されたメッセージ。</help>
+        <label><!-- Message --></label>
+        <name>pse__Message__c</name>
+    </fields>
+    <fields>
+        <help>このログが生成された機会の参照。</help>
+        <label><!-- Opportunity --></label>
+        <name>pse__Opportunity__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このログが生成されたプロジェクトへのルックアップ。</help>
+        <label><!-- Project --></label>
+        <name>pse__Project__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>このログが生成された収益予測バッチのルックアップ。</help>
+        <label><!-- Revenue Forecast Batch --></label>
+        <name>pse__Revenue_Forecast_Batch__c</name>
+        <relationshipLabel><!-- Revenue Forecast Batch Logs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Revenue Forecast Batch Log Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>収益予測バッチログ名</nameFieldLabel>
+</CustomObjectTranslation>

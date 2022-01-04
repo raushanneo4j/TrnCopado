@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>קטגוריית סיכום תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>קטגוריות סיכום תחזית חיוב</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <help>שדה פורמולה המייצג את הערך המוצג בדף תחזית חיוב עבור קטגוריית סיכום תחזית חיוב זו.</help>
+        <label><!-- Adjusted Value --></label>
+        <name>pse__Adjusted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Label --></label>
+        <name>pse__Category_Label__c</name>
+    </fields>
+    <fields>
+        <help>חיפוש אחר עקיפת תחזית החיוב הפעילה המוחלת על קטגוריית סיכום תחזית חיוב זו.</help>
+        <label><!-- Billing Forecast Override --></label>
+        <name>pse__Forecast_Enhanced_Override__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Summary --></label>
+        <name>pse__Forecast_Enhanced_Summary__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Opportunities Value --></label>
+        <name>pse__Forecast_Opportunities_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Projects Value --></label>
+        <name>pse__Forecast_Projects_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Setup Category --></label>
+        <name>pse__Forecast_Setup_Category__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories Setup --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Sublevels Value --></label>
+        <name>pse__Forecast_Sublevels_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Forecast Total Value --></label>
+        <name>pse__Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <help>חיפוש למשתמש שיצר את עקיפת תחזית החיוב הפעילה הנוכחית שיוחל על קטגוריית סיכום תחזית החיוב הזו.</help>
+        <label><!-- Override Created By --></label>
+        <name>pse__Override_CreatedBy__c</name>
+        <relationshipLabel><!-- Billing Forecast Summary Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>התאריך והשעה שנוצרו של עקיפת תחזית החיוב הפעילה כעת הוחלה על קטגוריית סיכום תחזית החיוב הזו.</help>
+        <label><!-- Override Created Date --></label>
+        <name>pse__Override_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help>הערות לגבי עקיפת תחזית החיוב הפעילה כרגע חלה על קטגוריית סיכום תחזית חיוב זו.</help>
+        <label><!-- Override Notes --></label>
+        <name>pse__Override_Notes__c</name>
+    </fields>
+    <fields>
+        <help>סכום השונות המוצלחות לכל קטגוריות הסיכום שמתחת לקטגוריית סיכום זו בהיררכיית ה- RPG, כולל עקיפות על קטגוריות פרטי החיזוי הקשורות לחיוב.</help>
+        <label><!-- Override Roll-Up Variance --></label>
+        <name>pse__Override_Rollup_Variance__c</name>
+    </fields>
+    <fields>
+        <help>ערך תחזית החיוב הפעילה כרגע חלה על קטגוריית סיכום תחזית חיוב זו.</help>
+        <label><!-- Override Value --></label>
+        <name>pse__Override_Value__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Forecast Summary Category Layout</layout>
+        <sections>
+            <label>קישורים מותאמים אישית</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>שם קטגוריה סיכום תחזית חיוב</nameFieldLabel>
+</CustomObjectTranslation>

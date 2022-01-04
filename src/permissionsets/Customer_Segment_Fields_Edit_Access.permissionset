@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Bypass_Customer_Segment_Fields_Edit_Limit_Validation_Rule</name>
+    </customPermissions>
+    <description>Gives edit access to the &quot;Customer Segment&quot; and &quot;Customer Segment Update Status&quot; fields on the Account object.
+JIRA: browse/SFDCSPT-195</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Customer_Segment_Update_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Customer_Segment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Customer Segment Fields: Edit Access</label>
+</PermissionSet>

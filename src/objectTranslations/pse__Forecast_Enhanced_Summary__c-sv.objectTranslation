@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Faktureringsprognosöversikt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Faktureringsprognos sammanfattningar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- Billing Forecast Calculation --></label>
+        <name>pse__Forecast_Enhanced_Calculation__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group Plan --></label>
+        <name>pse__Group_Plan__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>pse__Group__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>En uppslagning till faktureringsprognosöversikten för moderregionen, praxis eller grupp i hierarkin för denna faktureringsprognosöversikt.</help>
+        <label><!-- Parent Billing Forecast Summary --></label>
+        <name>pse__Parent_Summary__c</name>
+        <relationshipLabel><!-- Child Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice Plan --></label>
+        <name>pse__Practice_Plan__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Practice --></label>
+        <name>pse__Practice__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region Plan --></label>
+        <name>pse__Region_Plan__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>pse__Region__c</name>
+        <relationshipLabel><!-- Billing Forecast Summaries --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Forecast Summary Layout</layout>
+        <sections>
+            <label>Anpassade länkar</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Namn på faktureringsprognosöversikt</nameFieldLabel>
+</CustomObjectTranslation>

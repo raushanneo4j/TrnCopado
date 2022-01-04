@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración del pronóstico de ingresos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuración del pronóstico de ingresos</value>
+    </caseValues>
+    <fields>
+        <help>Indica el registro de configuración del pronóstico de ingresos utilizado para los cálculos del pronóstico de ingresos. Solo puede tener un registro de configuración de pronóstico de ingresos activo.</help>
+        <label><!-- Active --></label>
+        <name>pse__Active__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, las oportunidades se excluyen de los trabajos programados de pronóstico de ingresos.</help>
+        <label><!-- Exclude Opportunities --></label>
+        <name>pse__Exclude_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione para excluir ingresos relacionados con solicitudes de recursos retenidos en proyectos e hitos.</help>
+        <label><!-- Exclude Resource Requests on Project --></label>
+        <name>pse__Exclude_Resource_Requests_On_Project__c</name>
+    </fields>
+    <fields>
+        <help>Número de registros que se procesarán al mismo tiempo, como tarjetas de tiempo y gastos.</help>
+        <label><!-- Forecast Factor Batch Size --></label>
+        <name>pse__Forecast_Factor_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Número de oportunidades y líneas de pedido de oportunidad que se procesarán al mismo tiempo.</help>
+        <label><!-- Opportunity Batch Size --></label>
+        <name>pse__Opportunity_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Número de proyectos a procesar al mismo tiempo.</help>
+        <label><!-- Project Batch Size --></label>
+        <name>pse__Project_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el nombre de API del campo en el objeto de oportunidad que desea usar como la fecha de finalización prevista del proyecto.</help>
+        <label><!-- Expected Project End Date Field on Opp --></label>
+        <name>pse__Project_End_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Ingrese el nombre de API del campo en el objeto de oportunidad que desea usar como la fecha de inicio del proyecto esperada.</help>
+        <label><!-- Expected Project Start Date Field on Opp --></label>
+        <name>pse__Project_Start_Date_on_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help>Seleccione el nombre de API del campo en el objeto Proyecto que desea usar para calcular el valor en el campo% de horas completadas para el reconocimiento. Si es necesario, puede crear su propio campo y agregarlo a la lista de selección.</help>
+        <label><!-- Total Hours Field on Project --></label>
+        <name>pse__Total_Hours_Field_on_Project__c</name>
+        <picklistValues>
+            <masterLabel>pse__Estimated_Hours_at_Completion__c</masterLabel>
+            <translation>pse__Estimated_Hours_at_Completion__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pse__Planned_Hours__c</masterLabel>
+            <translation>pse__Planned_Hours__c</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Revenue Forecast Setup Layout</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Configuración de lote de pronóstico</label>
+            <section>Forecast Batch Settings</section>
+        </sections>
+        <sections>
+            <label>Configuraciones de oportunidad</label>
+            <section>Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label>Configuraciones del proyecto</label>
+            <section>Project Settings</section>
+        </sections>
+        <sections>
+            <label>Detalles de configuración</label>
+            <section>Setup Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de configuración de pronóstico de</nameFieldLabel>
+</CustomObjectTranslation>

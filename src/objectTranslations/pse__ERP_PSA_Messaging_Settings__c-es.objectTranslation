@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Configuración de mensajes de PSA de Foundations --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Configuración de mensajes de PSA de Foundations --></value>
+    </caseValues>
+    <fields>
+        <help>Nombre de clave ERP para usar para filtrar los mensajes de solicitud de ausencia.</help>
+        <label><!-- Absence Filter Field Key --></label>
+        <name>pse__Absence_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>Valor (es) clave (s) del mensaje ERP utilizados para filtrar los mensajes de solicitud de ausencia. Los campos Texto y Lista de selección admiten múltiples valores delimitados por punto y coma.</help>
+        <label><!-- Absence Filter Values --></label>
+        <name>pse__Absence_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>El ID de registro de Salesforce del proyecto para usar al crear asignaciones de tiempo de inactividad a través de ERP.</help>
+        <label><!-- Absence Request Project --></label>
+        <name>pse__Absence_Request_Project__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, PSA aprueba automáticamente las tarjetas de tiempo creadas a través de la API de asignación PSA cuando existe un proceso de aprobación relevante en el objeto Timecard.</help>
+        <label><!-- Automatically Approve API Timecards --></label>
+        <name>pse__Automatically_Approve_API_Timecards__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona, PSA crea registros de recursos activos cuando se completa la Id. De correlación de recursos API. La ID de correlación de recursos API siempre se rellena cuando los detalles se ingresan a través de la API.</help>
+        <label><!-- Create Records as Active Resources --></label>
+        <name>pse__Create_Records_as_Active_Resources__c</name>
+    </fields>
+    <fields>
+        <help>Si se selecciona y la ID de correlación de recursos de API se rellena, las actualizaciones de PSA comienzan la fecha o la última fecha cuando el estado de empleo de un recurso se activa o finaliza. La ID de correlación de recursos API siempre se rellena cuando los detalles se ingresan a través de la API.</help>
+        <label><!-- Update Resource Employment Dates --></label>
+        <name>pse__Update_Resource_Employment_Dates__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de la clave ERP que se utilizará para filtrar los mensajes de los trabajadores para crear Cuentas Personales.</help>
+        <label><!-- Worker Account Filter Field Key --></label>
+        <name>pse__Worker_Account_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>Valor (es) clave (s) del mensaje ERP utilizados para filtrar los mensajes de los trabajadores para crear Cuentas Personales. Los campos Texto y Lista de selección admiten múltiples valores delimitados por punto y coma.</help>
+        <label><!-- Worker Account Filter Values --></label>
+        <name>pse__Worker_Account_Filter_Values__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de clave ERP para usar para filtrar mensajes de trabajador.</help>
+        <label><!-- Worker Filter Field Key --></label>
+        <name>pse__Worker_Filter_Field__c</name>
+    </fields>
+    <fields>
+        <help>El (los) valor (es) clave (s) del mensaje ERP utilizados para filtrar los mensajes del trabajador para crear Contactos. Los campos Texto y Lista de selección admiten múltiples valores delimitados por punto y coma.</help>
+        <label><!-- Worker Filter Values --></label>
+        <name>pse__Worker_Filter_Values__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

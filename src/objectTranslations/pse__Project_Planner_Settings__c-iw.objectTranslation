@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- מתכננים - פרויקט --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- מתכננים - פרויקט --></value>
+    </caseValues>
+    <fields>
+        <help>אם נבחר, קובע אם רשומות חריג של לוח הזמנים לחגים יתווספו אם טווחי תאריכי ההקצאה מותאמים וטווח התאריכים החדש נופל בתוך חג.</help>
+        <label><!-- Add Holidays On Assignment Adjust --></label>
+        <name>pse__Add_Holidays_On_Assignment_Adjust__c</name>
+    </fields>
+    <fields>
+        <help>אם היא נבחרה, הגדרה זו מאפשרת למשתמשים לגרור את סרגל ההקצאה להקצאות המוניות המועברות במתכנן הפרויקטים. הגדרה זו אינה מסומנת כברירת מחדל.</help>
+        <label><!-- Allow Mass Move Assignments --></label>
+        <name>pse__Allow_Mass_Move_Assignments__c</name>
+    </fields>
+    <fields>
+        <help>קובע את השדות הנוספים שיוצגו בקטע &quot;שדות נוספים&quot; בתיבת הדו-שיח Create Assignment במתכנן הפרויקטים.</help>
+        <label><!-- Assn Additional Fields Field Set Name --></label>
+        <name>pse__Assignment_AdditionalFields_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם ה- API של השדה במשימה ששולטת בסרגלי הצבעים של ההקצאה במתכנן הפרויקטים.</help>
+        <label><!-- Assignment Color Field --></label>
+        <name>pse__Assignment_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו מגדירה את שם ה- API של שדה להזמנת משימות על ידי, ובאופן אופציונלי, הכיוון (ASC או DESC). הקצאות מופיעות תמיד מעל בקשות המשאבים המוחזקות.</help>
+        <label><!-- Assignment Ordering --></label>
+        <name>pse__Assignment_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>קובע באילו שדות הקצאה מחפשים באמצעות תיבת חיפוש הטקסט המתכננת בפרויקט.</help>
+        <label><!-- Assignment Search Fieldset Name --></label>
+        <name>pse__Assignment_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>שם ה- API של מערך השדות שמכיל את השדות שיוצגו כקלפי כלים למשימות במתכנן הפרויקט. מערך השדות חייב להתקיים באובייקט הקצאה.</help>
+        <label><!-- Assignment Tooltip Field Set --></label>
+        <name>pse__Assignment_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>שם ה- API של מערך השדות המכיל את העמודות המוצגות במתכנן הפרויקט. מערך השדות חייב להתקיים באובייקט Project.</help>
+        <label><!-- Columns Field Set --></label>
+        <name>pse__Columns_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו מגדירה את מספר הימים העתידיים, מהיום, עבורם מתכנן הפרויקטים המשופר יציג משימות. לדוגמה, הזן 30 להצגת מטלות המתחילות או מסתיימות תוך 30 יום מהיום.</help>
+        <label><!-- Default Future Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Future_Days__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו מגדירה את מספר הימים שקדמו להיום עבורם מתכנן הפרויקטים המשופר יציג משימות. לדוגמה, הזן 30 להצגת מטלות המתחילות או מסתיימות בשלושים הימים שקדמו לה.</help>
+        <label><!-- Default Past Days to Show Assignments --></label>
+        <name>pse__Default_Assignment_Historical_Days__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר URL (מוחלט או יחסי) שמצביע על תמונת ברירת המחדל שתשמש למשאבים ללא תמונת פרופיל. קבצי תמונות בגודל 22 פיקסלים מרובעים עובדים בצורה הטובה ביותר.</help>
+        <label><!-- Default Resource Image --></label>
+        <name>pse__Default_Resource_Image__c</name>
+    </fields>
+    <fields>
+        <help>קובע את השדות המשמשים לסינון במתכנן הפרויקטים. הערך הוא ערכת שדות המפרטת שדות הזמינים לסינון.</help>
+        <label><!-- Project Planner Filter Field Set --></label>
+        <name>pse__Filter_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>כשבוחרים, שדות שיעור העלות בתיבת הדו-שיח יצירת הקצאה יוסתרו עבור כל המשתמשים.</help>
+        <label><!-- Hide Cost Rate fields --></label>
+        <name>pse__Hide_Cost_Rate__c</name>
+    </fields>
+    <fields>
+        <help>מאוכזב: השתמש במקום זאת ב- Project_Planner_Preferences__c.Hide_Inline_Dialog__c.</help>
+        <label><!-- DEPRECATED: Hide Inline Edit Dialog --></label>
+        <name>pse__Hide_Inline_Dialog__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחרים, תאריכי ההתחלה והסיום בתיבת הדו-שיח יצירת משימות מאוכלסים אוטומטית מתאריכי ההתחלה והסיום של הפרויקט.</help>
+        <label><!-- Inherit Dates For Create Assignment --></label>
+        <name>pse__Inherit_Proj_Date_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, תפקיד המשאב בתיבת הדו-שיח יצירת משימות מאוכלס אוטומטית מרשומת אנשי הקשר.</help>
+        <label><!-- Inherit Role For Create Assignment --></label>
+        <name>pse__Inherit_Role_For_Create_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>נכחיש: השתמש במקום זאת ב Project_Planner_Preferences__c.Inline_Edit_Mode_THHC__c.</help>
+        <label><!-- DEPRECATED: Hold total hours constant --></label>
+        <name>pse__Inline_Edit_Mode_THHC__c</name>
+    </fields>
+    <fields>
+        <help>מציין את שם ה- API של המשימה להצגה במתכנן הפרויקטים. אם שדה זה ריק, מתכנן הפרויקט מציג את שם ההקצאה כברירת מחדל.</help>
+        <label><!-- Override Assignment Name Field --></label>
+        <name>pse__Override_Assignment_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>מציין את שם ה- API של בקשת המשאב שתוצג במתכנן הפרויקטים. אם שדה זה ריק, מתכנן הפרויקט מציג כברירת מחדל את שם בקשת המשאבים.</help>
+        <label><!-- Override Resource Request Name Field --></label>
+        <name>pse__Override_Resource_Request_Name_Field__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו מגדירה את המספר המרבי של פרויקטים שטעונים ברקע בעת צפייה במספרים גדולים של רשומות. הזנת ערך גבוה יותר גורמת להפרעות טעינה פחות, אך משתמשים בזיכרון רב יותר.</help>
+        <label><!-- Deprecated: Preload Limit --></label>
+        <name>pse__Preload_Limit__c</name>
+    </fields>
+    <fields>
+        <help>קובע באילו שדות פרויקט מחפשים באמצעות תיבת החיפוש בטקסט המתכנן בפרויקט.</help>
+        <label><!-- Project Search Fieldset Name --></label>
+        <name>pse__Project_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the API name of the field on a Project that controls the Project Summary colors. --></help>
+        <label><!-- DEPRECATED:Project Sumary Color Field --></label>
+        <name>pse__Project_Sumary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם ה- API של השדה בפרויקט השולט בצבעי סיכום הפרוייקט.</help>
+        <label><!-- Project Summary Color Field --></label>
+        <name>pse__Project_Summary_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>שם ה- API של מערך השדות המכיל את השדות שיוצגו כטיפים לכלים לפרויקטים במתכנן הפרויקט. מערך השדות חייב להתקיים באובייקט Project.</help>
+        <label><!-- Project Tooltip Field Set --></label>
+        <name>pse__Project_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>מציין את מספר הפרויקטים שעבורם נטען נתוני ילדים (הקצאות ובקשות משאבים) לכל בקשה. אסור להתאים את מגבלת עומס הרשומה ללא התייעצות ראשונה עם תמיכת הלקוחות.</help>
+        <label><!-- Record Load Limit --></label>
+        <name>pse__Record_Load_Limit__c</name>
+    </fields>
+    <fields>
+        <help>שם ה- API של מערך השדות שמכיל את השדות שיוצגו כקלפי כלים לבקשות משאבים במתכנן הפרויקט. ערכת השדות חייבת להתקיים באובייקט בקשת המשאבים.</help>
+        <label><!-- Resource Request Tooltip Field Set --></label>
+        <name>pse__Res_Request_Tooltip_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help>קובע אילו שדות בקשת משאבים מחפשים באמצעות תיבת חיפוש הטקסט המתכננת בפרויקט.</help>
+        <label><!-- Resource Request Search Fieldset Name --></label>
+        <name>pse__ResourceRequest_Search_Fieldset_Name__c</name>
+    </fields>
+    <fields>
+        <help>מגדיר את שם ה- API של השדה בבקשת משאבים השולטת בסרגלי הצבע של בקשת משאבים במתכנן הפרויקטים.</help>
+        <label><!-- Resource Request Color Field --></label>
+        <name>pse__Resource_Request_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו מגדירה את שם ה- API של שדה להזמנת בקשות המשאבים המוחזקות על ידי, ובאופן אופטיבי, הכיוון (ASC או DESC). בקשות משאבים מוחזקות מופיעות תמיד מתחת למשימות.</help>
+        <label><!-- Resource Request Ordering --></label>
+        <name>pse__Resource_Request_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>אם תבחר, אינך יכול ליצור מטלה עם תאריך התחלה בעבר. ערך ברירת המחדל אינו מסומן.</help>
+        <label><!-- Restrict Creation Past Dates --></label>
+        <name>pse__Restrict_Creation_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>אם תבחר, אינך יכול לערוך את הקצאת מתכנן הפרויקט ולתזמן שעות בעבר. ערך ברירת המחדל אינו מסומן.</help>
+        <label><!-- Restrict Editing Past Dates --></label>
+        <name>pse__Restrict_Editing_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>אם תבחר, אינך יכול להחליף את המשאב במשימה עם תאריך התחלה שנקבע בעבר. ערך ברירת המחדל אינו מסומן.</help>
+        <label><!-- Restrict Swapping Past Dates --></label>
+        <name>pse__Restrict_Swapping_Past_Dates__c</name>
+    </fields>
+    <fields>
+        <help>אם ייבחרו, ייזכרו התאמות אישיות לרוחב, סדר ונראות של עמודות במתכנן הפרויקטים למשתמש.</help>
+        <label><!-- Save Column Preferences --></label>
+        <name>pse__Save_Column_Prefs__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בז ’לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Beige --></label>
+        <name>pse__Use_Beige__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בכחול בהיר לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Light Blue --></label>
+        <name>pse__Use_Light_Blue__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בירוק בהיר לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Light Green --></label>
+        <name>pse__Use_Light_Green__c</name>
+    </fields>
+    <fields>
+        <help>השתמש באדום בהיר לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Light Red --></label>
+        <name>pse__Use_Light_Red__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בצהוב בהיר לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Light Yellow --></label>
+        <name>pse__Use_Light_Yellow__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בוורוד לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Pink --></label>
+        <name>pse__Use_Pink__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בסגול לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Purple --></label>
+        <name>pse__Use_Purple__c</name>
+    </fields>
+    <fields>
+        <help>השתמש בטורקיז לתאים במתכנן הפרויקטים. ברירת מחדל = שווא</help>
+        <label><!-- Use Turquoise --></label>
+        <name>pse__Use_Turquoise__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו קובעת אם המשתמשים שלך רואים את מתכנן הפרויקטים המשופר (החדש) או הקלאסי.</help>
+        <label><!-- DEPRECATED:Use New Project Planner --></label>
+        <name>pse__Use_V2_Planner__c</name>
+    </fields>
+    <fields>
+        <help>הגדרה זו קובעת אם המשתמשים שלך ידרשו בקרת הרשאה, עם תיבת הסימון Staffing או לא, לפני שהם יוכלו לערוך לוחות זמנים במתכנן הפרויקטים המשופר.</help>
+        <label><!-- Edit Requires Staffing Permission --></label>
+        <name>pse__require_staffing_permission__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

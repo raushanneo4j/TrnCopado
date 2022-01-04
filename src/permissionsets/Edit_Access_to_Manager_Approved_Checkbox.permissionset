@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>grants users edit access to Manager Approved field even if individual does not have Sales Manager profile; created for special cases where individual is not a Sales Manager, but has direct reports (ex: Brandon R manages Peter P)</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Manager_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit Access to Manager Approved Checkbox</label>
+    <license>Salesforce</license>
+</PermissionSet>

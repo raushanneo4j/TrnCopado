@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הגדרות ניהול המשימות --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הגדרות ניהול המשימות --></value>
+    </caseValues>
+    <fields>
+        <help>כאשר נכון, מתעלמים משגיאות בעת יצירת משימות או אבני דרך להקצאה וזה יגרום ליצירת רשומות של מטלות פרויקט. אפשרות זו מתעלמת אלא אם כן יצירת משימות משימות אוטומטית נכונה.</help>
+        <label><!-- Auto Create Task Assignments All or None --></label>
+        <name>pse__Auto_Create_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם להקצות אוטומטית משימות פרוייקט שלא הוקצו ששייכות לאבן דרך זו של המשימה בעת הקצאת משאב לפרויקט או יצירת רשומת ציון דרך חדשה של הקצאה. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Automatically Create Task Assignments --></label>
+        <name>pse__Auto_Create_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>כאשר נכון, מתעלמים משגיאות בעת מחיקת משימות או אבני דרך של הקצאה וזה יגרום למחיקה של רשומות הקצאת משימות הפרויקט. אפשרות זו מתעלמת אלא אם כן הסרת משימות המשימה אוטומטית נכונה.</help>
+        <label><!-- Auto Remove Task Assignments All or None --></label>
+        <name>pse__Auto_Delete_Task_Assignment_All_or_None__c</name>
+    </fields>
+    <fields>
+        <help>מציין אם להסיר אוטומטית משימות של משימות פרויקט כאשר מוסרים משאבים או ציוני דרך או ציון הדרך כבר לא משויך למשימה זו. ערך ברירת המחדל הוא כוזב.</help>
+        <label><!-- Automatically Remove Task Assignments --></label>
+        <name>pse__Auto_Delete_Task_Assignment__c</name>
+    </fields>
+    <fields>
+        <help>שולט ברירת המחדל של הזמנת המשימות בממשק ניהול המשימות בעומס ראשוני ולאחר רענון. זה חייב להיות תקף לאחר סעיף SOQL ORDER BY.</help>
+        <label><!-- Default Task Ordering --></label>
+        <name>pse__Default_Task_Ordering__c</name>
+    </fields>
+    <fields>
+        <help>שם קבוצת השדה באובייקט הקצאת משימות הפרויקט הכולל רשימת שדות שיוגבלו לעריכה כאשר הרשומה אינה נעולה.</help>
+        <label><!-- PTA Require Lock Fieldset --></label>
+        <name>pse__PTA_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>שם קבוצת השדה באובייקט תלות במשימות Project המכיל רשימת שדות שיוגבלו לעריכה כאשר הרשומה אינה נעולה.</help>
+        <label><!-- PTD Require Lock Fieldset --></label>
+        <name>pse__PTD_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>שם קבוצת השדה באובייקט משימת הפרויקטים הכולל רשימת שדות שיוגבלו לעריכה כאשר הרשומה אינה נעולה.</help>
+        <label><!-- PT Require Lock Fieldset --></label>
+        <name>pse__PT_Require_Lock_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help>המספר המרבי של פרויקטים לטעון לבחירה בממשק המשתמש לניהול המשימות</help>
+        <label><!-- Project Limit --></label>
+        <name>pse__Project_Limit__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל אותך לשמור שינויים בתאריך הסיום של המשימה כשהם גדולים יותר מתאריך יעד האבן דרך.</help>
+        <label><!-- Restrict Edit - End Date - Milestone --></label>
+        <name>pse__Restrict_Edit_End_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל אותך לשמור שינויים בתאריך הסיום של המשימה כשהוא מחוץ לטווח תאריכי ההתחלה והסיום של הפרויקט.</help>
+        <label><!-- Restrict Edit - End Date - Project --></label>
+        <name>pse__Restrict_Edit_End_Date_Project__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל אותך לשמור שינויים בתאריך הסיום של המשימה כשהוא מחוץ לטווח התאריכים של הקצאת המשימות לפרויקט.</help>
+        <label><!-- Restrict Edit - PTA - Dates --></label>
+        <name>pse__Restrict_Edit_PTA_Dates__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל אותך לשמור שינויים בתאריך הסיום של המשימה כשהוא מחוץ לטווח השעות של הקצאת המשימות לפרויקט.</help>
+        <label><!-- Restrict Edit - PTA - Hours --></label>
+        <name>pse__Restrict_Edit_PTA_Hours__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל אותך לשמור שינויים בתאריך התחלת המשימה כאשר הוא גדול יותר מתאריך יעד האבן הדרך.</help>
+        <label><!-- Restrict Edit - Start Date - Milestone --></label>
+        <name>pse__Restrict_Edit_Start_Date_Milestone__c</name>
+    </fields>
+    <fields>
+        <help>אם נבחר, מגביל את שמירת השינויים בתאריך התחלת המשימה כאשר הוא מחוץ לטווח התאריכים של תחילת וסיום הפרויקט.</help>
+        <label><!-- Restrict Edit - Start Date - Project --></label>
+        <name>pse__Restrict_Edit_Start_Date_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Points History Disabled --></label>
+        <name>pse__Track_Points_History_Disabled__c</name>
+    </fields>
+    
+</CustomObjectTranslation>

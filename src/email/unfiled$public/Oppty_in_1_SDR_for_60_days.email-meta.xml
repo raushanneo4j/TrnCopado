@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oppty in 1% SDR for 60 days</name>
+    <style>freeForm</style>
+    <subject>Alert: {!Opportunity.Name} in &apos;Qualification SDR 1%&apos; Stage for 60 days</subject>
+    <textOnly>Hi
+
+This Opportunity {!Opportunity.Link}
+has been in &quot;Qualification SDR 1%&quot; sales stage for 60 days now. Please ensure you follow up with this Opportunity as soon as possible and update relevant details. If you have questions regarding the Opportunity (or if it&apos;s not ready for Qualification by you), please contact Matzen.
+
+Cheers!
+
+-Demand Gen Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Sammendrag Log</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Sammenfatningslogfiler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+    </caseValues>
+    <fields>
+        <label><!-- LogType --></label>
+        <name>ffr__LogType__c</name>
+        <picklistValues>
+            <masterLabel>Abort</masterLabel>
+            <translation>Abort</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation>Fejl</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation>Ekstern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation>Information</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>ffr__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- SummarizationTemplate__c --></label>
+        <name>ffr__SummarizationTemplate__c</name>
+        <relationshipLabel><!-- Summarization Template Logs --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>SummarizationLog Name</nameFieldLabel>
+</CustomObjectTranslation>
