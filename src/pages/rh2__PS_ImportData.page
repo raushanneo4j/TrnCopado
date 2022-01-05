@@ -3,7 +3,7 @@
 	 <head>
       
     	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	  <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" /> 
       <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
 	  <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
@@ -24,12 +24,10 @@
 				window.localStorage.setItem('expSortField', 'targetField__c');
 				window.localStorage.setItem('expSortDirection', 'asc');
 			}
-			sortRollups(window.localStorage.getItem('expSortField'), window.localStorage.getItem('expSortDirection'));
-
 			if(window.localStorage.getItem('encodeUTF8') == null){
 				window.localStorage.setItem('encodeUTF8', 'false');
 			}
-			displayButtons(window.localStorage.getItem('encodeUTF8'));
+			sortRollups(window.localStorage.getItem('expSortField'), window.localStorage.getItem('expSortDirection'), window.localStorage.getItem('encodeUTF8'));
         });
 
         function replacePageRefDL(encodeUTF8){
@@ -56,13 +54,11 @@
      <body>
 		 <apex:slds />
     	<apex:form >
-			<apex:actionFunction name="sortRollups" action="{!doSettingSort}" reRender="rollupTable">
+			<apex:actionFunction name="sortRollups" action="{!doSettingSort}" reRender="rollupTable, buttonWrapper" status="loading">
 				<apex:param name="fieldSort" value="" assignTo="{!sortVars.sortField}"/>
 				<apex:param name="directionSort" value="" assignTo="{!sortVars.sortDirection}"/>
+				<apex:param name="encodeUTF8" value="" assignTo="{!encodeUTF8}"/>
 			</apex:actionFunction>
-			<apex:actionFunction name="displayButtons" reRender="buttonWrapper" status="inprogress">
-                <apex:param name="encodeUTF8" value="" assignTo="{!encodeUTF8}"/>
-		  </apex:actionFunction>
 		  <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
 		<div class="slds-scope">
 			<apex:pageBlock rendered="{!!hasVisibilityToExportRollupsObject}">
@@ -90,7 +86,7 @@
   				</header>
 			</div>
 			<apex:outputPanel id="existingExportMessage">
-				<apex:outputPanel rendered="{!IF(exportCount > 0, true, false)}">
+				<apex:outputPanel rendered="{!IF(PaginatedListForExports.size > 0, true, false)}">
 					<div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
 						{!$Label.rh2__youhaveexistingrollups}
 					</div>
@@ -120,9 +116,9 @@
 								Convert Rollups
 							</apex:outputLink>&nbsp;&nbsp;&nbsp;
 						</apex:outputPanel>
-             			<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__exportselected}" action="{! regExport }" rerender="messageWrapper, buttonWrapper, exportedRollups, exportTable" status="inprogress"/>
+             			<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__exportselected}" action="{! regExport }" rerender="messageWrapper, buttonWrapper, exportedRollups, exportTable" status="loading"/>
              			&nbsp;
-                   		<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__exportall}" action="{! allExport }" rerender="messageWrapper, buttonWrapper, exportedRollups, rollupToExport, exportTable" status="inprogress"/>
+                   		<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__exportall}" action="{! allExport }" rerender="messageWrapper, buttonWrapper, exportedRollups, rollupToExport, exportTable" status="loading"/>
              		</div>
              	</header>
              	
@@ -207,16 +203,16 @@
 				<header class="slds-card__header ">
            			<div >
                			<h3 class="slds-text-heading_small slds-truncate">{!$Label.RollupsToBeExported}</h3> 
-						   <div class="slds-text-body_medium"> <apex:actionStatus startText="{!$Label.rh2__processing}..." id="inprogress"/> </div>
 					<apex:outputPanel id="buttonWrapper">	   
+						<div class="slds-text-body_medium"> <apex:actionStatus startText="{!$Label.rh2__processing}..." id="inprogress"/> </div>
 						<div  style="float:right;">
-							<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__download}"  onclick="replacePageRefDL('{!encodeUTF8}');" oncomplete="deleteExportedRollupAF();"  rerender="messageWrapper" status="inprogress" rendered="{!hasVisibilityToExportRollupsObject && exportCount > 0}"/>						
+							<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__download}"  onclick="replacePageRefDL('{!encodeUTF8}');" oncomplete="deleteExportedRollupAF();"  rerender="messageWrapper" status="loading" rendered="{!hasVisibilityToExportRollupsObject && PaginatedListForExports.size > 0}"/>						
 							&nbsp;                   
-							<apex:commandButton styleClass="slds-button slds-button_neutral"  value="{!$Label.rh2__clear}" action="{!deleteExportRollup}" rerender="messageWrapper, buttonWrapper, exportTable, sec2, existingExportMessage" status="inprogress" rendered="{!exportCount > 0}"/>                   
+							<apex:commandButton styleClass="slds-button slds-button_neutral"  value="{!$Label.rh2__clear}" action="{!deleteAllExportedRollups}" rerender="messageWrapper, buttonWrapper, exportTable, sec2, existingExportMessage" status="loading" rendered="{!PaginatedListForExports.size > 0}"/>                   
 							<br/><br/>
 							{!$Label.UseUTF8Encoding}&nbsp;
 							<apex:inputCheckbox value="{!encodeUTF8}">
-								<apex:actionSupport event="onchange" oncomplete="saveDownloadPreferences('{!encodeUTF8}');" status="inprogress" rerender="none"/>
+								<apex:actionSupport event="onchange" oncomplete="saveDownloadPreferences('{!encodeUTF8}');" status="loading" rerender="none"/>
 							</apex:inputCheckbox>
 							<br/><br/>
 						</div>
