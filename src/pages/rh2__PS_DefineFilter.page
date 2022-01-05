@@ -8,7 +8,7 @@
         <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
         <apex:includeScript value="{!$Resource.rh2__PT_TimePicker_JS}"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
@@ -47,6 +47,33 @@
             }
         }
 
+        function verifyAdvancedMultipicklistCheck(controllerVal) {
+            checkboxVal = rh.j$("[Id$='advancedMultipicklistCheck']").is(":checked");
+            if (checkboxVal != controllerVal) {	
+                manualUpdateAdvancedMulti(checkboxVal);	
+            }
+            runAdvancedMultiVal();
+        }
+
+        function verifyAdvancedPicklistCheck(controllerVal){
+            checkboxVal = rh.j$("[Id$='advancedPicklistCheck']").is(":checked");
+            manualUpdateAdvancedPicklist(checkboxVal);
+        }
+
+        function verifyAdvancedPicklistInput(controllerVal){
+            inputVal = rh.j$("[Id$='picklistAPIValueInputText']").val();
+            manualUpdateAdvancedPicklistInput(inputVal);
+        }
+
+        function verifyAdvancedMultipicklistInput(controllerVal) {
+            inputVal = rh.j$("[Id$='advancedMultiPicklistInput']").val();
+            if (inputVal != controllerVal) {
+                manualUpdateAdvancedMultiInput(inputVal); 
+            } else {
+                runAddFilter();
+            }
+        }
+
         var rh = rh || {};
         rh.j$ = jQuery.noConflict();
     </script>
@@ -54,12 +81,33 @@
     <apex:actionFunction name="searchAllSortFields" action="{!doSortFieldSearch}" rerender="availSortFields" status="loading">
         <apex:param name="sortFieldSearch" value=""/>
     </apex:actionFunction>
-    <apex:actionFunction name="searchAllFields" action="{!doFieldSearch}" rerender="filterFields1, col2" status="loading">
+    <apex:actionFunction name="searchAllFields" action="{!doFieldSearch}" rerender="filterFields1, filterPolyObjField, filterFields2" status="loading">
         <apex:param name="fieldSearch" value=""/>
     </apex:actionFunction>
     <apex:actionFunction name="searchAllFKFields" action="{!doFKFieldSearch}" rerender="filterFields2" status="loading">
         <apex:param name="fkFieldSearch" value=""/>
     </apex:actionFunction>
+    <apex:actionFunction name="manualUpdateAdvancedPicklist" action="{!manuallyUpdateUseAdvancedPicklist}" rerender="filterPicklist4, col5, addButton">
+        <apex:param name="useAdvancedPicklistCheckboxVal" value="" />
+    </apex:actionFunction>
+    <apex:actionFunction name="searchAllPolyObjs" action="{!doPolyObjSearch}" rerender="filterPolyObjField, filterFields2">
+        <apex:param name="polyObjSearch" value=""/>
+    </apex:actionFunction>
+    <apex:actionFunction name="manualUpdateAdvancedMulti" action="{!manuallyUpdateUseAdvancedMultipicklist}" rerender="filterPicklist4, col6, addButton">	
+        <apex:param name="useAdvancedMulti" value=""/>	
+    </apex:actionFunction>
+    <apex:actionFunction name="manualUpdateAdvancedPicklistInput" action="{!manuallyUpdateUseAdvancedPicklistInput}" rerender="none" oncomplete="runFilterForAdvancedPicklistInput();">
+        <apex:param name="useAdvancedPicklistInputVal" value="" />
+    </apex:actionFunction>
+    <apex:actionFunction name="runFilterForAdvancedPicklistInput" action="{!createFilterForAdvancedPicklistInput}" rerender="col5, preview, filterFields1, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col4" />
+    <apex:actionFunction name="manualUpdateAdvancedMultiInput" action="{!manuallyUpdateUseAdvancedMultipicklistInput}" rerender="none" oncomplete="runAddFilter();">	
+        <apex:param name="useAdvancedMultiInputVal" value=""/>	
+    </apex:actionFunction>
+    <apex:actionFunction name="runAdvancedMultiVal" action="{!runAdvancedMultipicklistValidation}" rerender="filterPicklist4, col6, addButton">	
+    </apex:actionFunction>
+    <apex:actionFunction name="runAddFilter" action="{!addFilter}" rerender="col6, preview, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col5" oncomplete="focusOnPageMessages({!displayPageMessage});rerenderSubFilterModal();" status="loading">	
+    </apex:actionFunction>
+    <apex:actionFunction name="rerenderSubFilterModal" rerender="subFilterModalContainer" oncomplete="showModal({!showSubFilterPopup}, 'subFilterModal');" status="loading"/>
     <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
     <apex:slds />
     <div class="slds-scope" role="main">
@@ -80,7 +128,7 @@
                 </div>              
                 <div class="slds-modal__footer">
                     <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__cancel}" status="loading"/>                                                       
-                    <apex:commandButton styleClass="slds-button slds-button_brand" action="{!cloneFilter}" rerender="ClonePopup, FilterForm, limitinput, boolLogic, existingSortList, existingFilters, filtercon, preview" value="{!$Label.rh2__clone}" status="loading"/>
+                    <apex:commandButton styleClass="slds-button slds-button_brand" action="{!cloneFilter}" rerender="ClonePopup, FilterForm, limitinput, offsetinput, boolLogic, existingSortList, existingFilters, filtercon, preview" value="{!$Label.rh2__clone}" status="loading"/>
                 </div>
             </div>
         </div>
@@ -116,7 +164,7 @@
             <div class="slds-modal__content slds-p-left_small slds-p-bottom_small">
                 <apex:commandButton styleClass="slds-button slds-button_neutral" rendered="{!ISBLANK(filterName)}" action="{!openClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__clonefromexisting}" status="loading"/>                                                                                                    
             </div>
-            <footer><apex:outputPanel id="errorblock"><apex:pagemessages /></apex:outputPanel></footer>
+            <footer><apex:outputPanel id="errorblock" rendered="{!NOT(showSubFilterPopup)}"><apex:pagemessages /></apex:outputPanel></footer>
         </div>
         
             <apex:outputPanel layout="block" rendered="{!NOT(ISBLANK(sourceObjectAPI))}">            
@@ -143,6 +191,12 @@
                                             <apex:actionSupport event="onchange" reRender="preview"/>
                                         </apex:inputText>
                                         <apex:outputText style="padding-top:5px;" value=" {!$Label.rh2__childrecordsperparent}"/>
+                                        <br/>
+                                        <apex:outputText style="padding-top:5px;" value=" {!$Label.rh2__skips}"/>
+                                        <apex:inputText style="margin-left:0.2em; margin-right:0px; width:60px;" value="{!offsetInt}" id="offsetinput">
+                                            <apex:actionSupport event="onchange" reRender="preview"/>
+                                        </apex:inputText>                                        
+                                         <apex:outputText style="padding-top:5px;" value=" {!$Label.rh2__childrecordsperparent}"/>
                                     </td>
                                 </apex:outputPanel>
                             </tr>
@@ -285,7 +339,7 @@
                                 <apex:outputPanel layout="block" id="field1">
                                     <apex:outputPanel id="filterFields1">
                                         <apex:selectList size="8" value="{!filterField1API}" style="width:315px;">
-                                            <apex:actionSupport event="onchange" action="{!refreshFilter2}" rerender="filterFields1, col5, col2, col3, col4, addButton" status="statusMessage"/>
+                                            <apex:actionSupport event="onchange" action="{!refreshFilterLists}" rerender="filterFields1, polyLogicCol, col2, col3, col4, col5, col6, addButton" status="statusMessage"/>
                                             <apex:selectOptions value="{!filterFields1PC.PaginatedList}"/> 
                                         </apex:selectList>
                                     </apex:outputPanel>
@@ -299,14 +353,47 @@
                                     <c:Paginate pageController="{! filterFields1PC }" renderedComponent="field1" />
                                 </apex:outputPanel>
                             </apex:outputPanel> 
-                            
+
+                            <apex:outputPanel id="polyLogicCol" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;">
+                                <apex:outputPanel id="polyLogic" rendered="{!AND(NOT(ISBLANK(filterField1API)), filterFields1Poly, OR(isEdit, NOT(maxSubFiltersReached)))}">
+                                    <apex:outputPanel layout="block">
+                                        <apex:outputText value="{!$Label.rh2__operator}"/>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel id="polyLogicField" layout="block">
+                                        <apex:selectList size="1" value="{!results.subFilterLogic}" style="width:150px;">
+                                            <apex:actionSupport event="onchange" action="{!refreshPolyObjsList}"  rerender="col2, col3, col4, col5, col6, addButton" status="statusMessage"/>
+                                            <apex:selectOptions value="{!SubFilterConnectOptions}"/>
+                                        </apex:selectList>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+
                             <apex:outputPanel id="col2" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;"> 
+                                <apex:outputPanel id="polyObjField" rendered="{!AND(NOT(ISBLANK(filterField1API)), NOT(ISBLANK(results.subFilterLogic)), OR(isEdit, NOT(maxSubFiltersReached)), filterFields1Poly)}">
+                                    <apex:outputPanel id="filterPolyObjField">
+                                        <apex:selectList size="8" value="{!filterPolyObjAPI}" style="width:315px;">
+                                            <br/>
+                                            <apex:actionSupport event="onchange" action="{!refreshFilter2}" rerender="filterPolyObjField, col3, col4, col5, col6, addButton" status="statusMessage"/>
+                                            <apex:selectOptions value="{!filterPolyObjsPC.PaginatedList}"/>
+                                        </apex:selectList>
+                                    </apex:outputPanel>
+                                    <br/>
+                                    <div class="slds-form-element" style="padding-top:15px;width:315px;">
+                                        <input class="slds-input" placeholder="{!$Label.TypeForObject}" type="text" onkeypress="captureEnterAndBuildList(event, 'polyObjSearch', searchAllPolyObjs);" id="polyObjSearch"/>
+                                    </div><br/>
+                                    <script>
+                                        searchFromInput("polyObjSearch", searchAllPolyObjs);
+                                    </script>
+                                    <c:Paginate pageController="{!filterPolyObjsPC}" renderedComponent="polyObjField"/>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
                                 
-                                <apex:outputPanel id="field2" rendered="{! AND(NOT(ISBLANK(filterField1API)), filterFields1FK)}">
+                            <apex:outputPanel id="col3" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;"> 
+                                <apex:outputPanel id="field2" rendered="{! AND(NOT(ISBLANK(filterField1API)), filterFields1FK, NOT(filterFields1Poly))}">
                                     <apex:outputPanel id="filterFields2">
                                         <apex:selectList size="8" value="{! filterField2API }" style="width:315px;">
                                             <br/>
-                                            <apex:actionSupport event="onchange" action="{! buildFilterString }" rerender="filterFields2, col5, col3, col4, addButton" status="statusMessage"/>
+                                            <apex:actionSupport event="onchange" action="{! buildFilterString }" rerender="filterFields2, col4, col5, col6, addButton" status="statusMessage"/>
                                             <apex:selectOptions value="{! filterFields2PC.PaginatedList }"/> 
                                         </apex:selectList>
                                     </apex:outputPanel>
@@ -320,25 +407,25 @@
                                     <c:Paginate pageController="{! filterFields2PC }" renderedComponent="field2" />
                                 </apex:outputPanel>
                                 
-                                <apex:outputPanel id="operator2" layout="block" rendered="{! AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), NOT(filterFields1FK)))}">
+                                <apex:outputPanel id="operator2" layout="block" rendered="{! AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), NOT(filterFields1FK)), NOT(filterFields1Poly))}">
                                     <apex:outputPanel layout="block" >
                                             <apex:outputPanel layout="block"> 
                                                 <apex:outputText value="{!$Label.rh2__operator}"/>
                                             </apex:outputPanel>
                                             <apex:outputPanel layout="block"> 
                                                 <apex:selectList size="1" value="{! filterLogic }">
-                                                    <apex:actionSupport event="onchange" rerender="operator2, col5, col3, col4, addButton" status="statusMessage"/>
+                                                    <apex:actionSupport event="onchange" rerender="operator2, col5, col3, col4, col6, addButton" status="statusMessage"/>
                                                     <apex:selectOptions value="{! filterLogicOptions }"/> 
                                                 </apex:selectList>
                                             </apex:outputPanel>
                                     </apex:outputPanel>
                                 </apex:outputPanel>
-                                
+
                             </apex:outputPanel> 
                                
-                            <apex:outputPanel id="col3" layout="block"  styleClass="slds-col_padded slds-shrink" style="float:left;">
+                            <apex:outputPanel id="col4" layout="block"  styleClass="slds-col_padded slds-shrink" style="float:left;">
 
-                                <apex:outputPanel layout="block" rendered="{! AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), filterFields1FK)) }">
+                                <apex:outputPanel layout="block" rendered="{! AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), filterFields1FK), NOT(filterFields1Poly)) }">
                                     <apex:outputPanel layout="block"> 
                                         <apex:outputText value="{!$Label.rh2__operator}"/>
                                     </apex:outputPanel>
@@ -349,7 +436,7 @@
                                         </apex:selectList>
                                 </apex:outputPanel>
                                 
-                                <apex:outputPanel id="criteria3" layout="block" rendered="{!AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), NOT(filterFields1FK)), NOT(ISBLANK(filterLogic)))}">
+                                <apex:outputPanel id="criteria3" layout="block" rendered="{!AND(NOT(ISBLANK(filterField_c)), AND(NOT(ISBLANK(filterField1API)), NOT(filterFields1FK)), NOT(ISBLANK(filterLogic)), NOT(FilterFields1Poly))}">
                                     <apex:outputPanel layout="block" id="filterCriteriaHead3"> 
                                         <apex:outputText value="{!$Label.rh2__criteria}"/>
                                     </apex:outputPanel>
@@ -406,9 +493,9 @@
                                 </apex:outputPanel>
                             </apex:outputPanel> 
                                     
-                            <apex:outputPanel id="col4" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;"> 
+                            <apex:outputPanel id="col5" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;"> 
                                 <apex:outputPanel id="criteria4">
-                                    <apex:outputPanel rendered="{! NOT(ISBLANK(filterLogic)) }">
+                                    <apex:outputPanel rendered="{! AND(NOT(ISBLANK(filterLogic)), NOT(filterFields1Poly)) }">
                                     
                                     <apex:outputPanel layout="block" id="filterCriteriaHead4"> 
                                         <apex:outputText value="{!$Label.rh2__criteria}"/>
@@ -429,18 +516,18 @@
                                     <apex:outputPanel layout="block" id="filterPicklist4" rendered="{!hasCriteriaPicklist}"> 
                                         
                                         
-                                        <apex:selectList size="1" value="{! filterCondition }" rendered="{!NOT(allowMultiselect)}">
-                                            <apex:actionSupport event="onchange" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, addButton, col4, setDateVar4" status="statusMessage"/>
+                                        <apex:selectList size="1" value="{! filterCondition }" rendered="{!AND(NOT(allowMultiselect), NOT(isPicklist))}" >
+                                            <apex:actionSupport event="onchange" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, addButton, col4, setDateVar4"/>
                                             <apex:selectOptions value="{! filterCriteriaOptions }"/> 
                                         </apex:selectList>
-                                        <apex:selectList size="4" value="{! filterConditions }" rendered="{!AND(allowMultiselect, NOT(useAdvancedMultipicklist))}" multiSelect="true">
-                                            <apex:actionSupport event="onchange" action="{!buildCriterionStringFromMultiselect}"  rerender="col5, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" status="statusMessage"/>
+                                        <apex:selectList id="filterPicklistActualPicklist4" size="4" value="{! filterConditions }" rendered="{!AND(allowMultiselect, NOT(useAdvancedMultipicklist), NOT(useAdvancedPicklist))}" multiSelect="true">
+                                            <apex:actionSupport event="onchange" action="{!buildCriterionStringFromMultiselect}" rerender="col5, addbutton, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" status="statusMessage"/>
                                             <apex:selectOptions value="{! filterCriteriaOptions }"/> 
                                         </apex:selectList>
                                         
                                         
                                         <apex:outputPanel rendered="{!AND(allowMultiselect, useAdvancedMultipicklist)}">
-                                            <apex:inputText value="{! filterCondition}" style="margin-top: 5pt;">
+                                            <apex:inputText id="advancedMultiPicklistInput" value="{! filterCondition}" style="margin-top: 5pt;">
                                                 <apex:actionSupport event="onchange" action="{!runAdvancedMultipicklistValidation}" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" />
                                             </apex:inputText>
                                             <div class="slds-box slds-theme--alt-inverse" style="width: 250pt; margin-top: 5pt;">
@@ -449,12 +536,31 @@
                                                 </p>
                                             </div>
                                         </apex:outputPanel>
-                                        
+
+                                        <apex:outputPanel rendered="{!AND(useAdvancedPicklist, isPicklist)}">
+                                            <apex:inputText value="{!picklistAPIValue}" id="picklistAPIValueInputText" style="margin-top: 5pt;" />
+                                            <div class="slds-box slds-theme--alt-inverse" style="width: 300pt; margin-top: 5pt">
+                                                <apex:outputText value="{!$Label.rh2__ensureenteredvaluesmatchapivalue}" />
+                                                <apex:outputLabel rendered="{! OR(filterLogic == '=', filterLogic == '!=')}">
+                                                    <br /><br /><apex:outputText value="{!$Label.rh2__commascanbeused}" /><br />
+                                                    <apex:inputCheckbox id="separateCommaStringCheckForPicklistInput" value="{!separateCommaString}"/>&nbsp;
+                                                    <apex:outputLabel value="{!$Label.rh2__separatecommastring}" for="separateCommaStringCheck"/>
+                                                </apex:outputLabel> 
+                                            </div>
+                                        </apex:outputPanel>
+
                                         <br/>
                                         <apex:outputText value="{!$Label.rh2__advancedmultipicklistconfig}" rendered="{!isMultipicklist}" />&nbsp;
                                         <apex:outputText rendered="{!NOT(ISBLANK(MultipicklistValidationMessage))}" value="{!MultipicklistValidationMessage}" />
-                                        <apex:inputCheckbox value="{!useAdvancedMultipicklist}" rendered="{!isMultipicklist}">
-                                            <apex:actionSupport event="onchange" action="{!runAdvancedMultipicklistValidation}" rerender="filterPicklist4, col5" />
+
+                                        <apex:outputText rendered="{!isPicklist}">{!$Label.rh2__advancedpicklistselect}</apex:outputText>&nbsp;
+                                        <apex:inputCheckbox id="advancedPicklistCheck" value="{!useAdvancedPicklist}" rendered="{!isPicklist}" >
+                                            <apex:actionSupport event="onclick" rerender="filterPicklist4, col5" oncomplete="verifyAdvancedPicklistCheck({!useAdvancedPicklist});"/>
+                                        </apex:inputCheckbox> 
+                                        <br/>
+
+                                        <apex:inputCheckbox id="advancedMultipicklistCheck" value="{!useAdvancedMultipicklist}" rendered="{!isMultipicklist}">
+                                            <apex:actionSupport event="onclick" action="{!runAdvancedMultipicklistValidation}" rerender="none" oncomplete="verifyAdvancedMultipicklistCheck({!useAdvancedMultipicklist}, false);" />
                                         </apex:inputCheckbox> 
                                         <br/>
 
@@ -496,22 +602,69 @@
                                 </apex:outputPanel> 
                                 </apex:outputPanel>
                                 </apex:outputPanel> 
-                                <apex:outputPanel id="col5" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;">
+                                <apex:outputPanel id="col6" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;">
                                     <apex:outputPanel id="addButton">
-                                        <apex:outputPanel rendered="{! OR(AND(NOT(ISBLANK(filterLogic)),NOT(hasCriteriaPicklist)), AND(NOT(ISBLANK(filterLogic)),AND(hasCriteriaPicklist, AND(NOT(ISBLANK(filterCondition)), OR(NOT(useAdvancedMultipicklist), isAdvancedMultipicklistValidated)))))  }">
+                                        <apex:outputPanel rendered="{! OR(AND(NOT(ISBLANK(filterLogic)),NOT(hasCriteriaPicklist)), AND(NOT(ISBLANK(filterLogic)),AND(hasCriteriaPicklist, OR(NOT(useAdvancedMultipicklist), isAdvancedMultipicklistValidated))), AND(filterFields1Poly, NOT(ISBLANK(filterField1API)), OR(NOT(ISBLANK(filterPolyObjAPI)), maxSubFiltersReached)))}">
                                             <br/>
-                                            <apex:commandButton action="{!addFilter}" value="{!$Label.rh2__submit}" rerender="col5, preview, filterFields1, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col4" styleClass="slds-button slds-button_neutral" oncomplete="focusOnPageMessages({!displayPageMessage});"/>
+                                            <apex:commandButton rendered="{!AND(useAdvancedPicklist, isPicklist)}" onClick="verifyAdvancedPicklistInput('{!picklistAPIValue}');" value="{!$Label.rh2__submit}" styleClass="slds-button slds-button_neutral" reRender="col5, preview, filterFields1, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col4" />
+                                            <apex:commandButton rendered="{!AND(NOT(useAdvancedPicklist), NOT(filterFields1Poly))}" onclick="verifyAdvancedMultipicklistInput('{!filterCondition}', false);" value="{!$Label.rh2__submit}" styleClass="slds-button slds-button_neutral" reRender="none"/>
+                                            <apex:outputText rendered="{!AND(filterFields1Poly, AND(NOT(isEdit), maxSubFiltersReached))}" escape="false" value="{!$Label.rh2__maxsubfilters}"/>
+
+                                            <apex:outputPanel rendered="{!AND(filterFields1Poly, NOT(ISBLANK(results.subFilterLogic)), OR(isEdit, NOT(maxSubFiltersReached)))}">
+                                                <table id="polyBtns">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="vertical-align:top;">
+                                                                <apex:outputPanel rendered="{!AND(OR(NOT(isEdit), AND(isEdit, NOT(editingSubFilter))), NOT(ISBLANK(filterPolyObjAPI)))}" style="vertical-align:top;">
+                                                                    <apex:commandButton value="{!$Label.rh2__create} {!$Label.rh2__subfilter}" styleClass="slds-button slds-button_neutral" action="{!openSubFilterPopup}" rerender="subFilterModal" oncomplete="rerenderSubFilterModal();"/>
+                                                                </apex:outputPanel>
+                                                                
+                                                                <apex:outputPanel rendered="{!AND(isEdit, editingSubFilter)}" style="vertical-align:top;">
+                                                                    <apex:commandButton value="{!$Label.rh2__edit} {!$Label.rh2__subfilter}" styleClass="slds-button slds-button_neutral" action="{!openSubFilterPopup}" rerender="subFilterModal" oncomplete="rerenderSubFilterModal();"/><br/><br/>
+                                                                    <apex:commandButton value="{!$Label.rh2__updatesubfilterlogic}" styleClass="slds-button slds-button_neutral" action="{!updateSubFilterLogic}" rerender="filterFields1, polyLogicCol, col2, col3, col4, col5, col6, existingFilters, boolString, preview" status="loading"/>
+                                                                </apex:outputPanel>
+                                                            </td>
+                                                            <td>
+                                                                <apex:outputPanel style="vertical-align:top;">
+                                                                    <apex:outputText styleClass="slds-box slds-theme_alt-inverse" style="display:inline-block;margin-left:15pt;width:315pt;" value="{!$Label.rh2__polymorphicsubfiltersallow}"/>
+                                                                </apex:outputPanel>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </apex:outputPanel>
+                                            <br/><br/>
                                         </apex:outputPanel>
                                     </apex:outputPanel>
-                                    
                                 </apex:outputPanel> 
-                            
-                
             </apex:outputPanel> 
+
+            <div id="subFilterModal" style="display:none;">
+                <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open slds-modal_large">
+                    <apex:outputPanel id="subFilterModalContainer" styleClass="slds-modal__container">
+                        <div class="slds-modal__header">
+                            <h2 class="slds-text-heading_medium">{!$Label.rh2__create} {!subFilterCon.sourceObjectLabel} {!$Label.rh2__subfilter} {!$Label.rh2__for} {!sourceObjectLabel}.{!subFilterCon.results.subFilterRelField}</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around_small">
+                            <apex:outputPanel >
+                                <apex:outputPanel id="subFilterModalComponent" rendered="{!showSubFilterPopup}">
+                                    <c:PS_Sub_Filter_Modal con="{!self}"/>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+                        </div>
+                        <div class="slds-modal__footer" style="display:inline-block;">
+                            <apex:commandButton styleClass="slds-button slds-button_brand" action="{!saveSubFilter}" id="subFilterSave" disabled="{!subFilterCon.showInvalidBoolString}" value="{!$Label.rh2__save}" status="loading" oncomplete="rerenderSubFilterModal();" rerender="filterFields1, polyLogicCol, col2, col3, col4, col5, col6, existingFilters, boolString, preview, subFilterModal, saveButton2"/>
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!deleteSubFilter}" id="subFilterDelete" value="{!$Label.rh2__delete}" status="loading" oncomplete="rerenderSubFilterModal();" rerender="polyLogicCol, col2, col3, col4, col5, col6, existingFilters, boolString, preview, subFilterModal, saveButton2"/>
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!nullifySubFilterVars}" id="subFilterCancel" value="{!$Label.rh2__cancel}" status="loading" oncomplete="rerenderSubFilterModal();" rerender="filterFields1, polyLogicCol, col2, col3, col4, col5, col6, existingFilters, boolString, preview, subFilterModal, saveButton2"/>
+                        </div>
+                    </apex:outputPanel>
+                </div>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </div>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             
       
-            <apex:outputPanel id="existingFilters">
+            <apex:outputPanel id="existingFilters" layout="block" style="clear:both;">
                 
                 <apex:outputPanel layout="block">
                     <br/>
@@ -538,22 +691,40 @@
                                 <th class="slds-text-heading_small">
                                     {!$Label.rh2__criteria}
                                 </th>
+                                <th class="slds-text-heading_small">
+                                    {!$Label.RelatedObject}
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <apex:repeat value="{! selectedFilters }" var="item">
                                 <tr>
                                     <td>
+                                        <apex:outputPanel rendered="{!item.filter.condition == 'Open Sub-Filter'}">
+                                            <apex:commandLink value="{!$Label.rh2__remove}" rerender="field1, col1, polyLogicCol, col2, col3, col4, col5, col6, filtercon, preview, existingFilters, boolLogic, saveButton, saveButton2" action="{!deleteSubFilter}">
+                                                <apex:param name="filterId" value="{!item.Id}"/>
+                                            </apex:commandLink>|
+
+                                            <apex:commandLink value="{!$Label.rh2__edit}" action="{!editSubFilter}" rerender="field1, col1, polyLogicCol, col2, col3, col4, col5, col6, filtercon">
+                                                <apex:param name="filterField" value="{! item.filter.field }"/>
+                                                <apex:param name="filterPolyObj" value="{! item.relatedObj }"/>
+                                                <apex:param name="subFilterLogic" value="{! item.filter.logic }"/>
+                                                <apex:param name="filterId" value="{!item.id}"/>
+                                            </apex:commandLink>
+                                        </apex:outputPanel>
+
+                                        <apex:outputPanel rendered="{!NOT(item.filter.condition == 'Open Sub-Filter')}">
                                             <apex:commandLink value="{!$Label.rh2__remove}" reRender="preview, existingFilters, boolLogic, saveButton, saveButton2" action="{! removeFilter }">   
-                                              <apex:param name="filterId" value="{! item.Id }"/>
-                                        </apex:commandLink>|
-                                             
-                                        <apex:commandLink value="{!$Label.rh2__edit}" rerender="field1, col1, col2, col3, col4, col5, filtercon" action="{! editFilter }">
-                                            <apex:param name="filterField" value="{! item.filter.field }"/>                             
-                                            <apex:param name="filterLogic" value="{! item.filter.logic }"/>
-                                            <apex:param name="filterCondition" value="{! item.filter.condition }"/>
-                                            <apex:param name="filterId" value="{! item.Id }"/>
-                                        </apex:commandLink>
+                                                <apex:param name="filterId" value="{! item.Id }"/>
+                                            </apex:commandLink>|
+                                                
+                                            <apex:commandLink value="{!$Label.rh2__edit}" rerender="field1, col1, polyLogicCol, col2, col3, col4, col5, col6, filtercon" action="{! editFilter }">
+                                                <apex:param name="filterField" value="{! item.filter.field }"/>                             
+                                                <apex:param name="filterLogic" value="{! item.filter.logic }"/>
+                                                <apex:param name="filterCondition" value="{! item.filter.condition }"/>
+                                                <apex:param name="filterId" value="{! item.Id }"/>
+                                            </apex:commandLink>
+                                        </apex:outputPanel>
                                     </td>
                                     <td>
                                         {! item.Id + 1 }
@@ -565,7 +736,19 @@
                                         {! item.filter.logic }                    
                                     </td>
                                     <td>
-                                        {! item.filter.condition }
+                                        <apex:outputPanel rendered="{!item.filter.condition == 'Open Sub-Filter'}">
+                                            <apex:commandLink action="{!openSubFilterPopup}" value="{!item.filter.condition}" oncomplete="rerenderSubFilterModal();" rerender="subFilterModal">
+                                                <apex:param name="filterPolyObj" value="{!item.relatedObj}"/>
+                                                <apex:param name="filterId" value="{!item.id}"/>
+                                            </apex:commandLink>
+                                        </apex:outputPanel>
+
+                                        <apex:outputPanel rendered="{!NOT(item.filter.condition == 'Open Sub-Filter')}">
+                                            {! item.filter.condition }
+                                        </apex:outputPanel>
+                                    </td>
+                                    <td>
+                                        {! item.relatedObj }
                                     </td>
                                 </tr>
                             </apex:repeat>
@@ -589,7 +772,7 @@
          <footer class="slds-card__footer">
             <div class="slds-box slds-theme_default slds-text-align_left">
             <apex:outputPanel id="preview">
-                <apex:outputText value="{!$Label.rh2__filterpreview}"/>
+                <apex:outputText value="{!$Label.rh2__filterpreview}" style="float:left;"/>
                 <br/>
                 <apex:outputText value="{!filterString}"/>
                 <br/>
@@ -611,7 +794,7 @@
             
             <section class="slds-card__body">
                 <div class="slds-button-group" role="group">
-                    <apex:commandButton action="{! save }" value="{!$Label.rh2__save}" disabled="{!showInvalidBoolString}" id="saveButton2" styleClass="slds-button slds-button_brand slds-m-around_large"/>            
+                    <apex:commandButton action="{! save }" value="{!$Label.rh2__save}" disabled="{!OR(showInvalidBoolString, subFilterCon.showInvalidBoolString)}" id="saveButton2" styleClass="slds-button slds-button_brand slds-m-around_large"/>            
                     <apex:commandButton rendered="{!NOT(ISBLANK(filterName))}" action="{!deleteFilter}" value="{!$Label.rh2__delete}" styleClass="slds-button slds-button_neutral slds-m-around_large"/>        
                     <apex:commandButton action="{!goBackToPreviousPage}" value="{!$Label.rh2__cancel}" styleClass="slds-button slds-button_neutral slds-m-around_large"/>                 
                     

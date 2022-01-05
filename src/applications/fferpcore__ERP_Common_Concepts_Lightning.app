@@ -17,7 +17,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Neo4j - SDR Manager</profile>
+        <profile>Neo4j - SDR</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -25,7 +25,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Neo4j - SDR</profile>
+        <profile>Neo4j - SDR Manager</profile>
     </profileActionOverrides>
     <tabs>fferpcore__Company__c</tabs>
     <tabs>fferpcore__TaxCode__c</tabs>

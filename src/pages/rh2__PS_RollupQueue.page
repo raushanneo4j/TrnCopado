@@ -35,14 +35,16 @@
 	                	<div style="margin-left:auto; margin-right:auto;">
 							
 							<br/>
-							<div style="float:left;">										
-								<apex:selectList value="{!selectedObject}" size="1" styleClass="slds-m-left_large dropdownFormatting" >
-				                    <apex:selectOptions value="{!targetObjectWithQueueItems}"/>
-				                </apex:selectList>	&nbsp;
-				                 <apex:commandButton styleclass="slds-button slds-button_neutral " value="{!$Label.rh2__go}!" action="{!populateQueueItemList}" rerender="tableContainer" />	 
+							<div style="float:left;">	
+								<apex:outputPanel id="selectedObjectDropdown">								
+									<apex:selectList value="{!selectedObject}" size="1" styleClass="slds-m-left_large dropdownFormatting" >
+										<apex:actionSupport event="onchange" action="{! populateQueueItemList }" rerender="tableContainer" />
+										<apex:selectOptions value="{!targetObjectWithQueueItems}"/>
+									</apex:selectList>	&nbsp;
+								</apex:outputPanel>	
 				            </div>				               
 				            <div style="float:right; padding-right:25px;">
-				            <apex:commandButton styleclass="slds-button slds-button_neutral slds-m-left_medium"  value="{!$Label.rh2__refresh}" action="{!populateQueueItemList}" rerender="tableContainer" />
+				            <apex:commandButton styleclass="slds-button slds-button_neutral slds-m-left_medium"  value="{!$Label.rh2__refresh}" action="{!populateQueueItemList}" rerender="tableContainer, selectedObjectDropdown" />
 							</div>
 						</div >
 		                
@@ -57,7 +59,7 @@
 							<apex:outputPanel id="hasQueueItems" rendered="{!IF(numberOfQueueItems != 0, true, false)}">
 								<br/><br/>
 								<div style="float:right; padding-right:25px;">
-								<c:Paginate pageController="{! pgCon }" renderedComponent="hasQueueItems" />
+									<c:Paginate pageController="{! pgCon }" renderedComponent="hasQueueItems" />
 								</div>
 						        <table class="slds-table slds-table_bordered" style="table-layout:fixed !important;" >
 					        		<tr>
@@ -69,7 +71,7 @@
 								        	<apex:param name="sortingField" value="Priority__c" assignTo="{!sortVars.sortField}"/>
 					                    	<apex:outputText value="{!IF(sortVars.sortField=='Priority__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
 					                 	</apex:commandLink>    </td>
-				                    	<td style="width:15%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__sourceobject}" action="{! doSettingSort }" > 
+				                    	<td style="width:15%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__targetobject}" action="{! doSettingSort }" > 
 				                        	<apex:param name="sortingField" value="Source_Object__c" assignTo="{!sortVars.sortField}"/> 
 				                        	<apex:outputText value="{!IF(sortVars.sortField=='Source_Object__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/> 
 				                     	</apex:commandLink> </td>
@@ -105,10 +107,10 @@
 					              					</apex:commandLink>	
 												</td>
 												<td class="slds-cell-wrap" style="width:10%; text-align: center;">
-													<apex:commandLink value="{!$Label.rh2__retry}" rerender="rollupQueuePage" action="{!retryQueueItem}" oncomplete="location.reload();">
+													<apex:commandLink value="{!$Label.rh2__retry}" rerender="rollupQueuePage" action="{!retryQueueItem}" reRender="tableContainer, rollupQueuePage">
 														<apex:param name="queueItemID" value="{!q.Id}" assignTo="{!queueItemID}"/>
 													</apex:commandLink> &nbsp; | &nbsp;
-													<apex:commandLink value="{!$Label.rh2__delete}" action="{!deleteQueueItem}" oncomplete="location.reload();">
+													<apex:commandLink value="{!$Label.rh2__delete}" action="{!deleteQueueItem}" reRender="tableContainer, rollupQueuePage">
 							              						<apex:param name="queueItemToDeleteID" value="{!q.Id}" assignTo="{!queueItemId}"/>
 							              					</apex:commandLink>	
 												</td>												  

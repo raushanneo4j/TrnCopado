@@ -17,7 +17,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Neo4j - SDR Manager</profile>
+        <profile>Neo4j - SDR</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -25,7 +25,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Neo4j - SDR</profile>
+        <profile>Neo4j - SDR Manager</profile>
     </profileActionOverrides>
     <tabs>ffr__ActionViews</tabs>
     <tabs>ffr__DataView__c</tabs>
