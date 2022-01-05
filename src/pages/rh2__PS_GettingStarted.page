@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">	 
 		<head>
 			<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 			<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
 			<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
 			<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
@@ -28,8 +28,8 @@
 					<header class="slds-card__header">
 						<nav role="navigation">
 							<ol class="slds-breadcrumb slds-list_horizontal">
-								<li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.PS_landingPage)}">Home</a></li>
-								<li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.PS_AllSettings)}">All Rollup Settings</a></li>
+								<li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">Home</a></li>
+								<li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">All Rollup Settings</a></li>
 							</ol>
 							</nav>
 					</header>
@@ -47,8 +47,9 @@
 					</div>
 					<div class="slds-card__header slds-grid">
 						<ol class="slds-list_ordered">
-							<li>Check out our&nbsp; <apex:outputLink value="http://www.passagetechnology.com/use-cases" target="_blank">Use Case Library</apex:outputLink> for examples of rollups by object, type, solution, and more! </li>
+							<li>Deploy prebuilt use cases from the <apex:outputLink value="{!useCasePageReference}" target="_blank"> Use Case Deployment</apex:outputLink> page, and check out our&nbsp; <apex:outputLink target="_blank" value="http://www.passagetechnology.com/use-cases">Use Case Library</apex:outputLink> for examples of rollups by object, type, solution, and more! </li>
 							<li>To get started on creating your first rollup, visit the&nbsp; <apex:outputLink value="{!URLFOR($Page.rh2__PS_SelectMaster)}" target="_blank">Create Rollup</apex:outputLink> page.</li>
+							<li>Rollup Auditing allows the ability to track any changes to your Rollups! See the 'Rollup Auditing' section below for more information.</li>
 							<apex:outputPanel rendered="{! IsDLRSInstalled}"><li>Have existing DLRS settings you wish you convert to Rollup Helper settings? Try out the&nbsp; <apex:outputLink value="{!URLFOR($Page.rh2__PS_Convert_Rollups)}">Convert Rollups</apex:outputLink> page. </li> </apex:outputPanel>
 							<li>If you have any other questions about how to use Rollup Helper or want to learn more about the app, view the video and admin guide resources below. </li>
 						</ol>
@@ -60,7 +61,7 @@
 				</div>
 				<div class="slds-card">
 					<div class="slds-card__header slds-text-heading_small slds-theme_alt-inverse">
-						<h1 class="slds-text-heading_large">Rollup Helper Video Playlist:</h1>
+						<h1 class="slds-text-heading_large">Rollup Helper Video Playlist</h1>
 					</div>
 					<apex:actionRegion > 		                
 							<div style="padding-left:15px;">
@@ -71,6 +72,7 @@
 								</div> 
 							</div>		             
 					</apex:actionRegion>
+					<h1 class="slds-text-heading_small" style="padding-left:15px;margin-top:5px;"><apex:outputLink target="_blank" value="http://rhdemo.passagetech.com">Rollup Helper Help Video Playlist</apex:outputLink></h1><br/>
 				</div>
 				<div class="slds-card">
 						<div class="slds-card__header slds-text-heading_small slds-theme_alt-inverse">
