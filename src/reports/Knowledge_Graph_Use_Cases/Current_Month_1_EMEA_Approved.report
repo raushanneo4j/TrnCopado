@@ -45,15 +45,8 @@
         <field>Opportunity.X1SDRCompApprovalStatusDate__c</field>
     </columns>
     <currency>USD</currency>
-    <description>All opps with a 1% SDR Final Director Approval in current calendar month, owned by an EMEA SDR/AE.</description>
+    <description>All opps with a 1% SDR Final Director Approval in current calendar month</description>
     <filter>
-        <criteriaItems>
-            <column>User.Rep_Geo__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>EMEA - All,EMEA - North,EMEA - South</value>
-        </criteriaItems>
         <criteriaItems>
             <column>Opportunity.X1SDRCompApprovalStatus__c</column>
             <columnToColumn>false</columnToColumn>
@@ -65,10 +58,15 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
+        <field>User.Rep_Geo__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
         <field>Opportunity.Sales_Development_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Current Month: 1% EMEA Approved</name>
+    <name>Current Month: 1% Approved</name>
     <params>
         <name>open</name>
         <value>all</value>

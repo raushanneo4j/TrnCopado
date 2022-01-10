@@ -71,6 +71,30 @@
         <name>Closed_Won_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Residential Delivery Indicator --></label>
+        <name>CloudingoAgent__ARDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>CloudingoAgent__AR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Status --></label>
+        <name>CloudingoAgent__AS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Timezone --></label>
+        <name>CloudingoAgent__ATZ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Vacancy --></label>
+        <name>CloudingoAgent__AV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Email Status --></label>
+        <name>CloudingoAgent__LES__c</name>
+    </fields>
+    <fields>
         <help><!-- Company&apos;s main phone number --></help>
         <label><!-- Company Phone --></label>
         <name>Company_Phone__c</name>
@@ -2690,6 +2714,11 @@
         <relationshipLabel><!-- Leads (Partner) --></relationshipLabel>
     </fields>
     <fields>
+        <help><!-- This field is used by Data Stewards to tag Lead records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or email address may be flagged by the tool (e.g. last name Cuntz). --></help>
+        <label><!-- Passed Profanity Check --></label>
+        <name>PassedProfanityCheck__c</name>
+    </fields>
+    <fields>
         <label><!-- Pause Lifecycle --></label>
         <name>Pause_Lifecycle__c</name>
     </fields>
@@ -2722,11 +2751,6 @@
     <fields>
         <label><!-- Raw Original Date --></label>
         <name>Raw_Original_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- Triggers SFDC Lead Assignment rules to be re-evaluated --></help>
-        <label><!-- Reassign Lead Trigger --></label>
-        <name>Reassign_Lead_Trigger__c</name>
     </fields>
     <fields>
         <label><!-- Recycle Date --></label>
@@ -3220,61 +3244,6 @@
             <translation><!-- 500 Million - 1 Billion --></translation>
         </picklistValues>
     </fields>
-    <layouts>
-        <layout>Lead Layout</layout>
-        <sections>
-            <label><!-- Additional Information --></label>
-            <section>Additional Information</section>
-        </sections>
-        <sections>
-            <label><!-- Allbound --></label>
-            <section>Allbound</section>
-        </sections>
-        <sections>
-            <label><!-- Bizible Insights --></label>
-            <section>Bizible Insights</section>
-        </sections>
-        <sections>
-            <label><!-- Bizible Touchpoints --></label>
-            <section>Bizible Touchpoints</section>
-        </sections>
-        <sections>
-            <label><!-- D&amp;B Hoovers --></label>
-            <section>D&amp;B Hoovers</section>
-        </sections>
-        <sections>
-            <label><!-- Lean Data --></label>
-            <section>Lean Data</section>
-        </sections>
-        <sections>
-            <label><!-- LinkedIn --></label>
-            <section>LinkedIn</section>
-        </sections>
-        <sections>
-            <label><!-- Marketo Sales Insight --></label>
-            <section>Marketo Sales Insight</section>
-        </sections>
-        <sections>
-            <label><!-- Outreach Engagement Panel --></label>
-            <section>Outreach Engagement Panel</section>
-        </sections>
-        <sections>
-            <label><!-- Product Qualified Lead (PQL) Data --></label>
-            <section>Product Qualified Lead (PQL) Data</section>
-        </sections>
-    </layouts>
-    <quickActions>
-        <label><!-- Dialpad Call --></label>
-        <name>Dialpad__DialpadCall</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- LinkedIn InMail --></label>
-        <name>LID__LinkedIn_Message</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Social --></label>
-        <name>mkto_si__Test_on_mobile</name>
-    </quickActions>
     <validationRules>
         <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
         <name>LID__Check_CompanyId_Value</name>

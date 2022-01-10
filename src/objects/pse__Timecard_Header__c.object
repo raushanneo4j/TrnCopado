@@ -164,7 +164,7 @@
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -52389,6 +52389,7 @@
         <inlineHelpText>If aggregated timecards notes on TCEntry UI for similar rows exceeds the limit of 255 chars, then the aggregated notes will be saved in it.</inlineHelpText>
         <label>Additional Notes</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -52402,6 +52403,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, allows Admin to make &apos;global&apos; changes to the Timecard, including edits to the Timecard&apos;s Project, Resource, Currency, or Date, even if Include In Financials is checked. Config requirement: Actuals Calculation Mode must be set to &apos;Scheduled&apos;.</inlineHelpText>
         <label>Admin Global Edit</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52414,6 +52416,7 @@
         <externalId>false</externalId>
         <inlineHelpText>This checkbox should be checked when the Timecard is approved - typically based on the Status field.</inlineHelpText>
         <label>Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52427,6 +52430,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -52450,6 +52454,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -52462,6 +52467,7 @@
         <inlineHelpText>Stores audit notes history. When a user changes a project or assignment using the Timecard UI and the audit notes exceed 255 characters, older audit notes are moved and appended here.</inlineHelpText>
         <label>Audit Notes History</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -52473,6 +52479,7 @@
         <externalId>false</externalId>
         <label>Audit Notes</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -52485,6 +52492,7 @@
         <externalId>false</externalId>
         <inlineHelpText>Indicates that the Timecard Bill Rate was initially defaulted from a Milestone (rather than an Assignment).</inlineHelpText>
         <label>Bill Rate Defaulted from Milestone</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52498,6 +52506,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -52508,6 +52517,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Billable</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52518,6 +52528,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Billed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52531,6 +52542,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -52543,6 +52555,7 @@
         <label>Cost Rate Currency Code</label>
         <length>3</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -52559,6 +52572,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>6</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -52583,6 +52597,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Bill Rate is Daily Rate</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52593,6 +52608,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Cost Rate is Daily Rate</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52607,6 +52623,7 @@
         <precision>8</precision>
         <required>false</required>
         <scale>6</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -52620,6 +52637,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, this should disable any PSA trigger-based automatic submit for approval for the Timecard.</inlineHelpText>
         <label>Disable Approval Auto Submit</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52630,6 +52648,7 @@
         <externalId>false</externalId>
         <label>End Date</label>
         <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -52642,6 +52661,7 @@
         <precision>8</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -52655,6 +52675,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, this should check the Exclude from Billing checkbox on the child Timecard Splits, which has the same effect as Billing Hold, but is intended to reflect a permanent exclusion from Billing Generation.</inlineHelpText>
         <label>Exclude from Billing</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52667,6 +52688,7 @@
         <externalId>false</externalId>
         <inlineHelpText>Indicates whether the timecard is excluded from the maximum number of hours set in the max-resource-hours-per-day configuration option that can be entered per day for a resource. See &quot;max-resource-hours-per-day&quot;.</inlineHelpText>
         <label>Exclude from Daily Maximum</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52677,6 +52699,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>External Resource</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52690,6 +52713,7 @@
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -52702,6 +52726,7 @@
         <label>Friday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -52739,6 +52764,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Include In Financials</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52749,6 +52775,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Invoiced</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -52759,6 +52786,7 @@
         <externalId>false</externalId>
         <label>Location - Fri</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -53104,6 +53132,7 @@
         <externalId>false</externalId>
         <label>Location - Mon</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -53449,6 +53478,7 @@
         <externalId>false</externalId>
         <label>Location - Sat</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -53794,6 +53824,7 @@
         <externalId>false</externalId>
         <label>Location - Sun</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -54139,6 +54170,7 @@
         <externalId>false</externalId>
         <label>Location - Thu</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -54484,6 +54516,7 @@
         <externalId>false</externalId>
         <label>Location - Tue</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -54829,6 +54862,7 @@
         <externalId>false</externalId>
         <label>Location - Wed</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -55188,6 +55222,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55201,6 +55236,7 @@
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -55213,6 +55249,7 @@
         <label>Monday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -55230,6 +55267,7 @@
         <relationshipLabel>Override Cost Group For Timecards</relationshipLabel>
         <relationshipName>Override_Cost_Group_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55246,6 +55284,7 @@
         <relationshipLabel>Override Cost Practice For Timecards</relationshipLabel>
         <relationshipName>Override_Cost_Practice_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55262,6 +55301,7 @@
         <relationshipLabel>Override Cost Region For Timecards</relationshipLabel>
         <relationshipName>Override_Cost_Region_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55278,6 +55318,7 @@
         <relationshipLabel>Override Revenue Group For Timecards</relationshipLabel>
         <relationshipName>Override_Revenue_Group_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55294,6 +55335,7 @@
         <relationshipLabel>Override Revenue Practice For Timecards</relationshipLabel>
         <relationshipName>Override_Revenue_Practice_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55310,6 +55352,7 @@
         <relationshipLabel>Override Revenue Region For Timecards</relationshipLabel>
         <relationshipName>Override_Revenue_Region_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55320,6 +55363,7 @@
         <externalId>false</externalId>
         <label>Primary Location</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -55678,6 +55722,7 @@
         <relationshipLabel>Primary Location For Timecards</relationshipLabel>
         <relationshipName>Primary_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55693,6 +55738,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>6</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -55717,6 +55763,7 @@
         <relationshipLabel>Friday Location For Timecards</relationshipLabel>
         <relationshipName>Friday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55740,6 +55787,7 @@
         <relationshipLabel>Monday Location For Timecards</relationshipLabel>
         <relationshipName>Monday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55763,6 +55811,7 @@
         <relationshipLabel>Saturday Location For Timecards</relationshipLabel>
         <relationshipName>Saturday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55786,6 +55835,7 @@
         <relationshipLabel>Sunday Location For Timecards</relationshipLabel>
         <relationshipName>Sunday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55809,6 +55859,7 @@
         <relationshipLabel>Thursday Location For Timecards</relationshipLabel>
         <relationshipName>Thursday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55832,6 +55883,7 @@
         <relationshipLabel>Tuesday Location For Timecards</relationshipLabel>
         <relationshipName>Tuesday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55855,6 +55907,7 @@
         <relationshipLabel>Wednesday Location For Timecards</relationshipLabel>
         <relationshipName>Wednesday_Location_For_Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55878,6 +55931,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55888,6 +55942,7 @@
         <externalId>false</externalId>
         <label>Project Methodology</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -55931,6 +55986,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -55941,6 +55997,7 @@
         <externalId>false</externalId>
         <label>Project Phase</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -56023,6 +56080,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -56052,6 +56110,7 @@
         <relationshipLabel>Timecards</relationshipLabel>
         <relationshipName>Timecards</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -56065,6 +56124,7 @@
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -56077,6 +56137,7 @@
         <label>Saturday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -56088,6 +56149,7 @@
         <externalId>false</externalId>
         <label>Start Date</label>
         <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -56098,6 +56160,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -56133,6 +56196,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Submitted</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56146,6 +56210,7 @@
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -56158,6 +56223,7 @@
         <label>Sunday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -56172,6 +56238,7 @@
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -56184,6 +56251,7 @@
         <label>Thursday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -56195,6 +56263,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Time Credited</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56205,6 +56274,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Time Excluded</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56215,6 +56285,7 @@
         <externalId>false</externalId>
         <label>Timecard Notes</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -56227,6 +56298,7 @@
         <externalId>false</externalId>
         <inlineHelpText>For administrator use only. Selected if created from the Timecard UI by using Done. Not selected when using Save or Submit from the Timecard UI.</inlineHelpText>
         <label>Timecard UI Save/Submit Needed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56312,6 +56384,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Fri</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56322,6 +56395,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Mon</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56332,6 +56406,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Sat</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56342,6 +56417,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Sun</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56352,6 +56428,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Thu</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56362,6 +56439,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Tue</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56372,6 +56450,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Travel - Wed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -56398,6 +56477,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -56410,6 +56490,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <label>Tuesday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -56424,6 +56505,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <precision>4</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -56436,6 +56518,7 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <label>Wednesday Notes</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -56461,7 +56544,31 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
             <operation>greaterOrEqual</operation>
             <value>1/1/2020</value>
         </filters>
-        <label>My Non approved Timecards</label>
+        <label>My Unapproved Timecards</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Time_Reporting_List</fullName>
+        <columns>NAME</columns>
+        <columns>pse__Resource__c</columns>
+        <columns>pse__Project__c</columns>
+        <columns>pse__Start_Date__c</columns>
+        <columns>pse__End_Date__c</columns>
+        <columns>pse__Status__c</columns>
+        <columns>pse__Total_Days_Worked__c</columns>
+        <columns>pse__Total_Hours__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>pse__Billable__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Time Reporting List</label>
+        <sharedTo>
+            <allCustomerPortalUsers></allCustomerPortalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>pse__All</fullName>
@@ -56479,10 +56586,14 @@ IF((pse__Sunday_Hours__c&gt;0),1,0) + IF((pse__Monday_Hours__c&gt;0),1,0) + IF((
         <columns>pse__Approved__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <nameField>
         <displayFormat>TCH-{MM}-{DD}-{YYYY}-{000000}</displayFormat>
         <label>Timecard Id</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>

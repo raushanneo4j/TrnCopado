@@ -27101,6 +27101,20 @@ Visualforce page. When creating a new project from a project template, defines t
         <label>Resource Request Lookup Field Set</label>
     </fieldSets>
     <fields>
+        <fullName>PMO_Email__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Hidden Email field used by the  &apos;PSA_Community_Resource_Request_Alert&apos;  email alert and the &apos;FF RESOURCE REQUEST: ! 8 Allow PS Customer to Create Resource Request in Community&apos; flow. The flow sets the email on the field and that is used to send the email to the PMO based on a project region. The flow uses the Email alert to send to email address. The email address that is set on the field is then used in the email alert. JIRA: SFDCSPT-727</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden Email field used by the &apos;PSA_Community_Resource_Request_Alert&apos; email alert and the &apos;FF RESOURCE REQUEST: ! 8 Allow PS Customer to Create Resource Request in Community&apos; flow. The flow sets the email on the field and that is used to send the email to the PMO based on a project region. The flow uses the Email alert to send to email address. The email address that is set on the field is then used in the email alert. JIRA: SFDCSPT-727</inlineHelpText>
+        <label>PMO Email</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>psa_report__Project_Name__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -27930,6 +27944,9 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
             <value>1</value>
         </filters>
         <label>Due Resource Requests</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>psaws__Held_Resource_Requests</fullName>
@@ -27963,6 +27980,9 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
             <value>Cancelled</value>
         </filters>
         <label>Held Resource Requests</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>psaws__Held_and_Unheld_Resource_Requests</fullName>
@@ -27984,6 +28004,9 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
             <value>Cancelled</value>
         </filters>
         <label>Held and Unheld Resource Requests</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>psaws__Open_Resource_Requests_Next_10_Days</fullName>
@@ -28017,6 +28040,9 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
             <value>NEXT_N_DAYS:10</value>
         </filters>
         <label>Open Resource Requests - Next 10 Days</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>pse__All</fullName>
@@ -28034,7 +28060,9 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
         <columns>pse__Staffer_Resource__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <nameField>
         <displayFormat>RR-{0000000}</displayFormat>
@@ -28066,6 +28094,30 @@ IF(AND(NOT(ISNULL(pse__Project__c)),NOT(pse__Project__c=&apos;&apos;),NOT(ISNULL
         <fullName>pse__PSE_PM_Share__c</fullName>
         <label>PSE PM Share</label>
     </sharingReasons>
+    <validationRules>
+        <fullName>ResReq001_End_Date_Required</fullName>
+        <active>true</active>
+        <description>This is a cloned and updated PSA validation rule &quot;end_date_required&quot; (the original one is managed and not editable, so was deactivated and replaced by this one). Added a bypass for Neo4j - Customer Community profile. JIRA: SFDCSPT-727</description>
+        <errorConditionFormula>AND(
+ISNULL(pse__End_Date__c),
+NOT($Profile.Name = &quot;Neo4j - Customer Community&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>pse__End_Date__c</errorDisplayField>
+        <errorMessage>Attention: &apos;End Date&apos; field must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ResReq002_Requested_Hours_Required</fullName>
+        <active>true</active>
+        <description>This is a cloned and updated PSA validation rule &quot;hours_required&quot; (the original one is managed and not editable, so was deactivated and replaced by this one). Added a bypass for Neo4j - Customer Community profile. JIRA: SFDCSPT-727</description>
+        <errorConditionFormula>AND(
+OR(
+ISNULL(pse__SOW_Hours__c), 
+pse__SOW_Hours__c &lt;0),
+NOT($Profile.Name = &quot;Neo4j - Customer Community&quot;)		
+)</errorConditionFormula>
+        <errorDisplayField>pse__SOW_Hours__c</errorDisplayField>
+        <errorMessage>Attention: &apos;Requested Hours&apos; field must be populated.</errorMessage>
+    </validationRules>
     <validationRules>
         <fullName>pse__Check_End_Date</fullName>
         <active>true</active>
@@ -28164,14 +28216,14 @@ pse__Milestone__r.pse__Project__c != pse__Project__c
     </validationRules>
     <validationRules>
         <fullName>pse__end_date_required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>ISNULL(pse__End_Date__c)</errorConditionFormula>
         <errorDisplayField>pse__End_Date__c</errorDisplayField>
         <errorMessage>End Date is required</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>pse__hours_required</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>OR(ISNULL(pse__SOW_Hours__c), pse__SOW_Hours__c &lt;0)</errorConditionFormula>
         <errorDisplayField>pse__SOW_Hours__c</errorDisplayField>
         <errorMessage>Requested Hours is required</errorMessage>

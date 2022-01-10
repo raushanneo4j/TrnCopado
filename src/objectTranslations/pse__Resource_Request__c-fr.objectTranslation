@@ -65,6 +65,11 @@
         <name>pse__Resource_Request_Lookup_Field_Set</name>
     </fieldSets>
     <fields>
+        <help><!-- Hidden Email field used by the &apos;PSA_Community_Resource_Request_Alert&apos; email alert and the &apos;FF RESOURCE REQUEST: ! 8 Allow PS Customer to Create Resource Request in Community&apos; flow. The flow sets the email on the field and that is used to send the email to the PMO based on a project region. The flow uses the Email alert to send to email address. The email address that is set on the field is then used in the email alert. JIRA: SFDCSPT-727 --></help>
+        <label><!-- PMO Email --></label>
+        <name>PMO_Email__c</name>
+    </fields>
+    <fields>
         <label><!-- Project Name --></label>
         <name>psa_report__Project_Name__c</name>
     </fields>
@@ -393,59 +398,6 @@
         <name>pse__Work_Street_PSA__c</name>
     </fields>
     <gender>Masculine</gender>
-    <layouts>
-        <layout>Resource Request - BP</layout>
-        <sections>
-            <label><!-- Billing Information --></label>
-            <section>Billing Information</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Information --></label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label><!-- System Information --></label>
-            <section>System Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Resource Request Detail Layout</layout>
-        <sections>
-            <label>Détails supplémentaires</label>
-            <section>Additional Details</section>
-        </sections>
-        <sections>
-            <label>Liens personnalisés</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>Information</label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label>Exigences</label>
-            <section>Requirements</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Resource Request Layout</layout>
-        <sections>
-            <label>Liens personnalisés</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>Information</label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label>Informations système</label>
-            <section>System Information</section>
-        </sections>
-    </layouts>
     <nameFieldLabel>ID de demande de ressource</nameFieldLabel>
     <sharingReasons>
         <label><!-- PSE Member Share --></label>
@@ -456,6 +408,14 @@
         <name>pse__PSE_PM_Share</name>
     </sharingReasons>
     <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;End Date&apos; field must be populated. --></errorMessage>
+        <name>ResReq001_End_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Attention: &apos;Requested Hours&apos; field must be populated. --></errorMessage>
+        <name>ResReq002_Requested_Hours_Required</name>
+    </validationRules>
     <validationRules>
         <errorMessage><!-- End Date cannot occur before Start Date --></errorMessage>
         <name>pse__Check_End_Date</name>

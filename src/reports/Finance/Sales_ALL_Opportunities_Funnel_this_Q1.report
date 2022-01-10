@@ -72,6 +72,10 @@
     <columns>
         <field>CLOSE_DATE</field>
     </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.ARR__c.CONVERT</field>
+    </columns>
     <currency>USD</currency>
     <format>Summary</format>
     <groupingsDown>

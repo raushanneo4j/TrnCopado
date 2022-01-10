@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create, edit, and delete reports in personal folders.
+Edit, move, save, and delete user&apos;s own reports in shared folders.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Create and Customize Reports</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateCustomizeReports</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunReports</name>
+    </userPermissions>
+</PermissionSet>

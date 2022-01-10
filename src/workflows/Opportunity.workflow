@@ -48,7 +48,7 @@
         <fullName>Customer_Success_Onboarding_Notification_98_Top_Account_and_NOT_Neo4j_AuraDB_Pro</fullName>
         <ccEmails>davidgordon21+xaybbf7ytpfhgcdfic2o@boards.trello.com,</ccEmails>
         <ccEmails>customer-success@neotechnology.com,renewals@neo4j.com</ccEmails>
-        <description>Customer Success Onboarding Notification 98% Top Account and NOT Neo4j - AuraDB Product</description>
+        <description>Customer Success Onboarding Notification 98% Top Account and NOT Neo4j - Aura Product</description>
         <protected>false</protected>
         <recipients>
             <type>owner</type>
@@ -78,7 +78,7 @@
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Customer_Success_Templates/Customer_Success_Onboarding_Notification_98_TOP_Account_and_NOT_Neo4j_AuraDB</template>
+        <template>Customer_Success_Templates/Customer_Success_Onboarding_Notification_98_TOP_Account_and_NOT_Neo4j_Aura</template>
     </alerts>
     <alerts>
         <fullName>Customer_Success_Onboarding_Notification_99_and_Neo4j_Aura_Product</fullName>
@@ -686,7 +686,7 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Customer Success Onboarding Notification 98%25 Top Account and NOT Neo4j - AuraDB Product</fullName>
+        <fullName>Customer Success Onboarding Notification 98%25 Top Account and NOT Neo4j - Aura Product</fullName>
         <actions>
             <name>Customer_Success_Onboarding_Notification_98_Top_Account_and_NOT_Neo4j_AuraDB_Pro</name>
             <type>Alert</type>
@@ -723,7 +723,7 @@
             <operation>greaterThan</operation>
             <value>0</value>
         </criteriaItems>
-        <description>Notify Customer Success and others when an Opportunity is moved to 98% (Sales Ops Review), the Account is a top Account, NO Neo4j - AuraDB Products exist on the Opportunity, and at least one Product requires onboarding. JIRA: SFDCSPT-253; SFDCSPT-533</description>
+        <description>Notify Customer Success and others when an Opportunity is moved to 98% (Sales Ops Review), the Account is a top Account, NO Neo4j - Aura Products exist on the Opportunity, and at least one Product requires onboarding. JIRA: SFDCSPT-253; SFDCSPT-533</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -753,7 +753,7 @@
             <operation>notEqual</operation>
             <value>Renewal</value>
         </criteriaItems>
-        <description>Notify Customer Success and others when an Opportunity is moved to 99% (Finance Review) and at least one Neo4j - AuraDB Product is attached to the Opportunity. JIRA: SFDCSPT-253; 610</description>
+        <description>Notify Customer Success and others when an Opportunity is moved to 99% (Finance Review) and at least one Neo4j - Aura Product is attached to the Opportunity. JIRA: SFDCSPT-253; 610</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -1115,7 +1115,7 @@
             <operation>greaterOrEqual</operation>
             <value>1</value>
         </criteriaItems>
-        <description>SFDC-0488_AuraProvisioningEmailForLanceKajiV1.</description>
+        <description>JIRA: SFDCSPT-677</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>

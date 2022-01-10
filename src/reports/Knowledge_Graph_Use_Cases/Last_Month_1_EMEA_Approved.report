@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>FULL_NAME</field>
+        <field>Opportunity.SFDC_Opp_ID__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
         <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
     </columns>
     <columns>
         <field>STAGE_NAME</field>
@@ -20,6 +26,10 @@
     </columns>
     <columns>
         <field>NEXT_STEP</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.EligibleforSAOCredit__c</field>
     </columns>
     <columns>
         <field>TYPE</field>
@@ -45,15 +55,8 @@
         <field>Opportunity.X1SDRCompApprovalStatusDate__c</field>
     </columns>
     <currency>USD</currency>
-    <description>All opps with a 1% SDR Final Director Approval in previous calendar month, owned by an EMEA SDR/AE.</description>
+    <description>All opps with a 1% SDR Final Director Approval in previous calendar month</description>
     <filter>
-        <criteriaItems>
-            <column>User.Rep_Geo__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>EMEA - All,EMEA - North,EMEA - South</value>
-        </criteriaItems>
         <criteriaItems>
             <column>Opportunity.X1SDRCompApprovalStatus__c</column>
             <columnToColumn>false</columnToColumn>
@@ -68,7 +71,7 @@
         <field>Opportunity.Sales_Development_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Last Month: 1% EMEA Approved</name>
+    <name>Last Month: 1% Approved</name>
     <params>
         <name>open</name>
         <value>all</value>

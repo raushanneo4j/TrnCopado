@@ -1,0 +1,77 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "a228a4ed-2427-4dea-9306-824e5226ab33",
+  "label" : "resource request",
+  "regions" : [ {
+    "id" : "3502465d-4c28-4207-a0df-0f95125c3f67",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d275872a-5a9f-446f-9bf5-e2209d61fab5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><b>Please complete the form below to request consulting services against one of your open services budgets&nbsp;and we will work to fulfil your request.</b></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "2bc882ed-339e-4357-9048-3bc0b154ff14",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "flowArguments" : "[]",
+        "flowLayout" : "oneColumn",
+        "flowName" : "X8_FF_RESOURCE_REQUEST_SF_Allow_PS_Cust_to_Create_Resource_Request_in_Community"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "2fcaeb29-7071-461f-8b37-21ad00470b6d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ab0c664c-ed9c-450a-8e3d-47be1952a094",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.neo4jlogo20201.1}\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ee402885-3660-445a-a2e8-cd1660ea7de8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "039b1b99-464e-42ab-ab06-8361761fdb0b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Resource Request"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cdc9672f-a4f9-4fc4-81c3-b89f630dae85",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "93023fa3-26d8-47d9-bd1b-22e83e28db38",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-resource-request"
+}

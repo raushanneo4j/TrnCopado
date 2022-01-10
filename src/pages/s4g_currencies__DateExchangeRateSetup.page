@@ -1,0 +1,87 @@
+<apex:page title="{!$Label.s4g_currencies__title_ders_setup}" controller="s4g_currencies.DateExchangeRateSetupController" showHeader="true" sidebar="true" 
+    action="{!onLoadVF}" lightningStylesheets="true">
+
+    <apex:stylesheet value="{!URLFOR($Resource.s4g_currencies__SetupPageCss)}" />
+    <div class="pageContainer">
+        <div Id="globalLoading">
+		    <div class="loader">{!$Label.s4g_currencies__loading}...</div>
+	    </div>
+    
+
+        <!--<apex:image value="{!$Resource.logo_tab}" width="227px"/>-->
+        <apex:outputPanel id="messageAlert">
+            <apex:pageMessages escape="false"/>
+        </apex:outputPanel>
+
+        <apex:form >
+            <apex:actionFunction name="goToServer" action="{!goToServer}" reRender="target,date,objects" status="loading"/>
+            <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
+
+            <apex:pageblock id="pageBlock">	
+                <apex:outputPanel id="rulesDiv" style="text-align: center;">
+                    <apex:variable value="{!0}" var="rowNum"/> 
+
+                    <!-- Config rules section -->
+                    <apex:pageBlockSection columns="1" title="{!$Label.s4g_currencies__rules_section}" id="rulesSection">
+                        <!-- rules -->
+                        <apex:pageBlockTable value="{!rules}" var="rule" id="table">
+                            <apex:column headerValue="Action" style="vertical-align: middle;">
+                                <apex:commandLink value="Remove" action="{!removeRow}" rerender="rulesDiv, messageAlert"  immediate="true" status="loading" rendered="{!OR(rowNum > 0, AND(rowNum=0, NOT(ISNULL(rule.record.Id))))}"> 
+                                    <apex:param value="{!rowNum}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+                                </apex:commandLink>
+                                <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Object__c.Label}">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Object__c}" size="1" id="objects" onchange="goToServer();" disabled="{!NOT(ISBLANK(rule.record.Id))}">
+                                    <apex:selectOptions value="{!rule.listObjects}"/>
+                                </apex:selectList>
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Target_Field__c.Label}">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Target_Field__c}" size="1" id="target">
+                                    <apex:selectOptions value="{!rule.ObjectTargetFields}"/>
+                                </apex:selectList>						        		
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Date_Field__c.Label}">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Date_Field__c}" size="1" id="date">
+                                    <apex:selectOptions value="{!rule.ObjectDateFields}"/>
+                                </apex:selectList>						        		
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Active__c.Label}" style="vertical-align: middle;">
+                                <apex:inputField value="{!rule.record.s4g_currencies__Active__c}" />
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Status__c.Label}" style="vertical-align: middle;">
+                                <apex:outputField value="{!rule.record.s4g_currencies__Status__c}"/>
+                            </apex:column> 
+                        </apex:pageBlockTable>
+
+                        <!-- Buttons -->
+                        <apex:outputPanel layout="block" style="text-align: center">
+                            <apex:commandButton value="{!$Label.s4g_currencies__check_status_button}" action="{!checkDeployStatus}" styleclass="slds-button slds-button--neutral" rerender="rulesDiv, messageAlert" rendered="{!deployPending}" status="loading"/>
+                            <apex:commandButton disabled="{!deployPending}" value="{!$Label.s4g_currencies__add_rule_button}" action="{!addRow}" rerender="rulesDiv, messageAlert" status="loading"/>
+                            <apex:commandButton disabled="{!deployPending}" value="{!$Label.s4g_currencies__save}" action="{!saveTranslationsRules}" rerender="rulesDiv, messageAlert" status="loading"/>
+                        </apex:outputPanel>
+
+                    </apex:pageBlockSection> 
+                </apex:outputPanel>
+            </apex:pageblock>
+        </apex:form>
+
+        <script>
+            function loading(val){
+                if(val){
+                    document.getElementById("globalLoading").style.display="block";
+                    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+
+                }else{
+                    document.getElementById("globalLoading").style.display="none";
+                    document.getElementsByTagName("body")[0].style.overflow = "auto";
+                }
+            }
+        </script>
+    </div>
+</apex:page>

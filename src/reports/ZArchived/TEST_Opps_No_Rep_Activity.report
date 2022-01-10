@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_78631970</developerName>
+        <masterLabel>Opportunity Owner: Manager</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OPPORTUNITY_OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>David Vessie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Lopez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Fredrickson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tim Lewis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert Wilcox</sourceValue>
+            </sourceValues>
+            <value>Brock Alston</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bob Anthony</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darryl Salas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Odonnell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Carey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Mohr</sourceValue>
+            </sourceValues>
+            <value>David Mohr</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <value>Dirk Moeller</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brandon Richards</sourceValue>
+            </sourceValues>
+            <value>Erik Nolten</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Herman Roelandts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonny Cheetham</sourceValue>
+            </sourceValues>
+            <value>Rik Van Bruggen</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Deniz Omer-Houssein</sourceValue>
+            </sourceValues>
+            <value>Ryan Fisher</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>Activity.Meeting_Type__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>BucketField_78631970</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_OWNER</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>PROBABILITY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1,10</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_SUBTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TEST Opps No Rep Activity</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>BucketField_78631970</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Stage_Change_Date__c</dateColumn>
+        <endDate>2018-07-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

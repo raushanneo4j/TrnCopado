@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Important: AuraDS Product Changes in Salesforce</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>Upcoming Change: AuraDS Product Name Changes in SFDC</name>
+    <style>freeForm</style>
+    <subject>SMALL CORRECTION! Important: AuraDS Product Changes in Salesforce</subject>
+    <textOnly>Hello Salesforce Users!
+
+This alert is intended for users who add products to opportunities in Salesforce, report on products, and especially for users whose reports reference &apos;Neo4j - AuraDS&apos; product name in their filters.
+
+The two changes outlined below are scheduled to take place on Thursday, January 13th.
+
+
+**WHAT YOU NEED TO KNOW**
+
+The existing Product &quot;Neo4j - AuraDS&quot; is being renamed to &quot;Neo4j - AuraDS - Multi-Tenant&quot;.
+
+New SKU,&quot;Neo4j - AuraDS - VPS Isolated&quot;, is being added to SFDC.
+
+This change will impact any report that references product names in itse filters, specifically &apos;&apos;Neo4j - AuraDS&quot; -- the product records will be omitted from the report results.
+
+If you reference product names in your reports, please update your report filters by replacing &quot;Neo4j - AuraDS&quot; with &quot;Neo4j - AuraDS - Multi-Tenant&quot; AND adding &quot;Neo4j - AuraDS - VPS Isolated&quot;.
+
+
+Please let us know if you have any questions by reaching out to us at salesforce@neo4j.com.
+
+Thank you,
+Salesforce Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

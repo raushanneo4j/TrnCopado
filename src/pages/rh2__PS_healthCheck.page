@@ -5,7 +5,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
     </head>
     <style>        
         .popoverNubbinAlignment{
@@ -451,7 +451,7 @@
                                                     </td>
  
                                             </apex:outputPanel>
-                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Manual Run Only'), true, false)}"> 
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'Manual Run Only'), NOT(contains(i.issueName, 'foreign key rollup'))), true, false)}"> 
                                                     <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
                                                        
                                                       <p class="slds-text-heading_label"> 
@@ -464,9 +464,11 @@
                                                           <div class="slds-popover__body">
                                                             One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Manual Run Only rollups will never automatically
                                                             update and will need to be manually rerun any time you wish to see an updated calculation.
+
+                                                            <br/><br/>
                                                             
                                                             If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either enable real time for the 
-                                                            rollup or create a schedule.
+                                                            rollup or create an active schedule.
                                                           </div>
                                                         </div>
                                                       </div>
@@ -474,7 +476,31 @@
  
                                          
                                             </apex:outputPanel>
-                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run in realtime'), true, false)}"> 
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'Manual Run Only'), contains(i.issueName, 'foreign key rollup')), true, false)}"> 
+                                                    <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
+                                                       
+                                                      <p class="slds-text-heading_label"> 
+                                                      <a onmouseover="$('#help-manual-{!i.uniqueId}').toggle();" onmouseout="$('#help-manual-{!i.uniqueId}').toggle();" >
+                                                      <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                      </a>{!$Label.FKManualRunOnlyRollupFound}</p>
+
+                                                      <div class="slds-col popoverDefault" id="help-manual-{!i.uniqueId}">
+                                                        <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                          <div class="slds-popover__body">
+                                                            One or more foreign key rollup setting(s) in your environment is currently in a Manual Run Only state.  Manual Run Only foreign key rollups will never automatically
+                                                            update and will need to be manually rerun any time you wish to see an updated calculation.
+
+                                                            <br/> <br/>
+                                                            
+                                                            If you would like to ensure that the foreign key rollup does not require a user to manually trigger a rollup run, please either visit the Rollup Helper
+                                                            Developer Guide for instructions on how to create a foreign key real-time trigger, contact Support to have them create the foreign key real-time trigger,
+                                                             or create an active schedule.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>                                         
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'run in realtime'), NOT(contains(i.issueName, 'foreign key rollup'))), true, false)}"> 
                                                     <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
                                                        
                                                     <p class="slds-text-heading_label"> 
@@ -486,6 +512,25 @@
                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
                                                             <div class="slds-popover__body">
                                                               One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Unfortunately a realtime trigger cannot be created on the source object for this rollup.
+                                                              If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either create a schedule or create a visualforce page trigger.
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                    </td>
+                             
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'run in realtime'), contains(i.issueName, 'foreign key rollup')), true, false)}"> 
+                                                    <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
+                                                       
+                                                    <p class="slds-text-heading_label"> 
+                                                    <a onmouseover="$('#help-manual-no-trigger-{!i.uniqueId}').toggle();" onmouseout="$('#help-manual-no-trigger-{!i.uniqueId}').toggle();" >
+                                                    <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                    </a>{!$Label.UnableToEnableRealtime}</p>
+                                                    
+                                                    <div class="slds-col popoverDefault" id="help-manual-no-trigger-{!i.uniqueId}">
+                                                         <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                              One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Unfortunately a realtime trigger cannot be created on the source object and/or foreign key source object for this rollup.
                                                               If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either create a schedule or create a visualforce page trigger.
                                                             </div>
                                                          </div>

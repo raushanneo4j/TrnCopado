@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Account.SFDC_Account_ID__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.SFDC_CPP_ID__c</field>
+    </columns>
+    <columns>
+        <field>Customer_Project_Profile__c.Instances_in_Production__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Instances in Production, Peak Reads/Second, Peak Writes/Second</description>
+    <filter>
+        <criteriaItems>
+            <column>Customer_Project_Profile__c.Instances_in_Production__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CPP Number Fields Clean Up</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Customer_Project_Profile__c@Customer_Project_Profile__c.Account_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Customer_Project_Profile__c.Instances_in_Production__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Customer_Project_Profile__c.Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

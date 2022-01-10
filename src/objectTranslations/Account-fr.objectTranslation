@@ -146,6 +146,46 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Billing Address Record Type --></label>
+        <name>CloudingoAgent__BAR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address Status --></label>
+        <name>CloudingoAgent__BAS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address Vacancy --></label>
+        <name>CloudingoAgent__BAV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Residential Delivery Indicator --></label>
+        <name>CloudingoAgent__BRDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Timezone --></label>
+        <name>CloudingoAgent__BTZ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address Record Type --></label>
+        <name>CloudingoAgent__SAR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address Status --></label>
+        <name>CloudingoAgent__SAS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address Vacancy --></label>
+        <name>CloudingoAgent__SAV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Residential Delivery Indicator --></label>
+        <name>CloudingoAgent__SRDI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Timezone --></label>
+        <name>CloudingoAgent__STZ__c</name>
+    </fields>
+    <fields>
         <label><!-- Count 1 --></label>
         <name>Count_1__c</name>
     </fields>
@@ -726,6 +766,11 @@
         <name>Partnership_Group_Products_Open__c</name>
     </fields>
     <fields>
+        <help><!-- This field is used by Data Stewards to tag Account records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or website may be flagged by the tool (e.g. Dick&apos;s Sporting Goods). --></help>
+        <label><!-- Passed Profanity Check --></label>
+        <name>PassedProfanityCheck__c</name>
+    </fields>
+    <fields>
         <label><!-- Primary NAICS --></label>
         <name>Primary_NAICS__c</name>
     </fields>
@@ -1212,83 +1257,6 @@
         <label><!-- Currency Test --></label>
         <name>rh2__testCurrency__c</name>
     </fields>
-    <layouts>
-        <layout>Customer Account</layout>
-        <sections>
-            <label><!-- Additional Information --></label>
-            <section>Additional Information</section>
-        </sections>
-        <sections>
-            <label><!-- D&amp;B Hoovers --></label>
-            <section>D&amp;B Hoovers</section>
-        </sections>
-        <sections>
-            <label><!-- D&amp;B Optimizer --></label>
-            <section>D&amp;B Optimizer</section>
-        </sections>
-        <sections>
-            <label><!-- Description --></label>
-            <section>Description</section>
-        </sections>
-        <sections>
-            <label><!-- Gainsight Account Widget --></label>
-            <section>Gainsight Account Widget</section>
-        </sections>
-        <sections>
-            <label><!-- Lean Data --></label>
-            <section>Lean Data</section>
-        </sections>
-        <sections>
-            <label><!-- Marketo Sales Insight --></label>
-            <section>Marketo Sales Insight</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>FF PSA (Reserved for PS Consultants)</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Fields --></label>
-            <section>Fields</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Partner Account</layout>
-        <sections>
-            <label><!-- Additional Information --></label>
-            <section>Additional Information</section>
-        </sections>
-        <sections>
-            <label><!-- D&amp;B Hoovers --></label>
-            <section>D&amp;B Hoovers</section>
-        </sections>
-        <sections>
-            <label><!-- D&amp;B Optimizer --></label>
-            <section>D&amp;B Optimizer</section>
-        </sections>
-        <sections>
-            <label><!-- Description --></label>
-            <section>Description</section>
-        </sections>
-        <sections>
-            <label><!-- Geo Information --></label>
-            <section>Geo Information</section>
-        </sections>
-    </layouts>
-    <quickActions>
-        <label><!-- Child Account --></label>
-        <name>Child_Account</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Dialpad Call --></label>
-        <name>Dialpad__DialpadCall</name>
-    </quickActions>
-    <quickActions>
-        <label><!-- Traction Hierarchies Fields --></label>
-        <name>Traction_Hierarchies_Fields</name>
-    </quickActions>
     <recordTypes>
         <description><!-- Customer Accounts only (Customer, Prospect, Past Customer, OEM, etc.) --></description>
         <label><!-- Customer --></label>

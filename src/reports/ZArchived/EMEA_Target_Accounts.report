@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Account.Billing_Email_Address__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Booking.com,Priceline,Alstom,TUI Travel,Thomas Cook,Deutsche Bahn,AccorHotels,Egencia,GEFCO,SNCF,Proximus,Telecom Italia,Liberty Global,Orange,TalkTalk,Deutsche Telekom,Nokia,Adstream,Axway,Blablacar,Gemalto,IBM,Unilever,Carrefour,Tesco,Asda,Adidas,Henkel,Metro,Procter &amp; Gamble,Rewe Group,Kering,LVMH,Solvay,Akzo Nobel,Plastic Omnium,Publicis Groupe,Sodexo,William Hill,rai,Wolters Kluwer,Aimia,Rank Group,Sky,GfK,Boeing,Audi,BMW,Bombardier,Daimler,Hella,Siemens,Airbus Group,ArcelorMittal,Faurecia,Groupe PSA,LafargeHolcim,Michelin,Renault,Safran,Saint-Gobain,Schneider Electric,THALES,Valeo,Collibra,Accenture,Amadeus,LetGo,capgemini,T-Systems,ADP,ADP GSI,ATOS,Capgemini,Sopra Steria,UCB,Elsevier,Grifols,Roche,Novartis,Essilor International,Sanofi,Bpost,Home Office,European Commission,LA POSTE,BNP Paribas Fortis,Allianz,AX</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>EMEA Target Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

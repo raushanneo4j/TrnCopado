@@ -12,19 +12,19 @@
         <field>AMOUNT</field>
     </columns>
     <columns>
-        <field>PROBABILITY</field>
-    </columns>
-    <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
         <field>NEXT_STEP</field>
     </columns>
     <columns>
-        <field>TYPE</field>
+        <field>STAGE_NAME</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Loss_Reason__c</field>
     </columns>
     <currency>USD</currency>
     <filter>
@@ -34,6 +34,13 @@
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
             <value>Salas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Opportunity.Renewal</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -69,6 +76,6 @@
         <dateColumn>CLOSE_DATE</dateColumn>
         <endDate>2022-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2021-11-01</startDate>
+        <startDate>2022-01-01</startDate>
     </timeFrameFilter>
 </Report>

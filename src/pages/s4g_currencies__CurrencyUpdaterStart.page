@@ -1,15 +1,30 @@
-<apex:page showHeader="true" sidebar="false" title="S4G Help" controller="s4g_currencies.CurrencyUpdaterStartController" tabStyle="CurrencyUpdaterStartTab__tab" action="{!saveSettings}" applyBodyTag="false" applyHtmlTag="true" docType="html-5.0" >
+<apex:page showHeader="true" sidebar="false" title="S4G Help" controller="s4g_currencies.CurrencyUpdaterStartController" tabStyle="CurrencyUpdaterStartTab__tab" action="{!onLoadVF}" applyBodyTag="false" applyHtmlTag="true" docType="html-5.0">
 <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <apex:slds />
     <!--<apex:outputPanel id="All">
     <apex:stylesheet value="{!URLFOR($Resource.CurrencyUpdaterStyleSheet)}" />-->
 
+<apex:stylesheet value="{!URLFOR($Resource.s4g_currencies__SetupPageCss)}" />
 <apex:stylesheet value="{!URLFOR($Resource.s4g_currencies__CUSetup, 'style.css')}" />
-    
+
 <div class="slds-scope">
+  <apex:outputPanel layout="block" rendered="{!hasPermission}">
+
+    <div id="lighnintSpinner" class="slds-spinner_container" style="display: none; position: fixed;">
+       <div class="slds-spinner--brand  slds-spinner slds-spinner--large" role="status">
+         <span class="slds-assistive-text">Loading</span>
+         <div class="slds-spinner__dot-a"></div>
+         <div class="slds-spinner__dot-b"></div>
+       </div>
+    </div>
+
+   <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
+
+   
+
  <div class="slds-grid">
     <div style="width: 70px; border-bottom: 2px solid #0b2c39;">
-        <div class="slds-align--absolute-center slds-m-vertical--x-small" style="cursor: pointer;" onclick="window.open('http://s4g.es/currency-updater/', '_blank', null);">
+        <div class="slds-align--absolute-center slds-m-vertical--x-small" style="cursor: pointer;" onclick="window.open('https://s4g.es/currency-updater/', '_blank', null);">
             <img src="{!$Resource.logoCurrencySmall}" style="width:45px; height:45px;" />
         </div>
     </div>
@@ -19,7 +34,7 @@
         </div>
     </div>
     <div class="slds-col--bump-left" style="border-bottom:2px solid #19bc9c; width:90px; background: #19bc9c;">
-        <div class="slds-m-vertical--small slds-p-top--xx-small slds-align--absolute-center slds-text-color--inverse" style="cursor: pointer;" onclick="window.open('http://s4g.es/currency-updater/help-faq/', '_blank', null);">
+        <div class="slds-m-vertical--small slds-p-top--xx-small slds-align--absolute-center slds-text-color--inverse" style="cursor: pointer;" onclick="window.open('https://s4g.es/currency-updater/help-faq/', '_blank', null);">
             <h2 class="slds-text-heading--large slds-text-title--inverse">{!$Label.HELP}</h2>
         </div>
     </div>
@@ -50,7 +65,7 @@
 </div>
 <div class="slds-text-body--regular slds-m-around--medium content">
     <apex:outputText escape="false" value="{!$Label.s4g_currencies__considerations_text}" />&nbsp;
-    <apex:outputLink value="http://s4g.es/currency-updater/" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
+    <apex:outputLink value="https://s4g.es/currency-updater/" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
 </div>
 </div>
 
@@ -63,7 +78,7 @@
             <h3 class="slds-page-header__title slds-truncate">{!$Label.SETUP}</h3>
         </div>
         <div class="slds-col toggleIcon">
-            <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem;">
+            <span class="slds-icon_container slds-icon_container--circle" style="background: #628880; padding: 0.2rem;">
               <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
             </svg>
@@ -75,7 +90,7 @@
 <apex:outputPanel layout="block" styleClass="content slds-text-body--regular slds-m-around--medium " id="setupDiv">
 
 <!-- Messagge-->
-<apex:pageMessages id="messages"/>
+<apex:pageMessages id="messages" escape="false"/>
 
 <div class="slds-notify slds-notify--alert slds-theme--alert-texture slds-banner slds-hide" id="alertMessage"><h2></h2></div>
 <!-- End Messagge -->
@@ -136,7 +151,7 @@
                   
                 </div>
                 <div class="slds-col">
-                  <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#why-do-i-have-to-authorize-currency-updater', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                  <span class="slds-icon_container" onclick="window.open('https://s4g.es/currency-updater/help-faq/#why-do-i-have-to-authorize-currency-updater', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
                 </div>
               </div>
             </div>
@@ -167,7 +182,7 @@
               </div>
               <div class="slds-col">
                   <p>                    
-                    <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#currency-types', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                    <span class="slds-icon_container" onclick="window.open('https://s4g.es/currency-updater/help-faq/#currency-types', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
                   </p>
               </div>
 
@@ -183,37 +198,27 @@
   <div class="slds-p-horizontal--small slds-size--1-of-1 slds-small-size--6-of-6 slds-medium-size--6-of-6 slds-large-size--5-of-6">
       <div class="slds-text-body--regular slds-m-around--large">
           <div class="slds-grid  slds-grid--align-center slds-grid--align-space">
-            <!--<div class="slds-col">
-              <p>
-                <input type="radio" name="originOpt" id="oYf" value="oYf"/><label for="oYf"><b>{!$Label.YAHOO_FINANCE}</b></label>
-                <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-yahoo', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
-              </p>
-          </div>-->
-          <div class="slds-col">
-             <p>
-              <input type="radio" name="originOpt" id="oG" value="oG"/><label for="oG"><b>{!$Label.GOOGLE}</b></label> 
-              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-google', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
-            </p>
-         </div>
          <div class="slds-col">
           <p>
-            <input type="radio" name="originOpt" id="oECB" value="oECB" /><label for="oECB"><b>{!$Label.EUROPEAN_CENTRAL_BANK}</b></label>
-            <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-european-central-bank', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+            <input class="originClicked" type="radio" name="originOpt" id="oECB" value="oECB" /><label for="oECB"><b>{!$Label.EUROPEAN_CENTRAL_BANK}</b></label>
+            <span class="slds-icon_container" onclick="window.open('https://s4g.es/currency-updater/help-faq/#sources-european-central-bank', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
           </p>
         </div>
         <div class="slds-col">
              <p>
-              <input type="radio" name="originOpt" id="oB" value="oB"/><label for="oB"><b>{!$Label.BLOOMBERG}</b></label> 
-              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-bloomberg', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
-            </p>
-        </div>
-        <div class="slds-col">
-             <p>
-              <input type="radio" name="originOpt" id="oCL" value="oCL"/><label for="oCL"><b>{!$Label.CURRENCY_LAYER}</b></label> 
-              <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#sources-currencylayer', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+              <input class="originClicked" type="radio" name="originOpt" id="oCL" value="oCL"/><label for="oCL"><b>{!$Label.CURRENCY_LAYER}</b></label> 
+              <span class="slds-icon_container" onclick="window.open('https://s4g.es/currency-updater/help-faq/#sources-currencylayer', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
             </p>
         </div>
   </div>
+
+  <apex:outputPanel styleClass="warningOrigin" layout="block" rendered="{!IF(OR (corporateCurrency != 'EUR', showFinancialForceButton), 'true', 'false')}">
+          <br/>
+          <div class="slds-box slds-theme_shade">
+            <b>{!$Label.s4g_currencies__warning_ecb_title}</b> {!$Label.s4g_currencies__warning_ecb_body}
+          </div>
+  </apex:outputPanel>
+  
 </div>
 </div>
 </div>
@@ -260,7 +265,7 @@
                                <apex:commandbutton styleclass="slds-button slds-button--neutral greenButton slds-hide runSchedule" action="{!runAndScheduleBatch}" oncomplete="overridePageMessages();" value="{!$Label.s4g_currencies__run_schedule}" rerender="messages,scheduleInfo"/>
                                <div>
                                 
-                                    <span class="slds-icon_container" onclick="window.open('http://s4g.es/currency-updater/help-faq/#scheduler', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
+                                    <span class="slds-icon_container" onclick="window.open('https://s4g.es/currency-updater/help-faq/#scheduler', '_blank', null);" target="_blank" style="cursor:pointer;"><svg class="slds-icon slds-icon-text-default" aria-hidden="true"  style="fill:#ff5722"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#info')}"></use></svg></span>
                                 </div>
                             </div>
                         </div>
@@ -320,6 +325,171 @@
         </div>
     </div>
 </div>
+<!-- Financial Force Setup -->
+  <apex:outputPanel layout="block" id="FinancialForceSetup" styleClass="mainBar" rendered="{!showFinancialForceSetup}">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c; border-top: 1px solid #19bc9c;">
+      <div class="slds-grid slds-grid--align-spread">
+        <div class="slds-col">
+          <h3 class="slds-page-header__title slds-truncate"><apex:outputText value="{!$Label.s4g_currencies__financial_force_setup}" /></h3>
+        </div>
+        <div class="slds-col toggleIcon FFSection">
+          <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem; cursor: pointer;">
+              <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#up')}"></use>
+              </svg>
+          </span>                  
+        </div>
+      </div>
+    </div>
+    <div class="content slds-hide">
+      <apex:outputPanel layout="block" styleClass="slds-text-body--regular slds-m-around--medium" rendered="{!!showFinancialForceButton}">
+        {!$Label.s4g_currencies__financial_force_text}
+      </apex:outputPanel>
+      
+      <apex:outputPanel id="FinancialForceAction" layout="block" rendered="{!showFinancialForceButton}">
+        <div class="slds-text-body--regular slds-m-around--medium">
+          <apex:outputPanel styleClass="{!styleMessageFF}" rendered="{!NOT(ISBLANK(messageFF))}">
+          <div style="color:#f7f9fb !important;">
+            <apex:outputText value="{!messageFF}" escape="false"/>
+          </div>
+          </apex:outputPanel>
+        </div>
+
+        <br/>
+
+        <div class="slds-grid slds-grid--align-center slds-grid--align-space FinancialForceButton">
+          <!--<input type="checkbox"   name="FinancialForceButton" id="FFb" value="FFb"/><label for="FFb"><b>{!$Label.FINANCIAL_FORCE_BUTTON}</b></label>-->
+          
+          <!--<apex:inputCheckbox value="{!updateFF}" style="position:relative !important; left:0 !important;">
+            <apex:actionSupport event="onchange" action="{!setUpdateFF}" reRender="FinancialForceAction, messages" status="loading"/>
+        </apex:inputCheckbox>-->
+
+        <apex:outputPanel rendered="{!existFFClass}">
+          <input class="originClicked readonly" type="checkbox" name="FinancialForceButton" checked="checked" readonly="readonly"/><label for="{!existFFClass}"><b>{!$Label.FF_CHECKBOX_TEXT}</b></label> 
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!NOT(existFFClass)}">
+          <input class="originClicked readonly" type="checkbox" name="FinancialForceButton" readonly="readonly"/><label for="{!existFFClass}"><b>{!$Label.FF_CHECKBOX_TEXT}</b></label> 
+        </apex:outputPanel>
+
+        <div id="FF_Buttons">
+          <apex:commandButton value="{!IF(existFFClass, $Label.s4g_currencies__ff_deactivate_button_text, $Label.s4g_currencies__ff_activate_button_text)}" action="{!activateDeactivateButton}" styleclass="slds-button slds-button--neutral" rerender="FinancialForceAction, messages"  status="loading" disabled="{!deployPending}" oncomplete="overridePageMessages();"/>
+
+          <apex:commandButton value="{!$Label.s4g_currencies__check_status_button}" action="{!checkDeployStatus}" styleclass="slds-button slds-button--neutral" rerender="FinancialForceAction, messages" rendered="{!deployPending}" status="loading" oncomplete="overridePageMessages();"/>
+        </div>
+
+    
+        </div>
+
+        <div class="slds-text-body--regular slds-m-around--medium">
+          <div class="slds-box slds-theme_shade">
+            <p><b>{!$Label.s4g_currencies__financial_force_header_help_text}</b> {!$Label.s4g_currencies__financial_force_help_text}</p>
+          </div>
+        </div>
+
+        <br/> 
+      </apex:outputPanel>
+      
+    </div>
+    
+
+    
+  </apex:outputPanel>
+
+  <!-- Custom Dated Exchange Rate Setup -->
+  <apex:outputPanel layout="block" id="CustomDateExchangeSetup" styleClass="mainBar">
+    <div class="slds-page-header" style="background: #0b2c39; color: #19bc9c; border-top: 1px solid #19bc9c;">
+      <div class="slds-grid slds-grid--align-spread">
+        <div class="slds-col">
+          <h3 class="slds-page-header__title slds-truncate"><apex:outputText value="{!$Label.s4g_currencies__custom_date_exchange_rate}" /></h3>
+        </div>
+        <div class="slds-col toggleIcon DERSection">
+          <span class="slds-icon_container slds-icon_container--circle" style="background: #19bc9c; padding: 0.2rem; cursor: pointer;">
+              <svg class="slds-icon slds-icon--small" aria-hidden="true" style="fill:#0b2c39; width: 1.2rem; height: 1rem;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#up')}"></use>
+              </svg>
+          </span>                  
+        </div>
+      </div>
+    </div>
+
+    <div class="content slds-hide">
+
+      <apex:outputPanel layout="block" styleClass="slds-text-body--regular slds-m-around--medium" id="SectionDER">
+        <!--<apex:outputText value="{!customDateExchangeSetupPage}" escape="false"/>-->
+        <!--<apex:iframe src="{!pageDateExchangeRate}" />-->
+
+        <!-- Show error message -->
+        <div class="slds-text-body--regular slds-m-around--medium">
+          <apex:outputPanel styleClass="{!styleMessageDER}" rendered="{!NOT(ISBLANK(messageDER))}">
+          <div style="color:#f7f9fb !important;">
+            <apex:outputText value="{!messageDER}" escape="false"/>
+          </div>
+          </apex:outputPanel>
+        </div>
+
+        <apex:actionFunction name="goToServer" action="{!goToServer}" reRender="target,date,objects" status="loading"/>
+
+            <apex:pageblock id="pageBlock">	
+                <apex:outputPanel id="rulesDiv" style="text-align: center;">
+                    <apex:variable value="{!0}" var="rowNum"/> 
+
+                    <!-- Config rules section -->
+                    <!--<apex:pageBlockSection columns="1" title="{!$Label.RULES_SECTION}" id="rulesSection">-->
+                        <!-- rules -->
+                        <apex:pageBlockTable value="{!rules}" var="rule" id="table" styleClass="slds-table slds-table_cell-buffer slds-table_bordered">
+                            <apex:column headerValue="Action" style="vertical-align: middle;" styleClass="slds-truncate">
+                                <apex:commandLink value="Remove" action="{!removeRowDER}" rerender="rulesDiv, SectionDER"  immediate="true" status="loading" rendered="{!OR(rowNum > 0, AND(rowNum=0, NOT(ISNULL(rule.record.Id))))}"> 
+                                    <apex:param value="{!rowNum}" name="rowToRemove" assignTo="{!rowToRemoveDER}"/>
+                                </apex:commandLink>
+                                <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Object__c.Label}" styleClass="slds-truncate">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Object__c}" size="1" id="objects" onchange="goToServer();" disabled="{!NOT(ISBLANK(rule.record.Id))}">
+                                    <apex:selectOptions value="{!rule.listObjects}"/>
+                                </apex:selectList>
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Target_Field__c.Label}" styleClass="slds-truncate">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Target_Field__c}" size="1" id="target">
+                                    <apex:selectOptions value="{!rule.ObjectTargetFields}"/>
+                                </apex:selectList>						        		
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Date_Field__c.Label}" styleClass="slds-truncate">
+                                <apex:selectList value="{!rule.record.s4g_currencies__Date_Field__c}" size="1" id="date">
+                                    <apex:selectOptions value="{!rule.ObjectDateFields}"/>
+                                </apex:selectList>						        		
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Active__c.Label}" style="vertical-align: middle;" styleClass="slds-truncate">
+                                <apex:inputField value="{!rule.record.s4g_currencies__Active__c}" style="left:auto;"/>
+                                <!--inputCheckbox-->
+                                <!--{!rule.record.s4g_currencies__Active__c}-->
+                            </apex:column>
+
+                            <apex:column headerValue="{!$ObjectType.s4g_currencies__Custom_Date_Exchange__c.fields.s4g_currencies__Status__c.Label}" style="vertical-align: middle;" styleClass="slds-truncate">
+                                <apex:outputField value="{!rule.record.s4g_currencies__Status__c}"/>
+                            </apex:column> 
+                        </apex:pageBlockTable>
+
+                        <br/>
+                        <!-- Buttons -->
+                        <apex:outputPanel layout="block" style="text-align: center">
+                            <apex:commandButton value="{!$Label.s4g_currencies__check_status_button}" action="{!checkDeployStatusDER}" styleclass="slds-button slds-button--neutral" rerender="rulesDiv, SectionDER" rendered="{!deployPendingDER}" status="loading" oncomplete="overridePageMessages();"/>
+                            <apex:commandButton disabled="{!deployPendingDER}" value="{!$Label.s4g_currencies__add_rule_button}" action="{!addRowDER}" rerender="rulesDiv, SectionDER" status="loading" styleclass="slds-button slds-button--neutral" oncomplete="overridePageMessages();"/>
+                            <apex:commandButton disabled="{!deployPendingDER}" value="{!$Label.s4g_currencies__save}" action="{!saveTranslationsRulesDER}" rerender="rulesDiv, SectionDER" status="loading" styleclass="slds-button slds-button--neutral" oncomplete="overridePageMessages();"/>
+                        </apex:outputPanel>
+
+                    <!--</apex:pageBlockSection>-->
+                </apex:outputPanel>
+            </apex:pageblock>
+      </apex:outputPanel>
+
+    </div>
+
+  </apex:outputPanel>
 </apex:form>
 
 <!-- LOG -->
@@ -341,7 +511,7 @@
 <div class="slds-text-body--regular slds-m-around--medium content">
     <p>
       <apex:outputText escape="false" value="{!$Label.s4g_currencies__log_text}" />&nbsp;
-      <apex:outputLink value="http://s4g.es/currency-updater/help-faq/#log" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
+      <apex:outputLink value="https://s4g.es/currency-updater/help-faq/#log" target="_blank">{!$Label.s4g_currencies__more_info}</apex:outputLink>
       <br />
       <br />
   </p>
@@ -351,11 +521,31 @@
 </div>
 </div>
 
+</apex:outputPanel>
 </div>
+
+<apex:outputPanel layout="block" rendered="{!!hasPermission}">
+  &nbsp;
+  <h1 style="font-size:2rem">{!$Label.ASSIGN_PS}</h1>
+  &nbsp;
+</apex:outputPanel>
 
 <apex:includeScript value="{!URLFOR($Resource.s4g_currencies__CUSetup, 'libs/jquery/dist/jquery.min.js')}" />
 
 <script>
+      function loading(val){
+        if(val){
+            document.getElementById("lighnintSpinner").style.display="block";
+            //document.getElementsByTagName("body")[0].style.overflow = "hidden";
+
+        }else{
+            document.getElementById("lighnintSpinner").style.display="none";
+            //document.getElementsByTagName("body")[0].style.overflow = "auto";
+            //overridePageMessages();
+
+        }
+      }
+
       $(function() {
 
           overridePageMessages();
@@ -364,13 +554,25 @@
           var okOAuthBooleanString = '{!okAuthorization}';
           var disabledButton = {!disabledButtons};
           var disableDatedConversionRate = {!!isActiveDatedConversionRate};
-          var disabledOrigin = ('{!corporateCurrency}' != 'EUR');
+          //var disabledOrigin = ('{!corporateCurrency}' != 'EUR');
 
           $('button').prop('disabled', disabledButton);
           
           $('#coAC, #coBB').prop('disabled', disableDatedConversionRate);
 
-          $('#oECB').prop('disabled', disabledOrigin);
+          //$('#oECB').prop('disabled', disabledOrigin);
+            
+          Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.CurrencyUpdaterStartController.getOriginSetting}',
+            function(result, event){
+              if (result != "oECB"){
+                  $('.warningOrigin').addClass('slds-hide');
+              }
+          }, 
+          {escape: true}
+          );
+
+          //$("input[name=FinancialForceButton][value='FFb']").prop("checked", {!updateFF});
 
           if (okOAuthBooleanString == 'true'){
               $('.navigatorTab button.next').prop("disabled",false);
@@ -388,6 +590,34 @@
             $('.navigatorTab button.back').addClass('slds-hide');
         }
 
+       var errorMessage = '{!messageFF}';
+        if (errorMessage != null && errorMessage != '') {
+          var element = $('.FFSection');
+          element.closest('.mainBar').find('.content').removeClass('slds-hide');
+          var icon = element.find('use').attr('xlink:href').split("#");
+          if(icon[1] == 'down'){
+              element.find('use').attr('xlink:href', icon[0]+'#up');
+          }else{
+              element.find('use').attr('xlink:href', icon[0]+'#down');
+          }
+          element = null;
+          icon = null; 
+        }
+
+        var errorMessageDER = '{!messageDER}';
+        if (errorMessageDER != null && errorMessageDER != '') {
+          var element = $('.DERSection');
+          element.closest('.mainBar').find('.content').removeClass('slds-hide');
+          var icon = element.find('use').attr('xlink:href').split("#");
+          if(icon[1] == 'down'){
+              element.find('use').attr('xlink:href', icon[0]+'#up');
+          }else{
+              element.find('use').attr('xlink:href', icon[0]+'#down');
+          }
+          element = null;
+          icon = null; 
+        }
+
         $('.toggleIcon').on('click', function(){
             //hide Content
             $(this).closest('.mainBar').find('.content').toggleClass('slds-hide');
@@ -399,6 +629,17 @@
               $(this).find('use').attr('xlink:href', icon[0]+'#down');
           }        
       });
+
+
+        $('.originClicked').on('click', function() {
+          var originSelected = $('input[name=originOpt]').filter(':checked').val();
+          if (originSelected == 'oECB') {
+            $('.warningOrigin').removeClass('slds-hide');
+          }
+          else {
+            $('.warningOrigin').addClass('slds-hide');
+          }
+        });
 
         $('#tabs .slds-tabs--default__item a').on('click', function(){
             if(firstConfiguration == 'false'){
@@ -428,13 +669,13 @@
                   $('.navigatorTab button.sche').addClass('slds-hide');
                   $('.navigatorTab button.scheRun').addClass('slds-hide');
                   $('.navigatorTab button.back').addClass('slds-hide');
-                  $('.navigatorTab button.next').html('{!$Label.SAVE}');
+                  $('.navigatorTab button.next').html('{!$Label.s4g_currencies__save}');
               }
               if('#'+idTab == '#tab-default-3'){
                   $('.navigatorTab button.sche').addClass('slds-hide');
                   $('.navigatorTab button.scheRun').addClass('slds-hide');
                   $('.navigatorTab button.back').addClass('slds-hide');
-                  $('.navigatorTab button.next').html('{!$Label.SAVE}');
+                  $('.navigatorTab button.next').html('{!$Label.s4g_currencies__save}');
               }
               if('#'+idTab == '#tab-default-4'){
                   $('.navigatorTab button.next').addClass('slds-hide');
@@ -580,6 +821,8 @@
           );
     }
 
+
+
     function getCurrencyTypeSF(){
 
         Visualforce.remoting.Manager.invokeAction(
@@ -618,17 +861,8 @@
         Visualforce.remoting.Manager.invokeAction(
             '{!$RemoteAction.CurrencyUpdaterStartController.getOriginSetting}',
             function(result, event){
-              if (result == "oYf"){
-                  $("input[name=originOpt][value='oYf']").prop("checked",true);
-              }
-              if (result == "oG"){
-                  $("input[name=originOpt][value='oG']").prop("checked",true);
-              }
               if (result == "oECB"){
                   $("input[name=originOpt][value='oECB']").prop("checked",true);
-              }
-              if (result == "oB"){
-                  $("input[name=originOpt][value='oB']").prop("checked",true);
               }
               if (result == "oCL"){
                   $("input[name=originOpt][value='oCL']").prop("checked",true);

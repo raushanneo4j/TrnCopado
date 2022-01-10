@@ -3,6 +3,14 @@
     <label>ProductOrgData</label>
     <protected>false</protected>
     <values>
+        <field>NEOSUBAURADSMT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>NEOSUBAURADSVPSI__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>NEOSUBAURA__c</field>
         <value xsi:type="xsd:string">Neo4j - AuraDB</value>
     </values>

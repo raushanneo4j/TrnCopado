@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_62892448</developerName>
+        <masterLabel>Product Name Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Subscription - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Business Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Discovery Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (License)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - OEM</sourceValue>
+            </sourceValues>
+            <value>Subscription/Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Professional Services - Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - PS - Consulting</sourceValue>
+            </sourceValues>
+            <value>PS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partnership</sourceValue>
+            </sourceValues>
+            <value>Partnership</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Perpetual - OEM (Royalty)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <value>Perpetual/POC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.ARR__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>steven thomas</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>ST Opps Created This Quarter</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

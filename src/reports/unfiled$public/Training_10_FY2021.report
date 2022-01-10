@@ -100,7 +100,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
-            <value>THIS_YEAR</value>
+            <value>LAST_YEAR</value>
         </criteriaItems>
         <criteriaItems>
             <column>Campaign.Campaign_Source_Type__c</column>
@@ -131,18 +131,11 @@
             <value>TR 21</value>
         </criteriaItems>
         <criteriaItems>
-            <column>CAMPAIGN.END_DATE</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>lessOrEqual</operator>
-            <value>4/1/2021</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CampaignMember.SAO_Date__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LAST_QUARTER</value>
+            <value>LAST_N_QUARTERS:4</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

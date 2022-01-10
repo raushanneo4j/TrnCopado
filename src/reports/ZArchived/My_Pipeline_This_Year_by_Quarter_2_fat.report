@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities.OpportunityLineItems$ARR__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities.OpportunityLineItems$UnitPrice.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2.Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities.OpportunityLineItems$UnitPrice</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Use_Case__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <description>excludes holdover opps, includes opps owned by AM</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Free Startup License,Free Education License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Qualification,Needs Analysis,Renewal 25%,Proposal/Price Quote,Renewal 50%,Selected / Negotiation,Renewal 75%,Renewal DQ 90%,Contract Negotiation,Procurement,Sales Ops Review,Closed Won,Closed Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>Account.Opportunities$CloseDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Opportunities$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My Pipeline This Year by Quarter (2)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Opportunities_and_products__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Opportunities$CloseDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

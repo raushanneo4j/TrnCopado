@@ -1,0 +1,62 @@
+{
+  "appPageId" : "c5dd93d5-0515-442f-9b0e-6748b09dda25",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "e51b7476-b988-4a9a-a92b-97d0a1ea8bbe",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "8a68d4d8-09ba-4937-80df-9a479b0840b4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-family: sans-serif; font-size: 16px;\">﻿</span><span style=\"font-size: 16px;\">Customer Community</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d3d75eb2-4603-4b5c-8671-95752ea59f54",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/ForgotPassword",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "Not a member?",
+        "selfRegisterUrl" : "/SelfRegister",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "147313d5-104a-49a6-b894-fdba7e6ae33e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2b182cec-0504-4802-a398-532215048480",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2ad6c38a-49b7-4dcc-ac93-9f461a6ae90c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "10d573b1-35d5-4b38-941d-06258b333566",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

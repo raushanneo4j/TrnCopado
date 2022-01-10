@@ -5,9 +5,22 @@
 	    
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/RollupRun.js') }"/>                
 	    	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>	       	
-	    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+	    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	     </head>
 	
+		 <style>     			
+			.popoverDefault{
+				display:none;
+				max-height:0px; 
+				overflow:visible;   
+				overflow-y:visible; 
+				position:relative; 
+				white-space:normal;
+				z-index:99; 
+				text-align:left; 
+			}
+		</style>
+
 	     <script type="text/javascript">
     	//Verify namespace is ready
         var rh = rh || {};
@@ -85,6 +98,7 @@
           <apex:actionFunction action="{!ensureRFAJobExists}" name="rfaCheck" />
           <apex:actionFunction action="{!setMaxRecordsForRunAll}" name="setRunAll" rerender="amount"/>
 		  <apex:actionFunction name="rerenderFilterLinks" rerender="filterLinks"/>
+		  <apex:actionFunction name="rerenderPopover" rerender="parentFilterPopover"/>
 
 		     <div class="slds-scope" role="main"> 
 		     	<apex:inputHidden value="{!maxRecords}" id="maxRecords"/>   
@@ -203,15 +217,29 @@
                     </div>  
                     
                         <br/>
-                    <div class="slds-grid">                    
-	        			<div class="slds-col_padded slds-text-align_right slds-size_1-of-12" >      				
-	        				{!$Label.RunForAllRecords}
-	                    </div>
-	                    <div class="slds-col slds-size_1-of-12" >
-                            <apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" onchange="changeValue(); return false;"  />
-	                    </div>	
+                    <apex:outputPanel styleClass="slds-grid" id="parentFilterPopover"> 
+						<apex:outputPanel rendered="{!existingFilterSelected}" styleClass="slds-col_padded slds-text-align_right slds-size_1-of-12">            
+							<p>
+								<a onmouseover="rh.j$('#help-runForAllRecords').toggle();" onmouseout="rh.j$('#help-runForAllRecords').toggle();">
+									<img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+								</a>{!$Label.RunForAllRecords}</p>
+
+							<div class="slds-col popoverDefault" id="help-runForAllRecords">
+								<div class="slds-popover slds-popover_tooltip slds-nubbin_top-left" role="dialog" >
+									<div class="slds-popover__body">
+										{!$Label.RunForAllMatchingRecs} "{!selectedFilterCondition}"
+									</div>
+								</div>
+							</div>
+						</apex:outputPanel>
+						<apex:outputPanel rendered="{!NOT(existingFilterSelected)}" styleClass="slds-col_padded slds-text-align_right slds-size_1-of-12">
+							{!$Label.rh2__runforallrecords}
+						</apex:outputPanel>
+						<div class="slds-col slds-size_1-of-12" >
+							<apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" onchange="changeValue(); return false;"  />
+						</div>
                         <div class="slds-col slds-size_10-of-12"></div>
-          			</div>
+          			</apex:outputPanel>
           			<br/>
           			<div class="slds-grid">          		
           				<div class="slds-col_padded slds-size_1-of-12 slds-text-align_right" >
@@ -240,7 +268,7 @@
 							{!$Label.ParentFilter}
           				</div>
           				<div class="slds-col slds-size_1-of-12 ">
-          					<apex:selectList value="{!selectedFilter}" onchange="countRecords(this.value); rerenderFilterLinks();" size="1" style="width:100% !important;">
+          					<apex:selectList value="{!selectedFilter}" onchange="countRecords(this.value); rerenderFilterLinks(); rerenderPopover();" size="1" style="width:100% !important;">
 								<apex:selectOptions value="{!ValidFiltersForObject}"/>
 							</apex:selectList>  
 						</div>

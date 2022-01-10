@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Account</field>
+    </columns>
+    <columns>
+        <field>Contact$mkto71_Acquisition_Program__c</field>
+    </columns>
+    <columns>
+        <field>Contact$mkto71_Acquisition_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contact$mkto71_Acquisition_Program__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>WBP</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of Contacts Contact Us</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Only__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$mkto71_Acquisition_Date__c</dateColumn>
+        <endDate>2020-03-04</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-03-02</startDate>
+    </timeFrameFilter>
+</Report>

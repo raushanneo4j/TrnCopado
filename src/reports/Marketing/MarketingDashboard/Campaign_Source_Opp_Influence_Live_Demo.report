@@ -106,8 +106,8 @@
             <column>CAMPAIGN.END_DATE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>THIS_YEAR</value>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPP.CREATED_DATE</column>
@@ -137,6 +137,13 @@
             <operator>equals</operator>
             <value>APAC,Global</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.START_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>12/31/2021</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -154,7 +161,7 @@
         <field>CAMPAIGN.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Campaign Source Opp Influence-Live Demo</name>
+    <name>Campaign Source Opp Infl-Live Demo 2021</name>
     <params>
         <name>scopeid</name>
         <value></value>

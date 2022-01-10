@@ -15774,6 +15774,144 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CloudingoAgent__CES__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact Email Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__MAR__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing Address Record Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__MAS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing Address Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__MAV__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing Address Vacancy</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__MRDI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing Residential Delivery Indicator</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__MTZ__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mailing Timezone</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__OAR__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Address Record Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__OAS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Address Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__OAV__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Address Vacancy</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__ORDI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Residential Delivery Indicator</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__OTZ__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Timezone</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Company_Phone__c</fullName>
         <description>Company&apos;s main phone line</description>
         <externalId>false</externalId>
@@ -15842,7 +15980,7 @@
     </fields>
     <fields>
         <fullName>Contact_Status_Change_Date__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>Admin time stamp field used for auditing purposes and in certain integrations, including RingLead to help accurately determine the winning record that will survive the merge. JIRA: SFDCSPT-163</description>
         <externalId>false</externalId>
@@ -18269,7 +18407,7 @@ IF(CONTAINS(&quot;Australia : Bangladesh : Cambodia : Bhutan : China : Guam : Ho
     </fields>
     <fields>
         <fullName>Marketplace_Order__c</fullName>
-        <businessOwnerUser>lance.kaji@neotechnology.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>lance.kaji@neotechnology.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <defaultValue>false</defaultValue>
         <description>SFDCSPT-276</description>
@@ -18525,7 +18663,7 @@ IF(CONTAINS(&quot;Australia : Bangladesh : Cambodia : Bhutan : China : Guam : Ho
     </fields>
     <fields>
         <fullName>Outeach_Status__c</fullName>
-        <businessOwnerUser>stephen.depaoli@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>stephen.depaoli@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>Temporary field to store outreach status until outreach status values match SFDC</description>
         <externalId>false</externalId>
@@ -18604,6 +18742,20 @@ IF(CONTAINS(&quot;Australia : Bangladesh : Cambodia : Bhutan : China : Guam : Ho
             </valueSetDefinition>
         </valueSet>
         <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PassedProfanityCheck__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>false</defaultValue>
+        <description>This field is used by Data Stewards to tag Contact records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or email address may be flagged by the tool (e.g. last name Cuntz). JIRA: SFDCSPT-817</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by Data Stewards to tag Contact records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or email address may be flagged by the tool (e.g. last name Cuntz).</inlineHelpText>
+        <label>Passed Profanity Check</label>
+        <securityClassification>Internal</securityClassification>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Pause_Lifecycle__c</fullName>
@@ -19042,7 +19194,7 @@ IF(CONTAINS(&quot;Australia : Bangladesh : Cambodia : Bhutan : China : Guam : Ho
     </fields>
     <fields>
         <fullName>Synced_from_Outreach__c</fullName>
-        <businessOwnerUser>stephen.depaoli@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>stephen.depaoli@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of the Salesforce and Outreach integration. Will display &quot;1&quot; when a record is synced from Outreach to Salesforce. Do NOT change field type to Checkbox -- in Outreach custom fields are &quot;Text&quot; only, so the target field in Salesforce must be of the same type.
 
@@ -21368,6 +21520,9 @@ pse__Utilization_Target_Hours__c / ( pse__Historical_Utilization_Calendar_Hours_
         <columns>Opportunity__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>CS_contacts</fullName>
@@ -21390,17 +21545,9 @@ pse__Utilization_Target_Hours__c / ( pse__Historical_Utilization_Calendar_Hours_
             <value>Contact.PSA_Resource</value>
         </filters>
         <label>PSA Contacts</label>
-    </listViews>
-    <listViews>
-        <fullName>MyContacts</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CONTACT.TITLE</columns>
-        <columns>CONTACT.PHONE1</columns>
-        <columns>CONTACT.EMAIL</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Mine</filterScope>
-        <label>My Contacts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>My_MQL_Contacts</fullName>
@@ -21431,6 +21578,9 @@ pse__Utilization_Target_Hours__c / ( pse__Historical_Utilization_Calendar_Hours_
             <value>Contact.Neo4j_Contact_Layout</value>
         </filters>
         <label>My MQL Contacts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>My_SAL_Contacts</fullName>
@@ -21461,6 +21611,9 @@ pse__Utilization_Target_Hours__c / ( pse__Historical_Utilization_Calendar_Hours_
             <value>Contact.Neo4j_Contact_Layout</value>
         </filters>
         <label>My SAL Contacts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>psaws__Resources_Started_in_the_Last_30_Days</fullName>
@@ -21483,6 +21636,9 @@ pse__Utilization_Target_Hours__c / ( pse__Historical_Utilization_Calendar_Hours_
             <value>LAST_N_DAYS:30</value>
         </filters>
         <label>Resources Started in the Last 30 Days</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>

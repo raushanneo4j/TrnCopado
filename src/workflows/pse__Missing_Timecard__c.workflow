@@ -8,6 +8,10 @@
             <field>pse__Resource__c</field>
             <type>contactLookup</type>
         </recipients>
+        <recipients>
+            <recipient>maria.turegano@neo4j.com</recipient>
+            <type>user</type>
+        </recipients>
         <senderType>DefaultWorkflowUser</senderType>
         <template>PSA_Email_Templates/PSA_Missing_Timecard</template>
     </alerts>

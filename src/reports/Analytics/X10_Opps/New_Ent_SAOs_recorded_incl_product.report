@@ -117,21 +117,7 @@
     <currency>USD</currency>
     <description>&gt;1bn enterprise definition globally; Recorded in period, with continued product requirement</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 4 AND 3 AND 5</booleanFilter>
-        <criteriaItems>
-            <column>PRODUCT_NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>contains</operator>
-            <value>Subscription - OEM (Platform),Subscription - Enterprise,Subscription - Business Bundle,Subscription - Discovery Bundle,Subscription - Enterprise Bundle,Subscription - GraphDataScience Bundle – “Large”,Subscription - GraphDataScience Bundle – “Regular”,Subscription - GraphDataScience Bundle – “Starter”,Neo4j - AuraDB,Subscription - GraphDataScience Bundle – “Mini”,Subscription - GraphDataScience Dev Instance - &quot;Regular&quot;,Subscription - GraphDataScience Dev Instance - &quot;Mini&quot;,Subscription - GraphDataScience Dev Instance - &quot;Starter&quot;,Subscription - GraphDataScience Dev Instance - &quot;Large&quot;</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OpportunityLineItem.Product_Type__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>New,Cross-Sell</value>
-        </criteriaItems>
+        <booleanFilter>2 AND 1 AND 3</booleanFilter>
         <criteriaItems>
             <column>Opportunity.Recorded_Opp__c</column>
             <columnToColumn>false</columnToColumn>
@@ -147,11 +133,11 @@
             <value>LAST_QUARTER</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.ARR__c</column>
+            <column>Opportunity.EligibleforSAOCredit__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>greaterThan</operator>
-            <value>USD 0</value>
+            <operator>equals</operator>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

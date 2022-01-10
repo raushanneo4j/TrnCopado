@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_14775292</developerName>
+        <masterLabel>Enterprise?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Account_Revenue__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1 Billion - 5 Billion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5 Billion +</sourceValue>
+            </sourceValues>
+            <value>Enterprise</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59752842</developerName>
+        <masterLabel>Geo</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Bill Brooks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Art Thainuruk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Flynn</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bruno Ungermann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cédric Fauvet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deniz Omer-Houssein</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fredrik Johansson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gordon Carrick</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hessan Haiderzada</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Samaan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Peter Hall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rik Van Bruggen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dirk Moeller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherman Urrutia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frédéric Louis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonny Cheetham</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>UNIT_PRICE.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_59752842</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_14775292</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>professional</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_59752842</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_14775292</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>1H 2018 Global vs EMEA PS</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2018-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-01-01</startDate>
+    </timeFrameFilter>
+</Report>

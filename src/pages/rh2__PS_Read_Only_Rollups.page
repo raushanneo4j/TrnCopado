@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" />  
     </head> 
     <apex:form id="theForm">
@@ -127,7 +127,7 @@
                                                     <span title="{!$Label.DoesNotOverwrite}"><i class="fa fa-lock"></i></span>
                                                 </apex:outputPanel>
                                                 <apex:outputPanel rendered="{! !item.Blank_Overwrite__c }">
-                                                    <span title="Does Not Overwrite Field Values With Blank Values"><i class="fa fa-lock-open"></i></span>
+                                                    <span title="{!$Label.DoesNotOverwriteBlank}"><i class="fa fa-unlock-alt"></i></span>
                                                 </apex:outputPanel>
                                             </td>
                                             <td class="slds-cell-wrap hidecol" style="word-break:break-all;" data-label="{!$Label.rh2__relationshipfield}">{! item.relationshipField__c }</td>

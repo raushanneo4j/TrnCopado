@@ -94,17 +94,6 @@
         <label><!-- Suggested Bill Rate --></label>
         <name>pse__Suggested_Bill_Rate__c</name>
     </fields>
-    <layouts>
-        <layout>Rate Card Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Summary --></label>
-            <section>Summary</section>
-        </sections>
-    </layouts>
     <validationRules>
         <errorMessage><!-- Rate Card must not reference more than one of the following: Account, Region, Practice, Group. --></errorMessage>
         <name>pse__Rate_Card_May_Not_Have_Multiple_Targets</name>

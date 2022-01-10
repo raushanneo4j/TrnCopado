@@ -4,7 +4,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
      <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
     
-     <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+     <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
      <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
      <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
@@ -174,10 +174,14 @@
 											<h3>What do the symbols on the All Rollup Settings page mean?</h3>
 											<div>
 													<ul>
-														<li><i class="fa fa-bolt"></i>:  The lightning bolt signals that the rollup is set to run in real-time (a source object trigger exists).</li>
+														<li><i class="fa fa-bolt"></i>:  The lightning bolt signifies that the rollup is set to run in real-time (a source object trigger exists).</li>
+														<li><i class="fa fa-times"></i>: This symbol signifies that realtime is disabled on the source object or trigger.</li>
+														<li><i class="fa fa-times-circle"></i>: This symbol signifies that realtime is disabled only for the rollup.</li>
 														<li><i class="fa fa-calendar"></i>:  The calendar signifies that the rollup is set to run on a scheduled basis.</li>
 														<li><i class="fa fa-info-circle"></i>:  This symbol signifies that the rollup is not set to run automatically currently (no trigger or schedule exists).</li>
 														<li><i class="fa fa-exclamation-triangle"></i>: This symbol signifies that the rollup is inactivated and will not run, manually or otherwise, until it is reactivated.</li>
+														<li><i class="fa fa-lock"></i>: The lock signifies that the rollup does not overwrite existing field values.</li>
+														<li><i class="fa fa-unlock-alt"></i>: The open lock signifies that the rollup does not overwrite populated fields with blank values.</li>
 													</ul>
 													<br/>
 													Please note that any given rollup can both be scheduled and processing in real time.
@@ -390,7 +394,7 @@
 			  <div id="tab-default-3" class="slds-tabs__content slds-hide" role="tabpanel"> 
 			  		<apex:actionRegion > 		                
 		                <div style="padding-left:15px;">
-		                	<h3 class="slds-text-heading_small">Rollup Helper Help Video Playlist</h3><br/>
+		                	<h3 class="slds-text-heading_small"><apex:outputLink target="_blank" value="http://rhdemo.passagetech.com">Rollup Helper Help Video Playlist</apex:outputLink></h3><br/>
 		               		<div id="videos" > 		               
 				               <div>
 									<apex:iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLfryc3zXHX0rrITdFDrn-ONgswUCwzmTu&rel=0" frameborder="0" />

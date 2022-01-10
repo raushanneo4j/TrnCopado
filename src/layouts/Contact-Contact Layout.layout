@@ -344,6 +344,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>PassedProfanityCheck__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Synced_from_Outreach__c</field>
             </layoutItems>
             <layoutItems>
@@ -555,6 +559,21 @@
             <actionName>Generate_License_Key</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>14</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EnableCustomerPortal</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>15</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ViewCustomerPortal</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>16</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>LoginToNetworkAsUser</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>17</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>

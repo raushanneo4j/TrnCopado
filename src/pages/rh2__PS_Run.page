@@ -6,7 +6,7 @@
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/RollupRun.js') }"/>
     	 <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
      </head>
 
   <script>
@@ -163,7 +163,8 @@
                                 <center><apex:commandButton styleClass="slds-button slds-button_brand" id="runButton" value="{!$Label.rh2__startrolluprun}" action="{!runForAllRecords}" onClick="if (!confirmRunOnce({!overwrite}, {!blankOverwrite}, '{!targetField}')) return false;"/> </center>                        
                               
                                 <apex:inputHidden value="{!maxRecords}" id="maxRecords"/>    
-                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__ParentFilter__c}" />              		
+                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__ParentFilter__c}" />             
+                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" />            		
              				</div> 
              			</div>
              		</div>                   

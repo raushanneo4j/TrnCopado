@@ -10,13 +10,6 @@
         <name>pse__Rate_Card__c</name>
         <relationshipLabel><!-- Rate Card Set Junctions --></relationshipLabel>
     </fields>
-    <layouts>
-        <layout>Rate Card Set Junction Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <validationRules>
         <errorMessage><!-- You cannot associate the rate card with the rate card set. They must both use the same currency. --></errorMessage>
         <name>pse__Rate_Card_Set_Currency_Mismatch</name>

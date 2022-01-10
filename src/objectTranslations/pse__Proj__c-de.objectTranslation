@@ -133,6 +133,11 @@
         <name>MarginPercent__c</name>
     </fields>
     <fields>
+        <help><!-- Backend field used as a workaround to run scheduled flows on a monthly basis, which isn&apos;t an option as of January 2022. The box is checked if the present day is the first day of the month. It&apos;s used in the conditions of the scheduled flow. --></help>
+        <label><!-- Monthly Flow Schedule --></label>
+        <name>MonthlyFlowSchedule__c</name>
+    </fields>
+    <fields>
         <help><!-- This field identifies if this customer is managed through PSA Community --></help>
         <label><!-- PSA Community Customer --></label>
         <name>PSA_Community_Customer__c</name>
@@ -149,6 +154,11 @@
         <help><!-- Hours billed in legacy project tracking - prior to PSA go-live --></help>
         <label><!-- Previously Billed Hours --></label>
         <name>Previously_Billed_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden checkbox used by the &apos;FF PROJECT: ! 4 PS Customer Project Hours Used Email Alert&apos; flow that sends an email alert to a customer when the sends an email alert to the customer contacts when the value in the &apos;Percent Complete (Hours)&apos; field passes a certain percentage threshold and the project record meets certain criteria. The purpose of the checkbox is to ensure the email is sent only once and subsequent percentage increases don&apos;t trigger the flow. --></help>
+        <label><!-- Project Hours Used Alert Sent --></label>
+        <name>ProjectHoursUsedAlertSent__c</name>
     </fields>
     <fields>
         <label><!-- PSR Assignments Segment --></label>
@@ -294,6 +304,11 @@
         <name>ProjectStatusReport_Week_Starting_Date__c</name>
     </fields>
     <fields>
+        <help><!-- Backend field used in automation that sends an email to alert the designated PS contacts associated with the opportunity on the project record that the project closes in 60 days and, as per OF/SOW, the remaining PS hours/days and could no longer be used. --></help>
+        <label><!-- Project Expires in 60 Days --></label>
+        <name>Project_Expires_in_60_Days__c</name>
+    </fields>
+    <fields>
         <help><!-- Total hours on SOW --></help>
         <label><!-- SOW Hours --></label>
         <name>SOW_Hours__c</name>
@@ -301,6 +316,11 @@
     <fields>
         <label><!-- Status Report Week Ending --></label>
         <name>Status_Report_Week_Ending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Color code to visually indicate the status of the project. The colors are mapped to the values in the &apos;Project Status&apos; picklist field. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
     </fields>
     <fields>
         <label><!-- Actual Hours --></label>
@@ -1880,221 +1900,6 @@
         <relationshipLabel><!-- Projects --></relationshipLabel>
     </fields>
     <gender>Masculine</gender>
-    <layouts>
-        <layout>PSA Partner Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Fields --></label>
-            <section>Fields</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>PSR - Project Layout</layout>
-        <sections>
-            <label><!-- Actuals --></label>
-            <section>Actuals</section>
-        </sections>
-        <sections>
-            <label><!-- Backlog --></label>
-            <section>Backlog</section>
-        </sections>
-        <sections>
-            <label><!-- Billing Eligible Records --></label>
-            <section>Billing Eligible Records</section>
-        </sections>
-        <sections>
-            <label><!-- Project Attributes --></label>
-            <section>Project Attributes</section>
-        </sections>
-        <sections>
-            <label><!-- Project Hierarchy --></label>
-            <section>Project Hierarchy</section>
-        </sections>
-        <sections>
-            <label><!-- Project Monitor --></label>
-            <section>Project Monitor</section>
-        </sections>
-        <sections>
-            <label><!-- Project Status --></label>
-            <section>Project Status</section>
-        </sections>
-        <sections>
-            <label><!-- Selected Time Period --></label>
-            <section>Selected Time Period</section>
-        </sections>
-        <sections>
-            <label><!-- Time Actuals --></label>
-            <section>Time Actuals</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Project - BP</layout>
-        <sections>
-            <label><!-- Backlog --></label>
-            <section>Backlog</section>
-        </sections>
-        <sections>
-            <label><!-- Billing Eligible Records --></label>
-            <section>Billing Eligible Records</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Information --></label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label><!-- New Project Status Report --></label>
-            <section>New Project Status Report</section>
-        </sections>
-        <sections>
-            <label><!-- Project Attributes --></label>
-            <section>Project Attributes</section>
-        </sections>
-        <sections>
-            <label><!-- Project Billing Event Tracking --></label>
-            <section>Project Billing Event Tracking</section>
-        </sections>
-        <sections>
-            <label><!-- Project Monitor --></label>
-            <section>Project Monitor</section>
-        </sections>
-        <sections>
-            <label><!-- Revenue Actuals --></label>
-            <section>Revenue Actuals</section>
-        </sections>
-        <sections>
-            <label><!-- Revenue Forecasting --></label>
-            <section>Revenue Forecasting</section>
-        </sections>
-        <sections>
-            <label><!-- System Information --></label>
-            <section>System Information</section>
-        </sections>
-        <sections>
-            <label><!-- Time Actuals --></label>
-            <section>Time Actuals</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Project Detail Layout</layout>
-        <sections>
-            <label>Rückstand</label>
-            <section>Backlog</section>
-        </sections>
-        <sections>
-            <label>Benutzerdefinierte Links</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>Geschätzte Kosten und Erlöse Zusammenfassung</label>
-            <section>Estimated Cost and Revenue Summary</section>
-        </sections>
-        <sections>
-            <label>Finanzen</label>
-            <section>Financials</section>
-        </sections>
-        <sections>
-            <label>Std</label>
-            <section>Hours</section>
-        </sections>
-        <sections>
-            <label>Information</label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label>Projektattribute</label>
-            <section>Project Attributes</section>
-        </sections>
-        <sections>
-            <label>Projekt-Status</label>
-            <section>Project Status</section>
-        </sections>
-        <sections>
-            <label><!-- Project Tracking --></label>
-            <section>Project Tracking</section>
-        </sections>
-        <sections>
-            <label>Projektabweichung</label>
-            <section>Project Variance</section>
-        </sections>
-        <sections>
-            <label>System Information</label>
-            <section>System Information</section>
-        </sections>
-    </layouts>
-    <layouts>
-        <layout>Project Layout</layout>
-        <sections>
-            <label>Tatsächliche</label>
-            <section>Actuals</section>
-        </sections>
-        <sections>
-            <label>Rückstand</label>
-            <section>Backlog</section>
-        </sections>
-        <sections>
-            <label>Berechtigte Datensätze abrechnen</label>
-            <section>Billing Eligible Records</section>
-        </sections>
-        <sections>
-            <label>Kosten- und Umsatzübersicht</label>
-            <section>Cost and Revenue Summary</section>
-        </sections>
-        <sections>
-            <label>Benutzerdefinierte Links</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label>Information</label>
-            <section>Information</section>
-        </sections>
-        <sections>
-            <label>Projektattribute</label>
-            <section>Project Attributes</section>
-        </sections>
-        <sections>
-            <label>Projekthierarchie</label>
-            <section>Project Hierarchy</section>
-        </sections>
-        <sections>
-            <label>Projektmonitor</label>
-            <section>Project Monitor</section>
-        </sections>
-        <sections>
-            <label>Projekt-Status</label>
-            <section>Project Status</section>
-        </sections>
-        <sections>
-            <label>Projektabweichung</label>
-            <section>Project Variance</section>
-        </sections>
-        <sections>
-            <label>Ausgewählter Zeitraum</label>
-            <section>Selected Time Period</section>
-        </sections>
-        <sections>
-            <label>System Information</label>
-            <section>System Information</section>
-        </sections>
-        <sections>
-            <label>Aufgabeninformationen</label>
-            <section>Task Information</section>
-        </sections>
-        <sections>
-            <label>Prüfung</label>
-            <section>Test</section>
-        </sections>
-        <sections>
-            <label>Zeit Actuals</label>
-            <section>Time Actuals</section>
-        </sections>
-    </layouts>
     <nameFieldLabel>Projektname</nameFieldLabel>
     <sharingReasons>
         <label><!-- PSE Member Share --></label>

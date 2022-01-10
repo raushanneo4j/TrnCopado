@@ -292,7 +292,7 @@
     </fieldSets>
     <fields>
         <fullName>ABM_Account_Maturity__c</fullName>
-        <businessOwnerUser>brock.alston@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>brock.alston@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>Formula field to determine &quot;account level&quot;. Account level was defined by Matzen Shirley (ABM Manager). This field is currently used by Brock Alston. His Territory Machine (Google Doc) pulls data out of this field.</description>
         <externalId>false</externalId>
@@ -644,6 +644,130 @@ IF(Number_of_Contacts__c &gt; 0, &quot;Informed Account&quot;,&quot;Greenfield A
         </valueSet>
     </fields>
     <fields>
+        <fullName>CloudingoAgent__BAR__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Address Record Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__BAS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Address Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__BAV__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Address Vacancy</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__BRDI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Residential Delivery Indicator</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__BTZ__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Timezone</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__SAR__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Address Record Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__SAS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Address Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__SAV__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Address Vacancy</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__SRDI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Residential Delivery Indicator</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__STZ__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Timezone</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Count_1__c</fullName>
         <description>Power of 1 formula field.</description>
         <externalId>false</externalId>
@@ -843,6 +967,8 @@ IF(Number_of_Contacts__c &gt; 0, &quot;Informed Account&quot;,&quot;Greenfield A
     </fields>
     <fields>
         <fullName>DNBoptimizer__DNB_D_U_N_S_Number__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
         <deprecated>false</deprecated>
         <description>Upon successful match, Optimizer populates this field and references it for future refreshes. The Dun &amp; Bradstreet D-U-N-S® Number is an identification number assigned by Dun &amp; Bradstreet that uniquely identifies the entity in accordance with the Data Universal Numbering System (D-U-N-S).</description>
         <externalId>false</externalId>
@@ -850,6 +976,7 @@ IF(Number_of_Contacts__c &gt; 0, &quot;Informed Account&quot;,&quot;Greenfield A
         <label>D&amp;B DUNS Number</label>
         <length>9</length>
         <required>false</required>
+        <securityClassification>Internal</securityClassification>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
@@ -1576,6 +1703,9 @@ JIRA: SFDCSPT-149</description>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>IsCustomerPortal</fullName>
+    </fields>
+    <fields>
         <fullName>Is_Processed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2231,7 +2361,7 @@ JIRA: SFDCSPT-149</description>
     </fields>
     <fields>
         <fullName>Partnership_Group_Products_Closed_Won__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Partnership&quot;, associated with Open Opportunities on the Account (Partnership). JIRA: SFDCSPT-96</description>
         <externalId>false</externalId>
@@ -2255,7 +2385,7 @@ JIRA: SFDCSPT-149</description>
     </fields>
     <fields>
         <fullName>Partnership_Group_Products_Open__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Partnership&quot;, associated with Open Opportunities on the Account (Professional Services: Consulting, Innovation Lab, Training). JIRA: SFDCSPT-96</description>
         <externalId>false</externalId>
@@ -2276,6 +2406,20 @@ JIRA: SFDCSPT-149</description>
         <summaryOperation>count</summaryOperation>
         <trackHistory>false</trackHistory>
         <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PassedProfanityCheck__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>false</defaultValue>
+        <description>This field is used by Data Stewards to tag Account records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or website may be flagged by the tool (e.g. Dick&apos;s Sporting Goods). JIRA: SFDCSPT-817</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by Data Stewards to tag Account records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or website may be flagged by the tool (e.g. Dick&apos;s Sporting Goods).</inlineHelpText>
+        <label>Passed Profanity Check</label>
+        <securityClassification>Internal</securityClassification>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Phone</fullName>
@@ -2404,7 +2548,7 @@ IMAGE(&apos;/resource/ProductGroupTractionSubscriptionBW&apos;,&apos;Subscriptio
     </fields>
     <fields>
         <fullName>Prof_Services_Group_Products_Closed_Won__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Professional Services&quot;, associated with Closed Won Opportunities on the Account (Professional Services: Consulting, Innovation Lab, Training). JIRA: SFDCSPT-96</description>
         <externalId>false</externalId>
@@ -2428,7 +2572,7 @@ IMAGE(&apos;/resource/ProductGroupTractionSubscriptionBW&apos;,&apos;Subscriptio
     </fields>
     <fields>
         <fullName>Prof_Services_Group_Products_Open__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Professional Services&quot;, associated with Open Opportunities on the Account (Professional Services: Consulting, Innovation Lab, Training). JIRA: SFDCSPT-96</description>
         <externalId>false</externalId>
@@ -2698,7 +2842,7 @@ A clear way for Field Marketing and Sales to identify specific accounts to run t
     </fields>
     <fields>
         <fullName>Subscription_Group_Products_Closed_Won__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Subscription&quot;, associated with Closed Won Opportunities on the Account (Subscription: GraphDataScience, OEM, Startup, Discovery, Advanced, Business, Enterprise, Aura Enterprise, Bloom, Kerberos, Linkurious).
 JIRA: SFDCSPT-96</description>
@@ -2723,7 +2867,7 @@ JIRA: SFDCSPT-96</description>
     </fields>
     <fields>
         <fullName>Subscription_Group_Products_Open__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Subscription&quot;, associated with Open Opportunities on the Account (Subscription: GraphDataScience, OEM, Startup, Discovery, Advanced, Business, Enterprise, Aura Enterprise, Bloom, Kerberos, Linkurious).
 JIRA: SFDCSPT-96</description>
@@ -2748,7 +2892,7 @@ JIRA: SFDCSPT-96</description>
     </fields>
     <fields>
         <fullName>Support_Group_Products_Closed_Won__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Support&quot;, associated with Open Opportunities on the Account (Support: Dedicated, Enterprise, Managed Services, OEM, Platinum).
 JIRA: SFDCSPT-96</description>
@@ -2773,7 +2917,7 @@ JIRA: SFDCSPT-96</description>
     </fields>
     <fields>
         <fullName>Support_Group_Products_Open__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of Traction tool implementation. Shows the number of Products from a distinct Group - &quot;Support&quot;, associated with Open Opportunities on the Account (Support: Dedicated, Enterprise, Managed Services, OEM, Platinum).
 JIRA: SFDCSPT-96</description>
@@ -3687,7 +3831,6 @@ The country code is required for the correct reporting of VAT on cross-border tr
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.FIRST_NAME</columns>
         <columns>CORE.USERS.LAST_NAME</columns>
-        <columns>PARENT_NAME</columns>
         <columns>Is_Processed__c</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
@@ -3695,26 +3838,9 @@ The country code is required for the correct reporting of VAT on cross-border tr
         <columns>ACCOUNT.LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Changing_Account_List_View</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>Account_Revenue__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.LAST_UPDATE</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <operation>equals</operation>
-            <value>dgord</value>
-        </filters>
-        <label>Changing Account List View</label>
-        <sharedTo/>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
     <listViews>
         <fullName>MyAccounts</fullName>

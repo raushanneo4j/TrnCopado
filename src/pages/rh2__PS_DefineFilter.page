@@ -8,7 +8,7 @@
         <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
         <apex:includeScript value="{!$Resource.rh2__PT_TimePicker_JS}"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
@@ -47,6 +47,21 @@
             }
         }
 
+        function verifyAdvancedMultipicklistCheck(controllerVal) {
+            checkboxVal = rh.j$("[Id$='advancedMultipicklistCheck']").is(":checked");
+            if (checkboxVal != controllerVal) {	
+                manualUpdateAdvancedMulti(checkboxVal);	
+            }
+            runAdvancedMultiVal();
+        }
+
+        function verifyAdvancedMultipicklistInput(controllerVal) {
+            inputVal = rh.j$("[Id$='advancedMultiPicklistInput']").val();
+            if (inputVal != controllerVal) {
+                manualUpdateAdvancedMultiInput(inputVal);	
+            }
+        }
+
         var rh = rh || {};
         rh.j$ = jQuery.noConflict();
     </script>
@@ -59,6 +74,16 @@
     </apex:actionFunction>
     <apex:actionFunction name="searchAllFKFields" action="{!doFKFieldSearch}" rerender="filterFields2" status="loading">
         <apex:param name="fkFieldSearch" value=""/>
+    </apex:actionFunction>
+    <apex:actionFunction name="manualUpdateAdvancedMulti" action="{!manuallyUpdateUseAdvancedMultipicklist}" rerender="filterPicklist4, col5, addButton">	
+        <apex:param name="useAdvancedMulti" value=""/>	
+    </apex:actionFunction>
+    <apex:actionFunction name="manualUpdateAdvancedMultiInput" action="{!manuallyUpdateUseAdvancedMultipicklistInput}" rerender="none" oncomplete="runAddFilter();">	
+        <apex:param name="useAdvancedMultiInputVal" value=""/>	
+    </apex:actionFunction>
+    <apex:actionFunction name="runAdvancedMultiVal" action="{!runAdvancedMultipicklistValidation}" rerender="filterPicklist4, col5, addButton">	
+    </apex:actionFunction>
+    <apex:actionFunction name="runAddFilter" action="{!addFilter}" rerender="col5, preview, filterFields1, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col4" oncomplete="focusOnPageMessages({!displayPageMessage});">	
     </apex:actionFunction>
     <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
     <apex:slds />
@@ -429,18 +454,18 @@
                                     <apex:outputPanel layout="block" id="filterPicklist4" rendered="{!hasCriteriaPicklist}"> 
                                         
                                         
-                                        <apex:selectList size="1" value="{! filterCondition }" rendered="{!NOT(allowMultiselect)}">
-                                            <apex:actionSupport event="onchange" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, addButton, col4, setDateVar4" status="statusMessage"/>
+                                        <apex:selectList size="1" value="{! filterCondition }" rendered="{!NOT(allowMultiselect)}" >
+                                            <apex:actionSupport event="onchange" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, addButton, col4, setDateVar4"/>
                                             <apex:selectOptions value="{! filterCriteriaOptions }"/> 
                                         </apex:selectList>
-                                        <apex:selectList size="4" value="{! filterConditions }" rendered="{!AND(allowMultiselect, NOT(useAdvancedMultipicklist))}" multiSelect="true">
-                                            <apex:actionSupport event="onchange" action="{!buildCriterionStringFromMultiselect}"  rerender="col5, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" status="statusMessage"/>
+                                        <apex:selectList id="filterPicklistActualPicklist4" size="4" value="{! filterConditions }" rendered="{!AND(allowMultiselect, NOT(useAdvancedMultipicklist))}" multiSelect="true">
+                                            <apex:actionSupport event="onchange" action="{!buildCriterionStringFromMultiselect}" rerender="col5, addbutton, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" status="statusMessage"/>
                                             <apex:selectOptions value="{! filterCriteriaOptions }"/> 
                                         </apex:selectList>
                                         
                                         
                                         <apex:outputPanel rendered="{!AND(allowMultiselect, useAdvancedMultipicklist)}">
-                                            <apex:inputText value="{! filterCondition}" style="margin-top: 5pt;">
+                                            <apex:inputText id="advancedMultiPicklistInput" value="{! filterCondition}" style="margin-top: 5pt;">
                                                 <apex:actionSupport event="onchange" action="{!runAdvancedMultipicklistValidation}" rerender="col5, filterCriteriaHead4, filterCriteriaVar4, col4, addButton, setDateVar4" />
                                             </apex:inputText>
                                             <div class="slds-box slds-theme--alt-inverse" style="width: 250pt; margin-top: 5pt;">
@@ -449,12 +474,12 @@
                                                 </p>
                                             </div>
                                         </apex:outputPanel>
-                                        
+
                                         <br/>
                                         <apex:outputText value="{!$Label.rh2__advancedmultipicklistconfig}" rendered="{!isMultipicklist}" />&nbsp;
                                         <apex:outputText rendered="{!NOT(ISBLANK(MultipicklistValidationMessage))}" value="{!MultipicklistValidationMessage}" />
-                                        <apex:inputCheckbox value="{!useAdvancedMultipicklist}" rendered="{!isMultipicklist}">
-                                            <apex:actionSupport event="onchange" action="{!runAdvancedMultipicklistValidation}" rerender="filterPicklist4, col5" />
+                                        <apex:inputCheckbox id="advancedMultipicklistCheck" value="{!useAdvancedMultipicklist}" rendered="{!isMultipicklist}">
+                                            <apex:actionSupport event="onclick" action="{!runAdvancedMultipicklistValidation}" rerender="none" oncomplete="verifyAdvancedMultipicklistCheck({!useAdvancedMultipicklist});" />
                                         </apex:inputCheckbox> 
                                         <br/>
 
@@ -495,12 +520,12 @@
                                     </apex:outputPanel> 
                                 </apex:outputPanel> 
                                 </apex:outputPanel>
-                                </apex:outputPanel> 
+                            </apex:outputPanel> 
                                 <apex:outputPanel id="col5" layout="block" styleClass="slds-col_padded slds-shrink" style="float:left;">
                                     <apex:outputPanel id="addButton">
-                                        <apex:outputPanel rendered="{! OR(AND(NOT(ISBLANK(filterLogic)),NOT(hasCriteriaPicklist)), AND(NOT(ISBLANK(filterLogic)),AND(hasCriteriaPicklist, AND(NOT(ISBLANK(filterCondition)), OR(NOT(useAdvancedMultipicklist), isAdvancedMultipicklistValidated)))))  }">
+                                        <apex:outputPanel rendered="{! OR(AND(NOT(ISBLANK(filterLogic)),NOT(hasCriteriaPicklist)), AND(NOT(ISBLANK(filterLogic)),AND(hasCriteriaPicklist, OR(NOT(useAdvancedMultipicklist), isAdvancedMultipicklistValidated))))}">
                                             <br/>
-                                            <apex:commandButton action="{!addFilter}" value="{!$Label.rh2__submit}" rerender="col5, preview, filterFields1, existingFilters, boolLogic, saveButton, saveButton2, errorblock, col4" styleClass="slds-button slds-button_neutral" oncomplete="focusOnPageMessages({!displayPageMessage});"/>
+                                            <apex:commandButton onclick="verifyAdvancedMultipicklistInput('{!filterCondition}');" value="{!$Label.rh2__submit}" styleClass="slds-button slds-button_neutral" reRender="none" />
                                         </apex:outputPanel>
                                     </apex:outputPanel>
                                     

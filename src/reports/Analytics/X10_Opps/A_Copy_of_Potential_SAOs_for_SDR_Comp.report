@@ -440,6 +440,15 @@
         <field>Opportunity.Manager_Approved__c</field>
     </columns>
     <columns>
+        <field>Opportunity.X1SDRCompApprovalStatus__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1SDRCompApprovalStatusDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X1_SDR_Date__c</field>
+    </columns>
+    <columns>
         <field>Opportunity.Recorded_Opp__c</field>
     </columns>
     <columns>
@@ -496,21 +505,7 @@
     <currency>USD</currency>
     <description>All SAOs that are candidates for compensation for the previous month.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND ((4 AND 5) OR (6 AND 7) OR 8) AND 9 AND 10</booleanFilter>
-        <criteriaItems>
-            <column>PRODUCT_NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Subscription - OEM (Platform),Subscription - Enterprise,Subscription - Business Bundle,Subscription - Discovery Bundle,Subscription - Enterprise Bundle,Subscription - GraphDataScience Bundle – “Large”,Subscription - GraphDataScience Bundle – “Regular”,Subscription - GraphDataScience Bundle – “Starter”,Neo4j - AuraDB,Subscription - GraphDataScience Bundle – “Mini”,Subscription - GraphDataScience Dev Instance - &quot;Regular&quot;,Subscription - GraphDataScience Dev Instance - &quot;Mini&quot;,Subscription - GraphDataScience Dev Instance - &quot;Starter&quot;,Subscription - GraphDataScience Dev Instance - &quot;Large&quot;</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OpportunityLineItem.Product_Type__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>New,Cross-Sell</value>
-        </criteriaItems>
+        <booleanFilter>1 AND ((2 AND 3) OR (4 AND 5) OR 6) AND 7 AND 8</booleanFilter>
         <criteriaItems>
             <column>OWNER_MANAGER</column>
             <columnToColumn>false</columnToColumn>
@@ -561,11 +556,11 @@
             <value>Not Qualified,Not Qualified - Duplicate,Not Qualified - Non ARR,Not Qualified - Partnership,Not Qualified - Revenue Type,Not Qualified - Startup Rev and Product</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.ARR__c</column>
+            <column>Opportunity.EligibleforSAOCredit__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>greaterThan</operator>
-            <value>USD 0</value>
+            <operator>equals</operator>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

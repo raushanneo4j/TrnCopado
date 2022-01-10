@@ -1,0 +1,38 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "b6530972-b758-4973-9007-bc4893661521",
+  "label" : "Expense Report Related List",
+  "regions" : [ {
+    "id" : "4aaa5820-69aa-45f2-b8e9-3c1f7fd5cb0c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "23a8a787-f710-47ec-a964-02d956b1318d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ca6b2014-bcb6-4d1d-87d1-eae0a77d486e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "35cb100f-93e0-41f0-9aa1-de614c404d75",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a39"
+}

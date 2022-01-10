@@ -4,6 +4,9 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.ARR__c</field>
     </columns>
@@ -16,9 +19,6 @@
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
-    </columns>
-    <columns>
-        <field>CLOSE_DATE</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
@@ -73,7 +73,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Non Renewal</value>
+            <value>,Non Renewal,Renewal</value>
         </criteriaItems>
         <criteriaItems>
             <column>Account.Global_Territory__c</column>
@@ -125,6 +125,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CURNEXTFY</interval>
+        <interval>INTERVAL_CURNEXT1</interval>
     </timeFrameFilter>
 </Report>

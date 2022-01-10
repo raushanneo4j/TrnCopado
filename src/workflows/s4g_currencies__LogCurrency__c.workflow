@@ -3,7 +3,7 @@
     <outboundMessages>
         <fullName>s4g_currencies__CallCurrencyUpdater</fullName>
         <apiVersion>24.0</apiVersion>
-        <endpointUrl>http://currencyupdater2.appspot.com/currency_updater_2_0</endpointUrl>
+        <endpointUrl>https://currencyupdater2.appspot.com/currency_updater_2_0</endpointUrl>
         <fields>Id</fields>
         <includeSessionId>true</includeSessionId>
         <integrationUser>andrew.bates@neotechnology.com</integrationUser>

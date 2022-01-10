@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_81141759</developerName>
+        <masterLabel>Job Function Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.Job_Function__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>IT Executive (CIO, CTO, VP Engineering..)</sourceValue>
+            </sourceValues>
+            <value>Executive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Architect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Development Manager/Tech Lead/Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Delivery Manager</sourceValue>
+            </sourceValues>
+            <value>Architect</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Data Analyst</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Database Administrator (DBA)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Software Developer/Engineer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product/Project Management</sourceValue>
+            </sourceValues>
+            <value>Developer</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.Job_Function__c</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_81141759</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Beta: Accounts With Functions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

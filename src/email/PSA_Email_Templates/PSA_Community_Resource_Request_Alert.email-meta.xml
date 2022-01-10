@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify he PS team when a PS customer submits a new resource request through Community. JIRA: SFDCSPT-727</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Neo4J_LetterHead</letterhead>
+    <name>PSA Community Resource Request Alert</name>
+    <style>freeForm</style>
+    <subject>PS Customer Submitted a New Resource Request Through Community!</subject>
+    <textOnly>Hi there!
+
+{!pse__Resource_Request__c.CreatedBy}, a PS customer, just submitted a new resource request through the Community.
+
+Please find the details of the request below.
+
+Resource Request Reference: {!pse__Resource_Request__c.Name}
+Resource Request Reference URL: {!pse__Resource_Request__c.Link}
+Sender Email: {!pse__Resource_Request__c.OwnerEmail}
+Related Project: {!pse__Resource_Request__c.pse__Project__c}
+Account: {!pse__Resource_Request__c.pse__Account__c}
+
+Thank you,
+The Salesforce Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

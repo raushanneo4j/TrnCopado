@@ -2069,7 +2069,7 @@ This two-step approval process requires that all Opportunities first be approved
         <name>neo4j_apexBypass_context__c</name>
     </fields>
     <fields>
-        <help><!-- Total number of Products on the Opportunity EXCLUDING Neo4j - AuraDB and PS. --></help>
+        <help><!-- Total number of Products on the Opportunity EXCLUDING Aura and PS products. --></help>
         <label><!-- #oppLines: Excl. Neo4j - Aura --></label>
         <name>num_lines_Excl_Neo4j_Aura__c</name>
     </fields>
@@ -2197,65 +2197,6 @@ This two-step approval process requires that all Opportunities first be approved
         <label><!-- # subscr opp lines with Term Start Date --></label>
         <name>subscr_opp_lines_with_Term_Start_Date__c</name>
     </fields>
-    <layouts>
-        <layout>Opportunity Layout</layout>
-        <sections>
-            <label><!-- Approvals Information --></label>
-            <section>Approvals Information</section>
-        </sections>
-        <sections>
-            <label>Kostnads- og inntektssammendrag</label>
-            <section>Cost and Revenue Summary</section>
-        </sections>
-        <sections>
-            <label>Tilpassede koblinger</label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Deal Information --></label>
-            <section>Deal Information</section>
-        </sections>
-        <sections>
-            <label><!-- Description Information --></label>
-            <section>Description Information</section>
-        </sections>
-        <sections>
-            <label><!-- Finance Information --></label>
-            <section>Finance Information</section>
-        </sections>
-        <sections>
-            <label><!-- Gainsight Opportunity Widget --></label>
-            <section>Gainsight Opportunity Widget</section>
-        </sections>
-        <sections>
-            <label><!-- Long Description --></label>
-            <section>Long Description</section>
-        </sections>
-        <sections>
-            <label><!-- Marketo Sales Insight --></label>
-            <section>Marketo Sales Insight</section>
-        </sections>
-        <sections>
-            <label>PSA-data</label>
-            <section>PSA Data</section>
-        </sections>
-        <sections>
-            <label><!-- Renewal Information --></label>
-            <section>Renewal Information</section>
-        </sections>
-        <sections>
-            <label><!-- Technical Evaluation --></label>
-            <section>Technical Evaluation</section>
-        </sections>
-        <sections>
-            <label><!-- Terms Information --></label>
-            <section>Terms Information</section>
-        </sections>
-    </layouts>
-    <quickActions>
-        <label><!-- 99% Opp Fields --></label>
-        <name>X99_Opp_Fields</name>
-    </quickActions>
     <recordTypes>
         <label><!-- Closed Won Opportunity --></label>
         <name>Closed_Won_Opportunity</name>

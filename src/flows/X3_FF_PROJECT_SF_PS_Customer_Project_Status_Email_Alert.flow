@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send an email alert to the contacts associated with the project opportunity through opportunity contact roles.</description>
+        <name>Email_Each_Contact_Action</name>
+        <label>Email Each Contact</label>
+        <locationX>264</locationX>
+        <locationY>756</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_Through_Opportunity_Contact_Roles_Loop</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplateProjectStatus</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Fetch_Contacts_for_Opportunity_Contact_Roles_Get.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>textTemplateProjectStatusSubject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <description>This flow sends an email to the professional services customers who meet the criteria (see inside the flow) associated with PS projects. The email contains key status fields. The flow is set to run daily, but a workaround is included to ensure it send emails in the first of each month - custom checkbox field gets checked automatically on the first day of each month and is included in the conditions. JIRA: SFDCSPT-723 JIRA: SFDCSPT-723</description>
+    <interviewLabel>FF PROJECT : ! 3 PS Customer Project Status Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FF PROJECT : ! 3 PS Customer Project Status Email Alert</label>
+    <loops>
+        <description>Loop through the fetched opportunity contact roles one record at a time.</description>
+        <name>Loop_Through_Opportunity_Contact_Roles_Loop</name>
+        <label>Loop Through Opportunity Contact Roles</label>
+        <locationX>176</locationX>
+        <locationY>516</locationY>
+        <collectionReference>Fetch_Opportunity_Contact_Roles_Get</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Fetch_Contacts_for_Opportunity_Contact_Roles_Get</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch the associated contact for each opportunity contact role in the loop. Note, normally we don&apos;t want to include Get Records element in the loop, however, in this particular case, this was an acceptable solution to be able to separate the email addresses of the contacts. The number of records isn&apos;t expected to ever be large enough to hit the limit.</description>
+        <name>Fetch_Contacts_for_Opportunity_Contact_Roles_Get</name>
+        <label>Fetch Contacts for Opportunity Contact Roles</label>
+        <locationX>264</locationX>
+        <locationY>636</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Email_Each_Contact_Action</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_Opportunity_Contact_Roles_Loop.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the contact roles associated with the project opportunity that meet the criteria.</description>
+        <name>Fetch_Opportunity_Contact_Roles_Get</name>
+        <label>Fetch Opportunity Contact Roles</label>
+        <locationX>176</locationX>
+        <locationY>396</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Opportunity_Contact_Roles_Loop</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.pse__Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ReceivesPSAlerts__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OpportunityContactRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the ID of the opportunity associated with the project record.</description>
+        <name>Fetch_Project_Opportunity_Record_Get</name>
+        <label>Fetch Project Opportunity Record</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fetch_Opportunity_Contact_Roles_Get</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.pse__Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Fetch_Project_Opportunity_Record_Get</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 3) AND 4 AND 5</filterLogic>
+        <filters>
+            <field>pse__Stage__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>pse__Stage__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Delivered</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>pse__Stage__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Canceled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>PSA_Community_Customer__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MonthlyFlowSchedule__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>pse__Proj__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-12-18</startDate>
+            <startTime>11:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Email template used for the email alert.</description>
+        <name>TextTemplateProjectStatus</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear {!Fetch_Contacts_for_Opportunity_Contact_Roles_Get.FirstName},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please find below a summary of your &lt;span style=&quot;font-family: var(--lwc-fontFamily,-apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;); font-size: var(--lwc-fontSize3,0.8125rem); color: var(--lwc-colorTextWeak,rgb(62, 62, 60)); background-color: var(--lwc-colorBackgroundInput,rgb(255, 255, 255));&quot;&gt;Neo4j consulting services for &quot;{!$Record.Name}&quot; project:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Planned Hours: &lt;b&gt;{!$Record.pse__Planned_Hours__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Delivered Hours: &lt;b&gt;{!$Record.Hours_Delivered__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Remaining Hours: &lt;b style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!$Record.Hours_Remaining__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To allocate the remaining hours, please submit a &quot;Service Request Form&quot; by logging in to the &lt;a href=&quot;https://neo4j.force.com/Neo4jCustomerServicePortal/s/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Neo4j Customer Services Portal&lt;/b&gt;&lt;/a&gt; and clicking the “Service Request” tile on the homepage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you,&lt;/p&gt;&lt;p&gt;Neo4j Professional Services Team&amp;nbsp;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Subject line for the email that goes out to the PS customer.</description>
+        <name>textTemplateProjectStatusSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Neo4j: &apos;{!$Record.Name}&apos; Project Status Update</text>
+    </textTemplates>
+    <variables>
+        <description>Collection text variable that stores all of the email addresses of the fetch contacts.</description>
+        <name>varCollContactEmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

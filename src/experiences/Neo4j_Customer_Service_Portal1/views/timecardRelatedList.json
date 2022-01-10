@@ -1,0 +1,38 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "3b6080c9-278e-4ee7-a978-733f7e249411",
+  "label" : "Timecard Related List",
+  "regions" : [ {
+    "id" : "f3b8b1fa-3329-4549-bc18-ba420868f178",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "0b4135bc-f650-49ba-a00a-ef85a3404279",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "754dd69c-f437-4b60-92d2-ad9835d72ade",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "742b5255-8101-4b91-9b45-46d8e24db21c",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a50"
+}

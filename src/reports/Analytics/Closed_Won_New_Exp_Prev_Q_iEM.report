@@ -50,6 +50,9 @@
         <field>PRODUCT_NAME</field>
     </columns>
     <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
         <field>ADDRESS2_COUNTRY_CODE</field>
     </columns>
     <columns>
@@ -136,7 +139,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>New,Renewal,Up-Sell,Cross-Sell</value>
+            <value>New,Up-Sell,Cross-Sell</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>
@@ -146,12 +149,7 @@
             <value>Sales Ops Review,Finance Review,Closed Won</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>OpportunityLineItem.Product_Type__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
+    <format>Tabular</format>
     <name>Closed Won Prev Q</name>
     <params>
         <name>open</name>

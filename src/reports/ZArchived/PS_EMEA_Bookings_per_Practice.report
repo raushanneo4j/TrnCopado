@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>pse__Proj__c.Contract_Value_SEK__c:SUM * (1-pse__Proj__c.Percent_Complete_Hours__c:SUM)</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Amount to be recognized</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Outstanding (SEK)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92329645</developerName>
+        <masterLabel>Practice Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>pse__Proj__c.pse__Practice__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Boot Camp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Innovation Labs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paid presales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Proof Of Concept</sourceValue>
+            </sourceValues>
+            <value>Presales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Expert Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Project/Solution</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Staff Augmentation</sourceValue>
+            </sourceValues>
+            <value>Implementation</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Solution Audit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Audit / Healthcheck</sourceValue>
+            </sourceValues>
+            <value>Customer Success</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Training</sourceValue>
+            </sourceValues>
+            <value>Training</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_67417181</developerName>
+        <masterLabel>Services Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>pse__Proj__c.pse__Region__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Benelux/France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DACH</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southern Europe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UK/Nordics</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>pse__Proj__c.pse__Planned_Hours__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_67417181</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_92329645</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_OPP_CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>pse__Proj__c.pse__Practice__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_OPP_AMOUNT.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>pse__Proj__c.pse__Planned_Hours__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All completed and ongoing projects for EMEA, AMER, APAC. Bucketed Regions. Bucketed Practice.</description>
+    <filter>
+        <criteriaItems>
+            <column>pse__Proj__c.pse__Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SOW,Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_OPP_CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/1/2019</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>pse__Proj__c.pse__Region__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>APAC,Global</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_67417181</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92329645</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PS Global All Time Bookings per Practice</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$pse__Proj__c@pse__Proj__c.pse__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>FK_OPP_CLOSE_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>pse__Proj__c.pse__Actuals_Last_Recalc_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

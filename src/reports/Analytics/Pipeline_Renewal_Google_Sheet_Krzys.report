@@ -59,6 +59,9 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>OpportunityLineItem.ARR__c</field>
     </columns>
+    <columns>
+        <field>Opportunity.SFDC_Opp_ID__c</field>
+    </columns>
     <currency>USD</currency>
     <filter>
         <criteriaItems>
@@ -101,6 +104,6 @@
         <dateColumn>CLOSE_DATE</dateColumn>
         <endDate>2026-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2020-01-01</startDate>
+        <startDate>2021-01-01</startDate>
     </timeFrameFilter>
 </Report>

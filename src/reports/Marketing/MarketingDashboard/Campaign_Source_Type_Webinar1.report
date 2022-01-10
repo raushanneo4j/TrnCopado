@@ -109,8 +109,8 @@
             <column>CAMPAIGN.END_DATE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>THIS_YEAR</value>
+            <operator>lessOrEqual</operator>
+            <value>12/31/2021</value>
         </criteriaItems>
         <criteriaItems>
             <column>OPP.CREATED_DATE</column>
@@ -133,6 +133,13 @@
             <operator>equals</operator>
             <value>Webinar</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.START_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -150,7 +157,7 @@
         <field>CAMPAIGN.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Campaign Source Opp Influence - Webinar</name>
+    <name>Campaign Source Opp Infl - Webinar 2021</name>
     <params>
         <name>scopeid</name>
         <value></value>

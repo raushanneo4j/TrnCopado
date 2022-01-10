@@ -4,7 +4,7 @@
 	<head> 
     	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     	<apex:includeScript value="{!URLFOR($Resource.rh2__PT_JSZip, '/dist/jszip.js')}"/>
-    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
  
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />  
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
@@ -78,9 +78,20 @@
 				<div class="slds-col slds-size_1-of-3"></div>
 				<apex:outputPanel styleClass="slds-box slds-theme_default slds-grid_align-center slds-m-top_medium slds-col slds-size_1-of-3" rendered="{!AND(deployVars.deployed, pgBehavior.renderButton)}">
 					<div align="center">
-						<p>
-							{!$Label.rh2__apextrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__isinstalled}
-						</p>
+						<apex:outputPanel rendered="{!!deployVars.triggerDisabled}">
+							<p>
+								{!$Label.rh2__apextrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__isinstalled}
+							</p>
+						</apex:outputPanel>
+						<apex:outputPanel rendered="{!deployVars.triggerDisabled}">
+							<p>
+								{!$Label.rh2__apextrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__isinstalledandinactive}
+							</p>
+							<p>
+								{!$Label.rh2__pleaseensuretriggerisactive}
+							</p>
+							<br/>
+						</apex:outputPanel>
 						<apex:outputPanel rendered="{!deployVars.testDeployed}">
 							<p>  		
 								{!$Label.rh2__apexclass} <b> {!deployVars.triggerTestName} </b> {!$Label.rh2__isinstalled}		
@@ -133,9 +144,20 @@
 		<div class="slds-grid">
 			<div class="slds-col slds-size_1-of-3"></div>
 			<div class="slds-box slds-col slds-size_1-of-3 slds-theme_default slds-m-top_medium" align="center">
-  				<p>
-					{!$Label.ApexTrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.WasDeployedByDefault}
-  				</p>
+				<apex:outputPanel rendered="{!!deployVars.triggerDisabled}">
+					<p>
+						{!$Label.rh2__apextrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__wasdeployedbydefault}
+					</p>
+				</apex:outputPanel>
+				<apex:outputPanel rendered="{!deployVars.triggerDisabled}">
+					<p>
+						{!$Label.rh2__apextrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__wasdeployedbydefaultandinactive}
+					</p>
+					<p>
+						{!$Label.rh2__pleaseensuretriggerisactive}
+					</p>
+					<br/>
+				</apex:outputPanel>
   				<p>
 					{!$Label.TheseTriggersAreNot}
   				</p>

@@ -298,8 +298,17 @@ JIRA: SFDCSPT-96</description>
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <description>Alert users when &quot;Neo4j - AuraDB&quot; Product is created on an Opportunity.</description>
-        <formula>AND(  Product2.Name = &quot;Neo4j - AuraDB&quot;, NOT(ISPICKVAL(Product_Type__c, &quot;Renewal&quot;)))</formula>
+        <description>Alert users when Neo4j - Aura Product is created on an Opportunity.</description>
+        <formula>AND(  
+
+OR( 
+Product2.Name = &quot;Neo4j - AuraDB&quot;,  
+Product2.Name = &quot;Neo4j - AuraDS&quot;, 
+Product2.Name = &quot;Neo4j - AuraDS - Multi-Tenant&quot;, 
+Product2.Name = &quot;Neo4j - AuraDS - VPC Isolated&quot; ), 
+					
+NOT(ISPICKVAL(Product_Type__c, &quot;Renewal&quot;))
+)</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>

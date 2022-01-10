@@ -19,6 +19,10 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$pse__Proj__c.Hours_Remaining__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
         <field>pse__Timecard_Header__c.pse__Total_Billable_Amount__c</field>
     </columns>
     <columns>
@@ -57,7 +61,14 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Viasat- Consulting #1</value>
+            <value>Springer-Nature - Training (3d)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>pse__Timecard_Header__c.pse__Billable__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

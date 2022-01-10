@@ -5,7 +5,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" />  
     </head> 
     
@@ -454,7 +454,9 @@
                     </apex:outputLink>  
                 </apex:outputPanel>
                 <apex:outputLink value="{!URLFOR($Page.rh2__PS_healthCheck)}" style="margin-left:4px;" styleClass="slds-button slds-button_neutral">{!$Label.rh2__healthcheck}</apex:outputLink>  
-                    
+                <apex:outputPanel rendered="{!showUseCaseBackButton}">
+                    <apex:outputLink value="{!smHelper.useCasePageReference}" style="margin-left: .25rem; margin-right: .25rem;" styleClass="slds-button slds-button_outline-brand">Back to Use Case Deployment</apex:outputLink>
+                </apex:outputPanel>        
                 <a href="#" class="slds-button slds-button_icon-border-filled" onClick="showSettingsModal();">
                     <svg aria-hidden="true" class="slds-button__icon slds-button__icon_medium">
                         <use xlink:href="{! URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
@@ -607,47 +609,49 @@
                                         </apex:commandLink>                                
                                     </td>
                                     <td data-label="Run Time" class="slds-cell-shrink slds-truncate  slds-text-align_center" style="width:5%;">
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, NOT(item.rh2__triggerDisabled__c))}">
-                                            <span title="{!$Label.Realtime}"><i class="fa fa-bolt"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__triggerDisabled__c)}">
-                                            <span title="{!$Label.RealTimeDisabled}"><i class="fa fa-times"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__Disable_Realtime__c)}">
-                                            <span title="{!$Label.RealTimeDisabledForThisRollup}"><i class="fa fa-times-circle"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__conditional__c, item.rh2__targetFieldLength__c == 1)}">
-                                            <span title="{!item.rh2__Schedule_Run_Info__c}">
-                                                <apex:commandLink action="{!goToRollupSchedule}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
+                                        <apex:outputPanel rendered="{! item.conditional__c }">
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, NOT(item.rh2__triggerDisabled__c))}">
+                                                <span title="{!$Label.Realtime}"><i class="fa fa-bolt"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__triggerDisabled__c)}">
+                                                <span title="{!$Label.RealTimeDisabled}"><i class="fa fa-times"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__Disable_Realtime__c)}">
+                                                <span title="{!$Label.RealTimeDisabledForThisRollup}"><i class="fa fa-times-circle"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__targetFieldLength__c == 1)}">
+                                                <span title="{!item.rh2__Schedule_Run_Info__c}">
+                                                    <apex:commandLink action="{!goToRollupSchedule}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
+                                                        <apex:param name="s" value="{!item.name}"/>
+                                                        <i class="fa fa-calendar"></i>
+                                                    </apex:commandLink>
+                                                    <apex:commandLink action="{!goToRollupSchedule}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
+                                                        <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
+                                                        <i class="fa fa-calendar"></i>
+                                                    </apex:commandLink>
+                                                </span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(!item.rh2__isRealTime__c, item.rh2__targetFieldLength__c != 1)}">
+                                                <span title="{!$Label.rh2__manualrunonly}">
+                                                <apex:commandLink action="{!goToRollupRun}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
                                                     <apex:param name="s" value="{!item.name}"/>
-                                                    <i class="fa fa-calendar"></i>
-                                                </apex:commandLink>
-                                                <apex:commandLink action="{!goToRollupSchedule}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </apex:commandLink> 
+                                                <apex:commandLink action="{!goToRollupRun}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
                                                     <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
-                                                    <i class="fa fa-calendar"></i>
+                                                    <i class="fa fa-info-circle"></i>
                                                 </apex:commandLink>
                                             </span>
                                         </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(!item.rh2__isRealTime__c, item.rh2__targetFieldLength__c != 1, item.rh2__conditional__c)}">
-                                            <span title="{!$Label.rh2__manualrunonly}">
-                                            <apex:commandLink action="{!goToRollupRun}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
-                                                <apex:param name="s" value="{!item.name}"/>
-                                                <i class="fa fa-info-circle"></i>
-                                            </apex:commandLink> 
-                                            <apex:commandLink action="{!goToRollupRun}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
-                                                <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
-                                                <i class="fa fa-info-circle"></i>
-                                            </apex:commandLink>
-                                            </span>
+                                            <apex:outputPanel rendered="{! !item.Overwrite__c }">
+                                                <span title="{!$Label.DoesNotOverwrite}"><i class="fa fa-lock"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{! !item.Blank_Overwrite__c }">
+                                                <span title="{!$Label.DoesNotOverwriteBlank}"><i class="fa fa-unlock-alt"></i></span>
+                                            </apex:outputPanel>
                                         </apex:outputPanel>
                                         <apex:outputPanel rendered="{! !item.conditional__c }">
                                             <span title="{!$Label.Inactive}"><i class="fa fa-exclamation-triangle"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{! !item.Overwrite__c }">
-                                            <span title="{!$Label.DoesNotOverwrite}"><i class="fa fa-lock"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{! !item.Blank_Overwrite__c }">
-                                            <span title="Does Not Overwrite Field Values With Blank Values"><i class="fa fa-lock-open"></i></span>
                                         </apex:outputPanel>
                                     </td>
                                     <td class="slds-cell-wrap hidecol" style="word-break:break-all;" data-label="{!$Label.rh2__relationshipfield}">{! item.relationshipField__c }</td>
@@ -1056,7 +1060,7 @@
                     <apex:outputPanel id="rollupGroupName">
                         <div class="slds-size_1-of-1">
                             <br/>
-                            <div style="width:315px;">
+                            <div style="padding-left:15px;width:315px;">
                                 {!$Label.rh2__name}:
                                 <apex:outputPanel rendered="{! !groupInfo.editContext}">
                                     <apex:inputText value="{!groupInfo.rollupGroupLabelToUpdate}" styleClass="slds-input" maxlength="80" />

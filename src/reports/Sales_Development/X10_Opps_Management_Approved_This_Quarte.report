@@ -108,7 +108,7 @@
     <currency>USD</currency>
     <description>SAOs approved by sales managers this quarter.Sales Pipeline Call reports.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR (7 AND 8))</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 AND 7)</booleanFilter>
         <criteriaItems>
             <column>OpportunityLineItem.Product_Type__c</column>
             <columnToColumn>false</columnToColumn>
@@ -145,13 +145,6 @@
             <value>USD 0</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Manager_Approval_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>greaterThan</operator>
-            <value>4/1/2021</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Opportunity.Qualification_Date__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
@@ -163,7 +156,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>4/1/2021</value>
+            <value>1/1/2022</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

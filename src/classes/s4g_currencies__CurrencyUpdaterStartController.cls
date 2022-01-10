@@ -22,6 +22,10 @@ global class CurrencyUpdaterStartController {
     global static s4g_currencies.CurrencyUpdaterStartController.Message setOriginSetting(String origin) {
         return null;
     }
+    @RemoteAction
+    global static void setUpdateFF(Boolean state) {
+
+    }
 global class Message {
     global Message(String severity, String text) {
 

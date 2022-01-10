@@ -495,76 +495,13 @@
     <currency>USD</currency>
     <description>All SAOs that are candidates for compensation for the previous month.</description>
     <filter>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND ((5 AND 6) OR (7 AND 8) OR 9) AND ((10 AND 11) OR 12)</booleanFilter>
+        <booleanFilter>1 AND ((2 AND 3) OR 4) AND 5 AND ((6 AND 7) OR (8 AND 9) OR 10)</booleanFilter>
         <criteriaItems>
-            <column>PRODUCT_NAME</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Subscription - Business Bundle,Subscription - Discovery Bundle,Subscription - Enterprise,Subscription - GraphDataScience,Subscription - OEM (Platform),Neo4j - AuraDB</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Account_Revenue__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>0 - 10 Million,10 - 25 Million,25 - 100 Million,100 - 500 Million,500 Million - 1 Billion,1 Billion - 5 Billion,5 Billion +</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OpportunityLineItem.Product_Type__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>New,Cross-Sell</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>OWNER_MANAGER</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Stephen Depaoli</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Qualification_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LAST_MONTH</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Recorded_Opp_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Manager_Approval_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LAST_MONTH,THIS_MONTH</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Recorded_Opp_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Recorded_Opp_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LAST_MONTH</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Account.Account_Revenue__c</column>
+            <column>Opportunity.EligibleforSAOCredit__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>1 Billion - 5 Billion,5 Billion +</value>
+            <value>1</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Manager_Approved__c</column>
@@ -578,7 +515,56 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
+            <value>1 Billion - 5 Billion,5 Billion +</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
             <value>0 - 10 Million,10 - 25 Million,25 - 100 Million,100 - 500 Million,500 Million - 1 Billion</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Qualification_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Qualification_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approval_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH,THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Recorded_Opp_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

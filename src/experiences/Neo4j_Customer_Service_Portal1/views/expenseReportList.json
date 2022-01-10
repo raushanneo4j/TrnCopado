@@ -1,0 +1,45 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "0b0ba449-2854-4e8b-a6fc-a928ceb86df0",
+  "label" : "Expense Report List",
+  "regions" : [ {
+    "id" : "af6e80a8-eb66-4c4a-8f3a-a8dc04502c51",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "d40d6951-7945-460b-87ac-7782e89d9187",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7c919267-52fb-40c7-a6f4-6a66570133f0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "d95216b4-9452-4bf8-816f-7076cb05af84",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a39"
+}

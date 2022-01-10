@@ -5,7 +5,7 @@
         <name>Send_Email_to_CPP_Owner</name>
         <label>Send Email to CPP Owner</label>
         <locationX>176</locationX>
-        <locationY>1031</locationY>
+        <locationY>1055</locationY>
         <actionName>Customer_Project_Profile__c.CPP_New_CPP_Created</actionName>
         <actionType>emailAlert</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -31,7 +31,7 @@
         <expression>NOW()</expression>
     </formulas>
     <interviewLabel>CUSTOMER PROJECT PROFILE: Create New CPP {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>CUSTOMER PROJECT PROFILE: Create New CPP</label>
+    <label>DeprecateCandidate CUSTOMER PROJECT PROFILE: Create New CPP</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -56,7 +56,7 @@
         <name>Create_New_CPP_Record</name>
         <label>Create New CPP Record</label>
         <locationX>176</locationX>
-        <locationY>791</locationY>
+        <locationY>815</locationY>
         <connector>
             <targetReference>Update_Master_Opportunity</targetReference>
         </connector>
@@ -104,7 +104,7 @@
         <name>Get_CSA_Allocations</name>
         <label>Get CSA Allocations</label>
         <locationX>176</locationX>
-        <locationY>551</locationY>
+        <locationY>575</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_CSM_Allocations</targetReference>
@@ -126,7 +126,7 @@
         <name>Get_CSM_Allocations</name>
         <label>Get CSM Allocations</label>
         <locationX>176</locationX>
-        <locationY>671</locationY>
+        <locationY>695</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_New_CPP_Record</targetReference>
@@ -148,7 +148,7 @@
         <name>Get_Opportunity_Account</name>
         <label>Get Opportunity Account</label>
         <locationX>176</locationX>
-        <locationY>311</locationY>
+        <locationY>335</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Type_Field_on_Account</targetReference>
@@ -170,7 +170,7 @@
         <name>Update_Master_Opportunity</name>
         <label>Update Master Opportunity</label>
         <locationX>176</locationX>
-        <locationY>911</locationY>
+        <locationY>935</locationY>
         <connector>
             <targetReference>Send_Email_to_CPP_Owner</targetReference>
         </connector>
@@ -193,7 +193,7 @@
         <name>Update_Type_Field_on_Account</name>
         <label>Update &apos;Type&apos; Field on Account</label>
         <locationX>176</locationX>
-        <locationY>431</locationY>
+        <locationY>455</locationY>
         <connector>
             <targetReference>Get_CSA_Allocations</targetReference>
         </connector>
@@ -259,5 +259,5 @@
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>

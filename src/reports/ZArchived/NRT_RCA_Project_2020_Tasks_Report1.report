@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Risk_Name__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Risk_Description__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Date_Raised__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Impact__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Likelihood__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Mitigation_Plan__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Issue__c</field>
+    </columns>
+    <columns>
+        <field>pse__Risk__c.pse__Risk_Owner__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>All project risks against RCA #1</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Network Rail - RCA #1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>pse__Risk__c.pse__Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NRT RCA Project 2020 Risks Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$pse__Risk__c@pse__Risk__c.pse__Project__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>pse__Risk__c.pse__Closed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

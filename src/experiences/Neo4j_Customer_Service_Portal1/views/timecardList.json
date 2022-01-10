@@ -1,0 +1,54 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "3f587b4a-19c5-4e7a-8323-b54945dcb861",
+  "label" : "Timecard List",
+  "regions" : [ {
+    "id" : "2537cbaa-eac4-421f-8735-9af0cd5c2eb2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p>Placeholder</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "b50a9263-9b98-49e1-97f5-9a6599dfc4e4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : false,
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "grid",
+        "showFilterPanel" : false,
+        "showImageIcon" : false,
+        "showManualRefreshButton" : true,
+        "showObjectName" : false,
+        "showPinnedList" : true,
+        "showSearchBar" : false
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "9876ba86-0959-4952-8347-ac8bf0c991f3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "04dce7c1-d397-41a8-9217-6b316a27f3d9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fe2dc4cc-4a35-4b6e-9eb5-fe916ee2811e",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a50"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>These CSM territory allocations are specific to opportunities with Aura products. Used by the Customer Success Team to map Customer Success Managers (CSM) to the Account territories to be able to populate the &apos;CSM&apos; field on the Customer Project Profile (CPP) with the name of the correct user. JIRA: SFDCSPT-449; SFDCSPT-625</description>
+    <fields>
+        <fullName>CSM__c</fullName>
+        <businessOwnerGroup>Customer_Success</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>Stores the ID of the Customer Success Manager (CSM) assigned to a particular global territory. JIRA: SFDCSPT-625</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Stores the ID of the Customer Success Manager (CSM) assigned to a particular global territory.</inlineHelpText>
+        <label>CSM</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GlobalRegion__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <description>List of the global business regions used at Neo4j. JIRA: SFDCSPT-625</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>List of the global business regions used at Neo4j.</inlineHelpText>
+        <label>Global Region</label>
+        <required>false</required>
+        <securityClassification>Internal</securityClassification>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>true</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>LATAM</fullName>
+                    <default>false</default>
+                    <label>LATAM</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Unassigned</fullName>
+                    <default>false</default>
+                    <label>Unassigned</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>CSM Global Territory Allocation - Aura</label>
+    <pluralLabel>CSM Global Territory Allocations - Aura</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Account.ABM_Account_Maturity__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Number_of_Contacts__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Number_of_Open_New_Opportunities__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Account_Open_ARR__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>The accounts that were requested in February 2019 to be removed</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aberdeen Asset Management,Achilles,Admiral,Ageas UK,Airbus Helicopter,Alstom,Avios Group Ltd,Aviva Ireland,Aviva UK,BAE Systems,BBC,Channel 4 UK,Ciena Corporation - United Kingdom,CNN,Commerzbank,Cooperative Bank,DAILY MAIL AND GENERAL TRUST P L C,Erwin inc,FYFFES PUBLIC LIMITED COMPANY,GLAXOSMITHKLINE PLC,Harman - United Kingdom,Inawisdom,Irish Tax Authority,Johnson Controls,Level 3,Marsh,NATIONAL ASSET MANAGEMENT AGENCY INVESTMENT LIMITED,National Crime Agency,News UK,NFU Mutual,NHS,Royal Society of Chemistry,Shutterstock,TalkTalk,The Cabinet Office,THE GOVERNOR &amp; COMPANY OF BANK OF IRELAND,University of Edinburgh,Virgin Atlantic</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Requested ABM Removals_UK</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

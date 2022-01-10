@@ -144,25 +144,6 @@
         <name>pse__risk__c</name>
         <relationshipLabel><!-- Issues --></relationshipLabel>
     </fields>
-    <layouts>
-        <layout>Issue Layout</layout>
-        <sections>
-            <label><!-- Auditng --></label>
-            <section>Auditng</section>
-        </sections>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-        <sections>
-            <label><!-- Detail --></label>
-            <section>Detail</section>
-        </sections>
-        <sections>
-            <label><!-- Status --></label>
-            <section>Status</section>
-        </sections>
-    </layouts>
     <validationRules>
         <errorMessage><!-- The Closed Date cannot be blank if the status is set to Completed or Closed - No Action. --></errorMessage>
         <name>pse__Close_date_mandatory_if_status_is_closed</name>

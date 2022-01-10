@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>PSA_Community_Resource_Request_Alert</fullName>
+        <description>PSA Community Resource Request Alert JIRA: SFDCSPT-700</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PMO_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>maria.turegano@neo4j.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>nadia.gainsbourg@neo4j.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>noreply@neotechnology.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PSA_Email_Templates/PSA_Community_Resource_Request_Alert</template>
+    </alerts>
+    <alerts>
         <fullName>PSA_New_Resource_Request_Email_Alert</fullName>
         <description>PSA New Resource Request Email Alert</description>
         <protected>false</protected>

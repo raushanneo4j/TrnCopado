@@ -31,6 +31,36 @@
                             <value>CustomButton.Contact.Generate_License_Key</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>EnableCustomerPortal</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ViewCustomerPortal</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>LoginToNetworkAsUser</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Clone</value>
                         </valueListItems>
                         <valueListItems>

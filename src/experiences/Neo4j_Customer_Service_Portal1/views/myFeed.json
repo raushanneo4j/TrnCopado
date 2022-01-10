@@ -1,0 +1,54 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "8ae138ff-870b-48c9-b22b-5efedfde0675",
+  "label" : "My Feed",
+  "regions" : [ {
+    "id" : "dd4ae63c-d3c0-49ec-a1d3-f72c3ee04f39",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "canChangeSorting" : true,
+        "defaultFilter" : "",
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "feedDesign" : "DEFAULT",
+        "hasFeedSearch" : true,
+        "subjectId" : "{!recordId}",
+        "type" : "News"
+      },
+      "componentName" : "forceCommunity:forceCommunityFeed",
+      "id" : "8d598e40-3bf3-4ca7-8eeb-672ba48d090c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cf0443b2-9807-487e-a920-a0ea500baa1f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4b76254a-6c4b-4a1b-81ee-eb216a8b9e91",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Feed"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b6ce85ff-98f1-4dac-b289-124b4c2c836d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a2fab581-c865-4a2f-be90-af5696fecc28",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-feed"
+}

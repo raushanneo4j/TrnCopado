@@ -1,0 +1,64 @@
+{
+  "appPageId" : "9c02c4ef-a8e6-4be2-bf1e-296dbcdf439d",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "b54ddfe2-16e7-4605-88a7-acead6c4836a",
+  "label" : "Expense Report Detail",
+  "regions" : [ {
+    "id" : "9faefc8a-435b-4ca5-a1fa-ae5cc9076f55",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "74498ee7-5579-4875-9166-1ec0dd57f6f4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "chatter",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "98c84926-e96a-4155-a91f-be7d561428c5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5981c656-2016-4f01-bd6f-340cfd2af19f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e5589753-267d-4fab-a71f-95befd6fe047",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "388d1415-4b98-48b4-812f-6bde6b742e74",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2a16a5af-f7f4-4d6e-8edb-315caebdafb0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a39"
+}

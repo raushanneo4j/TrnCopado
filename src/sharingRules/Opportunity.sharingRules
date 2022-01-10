@@ -6,7 +6,7 @@
         <description>grant edit abilities of renewal opps to account managers/renewals team</description>
         <label>Account Mgrs Edit Renewals</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Account_Management</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Account_Management</roleAndSubordinatesInternal>
         </sharedTo>
         <booleanFilter>1</booleanFilter>
         <criteriaItems>
@@ -36,7 +36,7 @@
         <accessLevel>Edit</accessLevel>
         <label>Regional Director EMEA East Edit</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Sales_EMEA_South</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Sales_EMEA_South</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
             <field>StageName</field>
@@ -55,7 +55,7 @@
         <description>Scott and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
         <label>SDR Team Edit</label>
         <sharedTo>
-            <roleAndSubordinates>Director_of_Sales_Development</roleAndSubordinates>
+            <roleAndSubordinatesInternal>Director_of_Sales_Development</roleAndSubordinatesInternal>
         </sharedTo>
         <booleanFilter>1 or (2 and 3)</booleanFilter>
         <criteriaItems>
@@ -80,7 +80,7 @@
         <description>VP Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
         <label>Sales Team Edit</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Sales</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Sales</roleAndSubordinatesInternal>
         </sharedTo>
         <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
@@ -100,7 +100,7 @@
         <description>VP Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
         <label>VP EMEA West Edit</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Sales_EMEA_North</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Sales_EMEA_North</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
             <field>StageName</field>
@@ -119,7 +119,7 @@
         <description>VP Global Cloud Sales and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
         <label>VP Global Cloud Sales Edit</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Global_Cloud_Sales</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Global_Corporate_Cloud_Sales</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
             <field>StageName</field>
@@ -138,7 +138,7 @@
         <description>Revised in https://neo4j--organizer.na122.visual.force.com/a7z3s0000004SJSAA2 nicknameis: ORE Phase 2 (John Broad&amp;#39;s ORE requirements)  by removing criteria of partner fields on opportunity because we retired those and replaced it with a child object.</description>
         <label>VP NA Alliance Access</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Strategic_Alliances_and_Channels</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Strategic_Alliances_and_Channels</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
             <field>StageName</field>
@@ -152,7 +152,7 @@
         <description>VP Sales APAC and subordinates can edit all 0% Prospecting, 1% Qualificaiton SDR, 10% Qualification (before approved)</description>
         <label>VP Sales APAC Edit</label>
         <sharedTo>
-            <roleAndSubordinates>VP_Sales_APAC</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_Sales_APAC</roleAndSubordinatesInternal>
         </sharedTo>
         <criteriaItems>
             <field>StageName</field>
@@ -171,7 +171,7 @@
         <description>Customer Success manager and team ability to edit all opps to link CPPs on opps</description>
         <label>CSM Edit Access</label>
         <sharedTo>
-            <roleAndSubordinates>Customer_Success_Manager</roleAndSubordinates>
+            <roleAndSubordinatesInternal>Customer_Success_Manager</roleAndSubordinatesInternal>
         </sharedTo>
         <sharedFrom>
             <allInternalUsers></allInternalUsers>
@@ -233,7 +233,7 @@
 - Validation rules prevent field engineers from updating critical fields such as stage, date, owner.</description>
         <label>Pre-sales Opp Edit Rights</label>
         <sharedTo>
-            <roleAndSubordinates>VP_of_Field_Engineering</roleAndSubordinates>
+            <roleAndSubordinatesInternal>VP_of_Field_Engineering</roleAndSubordinatesInternal>
         </sharedTo>
         <sharedFrom>
             <allInternalUsers></allInternalUsers>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send an email alert to the contacts associated with the project opportunity through opportunity contact roles.</description>
+        <name>Email_Each_Contact_Action</name>
+        <label>Email Each Contact</label>
+        <locationX>138</locationX>
+        <locationY>935</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_Through_Opportunity_Contact_Roles_Loop</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>textTemplateProjectHoursUsed</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Fetch_Contacts_for_Opportunity_Contact_Roles_Get.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>maria.turegano@neo4j.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>textTemplateProjectHoursUsedSubject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Checks whether the project record meets the criteria to trigger an email alert.</description>
+        <name>Meets_Criteria_Decision</name>
+        <label>Meets Criteria?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes2</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PSA_Community_Customer__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.pse__Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.pse__Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Canceled</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.pse__Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Delivered</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ProjectHoursUsedAlertSent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Project_Opportunity_Record_Get</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>This flow sends an email alert when the value in the &apos;Percent Complete (Hours)&apos; field on the Project (pse__Proj__c) object passes a certain percentage threshold and the project record meets certain criteria (specified in the flow). Theo flow fetches the contact roles that meet the specified criteria associated with the opportunity on the project to access the contact email addresses in order to send an alert to those customers that a certain percentage of the hours purchased and allocated to the project have been used. The email is sent only once when the specified threshold is passed, which is accomplished by having the flow check a hidden checkbox when it sends the first alert. JIRA: SFDCSPT-721</description>
+    <formulas>
+        <description>Today&apos;s date.</description>
+        <name>FormulaDateToday</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>FF PROJECT : ! 4 PS Customer Project Hours Used Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FF PROJECT : ! 4 PS Customer Project Hours Used Email Alert</label>
+    <loops>
+        <description>Loop through the fetched opportunity contact roles one record at a time.</description>
+        <name>Loop_Through_Opportunity_Contact_Roles_Loop</name>
+        <label>Loop Through Opportunity Contact Roles</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <collectionReference>Fetch_Opportunity_Contact_Roles_Get</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Fetch_Contacts_for_Opportunity_Contact_Roles_Get</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Record_with_Alert_Sent_Update</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch the associated contact for for each opportunity contact role in the loop. Note, normally we don&apos;t want to include Get Records element in the loop, however, in this particular case, this was an acceptable solution to be able to separate the email addresses of the contacts. The number of records isn&apos;t expected to ever be large enough to hit the limit.</description>
+        <name>Fetch_Contacts_for_Opportunity_Contact_Roles_Get</name>
+        <label>Fetch Contacts for Opportunity Contact Roles</label>
+        <locationX>138</locationX>
+        <locationY>815</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Email_Each_Contact_Action</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_Opportunity_Contact_Roles_Loop.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Fetch all opportunity contact roles that meet our requirements associated with the opportunity record for the project.</description>
+        <name>Fetch_Opportunity_Contact_Roles_Get</name>
+        <label>Fetch Opportunity Contact Roles</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Opportunity_Contact_Roles_Loop</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Fetch_Project_Opportunity_Record_Get.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ReceivesPSAlerts__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>OpportunityContactRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Fetch the opportunity associated with the current project through the lookup field and store the record in a variable.</description>
+        <name>Fetch_Project_Opportunity_Record_Get</name>
+        <label>Fetch Project Opportunity Record</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fetch_Opportunity_Contact_Roles_Get</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.pse__Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Check the &apos;Project Hours Used Alert Sent&apos; checkbox field on the project record to ensure that no additional alerts are triggered with subsequent percent spend increases -- we want to send a single alert when the 80% threshold is reached or surpassed.</description>
+        <name>Update_Record_with_Alert_Sent_Update</name>
+        <label>Update Record with &apos;Alert Sent&apos;</label>
+        <locationX>50</locationX>
+        <locationY>1151</locationY>
+        <inputAssignments>
+            <field>ProjectHoursUsedAlertSent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Meets_Criteria_Decision</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Percent_Complete_Hours__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <numberValue>80.0</numberValue>
+            </value>
+        </filters>
+        <object>pse__Proj__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>The text template used to send an email alert to the contacts associated with the project record through opportunity contact roles.</description>
+        <name>textTemplateProjectHoursUsed</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear {!Fetch_Contacts_for_Opportunity_Contact_Roles_Get.FirstName}!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We would like to inform you that {!$Record.Percent_Complete_Hours__c}% of your consulting hours for the &quot;{!$Record.Name}&quot; project have been consumed as of &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!FormulaDateToday}&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;SUMMARY&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Planned Hours: &lt;b&gt;{!$Record.pse__Planned_Hours__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Delivered Hours: &lt;b&gt;{!$Record.Hours_Delivered__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Remaining Hours: &lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.Hours_Remaining__c}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can check your remaining balance of hours at any time by &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;logging in to the &lt;/span&gt;&lt;a href=&quot;https://neo4j.force.com/Neo4jCustomerServicePortal/s/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Neo4j Customer Services Portal&lt;/b&gt;&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; and clicking the “Your Services” tile on the homepage.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Sincerely,&lt;/p&gt;&lt;p&gt;Professional Services Team&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Subject line for the email that goes out to the PS customer.</description>
+        <name>textTemplateProjectHoursUsedSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Neo4j: {!$Record.Percent_Complete_Hours__c}% of Hours for &apos;{!$Record.Name}&apos; Have Been Used</text>
+    </textTemplates>
+    <variables>
+        <description>Collection variable that stores the fetched contact email addresses together.</description>
+        <name>varContactEmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

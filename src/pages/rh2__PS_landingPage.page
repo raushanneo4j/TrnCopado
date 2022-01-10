@@ -6,7 +6,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>	 
         <apex:includeScript value="{!$Resource.rh2__svg4everybody}"/>
 
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	    <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
 	    <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
     </head> 
@@ -119,17 +119,17 @@
 	    			</tr>
 	    			<tr>
 		    			<td class="linkTile slds-button slds-button_neutral">
-		    				<apex:outputLink target="_blank" value="http://www.passagetechnology.com/use-cases">
-		    				<div>
-		    					<h2 class="slds-text-heading_large" style="padding-bottom:15px; padding-top:15px;">{!$Label.Browse}</h2>
-		    					<span class="slds-icon__container slds-icon-action-email">
-									<svg class="slds-icon slds-icon--large" aria-hidden="true">
-										<use xlink:href="{! URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#canvas')}"></use>
-									</svg>
-		    					</span>
-		        				<h3 class="slds-text-heading_medium" style="padding-top:15px;">{!$Label.UseCases}</h3>
-		    				</div>
-		    				</apex:outputLink>
+		    				<a href="/apex/PS_Use_Case_Deployment">
+								<div>
+									<h2 class="slds-text-heading_large" style="padding-bottom:15px; padding-top:15px;">{!$Label.Browse}</h2>
+									<span class="slds-icon__container slds-icon-action-email">
+										<svg class="slds-icon slds-icon--large" aria-hidden="true">
+											<use xlink:href="{! URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#canvas')}"></use>
+										</svg>
+									</span>
+									<h3 class="slds-text-heading_medium" style="padding-top:15px;">{!$Label.UseCases}</h3>
+								</div>
+							</a>
 		    			</td>
 		    			<td class="linkTile slds-button slds-button_neutral">
 		    				<a href="https://trailblazers.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F9300000009QWe" target="_blank" >

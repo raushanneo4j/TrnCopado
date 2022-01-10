@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_62892448</developerName>
+        <masterLabel>Product Name Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Subscription - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Business Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Discovery Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - Enterprise Bundle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (License)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subscription - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support - OEM</sourceValue>
+            </sourceValues>
+            <value>Subscription/Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Professional Services - Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services - Training</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - PS - Consulting</sourceValue>
+            </sourceValues>
+            <value>PS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partnership</sourceValue>
+            </sourceValues>
+            <value>Partnership</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Perpetual - OEM (Royalty)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>POC - OEM (Platform)</sourceValue>
+            </sourceValues>
+            <value>Perpetual/POC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Type__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>JC weekly report for DQ and closing</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales Ops Review,Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>consult</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PS in 99% and 100% This Quarter</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

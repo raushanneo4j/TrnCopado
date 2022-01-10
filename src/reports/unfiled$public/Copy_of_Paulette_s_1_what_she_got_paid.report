@@ -8,13 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity.Sales_Development_Rep__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>Opportunity.X1SDRCompApprovalStatus__c</groupingColumn>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.Opportunity_Source__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -26,6 +24,9 @@
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
+    <columns>
+        <field>Opportunity.Sales_Development_Rep__c</field>
+    </columns>
     <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
@@ -76,16 +77,13 @@
         <field>CREATED_ALIAS</field>
     </columns>
     <columns>
-        <field>Opportunity.X1SDRCompApprovalStatus__c</field>
-    </columns>
-    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Manager_Approved__c</field>
     </columns>
     <currency>USD</currency>
     <description>Report to figure out what I got paid on</description>
     <filter>
-        <booleanFilter>((((1 AND 2 AND (3 OR 4)) AND 5) AND 6) AND 7) AND 8</booleanFilter>
+        <booleanFilter>((((((1 AND 2 AND (3 OR 4)) AND 5) AND 6) AND 7) AND 8) AND 9) AND 10</booleanFilter>
         <criteriaItems>
             <column>OpportunityLineItem.Product_Type__c</column>
             <columnToColumn>false</columnToColumn>
@@ -142,16 +140,25 @@
             <operator>equals</operator>
             <value>Paulette Buchheim</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.X1SDRCompApprovalStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Approved by SDR Director - Final Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Manager_Approved__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Sales_Development_Rep__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Opportunity_Source__c</field>
+        <field>Opportunity.X1SDRCompApprovalStatus__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Copy of Paulette&apos;s 1% what she got paid</name>
@@ -172,8 +179,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>OpportunityLineItem.Product_Type__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity.X1_SDR_Date__c</dateColumn>
         <interval>INTERVAL_CURRENT</interval>

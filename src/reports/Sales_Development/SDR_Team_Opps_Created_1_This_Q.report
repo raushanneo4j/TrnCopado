@@ -11,12 +11,12 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity.Opportunity_Source__c</groupingColumn>
+        <groupingColumn>Opportunity.Sales_Development_Rep__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
-        <showValues>false</showValues>
+        <showValues>true</showValues>
         <size>Large</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -25,7 +25,13 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>Opportunity.X1_SDR_Date__c</field>
+    </columns>
+    <columns>
         <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Source__c</field>
     </columns>
     <columns>
         <field>ACCOUNT_NAME</field>
@@ -63,12 +69,9 @@
     <columns>
         <field>INDUSTRY</field>
     </columns>
-    <columns>
-        <field>Opportunity.X1_SDR_Date__c</field>
-    </columns>
     <currency>USD</currency>
     <filter>
-        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
         <criteriaItems>
             <column>OpportunityLineItem.Product_Type__c</column>
             <columnToColumn>false</columnToColumn>
@@ -97,18 +100,11 @@
             <operator>equals</operator>
             <value>Subscription - OEM (platform)</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity.Sales_Development_Rep__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Josh Robert</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Opportunity_Source__c</field>
+        <field>Opportunity.Sales_Development_Rep__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>SDR Team - 1% Opps Created by Qtr</name>
@@ -129,8 +125,6 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Opportunity.Qualification_Date__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity.X1_SDR_Date__c</dateColumn>
         <interval>INTERVAL_CURRENT</interval>

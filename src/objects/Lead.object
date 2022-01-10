@@ -464,6 +464,82 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>CloudingoAgent__ARDI__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Residential Delivery Indicator</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__AR__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__AS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__ATZ__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Timezone</label>
+        <length>48</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__AV__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address Vacancy</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloudingoAgent__LES__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead Email Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Company</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -3787,7 +3863,7 @@ IF(CONTAINS(&quot;Australia : Bangladesh : Cambodia : Bhutan : China : Guam : Ho
     </fields>
     <fields>
         <fullName>Lead_Status_Change_Date__c</fullName>
-        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>nadia.gainsbourg@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>Admin time stamp field used for auditing purposes and in certain integrations, including RingLead to help accurately determine the winning record that will survive the merge. JIRA: SFDCSPT-163</description>
         <externalId>false</externalId>
@@ -4861,6 +4937,20 @@ JIRA: SFDCSPT-594</description>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>PassedProfanityCheck__c</fullName>
+        <businessOwnerGroup>System_Admins</businessOwnerGroup>
+        <businessStatus>Active</businessStatus>
+        <defaultValue>false</defaultValue>
+        <description>This field is used by Data Stewards to tag Lead records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or email address may be flagged by the tool (e.g. last name Cuntz). JIRA: SFDCSPT-817</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by Data Stewards to tag Lead records that have been determined upon review not to contain offensive language. These records typically appear in RingLead results because some part of the name or email address may be flagged by the tool (e.g. last name Cuntz).</inlineHelpText>
+        <label>Passed Profanity Check</label>
+        <securityClassification>Internal</securityClassification>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Pause_Lifecycle__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -4949,17 +5039,6 @@ JIRA: SFDCSPT-594</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Reassign_Lead_Trigger__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Triggers SFDC Lead Assignment rules to be re-evaluated</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Triggers SFDC Lead Assignment rules to be re-evaluated</inlineHelpText>
-        <label>Reassign Lead Trigger</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Recycle_Date__c</fullName>
@@ -5334,7 +5413,7 @@ JIRA: SFDCSPT-78, 9/21/2020</description>
     </fields>
     <fields>
         <fullName>Synced_From_Outreach__c</fullName>
-        <businessOwnerUser>stephen.depaoli@neo4j.com.trnprod</businessOwnerUser>
+        <businessOwnerUser>stephen.depaoli@neo4j.com.trnnadia</businessOwnerUser>
         <businessStatus>Active</businessStatus>
         <description>This field is part of the Salesforce and Outreach integration. Will display &quot;1&quot; when a record is synced from Outreach to Salesforce. Do NOT change field type to Checkbox -- in Outreach custom fields are &quot;Text&quot; only, so the target field in Salesforce must be of the same type.
 
