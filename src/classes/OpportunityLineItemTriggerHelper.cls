@@ -4,7 +4,7 @@ newMap - A map of IDs to the new versions of the sObject records. This map is on
 old - Returns a list of the old versions of the sObject records. This sObject list is only available in update and delete triggers.
 oldMap - A map of IDs to the old versions of the sObject records. This map is only available in update and delete triggers.
 
-A note about feature architecture:
+A note about feature architecture: Copado1
 *SFDC-0145, spans beforeInsert, beforeUpdate.  AutoCalcs and ledgers ARR changes.  Ledger occurs on beforeInsert and beforeUpdate, a key variable differs between contexts,  oldARRConsidersPreviousTriggerRuns, to help.
 *
 */
