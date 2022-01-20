@@ -6,7 +6,7 @@ oldMap - A map of IDs to the old versions of the sObject records. This map is on
 
 A note about feature architecture: Copado
 *SFDC-0145, spans beforeInsert, beforeUpdate.  AutoCalcs and ledgers ARR changes.  Ledger occurs on beforeInsert and beforeUpdate, a key variable differs between contexts,  oldARRConsidersPreviousTriggerRuns, to help.
-*
+* SFDC COPADO BRANCH MERGE Testing
 */
 public with sharing class OpportunityLineItemTriggerHelper{ //the OpportunityLineItem Trigger Helper
     //start If neo4j_apexBypass_context__c is ever set to true, such as in controlled scenarios like grant-based PowerEditor updates, THEN this feature block ensures those paths exit by setting it back to false so that its never true when users are editing the record, series
