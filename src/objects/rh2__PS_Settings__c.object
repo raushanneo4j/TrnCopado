@@ -68,6 +68,16 @@ The converted leads are identified by the &quot;isConverted&quot; system field.<
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>rh2__DeveloperExceptionEmailOptOut__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this field prevents Rollup Helper exception emails from being forwarded to our developers.</inlineHelpText>
+        <label>Developer Exception Email Opt Out</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>rh2__Disable_Advanced_Currency__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -96,6 +106,17 @@ The converted leads are identified by the &quot;isConverted&quot; system field.<
         <externalId>false</externalId>
         <inlineHelpText>Check this box if you do not want to recalculate currency rollups after a change in a child record&apos;s CurrencyIsoCode field</inlineHelpText>
         <label>Disable Currency Update Recalculation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rh2__Disable_Rollup_Auditing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Checking this box will disable rollup auditing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to disable rollup auditing.</inlineHelpText>
+        <label>Disable Rollup Auditing</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -138,7 +159,7 @@ The converted leads are identified by the &quot;isConverted&quot; system field.<
         <fullName>rh2__Limit_Pre_Processing__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
-        <description>Checking this field removes non-essential processing such as filtering out fields that don&apos;t need to be updated.  Leave this unchecked if you only want rollups to be processed where a change was actually made to the source field. However, enabling this setting does not guarantee the limiting of pre-processing, as other conditions can necessitate that pre-processing occurs. Some examples are if the source object is a knowledge article, or the source object has custom formula fields.</description>
+        <description>Checking this field removes non-essential processing such as filtering out fields that don&apos;t need to be updated.  Leave this unchecked if you only want rollups to be processed when a change is actually made to the source field. However, disabling this setting does not guarantee that rollups will not process, as other conditions can necessitate that processing occurs. Some examples are if the source object is a knowledge article, or the source object has custom formula fields.</description>
         <externalId>false</externalId>
         <inlineHelpText>Leave this unchecked if you only want rollups / records to be processed where a change was actually made to the source field.  Removes non-essential processing such as filtering out fields that don&apos;t need to be updated (Can help w/ Timeout issues).</inlineHelpText>
         <label>Limit Pre Processing</label>

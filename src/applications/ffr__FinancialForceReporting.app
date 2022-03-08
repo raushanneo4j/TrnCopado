@@ -4,6 +4,7 @@
     <description>FinancialForce Reporting</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Reporting</label>
     <tabs>ffr__ReportingGenerator</tabs>
     <tabs>ffr__ReportingDefinition__c</tabs>

@@ -6,7 +6,7 @@
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/RollupRun.js') }"/>
     	 <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
      </head>
 
   <script>
@@ -29,22 +29,6 @@
         function calcMaxRecords(selectedFilter){
             Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.PS_DefineJob_Controller.maxRecords}',
                            '{! JSENCODE(parentObjectName) }', selectedFilter, estimateRecordsDuration, {escape:true, timeout:120000});
-        }
-        
-        function confirmRunOnce(overwrite, blankOverwrite, fieldName) 
-        {
-                     
-            if(overwrite == true && blankOverwrite == true)
-            {
-            return confirm("{!$Label.rh2__warningrunningthisrollup} " + fieldName + " {!$Label.rh2__fieldtobeoverwritten}");
-            }
-
-            if(overwrite == true && blankOverwrite == false){
-            return confirm("{!$Label.rh2__warningrunningthisrollup} " + fieldName  +  " {!$Label.rh2__fieldtobeoverwrittenblank} " + fieldName  + " {!$Label.rh2__blankoverwritefield}");
-            }
-
-
-            return true;       
         }
 
          function setPositionOfTooltip(tooltip, label){
@@ -79,11 +63,11 @@
   </script>
   
     <body>
-    	<apex:form >
+    	<apex:form id="form" >
         <apex:actionFunction name="rerenderFilterLinks" rerender="filterLinks" status="loading"/>
         <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
         <apex:slds />
-	 	<div class="slds-scope" role="main"> 	  
+	 	<div class="slds-scope" role="main"> 
 	 		<div class="slds-card">
   				<header class="slds-card__header">
 	       			<nav role="navigation">
@@ -102,7 +86,6 @@
              			
          			<div class="slds-col_padded" align="right">   					           			
              			<apex:commandLink styleClass="slds-button slds-button_neutral" rendered="{!IsSourceObjectTriggerable}" action="{!goToEnableRealtime}">{!$Label.rh2__managerealtime}</apex:commandLink> 
-            			<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__cancel}" />
          			</div>        				
                  </header>
                 <apex:outputPanel rendered="{!NOT(rollupSetting.rh2__exceptionMessage__c == null)}" styleClass="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning">
@@ -114,6 +97,17 @@
                 </apex:outputPanel>
          		<section class="slds-card__body">
                     <apex:pageMessages />
+                    <center>
+                       <apex:outputPanel id="overwriteWarnings" style="width:80%;" styleClass="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" rendered="{!overwrite}">
+                           <apex:outputPanel id="overwriteWarning" rendered="{!AND(overwrite, blankOverwrite)}">
+                               {!$Label.rh2__warningrunningthisrollup} {!targetField} {!$Label.rh2__fieldtobeoverwritten}
+                           </apex:outputPanel>
+                           <apex:outputPanel id="blankOverwriteWarning" rendered="{!AND(overwrite, !blankOverwrite)}">
+                               {!$Label.rh2__warningrunningthisrollup} {!targetField} {!$Label.rh2__fieldtobeoverwrittenblank} {!targetField} {!$Label.rh2__blankoverwritefield}"
+                           </apex:outputPanel>
+                       </apex:outputPanel>              
+                   </center>  
+                   <br/>
          			<div class="slds-grid slds-grid_align-center">                        
          				<div class="slds-col slds-shrink">        			
          					<div class="slds-box slds-theme_default slds-shrink">
@@ -160,13 +154,16 @@
                                         <apex:inputText style="width:100% !important;" value="{!notificationEmail}"/>
                                     </div>
                                 </center><br/>
-                                <center><apex:commandButton styleClass="slds-button slds-button_brand" id="runButton" value="{!$Label.rh2__startrolluprun}" action="{!runForAllRecords}" onClick="if (!confirmRunOnce({!overwrite}, {!blankOverwrite}, '{!targetField}')) return false;"/> </center>                        
-                              
+                                <center>
+                                    <apex:commandButton styleClass="slds-button slds-button_brand" id="runButton" value="{!$Label.rh2__startrolluprun}" action="{!runForAllRecords}" status="loading"  rerender="filterLinks"/> &nbsp;
+                                    <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!allSettingsRedirect}" value="{!$Label.rh2__cancel}" reRender="form"/>
+                                </center>                        
                                 <apex:inputHidden value="{!maxRecords}" id="maxRecords"/>    
-                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__ParentFilter__c}" />              		
+                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__ParentFilter__c}" />             
+                                <apex:inputHidden value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" />            		
              				</div> 
              			</div>
-             		</div>                   
+             		</div>   
             	</section> 
             	
              </div>	

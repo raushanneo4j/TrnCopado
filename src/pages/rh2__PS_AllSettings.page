@@ -5,7 +5,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" />  
     </head> 
     
@@ -182,16 +182,6 @@
             tt.style.wordWrap = 'break-word';
         }
 
-        function checkForEditsAndConfirmActive(conditional, targetField){
-          
-          if(rh.j$("[id$=saveInlineEditBtn]").is(':visible')){
-              if(!confirm('{!$Label.TherAreInlineEdits}'))
-                  return false;
-          }
-          if (!confirmActive(conditional, targetField, {!count}, {!notpaid}))
-            return false;
-        }
-
         function populateSettingModalOptions() {
             rh.j$( '[id$=recordScopeInput]' ).val({!rhSettings.recordScope});
             rh.j$( '[id$=maxQueueableInput]' ).val({!rhSettings.maxQueueable});
@@ -243,13 +233,21 @@
                 if(clone_table.length === 0){
                     clone_table = rh.j$("#allRollups").clone();
                     clone_table.attr('id', 'clone');
-                    clone_table.css({position:'fixed',
+                    clone_table.css({
+                            position: 'fixed',
                             top: -1,
                             left: left_offset,
-                            width: full_width});
+                            width: full_width,
+                            zIndex: 9998});
                     rh.j$("#table-container").append(clone_table);
                     rh.j$("#clone").css({visibility:'hidden'});
-                    rh.j$("#clone thead").css({visibility:'visible'});
+                    rh.j$("#clone thead").css({
+                            visibility:'visible',
+                            top: -1,
+                            left: left_offset,
+                            width: full_width,
+                            zIndex: 9999});
+                    rh.j$("#clone div").css({visibility:'hidden'});
                 }
             } else {
                 rh.j$("#clone").remove();
@@ -278,7 +276,7 @@
             } else if(labelOrDescription == 'description'){
                 return document.getElementsByClassName('descriptionEditField' + item);
             }
-        }
+        }        
 
         function hoverPencilColorChangeBack(item, labelOrDescription){
             var elementsList = getElementslist(item, labelOrDescription);            
@@ -308,8 +306,28 @@
 
     </script>
 
+    <apex:outputPanel id="activeFunction">
+        <script>
+            function checkForEditsAndConfirmActive(conditional, targetField, itemName){
+                if ({!notPaid} == true && {!count} >= 3 && conditional == 'false') {
+                    return;
+                } else {
+                    storeTheId(itemName);
+                    if(rh.j$("[id$=saveInlineEditBtn]").is(':visible')){
+                        showModal(true, 'thereAreInlineEditsModal');
+                    } else if(conditional == 'false'){
+                        showModal(true, 'confirmActiveModal');
+                    } else{
+                        showModal(true, 'confirmDeactivateModal');
+                    }
+                }
+            }
+        </script>
+    </apex:outputPanel>
+
     <apex:form >
-        <apex:actionFunction action="{!toggleActiveRollups}" name="activate" reRender="newRollupButton, activationLimitMessage, settingsTable, rollupFooterInfo" oncomplete="fixHeader();" status="loading"/> 
+        <apex:actionFunction action="{!toggleActiveRollups}" name="activate" reRender="activeFunction, newRollupButton, activationLimitMessage, settingsTable, rollupFooterInfo" oncomplete="fixHeader();" status="loading"/> 
+        <apex:actionFunction action="{!setActive}" name="toggleSingleActive" rerender="activeFunction, newRollupButton, activationLimitMessage, settingsTable, rollupFooterInfo" oncomplete="fixHeader();" status="loading"/>
         <apex:actionFunction action="{!toggleSelectRollups}" name="selectRollups" reRender="settingsTable, deleteSelectedButton, createRollupGroupButton" oncomplete="fixHeader();" status="loading"/>
           <apex:actionFunction name="displayRollups" action="{!displayAllRollups}" reRender="settingsTable, rollupPagination" oncomplete="hideExtraElements();" status="loading">
                 <apex:param name="fieldSort" value="" assignTo="{!tableConfig.sortVars.sortField}"/>
@@ -324,6 +342,9 @@
                 <apex:param name="availableRollupSearch" value=""/>
             </apex:actionFunction>
           <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
+        <apex:actionFunction action="{!storeRollupId}" name="storeTheId" rerender="none" status="loading">
+            <apex:param id="rollupIdd" name="rollupId" assignTo="{!rollupToChangeActiveStatus}" value=""/> 
+        </apex:actionFunction>
     </apex:form>  
        
     <apex:form id="theForm">
@@ -357,7 +378,195 @@
           <footer class="slds-card__footer"> </footer>
         </div>
     </apex:outputPanel> 
-        
+    <div id="deleteRollupGroupWarningModal">
+        <apex:outputPanel id="deleteRollupGroupWarningModal">
+            <apex:outputPanel rendered="{!pgBehavior.showDeleteRollupGroupWarningModal}" >
+                <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__header slds-modal__header_empty">
+                            <button type="button" onclick='showModal(false, "deleteRollupGroupWarningModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                                <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                                    <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                                </svg>
+                            </button>                            
+                        </div>
+                        <div class="slds-modal__content slds-p-around_medium">	
+                            <center>
+                                {!$Label.AreYouSureYouWantToDeleteThisRollupGroup}
+                            </center>
+                        </div> 
+                        <div class="slds-modal__footer">
+                            <apex:commandButton styleClass="slds-button slds-button_brand" action="{!deleteRollupGroup}" status="loading" value="{!$Label.rh2__yes}"/>
+                            <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeDeleteRollupGroupWarningModal}" value="{!$Label.rh2__no}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </apex:outputPanel>	
+        </apex:outputPanel>
+    </div>
+    <div id="deleteRollupWarningModal" style="display:none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "deleteRollupWarningModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">	
+                    <center>
+                        {!$Label.AreYouSureYouWantToDeleteThisRollup}
+                    </center>
+                </div> 
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" action="{!delCustomSetting}" status="loading" value="{!$Label.rh2__yes}" />
+                    <button type="button" class="slds-button slds-button_neutral" onclick="showModal(false, 'deleteRollupWarningModal');">{!$Label.rh2__no}</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div id="deleteSelectedRollupsModal" style="display:none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "deleteSelectedRollupsModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">	
+                    <center>
+                        {!$Label.AreYouSureYouWantToDeleteSelectedRollups}
+                    </center>
+                </div> 
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" action="{!deleteSelectedRollups}" status="loading" value="{!$Label.rh2__yes}" />
+                    <apex:commandButton styleClass="slds-button slds-button_neutral" reRender="deleteSelectedRollupsModal" onclick="showModal(false, 'deleteSelectedRollupsModal');" value="{!$Label.rh2__no}"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div id="deleteAllRollupsFromGroupWarningModal" style="display: none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "deleteAllRollupsFromGroupWarningModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">	
+                    <center>
+                        {!$Label.AreYouSureYouWantToDeleteAllRollupsFromThisGroup}
+                    </center>
+                </div> 
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" action="{!deleteRollups}" status="loading" value="{!$Label.rh2__yes}" />
+                    <apex:commandButton styleClass="slds-button slds-button_neutral" onclick="showModal(false, 'deleteAllRollupsFromGroupWarningModal');" status="loading" reRender="deleteAllRollupsFromGroupWarningModal" value="{!$Label.rh2__no}"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div id="activeAllModal" style="display: none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "activeAllModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+            <div class="slds-modal__content slds-p-around_medium">	
+                <center>
+                    {!ActiveAllMessage}
+                </center>
+            </div>
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" onclick="selectAllCheckboxes(this,'activeCheckbox'); activate(); showModal(false, 'activeAllModal');" action="{!closeActiveAllModal}" rerender="activeAllModal, activeAllCheckbox, settingsTable" value="{!$Label.rh2__yes}"/>
+                    <apex:commandButton styleClass="slds-button slds-button_neutral" reRender="activeAllModal" onclick="showModal(false, 'activeAllModal');" value="{!$Label.rh2__no}"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div id="thereAreInlineEditsModal" style="display:none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "thereAreInlineEditsModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use href="{! URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">	
+                    <center>
+                        {!$Label.TherAreInlineEdits}
+                    </center>
+                </div>
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" reRender="settingsTable" action="{!setActive}" onclick="showModal(false, 'thereAreInlineEditsModal');" value="{!$Label.rh2__yes}" status="loading"/>
+                    <button type="button" onclick='showModal(false, "thereAreInlineEditsModal");' class="slds-button slds-button_neutral">{!$Label.rh2__no}</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <div id="confirmActiveModal" style="display:none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "confirmActiveModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+            <div class="slds-modal__content slds-p-around_medium">	
+                <center>
+                    {!$Label.AreYouSureYouWouldLikeToActivate}
+                </center>
+            </div>
+                <div class="slds-modal__footer">
+                    <apex:commandButton styleClass="slds-button slds-button_brand" reRender="confirmActiveModal" onclick="toggleSingleActive(); showModal(false, 'confirmActiveModal');" value="{!$Label.rh2__yes}"/>
+                    <button type="button" onclick='showModal(false, "confirmActiveModal");' class="slds-button slds-button_neutral">{!$Label.rh2__no}</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+        <div id="confirmDeactivateModal" style="display:none;">
+            <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                <div class="slds-modal__header slds-modal__header_empty">
+                    <button type="button" onclick='showModal(false, "confirmDeactivateModal");' class="slds-button slds-button_icon-inverse slds-modal__close">
+                        <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                            <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                        </svg>
+                    </button>                            
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">	
+                    <center>
+                        {!$Label.AreYouSureYouWouldLikeToDeactivate}
+                    </center>
+                </div>
+                    <div class="slds-modal__footer">
+                        <apex:commandButton styleClass="slds-button slds-button_brand" reRender="confirmActiveModal" onclick="toggleSingleActive(); showModal(false, 'confirmDeactivateModal');" value="{!$Label.rh2__yes}"/>
+                        <button type="button" onclick='showModal(false, "confirmDeactivateModal");' class="slds-button slds-button_neutral">{!$Label.rh2__no}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    
     <apex:outputPanel rendered="{! customSettingsExist }" id="settingsExistWrapper">
         <apex:outputPanel id="redFlagContainer">
             <apex:outputPanel rendered="{! rhSettings.redflagErrors.size > 0}">
@@ -407,16 +616,15 @@
                             <apex:outputText value="|"/>
                             &nbsp;
                             <span title="{!$Label.DeleteRollupGroup}">
-                                <apex:commandLink value="{!$Label.rh2__delete}" action="{!deleteRollupGroup}" onClick="if(!confirm('{!$Label.rh2__areyousureyouwanttodeletethisrollupgroup}')) return false;" status="loading" styleClass="slds-button slds-button_text-destructive slds-button_small slds-text-body_small">
-                                </apex:commandLink>
+                                <apex:commandLink value="{!$Label.rh2__delete}" action="{!openDeleteRollupGroupWarningModal}" status="loading" styleClass="slds-button slds-button_text-destructive slds-button_small slds-text-body_small" />
                             </span>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <apex:commandLink value="{!$Label.rh2__deleterollups}" action="{!deleteRollups}" onClick="if(!confirm('{!$Label.rh2__areyousureyouwanttodeleteallrollupsfromthisgroup}')) return false;" status="loading" styleClass="slds-button slds-button_destructive slds-button_small slds-text-body_small">
+                            <apex:commandLink value="{!$Label.rh2__deleterollups}" onclick="showModal(true, 'deleteAllRollupsFromGroupWarningModal');" reRender="deleteAllRollupsFromGroupWarningModal" styleClass="slds-button slds-button_destructive slds-button_small slds-text-body_small">
                             </apex:commandLink>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                         </apex:outputPanel>        
                         <apex:outputPanel id="deleteSelectedButton">
-                            <apex:commandButton value="{!$Label.rh2__deleteselectedrollups}"  disabled="{! !RollupsSelected}" action="{!deleteSelectedRollups}" onClick="if(!confirm('{!$Label.rh2__areyousureyouwanttodeleteselectedrollupsfromthisgroup}')) return false;" status="loading" styleClass="slds-button slds-button_text-destructive slds-button_small slds-text-body_small">
+                            <apex:commandButton value="{!$Label.rh2__deleteselectedrollups}" onclick="showModal(true, 'deleteSelectedRollupsModal');"  disabled="{! !RollupsSelected}" styleClass="slds-button slds-button_text-destructive slds-button_small slds-text-body_small" rerender="deleteSelectedRollupsModal">
                             </apex:commandButton>
                         </apex:outputPanel>
                     </apex:outputPanel>
@@ -449,12 +657,14 @@
                 </apex:outputPanel>
                 <button class="slds-button slds-button_neutral" style="margin-right:4px;" onclick="return showFSModal();">Field Usage Search</button>
                 <apex:outputPanel id="newRollupButton">
-                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_SelectMaster)}" styleClass="slds-button slds-button_neutral" style="margin-left:4px;margin-right:4px;" rendered="{!AND(NOT(showMilestoneMessage), packageNamespace == 'RH2')}">
+                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_SelectMaster)}" styleClass="slds-button slds-button_neutral" style="margin-left:4px;margin-right:4px;" rendered="{!AND(NOT(pgBehavior.showMilestoneMessage), packageNamespace == 'RH2')}">
                         {!$Label.rh2__new}
                     </apex:outputLink>  
                 </apex:outputPanel>
                 <apex:outputLink value="{!URLFOR($Page.rh2__PS_healthCheck)}" style="margin-left:4px;" styleClass="slds-button slds-button_neutral">{!$Label.rh2__healthcheck}</apex:outputLink>  
-                    
+                <apex:outputPanel rendered="{!pgBehavior.showUseCaseBackButton}">
+                    <apex:outputLink value="{!smHelper.useCasePageReference}" style="margin-left: .25rem; margin-right: .25rem;" styleClass="slds-button slds-button_outline-brand">Back to Use Case Deployment</apex:outputLink>
+                </apex:outputPanel>        
                 <a href="#" class="slds-button slds-button_icon-border-filled" onClick="showSettingsModal();">
                     <svg aria-hidden="true" class="slds-button__icon slds-button__icon_medium">
                         <use xlink:href="{! URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#settings')}"></use>
@@ -467,7 +677,7 @@
           <section class="slds-card__body">
             <apex:pageMessages escape="false"/>
             <apex:outputPanel id="activationLimitMessage">
-              <apex:outputPanel rendered="{!showMilestoneMessage}">
+              <apex:outputPanel rendered="{!pgBehavior.showMilestoneMessage}">
                   <div class="slds-box slds-theme_info slds-theme_alert-texture" style="width:98%; margin-left:auto; margin-right:auto;">
                     {!$Label.YouHaveActivated} {! count } {!$Label.Rollups}.
                     &nbsp;<apex:outputText value="{!$Label.rh2__needmore}"/>&nbsp;<apex:outputLink target="new" value="http://rh-order.passagetech.com">{!$Label.rh2__pleaseupgrade}!</apex:outputLink>&nbsp;{!$Label.LikeRollupHelper}&nbsp;<apex:outputLink target="new" value="https://appexchange.salesforce.com/listingDetail?listingId=a0N30000009i3UpEAI&tab=r">{!$Label.rh2__giveusareview}.</apex:outputLink>
@@ -541,19 +751,23 @@
                         </apex:commandLink></span> 
                     </th>
                     <th class="slds-text-heading_label hidecol" scope="col"></th>
-                    <th class="slds-text-heading_label" style="width:5%;">
-                        <span title="{!$Label.SelectAll}">
-                        <apex:commandLink onclick="(function() {if(confirm('{!ActiveAllMessage}')){selectAllCheckboxes(this,'activeCheckbox'); activate();} })()" rerender="activeColumn">
-                            <apex:inputCheckbox value="{!allActiveCheck}" />
-                                <span class="slds-checkbox_faux"></span>
-                                <span class="slds-form-element__label slds-assistive-text">{!$Label.SelectAll}</span>
-                        </apex:commandLink>
-                        </span>
-                        <span style="width:15%;"><apex:commandLink value="{!$Label.rh2__active}" action="{! doSettingSort }" oncomplete="saveSort('{!tableConfig.sortVars.sortField}', '{!tableConfig.sortVars.sortDirection}');" rerender="settingsTable" status="loading"> 
-                            <apex:param name="sortField" value="conditional__c" assignTo="{!tableConfig.sortVars.sortField}"/> 
-                                <apex:outputText value="{!IF(tableConfig.sortVars.sortField=='conditional__c', IF(tableConfig.sortVars.sortDirection=='desc', ' ▲', ' ▼'),'')}"/> 
-                            </apex:commandLink></span> 
-                        </th>   
+                        <th class="slds-text-heading_label" style="width:5%;">
+                            <span title="{!$Label.SelectAll}">
+                                
+                            <apex:outputPanel id="activeAllCheckbox">
+                                <apex:commandLink onclick="showModal(true, 'activeAllModal');" status="loading" rerender="activeAllModal">
+                                    <apex:inputCheckbox value="{!allActiveCheck}" />
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span class="slds-form-element__label slds-assistive-text">{!$Label.SelectAll}</span>
+                                </apex:commandLink>
+                                </apex:outputPanel>
+                            </span>
+                            <span style="width:15%;"><apex:commandLink value="{!$Label.rh2__active}" action="{! doSettingSort }" oncomplete="saveSort('{!tableConfig.sortVars.sortField}', '{!tableConfig.sortVars.sortDirection}');" rerender="settingsTable" status="loading"> 
+                                <apex:param name="sortField" value="conditional__c" assignTo="{!tableConfig.sortVars.sortField}"/> 
+                                    <apex:outputText value="{!IF(tableConfig.sortVars.sortField=='conditional__c', IF(tableConfig.sortVars.sortDirection=='desc', ' ▲', ' ▼'),'')}"/> 
+                                </apex:commandLink>
+                            </span> 
+                        </th>                       
                         <th class="slds-text-heading_label" style="width:5%;">{!$Label.rh2__action}</th>
                     </tr>
                 </thead>
@@ -602,52 +816,54 @@
                                             {!$Label.rh2__edit}
                                         </apex:outputLink>
                                             
-                                        <apex:commandLink value="{!$Label.rh2__del}" reRender="setting_values, master_block, running_user, displayNum, menu" action="{! delCustomSetting }" styleClass="slds-button slds-button_xsmall slds-button_neutral">
+                                        <apex:commandButton value="{!$Label.rh2__del}" onclick="showModal(true, 'deleteRollupWarningModal');" reRender="none" action="{!storeSettingId}" styleClass="slds-button slds-button_xsmall slds-button_neutral">
                                             <apex:param name="settingId" value="{! item.Name }"/>
-                                        </apex:commandLink>                                
+                                        </apex:commandButton>                                
                                     </td>
                                     <td data-label="Run Time" class="slds-cell-shrink slds-truncate  slds-text-align_center" style="width:5%;">
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, NOT(item.rh2__triggerDisabled__c))}">
-                                            <span title="{!$Label.Realtime}"><i class="fa fa-bolt"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__triggerDisabled__c)}">
-                                            <span title="{!$Label.RealTimeDisabled}"><i class="fa fa-times"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__Disable_Realtime__c)}">
-                                            <span title="{!$Label.RealTimeDisabledForThisRollup}"><i class="fa fa-times-circle"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(item.rh2__conditional__c, item.rh2__targetFieldLength__c == 1)}">
-                                            <span title="{!item.rh2__Schedule_Run_Info__c}">
-                                                <apex:commandLink action="{!goToRollupSchedule}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
+                                        <apex:outputPanel rendered="{! item.conditional__c }">
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, NOT(item.rh2__triggerDisabled__c))}">
+                                                <span title="{!$Label.Realtime}"><i class="fa fa-bolt"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__triggerDisabled__c)}">
+                                                <span title="{!$Label.RealTimeDisabled}"><i class="fa fa-times"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__isRealTime__c, item.rh2__Disable_Realtime__c)}">
+                                                <span title="{!$Label.RealTimeDisabledForThisRollup}"><i class="fa fa-times-circle"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(item.rh2__targetFieldLength__c == 1)}">
+                                                <span title="{!item.rh2__Schedule_Run_Info__c}">
+                                                    <apex:commandLink action="{!goToRollupSchedule}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
+                                                        <apex:param name="s" value="{!item.name}"/>
+                                                        <i class="fa fa-calendar"></i>
+                                                    </apex:commandLink>
+                                                    <apex:commandLink action="{!goToRollupSchedule}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
+                                                        <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
+                                                        <i class="fa fa-calendar"></i>
+                                                    </apex:commandLink>
+                                                </span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!AND(!item.rh2__isRealTime__c, item.rh2__targetFieldLength__c != 1)}">
+                                                <span title="{!$Label.rh2__manualrunonly}">
+                                                <apex:commandLink action="{!goToRollupRun}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
                                                     <apex:param name="s" value="{!item.name}"/>
-                                                    <i class="fa fa-calendar"></i>
-                                                </apex:commandLink>
-                                                <apex:commandLink action="{!goToRollupSchedule}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </apex:commandLink> 
+                                                <apex:commandLink action="{!goToRollupRun}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
                                                     <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
-                                                    <i class="fa fa-calendar"></i>
+                                                    <i class="fa fa-info-circle"></i>
                                                 </apex:commandLink>
                                             </span>
                                         </apex:outputPanel>
-                                        <apex:outputPanel rendered="{!AND(!item.rh2__isRealTime__c, item.rh2__targetFieldLength__c != 1, item.rh2__conditional__c)}">
-                                            <span title="{!$Label.rh2__manualrunonly}">
-                                            <apex:commandLink action="{!goToRollupRun}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
-                                                <apex:param name="s" value="{!item.name}"/>
-                                                <i class="fa fa-info-circle"></i>
-                                            </apex:commandLink> 
-                                            <apex:commandLink action="{!goToRollupRun}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
-                                                <apex:param name="id" value="{!item.rh2__targetFieldName__c}"/>
-                                                <i class="fa fa-info-circle"></i>
-                                            </apex:commandLink>
-                                            </span>
+                                            <apex:outputPanel rendered="{! !item.Overwrite__c }">
+                                                <span title="{!$Label.DoesNotOverwrite}"><i class="fa fa-lock"></i></span>
+                                            </apex:outputPanel>
+                                            <apex:outputPanel rendered="{! !item.Blank_Overwrite__c }">
+                                                <span title="{!$Label.DoesNotOverwriteBlank}"><i class="fa fa-unlock-alt"></i></span>
+                                            </apex:outputPanel>
                                         </apex:outputPanel>
                                         <apex:outputPanel rendered="{! !item.conditional__c }">
                                             <span title="{!$Label.Inactive}"><i class="fa fa-exclamation-triangle"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{! !item.Overwrite__c }">
-                                            <span title="{!$Label.DoesNotOverwrite}"><i class="fa fa-lock"></i></span>
-                                        </apex:outputPanel>
-                                        <apex:outputPanel rendered="{! !item.Blank_Overwrite__c }">
-                                            <span title="Does Not Overwrite Field Values With Blank Values"><i class="fa fa-lock-open"></i></span>
                                         </apex:outputPanel>
                                     </td>
                                     <td class="slds-cell-wrap hidecol" style="word-break:break-all;" data-label="{!$Label.rh2__relationshipfield}">{! item.relationshipField__c }</td>
@@ -681,15 +897,16 @@
                                         </apex:outputField>                                     
                                     </td>
                                     <td onmouseover="hoverPencilColorChange('{!item}', 'description');" onmouseleave="hoverPencilColorChangeBack('{!item}', 'description');" class="slds-cell-wrap hidecol"><i class="fa fa-pencil descriptionEditField{!item}" onclick="clickInlineEdit('{!item}', 'description');" style="color:#d9d9db; padding-left:0px !important;"></i> </td>
+                                    
                                     <td data-label="{!$Label.rh2__active}" class="slds-cell-shrink" style="width:5%;">
-                                        <apex:commandLink onClick="return checkForEditsAndConfirmActive('{!item.rh2__conditional__c}', '{!item.rh2__targetField__c}');" action="{!setActive}"> 
+                                        <apex:commandLink action="{!storeRollupId}" onClick="checkForEditsAndConfirmActive('{!item.rh2__conditional__c}', '{!item.rh2__targetField__c}', '{!item.name}'); return false;" > 
                                             <apex:outputPanel rendered="{!item.rh2__conditional__c}">
                                                 <input type="checkbox" checked="checked"/>
                                             </apex:outputPanel>
                                             <apex:outputPanel rendered="{! !item.conditional__c}">
                                                 <input type="checkbox" />
                                             </apex:outputPanel>
-                                            <apex:param name="rollupId" value="{!item.name}"/> 
+                                            <apex:param id="rollupIdd" name="rollupId" value="{!item.name}"/> 
                                         </apex:commandLink> 
                                     </td>
                                         
@@ -704,65 +921,75 @@
                                                     
                                                     <apex:outputPanel rendered="{!IF(item.rh2__conditional__c, true, false)}">
                                                     <li class="slds-dropdown__item ">
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Run, null, [s=item.name])}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__run}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Run, null, [s=item.name])}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__run} <i class="fa fa-play" style="color:#706E6B;"></i>
                                                     </apex:outputLink>
 
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Run, null, [id=item.rh2__targetFieldName__c])}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__run}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Run, null, [id=item.rh2__targetFieldName__c])}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__run} <i class="fa fa-play" style="color:#706E6B;"></i>
                                                     </apex:outputLink>
                                                     </li>
                                                     </apex:outputPanel> 
                                                                                                 
                                                     <apex:outputPanel rendered="{!IF(item.rh2__conditional__c, true, false)}" > 
                                                     <li class="slds-dropdown__item">
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Job, null, [s=item.name])}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__schedule}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Job, null, [s=item.name])}" rendered="{!isBlank(item.rh2__targetFieldName__c)}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__schedule} <i class="fa fa-calendar" style="color:#706E6B;"></i>
                                                     </apex:outputLink>
 
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Job, null, [id=item.rh2__targetFieldName__c])}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__schedule}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_Job, null, [id=item.rh2__targetFieldName__c])}" rendered="{!not(isBlank(item.rh2__targetFieldName__c))}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__schedule} <i class="fa fa-calendar" style="color:#706E6B;"></i>
                                                     </apex:outputLink>
                                                     </li>
                                                     </apex:outputPanel>
 
                                                     <apex:outputPanel rendered="{! AND(!item.isRealTime__c, item.isValidTriggerObject__c)}">
                                                     <li class="slds-dropdown__item">
-                                                        <apex:outputLink value="{!URLFOR($Page.rh2__PS_Manage_Trigger, null, [mast=item.rh2__sourceObjectName__c])}">
-                                                            {!$Label.rh2__enablerealtime}
+                                                        <apex:outputLink value="{!URLFOR($Page.rh2__PS_Manage_Trigger, null, [mast=item.rh2__sourceObjectName__c])}" style="color:#080707;">
+                                                            {!$Label.EnableRealtime} &nbsp;&nbsp;&nbsp; <i class="fa fa-bolt" style="color:#706E6B;"></i>
                                                         </apex:outputLink>
                                                     </li>    
                                                     </apex:outputPanel>
                                                     
                                                     
                                                     <li class="slds-dropdown__item">
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=item.Name])}" rendered="{!IF(groupInfo.selectedRollupGroup == 'All Rollups', true, false)}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__edit}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=item.Name])}" rendered="{!IF(groupInfo.selectedRollupGroup == 'All Rollups', true, false)}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__edit} <i class="fa fa-pencil" style="color:#706E6B;"></i> 
                                                     </apex:outputLink>
 
-                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=item.Name, rollupGroup=groupInfo.selectedRollupGroup])}" rendered="{!IF(groupInfo.selectedRollupGroup != 'All Rollups', true, false)}" styleClass="slds-truncate">
-                                                        {!$Label.rh2__edit}
+                                                    <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=item.Name, rollupGroup=groupInfo.selectedRollupGroup])}" rendered="{!IF(groupInfo.selectedRollupGroup != 'All Rollups', true, false)}" styleClass="slds-truncate" style="color:#080707;">
+                                                        {!$Label.rh2__edit} <i class="fa fa-pencil" style="color:#706E6B;"></i>
                                                     </apex:outputLink>
                                                     </li>
 
                                                     <li class="slds-dropdown__item">
-                                                        <apex:commandLink action="{!populateCloneModal}" reRender="cloneModal" styleClass="slds-truncate" status="loading">
+                                                        <apex:commandLink action="{!populateCloneModal}" reRender="cloneModal" styleClass="slds-truncate" status="loading" style="color:#080707;">
                                                         <apex:param name="clone" value="{!item.Name}"/>
-                                                            {!$Label.rh2__clone}
+                                                            {!$Label.rh2__clone} <i class="fa fa-copy" style="color:#706E6B;"></i>
                                                         </apex:commandLink>
                                                     </li>
 
+                                                    
                                                     <li class="slds-dropdown__item">
-                                                        <apex:commandLink action="{!showShareModal}" reRender="UrlPopup" status="loading">
+                                                        <apex:commandLink action="{!showShareModal}" reRender="UrlPopup" status="loading" style="color:#080707;">
                                                             <apex:param name="copyurl" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=item.Name])}"/>
                                                             <apex:param name="rollupLabel" value="{!item.Name}"/>
-                                                            {!$Label.rh2__share}
+                                                            {!$Label.Share} <i class="fa fa-share" style="color:#706E6B;"></i> 
                                                         </apex:commandLink>
                                                     </li>
-                                                        
+                                                    
+                                                    <apex:outputPanel rendered="{!auditingEnabled}">
+                                                        <li class="slds-dropdown__item">
+                                                            <apex:commandLink action="{!redirectToAudit}" status="loading" target="_blank" style="color:#080707;">
+                                                                <apex:param name="rollupId" value="{!item.ID}"/>
+                                                                {!$Label.Audit} <i class="fa fa-file" style="color:#706E6B;"></i> 
+                                                            </apex:commandLink>
+                                                        </li>
+                                                    </apex:outputPanel>
+                                                    
                                                     <li class="slds-dropdown__item">
-                                                        <apex:commandLink value="{!$Label.rh2__del}" reRender="setting_values, master_block, running_user, displayNum, menu" onClick="if(!confirm('{!$Label.rh2__areyousureyouwanttodeletethisrollup}')) return false;" action="{! delCustomSetting }" styleClass="slds-truncate" status="loading">
-                                                            <apex:param name="settingId" value="{! item.Name }"/>
+                                                        <apex:commandLink value="{!$Label.rh2__delete}" onclick="showModal(true, 'deleteRollupWarningModal');" reRender="none" action="{!storeSettingId}" styleClass="slds-truncate" style="color:#080707;" status="loading">
+                                                            <apex:param name="settingId" value="{! item.Name }"/> <i class="fa fa-trash" style="color:#706E6B;"></i> 
                                                         </apex:commandLink>
                                                     </li>
                                                                                                 
@@ -782,11 +1009,11 @@
             </apex:outputPanel>
 
             <apex:outputPanel id="UrlPopup">
-                <apex:outputPanel rendered="{!displayShareModal}" >
+                <apex:outputPanel rendered="{!pgBehavior.displayShareModal}" >
                 <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
                     <div class="slds-modal__container" style="width:760px !important;">
                         <div class="slds-modal__header">
-                            <h2 class="slds-text-heading--medium">{!$Label.rh2__share} {!$Label.Rollup} {!ShareRollup}</h2>
+                            <h2 class="slds-text-heading--medium">{!$Label.Share} {!$Label.Rollup} {!ShareRollup}</h2>
                             <apex:actionFunction action="{!closeShareModal}" name="closeShareModal" rerender="UrlPopup" status="loading"/>
                             <button type="button" onClick="closeShareModal()" class="slds-button slds-button_icon-inverse slds-modal__close">
                                 <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
@@ -866,7 +1093,7 @@
         
     </apex:outputPanel>     
 
-    <apex:param name="rendered" value="{! showMilestoneMessage }" />
+    <apex:param name="rendered" value="{! pgBehavior.showMilestoneMessage }" />
     <div id="nfpDiscount" style="display:none">
         <c:NFPDiscountForm pageController="{!nfpController}"/>
     </div>
@@ -1056,7 +1283,7 @@
                     <apex:outputPanel id="rollupGroupName">
                         <div class="slds-size_1-of-1">
                             <br/>
-                            <div style="width:315px;">
+                            <div style="padding-left:15px;width:315px;">
                                 {!$Label.rh2__name}:
                                 <apex:outputPanel rendered="{! !groupInfo.editContext}">
                                     <apex:inputText value="{!groupInfo.rollupGroupLabelToUpdate}" styleClass="slds-input" maxlength="80" />

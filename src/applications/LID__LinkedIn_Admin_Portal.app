@@ -8,6 +8,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>[Deprecated] LinkedIn Admin Portal</label>
     <navType>Standard</navType>
     <tabs>LID__Contact_Data_Validation1</tabs>

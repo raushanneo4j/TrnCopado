@@ -5,7 +5,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/modernizr-1.7.min.js') }"/>
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
-        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+        <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
     </head>
     <style>        
         .popoverNubbinAlignment{
@@ -33,6 +33,7 @@
     </script>
     <apex:form >
         <apex:slds />
+        <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
         <div class="slds-scope" role="main">
             <div class="slds-card">
                 <header class="slds-card__header">
@@ -301,6 +302,27 @@
                                                         </div>
                                                     </td>   
                                             </apex:outputPanel>
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'unable to import'), true, false)}"> 
+                   
+                                                    <td id="importerr" style="white-space:normal;word-wrap:break-word;">
+                                                        
+                                                        <p class="slds-text-heading_label"> 
+                                                        <a onmouseover="$('#help-importerr').toggle();" onmouseout="$('#help-importerr').toggle();" >
+                                                        <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                        </a>{!$Label.RollupCouldNotBeImported}</p>
+                                                        
+                                                        <div class="slds-col popoverDefault" id="help-importerr">
+                                                          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                            <div class="slds-popover__body">
+                                                            Rollup Helper was unable to import one or more rollup(s) due to missing or invalid field values. 
+                                                            Please view the PS_Export_Rollups__c exceptions on the Rollup Helper Exceptions page for more detailed information regarding the specific rollup(s) that failed to import.<br/>
+                                                            This issue may occur if a required field is not defined in a rollup, or if the rollup references a field that does not exist in the current org. Please review the rollup information to ensure that all fields are populated and accurate. 
+                                                            If you need assistance in resolving this issue, please contact support@passagetech.com.
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </td>   
+                                            </apex:outputPanel>
                                              <apex:outputPanel rendered="{!IF(contains(i.issueName, 'impacted by lookup skew'), true, false)}"> 
                    
                                                     <td id="luskew-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
@@ -451,7 +473,7 @@
                                                     </td>
  
                                             </apex:outputPanel>
-                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Manual Run Only'), true, false)}"> 
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'Manual Run Only'), true, false)}">
                                                     <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
                                                        
                                                       <p class="slds-text-heading_label"> 
@@ -464,9 +486,11 @@
                                                           <div class="slds-popover__body">
                                                             One or more rollup setting(s) in your environment is currently in a Manual Run Only state.  Manual Run Only rollups will never automatically
                                                             update and will need to be manually rerun any time you wish to see an updated calculation.
+
+                                                            <br/><br/>
                                                             
                                                             If you would like to ensure that the rollup does not require a user to manually trigger a rollup run, please either enable real time for the 
-                                                            rollup or create a schedule.
+                                                            rollup or create an active schedule.
                                                           </div>
                                                         </div>
                                                       </div>
@@ -474,7 +498,8 @@
  
                                          
                                             </apex:outputPanel>
-                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run in realtime'), true, false)}"> 
+                                            
+                                            <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run in realtime'), true, false)}">
                                                     <td id="manual-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
                                                        
                                                     <p class="slds-text-heading_label"> 
@@ -493,6 +518,7 @@
                                                     </td>
                              
                                             </apex:outputPanel>
+                                            
                                              <apex:outputPanel rendered="{!IF(contains(i.issueName, 'run upon creation'), true, false)}"> 
                                                 
                                                     <td id="init-{!i.uniqueId}" style="white-space:normal;word-wrap:break-word;">
@@ -680,6 +706,21 @@
                                                 </td>
                                             </apex:outputPanel>
 
+                                            <apex:outputPanel rendered="{!IF(AND(contains(i.issueName, 'references a child filter that no longer exists'), NOT(contains(i.issueName, 'encountered the exception'))), true, false)}">
+                                                <td id="filterReference" style="white-space:normal;word-wrap:break-word;">                                                    
+                                                  <p class="slds-text-heading_label">           
+                                                  <a onmouseover="$('#help-filterReference').toggle();" onmouseout="$('#help-filterReference').toggle();" >
+                                                  <img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+                                                  </a>{!$Label.RollupReferencesInvalidFilter}</p> 
+          
+                                                  <div class="slds-col popoverDefault" id="help-filterReference">
+                                                    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left popoverNubbinAlignment" role="dialog" >
+                                                      <div class="slds-popover__body">One or more rollup setting(s) in your environment reference a child filter that does not exist in your org. This may prevent the rollup from running correctly. Please click the 'Edit Rollup' link to view the rollup and select a valid filter.</div>
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                            </apex:outputPanel>
+
                                             <apex:outputPanel rendered="{!IF(contains(i.issueName, 'active DLRS'), true, false)}">
                                               <td id="convertDLRS">
                                                 <p class="slds-text-heading_label">
@@ -721,7 +762,11 @@
                                             </apex:outputPanel>
 
                                             <td style="white-space:normal;word-wrap:break-word;">
-                                                <apex:outputLink target="_blank" rendered="{!IF(i.action == 'View Exceptions', true, false)}" value="{!URLFOR($Page.rh2__PS_viewExceptions)}">{!i.action}</apex:outputLink>
+                                                <apex:outputLink target="_blank" rendered="{!IF(AND(i.action == 'View Exceptions', NOT(CONTAINS(i.issueName, 'unable to import'))), true, false)}" value="{!URLFOR($Page.rh2__PS_viewExceptions)}">{!i.action}</apex:outputLink>
+                                                <apex:outputPanel rendered="{!IF(AND(i.action == 'View Exceptions', CONTAINS(i.issueName, 'unable to import')), true, false)}">
+                                                  <apex:outputLink target="_blank" value="{!URLFOR($Page.rh2__PS_viewExceptions)}">{!i.action}</apex:outputLink>&nbsp;|&nbsp;
+                                                  <apex:commandLink value="{!$Label.rh2__retryimport}" action="{!doRetryRollupImport}" status="loading" oncomplete="showModal(true, 'retryImportModal');" rerender="importModalHeading, importModalBody, importModalFooter"/>
+                                                </apex:outputPanel>
                                                 <apex:outputPanel rendered="{!IF(i.action == 'Queue Buildup', true, false)}">
                                                     <apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupQueue)}">{!$Label.rh2__checkqueue}</apex:outputLink>&nbsp;|&nbsp;
                                                     <apex:outputLink value="mailto:support@passagetech.com">{!$Label.rh2__contactsupport}</apex:outputLink>
@@ -769,7 +814,11 @@
                                                 </apex:outputPanel>
                                                 <apex:commandLink rendered="{!IF(i.action == 'Change Running User', true, false)}" onclick="showModal(true, 'runUserModal');" reRender="none">{!$Label.rh2__changerunninguser}</apex:commandLink>
                                                 <apex:commandLink rendered="{!IF(i.action == 'Schedule Job', true, false)}" value="{!$Label.rh2__schedulejob}" action="{!doRescheduleExceptionMonitor}" oncomplete="location.reload();"/>
-                                                <apex:commandLink rendered="{!IF(i.action == 'Schedule Scope Job', true, false)}" value="{!$Label.rh2__schedulescopejob}" action="{!doRescheduleRecordScope}" oncomplete="location.reload();"/>
+                                                <apex:outputPanel rendered="{!IF(i.action == 'Schedule Scope Job', true, false)}">
+                                                  <apex:commandLink value="{!$Label.rh2__schedulescopejob}" action="{!doRescheduleRecordScope}" oncomplete="location.reload();"/>
+                                                  &nbsp;|&nbsp;
+                                                  <apex:commandLink action="{!ignoreRecordScopeMonitorIssue}" value="{!$Label.rh2__ignore}"/>
+                                                </apex:outputPanel>
                                                 <apex:commandLink rendered="{!IF(i.action == 'Recreate Schedule Monitor', true, false)}" value="{!$Label.rh2__recreateschedulemonitor}"
                                                 action="{!doRescheduleScheduleMonitor}" oncomplete="location.reload();"/>
                                                 <apex:outputPanel rendered="{!IF(i.action == 'Cleanup Unused User Settings', true, false)}">
@@ -785,6 +834,7 @@
                                                 </apex:outputPanel>
                                                 <apex:commandLink rendered="{!IF(i.action == 'Adjust Filters', true, false)}" oncomplete="location.reload();" action="{!cleanupFilterRecNames}">{!i.action}</apex:commandLink>
                                                 <apex:commandLink rendered="{!IF(i.action == 'Adjust Rollups', true, false)}" oncomplete="location.reload();" action="{!cleanupRollupConfig}">{!i.action}</apex:commandLink>
+                                                <apex:outputLink rendered="{!IF(i.action == 'Edit Rollup', true, false)}" value="{!URLFOR($Page.rh2__PS_RollupType, null, [s=i.rollupName])}">{!$Label.rh2__editrollup}</apex:outputLink>
                                                 <apex:outputLink target="_blank" rendered="{!IF(i.action == 'View Convert Rollups page', true, false)}" value="{!URLFOR($Page.rh2__PS_Convert_Rollups)}">{!i.action}</apex:outputLink>
                                                 <apex:outputPanel rendered="{!IF(i.action == 'Convert Filters', true, false)}">
                                                   <apex:commandLink onClick="showModal(true, 'convertDeprecatedFiltersModal');" reRender="validationTextContainer">{!i.action}</apex:commandLink>&nbsp;|&nbsp;
@@ -884,6 +934,33 @@
               </div>
               <div class="slds-backdrop slds-backdrop_open"></div>
           </div> 
+
+          <div id="retryImportModal" style="display:none;">
+            <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+              <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                  <apex:outputPanel id="importModalHeading">
+                    <apex:outputPanel rendered="{!NOT(hasRollupImportErrors)}"><h2 class="slds-text-heading_medium">{!$Label.rh2__importretrysucceeded}</h2></apex:outputPanel>
+                    <apex:outputPanel rendered="{!hasRollupImportErrors}"><h2 class="slds-text-heading_medium">{!$Label.rh2__importretryfailed}</h2></apex:outputPanel>
+                  </apex:outputPanel>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium">
+                  <apex:outputPanel id="importModalBody">
+                    <apex:outputPanel rendered="{!NOT(hasRollupImportErrors)}"><apex:outputText >{!$Label.rh2__allrollupsimported}</apex:outputText></apex:outputPanel>
+                    <apex:outputPanel rendered="{!hasRollupImportErrors}"><apex:outputText >{!$Label.rh2__unabletoimportrollup}</apex:outputText></apex:outputPanel>
+                  </apex:outputPanel>
+                </div>
+                <div class="slds-modal__footer">
+                  <apex:outputPanel id="importModalFooter">
+                    <apex:outputLink target="_blank" rendered="{!hasRollupImportErrors}" styleClass="slds-button slds-button_neutral slds-button_small slds-m-button_x-small" value="{!URLFOR($Page.rh2__PS_viewExceptions)}">{!$Label.rh2__viewexceptions}</apex:outputLink>
+                    <apex:commandButton styleClass="slds-button slds-button_neutral slds-button_small slds-m-button_x-small" value="{!$Label.rh2__close}" onclick="showModal(false, 'retryImportModal');" rerender=""/>
+                  </apex:outputPanel>
+                </div>
+              </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+          </div>
+          <c:Loading_Spinner opacity="1"/>
         </div>
 
         <br/>

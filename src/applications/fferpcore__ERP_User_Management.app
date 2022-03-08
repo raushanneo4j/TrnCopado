@@ -4,6 +4,7 @@
     <description>Create and manage your Salesforce users.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>ERP User Management</label>
     <tabs>Offer_URL__c</tabs>
     <tabs>bizible2__Bizible_Touchpoint__c</tabs>

@@ -5,9 +5,22 @@
 	    
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/RollupRun.js') }"/>                
 	    	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>	       	
-	    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-1.12.1.min.js')}" />
+	    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	     </head>
 	
+		 <style>     			
+			.popoverDefault{
+				display:none;
+				max-height:0px; 
+				overflow:visible;   
+				overflow-y:visible; 
+				position:relative; 
+				white-space:normal;
+				z-index:99; 
+				text-align:left; 
+			}
+		</style>
+
 	     <script type="text/javascript">
     	//Verify namespace is ready
         var rh = rh || {};
@@ -37,6 +50,14 @@
 	  function ensureMaxRecsAndRunAllUpdated(result, event){
 		  populateRecordCount(result, event);
 		  setRunAll();
+	  }
+
+	  function openWarningWindow(){
+		openTheDeactivateScheduleWarningModal();
+	  }
+
+	  function closeAndRevert(){
+		  CloseAndRevertCheckbox();
 	  }
 
       function displayValidationError(){
@@ -81,17 +102,48 @@
         
 	     <body>
 	     <apex:form > 
-        <apex:slds />
+			<apex:slds />
           <apex:actionFunction action="{!ensureRFAJobExists}" name="rfaCheck" />
+		  <apex:actionFunction action="{!openDeactivateScheduleWarningModal}" name="openTheDeactivateScheduleWarningModal" reRender="deactivateScheduleWarningModal" />
+		  <apex:actionFunction action="{!closeDeactivateScheduleWarningModalAndRevert}" name="CloseAndRevertCheckbox" reRender="activeCheckbox" status="loading" />
           <apex:actionFunction action="{!setMaxRecordsForRunAll}" name="setRunAll" rerender="amount"/>
 		  <apex:actionFunction name="rerenderFilterLinks" rerender="filterLinks"/>
-
+		  <apex:actionFunction name="rerenderPopover" rerender="parentFilterPopover"/>
+		  <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
 		     <div class="slds-scope" role="main"> 
 		     	<apex:inputHidden value="{!maxRecords}" id="maxRecords"/>   
 		     	<apex:inputHidden value="{!info.rollupRunTime}" id="rollupRunTime"/>   
-				
+				<div id="deactivateScheduleWarningModal">
+				 <apex:outputPanel id="deactivateScheduleWarningModal">					
+					<apex:outputPanel rendered="{!pgBehavior.showDeactivateScheduleWarningModal}" >
+						<apex:outputPanel rendered="{!AND(!showScheduleWarning, !rh2__RH_Job__c.rh2__Active__c)}">
+						<div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+							<div class="slds-modal__container">
+								<div class="slds-modal__header slds-modal__header_empty">
+									<button type="button" onclick="showModal(false, 'deactivateScheduleWarningModal'); closeAndRevert();" class="slds-button slds-button_icon-inverse slds-modal__close">									
+										<svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+											<use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+										</svg>
+									</button>											
+								</div>
+								<div class="slds-modal__content slds-p-around_medium">	
+									<center>
+										{!$Label.ThisScheduleAppears}
+									</center>
+								</div>
+								<div class="slds-modal__footer">
+									<apex:commandButton styleClass="slds-button slds-button_brand" action="{!closeDeactivateScheduleWarningModal}" onclick="showModal(false, 'deactivateScheduleWarningModal');" value="{!$Label.rh2__yes}"/>
+									<apex:commandButton styleClass="slds-button slds-button_neutral" onclick="showModal(false, 'deactivateScheduleWarningModal'); closeAndRevert();" action="{!closeDeactivateScheduleWarningModalAndRevert}" value="{!$Label.rh2__no}"/>
+								</div>
+							</div>
+						</div>
+						<div class="slds-backdrop slds-backdrop_open"></div>
+						</apex:outputPanel>
+					</apex:outputPanel>	
+				</apex:outputPanel>
+			</div>
 			 	<apex:outputPanel id="ClonePopup">
-			 	<apex:outputPanel rendered="{!showClonepopup}" >
+			 	<apex:outputPanel rendered="{!pgBehavior.showClonepopup}" >
             		<div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
 			    		<div class="slds-modal__container">
 			      			<div class="slds-modal__header"> 
@@ -99,7 +151,7 @@
 			        		</div>
 			      			<div class="slds-modal__content">	
 			      			<center>			      			
-			      				<apex:Selectlist value="{!selectedSchedule}" styleclass="slds-button slds-button_neutral slds-picklist__label" style="width: 80%;" multiselect="false" size="1">
+			      				<apex:Selectlist value="{!selectedSchedule}" styleclass="slds-button slds-button_neutral slds-picklist__label" style="width: 80%; margin-top: 10px;margin-bottom: 10px;" multiselect="false" size="1">
 			      					<apex:selectOptions value="{!JobSchedules}"/>
 			      				</apex:Selectlist>		        
 			      			</center>
@@ -157,7 +209,7 @@
 	        				{!$Label.Active}
 	                    </div>
 	                    <div class="slds-col slds-size_1-of-12" >
-                            <apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__Active__c}" onclick=" if(!{!showScheduleWarning} && {!rh2__RH_Job__c.rh2__Active__c}) return confirm('{!$Label.rh2__thisscheduleappears}');"/>
+                            <apex:inputcheckbox id="activeCheckbox" value="{!rh2__RH_Job__c.rh2__Active__c}" onclick="openWarningWindow(); showModal(true, 'deactivateScheduleWarningModal');"/>
 	                    </div>	
                         <div class="slds-col slds-size_10-of-12"></div>
           			</div>
@@ -203,15 +255,29 @@
                     </div>  
                     
                         <br/>
-                    <div class="slds-grid">                    
-	        			<div class="slds-col_padded slds-text-align_right slds-size_1-of-12" >      				
-	        				{!$Label.RunForAllRecords}
-	                    </div>
-	                    <div class="slds-col slds-size_1-of-12" >
-                            <apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" onchange="changeValue(); return false;"  />
-	                    </div>	
+                    <apex:outputPanel styleClass="slds-grid" id="parentFilterPopover"> 
+						<apex:outputPanel rendered="{!existingFilterSelected}" styleClass="slds-col_padded slds-text-align_right slds-size_1-of-12">            
+							<p>
+								<a onmouseover="rh.j$('#help-runForAllRecords').toggle();" onmouseout="rh.j$('#help-runForAllRecords').toggle();">
+									<img class="slds-icon slds-icon_x-small" src="/apexpages/slds/latest/assets/icons/utility/info_60.png"></img>
+								</a>{!$Label.RunForAllRecords}</p>
+
+							<div class="slds-col popoverDefault" id="help-runForAllRecords">
+								<div class="slds-popover slds-popover_tooltip slds-nubbin_top-left" role="dialog" >
+									<div class="slds-popover__body">
+										{!$Label.RunForAllMatchingRecs} "{!selectedFilterCondition}"
+									</div>
+								</div>
+							</div>
+						</apex:outputPanel>
+						<apex:outputPanel rendered="{!NOT(existingFilterSelected)}" styleClass="slds-col_padded slds-text-align_right slds-size_1-of-12">
+							{!$Label.rh2__runforallrecords}
+						</apex:outputPanel>
+						<div class="slds-col slds-size_1-of-12" >
+							<apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" onchange="changeValue(); return false;"  />
+						</div>
                         <div class="slds-col slds-size_10-of-12"></div>
-          			</div>
+          			</apex:outputPanel>
           			<br/>
           			<div class="slds-grid">          		
           				<div class="slds-col_padded slds-size_1-of-12 slds-text-align_right" >
@@ -240,7 +306,7 @@
 							{!$Label.ParentFilter}
           				</div>
           				<div class="slds-col slds-size_1-of-12 ">
-          					<apex:selectList value="{!selectedFilter}" onchange="countRecords(this.value); rerenderFilterLinks();" size="1" style="width:100% !important;">
+          					<apex:selectList value="{!selectedFilter}" onchange="countRecords(this.value); rerenderFilterLinks(); rerenderPopover();" size="1" style="width:100% !important;">
 								<apex:selectOptions value="{!ValidFiltersForObject}"/>
 							</apex:selectList>  
 						</div>
@@ -270,7 +336,7 @@
               <center>
                       <p>{!$Label.SchedulingARollupWithRealtime}</p>
                       <br></br>
-                      <p>{!$Label.IfYouHaveAnyQuestionsRegardingRealtime}</p>
+                      <apex:outputText value="{!$Label.rh2__ifyouhaveanyquestionsregardingrealtime}" escape="false" />
               </center>        
             </div>
           			</apex:outputPanel>	
@@ -284,10 +350,11 @@
            					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__cancel}" />       
          				</div>
            			</footer>
+			<c:Loading_Spinner opacity="1"/>
            		</div>     			     	
        	</div>      	
        		
-       	
+		
        	</apex:form>
      	</body>
 	</html>

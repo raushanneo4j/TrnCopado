@@ -4,6 +4,7 @@
     <description>[Deprecated functionality. Remove visibility from profiles.]</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>[Deprecated] ...Sales Nav Admin Portal</label>
     <tabs>LID__Contact_Data_Validation</tabs>
     <tabs>UniqueEntry__Batch_Settings__c</tabs>
