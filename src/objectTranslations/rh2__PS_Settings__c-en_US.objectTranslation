@@ -25,6 +25,11 @@ The converted leads are identified by the &quot;isConverted&quot; system field. 
         <name>rh2__Data_Load_Batch_Size__c</name>
     </fields>
     <fields>
+        <help><!-- Checking this field prevents Rollup Helper exception emails from being forwarded to our developers. --></help>
+        <label><!-- Developer Exception Email Opt Out --></label>
+        <name>rh2__DeveloperExceptionEmailOptOut__c</name>
+    </fields>
+    <fields>
         <help><!-- If Advanced Currency Management is disabled in your organization select this check box. --></help>
         <label><!-- Disable Advanced Currency --></label>
         <name>rh2__Disable_Advanced_Currency__c</name>
@@ -38,6 +43,11 @@ The converted leads are identified by the &quot;isConverted&quot; system field. 
         <help><!-- Check this box if you do not want to recalculate currency rollups after a change in a child record&apos;s CurrencyIsoCode field --></help>
         <label><!-- Disable Currency Update Recalculation --></label>
         <name>rh2__Disable_Currency_Update_Recalculation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to disable rollup auditing. --></help>
+        <label><!-- Disable Rollup Auditing --></label>
+        <name>rh2__Disable_Rollup_Auditing__c</name>
     </fields>
     <fields>
         <help><!-- This will help to prevent record locks caused by multiple rollups attempting to update the same object at the same time. --></help>

@@ -74,6 +74,10 @@
                 <behavior>Edit</behavior>
                 <field>copado__Hide_Tabs__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Enable_Smart_Conflict_Resolution__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -147,11 +151,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>copado__Find_Replace_Rule_Editor</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>11</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -206,6 +205,11 @@
             <actionType>CustomButton</actionType>
             <sortOrder>10</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>copado__Find_Replace_Rule_Editor</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>11</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
@@ -244,7 +248,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h2o00000lsmvv</masterLabel>
+        <masterLabel>00h2i000000XFfD</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

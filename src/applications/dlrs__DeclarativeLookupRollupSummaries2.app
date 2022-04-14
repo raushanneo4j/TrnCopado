@@ -7,6 +7,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Declarative Lookup Rollup Summaries</label>
     <navType>Standard</navType>
     <tabs>dlrs__Welcome</tabs>

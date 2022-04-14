@@ -4,6 +4,7 @@
     <description>This is the Snapshot Org Management application. Learn more at https://www.metazoa.com.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Snapshot</label>
     <tabs>metazoa3__snapshot_installer</tabs>
     <tabs>metazoa3__snapshot_push__c</tabs>

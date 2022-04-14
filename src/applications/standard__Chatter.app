@@ -3,6 +3,7 @@
     <defaultLandingTab>standard-Chatter</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
     <tabs>Offer_URL__c</tabs>

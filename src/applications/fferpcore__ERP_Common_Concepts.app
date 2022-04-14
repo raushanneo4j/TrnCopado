@@ -4,6 +4,7 @@
     <description>Manage your ERP Companies, Company Tax Information, and Tax Codes.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>ERP Core Concepts</label>
     <tabs>fferpcore__Company__c</tabs>
     <tabs>fferpcore__TaxCode__c</tabs>

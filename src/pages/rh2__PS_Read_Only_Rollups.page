@@ -179,11 +179,14 @@
                                 </span>
                             </div>
                             <div class="slds-modal__content" style="padding-left:30px; padding-right:30px; padding-top:15px; padding-bottom:15px;">
-                                <apex:outputPanel rendered="{!limitvar != null}">
                                     <div style="padding-top:5px;">
+                                    <apex:outputPanel rendered="{!limitvar != null}">
                                         {!$Label.rh2__limitedto} {!limitvar} {!$Label.rh2__childrecordsperparent}
-                                    </div>
                                 </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!offsetvar != null}">
+                                        {!$Label.rh2__skips} {!offsetvar} {!$Label.rh2__childrecordsperparent}
+                                    </apex:outputPanel>
+                                </div>
                                 <br/>
                                 <apex:outputPanel rendered="{!selectedSorts.size > 0}">
                                     <font style="font-size:15px;"><b>{!$Label.rh2__sortorder}</b></font>

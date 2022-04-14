@@ -29,7 +29,7 @@
         rh.j$ = jQuery.noConflict();
         rh.j$(document).ready(function() {
             if({!mdapiVars.MetadataConnectionWarning}){
-              createRemoteSite('{!$Api.Session_ID}', 'mdapi', '{!deployVars.host}', '{!JSENCODE(deployVars.host)}');
+				createRemoteSite('{!$Api.Session_ID}', 'RH_mdapi', '{!deployVars.host}', '{!JSENCODE(deployVars.host)}');
 			}
 			
 			overridePageMessagesNormalSize();

@@ -8,6 +8,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>D&amp;B Optimizer</label>
     <navType>Standard</navType>
     <tabs>DNBoptimizer__Data_Stewardship1</tabs>

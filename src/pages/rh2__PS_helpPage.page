@@ -149,6 +149,7 @@
 													If Rollup Helper is running in an asynchronous context other than scheduled, you can limit the changes to the Last Modified
 													user field by enabling the Rollup Helper setting "Process Queue Items By Last Modified By".  This will cause Rollup Helper
 													to process asynchronous jobs as the user who triggered the request, similarly to how it functions in real-time. 
+													Enabling this setting may be necessary if there are parent objects that have custom field-level security checks or have field-level security checks from a third-party managed package.
 											</div>
 											<h3>I am receiving a pop-up telling me to schedule my rollup with a date filter.  Why?</h3>
 											<div>
@@ -193,6 +194,40 @@
 													However, if the formula field only references field values on the source object and does not perform calculations to the value using date functions (ex: TODAY(), NOW(), etc.), the rollup will process in realtime as long as an update occurred on the source record to cause the formula field value change.		               		
 											</div>
 
+											<h3>How do I roll up most recent or oldest text values?</h3>
+											<div>
+												When creating your rollup:
+												<br/><br/>
+												<ul>
+													<li>Step 1) Select the target object and target text field of your choice.</li>
+													<br/>
+													<li>Step 2) Select the source object you want to roll up from and the relationship field that relates the record you want to rollup to the record you want to see the results on.</li>
+													<br/>
+													<li>Step 3) For the rollup type, do not select MIN or MAX. Instead, select <strong>Text</strong>. The 'separated by' value does not matter in this case.</li>
+													<br/>
+													<li>Step 4) Select the text field you want to roll up as your source field.</li>
+													<br/>
+													<li>Step 5) In order to return the most recent or oldest, you will need to create a filter for the rollup.
+														<ul class="faq-inner-list">
+															<li>Scroll down to 'Custom Filter' and click 'Create New Filter.'</li>
+															<br/>
+															<li>In 'Step 1', set the limit to 1 so the rollup only returns a single value.</li>
+															<br/>
+															<li>In 'Step 2', set the sort order of the date field you want to sort by. Select <strong>DESC</strong> to retrieve the <strong>most recent</strong> value, and <strong>ASC</strong> to retrieve the <strong>oldest</strong> value.</li>
+															<br/>
+															<li>In 'Step 3', you can add any additional criteria to specify which records are eligible to be rolled up.</li>
+															<br/>
+															<li>Save the filter.</li>
+														</ul>
+													</li>
+													<br/>
+													<li>Step 6) Save and run the rollup.</li>
+												</ul>
+											</div>
+											<h3>How do I rollup the nth most recent value?</h3>
+											<div>
+												First follow the instructions for "How do I roll up most recent or oldest text values?", then when defining the filter, make sure to populate the "Skips X child records per parent." field. For example, skipping one child record will rollup the second most recent value.
+											</div>
 											<h3>What is SOQL Selectivity?  Why does it matter?</h3>
 											<div>
 													A "selective" SOQL query filter is one that filters on an indexed field.  Indexed fields can be compared to the classification
@@ -222,12 +257,20 @@
 														We also recommend that you check the estimated Run time of a rollup (visit the Rollups tab, then hover over the 'Action' arrow and 
 														click Run) and avoid scheduling rollups more frequently than the estimated processing time in order to avoid a queue buildup.
 											</div> 
+											
 											<h3>Why is my rollup touching all records?</h3>
 											<div>
 													When a scheduled or manual rollup run occurs, the run will force the rollup update out to all records.  In an update on our 
 													near term roadmap, you will be able to filter which parent records a rollup may run for.	       		   		
 											</div>
 											
+											<h3>What is the difference between a child filter and a parent filter?</h3>
+											<div>
+													A parent filter is used to filter target records from getting updated by Rollup Helper. Rollup results will not be calculated for target records that do not meet the criteria of a parent filter.
+													A child filter is used to filter the source records for a rollup calculation. Child filters can reference target field values through cross-object references, but will not prevent Rollup Helper from updating the target records.
+													Parent filters can be used together with child filters to determine what source records to use in rollup calculations, along with which target records to update.
+											</div>
+
 											<h3>Why is Rollup Helper showing up as the last modified by user on my records?</h3>
 											<div>
 													By default, manual and scheduled rollup runs will run under the managed package setup user 'Rollup Helper'.  This 
@@ -295,7 +338,7 @@
 														If everything looks good here (3 columns mapped), click on the green <strong>Start Import</strong> button on the bottom right corner of the page and your rollups and filters should begin importing without any issues.</li>
 														<br />
 														<br />
-														<li>You can view a visual guide to the import process <a href="https://drive.google.com/file/d/0BwlwYPXYAzRKUUQwaHZwT1pUWGs/view?usp=sharing" target="_blank">here</a>.</li>
+														<li>You can view a visual guide to the import process <a href="https://drive.google.com/file/d/0BwlwYPXYAzRKUUQwaHZwT1pUWGs/view?usp=sharing&resourcekey=0-QUpydKJy5kzL1tf6iTjdVw" target="_blank">here</a>.</li>
 													</ul>
 											</div>
 											<h3>How do I avoid hitting the DailyAsyncApexExecutions limit?</h3>
@@ -322,6 +365,29 @@
 												<a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_relationships_and_polymorph_keys.htm"> here. </a>
 												To learn more about limitations of the Name object, please read 
 												<a href="https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_name.htm"> here. </a>
+											</div>
+											<h3>Why are my rollups taking a long time to process?</h3>
+											<div>
+												There are many reasons why rollups might be taking a longer than expected time to complete.
+												These can include but are not limited to:
+												<br/><br/>
+												<ul class="slds-list_dotted">
+													<li>The record scope or object specific record scope may be set too low. Increasing the record scope allows more records to process per batch and may reduce the time to process a rollup. However, increasing the record scope may cause other issues such as query row limits being encountered. The default amount is 400. </li>
+													<br />
+													<li>There is a high amount of records being processed per rollup. Please try to filter records on the source object level and target object level to reduce the amount of records being processed.</li>
+													<br />
+													<li>There is a large queue build up of Rollup Helper jobs. Please review the&nbsp;<apex:outputLink value="{!URLFOR($Page.rh2__PS_RollupQueue)}">Rollup Queue</apex:outputLink> page and ensure that there are not any stale queue items. A stale or stuck queue item may be retried or deleted, which can help Rollup Helper process queue items faster. Additionally, you may reduce the amount of jobs that get sent to the queue by disabling realtime on settings that do not need it, or increasing the % of usage settings.</li>
+													<br />
+													<li>The number of rollups processed per asynchronous request may be set too low. This should generally be set to the highest count of rollups which share the same source object, target object and filter. </li>
+													<br />
+												</ul>
+												If making configuration changes does not help speed up rollups or if you still experience abnormally slow processing times, please contact support@passagetech.com so that 
+												our support staff can perform a root cause analysis and help you determine the best solution to the problem. 
+											</div>
+											<h3>My question is not answered here. Where can I find my answer?</h3>
+											<div class="slds-text-longform">
+												You can try looking up your question, use case, or issue in our <a href="https://passagetechnology.force.com/KnowledgeBase/s/" target="_blank" >Knowledge Base</a>. 
+												If you still cannot find an answer to your question, please <a href="mailto:support@passagetech.com">contact support</a>.
 											</div>
 		             		</div> 
 		             </div>

@@ -55,7 +55,7 @@
         rh.j$(document).ready(function(){
             if({!metadataConnectionWarning})
             {
-                createRemoteSite('{!$Api.Session_ID}', 'mdapi', '{!host}', '{!JSENCODE(host)}');
+                createRemoteSite('{!$Api.Session_ID}', 'RH_mdapi', '{!host}', '{!JSENCODE(host)}');
             }
         });    
     </script>
@@ -97,16 +97,6 @@
           </header>
           <apex:outputPanel styleClass="pad-left" id="createExistingSelector">
             <section class="slds-card__body" >
-                <apex:outputPanel rendered="{!validationErrorsSizeWrapper > 0}">
-                    <div class="slds-theme_warning">
-                        <apex:repeat value="{!validationErrors}" var="validationError">
-                            <span>
-                                {!validationError}
-                            </span> <br/>
-                        </apex:repeat>
-                    </div>
-                </apex:outputPanel>
-            
 
             <div class="creationSelect half-width pad-left">
                 <apex:selectRadio styleClass="slds-input padded-rows-in-table" value="{!fieldFormStatus}" layout="">
@@ -116,105 +106,7 @@
             </div>
 
                 <apex:outputPanel id="createFieldContainer" rendered="{!shouldRenderCreatingField}">
-                    
-                    <div class="fieldContainer half-width pad-left">
-                        <br/>
-                        <div class="slds-box slds-theme_alt-inverse">
-                            <p>
-                                <strong>{!$Label.PleaseNote}</strong>&nbsp;
-                                <apex:outputText value="{!$Label.rh2__pleasenotefieldsecurity}"/>
-                            </p>
-                        </div> <br/>
-                        <table class="slds-table slds-input slds-table_cell-buffer slds-no-row-hover">
-                            <tbody>
-                                <tr>
-                                    <td><apex:outputText value="{!$Label.rh2__fieldtype}: " /></td>
-                                    <td>
-                                        <apex:selectList id="fieldType" value="{!fieldType}" multiselect="false" size="1">
-                                            <apex:selectOptions value="{!fieldTypeOptions}" />
-                                            <apex:actionSupport event="onchange" reRender="createFieldContainer"/>
-                                            <apex:actionSupport event="onchange" rerender="createExistingSelector"/>
-                                        </apex:selectList>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><apex:outputText value="{!$Label.rh2__fieldlabel}: "/></td>
-                                    <td><apex:inputText id="fieldLabel" value="{!newTargetField.fieldLabel}">
-                                            <apex:actionSupport event="onchange" rerender="createFieldContainer" action="{!defaultAPIName}"/>
-                                        </apex:inputText>
-                                    </td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td><apex:outputText value="{!$Label.rh2__fieldname}: " /></td>
-                                    <td><apex:inputText id="fieldName" value="{!newTargetField.fieldName}"/></td>
-                                </tr>
-                                 <tr>
-                                    <td><apex:outputText value="{!$Label.rh2__description}: " /></td>
-                                    <td><apex:inputText id="Description" value="{!newTargetField.Description}"/></td>
-                                </tr>
-                                    <tr class="{!IF(isTextField || isLongTextAreaField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__textfieldlength}: " /></td>
-                                        <td>
-                                            <apex:inputText id="stringLength" value="{!newTargetField.stringLengthLimit}" />
-                                        </td>
-                                    </tr>
-                                    <tr class="{!IF(isLongTextAreaField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__numberofvisible}: " /></td>
-                                        <td>
-                                            <apex:inputText id="stringLines" value="{!newTargetField.stringLinesVisible}" />
-                                        </td>
-                                    </tr>
-                                    <tr class="{!IF(isNumberField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__length}: " /></td>
-                                        <td>
-                                            <apex:inputText id="NumberLength" value="{!newTargetField.numberDigitLimit}" />
-                                        </td>
-                                    </tr>
-                                    <tr class="{!IF(isNumberField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__decimalplaces}: " /></td>
-                                        <td>
-                                            <apex:inputText id="DecimalPlaces" value="{!newTargetField.numberDecimalDigitLimit}" />
-                                        </td>
-                                    </tr>
-                                    <tr class="{!IF(isCheckboxField, '', 'slds-hide')}">
-                                        <td> <apex:outputText value="{!$Label.rh2__defaultvalue}: " /></td>
-                                        <td>
-                                            <apex:selectList id="checkboxValue" value="{!newTargetField.checkboxDefaultValue}" multiselect="false" size="1">
-                                                <apex:selectOption itemValue="True" itemLabel="{!$Label.rh2__checked}"/>
-                                                <apex:selectOption itemValue="False" itemLabel="{!$Label.rh2__unchecked}"/>
-                                            </apex:selectList>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="{!IF(isLookupField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__relatedobject}: " /><br/><br/><br/></td>
-                                        <td>
-                                            <apex:selectList id="parentObj" value="{!newTargetField.lookupObj}" size="1">
-                                                <apex:selectOptions value="{!paginatedListForRelatedObjects}"/>
-                                            </apex:selectList>
-                                            <br/>
-                                            <c:Paginate pageController="{!relatedObjectController}" renderedComponent="createFieldContainer"/>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="{!IF(isLookupField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__relationshiplabel}: " /></td>
-                                        <td>
-                                            <apex:inputText id="lookupName" value="{!newTargetField.lookupName}" />
-                                        </td>
-                                    </tr>
-                                    <tr class="{!IF(isLookupField, '', 'slds-hide')}">
-                                        <td><apex:outputText value="{!$Label.rh2__relationshipname}: " /></td>
-                                        <td>
-                                            <apex:inputText id="lookupLabel" value="{!newTargetField.lookupLabel}" />
-                                        </td>
-                                    </tr>
-                            </tbody>
-                        </table>
-                        <br/>
-                        <apex:commandLink styleClass="slds-button slds-button_neutral right-align" onClick="if(!confirm('{!$Label.rh2__pleasenotefieldsecurity}')) return false;" action="{!finalizeField}" value="{!$Label.rh2__submit}" id="finalizeField"/>
-                    </div>
+                    <c:PS_FieldCreation targetObjAndField="{!masterAPI}" restrictType="" pageRedirectName="PS_RollupType"/>
                 </apex:outputPanel>
 
                 <apex:outputPanel id="table" rendered="{!!shouldRenderCreatingField}">
@@ -234,8 +126,8 @@
                                 <strong>{!$Label.PleaseNote}</strong>&nbsp;
                                 <apex:outputText value="{!$Label.rh2__therearepotentialtargetfields}"/>
                                 <br/>
-                                <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!LightningFieldAccessibilityLink}">Adjust Field Accessibility</apex:outputLink>
-                                <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!ClassicFieldAccessibilityLink}">Adjust Field Accessibility</apex:outputLink>
+                                <apex:outputLink rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!LightningFieldAccessibilityLink}">{!$Label.rh2__adjustfieldaccessibility}</apex:outputLink>
+                                <apex:outputLink rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!ClassicFieldAccessibilityLink}">{!$Label.rh2__adjustfieldaccessibility}</apex:outputLink>
                             </center>
                         </div>
                     </apex:outputPanel>
