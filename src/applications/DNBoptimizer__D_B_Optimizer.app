@@ -3,6 +3,7 @@
     <defaultLandingTab>DNBoptimizer__Data_Stewardship</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>D&amp;B Optimizer</label>
     <tabs>DNBoptimizer__Data_Stewardship</tabs>
     <tabs>DNBoptimizer__Account_Segmentation</tabs>

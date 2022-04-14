@@ -4,6 +4,7 @@
     <description>Action Views</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Action Views</label>
     <tabs>ffr__ActionViews</tabs>
     <tabs>ffr__DataView__c</tabs>

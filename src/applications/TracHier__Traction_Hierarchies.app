@@ -4,6 +4,7 @@
     <description>Traction Hierarchies leverages Data.com Premium Clean to build and display account hierarchy information in your Salesforce org.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Traction Hierarchies</label>
     <tabs>standard-Account</tabs>
     <tabs>TracHier__Traction_Hierarchies_Setup</tabs>
