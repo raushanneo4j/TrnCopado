@@ -4,6 +4,7 @@
     <description>Manage exchange rates, exchange rate groups, and currencies in Foundations.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Currency &amp; Exchange Rates</label>
     <tabs>fferpcore__ErpCurrencies</tabs>
     <tabs>fferpcore__ExchangeRateGroup__c</tabs>

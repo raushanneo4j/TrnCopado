@@ -3,6 +3,7 @@
     <defaultLandingTab>standard-AppLauncher</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <tabs>standard-AppLauncher</tabs>
     <tabs>Offer_URL__c</tabs>
     <tabs>bizible2__Bizible_Touchpoint__c</tabs>

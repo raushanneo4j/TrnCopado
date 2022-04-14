@@ -3,6 +3,7 @@
     <defaultLandingTab>dlrs__Welcome</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Declarative Lookup Rollup Summaries</label>
     <tabs>dlrs__Welcome</tabs>
     <tabs>dlrs__ManageLookupRollupSummaries</tabs>

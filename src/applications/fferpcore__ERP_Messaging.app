@@ -4,6 +4,7 @@
     <description>Manage the messaging between your products and schedule ERP jobs.</description>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>ERP Administration</label>
     <tabs>fferpcore__ERPProduct__c</tabs>
     <tabs>fferpcore__MessageType__c</tabs>
