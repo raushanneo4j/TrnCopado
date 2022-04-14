@@ -3,6 +3,7 @@
     <defaultLandingTab>ffirule__IntegrationRule__c</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>ClickLink</label>
     <tabs>ffirule__IntegrationRuleJob__c</tabs>
     <tabs>ffirule__IntegrationRuleLog__c</tabs>

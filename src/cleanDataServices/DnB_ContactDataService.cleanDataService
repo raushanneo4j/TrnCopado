@@ -7,6 +7,21 @@
         <description>Optimize Salesforce contact records by leveraging Dun &amp; Bradstreet contact data</description>
         <developerName>DnB_ContactContactCleanRule</developerName>
         <fieldMappings>
+            <SObjectType>DNBoptimizer__DnBExternalContactRecord__x</SObjectType>
+            <developerName>DnB_ContactContactRequestMapping</developerName>
+            <fieldMappingRows>
+                <SObjectType>DNBoptimizer__DnBExternalContactRecord__x</SObjectType>
+                <fieldMappingFields>
+                    <dataServiceField>Email</dataServiceField>
+                    <dataServiceObjectName>Contact</dataServiceObjectName>
+                    <priority>1</priority>
+                </fieldMappingFields>
+                <fieldName>DNBoptimizer__Email__c</fieldName>
+                <mappingOperation>Autofill</mappingOperation>
+            </fieldMappingRows>
+            <masterLabel>DnB_Contact Contact Request Mapping</masterLabel>
+        </fieldMappings>
+        <fieldMappings>
             <SObjectType>Contact</SObjectType>
             <developerName>DnB_ContactContactResponseMapping</developerName>
             <fieldMappingRows>
@@ -220,21 +235,6 @@
                 <mappingOperation>Autofill</mappingOperation>
             </fieldMappingRows>
             <masterLabel>DnB_Contact Contact Response Mapping</masterLabel>
-        </fieldMappings>
-        <fieldMappings>
-            <SObjectType>DNBoptimizer__DnBExternalContactRecord__x</SObjectType>
-            <developerName>DnB_ContactContactRequestMapping</developerName>
-            <fieldMappingRows>
-                <SObjectType>DNBoptimizer__DnBExternalContactRecord__x</SObjectType>
-                <fieldMappingFields>
-                    <dataServiceField>Email</dataServiceField>
-                    <dataServiceObjectName>Contact</dataServiceObjectName>
-                    <priority>1</priority>
-                </fieldMappingFields>
-                <fieldName>DNBoptimizer__Email__c</fieldName>
-                <mappingOperation>Autofill</mappingOperation>
-            </fieldMappingRows>
-            <masterLabel>DnB_Contact Contact Request Mapping</masterLabel>
         </fieldMappings>
         <masterLabel>D&amp;B Contact Optimization</masterLabel>
         <matchRule>DnB_ContactMatchRule</matchRule>

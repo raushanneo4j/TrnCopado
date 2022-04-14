@@ -4,6 +4,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>S4G Currency Updater</label>
     <tabs>s4g_currencies__CurrencyUpdaterStartTab</tabs>
     <tabs>s4g_currencies__Currency_Updater_Logs</tabs>
