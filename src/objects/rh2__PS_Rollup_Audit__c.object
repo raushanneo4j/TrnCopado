@@ -226,6 +226,35 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>rh2__Last_Run_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Manual Rollup Run Date</description>
+        <externalId>false</externalId>
+        <label>Last Manual Rollup Run Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rh2__Last_Run_User__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Manual Rollup Run User</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Manual Rollup Run User</inlineHelpText>
+        <label>Last Manual Rollup Run User</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>rh2__Null_counts_toward_average__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -239,6 +268,20 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>rh2__Number_Of_Past_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Records For Last Manual Rollup</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>rh2__Overwrite__c</fullName>
         <defaultValue>true</defaultValue>
         <deprecated>false</deprecated>
@@ -250,6 +293,19 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rh2__Parent_Record_Filter_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Manual Parent Filter Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>rh2__Remove_Trailing_Delimeters__c</fullName>
@@ -366,6 +422,36 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>rh2__createdBy__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user that created the rollup.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that created the rollup.</inlineHelpText>
+        <label>Rollup Created By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rh2__createdDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>String of the date and time the rollup was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>String of the date and time the rollup was created.</inlineHelpText>
+        <label>Rollup Created Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>rh2__delim__c</fullName>
         <deprecated>false</deprecated>
         <description>Stores custom delimiter for concatenated rollups</description>
@@ -451,6 +537,36 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>rh2__lastModifiedBy__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user that last modified the rollup.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the rollup.</inlineHelpText>
+        <label>Rollup Last Modified By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rh2__lastModifiedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>String of the date and time the rollup was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>String of the date and time the rollup was last modified.</inlineHelpText>
+        <label>Rollup Last Modified Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>rh2__logic__c</fullName>
         <deprecated>false</deprecated>
         <description>The type of Rollup (MAX, MIN, SUM, etc.)</description>
@@ -473,6 +589,32 @@
         <inlineHelpText>The field on the source object being sorted on in a MAX or MIN String rollup</inlineHelpText>
         <label>Max / Min Sort Field</label>
         <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rh2__modeTiebreaker__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mode Tiebreaker</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rh2__parentCondition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Condition</label>
+        <length>80</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>

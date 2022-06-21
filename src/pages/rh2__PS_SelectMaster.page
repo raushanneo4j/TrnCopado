@@ -6,6 +6,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
+        <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" />
      </head>
       <style>
     
@@ -40,21 +41,22 @@
         <apex:param name="objectSearch" value=""/>
      </apex:actionFunction>
      <div class="slds-scope" role="main">
-            <div class="slds-card">
+            <div class="slds-card grayBackground">
                 <header class="slds-card__header ">
-                    <h3 class="slds-text-heading_small ">{!$Label.rh2__step1destination}</h3><br/>
+                    <h3 class="slds-text-heading_small ">{!$Label.rh2__Step1Destination}</h3><br/>
                     <nav role="navigation">
                         <ol class="slds-breadcrumb slds-list_horizontal">
-                            <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__home}</a></li>
-                            <li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__allrollupsetting}</a></li>
+                            <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__Home}</a></li>
+                            <li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__AllRollupSetting}</a></li>
                         </ol>
                     </nav>
                 </header>
             </div>
             <c:Loading_Spinner opacity="1"/>
+            <br />
             <apex:outputPanel rendered="{!AllowSettingCreation}">
-            <div class="slds-card ">
-                <header class="slds-card__header ">                  
+            <div class="slds-card grayBackground">
+                <header class="slds-card__header">                  
                     <h3 class="slds-text-heading_small slds-truncate">{!$Label.SelectWhereRollupsReside}</h3> 
                 </header>
                 
@@ -75,13 +77,13 @@
                                 <tr style="width:100%;">
                                     <th style="width:33%;" class="slds-text-heading_label" scope="col">{!$Label.Action}</th>
                                     <th style="width:28%;" class="slds-text-heading_label slds-is-sortable hidecol" scope="col">
-                                         <apex:commandLink value="{!$Label.rh2__label}" action="{! doMasterObjectSort }" rerender="tablecontainer">
+                                         <apex:commandLink value="{!$Label.rh2__Label}" action="{! doMasterObjectSort }" rerender="tablecontainer">
                                             <apex:param name="sortField" value="Label__c" assignTo="{!sortField}"/>
                                             <apex:outputText value="{!IF(sortField=='Label__c', IF(sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                         </apex:commandLink>
                                     </th>
                                     <th style="width:39%;" class="slds-text-heading_label slds-is-sortable" scope="col">
-                                        <apex:commandLink value="{!$Label.rh2__apiname}" action="{!doMasterObjectSort}" rerender="tablecontainer">
+                                        <apex:commandLink value="{!$Label.rh2__APIName}" action="{!doMasterObjectSort}" rerender="tablecontainer">
                                             <apex:param name="sortField" value="Object__c" assignTo="{!sortField}"/>
                                             <apex:outputText value="{!IF(sortField=='Object__c', IF(sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                         </apex:commandLink>
@@ -95,7 +97,7 @@
                                 <apex:repeat value="{!PaginatedListForTargetObjects}" var="item" id="repeat">
                                     <tr>
                                         <td style="width:33%;" data-label="{!$Label.Action}"> 
-                                            <apex:commandLink value="{!$Label.rh2__select}" action="{! doSelectMasterObject }" rerender="error, tablecontainer">
+                                            <apex:commandLink value="{!$Label.rh2__Select}" action="{! doSelectMasterObject }" rerender="error, tablecontainer">
                                                 <apex:param name="masterAPI" value="{!item.rh2__Object__c}" assignTo="{!masterAPI}"/>
                                             </apex:commandLink>
                                         </td>                   
@@ -117,9 +119,9 @@
             </apex:outputpanel>
             <apex:outputPanel rendered="{!!AllowSettingCreation}">
                 <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
-                  <span class="slds-assistive-text">{!$Label.rh2__warning}</span>
+                  <span class="slds-assistive-text">{!$Label.rh2__Warning}</span>
                   <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small">
-                    <font size="4">{!$Label.rh2__unabletocreaterollup}</font>
+                    <font size="4">{!$Label.rh2__UnableToCreateRollup}</font>
                   </span>
                 </div>
             </apex:outputPanel>

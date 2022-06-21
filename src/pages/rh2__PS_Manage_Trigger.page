@@ -9,6 +9,7 @@
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />  
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
     	<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
+        <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }"  />
  
 	</head>
 	<style>		
@@ -47,7 +48,7 @@
 	<apex:slds />
 	<div class="slds-scope " role="main"> 	
 		
-		<div class="slds-card ">
+		<div class="slds-card grayBackground">
   			<header class="slds-card__header">
 	       		<nav role="navigation">
     				<ol class="slds-breadcrumb slds-list_horizontal">
@@ -57,7 +58,7 @@
         		</nav>
   			</header>
   		</div>
-  		
+  		<br />
 		<div class="slds-page-header">
   			<div class="slds-grid">
     			<div class="slds-col slds-has-flexi-truncate">
@@ -72,6 +73,7 @@
 				</div>
 			</div>
 		</div>	
+		<div class="slds-card grayBackground">
 		<apex:outputpanel rendered="{!deployVars.deployed}" id="deployedMessage">
 			<apex:pageMessages escape="false" />
 			<div class="slds-grid">
@@ -80,24 +82,24 @@
 					<div align="center">
 						<apex:outputPanel rendered="{!!deployVars.triggerDisabled}">
 							<p>
-								{!$Label.rh2__apextrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__isinstalled}
+								{!$Label.rh2__ApexTrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__IsInstalled}
 							</p>
 						</apex:outputPanel>
 						<apex:outputPanel rendered="{!deployVars.triggerDisabled}">
 							<p>
-								{!$Label.rh2__apextrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__isinstalledandinactive}
+								{!$Label.rh2__ApexTrigger} <b> {!deployVars.triggerName} </b> {!$Label.rh2__IsInstalledAndInactive}
 							</p>
 							<p>
-								{!$Label.rh2__pleaseensuretriggerisactive}
+								{!$Label.rh2__PleaseEnsureTriggerIsActive}
 							</p>
 							<br/>
 						</apex:outputPanel>
 						<apex:outputPanel rendered="{!deployVars.testDeployed}">
 							<p>  		
-								{!$Label.rh2__apexclass} <b> {!deployVars.triggerTestName} </b> {!$Label.rh2__isinstalled}		
+								{!$Label.rh2__ApexClass} <b> {!deployVars.triggerTestName} </b> {!$Label.rh2__IsInstalled}		
 							</p>
 							<p>
-								{!$Label.rh2__click} <b>{!$Label.rh2__remove}</b> {!$Label.rh2__clickremovetouninstall}
+								{!$Label.rh2__Click} <b>{!$Label.rh2__Remove}</b> {!$Label.rh2__ClickRemoveToUninstall}
 							</p>
 						</apex:outputPanel>
 					</div>
@@ -114,11 +116,11 @@
 				  </p>
 				<apex:outputPanel rendered="{!!deployVars.testDeployed}">
 					<p>  		
-						{!$Label.rh2__apexclass} <b> {!deployVars.triggerTestName} </b> {!$Label.rh2__doesnotexist}.	
+						{!$Label.rh2__ApexClass} <b> {!deployVars.triggerTestName} </b> {!$Label.rh2__DoesNotExist}.	
 					</p>
 				</apex:outputPanel>
 				<p>
-					{!$Label.Click} <b> {!$Label.rh2__deploy} {!deployVars.deployObjectName} {!$Label.rh2__trigger}</b> {!$Label.ToInstallTheApexTrigger}.
+					{!$Label.Click} <b> {!$Label.rh2__Deploy} {!deployVars.deployObjectName} {!$Label.rh2__Trigger}</b> {!$Label.ToInstallTheApexTrigger}.
 				</p>
 				<p>	
 					<br/> 
@@ -133,7 +135,7 @@
 				<apex:outputPanel rendered="{!runSpecifiedTests}">
 				<center>
 					<div class="slds-size_1-of-3 slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
-						<b>{!$Label.rh2__pleasenoteitisrecommended}</b>
+						<b>{!$Label.rh2__PleaseNoteItIsRecommended}</b>
 					</div>
 				</center>
 				</apex:outputPanel>
@@ -146,15 +148,15 @@
 			<div class="slds-box slds-col slds-size_1-of-3 slds-theme_default slds-m-top_medium" align="center">
 				<apex:outputPanel rendered="{!!deployVars.triggerDisabled}">
 					<p>
-						{!$Label.rh2__apextrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__wasdeployedbydefault}
+						{!$Label.rh2__ApexTrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__WasDeployedByDefault}
 					</p>
 				</apex:outputPanel>
 				<apex:outputPanel rendered="{!deployVars.triggerDisabled}">
 					<p>
-						{!$Label.rh2__apextrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__wasdeployedbydefaultandinactive}
+						{!$Label.rh2__ApexTrigger} <b> {!deployVars.defaultTriggerName} </b> {!$Label.rh2__WasDeployedByDefaultAndInactive}
 					</p>
 					<p>
-						{!$Label.rh2__pleaseensuretriggerisactive}
+						{!$Label.rh2__PleaseEnsureTriggerIsActive}
 					</p>
 					<br/>
 				</apex:outputPanel>
@@ -162,28 +164,30 @@
 					{!$Label.TheseTriggersAreNot}
   				</p>
   				<p>
-					{!$Label.Click} <b>{!$Label.rh2__back}</b> {!$Label.ClickBackToReturn}
+					{!$Label.Click} <b>{!$Label.rh2__Back}</b> {!$Label.ClickBackToReturn}
 				</p>
 			</div>
-			<div class="slds-col slds-size_1-of-3"></div>			
+			<div class="slds-col slds-size_1-of-3"></div>	
 		</div>
  
 		</apex:outputpanel>
     	<div class="slds-grid slds-grid_align-center">
     		<apex:outputPanel styleclass="slds-col slds-m-top_medium" rendered="{!pgBehavior.displayButtons}" style="margin-left:auto; margin-right:auto;">   			 			
 				<apex:commandLink rendered="{!!deployVars.Deployed}" styleClass="slds-button slds-button_brand" id="deploy" onclick="generateZip(); overridePageMessagesNormalSize();" rerender="none">
-					<apex:outputText >{!$Label.rh2__deploy} {!deployVars.deployObjectName} {!$Label.rh2__trigger}</apex:outputText>
+					<apex:outputText >{!$Label.rh2__Deploy} {!deployVars.deployObjectName} {!$Label.rh2__Trigger}</apex:outputText>
 				</apex:commandLink>
 				<apex:commandLink rendered="{!deployVars.Deployed && pgBehavior.renderButton}" styleClass="slds-button slds-button_brand" id="remove" onclick="generateZip(); overridePageMessagesNormalSize();" rerender="none">
-					<apex:outputText rendered="{!deployVars.Deployed}">{!$Label.rh2__remove} {!deployVars.deployObjectName} {!$Label.rh2__trigger}</apex:outputText>
+					<apex:outputText rendered="{!deployVars.Deployed}">{!$Label.rh2__Remove} {!deployVars.deployObjectName} {!$Label.rh2__Trigger}</apex:outputText>
 				</apex:commandLink>
 				&nbsp;
-				<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__back}" action="{!backPressed}" />
+				<apex:commandButton styleClass="slds-button slds-button_neutral" value="{!$Label.rh2__Back}" action="{!backPressed}" />
 			</apex:outputPanel>
 		</div>
 		<div class="slds-grid slds-m-vertical_small"><span></span></div>
-		<div class="slds-card">
-     		<header class="slds-card__header slds-grid">
+	</div>	
+		<br />	
+		<div class="slds-card grayBackground">
+     		<header class="slds-card__header slds-grid" style="background-color: #f3f3f3;">
      			<div class="slds-col">
                		<h3 class="slds-text-heading_small slds-truncate">{!$Label.RealtimeTriggersInOrg}</h3>
                	</div>		

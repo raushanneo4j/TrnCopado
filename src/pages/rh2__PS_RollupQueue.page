@@ -3,6 +3,7 @@
 	     <head> 
 	     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	     <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>	     
+		 <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" /> 
 	     </head>
 
 	    <style>
@@ -16,17 +17,16 @@
 	    		background:#fdfdfd;
 	    		box-shadow:0 2px 3px 0 rgba(0,0,0,.16);
 	    	}
-	    
 	    </style> 
 
 	    <apex:slds />
 	    <apex:form id="rollupQueuePage">
 	   	<div class="slds-scope" role="main">
-			<div class="slds-card">
+			<div class="slds-card grayBackground">
 	    		<header class="slds-card__header slds-grid">
 	        		<div class="slds-media slds-media_center slds-has-flexi-truncate">
 	             		<div class="slds-media__body">
-	                		<h4 class="slds-text-heading_small slds-truncate">{!$Label.rh2__rolluphelperqueue}</h4>	                		
+	                		<h4 class="slds-text-heading_small slds-truncate">{!$Label.rh2__RollupHelperQueue}</h4>	                		
 	             		</div> 
 	        		</div>
 	    		</header>
@@ -44,7 +44,7 @@
 								</apex:outputPanel>	
 				            </div>				               
 				            <div style="float:right; padding-right:25px;">
-				            <apex:commandButton styleclass="slds-button slds-button_neutral slds-m-left_medium"  value="{!$Label.rh2__refresh}" action="{!populateQueueItemList}" rerender="tableContainer, selectedObjectDropdown" />
+				            <apex:commandButton styleclass="slds-button slds-button_neutral slds-m-left_medium"  value="{!$Label.rh2__Refresh}" action="{!populateQueueItemList}" rerender="tableContainer, selectedObjectDropdown" />
 							</div>
 						</div >
 		                
@@ -53,7 +53,7 @@
 							<apex:outputPanel id="noQueueItems" rendered="{!IF(numberOfQueueItems == 0, true, false)}">
 								<br/><br/>
 								<center>
-									{!$Label.rh2__noqueueitemswerefound}
+									{!$Label.rh2__NoQueueItemsWereFound}
 								</center>
 							</apex:outputPanel>
 							<apex:outputPanel id="hasQueueItems" rendered="{!IF(numberOfQueueItems != 0, true, false)}">
@@ -63,30 +63,34 @@
 								</div>
 						        <table class="slds-table slds-table_bordered" style="table-layout:fixed !important;" >
 					        		<tr>
-					        			<td style="width:12%; text-align: center; " class="slds-text-heading_label" ><apex:commandLink value="{!$Label.rh2__id}" action="{! doSettingSort}">
+					        			<td style="width:12%; text-align: center; " class="slds-text-heading_label" ><apex:commandLink value="{!$Label.rh2__ID}" action="{! doSettingSort}" rerender="tableContainer">
 							            	<apex:param name="sortingField" value="ID" assignTo="{!sortVars.sortField}"/>
 				                            <apex:outputText value="{!IF(sortVars.sortField=='ID', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
 				                        </apex:commandLink> </td>
-				                    	<td style="width:10%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__priority}" action="{! doSettingSort}">
+				                    	<td style="width:10%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__Priority}" action="{! doSettingSort}" rerender="tableContainer">
 								        	<apex:param name="sortingField" value="Priority__c" assignTo="{!sortVars.sortField}"/>
 					                    	<apex:outputText value="{!IF(sortVars.sortField=='Priority__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
 					                 	</apex:commandLink>    </td>
-				                    	<td style="width:15%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__targetobject}" action="{! doSettingSort }" > 
+				                    	<td style="width:15%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__TargetObject}" action="{! doSettingSort }" rerender="tableContainer"> 
 				                        	<apex:param name="sortingField" value="Source_Object__c" assignTo="{!sortVars.sortField}"/> 
 				                        	<apex:outputText value="{!IF(sortVars.sortField=='Source_Object__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/> 
 				                     	</apex:commandLink> </td>
-				                    	<td style="width:10%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__status}" action="{! doSettingSort}"> 
+				                    	<td style="width:10%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__Status}" action="{! doSettingSort}" rerender="tableContainer"> 
 								        	<apex:param name="sortingField" value="Status__c" assignTo="{!sortVars.sortField}"/>
 					                    	<apex:outputText value="{!IF(sortVars.sortField=='Status__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/> 
 					                	</apex:commandLink> </td>
-				                    	<td style="width:13%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__createddate}" action="{! doSettingSort}">
+				                    	<td style="width:13%; text-align: center;" class="slds-text-heading_label slds-truncate"><apex:commandLink value="{!$Label.rh2__CreatedDate}" action="{! doSettingSort}" rerender="tableContainer">
 								            <apex:param name="sortingField" value="CreatedDate" assignTo="{!sortVars.sortField}"/>
 					                        <apex:outputText value="{!IF(sortVars.sortField=='CreatedDate', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>  
 					                	</apex:commandLink>   </td>
-				                     	<td style="width:15%; text-align: center;" class="slds-text-heading_label"><apex:commandLink value="{!$Label.rh2__recordsremaining}" action="{! doSettingSort }" > 
+				                     	<td style="width:15%; text-align: center;" class="slds-text-heading_label slds-truncate"><apex:commandLink value="{!$Label.rh2__RecordsRemaining}" action="{! doSettingSort }" rerender="tableContainer"> 
 				                        	<apex:param name="sortingField" value="Max_Record_Scope__c" assignTo="{!sortVars.sortField}"/> 
 				                        	<apex:outputText value="{!IF(sortVars.sortField=='Max_Record_Scope__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/> 
 				                     	</apex:commandLink> </td>
+										 <td style="width:15%; text-align: center;" class="slds-text-heading_label slds-truncate"><apex:commandLink value="{!$Label.rh2__ParentFilter}" action="{! doSettingSort }" rerender="tableContainer">
+											 <apex:param name="sortingField" value="Filter__c" assignTo="{!sortVars.sortField}"/>
+											 <apex:outputText value="{!IF(sortVars.sortField=='Filter__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
+										</apex:commandLink></td>
 				                     	<td style="width:15%; " class="slds-text-heading_label slds-truncate">{!$Label.RollupsInQueueItem}</td>
 										<td style="width:10%; text-align: center;" class="slds-text-heading_label">{!$Label.Action}</td>
 				              		</tr>
@@ -101,16 +105,24 @@
 					              				<td class="slds-cell-wrap" style="width:10%; text-align: center;" > {!q.status__c}</td>
 					              				<td class="slds-cell-wrap" style="width:13%; text-align: center;" > {!q.CreatedDate}</td>
 					              				<td class="slds-cell-wrap" style="width:15%; text-align: center;" > {!q.Max_Record_Scope__c}</td>
+												<td class="slds-cell-wrap" style="width:15%; text-align: center;" >
+													<apex:outputLink rendered="{!$User.UIThemeDisplayed != 'Theme3'}" value="{!lightningBaseLink}{!URLFOR($Page.rh2__PS_DefineFilter, null, [jobfilter=q.rh2__ParentFilter__c])}" target="_blank">
+														{!q.rh2__Filter__c}
+													</apex:outputLink>
+													<apex:outputLink rendered="{!$User.UIThemeDisplayed == 'Theme3'}" value="{!URLFOR($Page.rh2__PS_DefineFilter, null, [jobfilter=q.rh2__ParentFilter__c])}" target="_blank">
+														{!q.rh2__Filter__c}
+													</apex:outputLink>
+												</td>
 					              				<td class="slds-cell-wrap slds-truncate" style="width:15%; text-align: center;" >
-					              					<apex:commandLink value="{!$Label.rh2__showrollups}"  rerender="rollupQueuePage" action="{!showPopup}" oncomplete="showModal(true, 'rollupPopup');">
+					              					<apex:commandLink value="{!$Label.rh2__ShowRollups}"  rerender="rollupQueuePage" action="{!showPopup}" oncomplete="showModal(true, 'rollupPopup');">
 					              						<apex:param name="queueItemID" value="{!q.Id}" assignTo="{!queueItemID}"/>
 					              					</apex:commandLink>	
 												</td>
 												<td class="slds-cell-wrap" style="width:10%; text-align: center;">
-													<apex:commandLink value="{!$Label.rh2__retry}" rerender="rollupQueuePage" action="{!retryQueueItem}" reRender="tableContainer, rollupQueuePage">
+													<apex:commandLink value="{!$Label.rh2__Retry}" rerender="rollupQueuePage" action="{!retryQueueItem}" reRender="tableContainer, rollupQueuePage">
 														<apex:param name="queueItemID" value="{!q.Id}" assignTo="{!queueItemID}"/>
 													</apex:commandLink> &nbsp; | &nbsp;
-													<apex:commandLink value="{!$Label.rh2__delete}" action="{!deleteQueueItem}" reRender="tableContainer, rollupQueuePage">
+													<apex:commandLink value="{!$Label.rh2__Delete}" action="{!deleteQueueItem}" reRender="tableContainer, rollupQueuePage">
 							              						<apex:param name="queueItemToDeleteID" value="{!q.Id}" assignTo="{!queueItemId}"/>
 							              					</apex:commandLink>	
 												</td>												  
@@ -148,7 +160,7 @@
                     				</apex:outputPanel>
                    			    </div>
 							<div class="slds-modal__footer">
-								<apex:commandButton styleclass="slds-button slds-button--neutral slds-button--small slds-m-bottom--x-small" value="{!$Label.rh2__close}" onclick="showModal(false, 'rollupPopup'); return false;" />
+								<apex:commandButton styleclass="slds-button slds-button--neutral slds-button--small slds-m-bottom--x-small" value="{!$Label.rh2__Close}" onclick="showModal(false, 'rollupPopup'); return false;" />
 							</div>
 						</div>
 					</div>

@@ -4,15 +4,16 @@
          <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
          <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/font-awesome/css/font-awesome.min.css') }" />
+         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" />
       </head>
       <apex:slds />
       <apex:form >
          <div class="slds-scope" role="main">
-            <div class="slds-card">
+            <div class="slds-card grayBackground">
                <header class="slds-card__header slds-grid">
                   <div class="slds-media slds-media_center slds-has-flexi-truncate">
                      <div class="slds-media__body">
-                        <h4 class="slds-text-heading_small slds-truncate">{!$Label.rh2__rollupschedulemanagement}</h4>
+                        <h4 class="slds-text-heading_small slds-truncate">{!$Label.rh2__RollupScheduleManagement}</h4>
                      </div>
                   </div>
                </header>
@@ -23,45 +24,45 @@
                         <apex:outputPanel rendered="{!IF(numberOfJobs == 0, true, false)}">
                            <br/><br/>
                            <center>
-                              {!$Label.rh2__nojobswerefound}
+                              {!$Label.rh2__NoJobsWereFound}
                            </center>
                         </apex:outputPanel>
                         <apex:outputPanel id="jobList" rendered="{!IF(numberOfJobs != 0, true, false)}">
-                           <apex:commandButton action="{!saveInlineEdits}" value="{!$Label.rh2__savechanges}" id="saveInlineEditBtn" styleClass="slds-button slds-button_brand" style="display:none; float:right;"/>
+                           <apex:commandButton action="{!saveInlineEdits}" value="{!$Label.rh2__SaveChanges}" id="saveInlineEditBtn" styleClass="slds-button slds-button_brand" style="display:none; float:right;"/>
                            <div style="float:right; padding-right:25px;">
                               <c:Paginate pageController="{! pgCon }" renderedComponent="jobList" />
                            </div>
-                           <table class="slds-table slds-table_bordered" >
+                           <table class="slds-table slds-table_bordered">
                                  <tr>
                                     <th class="slds-text-heading_label" style="width: 50%;" >
-                                       <apex:commandLink value="{!$Label.rh2__rollupname}" action="{! doSettingSort}">
+                                       <apex:commandLink value="{!$Label.rh2__RollupName}" action="{! doSettingSort}">
                                           <apex:param name="sortingField" value="Rollup_Name__c" assignTo="{!sortVars.sortField}"/>
                                           <apex:outputText value="{!IF(sortVars.sortField=='Rollup_Name__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                        </apex:commandLink>
                                     </th>
                                     <th class="slds-text-heading_label">
-                                       <apex:commandLink value="{!$Label.rh2__nextfiretime}" action="{! doSettingSort}">
+                                       <apex:commandLink value="{!$Label.rh2__NextFireTime}" action="{! doSettingSort}">
                                           <apex:param name="sortingField" value="NextFireTime__c" assignTo="{!sortVars.sortField}"/>
                                           <apex:outputText value="{!IF(sortVars.sortField=='NextFireTime__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                        </apex:commandLink>
                                     </th>
                                     <th></th>
                                     <th class="slds-text-heading_label">
-                                       <apex:commandLink value="{!$Label.rh2__interval}" action="{! doSettingSort }" >
+                                       <apex:commandLink value="{!$Label.rh2__Interval}" action="{! doSettingSort }" >
                                           <apex:param name="sortingField" value="Increment__c" assignTo="{!sortVars.sortField}"/>
                                           <apex:outputText value="{!IF(sortVars.sortField=='Increment__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                        </apex:commandLink>
                                     </th>
                                     <th></th>
                                     <th class="slds-text-heading_label">
-                                       <apex:commandLink value="{!$Label.rh2__intervalunit}" action="{! doSettingSort }" >
+                                       <apex:commandLink value="{!$Label.rh2__IntervalUnit}" action="{! doSettingSort }" >
                                           <apex:param name="sortingField" value="Unit__c" assignTo="{!sortVars.sortField}"/>
                                           <apex:outputText value="{!IF(sortVars.sortField=='Unit__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                        </apex:commandLink>
                                     </th>
                                     <th></th>
                                     <th class="slds-text-heading_label">
-                                       <apex:commandLink value="{!$Label.rh2__jobstatus}" action="{! doSettingSort }" >
+                                       <apex:commandLink value="{!$Label.rh2__JobStatus}" action="{! doSettingSort }" >
                                           <apex:param name="sortingField" value="Rollup_Status__c" assignTo="{!sortVars.sortField}"/>
                                           <apex:outputText value="{!IF(sortVars.sortField=='Rollup_Status__c', IF(sortVars.sortDirection=='asc', ' ▲', ' ▼'),'')}"/>
                                        </apex:commandLink>
@@ -101,7 +102,7 @@
                                           {!job.Rollup_Status__c}
                                        </td>
                                        <td>
-                                          <apex:commandLink value="{!$Label.rh2__delete}" action="{!deleteJob}" oncomplete="window.top.location.reload();">
+                                          <apex:commandLink value="{!$Label.rh2__Delete}" action="{!deleteJob}" oncomplete="window.top.location.reload();">
                                              <apex:param name="sortingField" value="{!job.Id}" assignTo="{!jobToDeleteID}"/>
                                           </apex:commandLink>
                                        </td>

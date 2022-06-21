@@ -6,6 +6,7 @@
       <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
       <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
       <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+      <apex:stylesheet value="{!URLFOR($Resource.rh2__PT_Resources_v1, '/css/grayBackground.css')}" />
      </head> 
      
      <script>
@@ -75,12 +76,12 @@
 	 <div class="slds-scope" role="main"> 
 	  	
 
-    	<div class="slds-card ">
+    	<div class="slds-card grayBackground">
   			<header class="slds-card__header ">
    		  		<nav role="navigation">
         			<ol class="slds-breadcrumb slds-list_horizontal">
-                    <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__home}</a></li>
-                		<li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__allrollupsetting}</a></li>
+                    <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__Home}</a></li>
+                		<li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__AllRollupSetting}</a></li>
              		</ol>
         		</nav>
   			</header>
@@ -88,26 +89,32 @@
 	   	<apex:form id="form" >
       <apex:actionFunction action="{!closeRealtimeModal}" name="CloseThePreventRealtimeModal" status="loading" reRender="preventRealtimeModal, realtime_script_check, realtime_script_check2"/> 
       <apex:actionFunction action="{!closeRealtimeModal}" name="CloseTheAllowRealtimeModal" status="loading" reRender="allowRealtimeModal, realtime_script_check, realtime_script_check2"/> 
-     	<div class="slds-card slds-m-vertical_medium" style="min-width:1074px;">
+     	<div class="slds-card slds-m-vertical_medium grayBackground" style="min-width:1074px;">
      		<header class="slds-card__header slds-grid">
      			<div class="slds-media__body">
-                	<h3 class="slds-text-heading_small slds-truncate">{!$Label.rh2__selectsourceobjectto}</h3>
+                	<h3 class="slds-text-heading_small slds-truncate">{!$Label.rh2__SelectSourceObjectTo}</h3>
               	</div>
      		</header>
      		<body>
      		<section class="slds-card__body ">
           <apex:outputPanel id="realtimeScriptWarning">
             <apex:outputPanel styleClass="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" style="margin-bottom:5px;" rendered="{!shouldRenderDisableRealtimeScriptWarning}">
-              {!$Label.rh2__realtimedisabledforoneormoreobjects} 
+              {!$Label.rh2__RealtimeDisabledForOneOrMoreObjects} 
             </apex:outputPanel>
           </apex:outputPanel>
           
-          <div class="slds-box slds-box_x-small slds-theme_alt-inverse" style="width:85%; margin-left:auto; margin-right:auto;">{!$Label.PleaseNoteIfYouDoNotSee}</div>
+          <div class="slds-box slds-box_x-small slds-theme_alt-inverse" style="width:85%; margin-left:auto; margin-right:auto;">{!$Label.rh2__PleaseNoteIfYouDoNotSee}</div>
+
+          <apex:outputPanel rendered="{!!hasAPIAccess}">
+            <div class="slds-box slds-theme_info slds-theme_alert-texture" style="width:85%;margin-left:auto;margin-right:auto;padding-top:8px;padding-bottom:8px;padding-left:0.5rem;">
+              {!$Label.rh2__OrgDoesNotHaveAPIAccess}
+            </div>
+          </apex:outputPanel>
 
            <div style="width:95%; margin-left:auto; margin-right:auto; padding-top:10px;" >
             <apex:outputPanel style="float:right; padding-bottom:5px;">
               <span class="slds-text-title_caps" style="padding-right:2px;">
-                {!$Label.rh2__allowrealtimedisablement}
+                {!$Label.rh2__AllowRealtimeDisablement}
               </span>
               <apex:outputPanel id="realtimeRollupCheckbox">
               <apex:inputCheckbox styleclass="input" rendered="{!runRealtimeRollup}" id="realtime_script_check" value="{!runRealtimeRollup}" onchange="showModal(true, 'preventRealtimeModal');"/>
@@ -136,9 +143,14 @@
 	                			<th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.TriggerDeployed}?</th>
                         <th class="slds-text-heading_label slds-is-sortable hidecol" scope="col">{!$Label.Label}</th>
                         <th class="slds-text-heading_label slds-is-sortable" scope="col">{!$Label.APIName}</th> 
-                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.DisableRealtime}?</th> 
-                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.ForceAsynchronous}?</th> 
-                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.AdditionalSettings}</th> 
+                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">
+                          <apex:inputCheckbox value="{!disableAllRealtime}">
+                            <apex:actionSupport event="onclick" action="{!setToggleDisableAllRealtime}" reRender="realtimeScriptWarning, realtime_check" status="loading" />
+                            </apex:inputCheckbox>
+                        <span>{!$Label.rh2__DisableRealtime}?</span>
+                      </th> 
+                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.rh2__ForceAsynchronous}?</th> 
+                        <th class="slds-text-heading_label slds-is-sortable slds-cell-shrink" scope="col">{!$Label.rh2__AdditionalSettings}</th> 
 	                  		</tr>
 	                  	</thead>
 	                  	<tbody>
@@ -153,14 +165,14 @@
 
                 			<apex:repeat value="{! masterObjects }" var="item">
                 				<tr> 
-                					<td data-label="{!$Label.rh2__action}">
+                					<td data-label="{!$Label.rh2__Action}">
                             <apex:outputPanel rendered="{!AND(item.isOverwriteEnabled, !item.isTriggerDeployed)}">
-                                <apex:commandLink value="{!$Label.rh2__select}" onclick="showModal(true, 'existingSettingModal');" reRender="existingSettingModal">
+                                <apex:commandLink value="{!$Label.rh2__Select}" onclick="showModal(true, 'existingSettingModal');" reRender="existingSettingModal" status="loading">
                                  	<apex:param name="masterAPI" value="{!item.ObjectName}" assignTo="{!deployVars.deployObjectName}"/>
                        				</apex:commandLink>
                             </apex:outputPanel>
                             <apex:outputPanel rendered="{!OR(!item.isOverwriteEnabled, item.isTriggerDeployed)}">
-                              <apex:commandLink value="{!$Label.rh2__select}" action="{!doSelectMasterObject}" rerender="error, table" status="loading">
+                              <apex:commandLink value="{!$Label.rh2__Select}" action="{!doSelectMasterObject}" rerender="error, table" status="loading">
                                   <apex:param name="masterAPI" value="{!item.ObjectName}" assignTo="{!deployVars.deployObjectName}"/>
                               </apex:commandLink>
                             </apex:outputPanel>
@@ -178,7 +190,7 @@
                           <apex:inputCheckbox id="realtime_check" value="{!item.isRealtimeDisabled}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', e.target.checked, {!item.isAsyncEnabled}, {!item.isPackagedTriggerDisabled}, {!item.isEnhanceValidationEnabled}, {!item.isAllowChildSaveIfParentSaveFailsEnabled}); })(event)" />
                           </td>
                           <td>
-                            <apex:inputCheckbox id="async_check" value="{!item.isAsyncEnabled}" disabled="{!item.isEnhanceValidationEnabled}" title="{!$Label.rh2__forceasynchronousrequires}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, e.target.checked, {!item.isPackagedTriggerDisabled}, {!item.isEnhanceValidationEnabled}, {!item.isAllowChildSaveIfParentSaveFailsEnabled}); })(event)" />
+                            <apex:inputCheckbox id="async_check" value="{!item.isAsyncEnabled}" disabled="{!item.isEnhanceValidationEnabled}" title="{!$Label.rh2__ForceAsynchronousRequires}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, e.target.checked, {!item.isPackagedTriggerDisabled}, {!item.isEnhanceValidationEnabled}, {!item.isAllowChildSaveIfParentSaveFailsEnabled}); })(event)" />
                           </td>
                           <td>
                             <div class="slds-dropdown-trigger slds-dropdown-trigger_click hideDropdown" style="margin-left:60px;" id="{!item.objectName}">  
@@ -192,10 +204,10 @@
                                         <div class="slds-text-body_regular">{!$Label.DisableTrigger}?</div> <apex:inputCheckbox id="trigger_check" value="{!item.isPackagedTriggerDisabled}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, {!item.isAsyncEnabled}, e.target.checked, {!item.isEnhanceValidationEnabled}, {!item.isAllowChildSaveIfParentSaveFailsEnabled}); })(event)" />
                                       </li>    
                                       <li class="slds-dropdown__item">
-                                        <div class="slds-text-body_regular">{!$Label.rh2__enhancedvalidation}?</div><apex:inputCheckbox id="enhanced_check" value="{!item.isEnhanceValidationEnabled}" disabled="{!item.isAsyncEnabled}" title="{!$Label.rh2__enhancedvalidationrequires}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, {!item.isAsyncEnabled}, {!item.isPackagedTriggerDisabled}, e.target.checked, {!item.isAllowChildSaveIfParentSaveFailsEnabled},); })(event)" />
+                                        <div class="slds-text-body_regular">{!$Label.rh2__EnhancedValidation}?</div><apex:inputCheckbox id="enhanced_check" value="{!item.isEnhanceValidationEnabled}" disabled="{!item.isAsyncEnabled}" title="{!$Label.rh2__EnhancedValidationRequires}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, {!item.isAsyncEnabled}, {!item.isPackagedTriggerDisabled}, e.target.checked, {!item.isAllowChildSaveIfParentSaveFailsEnabled},); })(event)" />
                                       </li>
                                       <li class="slds-dropdown__item">
-                                        <div class="slds-text-body_regular">{!$Label.rh2__allowchildsaveifparentsavefails}?</div><apex:inputCheckbox id="allow_child_save_check" value="{!item.isAllowChildSaveIfParentSaveFailsEnabled}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, {!item.isAsyncEnabled}, {!item.isPackagedTriggerDisabled}, {!item.isEnhanceValidationEnabled}, e.target.checked); })(event)" />
+                                        <div class="slds-text-body_regular">{!$Label.rh2__AllowChildSaveIfParentSaveFails}?</div><apex:inputCheckbox id="allow_child_save_check" value="{!item.isAllowChildSaveIfParentSaveFailsEnabled}" onchange="(function(e) { objRealtimeSet('{!JSENCODE(item.objectName)}', {!item.isRealtimeDisabled}, {!item.isAsyncEnabled}, {!item.isPackagedTriggerDisabled}, {!item.isEnhanceValidationEnabled}, e.target.checked); })(event)" />
                                       </li>                                         
                                   </ul>
                               </div>
@@ -250,8 +262,8 @@
                     </center>
                   </div>
                     <div class="slds-modal__footer">
-                        <apex:commandButton styleClass="slds-button slds-button_brand" action="{!setDisableRealtimeScript}" onclick="showModal(false, 'preventRealtimeModal');" value="{!$Label.rh2__yes}" status="loading" reRender="preventRealtimeModal, realtimeScriptWarning, realtimeRollupCheckbox"/>
-                        <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeRealtimeModal}" onclick="showModal(false, 'preventRealtimeModal');" value="{!$Label.rh2__no}" status="loading" reRender="preventRealtimeModal, realtime_script_check, realtime_script_check2, realtimeRollupCheckbox"/>
+                        <apex:commandButton styleClass="slds-button slds-button_brand" action="{!setDisableRealtimeScript}" onclick="showModal(false, 'preventRealtimeModal');" value="{!$Label.rh2__Yes}" status="loading" reRender="preventRealtimeModal, realtimeScriptWarning, realtimeRollupCheckbox"/>
+                        <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeRealtimeModal}" onclick="showModal(false, 'preventRealtimeModal');" value="{!$Label.rh2__No}" status="loading" reRender="preventRealtimeModal, realtime_script_check, realtime_script_check2, realtimeRollupCheckbox"/>
                     </div>
                 </div>
             </div>
@@ -275,8 +287,8 @@
                         </center>
                     </div>
                       <div class="slds-modal__footer">
-                          <apex:commandButton styleClass="slds-button slds-button_brand" action="{!setDisableRealtimeScript}" onclick="showModal(false, 'allowRealtimeModal');" value="{!$Label.rh2__yes}" status="loading" reRender="allowRealtimeModal, realtimeScriptWarning, realtimeRollupCheckbox"/>
-                          <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeRealtimeModal}" onclick="showModal(false, 'allowRealtimeModal');" value="{!$Label.rh2__no}" status="loading" reRender="allowRealtimeModal, realtime_script_check, realtime_script_check2"/>
+                          <apex:commandButton styleClass="slds-button slds-button_brand" action="{!setDisableRealtimeScript}" onclick="showModal(false, 'allowRealtimeModal');" value="{!$Label.rh2__Yes}" status="loading" reRender="allowRealtimeModal, realtimeScriptWarning, realtimeRollupCheckbox"/>
+                          <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeRealtimeModal}" onclick="showModal(false, 'allowRealtimeModal');" value="{!$Label.rh2__No}" status="loading" reRender="allowRealtimeModal, realtime_script_check, realtime_script_check2"/>
                       </div>
                   </div>
               </div>

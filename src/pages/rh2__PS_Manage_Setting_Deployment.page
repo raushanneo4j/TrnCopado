@@ -11,6 +11,8 @@
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/rh_breadcrumbs.js')}" />  
     	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }" />
     	<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/customMessage.css') }" />
+    	<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" />
+    	<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/msd.css') }" />
  
 	</head>
 
@@ -64,7 +66,7 @@
 	
 	<div class="slds-scope" id="thePage" role="main">	
 		<c:Loading_Spinner opacity="1"/>
-		<div class="slds-card ">
+		<div class="slds-card grayBackground">
   			<header class="slds-card__header">
 	       		<nav role="navigation">
     				<ol class="slds-breadcrumb slds-list_horizontal">
@@ -74,7 +76,7 @@
         		</nav>
   			</header>
   		</div>
-  		
+  		<br/>
 		<div class="slds-page-header">
   			<div class="slds-grid">
     			<div class="slds-col slds-has-flexi-truncate">
@@ -91,12 +93,12 @@
 		</div>	
 		<br/>
 		<apex:outputpanel rendered="{!!useCaseDeployed}">
-			<div class="slds-grid">
+			<div class="slds-grid grayBackground">
 				
-				<div class="slds-col slds-grid_align-center" align="center">
+				<div class="slds-col slds-grid_align-center topBackground" align="center">
 					<apex:outputPanel rendered="{!useCaseFieldDeployed}">
 						<br/>
-						<strong>{!$Label.rh2__the} {!data.fieldName} {!$Label.rh2__fieldisdeployed}</strong>
+						<strong>{!$Label.rh2__The} {!data.fieldName} {!$Label.rh2__FieldIsDeployed}</strong>
 					</apex:outputPanel>
 					<div class="slds-col slds-grid_align-center" align="center" style="padding-top:1%;">
 						<center>
@@ -105,7 +107,7 @@
 									<center>
 										<br/>
 										<strong>{!$Label.PleaseNote}</strong>&nbsp;
-										<apex:outputText value="{!$Label.rh2__pleasenotefieldsecurity}"/>
+										<apex:outputText value="{!$Label.rh2__PleaseNoteFieldSecurity}"/>
 									</center>
 								</div>
 							</apex:outputPanel>
@@ -117,33 +119,33 @@
 						</p>
 						<apex:outputPanel rendered="{!!useCaseFieldDeployed}">
 							<p>
-								{!$Label.rh2__click} <b>{!$Label.rh2__deploy} {!ucData.useCaseName} {!$Label.rh2__field}</b> {!$Label.rh2__todeployfield}
+								{!$Label.rh2__Click} <b>{!$Label.rh2__Deploy} {!ucData.useCaseName} {!$Label.rh2__Field}</b> {!$Label.rh2__ToDeployField}
 							</p>
 						</apex:outputPanel>
 						<apex:outputPanel rendered="{!useCaseFieldDeployed}">
 							<p>
-								{!$Label.rh2__click} <b>{!$Label.rh2__deploy} {!ucData.useCaseName} {!$Label.rh2__setting}</b> {!$Label.rh2__todeployrhsetting}
+								{!$Label.rh2__Click} <b>{!$Label.rh2__Deploy} {!ucData.useCaseName} {!$Label.rh2__Setting}</b> {!$Label.rh2__ToDeployRHSetting}
 							</p>
 						</apex:outputPanel>
 					</div>
 				</div>			
 							
 			</div>
-			<div id="createFieldAndRollup" class="slds-grid slds-grid_align-center">
+			<div id="createFieldAndRollup" class="slds-grid slds-grid_align-center grayBackground paddedBackground">
 				<apex:outputPanel rendered="{!!useCaseFieldDeployed}" id="createField" styleclass="slds-col slds-m-top_medium" style="margin-left:auto; margin-right:auto;">
-					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveField" rerender="createFieldAndRollup" onclick="callTargetFieldScript();" status="loading" reRender="messages" value="{!$Label.rh2__deploy} {!ucData.useCaseName} {!$Label.rh2__field}"/>
+					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveField" rerender="createFieldAndRollup" onclick="callTargetFieldScript();" status="loading" reRender="messages" value="{!$Label.rh2__Deploy} {!ucData.useCaseName} {!$Label.rh2__Field}"/>
 					&nbsp;
-					<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__back}</apex:outputLink>
+					<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__Back}</apex:outputLink>
 				</apex:outputPanel>
 				<apex:outputPanel rendered="{!OR(AND(useCaseFieldDeployed, !isRollupLimitReached), AND(useCaseFieldDeployed, !notPaid))}" id="CreateAndRunRollup" styleclass="slds-col slds-m-top_medium" style="margin-left:auto; margin-right:auto;">					
-					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveSetting2" rerender="createFieldAndRollup" onclick="CreateAndRunRollup();" status="loading" reRender="messages" value="{!$Label.rh2__deployandrun} {!ucData.useCaseName} {!$Label.rh2__setting}"/>
+					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveSetting2" rerender="createFieldAndRollup" onclick="CreateAndRunRollup();" status="loading" reRender="messages" value="{!$Label.rh2__DeployandRun} {!ucData.useCaseName} {!$Label.rh2__Setting}"/>
 					&nbsp;
-					<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__back}</apex:outputLink>
+					<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__Back}</apex:outputLink>
 				</apex:outputPanel>    
 				<apex:outputPanel rendered="{!AND(notPaid, useCaseFieldDeployed, isRollupLimitReached) }" id="createRollup" styleclass="slds-col slds-m-top_medium" style="margin-left:auto; margin-right:auto;">					
-					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveSetting" rerender="createFieldAndRollup" action="{!createExportRollupObject}" status="loading" reRender="messages" value="{!$Label.rh2__deploy} {!ucData.useCaseName} {!$Label.rh2__setting}"/>
+					<apex:commandButton styleClass="slds-button slds-button_brand" rendered="{!!useCaseDeployed}" id="deployRemoveSetting" rerender="createFieldAndRollup" action="{!createExportRollupObject}" status="loading" reRender="messages" value="{!$Label.rh2__Deploy} {!ucData.useCaseName} {!$Label.rh2__Setting}"/>
                     &nbsp;	
-                    <apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__back}</apex:outputLink>
+                    <apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__Back}</apex:outputLink>
                 </apex:outputPanel>              
 			</div>
 		</apex:outputpanel>
@@ -151,39 +153,42 @@
 			<apex:outputpanel id="mainPanel" rendered="{!useCaseDeployed}">		
 				<br/>
 				<apex:outputpanel rendered="{!!ucData.targetFieldAccessible}">
+					<div class="grayBackground topBackground">
 					<div class="slds-box slds-theme_alt-inverse" style="width:52%;">
-						<apex:outputText value="{!data.fieldName} {!$Label.rh2__iscurrentlynotaccessible}"/>
+						<apex:outputText value="{!data.fieldName} {!$Label.rh2__IsCurrentlyNotAccessible}"/>
 						<br/>
-						<apex:outputLink style="background-color: rgb(3, 45, 96)" rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!data.lightingFieldAccessibilityLink}">{!$Label.rh2__adjustfieldaccessibility}</apex:outputLink>
-						<apex:outputLink style="background-color: rgb(3, 45, 96)" rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!data.classicFieldAccessibilityLink}">{!$Label.rh2__adjustfieldaccessibility}</apex:outputLink>
+						<apex:outputLink style="background-color: rgb(3, 45, 96)" rendered="{! $User.UIThemeDisplayed != 'Theme3' }" target="_blank" value="{!data.lightingFieldAccessibilityLink}">{!$Label.rh2__AdjustFieldAccessibility}</apex:outputLink>
+						<apex:outputLink style="background-color: rgb(3, 45, 96)" rendered="{! $User.UIThemeDisplayed == 'Theme3' }" target="_blank" value="{!data.classicFieldAccessibilityLink}">{!$Label.rh2__AdjustFieldAccessibility}</apex:outputLink>
+					</div>
 					</div>
 				</apex:outputpanel>
-				<div class="slds-grid">
-					<div class="slds-col slds-size_1-of-3"></div>
+				<div class="slds-grid grayBackground">
+					<div class="slds-col slds-size_1-of-3" style="border-left: 1px solid rgb(201, 201, 201);"></div>
 					<div class="slds-col slds-size_1-of-3 slds-box slds-theme_default slds-grid_align-center slds-m-top_medium" align="center">
 						<p>
 							{!$Label.RollupHelperSetting} <b> {!ucData.useCaseName} </b> {!$Label.Exists}.
 						</p>
 						<p>
-							{!$Label.Click} <b>{!$Label.rh2__delete} {!ucData.useCaseName} {!$Label.rh2__setting}</b> {!$Label.ToDeleteRHSetting}
+							{!$Label.Click} <b>{!$Label.rh2__Delete} {!ucData.useCaseName} {!$Label.rh2__Setting}</b> {!$Label.ToDeleteRHSetting}
 						</p>
 					</div>
-					<div class="slds-col slds-size_1-of-3"></div>						
+					<div class="slds-col slds-size_1-of-3" style="border-right: 1px solid rgb(201, 201, 201);"></div>						
 				</div>
-				<div class="slds-grid slds-grid_align-center">
+				<div class="slds-grid slds-grid_align-center grayBackground paddedBackground">
 					<apex:outputPanel styleclass="slds-col slds-m-top_medium" style="margin-left:auto; margin-right:auto;">
-						<apex:commandButton styleClass="slds-button slds-button_brand" onclick="removeUseCase();" value="{!$Label.rh2__delete} {!ucData.useCaseName} {!$Label.rh2__setting}" rerender="none" status="loading"/>
+						<apex:commandButton styleClass="slds-button slds-button_brand" onclick="removeUseCase();" value="{!$Label.rh2__Delete} {!ucData.useCaseName} {!$Label.rh2__Setting}" rerender="none" status="loading"/>
 						&nbsp;
-						<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__back}</apex:outputLink>
+						<apex:outputLink styleClass="slds-button slds-button_neutral" value="{!URLFOR($Page.rh2__PS_Use_Case_Deployment)}">{!$Label.rh2__Back}</apex:outputLink>
 					</apex:outputPanel>
+					<br />
 				</div>
 			</apex:outputpanel>
 		</center>
 		
 		
 		<br/>
-        <div class="slds-box slds-box_small slds-theme_shade">
-            <div class="slds-text-heading_small"><strong>{!$Label.rh2__description}</strong></div>
+        <div class="slds-box slds-box_small slds-theme_shade" style="box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);">
+            <div class="slds-text-heading_small"><strong>{!$Label.rh2__Description}</strong></div>
 			<div class="slds-text-body_small"><span>{!ucData.useCaseLongDescription}</span></div>
         </div>
         

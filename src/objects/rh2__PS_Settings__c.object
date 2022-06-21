@@ -121,6 +121,17 @@ The converted leads are identified by the &quot;isConverted&quot; system field.<
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>rh2__EnableHourlyExceptionEmails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the Rollup Helper Exception Monitor will send hourly emails containing exceptions generated within the last hour. If unchecked, the Rollup Helper Exception Monitor will send an email once daily containing exceptions generated within the last day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the Rollup Helper Exception Monitor will send hourly emails containing exceptions generated within the last hour. If unchecked, the Rollup Helper Exception Monitor will send an email once daily containing exceptions generated within the last day.</inlineHelpText>
+        <label>Enable Hourly Exception Emails</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>rh2__Enable_Single_Parent_Processing__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>

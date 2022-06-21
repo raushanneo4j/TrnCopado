@@ -8,6 +8,7 @@
 
         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	    <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
+        <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }"  />
     </head>
 
     <script>
@@ -44,18 +45,18 @@
             <apex:param name="settingSearch" value=""/>
         </apex:actionFunction>
         <div class="slds-scope" role="main">
-            <div class="slds-card">
+            <div class="slds-card grayBackground">
                 <header class="slds-card__header">
                     <nav role="navigation">
                         <ol class="slds-breadcrumb slds-list_horizontal">
-                            <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__home}</a></li>
-                            <li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__allrollupsetting}</a></li>
+                            <li class="slds-list__item slds-text-heading_label home-crumb"><a href="{!URLFOR($Page.rh2__PS_landingPage)}">{!$Label.rh2__Home}</a></li>
+                            <li class="slds-list__item slds-text-heading_label setting-crumb"><a href="{!URLFOR($Page.rh2__PS_AllSettings)}">{!$Label.rh2__AllRollupSetting}</a></li>
                         </ol>
                     </nav>
                 </header>
             </div>
             <c:Loading_Spinner opacity="1"/>
-            <div class="slds-card">
+            <div class="slds-card grayBackground">
                 <header class="slds-card__header slds-theme_alt-inverse">
                     <h3 class="slds-text-heading_medium">Convert Rollups</h3>
                 </header>
@@ -87,7 +88,7 @@
                     <section class="slds-card__body">
                         <apex:outputPanel id="tablecontainer" style=" height:600px;">
                             <apex:pageMessages /> 
-                            <table class="slds-table slds-table_bordered"  >
+                            <table class="slds-table slds-table_bordered" >
                             <c:Paginate pageController="{! convertRollupPaginateController }" renderedComponent="tablecontainer" /> 
                                 <thead>
                                     <tr style="width:100%;">
@@ -126,12 +127,12 @@
                                 </thead>
                             </table>
                             <div style="height:500px; overflow-y:scroll; margin-left:auto; margin-right:auto;">
-                                <table class="slds-table slds-table_bordered " >
+                                <table class="slds-table slds-table_bordered" >
                                     <tbody>
                                     <apex:repeat value="{!PaginatedListOfRollupsToConvert}" var="item" id="repeat">
                                         <tr>
                                             <td style="width:16.66%;"> 
-                                                <apex:commandLink value="{!$Label.rh2__select}" onclick="showModal(true, 'deactivateDLRSValidation')" reRender="validationTextContainer" rendered="{!item.isActive}">
+                                                <apex:commandLink value="{!$Label.rh2__Select}" onclick="showModal(true, 'deactivateDLRSValidation')" reRender="validationTextContainer" rendered="{!item.isActive}">
                                                     <apex:param name="targetObj" value="{!item.targetObject}" assignTo="{!selectedRollup.targetObject}"/>
                                                     <apex:param name="targetFld" value="{!item.targetField}" assignTo="{!selectedRollup.targetField}"/>
                                                     <apex:param name="relField" value="{!item.relationshipField}" assignTo="{!selectedRollup.relationshipField}"/>
@@ -143,7 +144,7 @@
                                                     <apex:param name="id" value="{!item.id}" assignTo="{!selectedRollup.id}" />
                                                     <apex:param name="isMetadata" value="{!item.isMetadata}" assignTo="{!selectedRollup.isMetadata}" />
                                                 </apex:commandLink>
-                                                <apex:commandLink value="{!$Label.rh2__select}" action="{! convertSelectedRollup }" rendered="{!NOT(item.isActive)}">
+                                                <apex:commandLink value="{!$Label.rh2__Select}" action="{! convertSelectedRollup }" rendered="{!NOT(item.isActive)}">
                                                     <apex:param name="targetObj" value="{!item.targetObject}" assignTo="{!selectedRollup.targetObject}"/>
                                                     <apex:param name="targetFld" value="{!item.targetField}" assignTo="{!selectedRollup.targetField}"/>
                                                     <apex:param name="relField" value="{!item.relationshipField}" assignTo="{!selectedRollup.relationshipField}"/>
@@ -196,7 +197,7 @@
                                     <div class="slds-modal__footer">
                                         <center>
                                             <apex:commandButton value="Convert" action="{! convertSelectedRollup }" styleClass="slds-button slds-button_neutral"></apex:commandButton>
-                                            <apex:commandButton value="{!$Label.rh2__close}" onclick="showModal(false, 'deactivateDLRSValidation')" styleClass="slds-button slds-button_neutral"></apex:commandButton>
+                                            <apex:commandButton value="{!$Label.rh2__Close}" onclick="showModal(false, 'deactivateDLRSValidation')" styleClass="slds-button slds-button_neutral"></apex:commandButton>
                                         </center>
                                     </div>
                                 </div>

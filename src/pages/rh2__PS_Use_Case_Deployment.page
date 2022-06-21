@@ -6,7 +6,8 @@
 		<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 		<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
 		<apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
-      <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+      	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+      	<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css')}" />
      </head>
      <style>
         .checkmark2 {
@@ -36,7 +37,7 @@
      <apex:slds />
 	 <apex:form >
 	 <div class="slds-scope" role="main">
-    	<div class="slds-card ">
+    	<div class="slds-card grayBackground">
   			<header class="slds-card__header ">
    		  		<nav role="navigation">
         			<ol class="slds-breadcrumb slds-list_horizontal">
@@ -47,12 +48,12 @@
   			</header>
 		</div>
 	   	
-     	<div class="slds-card slds-m-vertical_medium">
+     	<div class="slds-card slds-m-vertical_medium grayBackground">
      		<header class="slds-card__header slds-grid">
      			<div class="slds-media__body">
                 	<h3 class="slds-text-heading_small slds-truncate">{!$Label.RollupHelperUCLibrary}</h3>
 					<hr style="margin: 1rem 0;"></hr>
-					<h5 class="slds-text-title slds-truncate">{!$Label.Click} <b>'{!$Label.rh2__deploy}'</b> {!$Label.OnAnyUseCase}</h5>
+					<h5 class="slds-text-title slds-truncate">{!$Label.Click} <b>'{!$Label.rh2__Deploy}'</b> {!$Label.OnAnyUseCase}</h5>
               	</div>
      		</header>
 				<apex:selectList value="{!selectedObject}" size="1" styleClass="slds-m-left_large">
@@ -78,11 +79,11 @@
 								<tbody>
 								<apex:repeat value="{!PaginatedListForUseCases}" var="record">
 										<tr>                                            
-											<td data-label="{!$Label.rh2__action}">
-												<apex:commandLink rendered="{!!record.deployed}" action="{!selectUseCase}" value="{!$Label.rh2__deploy}">
+											<td data-label="{!$Label.rh2__Action}">
+												<apex:commandLink rendered="{!!record.deployed}" action="{!selectUseCase}" value="{!$Label.rh2__Deploy}">
 													<apex:param name="masterAPI" value="{!record.metadataRecord.rh2__Label__c}" assignTo="{!ucData.useCaseName}"/>
 												</apex:commandLink>
-												<apex:commandLink rendered="{!record.deployed}" action="{!selectUseCase}" value="{!$Label.rh2__remove}">
+												<apex:commandLink rendered="{!record.deployed}" action="{!selectUseCase}" value="{!$Label.rh2__Remove}">
 													<apex:param name="masterAPI" value="{!record.metadataRecord.rh2__Label__c}" assignTo="{!ucData.useCaseName}"/>
 												</apex:commandLink>
 											</td>
