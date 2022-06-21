@@ -133,6 +133,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>rh2__PS_DefineFilter_Helper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>rh2__PS_DefineJob_Controller</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -209,6 +213,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>rh2__PS_Mode_Rollups_Behavior</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>rh2__PS_MultiCurrency_Behavior</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -278,6 +286,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>rh2__PS_RealTime_Rollup_Behaviour</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>rh2__PS_RealtimeParentFilter_Behavior</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -402,6 +414,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>rh2__PS_SelectMaster_Controller_Behaviour</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>rh2__PS_SelectMaster_Filter_Behavior</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -621,6 +637,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>rh2__PS_Describe__c.rh2__Test_Multi_Picklist__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rh2__PS_Describe__c.rh2__Test_Picklist__c</field>
         <readable>true</readable>
@@ -663,6 +684,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>rh2__PS_Exception__c.rh2__Formatted_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Exception__c.rh2__Last_Retry_Run_Time__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -787,12 +813,32 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__Last_Run_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__Last_Run_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>rh2__PS_Rollup_Audit__c.rh2__Null_counts_toward_average__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__Number_Of_Past_Records__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>rh2__PS_Rollup_Audit__c.rh2__Overwrite__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__Parent_Record_Filter_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -837,6 +883,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__createdBy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__createdDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>rh2__PS_Rollup_Audit__c.rh2__delim__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -867,7 +923,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__lastModifiedBy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__lastModifiedDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>rh2__PS_Rollup_Audit__c.rh2__maxOrMinSortField__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__modeTiebreaker__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>rh2__PS_Rollup_Audit__c.rh2__parentCondition__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

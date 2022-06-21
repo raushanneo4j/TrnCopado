@@ -50,6 +50,11 @@ The converted leads are identified by the &quot;isConverted&quot; system field. 
         <name>rh2__Disable_Rollup_Auditing__c</name>
     </fields>
     <fields>
+        <help><!-- If checked, the Rollup Helper Exception Monitor will send hourly emails containing exceptions generated within the last hour. If unchecked, the Rollup Helper Exception Monitor will send an email once daily containing exceptions generated within the last day. --></help>
+        <label><!-- Enable Hourly Exception Emails --></label>
+        <name>rh2__EnableHourlyExceptionEmails__c</name>
+    </fields>
+    <fields>
         <help><!-- This will help to prevent record locks caused by multiple rollups attempting to update the same object at the same time. --></help>
         <label><!-- Enable Single Parent Processing --></label>
         <name>rh2__Enable_Single_Parent_Processing__c</name>

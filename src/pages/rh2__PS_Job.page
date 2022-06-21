@@ -6,6 +6,7 @@
         <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/RollupRun.js') }"/>                
 	    	<apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>	       	
 	    	<apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
+			<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" /> 
 	     </head>
 	
 		 <style>     			
@@ -52,6 +53,14 @@
 		  setRunAll();
 	  }
 
+	  function openWarningWindow(){
+		openTheDeactivateScheduleWarningModal();
+	  }
+
+	  function closeAndRevert(){
+		  CloseAndRevertCheckbox();
+	  }
+
       function displayValidationError(){
       	var showMessage = false;
       	if({!numRecsIssue}){
@@ -94,18 +103,48 @@
         
 	     <body>
 	     <apex:form > 
-        <apex:slds />
+			<apex:slds />
           <apex:actionFunction action="{!ensureRFAJobExists}" name="rfaCheck" />
+		  <apex:actionFunction action="{!openDeactivateScheduleWarningModal}" name="openTheDeactivateScheduleWarningModal" reRender="deactivateScheduleWarningModal" />
+		  <apex:actionFunction action="{!closeDeactivateScheduleWarningModalAndRevert}" name="CloseAndRevertCheckbox" reRender="activeCheckbox" status="loading" />
           <apex:actionFunction action="{!setMaxRecordsForRunAll}" name="setRunAll" rerender="amount"/>
 		  <apex:actionFunction name="rerenderFilterLinks" rerender="filterLinks"/>
 		  <apex:actionFunction name="rerenderPopover" rerender="parentFilterPopover"/>
-
+		  <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
 		     <div class="slds-scope" role="main"> 
 		     	<apex:inputHidden value="{!maxRecords}" id="maxRecords"/>   
 		     	<apex:inputHidden value="{!info.rollupRunTime}" id="rollupRunTime"/>   
-				
+				<div id="deactivateScheduleWarningModal">
+				 <apex:outputPanel id="deactivateScheduleWarningModal">					
+					<apex:outputPanel rendered="{!pgBehavior.showDeactivateScheduleWarningModal}" >
+						<apex:outputPanel rendered="{!AND(!showScheduleWarning, !rh2__RH_Job__c.rh2__Active__c)}">
+						<div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+							<div class="slds-modal__container">
+								<div class="slds-modal__header slds-modal__header_empty">
+									<button type="button" onclick="showModal(false, 'deactivateScheduleWarningModal'); closeAndRevert();" class="slds-button slds-button_icon-inverse slds-modal__close">									
+										<svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+											<use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+										</svg>
+									</button>											
+								</div>
+								<div class="slds-modal__content slds-p-around_medium">	
+									<center>
+										{!$Label.ThisScheduleAppears}
+									</center>
+								</div>
+								<div class="slds-modal__footer">
+									<apex:commandButton styleClass="slds-button slds-button_brand" action="{!closeDeactivateScheduleWarningModal}" onclick="showModal(false, 'deactivateScheduleWarningModal');" value="{!$Label.rh2__Yes}"/>
+									<apex:commandButton styleClass="slds-button slds-button_neutral" onclick="showModal(false, 'deactivateScheduleWarningModal'); closeAndRevert();" action="{!closeDeactivateScheduleWarningModalAndRevert}" value="{!$Label.rh2__No}"/>
+								</div>
+							</div>
+						</div>
+						<div class="slds-backdrop slds-backdrop_open"></div>
+						</apex:outputPanel>
+					</apex:outputPanel>	
+				</apex:outputPanel>
+			</div>
 			 	<apex:outputPanel id="ClonePopup">
-			 	<apex:outputPanel rendered="{!showClonepopup}" >
+			 	<apex:outputPanel rendered="{!pgBehavior.showClonepopup}" >
             		<div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
 			    		<div class="slds-modal__container">
 			      			<div class="slds-modal__header"> 
@@ -113,14 +152,14 @@
 			        		</div>
 			      			<div class="slds-modal__content">	
 			      			<center>			      			
-			      				<apex:Selectlist value="{!selectedSchedule}" styleclass="slds-button slds-button_neutral slds-picklist__label" style="width: 80%;" multiselect="false" size="1">
+			      				<apex:Selectlist value="{!selectedSchedule}" styleclass="slds-button slds-button_neutral slds-picklist__label" style="width: 80%; margin-top: 10px;margin-bottom: 10px;" multiselect="false" size="1">
 			      					<apex:selectOptions value="{!JobSchedules}"/>
 			      				</apex:Selectlist>		        
 			      			</center>
 			      			</div>  			
 			      			<div class="slds-modal__footer">
-         						<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__cancel}"/>					        					       
-			        			<apex:commandButton styleClass="slds-button slds-button_brand" action="{!cloneSchedule}" rerender="ClonePopup, jobForm" value="{!$Label.rh2__clone}"/>
+         						<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!closeClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__Cancel}"/>					        					       
+			        			<apex:commandButton styleClass="slds-button slds-button_brand" action="{!cloneSchedule}" rerender="ClonePopup, jobForm" value="{!$Label.rh2__Clone}"/>
 			      			</div>
 			    		</div>
 			  		</div>
@@ -138,7 +177,7 @@
   					</header>
 					</div>
 			    		
-    			<div class="slds-card">
+    			<div class="slds-card grayBackground">
 					<header class="slds-card__header slds-grid">
            				<div class="slds-col">
                				<h3 class="slds-text-heading_small slds-truncate">{!$Label.DefineRollupSchedle}</h3>
@@ -146,15 +185,15 @@
              			
            				<div class="slds-col" align="right">
 							<!-- Note: Any changes to these buttons should also be applied to the buttons on the top/bottom of the page -->    
-         					<apex:commandButton styleClass="slds-button slds-button_brand" action="{! save }" value="{!$Label.rh2__save}"/>   
-         					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!openClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__clonefromexisting}"/>					        					       
-         					<apex:commandButton styleClass="slds-button slds-button_neutral" rendered="{!not(isBlank(rh2__RH_Job__c.Id))}" action="{!oDelete}" value="{!$Label.rh2__delete}" />                   
-         					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__cancel}" />       
+         					<apex:commandButton styleClass="slds-button slds-button_brand" action="{! save }" value="{!$Label.rh2__Save}"/>   
+         					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!openClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__CloneFromExisting}"/>					        					       
+         					<apex:commandButton styleClass="slds-button slds-button_neutral" rendered="{!not(isBlank(rh2__RH_Job__c.Id))}" action="{!oDelete}" value="{!$Label.rh2__Delete}" />                   
+         					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__Cancel}" />       
          				</div>
          			</header>
          			<section class="slds-card__body">
          			<div class="slds-grid slds-grid_align-center">
-	         			<table class="slds-table slds-col slds-size_1-of-1">
+	         			<table class="slds-table slds-col slds-size_1-of-1 grayBackground">
 	                		<tr style="width:100%">
 	                  			<th class="slds-text-heading_label" scope="col">
 	                    			<apex:outputText value="{!targetField} Rollup"/>
@@ -171,7 +210,7 @@
 	        				{!$Label.Active}
 	                    </div>
 	                    <div class="slds-col slds-size_1-of-12" >
-                            <apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__Active__c}" onclick=" if(!{!showScheduleWarning} && {!rh2__RH_Job__c.rh2__Active__c}) return confirm('{!$Label.rh2__thisscheduleappears}');"/>
+                            <apex:inputcheckbox id="activeCheckbox" value="{!rh2__RH_Job__c.rh2__Active__c}" onclick="openWarningWindow(); showModal(true, 'deactivateScheduleWarningModal');"/>
 	                    </div>	
                         <div class="slds-col slds-size_10-of-12"></div>
           			</div>
@@ -189,7 +228,7 @@
                         <br/>
           			<div class="slds-grid">
           				<div class="slds-col_padded slds-text-align_right slds-size_1-of-12">
-							{!$Label.rh2__runevery}
+							{!$Label.rh2__RunEvery}
           				</div>
                         <div class="slds-col slds-size_1-of-12 " id="runTime">
                             <apex:inputField value="{!rh2__RH_Job__c.rh2__Increment__c}" style="width:95%;"/>                    			                  
@@ -210,8 +249,8 @@
 								<apex:inputText id="amount" value="{!rh2__RH_Job__c.rh2__BatchSize__c}" />  
 								&nbsp;  
 								{!parentObjectName} {!$Label.Records}. &nbsp;
-															(<apex:outputtext id="NumRecords" value="{!$Label.rh2__calculatingnumber}."/> &nbsp;
-															<apex:outputtext id="runEstTime" value="{!$Label.rh2__calculatingrun}."/>)
+															(<apex:outputtext id="NumRecords" value="{!$Label.rh2__CalculatingNumber}."/> &nbsp;
+															<apex:outputtext id="runEstTime" value="{!$Label.rh2__CalculatingRun}."/>)
 							</apex:outputPanel>
 						</div>
                     </div>  
@@ -233,7 +272,7 @@
 							</div>
 						</apex:outputPanel>
 						<apex:outputPanel rendered="{!NOT(existingFilterSelected)}" styleClass="slds-col_padded slds-text-align_right slds-size_1-of-12">
-							{!$Label.rh2__runforallrecords}
+							{!$Label.rh2__RunForAllRecords}
 						</apex:outputPanel>
 						<div class="slds-col slds-size_1-of-12" >
 							<apex:inputcheckbox value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" onchange="changeValue(); return false;"  />
@@ -275,9 +314,9 @@
 						<div class="slds-col slds-size_1-of-12">							
 							<apex:outputPanel id="filterLinks">
 								<apex:outputPanel rendered="{!existingFilterSelected}">
-									<apex:commandLink style="padding-left:10px; padding-right:10px;" action="{!goToEditFilter}" value="{!$Label.rh2__edit}"/>|
+									<apex:commandLink style="padding-left:10px; padding-right:10px;" action="{!goToEditFilter}" value="{!$Label.rh2__Edit}"/>|
 								</apex:outputPanel> 
-								<apex:commandLink style="padding-left:10px;" action="{!goToNewFilter}" value="{!$Label.rh2__new}"/>
+								<apex:commandLink style="padding-left:10px;" action="{!goToNewFilter}" value="{!$Label.rh2__New}"/>
 							</apex:outputPanel>
 						</div>
           				
@@ -298,7 +337,7 @@
               <center>
                       <p>{!$Label.SchedulingARollupWithRealtime}</p>
                       <br></br>
-                      <p>{!$Label.IfYouHaveAnyQuestionsRegardingRealtime}</p>
+                      <apex:outputText value="{!$Label.rh2__IfYouHaveAnyQuestionsRegardingRealtime}" escape="false" />
               </center>        
             </div>
           			</apex:outputPanel>	
@@ -306,16 +345,17 @@
            			<footer class="slds-card__footer slds-grid" >
            				<div class="slds-col" align="right"> 
 							<!-- Note: Any changes to these button should also be applied to the buttons on the top/bottom of the page -->  			
-           					<apex:commandButton styleClass="slds-button slds-button_brand" action="{! save }" value="{!$Label.rh2__save}"/>          
-           					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!openClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__clonefromexisting}"/>					        					                  					
-           					<apex:commandButton styleClass="slds-button slds-button_neutral" rendered="{!not(isBlank(rh2__RH_Job__c.Id))}" action="{!oDelete}" value="{!$Label.rh2__delete}" />                   
-           					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__cancel}" />       
+           					<apex:commandButton styleClass="slds-button slds-button_brand" action="{! save }" value="{!$Label.rh2__Save}"/>          
+           					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!openClonePopup}" rerender="ClonePopup" value="{!$Label.rh2__CloneFromExisting}"/>					        					                  					
+           					<apex:commandButton styleClass="slds-button slds-button_neutral" rendered="{!not(isBlank(rh2__RH_Job__c.Id))}" action="{!oDelete}" value="{!$Label.rh2__Delete}" />                   
+           					<apex:commandButton styleClass="slds-button slds-button_neutral" action="{!URLFOR($Page.PS_AllSettings)}" value="{!$Label.rh2__Cancel}" />       
          				</div>
            			</footer>
+			<c:Loading_Spinner opacity="1"/>
            		</div>     			     	
        	</div>      	
        		
-       	
+		
        	</apex:form>
      	</body>
 	</html>

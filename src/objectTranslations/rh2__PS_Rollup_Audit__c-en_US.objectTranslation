@@ -26,14 +26,31 @@
         <name>rh2__Last_Active_Status_Changed_By__c</name>
     </fields>
     <fields>
+        <label><!-- Last Manual Rollup Run Date --></label>
+        <name>rh2__Last_Run_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last Manual Rollup Run User --></help>
+        <label><!-- Last Manual Rollup Run User --></label>
+        <name>rh2__Last_Run_User__c</name>
+    </fields>
+    <fields>
         <help><!-- Determines whether a null counts as a zero when calculating an AVG Rollup. --></help>
         <label><!-- Nulls Count Toward Average --></label>
         <name>rh2__Null_counts_toward_average__c</name>
     </fields>
     <fields>
+        <label><!-- Number of Records For Last Manual Rollup --></label>
+        <name>rh2__Number_Of_Past_Records__c</name>
+    </fields>
+    <fields>
         <help><!-- Controls whether Rollup Helper will overwrite populated fields. --></help>
         <label><!-- Overwrite fields --></label>
         <name>rh2__Overwrite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Manual Parent Filter Name --></label>
+        <name>rh2__Parent_Record_Filter_Name__c</name>
     </fields>
     <fields>
         <help><!-- Controls whether Rollup Helper will trim any delimiters that would be placed at the end of the rolled-up text value. --></help>
@@ -76,6 +93,16 @@
         <name>rh2__conversionDate__c</name>
     </fields>
     <fields>
+        <help><!-- The user that created the rollup. --></help>
+        <label><!-- Rollup Created By --></label>
+        <name>rh2__createdBy__c</name>
+    </fields>
+    <fields>
+        <help><!-- String of the date and time the rollup was created. --></help>
+        <label><!-- Rollup Created Date --></label>
+        <name>rh2__createdDate__c</name>
+    </fields>
+    <fields>
         <help><!-- Stores custom delimiter for concatenated rollups --></help>
         <label><!-- Delimiter --></label>
         <name>rh2__delim__c</name>
@@ -106,6 +133,16 @@
         <name>rh2__exceptionMessage__c</name>
     </fields>
     <fields>
+        <help><!-- The user that last modified the rollup. --></help>
+        <label><!-- Rollup Last Modified By --></label>
+        <name>rh2__lastModifiedBy__c</name>
+    </fields>
+    <fields>
+        <help><!-- String of the date and time the rollup was last modified. --></help>
+        <label><!-- Rollup Last Modified Date --></label>
+        <name>rh2__lastModifiedDate__c</name>
+    </fields>
+    <fields>
         <help><!-- The type of Rollup (MAX, MIN, SUM, etc.) --></help>
         <label><!-- Type --></label>
         <name>rh2__logic__c</name>
@@ -114,6 +151,14 @@
         <help><!-- The field on the source object being sorted on in a MAX or MIN String rollup --></help>
         <label><!-- Max / Min Sort Field --></label>
         <name>rh2__maxOrMinSortField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode Tiebreaker --></label>
+        <name>rh2__modeTiebreaker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Condition --></label>
+        <name>rh2__parentCondition__c</name>
     </fields>
     <fields>
         <help><!-- Controls whether Rollup Helper queries for deleted records. --></help>

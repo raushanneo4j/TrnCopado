@@ -7,6 +7,7 @@
     	 <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/UI_Utilities.js') }"/>
          <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
          <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
+         <apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css')}" />
      </head>
 
   <script>
@@ -30,7 +31,7 @@
             Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.PS_DefineJob_Controller.maxRecords}',
                            '{! JSENCODE(parentObjectName) }', selectedFilter, estimateRecordsDuration, {escape:true, timeout:120000});
         }
-        
+
          function setPositionOfTooltip(tooltip, label){
             var xPos = 0;
             var yPos = 0;
@@ -67,8 +68,8 @@
         <apex:actionFunction name="rerenderFilterLinks" rerender="filterLinks" status="loading"/>
         <apex:actionStatus id="loading" onstart="loading(true)" onstop="loading(false)" />
         <apex:slds />
-	 	<div class="slds-scope" role="main"> 	  
-	 		<div class="slds-card">
+	 	<div class="slds-scope" role="main"> 
+	 		<div class="slds-card grayBackground">
   				<header class="slds-card__header">
 	       			<nav role="navigation">
     					<ol class="slds-breadcrumb slds-list_horizontal">
@@ -78,14 +79,15 @@
         			</nav>
   				</header>
   			</div>
- 			<div class="slds-card">
+ 			<div class="slds-card grayBackground">
 				<header class="slds-card__header slds-grid">
            			<div class="slds-col">
                			<h3 class="slds-text-heading_small slds-truncate">{!$Label.RunRollup}</h3>
              		</div>
              			
          			<div class="slds-col_padded" align="right">   					           			
-             			<apex:commandLink styleClass="slds-button slds-button_neutral" rendered="{!IsSourceObjectTriggerable}" action="{!goToEnableRealtime}">{!$Label.rh2__managerealtime}</apex:commandLink> 
+                        <apex:commandLink styleClass="slds-button slds-button_brand" onclick="showModal(true, 'manualRunHistoryModal');" rerender="manualRunHistoryModal">{!$Label.rh2__LastManualRunHistory}</apex:commandLink> 
+             			<apex:commandLink styleClass="slds-button slds-button_neutral" rendered="{!IsSourceObjectTriggerable}" action="{!goToEnableRealtime}">{!$Label.rh2__ManageRealtime}</apex:commandLink> 
          			</div>        				
                  </header>
                 <apex:outputPanel rendered="{!NOT(rollupSetting.rh2__exceptionMessage__c == null)}" styleClass="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning">
@@ -100,10 +102,10 @@
                     <center>
                        <apex:outputPanel id="overwriteWarnings" style="width:80%;" styleClass="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" rendered="{!overwrite}">
                            <apex:outputPanel id="overwriteWarning" rendered="{!AND(overwrite, blankOverwrite)}">
-                               {!$Label.rh2__warningrunningthisrollup} {!targetField} {!$Label.rh2__fieldtobeoverwritten}
+                               {!$Label.rh2__WarningRunningThisRollup} {!targetField} {!$Label.rh2__FieldToBeOverwritten}
                            </apex:outputPanel>
                            <apex:outputPanel id="blankOverwriteWarning" rendered="{!AND(overwrite, !blankOverwrite)}">
-                               {!$Label.rh2__warningrunningthisrollup} {!targetField} {!$Label.rh2__fieldtobeoverwrittenblank} {!targetField} {!$Label.rh2__blankoverwritefield}"
+                               {!$Label.rh2__WarningRunningThisRollup} {!targetField} {!$Label.rh2__FieldToBeOverwrittenBlank} {!targetField} {!$Label.rh2__BlankOverwriteField}"
                            </apex:outputPanel>
                        </apex:outputPanel>              
                    </center>  
@@ -136,36 +138,78 @@
 
                                 <center>
                                     <div class="slds-form-element">
-                                        <label class="slds-form-element__label" for="filterList"> {!$Label.rh2__parentfilteroptional}:</label> 
+                                        <label class="slds-form-element__label" for="filterList"> {!$Label.rh2__ParentFilterOptional}:</label> 
                                         <apex:selectList value="{!selectedFilter}" onchange="calcMaxRecords(this.value); rerenderFilterLinks();" size="1" style="width:100% !important;" styleClass="slds-form-element__control">
                                             <apex:selectOptions value="{!ValidFiltersForObject}"/>
                                         </apex:selectList>  						
                                         <apex:outputPanel id="filterLinks">
                                             <apex:outputPanel rendered="{!existingFilterSelected}">
-                                                <apex:commandLink style="padding-left:10px; padding-right:10px;" action="{!goToEditFilter}" value="{!$Label.rh2__edit}"/>|
+                                                <apex:commandLink style="padding-left:10px; padding-right:10px;" action="{!goToEditFilter}" value="{!$Label.rh2__Edit}"/>|
                                             </apex:outputPanel> 
-                                            <apex:commandLink style="padding-left:10px;" action="{!goToNewFilter}" value="{!$Label.rh2__new}"/>
+                                            <apex:commandLink style="padding-left:10px;" action="{!goToNewFilter}" value="{!$Label.rh2__New}"/>
                                         </apex:outputPanel>
                                     </div>
                                 </center> <br/>
                                 <center>
                                     <div class="slds-form-element">
-                                        <label class="slds-form-element__label"> {!$Label.rh2__notificationemailoptional}:</label><br/> 
+                                        <label class="slds-form-element__label"> {!$Label.rh2__NotificationEmailOptional}:</label><br/> 
                                         <apex:inputText style="width:100% !important;" value="{!notificationEmail}"/>
                                     </div>
                                 </center><br/>
                                 <center>
-                                    <apex:commandButton styleClass="slds-button slds-button_brand" id="runButton" value="{!$Label.rh2__startrolluprun}" action="{!runForAllRecords}" status="loading"  rerender="filterLinks"/> &nbsp;
-                                    <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!allSettingsRedirect}" value="{!$Label.rh2__cancel}" reRender="form"/>
+                                    <apex:commandButton styleClass="slds-button slds-button_brand" id="runButton" value="{!$Label.rh2__StartRollupRun}" action="{!runForAllRecords}" status="loading"  rerender="filterLinks"/> &nbsp;
+                                    <apex:commandButton styleClass="slds-button slds-button_neutral" action="{!allSettingsRedirect}" value="{!$Label.rh2__Cancel}" reRender="form"/>
                                 </center>                        
                                 <apex:inputHidden value="{!maxRecords}" id="maxRecords"/>    
                                 <apex:inputHidden value="{!rh2__RH_Job__c.rh2__ParentFilter__c}" />             
                                 <apex:inputHidden value="{!rh2__RH_Job__c.rh2__RunForAllRecords__c}" />            		
              				</div> 
              			</div>
-             		</div>                   
+             		</div>   
             	</section> 
-            	
+                <div id="manualRunHistoryModal" style="display:none;">
+                    <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <div class="slds-modal__header">
+                                <button type="button" onclick="showModal(false, 'manualRunHistoryModal')" class="slds-button slds-button_icon-inverse slds-modal__close">
+                                    <svg aria-hidden="true" class="slds-button__icon slds-button__icon_large">
+                                        <use href="{!URLFOR($Asset.SLDS, '/assets/icons/action-sprite/svg/symbols.svg#close')}"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="slds-text-heading_medium">{!$Label.rh2__LastManualRunHistory}</h2>
+                            </div>
+                            <div class="slds-modal__content slds-p-around_medium">
+                                <apex:outputPanel rendered="{!noManualRuns}">
+                                    <center>
+                                        {!$Label.rh2__NoManualRuns}
+                                    </center>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!!noManualRuns}">
+                                    <center>
+                                        <b>{!$Label.LastRunDate}</b>
+                                        {!rollupSetting.Last_Run_Date__c}
+                                        <br />
+                                        <b>{!$Label.LastRanBy}</b>
+                                        {!rollupSetting.Last_Run_User__c}
+                                        <br />
+                                        <b>{!$Label.NumberOfUsedRecords}</b>
+                                        <apex:outputText value="{0, number, 0}">
+                                            <apex:param value="{!rollupSetting.rh2__Number_Of_Past_Records__c}" />
+                                        </apex:outputText>
+                                        <br />
+                                        <b>{!$Label.PastParentFilter}</b>
+                                        {!rollupSetting.Parent_Record_Filter_Name__c}
+                                        <br />
+                                    </center>
+                                </apex:outputPanel>
+                            </div>
+                            <div class="slds-modal__footer">
+                                <apex:commandButton styleClass="slds-button slds-button_neutral" onclick="showModal(false, 'manualRunHistoryModal');" rerender="manualRunHistoryModal" value="Close" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>            	
              </div>	
              <c:Loading_Spinner opacity="1"/>
          </div>

@@ -8,6 +8,7 @@
      <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
      <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
      <apex:includeScript value="{! URLFOR($Resource.PT_Resources_v1, '/js/hs_breadcrumbs.js')}" />
+	 <apex:stylesheet value="{!URLFOR($Resource.rh2__PT_Resources_v1, '/css/grayBackground.css')}" />
 
      <style type="text/css">
      	li>ul.faq-inner-list {
@@ -23,11 +24,24 @@
      
      <script>
      	$(document).ready(function(){
+			whiteBackground();
 			var rootPage = sessionStorage.getItem('rootPage') || 'home';
 			selectBreadcrumb_HS();
         });
 
+		function whiteBackground() {
+			document.getElementById('tabWrapper').style="background-color: white !important";
+			document.getElementById('innerTab').style="background-color: white; margin-top: -10px;";
+		}
+
      	function selectTab(tabIndex){
+			if(tabIndex == 3 || tabIndex == 4){
+				document.getElementById('tabWrapper').style="background-color: #f4f6f9";
+				document.getElementById('innerTab').style="background-color: #f4f6f9; margin-top: -10px;";
+			}
+			else{
+				whiteBackground();
+			}
      		var selectTabName = 'tab' + tabIndex;
      		var selectTabContent = 'tab-default-' + tabIndex;
 
@@ -52,7 +66,7 @@
      <apex:slds />
      <div class="slds-scope" role="main"> 
 
-     	<div class="slds-card">
+     	<div class="slds-card grayBackground">
   				<header class="slds-card__header">
 	       			<nav role="navigation">
     					<ol class="slds-breadcrumb slds-list_horizontal">
@@ -63,14 +77,14 @@
   				</header>
   			</div>
  
-    	<div class="slds-card">
+    	<div class="slds-card grayBackground"  id="tabWrapper">
     		<header class="slds-card__header slds-text-heading_small slds-theme_alt-inverse">
     			<h1 class="slds-text-heading_large">Help &amp; FAQ</h1>
     		</header>
     		<section class="slds-card__body slds-theme_default">
-	     	<div class="slds-tabs_default">
-			  <ul class="slds-tabs_default__nav" role="tablist">
-					<li id="tab0" class="slds-tabs__item slds-text-heading_label slds-active" title="Admin Guide" role="presentation"><a href="#" onclick="selectTab(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-0">Admin Guide</a></li>
+	     	<div class="slds-tabs_default" id="innerTab">
+			  <ul class="slds-tabs_default__nav" role="tablist" style="background-color: #fff !important">
+				<li id="tab0" class="slds-tabs__item slds-text-heading_label slds-active" title="Admin Guide" role="presentation"><a href="#" onclick="selectTab(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-0">Admin Guide</a></li>
 			    <li id="tab1" class="slds-tabs__item slds-text-heading_label" title="FAQ" role="presentation"><a href="#" onclick="selectTab(1);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-1">FAQ</a></li>
 			    <li id="tab2" class="slds-tabs__item slds-text-heading_label" title="Troubleshooting Tips" role="presentation"><a href="#" onclick="selectTab(2);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2">Troubleshooting Tips</a></li>
 			    <li id="tab3" class="slds-tabs__item slds-text-heading_label" title="Help Videos" role="presentation"><a href="#" role="tab" onclick="selectTab(3);" tabindex="-1" aria-selected="false" aria-controls="tab-default-3">Help Videos</a></li>
@@ -457,7 +471,7 @@
 		             </apex:actionRegion>
 			
 			  </div>
-			  <div id="tab-default-3" class="slds-tabs__content slds-hide" role="tabpanel"> 
+			  <div id="tab-default-3" class="slds-tabs__content slds-hide" role="tabpanel">
 			  		<apex:actionRegion > 		                
 		                <div style="padding-left:15px;">
 		                	<h3 class="slds-text-heading_small"><apex:outputLink target="_blank" value="http://rhdemo.passagetech.com">Rollup Helper Help Video Playlist</apex:outputLink></h3><br/>
@@ -469,9 +483,9 @@
 		             	</div>		             
 		            </apex:actionRegion>
 			  </div>
-			  <div id="tab-default-4" class="slds-tabs__content slds-hide" role="tabpanel"> 
+			  <div id="tab-default-4" class="slds-tabs__content slds-hide grayBackground" role="tabpanel"> 
 			  		<apex:actionRegion > 		                
-		                <div style="padding-left:15px;">
+		                <div style="padding-left:15px;" >
 		                	<h3 class="slds-text-heading_small">Rollup Helper Update Links</h3><br/>
 		               		<div id="videos" > 		               
 				               <div>

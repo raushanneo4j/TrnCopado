@@ -1,4 +1,4 @@
-<apex:page standardStylesheets="false" title="Rollup Helper Home" sidebar="false" applyBodyTag="false" docType="html-5.0" showHeader="true">
+<apex:page standardStylesheets="false" controller="rh2.PS_Additional_Information_Controller" title="Rollup Helper Home" sidebar="false" applyBodyTag="false" docType="html-5.0" showHeader="true">
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <head> 
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -9,6 +9,7 @@
         <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-3.6.0.min.js')}" />
 	    <apex:includeScript value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.js')}" />
 	    <apex:stylesheet value="{! URLFOR($Resource.HS_Jquery, 'jquery-ui.min.css')}" />
+		<apex:stylesheet value="{! URLFOR($Resource.PT_Resources_v1, '/css/grayBackground.css') }" /> 
     </head> 
     <style>
     	.linkTile
@@ -26,7 +27,7 @@
     </script>
 	
     <div class="slds-scope" role="main">
-    	<div class="slds-card">
+    	<div class="slds-card grayBackground">
     		<header class="slds-card__header slds-text-heading_small slds-theme_alt-inverse">
     			<h1 class="slds-text-heading_large">{!$Label.WelcomeToRollupHelper}</h1>
     		</header>
@@ -119,7 +120,7 @@
 	    			</tr>
 	    			<tr>
 		    			<td class="linkTile slds-button slds-button_neutral">
-		    				<a href="/apex/PS_Use_Case_Deployment">
+		    				<a onclick="navigateToURL('{!useCasePageReference}');">
 								<div>
 									<h2 class="slds-text-heading_large" style="padding-bottom:15px; padding-top:15px;">{!$Label.Browse}</h2>
 									<span class="slds-icon__container slds-icon-action-email">
@@ -163,8 +164,8 @@
     		</section>
     		<footer><hr/>
 				<div style="padding-left:15px;">
-					<apex:outputText value="{!$Label.rh2__feedbackassistancecontact}"/> &nbsp;
-					<apex:outputLink target="_blank" value="mailto:support@passagetech.com">{!$Label.rh2__contactsupport}.</apex:outputLink>
+					<apex:outputText value="{!$Label.rh2__FeedbackAssistanceContact}"/> &nbsp;
+					<apex:outputLink target="_blank" value="mailto:support@passagetech.com">{!$Label.rh2__ContactSupport}.</apex:outputLink>
 				</div>
     		</footer>
     	</div>

@@ -1,5 +1,4 @@
 <apex:page controller="Q9.ElementsSettingsControllerBundle" doctype="html-5.0">
-
     <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/versioning.css" />
     <apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/extended.css" />
     <style>
@@ -479,8 +478,74 @@
                     </apex:pageBlockButtons>
                 </apex:pageBlock>
             </apex:tab>
-            <!-- </editor-fold> -->
+            <apex:tab label="Schedule fetch of data population" name="Schedule fetch of data population" id="ScheduleFetchOfDataPopulation" rendered="{!esc.isOrgConnected}">
+                <apex:pageMessages escape="false"/>
+                 <apex:pageBlock title="Schedule fetch of data population">
+                    <h1 style="margin-top: 10px"><i>Set up a scheduled job to fetch data population information for each record</i></h1>
+                    <br/><br/>
 
+                    <apex:pageBlockSection columns="1">
+                       <apex:pageBlockSectionItem >
+                       <apex:outputLabel value="Schedule Hours" for="scheduleHours"/>
+                       <apex:input type="number" value="{!esc.dataPopulationScheduleHours}" id="scheduleHours" size="24"/>
+                       </apex:pageBlockSectionItem>
+                       
+                       <apex:pageBlockSectionItem >
+                       <apex:outputLabel value="Schedule Minutes" for="scheduleMinutes"/>
+                       <apex:input type="number" value="{!esc.dataPopulationScheduleMinutes}" id="scheduleMinutes" size="24"/>
+                       </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockButtons location="bottom">                        
+                        <apex:commandButton value="Set up new Schedule Job" action="{!esc.startDataPopulationScheduleJob}" onclick="if(!onNewScheduleStarting()){return false};" />
+                        <script>
+                            function onNewScheduleStarting() {
+                                const numberOfRecordCountScheduledJob = parseInt('{!esc.numberOfDataPopulationScheduledJob}');
+                                if (numberOfRecordCountScheduledJob === 0) {
+                                    return true;
+                                }
+                                var text = "A schedule job already is active to fetch the data population information.  Are you sure you want to add another?";
+                                return confirm(text);
+                            }
+                        </script>
+                        
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:tab>
+            <!-- </editor-fold> -->
+            <apex:tab label="Schedule Picklist Values Population Job" name="Schedule Picklist Values Population Job" id="SchedulePickListDataPopulation">
+                <apex:pageMessages escape="false"/>
+                <!-- TODO: DELETE ME PLEASE -->
+                 <apex:pageBlock title="Schedule Picklist Values Population Job">
+                    <h1 style="margin-top: 10px"><i>Set up a scheduled job to get picklist values population information for each record</i></h1>
+                    <br/><br/>
+
+                    <apex:pageBlockSection columns="1">
+                       <apex:pageBlockSectionItem >
+                       <apex:outputLabel value="Schedule Hours" for="scheduleHours"/>
+                       <apex:input type="number" value="{!esc.pickListPopulationScheduleHours}" id="scheduleHours" size="24"/>
+                       </apex:pageBlockSectionItem>
+                       
+                       <apex:pageBlockSectionItem >
+                       <apex:outputLabel value="Schedule Minutes" for="scheduleMinutes"/>
+                       <apex:input type="number" value="{!esc.pickListPopulationScheduleMinutes}" id="scheduleMinutes" size="24"/>
+                       </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockButtons location="bottom">                        
+                        <apex:commandButton value="Set up new Schedule Job" action="{!esc.startPickListDataPopulationScheduleJob}" onclick="if(!onNewScheduleStarting()){return false};" />
+                        <script>
+                            function onNewScheduleStarting() {
+                                const numberOfRecordCountScheduledJob = parseInt('{!esc.numberOfPickListDataPopulationScheduledJob}');
+                                if (numberOfRecordCountScheduledJob === 0) {
+                                    return true;
+                                }
+                                var text = "A schedule job already is active to fetch picklist values population information.  Are you sure you want to add another?";
+                                return confirm(text);
+                            }
+                        </script>
+                        
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:tab>
             <!-- <editor-fold desc="Schedule" defaultstate="collapsed"> -->
             <apex:tab label="Schedule profile layout information" name="Schedule profile layout information" id="scheduleProfileLayoutInformation" rendered="{!esc.isOrgConnected}">
                 <apex:pageMessages escape="false"/>
